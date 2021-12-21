@@ -10,8 +10,8 @@
 PUSHPLUSSCKEY = os.environ.get('PUSHPLUSSCKEY') ##PUSHPLUS推送KEY
 
 def to_pushplus(cves):
-  newstitle = "威胁情报播报"
-  PushPlus = 'http://www.pushplus.plus/send'
+    newstitle = "威胁情报播报"
+    PushPlus = 'http://www.pushplus.plus/send'
     data = {
         "token":PUSHPLUSSCKEY,
         "title":newstitle,
