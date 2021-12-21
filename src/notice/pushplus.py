@@ -6,6 +6,9 @@
 # 通过pushplus推送威胁情报
 # -----------------------------------------------
 
+import os
+import json
+import requests
 
 PUSHPLUSSCKEY = os.environ.get('PUSHPLUSSCKEY') ##PUSHPLUS推送KEY
 
