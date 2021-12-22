@@ -31,7 +31,7 @@ class CVEInfo:
             self.md5 = hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
         return self.md5
 
-
+    # 限制漏洞描述为60个字符，主要是国外的描述忒多了
     def to_html(self):
         return '<br/>'.join([
             "<br/>=====================================",
