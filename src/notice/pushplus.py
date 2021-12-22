@@ -27,6 +27,7 @@ def to_pushplus(cves):
     print(len(content))
     content = content[0:6666]
     print(len(content))
+    print(PUSHPLUSSCKEY)
     print("#################################")
     data = {
         "token":PUSHPLUSSCKEY,
@@ -34,7 +35,6 @@ def to_pushplus(cves):
         "content":content,
         "template":"html"
     }
-    print(data)
     body=json.dumps(data).encode(encoding='utf-8')
     requests.post(url=PushPlus,data=body,headers=headers)
     return 'PushPlus推送成功'
