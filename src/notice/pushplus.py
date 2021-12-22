@@ -25,9 +25,7 @@ def to_pushplus(cves):
     content = format_content(cves)
     print("#################################")
     print(len(content))
-    content = content[0:6666]
-    print(len(content))
-    print(PUSHPLUSSCKEY)
+    content = content[0:8888]
     print("#################################")
     data = {
         "token":PUSHPLUSSCKEY,
