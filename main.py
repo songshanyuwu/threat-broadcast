@@ -65,6 +65,7 @@ def main(help, top, auto_commit, gtk, mail_smtp, mail_user, mail_pass, qq_user, 
                 all_cves[src] = cves
 
         if all_cves:
+            log.info(all_cves)
             page.to_page(top)
             mail.to_mail(gtk, all_cves, mail_smtp, mail_user, mail_pass)
             qq.to_group(all_cves, qq_user, qq_pass)
