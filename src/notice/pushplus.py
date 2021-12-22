@@ -19,8 +19,9 @@ def to_pushplus(cves):
         "token":PUSHPLUSSCKEY,
         "title":newstitle,
         "content":cves,
-        "template":"html"
+        "template":"txt"
     }
-    body=json.dumps(data).encode(encoding='utf-8')
+    # body=json.dumps(data).encode(encoding='utf-8')
+    body=json.dumps(data)
     requests.post(url=PushPlus,data=body,headers=headers)
     return 'PushPlus推送成功'
