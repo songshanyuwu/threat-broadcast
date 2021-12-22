@@ -31,6 +31,7 @@ def to_pushplus(cves):
         "token":PUSHPLUSSCKEY,
         "title":newstitle,
         "content":content,
+        "topic":"threat-src",
         "template":"html"
     }
     body=json.dumps(data).encode(encoding='utf-8')
