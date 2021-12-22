@@ -34,7 +34,7 @@ class CVEInfo:
 
     def to_html(self):
         return '<br/>'.join([
-            "<br/>==============================================",
+            "<br/>=====================================",
             "[<b>漏洞来源</b>] %s" % self.src,
             "[<b>漏洞编号</b>] <font color='blue'>%s</font>" % self.id,
             "[<b>披露时间</b>] %s" % self.time,
@@ -45,7 +45,7 @@ class CVEInfo:
 
     def to_msg(self):
         return '\n'.join([
-            "\n==============================================",
+            "\n====================================",
             "[ TITLE ] %s" % self.title,
             "[ TIME  ] %s" % self.time,
             "[ CVE   ] %s" % self.id,
@@ -60,7 +60,7 @@ class CVEInfo:
 
     def __repr__(self):
         return '\n'.join([
-            "\n==============================================",
+            "\n====================================",
             "[ TITLE ] %s" % self.title,
             "[ TIME  ] %s" % self.time,
             "[ CVE   ] %s" % self.id,
