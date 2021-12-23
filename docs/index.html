@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2021-12-23 05:38:07 -->
+<!-- RELEASE TIME : 2021-12-23 23:39:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>eb42bfd6425867bbdff73c64651ad423</td>
+       <td>CVE-2021-43854</td>
+       <td>2021-12-23 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NLTK (Natural Language Toolkit) is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing. Versions prior to 3.6.5 are vulnerable to regular expression denial of service (ReDoS) attacks. The vulnerability is present in PunktSentenceTokenizer, sent_tokenize and word_tokenize. Any users of this class, or these two functions, are vulnerable to the ReDoS attack. In short, a specifically crafted long input to any of these vulnerable functions will cause them to take a significant amount of execution time. If your program relies on any of the vulnerable functions for tokenizing unpredictable user input, then we would strongly recommend upgrading to a version of NLTK without the vulnerability. For users unable to upgrade the execution time can be bounded by limiting the maximum length of an input to any of the vulnerable functions. Our recommendation is to implement such a limit.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43854">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e32b67deea1cf155467cfbd4cdb052c</td>
+       <td>CVE-2021-4118</td>
+       <td>2021-12-23 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>pytorch-lightning is vulnerable to Deserialization of Untrusted Data</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e733c3efc8a15bbe34f6c091ec2f87cf</td>
+       <td>CVE-2021-43849</td>
+       <td>2021-12-23 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>cordova-plugin-fingerprint-aio is a plugin provides a single and simple interface for accessing fingerprint APIs on both Android 6+ and iOS. In versions prior to 5.0.1 The exported activity `de.niklasmerz.cordova.biometric.BiometricActivity` can cause the app to crash. This vulnerability occurred because the activity didn't handle the case where it is requested with invalid or empty data which results in a crash. Any third party app can constantly call this activity with no permission. A 3rd party app/attacker using event listener can continually stop the app from working and make the victim unable to open it. Version 5.0.1 of the cordova-plugin-fingerprint-aio doesn't export the activity anymore and is no longer vulnerable. If you want to fix older versions change the attribute android:exported in plugin.xml to false. Please upgrade to version 5.0.1 as soon as possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43849">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ca87b0d7beda6838d50f78df30ce8f5</td>
+       <td>CVE-2021-3892</td>
+       <td>2021-12-23 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2019-18198. Reason: This candidate is a reservation duplicate of CVE-2019-18198. Notes: All CVE users should reference CVE-2019-18198 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-3892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2409dfd72e7013044aa6b2f977ef5423</td>
+       <td>CVE-2021-23175</td>
+       <td>2021-12-23 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GeForce Experience contains a vulnerability in user authorization, where GameStream does not correctly apply individual user access controls for users on the same device, which, with user intervention, may lead to escalation of privileges, information disclosure, data tampering, and denial of service, affecting other resources beyond the intended security authority of GameStream.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79bab7eea308338a4d630403d9d828b0</td>
+       <td>CVE-2021-44526</td>
+       <td>2021-12-23 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine ServiceDesk Plus before 12003 allows authentication bypass in certain admin configurations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44526">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1af3e467209d08f072d0bd4929917405</td>
+       <td>CVE-2021-44600</td>
+       <td>2021-12-23 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The password parameter on Simple Online Mens Salon Management System (MSMS) 1.0 appears to be vulnerable to SQL injection attacks through the password parameter. The predictive tests of this application interacted with that domain, indicating that the injected SQL query was executed. The attacker can retrieve all authentication and information about the users of this system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44600">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0ff669325a248fe73381e3b568c90fb5</td>
+       <td>CVE-2021-44599</td>
+       <td>2021-12-23 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>The id parameter from Online Enrollment Management System 1.0 system appears to be vulnerable to SQL injection attacks. A crafted payload injects a SQL sub-query that calls MySQL's load_file function with a UNC file path that references a URL on an external domain. The application interacted with that domain, indicating that the injected SQL query was executed. The attacker can retrieve sensitive information for all users of this system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6953b95d30b8e19b6c809a105eb5ee23</td>
+       <td>CVE-2021-44273</td>
+       <td>2021-12-23 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>e2guardian v5.4.x <= v5.4.3r is affected by missing SSL certificate validation in the SSL MITM engine. In standalone mode (i.e., acting as a proxy or a transparent proxy), with SSL MITM enabled, e2guardian, if built with OpenSSL v1.1.x, did not validate hostnames in certificates of the web servers that it connected to, and thus was itself vulnerable to MITM attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44273">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ea8b34992a876a23d60b8170ecdd9c0</td>
+       <td>CVE-2021-44548</td>
+       <td>2021-12-23 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Input Validation vulnerability in DataImportHandler of Apache Solr allows an attacker to provide a Windows UNC path resulting in an SMB network call being made from the Solr host to another host on the network. If the attacker has wider access to the network, this may lead to SMB attacks, which may result in: * The exfiltration of sensitive data such as OS user hashes (NTLM/LM hashes), * In case of misconfigured systems, SMB Relay Attacks which can lead to user impersonation on SMB Shares or, in a worse-case scenario, Remote Code Execution This issue affects all Apache Solr versions prior to 8.11.1. This issue only affects Windows.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44548">详情</a></td>
+      </tr>
+
+      <tr>
        <td>11a9d8b5f495db4cc6744d9423df5490</td>
        <td>CVE-2020-20605</td>
        <td>2021-12-22 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2021-12-22 19:15:00 <img src="imgs/new.gif" /></td>
        <td>Unauthenticated Stored Cross-Site Scripting (XSS) vulnerability discovered in Contact Form 7 Database Addon – CFDB7 WordPress plugin (versions <= 1.2.6.1).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36885">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d28ac6cbeb09d1cde1fc23f35668410c</td>
-       <td>CVE-2021-43851</td>
-       <td>2021-12-22 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anuko Time Tracker is an open source, web-based time tracking application written in PHP. SQL injection vulnerability exist in multiple files in Time Tracker version 1.19.33.5606 and prior due to not properly checking of the "group" and "status" parameters in POST requests. Group parameter is posted along when navigating between organizational subgroups (groups.php file). Status parameter is used in multiple files to change a status of an entity such as making a project, task, or user inactive. This issue has been patched in version 1.19.33.5607. An upgrade is highly recommended. If an upgrade is not practical, introduce ttValidStatus function as in the latest version and start using it user input check blocks wherever status field is used. For groups.php fix, introduce ttValidInteger function as in the latest version and use it in the access check block in the file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d28ac6cbeb09d1cde1fc23f35668410c</td>
-       <td>CVE-2021-43851</td>
-       <td>2021-12-22 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anuko Time Tracker is an open source, web-based time tracking application written in PHP. SQL injection vulnerability exist in multiple files in Time Tracker version 1.19.33.5606 and prior due to not properly checking of the "group" and "status" parameters in POST requests. Group parameter is posted along when navigating between organizational subgroups (groups.php file). Status parameter is used in multiple files to change a status of an entity such as making a project, task, or user inactive. This issue has been patched in version 1.19.33.5607. An upgrade is highly recommended. If an upgrade is not practical, introduce ttValidStatus function as in the latest version and start using it user input check blocks wherever status field is used. For groups.php fix, introduce ttValidInteger function as in the latest version and use it in the access check block in the file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d28ac6cbeb09d1cde1fc23f35668410c</td>
-       <td>CVE-2021-43851</td>
-       <td>2021-12-22 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anuko Time Tracker is an open source, web-based time tracking application written in PHP. SQL injection vulnerability exist in multiple files in Time Tracker version 1.19.33.5606 and prior due to not properly checking of the "group" and "status" parameters in POST requests. Group parameter is posted along when navigating between organizational subgroups (groups.php file). Status parameter is used in multiple files to change a status of an entity such as making a project, task, or user inactive. This issue has been patched in version 1.19.33.5607. An upgrade is highly recommended. If an upgrade is not practical, introduce ttValidStatus function as in the latest version and start using it user input check blocks wherever status field is used. For groups.php fix, introduce ttValidInteger function as in the latest version and use it in the access check block in the file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d28ac6cbeb09d1cde1fc23f35668410c</td>
-       <td>CVE-2021-43851</td>
-       <td>2021-12-22 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anuko Time Tracker is an open source, web-based time tracking application written in PHP. SQL injection vulnerability exist in multiple files in Time Tracker version 1.19.33.5606 and prior due to not properly checking of the "group" and "status" parameters in POST requests. Group parameter is posted along when navigating between organizational subgroups (groups.php file). Status parameter is used in multiple files to change a status of an entity such as making a project, task, or user inactive. This issue has been patched in version 1.19.33.5607. An upgrade is highly recommended. If an upgrade is not practical, introduce ttValidStatus function as in the latest version and start using it user input check blocks wherever status field is used. For groups.php fix, introduce ttValidInteger function as in the latest version and use it in the access check block in the file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d28ac6cbeb09d1cde1fc23f35668410c</td>
-       <td>CVE-2021-43851</td>
-       <td>2021-12-22 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anuko Time Tracker is an open source, web-based time tracking application written in PHP. SQL injection vulnerability exist in multiple files in Time Tracker version 1.19.33.5606 and prior due to not properly checking of the "group" and "status" parameters in POST requests. Group parameter is posted along when navigating between organizational subgroups (groups.php file). Status parameter is used in multiple files to change a status of an entity such as making a project, task, or user inactive. This issue has been patched in version 1.19.33.5607. An upgrade is highly recommended. If an upgrade is not practical, introduce ttValidStatus function as in the latest version and start using it user input check blocks wherever status field is used. For groups.php fix, introduce ttValidInteger function as in the latest version and use it in the access check block in the file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54ad2c634e87e22603d2154c502e011f</td>
-       <td>CVE-2021-44927</td>
-       <td>2021-12-21 21:15:00</td>
-       <td>A null pointer dereference vulnerability exists in gpac 1.1.0 in the gf_sg_vrml_mf_append function, which causes a segmentation fault and application crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44927">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31e7a5075376c7682c946c6b37e05126</td>
-       <td>CVE-2021-44926</td>
-       <td>2021-12-21 21:15:00</td>
-       <td>A null pointer dereference vulnerability exists in the gpac in the gf_node_get_tag function, which causes a segmentation fault and application crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44926">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7bf95ed3e856762f01b9488c2d8381a</td>
-       <td>CVE-2021-44925</td>
-       <td>2021-12-21 21:15:00</td>
-       <td>A null pointer dereference vulnerability exists in gpac 1.1.0 in the gf_svg_get_attribute_name function, which causes a segmentation fault and application crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44925">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>23e4ba8452e891a1143b77777559ac8f</td>
-       <td>CVE-2021-44924</td>
-       <td>2021-12-21 21:15:00</td>
-       <td>An infinite loop vulnerability exists in gpac 1.1.0 in the gf_log function, which causes a Denial of Service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44924">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a8340a1b9f294d2337df5f3c9cb79f5</td>
-       <td>CVE-2021-44923</td>
-       <td>2021-12-21 21:15:00</td>
-       <td>A null pointer dereference vulnerability exists in gpac 1.1.0 in the gf_dump_vrml_dyn_field.isra function, which causes a segmentation fault and application crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44923">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>08ac27e889d672aea98fb07c896750dc</td>
+       <td>CNNVD-202112-2208 (CVE-2020-20426)</td>
+       <td>2021-12-22 23:39:19 <img src="imgs/new.gif" /></td>
+       <td>S-CMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2208">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f52336f735d296ba51fcdfbac0232db8</td>
+       <td>CNNVD-202112-2209 (CVE-2021-36338)</td>
+       <td>2021-12-22 23:39:17 <img src="imgs/new.gif" /></td>
+       <td>Dell EMC Unisphere for PowerMax 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2209">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf3177a1669ba091de69731e8e7db95e</td>
+       <td>CNNVD-202112-2210 (CVE-2020-20593)</td>
+       <td>2021-12-22 23:39:15 <img src="imgs/new.gif" /></td>
+       <td>Rockoa 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2210">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1de6723badaf09693d17521fd3ff2149</td>
+       <td>CNNVD-202112-2211 (CVE-2020-20595)</td>
+       <td>2021-12-22 23:39:13 <img src="imgs/new.gif" /></td>
+       <td>OPMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2211">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2344b29f04d08742f4c29cfbaf0a63e</td>
+       <td>CNNVD-202112-2212 (CVE-2020-20597)</td>
+       <td>2021-12-22 23:39:11 <img src="imgs/new.gif" /></td>
+       <td>Lemon OA 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2212">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6138dfb9f4acf7cc5eb1febda08241ba</td>
+       <td>CNNVD-202112-2213 (CVE-2020-20598)</td>
+       <td>2021-12-22 23:39:09 <img src="imgs/new.gif" /></td>
+       <td>Lemon OA 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2213">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bc1d17d6156b2f9df7b33b46ecf24134</td>
+       <td>CNNVD-202112-2214 (CVE-2020-20600)</td>
+       <td>2021-12-22 23:39:07 <img src="imgs/new.gif" /></td>
+       <td>MetInfo 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2214">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aaf2769a8e4c268b9725a95039f3c8be</td>
+       <td>CNNVD-202112-2215 (CVE-2020-20601)</td>
+       <td>2021-12-22 23:39:05 <img src="imgs/new.gif" /></td>
+       <td>ThinkCMF 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2215">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32285d04acaf20144ad83eb2d349cebb</td>
+       <td>CNNVD-202112-2216 (CVE-2020-20605)</td>
+       <td>2021-12-22 23:39:03 <img src="imgs/new.gif" /></td>
+       <td>BlogCMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2216">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>266e13b8f6340093d8819e53ab2f1d27</td>
+       <td>CNNVD-202112-2217 (CVE-2021-20873)</td>
+       <td>2021-12-22 23:39:01 <img src="imgs/new.gif" /></td>
+       <td>Yappli 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2217">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7be2c0984b6c48b096f4f80829c15724</td>
        <td>CNNVD-202112-1499 (CVE-2021-4076)</td>
        <td>2021-12-20 12:51:27</td>
@@ -953,86 +1033,6 @@
        <td>2021-12-18 08:08:19</td>
        <td>snipe-it 跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02f47489bf364e53727853c702e63f15</td>
-       <td>CNNVD-202112-1495 (CVE-2021-4131)</td>
-       <td>2021-12-18 08:08:17</td>
-       <td>livehelperchat 跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1495">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>978f29869bd98e109b66d1120ab63b91</td>
-       <td>CNNVD-202112-1490 (CVE-2021-41498)</td>
-       <td>2021-12-17 12:51:44</td>
-       <td>ajaxsoundstudio.com Pyo安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35c2a4f42a6fa94c1216cf9a145d5b68</td>
-       <td>CNNVD-202112-1491 (CVE-2021-41499)</td>
-       <td>2021-12-17 12:51:42</td>
-       <td>ajaxsoundstudio.com Pyo  安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b9c27de3cf1a940ea49e654bfe7eb64</td>
-       <td>CNNVD-202112-1492 (CVE-2021-41500)</td>
-       <td>2021-12-17 12:51:40</td>
-       <td>Cvxopt 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5973d325c352d896cceb7730dd2aea0c</td>
-       <td>CNNVD-202112-1432 (CVE-2021-20321)</td>
-       <td>2021-12-17 12:43:46</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1432">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>978f29869bd98e109b66d1120ab63b91</td>
-       <td>CNNVD-202112-1490 (CVE-2021-41498)</td>
-       <td>2021-12-17 08:30:27</td>
-       <td>ajaxsoundstudio.com Pyo安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35c2a4f42a6fa94c1216cf9a145d5b68</td>
-       <td>CNNVD-202112-1491 (CVE-2021-41499)</td>
-       <td>2021-12-17 08:30:24</td>
-       <td>ajaxsoundstudio.com Pyo  安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b9c27de3cf1a940ea49e654bfe7eb64</td>
-       <td>CNNVD-202112-1492 (CVE-2021-41500)</td>
-       <td>2021-12-17 08:30:22</td>
-       <td>Cvxopt 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>978f29869bd98e109b66d1120ab63b91</td>
-       <td>CNNVD-202112-1490 (CVE-2021-41498)</td>
-       <td>2021-12-17 08:08:28</td>
-       <td>ajaxsoundstudio.com Pyo安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35c2a4f42a6fa94c1216cf9a145d5b68</td>
-       <td>CNNVD-202112-1491 (CVE-2021-41499)</td>
-       <td>2021-12-17 08:08:26</td>
-       <td>ajaxsoundstudio.com Pyo  安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-1491">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>543d3456ec8dea3ca681d9c7f69463bf</td>
+       <td>CVE-2020-3331</td>
+       <td>2021-12-23 13:44:19 <img src="imgs/new.gif" /></td>
+       <td>Cisco RV110W Wireless-N VPN Firewall和Cisco RV215W Wireless-N VPN Router 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8e356efb1b904e05bcd4c458d3b5ac09">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37592df1dc93f327ff7d023001f71684</td>
+       <td>CVE-2020-3197</td>
+       <td>2021-12-23 13:44:15 <img src="imgs/new.gif" /></td>
+       <td>Cisco Meetings App 授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d2938024cf4421988225919ecfa4a32">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f12162f3e07c25293381cfa44d859da9</td>
+       <td>CVE-2020-3323</td>
+       <td>2021-12-23 13:44:13 <img src="imgs/new.gif" /></td>
+       <td>Cisco Small Business 输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9ab7e1e6c1584b8aab9804e45fc7de37">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>725762c2baf01479d780b209bb507b2e</td>
+       <td>CVE-2020-3146</td>
+       <td>2021-12-23 13:44:10 <img src="imgs/new.gif" /></td>
+       <td>多款Cisco产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9b961087acfc477e940a944ef35834ff">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ceee8f9bb6f3fa5fd179bf33681e0bfb</td>
+       <td>CVE-2020-3150</td>
+       <td>2021-12-23 13:44:06 <img src="imgs/new.gif" /></td>
+       <td>Cisco Small Business RV110W Wireless-N VPN Firewall和RV215W Wireless-N VPN Router 授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d42514daa26a479e9aa462d004b23085">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f5596e3f3b89f868842af7ad601c940</td>
+       <td>CVE-2020-3330</td>
+       <td>2021-12-23 13:44:04 <img src="imgs/new.gif" /></td>
+       <td>Cisco Small Business RV110W Wireless-N VPN Firewall 信任管理问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=280cd5f132334ff19dfab38c378005b8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42cae0c44836805c53899fdc50ef0d77</td>
+       <td>CVE-2020-3140</td>
+       <td>2021-12-23 13:44:00 <img src="imgs/new.gif" /></td>
+       <td>Cisco Prime License Manager Software 信任管理问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=038b1b4de09a4aadb5380884e257f8f8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5750f6573876f21c346a290f814e0cde</td>
+       <td>CVE-2020-3144</td>
+       <td>2021-12-23 13:43:57 <img src="imgs/new.gif" /></td>
+       <td>多款Cisco产品授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=37eb30c2f8a44e10abe70757dca724fb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>78d39593e4819d4493486f6875fdb2d3</td>
+       <td>CVE-2020-3180</td>
+       <td>2021-12-23 13:43:54 <img src="imgs/new.gif" /></td>
+       <td>Cisco SD-WAN Solution 权限许可和访问控制问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6f52c9136ecb47db862cb538129b07a7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d214f23ee50bcb6357c6b3ce5ae1294f</td>
+       <td>CVE-2020-15586</td>
+       <td>2021-12-23 13:43:50 <img src="imgs/new.gif" /></td>
+       <td>Google Go 竞争条件问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c4c68a358b02483d8b8a6e8a7a3397be">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f4670caf5db097a883b5697704c4729b</td>
        <td>CVE-2020-14713</td>
        <td>2021-12-22 13:44:16 <img src="imgs/new.gif" /></td>
@@ -1835,86 +1915,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
       </tr>
 
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc91395368823c37579fbf2fd51fa6d4</td>
-       <td>CVE-2020-14617</td>
-       <td>2021-12-21 13:44:57</td>
-       <td>Oracle Construction and Engineering Primavera Unifier 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab996559b1754579953069a4208df99d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29624602aefc32f34ca0753c15e354f5</td>
-       <td>CVE-2020-14611</td>
-       <td>2021-12-21 13:44:54</td>
-       <td>Oracle Fusion Middleware WebCenter Portal 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34c0c36fc5bd46fea74e4a3dff91eb50">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29624602aefc32f34ca0753c15e354f5</td>
-       <td>CVE-2020-14611</td>
-       <td>2021-12-21 13:44:54</td>
-       <td>Oracle Fusion Middleware WebCenter Portal 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34c0c36fc5bd46fea74e4a3dff91eb50">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29624602aefc32f34ca0753c15e354f5</td>
-       <td>CVE-2020-14611</td>
-       <td>2021-12-21 13:44:54</td>
-       <td>Oracle Fusion Middleware WebCenter Portal 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34c0c36fc5bd46fea74e4a3dff91eb50">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29624602aefc32f34ca0753c15e354f5</td>
-       <td>CVE-2020-14611</td>
-       <td>2021-12-21 13:44:54</td>
-       <td>Oracle Fusion Middleware WebCenter Portal 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34c0c36fc5bd46fea74e4a3dff91eb50">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1931,6 +1931,126 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>150c70ea16947d635b43c52fcccdfae4</td>
+       <td>CVE-2021-34912</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Bentley View越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62491">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ea179f4629fe6b5939e9028fcb94a21</td>
+       <td>CVE-2021-34911</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Bentley View内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62490">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>756ca3fae2d24b9887e3d8ef2e1d8ba9</td>
+       <td>CVE-2021-34915</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Bentley View越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62489">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af4f8f6ee29dda23a098b6a287638ecb</td>
+       <td>CVE-2021-34932</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Bentley View越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62488">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>248e0878218179c2e9c6d6db3dc8aabf</td>
+       <td>CVE-2021-34893</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Bentley View堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62487">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>caa27188c3ed06e589ac567111e9a28d</td>
+       <td>CVE-2021-21887</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62486">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23f9d2f8e987522a03e845f8c33c8b29</td>
+       <td>CVE-2021-21889</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc7da4bc841ec78fc06481c89daa1c4d</td>
+       <td>CVE-2021-21895</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62484">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cebd080c30f6415121cac51d47b4d6aa</td>
+       <td>CVE-2021-21896</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62483">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe6a55180a6236b55b83478720be5a38</td>
+       <td>CVE-2021-21891</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62482">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eeaa827f4046e0e987aca28c070bd909</td>
+       <td>CVE-2021-21894</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62481">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9eba2ae6d60116abef45c87b1590ce87</td>
+       <td>CVE-2021-21892</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62480">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>472ac784691a8e3d9c03a39f88ddcbe1</td>
+       <td>CVE-2021-21890</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Lantronix PremierWave堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62479">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7d1ba6c7a079c02777dae439ee2e309</td>
+       <td>CVE-2021-21920</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Advantech R-SeeNet SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62478">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e2fccb9237c69aae8c9581516bd8e45</td>
+       <td>CVE-2021-21923</td>
+       <td>2021-12-23 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>Advantech R-SeeNet SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62477">详情</a></td>
+      </tr>
+
       <tr>
        <td>033751e15b75675da3ce50d4564fbcd3</td>
        <td>CVE-2021-34923</td>
@@ -2051,126 +2171,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62437">详情</a></td>
       </tr>
 
-      <tr>
-       <td>aa8816e9dcda56450b58242802427e58</td>
-       <td>CVE-2021-40850</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>FiberHome ONU GPON命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62391">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d45844d62c562b2840d4d025a19cbcf</td>
-       <td>CVE-2021-0958</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Google Android拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62390">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>617c0723b1020d72ab0c6caa251f82c3</td>
-       <td>CVE-2021-34872</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bdaf4c4d28c110e9c149a432ea42de6b</td>
-       <td>CVE-2021-34875</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62388">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e53d593e2fac87236f934bdb7b6c0e2</td>
-       <td>CVE-2021-34876</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bc425d7f3a0ddbe6f2a9837710522b61</td>
-       <td>CVE-2021-34877</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62386">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1ea8903822cc7318f117892f21c7aaf</td>
-       <td>CVE-2021-34874</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View内存破坏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62385">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>450a2b55590a9c32e6efeb6f19b6228a</td>
-       <td>CVE-2021-34873</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62384">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9278e1385b0a19b635879edc7b91dc9</td>
-       <td>CVE-2021-34871</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62383">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d01489b78993cc7c424900a1fae9168c</td>
-       <td>CVE-2021-34878</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62382">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a8e6215ea7d589255aec429590727bc7</td>
-       <td>CVE-2021-34888</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62381">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eac4be2a96e22beebdd1d24e31915974</td>
-       <td>CVE-2021-34879</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62380">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e9bcb855861e0c1da56d6838fcf2b9e</td>
-       <td>CVE-2021-34883</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62379">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>745eadc71c6436fd50f5e6aff1b9e6b5</td>
-       <td>CVE-2021-34884</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>872d53fada859cecb3dccdf05fe68810</td>
-       <td>CVE-2021-34885</td>
-       <td>2021-12-20 09:32:32</td>
-       <td>Bentley View越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62377">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2281,6 +2281,22 @@
        <td>2021-12-16 19:15:08 </td>
        <td>JFinal_cms 5.1.0 is vulnerable to regex injection that may lead to Denial of Service.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-37262">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffd80fc18c481a7d096a1e0862236e36</td>
+       <td>CVE-2021-3960</td>
+       <td>2021-12-16 15:15:07 </td>
+       <td>Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in the UpdateServer component of Bitdefender GravityZone allows an attacker to execute arbitrary code on vulnerable instances. This issue affects Bitdefender GravityZone versions prior to 3.3.8.272</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-3960">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3c5f0cb90a7f76b65f1e77606390742d</td>
+       <td>CVE-2021-3959</td>
+       <td>2021-12-16 15:15:07 </td>
+       <td>A Server-Side Request Forgery (SSRF) vulnerability in the EPPUpdateService component of Bitdefender Endpoint Security Tools allows an attacker to proxy requests to the relay server. This issue affects: Bitdefender Bitdefender GravityZone versions prior to 3.3.8.272</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-3959">详情</a></td>
       </tr>
 
       <tr>
@@ -2404,27 +2420,11 @@
       </tr>
 
       <tr>
-       <td>f1ca8b783142e1aad833a4f83aa3064b</td>
-       <td>CVE-2021-36888</td>
-       <td>2021-12-15 19:15:14 </td>
-       <td>Unauthenticated Arbitrary Options Update vulnerability leading to full website compromise discovered in Image Hover Effects Ultimate (versions &lt;= 9.6.1) WordPress plugin.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36888">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d0d34bfa5fb7392c3ad160c0e2ee62d</td>
-       <td>CVE-2021-0927</td>
-       <td>2021-12-15 19:15:11 </td>
-       <td>In requestChannelBrowsable of TvInputManagerService.java, there is a possible permission bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-8.1 Android-9Android ID: A-189824175</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-0927">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07049fe18aee2793b0db1b2045f087d7</td>
-       <td>CVE-2021-0926</td>
-       <td>2021-12-15 19:15:11 </td>
-       <td>In onCreate of NfcImportVCardActivity.java, there is a possible way to add a contact without user's consent due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-9Android ID: A-191053931</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-0926">详情</a></td>
+       <td>a5ab9e8393c6edc274d7f5a8f9e167f8</td>
+       <td>CVE-2021-39641</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>Product: AndroidVersions: Android kernelAndroid ID: A-126949257References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39641">详情</a></td>
       </tr>
 
      </tbody>
