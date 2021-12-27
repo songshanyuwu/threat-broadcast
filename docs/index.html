@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2021-12-26 23:38:40 -->
+<!-- RELEASE TIME : 2021-12-27 05:37:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ee1455f25170a9372fdfcc554b37dc86</td>
+       <td>CVE-2021-45711</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the simple_asn1 crate 0.6.0 before 0.6.1 for Rust. There is a panic if UTCTime data, supplied by a remote attacker, has a second character greater than 0x7f.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45711">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1602e04f7ba3fbb150de9ef33c5b40f</td>
+       <td>CVE-2021-45710</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the tokio crate before 1.8.4, and 1.9.x through 1.13.x before 1.13.1, for Rust. In certain circumstances involving a closed oneshot channel, there is a data race and memory corruption.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e470d41b91ab0839a61a1fcf250e6a52</td>
+       <td>CVE-2021-45709</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the crypto2 crate through 2021-10-08 for Rust. During Chacha20 encryption and decryption, an unaligned read of a u32 may occur.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>73c56dd11597ea4588cdcd545df64a28</td>
+       <td>CVE-2021-45708</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the abomonation crate through 2021-10-17 for Rust. Because transmute operations are insufficiently constrained, there can be an information leak or ASLR bypass.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66e62f39730f151ba5f6526c600f7ccb</td>
+       <td>CVE-2021-45707</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the nix crate before 0.20.2, 0.21.x before 0.21.2, and 0.22.x before 0.22.2 for Rust. unistd::getgrouplist has an out-of-bounds write if a user is in more than 16 /etc/groups groups.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45707">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51d3138d715c6274d06c499eca0d0c6a</td>
+       <td>CVE-2021-45706</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the zeroize_derive crate before 1.1.1 for Rust. Dropped memory is not zeroed out for an enum.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45706">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>340f76d120d8852a3bb27bbe03bc06b9</td>
+       <td>CVE-2021-45705</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the nanorand crate before 0.6.1 for Rust. There can be multiple mutable references to the same object because the TlsWyRand Deref implementation dereferences a raw pointer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45705">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a11a2195b496a13bdf1b632b079408f</td>
+       <td>CVE-2021-45704</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the metrics-util crate before 0.7.0 for Rust. There is a data race and memory corruption because AtomicBucket<T> unconditionally implements the Send and Sync traits.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45704">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7b249a4e1d10106724c6f4831d656e29</td>
+       <td>CVE-2021-45703</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the tectonic_xdv crate before 0.1.12 for Rust. XdvParser::<T>::process may read from uninitialized memory locations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45703">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b57cc3e24d38da1b301af87e9dac613e</td>
+       <td>CVE-2021-45702</td>
+       <td>2021-12-27 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the tremor-script crate before 0.11.6 for Rust. A merge operation may result in a use-after-free.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45702">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6ce58418015a71e2da0e3e6cfcf9ad47</td>
        <td>CVE-2021-44598</td>
        <td>2021-12-26 15:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2021-12-26 00:15:00 <img src="imgs/new.gif" /></td>
        <td>MediaTek microchips, as used in NETGEAR devices through 2021-11-11 and other devices, mishandle IEEE 1905 protocols.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-37566">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6196eb541a3566f14d1072ff757eb92</td>
-       <td>CVE-2021-4166</td>
-       <td>2021-12-25 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>vim is vulnerable to Out-of-bounds Read</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4166">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b6f369e5cd596b456969b3cbb7f20dec</td>
-       <td>CVE-2021-4162</td>
-       <td>2021-12-25 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>archivy is vulnerable to Cross-Site Request Forgery (CSRF)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4162">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc1e31880b220e72a95a1af3b0c628cb</td>
-       <td>CVE-2021-45489</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NetBSD through 9.2, the IPv6 Flow Label generation algorithm employs a weak cryptographic PRNG.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45489">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ed511d010ef831196ff2c6fe4677cb1</td>
-       <td>CVE-2021-45488</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NetBSD through 9.2, there is an information leak in the TCP ISN (ISS) generation algorithm.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5dffb8ddf36310857f5439356ecff83d</td>
-       <td>CVE-2021-45487</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NetBSD through 9.2, the IPv4 ID generation algorithm does not use appropriate cryptographic measures.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45487">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4627124b52205019a58f2db458f9e57d</td>
-       <td>CVE-2021-45486</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In the IPv4 implementation in the Linux kernel before 5.12.4, net/ipv4/route.c has an information leak because the hash table is very small.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45486">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7594f77d216bee8e65f52e6e10fccf70</td>
-       <td>CVE-2021-45485</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In the IPv6 implementation in the Linux kernel before 5.13.3, net/ipv6/output_core.c has an information leak because of certain use of a hash table which, although big, doesn't properly consider that IPv6-based attackers can typically choose among many IPv6 source addresses.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45485">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f2f9ce6c4d15dc1672359779351bcd3</td>
-       <td>CVE-2021-45484</td>
-       <td>2021-12-25 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NetBSD through 9.2, the IPv6 fragment ID generation algorithm employs a weak cryptographic PRNG.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45484">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03706e236108e332f610a2fcecf7aece</td>
-       <td>CVE-2021-45483</td>
-       <td>2021-12-25 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>In WebKitGTK before 2.32.4, there is a use-after-free in WebCore::Frame::page, a different vulnerability than CVE-2021-30889.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45483">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1f38a4b86c7c35ecb73eae53502a054</td>
-       <td>CVE-2021-45482</td>
-       <td>2021-12-25 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>In WebKitGTK before 2.32.4, there is a use-after-free in WebCore::ContainerNode::firstChild, a different vulnerability than CVE-2021-30889.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45482">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>a76389704f52e0ec3d4ba92f48a7523e</td>
        <td>CVE-2020-8317</td>
-       <td>2021-12-25 13:44:23 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:23</td>
        <td>Lenovo Drivers Management 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9cd70ef0c62a46f1bac1c965cbfde3e4">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>8fd65c69be444319f697c14d9f309946</td>
        <td>CVE-2020-7518</td>
-       <td>2021-12-25 13:44:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:20</td>
        <td>Schneider Electric Easergy Builder 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e4e5064692fc442fbadd5035bcc1a6d8">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>e2a894041f96ba740b5ef75244b4e73c</td>
        <td>CVE-2020-7515</td>
-       <td>2021-12-25 13:44:16 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:16</td>
        <td>Schneider Electric Easergy Builder 信任管理问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c19a5431fdb64cc0af85751a2328a57c">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>44384d4b2409118b1e45c649e371bdb9</td>
        <td>CVE-2020-10606</td>
-       <td>2021-12-25 13:44:13 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:13</td>
        <td>多款OSIsoft产品安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9a699d779d3444e7bff2258650a2b3dc">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>8259b41b9aea253ac04d70973216f91c</td>
        <td>CVE-2020-15917</td>
-       <td>2021-12-25 13:44:13 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:13</td>
        <td>Claws Mail 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=231d679690144e6a803b3e23eae66c7d">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>22879a14bd8f72437cca8f5465fcf63c</td>
        <td>CVE-2020-8326</td>
-       <td>2021-12-25 13:44:07 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:07</td>
        <td>Lenovo Drivers Management 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=50b312515eb345d29082e5963f79266a">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>e3a9c5453628ff81c13be93e75fd8cd7</td>
        <td>CVE-2020-15633</td>
-       <td>2021-12-25 13:44:04 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:04</td>
        <td>D-Link DIR-867和DIR-878 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7d254bd6b1be4c2fa161b39f349351f0">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>271995437651a14f2980f5c6090d08e0</td>
        <td>CVE-2020-7519</td>
-       <td>2021-12-25 13:44:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:44:00</td>
        <td>Schneider Electric Easergy Builder 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=352ab4b08163431aa06fa2507e679a41">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>03169118cf8090be6d47380413c11f6f</td>
        <td>CVE-2020-14307</td>
-       <td>2021-12-25 13:43:57 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:43:57</td>
        <td>Red Hat Wildfly 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b62b40a88c62424d97805dc99d0604a1">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>3ae0e899a8233ee30c24e54b6094a287</td>
        <td>CVE-2020-7516</td>
-       <td>2021-12-25 13:43:53 <img src="imgs/new.gif" /></td>
+       <td>2021-12-25 13:43:53</td>
        <td>Schneider Electric Easergy Builder 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ede86ea11d3481cb4f1a765d28eb0d0">详情</a></td>
       </tr>
