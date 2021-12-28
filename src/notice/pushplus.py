@@ -47,13 +47,9 @@ def format_content(cves):
 %(src_infos)s
 </ul>
 <h3>详细漏洞清单如下：</h3>
-<br/>
 %(cve_infos)s
-<br/>
-+++++++++++++++++++++++++++++++++
-<br/>
++++++++++++++++++++++++++++++++++++++
 <font color="red">【情报收集与播报支持】</font>
-<br/>
 <a href="https://lyy289065406.github.io/threat-broadcast/">https://lyy289065406.github.io/threat-broadcast/</a>
 '''
     src_infos = []
