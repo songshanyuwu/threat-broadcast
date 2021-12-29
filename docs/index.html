@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2021-12-28 23:39:07 -->
+<!-- RELEASE TIME : 2021-12-29 23:38:51 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>7e8a20ef23aa18ec6a4d4db37ac4c3b2</td>
        <td></td>
-       <td>2021-12-27 10:23:48 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 10:23:48</td>
        <td>安全事件周报 (12.20-12.26)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=da33ca52a982947907a18d6570909546">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d702523a5bc6b4c0fe60d0119af094c1</td>
+       <td>CVE-2021-36724</td>
+       <td>2021-12-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>ForeScout - SecureConnector Local Service DoS - A low privilaged user which doesn't have permissions to shutdown the secure connector service writes a large amount of characters in the installationPath. This will cause the buffer to overflow and override the stack cookie causing the service to crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36724">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>21f6d295397c641d8e17bcbeed746347</td>
+       <td>CVE-2021-45885</td>
+       <td>2021-12-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Stormshield Network Security (SNS) 4.2.2 through 4.2.7 (fixed in 4.2.8). Under a specific update-migration scenario, the first SSH password change does not properly clear the old password.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45885">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d685e1fedd63dbe7369549ee4ed854a3</td>
+       <td>CVE-2021-4187</td>
+       <td>2021-12-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>vim is vulnerable to Use After Free</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4187">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bed0119416241d9f4cd53b62248d434b</td>
+       <td>CVE-2021-25993</td>
+       <td>2021-12-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Requarks wiki.js, versions 2.0.0-beta.147 to 2.5.255 are affected by Stored XSS vulnerability, where a low privileged (editor) user can upload a SVG file that contains malicious JavaScript while uploading assets in the page. That will send the JWT tokens to the attacker’s server and will lead to account takeover when accessed by the victim.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-25993">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f202778d90767cfb1fa41bacf914826</td>
+       <td>CVE-2021-23727</td>
+       <td>2021-12-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23727">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>051eb49e6025b1da7417270504badff0</td>
+       <td>CVE-2021-4176</td>
+       <td>2021-12-29 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>livehelperchat is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3fb274d57e4657f0b60e8989bd2885f</td>
+       <td>CVE-2021-4175</td>
+       <td>2021-12-29 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>livehelperchat is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00e9a4181a61a852e8cf72ceb6248684</td>
+       <td>CVE-2021-36723</td>
+       <td>2021-12-29 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Emuse - eServices / eNvoice Exposure Of Private Personal Information due to lack of identification mechanisms and predictable IDs an attacker can scrape all the files on the service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36723">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>31782d0c99253fd4134f0568249618e1</td>
+       <td>CVE-2021-36722</td>
+       <td>2021-12-29 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Emuse - eServices / eNvoice SQL injection can be used in various ways ranging from bypassing login authentication or dumping the whole database to full RCE on the affected endpoints. The SQLi caused by CWE-209: Generation of Error Message Containig Sensetive Information, showing parts of the aspx code and the webroot location , information an attacker can leverage to further compromise the host.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36722">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b74eb72eca19003d9c25518f99d0f51c</td>
+       <td>CVE-2021-38688</td>
+       <td>2021-12-29 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>An improper authentication vulnerability has been reported to affect Android App Qfile. If exploited, this vulnerability allows attackers to compromise app and access information We have already fixed this vulnerability in the following versions of Qfile: Qfile 3.0.0.1105 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-38688">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dfa5f1b36b5584a778aefdd5488c70d4</td>
        <td>CVE-2021-44832</td>
        <td>2021-12-28 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>27f6659da861c1a8f732f9173d9bf43e</td>
        <td>CVE-2021-45906</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>OpenWrt 21.02.1 allows XSS via the NAT Rules Name screen.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45906">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>662ba44791644d9e2844cdaf5371119b</td>
        <td>CVE-2021-45905</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>OpenWrt 21.02.1 allows XSS via the Traffic Rules Name screen.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45905">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>dc0cf29e466ae50353bea7497816026f</td>
        <td>CVE-2021-45904</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>OpenWrt 21.02.1 allows XSS via the Port Forwards Add Name screen.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45904">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>aa05d72ca41e6949dc8dcb3779273b15</td>
        <td>CVE-2020-21238</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>An issue in the user login box of CSCMS v4.0 allows attackers to hijack user accounts via brute force attacks.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-21238">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>d7ae571ccde46b41803d139f28bfbd37</td>
        <td>CVE-2020-21237</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>An issue in the user login box of LJCMS v1.11 allows attackers to hijack user accounts via brute force attacks.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-21237">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>eee278476feed7cbdf4eef7571182f26</td>
        <td>CVE-2020-21236</td>
-       <td>2021-12-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:15:00</td>
        <td>A vulnerability in /damicms-master/admin.php?s=/Article/doedit of DamiCMS v6.0 allows attackers to compromise and impersonate user accounts via obtaining a user's session cookie.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-21236">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>371b9e3a123c291f682bce6295ffbaff</td>
        <td>CVE-2021-45896</td>
-       <td>2021-12-27 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 22:15:00</td>
        <td>Nokia FastMile 3TG00118ABAD52 devices allow privilege escalation by an authenticated user via is_ctc_admin=1 to login_web_app.cgi and use of Import Config File.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45896">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>d287b17a11b96989e7ad1a87abd11327</td>
        <td>CVE-2021-45884</td>
-       <td>2021-12-27 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 22:15:00</td>
        <td>In Brave Desktop 1.17 through 1.33 before 1.33.106, when CNAME-based adblocking and a proxying extension with a SOCKS fallback are enabled, additional DNS requests are issued outside of the proxying extension using the system's DNS settings, resulting in information disclosure. NOTE: this issue exists because of an incomplete fix for CVE-2021-21323 and CVE-2021-22916.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45884">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>631062fc4708698b3ef605d02bc48b8f</td>
        <td>CVE-2021-43858</td>
-       <td>2021-12-27 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 22:15:00</td>
        <td>MinIO is a Kubernetes native application for cloud storage. Prior to version `RELEASE.2021-12-27T07-23-18Z`, a malicious client can hand-craft an HTTP API call that allows for updating policy for a user and gaining higher privileges. The patch in version `RELEASE.2021-12-27T07-23-18Z` changes the accepted request body type and removes the ability to apply policy changes through this API. There is a workaround for this vulnerability: Changing passwords can be disabled by adding an explicit `Deny` rule to disable the API for users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43858">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>ae7fcdec2e5d0ee8a1e17261e0be366f</td>
        <td>CVE-2021-45895</td>
-       <td>2021-12-27 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 21:15:00</td>
        <td>Netgen Tags Bundle 3.4.x before 3.4.11 and 4.0.x before 4.0.15 allows XSS in the Tags Admin interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45895">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42354d4f6c715ed0b23730d63eb5feeb</td>
-       <td>CVE-2021-45890</td>
-       <td>2021-12-27 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>basic/BasicAuthProvider.java in AuthGuard before 0.9.0 allows authentication via an inactive identifier.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45890">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76b7d4edbf865ebccf74fb4819d45647</td>
-       <td>CVE-2021-43857</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Gerapy is a distributed crawler management framework. Gerapy prior to version 0.9.8 is vulnerable to remote code execution, and this issue is patched in version 0.9.8.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43857">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f3005d3406a84de7014c0f1ac78050b</td>
-       <td>CVE-2021-43552</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>The use of a hard-coded cryptographic key significantly increases the possibility encrypted data may be recovered from the Patient Information Center iX (PIC iX) Versions B.02, C.02, and C.03.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43552">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>196d29e670fa1735b38103ae4f0c5dce</td>
-       <td>CVE-2021-43550</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>The use of a broken or risky cryptographic algorithm is an unnecessary risk that may result in the exposure of sensitive information, which affects the communications between Patient Information Center iX (PIC iX) Versions C.02 and C.03 and Efficia CM Series Revisions A.01 to C.0x and 4.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43550">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4ab8e6c8a943353d9f9c7685a99f96c</td>
-       <td>CVE-2021-43548</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Patient Information Center iX (PIC iX) Versions C.02 and C.03 receives input or data, but does not validate or incorrectly validates that the input has the properties required to process the data safely and correctly.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43548">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>548a128a3e7e811d1a32fa4fbf11c456</td>
-       <td>CVE-2021-4161</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>The affected products contain vulnerable firmware, which could allow an attacker to sniff the traffic and decrypt login credential details. This could give an attacker admin rights through the HTTP web server.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4161">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6517cc5e2b0a669ece8a82e2b8fa5d0d</td>
-       <td>CVE-2021-35232</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Hard coded credentials discovered in SolarWinds Web Help Desk product. Through these credentials, the attacker with local access to the Web Help Desk host machine allows to execute arbitrary HQL queries against the database and leverage the vulnerability to steal the password hashes of the users or insert arbitrary data into the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-35232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>14de15f04cc88bf54b3fd583a111030f</td>
-       <td>CVE-2021-33017</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>The standard access path of the IntelliBridge EC 40 and 60 Hub (C.00.04 and prior) requires authentication, but the product has an alternate path or channel that does not require authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33017">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd01a250bd91a8d90105dcbdb7a1c183</td>
-       <td>CVE-2021-32993</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IntelliBridge EC 40 and 60 Hub (C.00.04 and prior) contains hard-coded credentials, such as a password or a cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32993">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>efd84b34f2568ebe34e55b0c775780d1</td>
-       <td>CVE-2021-23244</td>
-       <td>2021-12-27 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>ColorOS pregrant dangerous permissions to apps which are listed in a whitelist xml named default-grant-permissions.But some apps in whitelist is not installed, attacker can disguise app with the same package name to obtain dangerous permission.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23244">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,9 +796,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8c99f80c542ced66825b163a4a56cf12</td>
+       <td>CNNVD-202112-2735 (CVE-2021-45903)</td>
+       <td>2021-12-28 23:38:49 <img src="imgs/new.gif" /></td>
+       <td>SuiteCRM 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2735">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61d2003d1e19d3788a36fcc73ed7dce3</td>
+       <td>CNNVD-202112-2736 (CVE-2021-45813)</td>
+       <td>2021-12-28 23:38:47 <img src="imgs/new.gif" /></td>
+       <td>SLICAN WebCTI 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2736">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3dc26a5ef4b63488b00e45eb95d8153e</td>
+       <td>CNNVD-202112-2738 (CVE-2021-45814)</td>
+       <td>2021-12-28 23:38:45 <img src="imgs/new.gif" /></td>
+       <td>Nettmp NNT  SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84604a1e08b91e1f52a3226794f49e81</td>
+       <td>CNNVD-202112-2739 (CVE-2021-42583)</td>
+       <td>2021-12-28 23:38:43 <img src="imgs/new.gif" /></td>
+       <td>Max Mazurov Maddy 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dca43386de76157e283939bd5750cca2</td>
+       <td>CNNVD-202112-2742 (CVE-2021-45812)</td>
+       <td>2021-12-28 23:38:41 <img src="imgs/new.gif" /></td>
+       <td>NUUO Network Video Recorder 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2742">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56d6d7b949858d1c67712a59f33e2e46</td>
+       <td>CNNVD-202112-2743 (CVE-2021-44832)</td>
+       <td>2021-12-28 23:38:40 <img src="imgs/new.gif" /></td>
+       <td>Apache Log4j 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2743">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49ba580118e93ac31eac51c4b708da7f</td>
+       <td>CNNVD-202112-2745 (CVE-2020-22057)</td>
+       <td>2021-12-28 23:38:38 <img src="imgs/new.gif" /></td>
+       <td>EVGA Precision XOC 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>557499862d3f74955957a2f59d9ac738</td>
+       <td>CNNVD-202112-2746 (CVE-2020-22061)</td>
+       <td>2021-12-28 23:38:36 <img src="imgs/new.gif" /></td>
+       <td>SUPERAntispyware 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2746">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd4b8ffe2e978972401adfbd99971ee7</td>
+       <td>CNNVD-202112-2747 (CVE-2020-7878)</td>
+       <td>2021-12-28 23:38:34 <img src="imgs/new.gif" /></td>
+       <td>VideoOffice 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2747">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91b1726c834a0411469e2c65e6a8e7a6</td>
+       <td>CNNVD-202112-2748 (CVE-2020-7883)</td>
+       <td>2021-12-28 23:38:32 <img src="imgs/new.gif" /></td>
+       <td>Printchaser 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2748">详情</a></td>
+      </tr>
+
+      <tr>
        <td>121aeaefb6c0fd8dc343258173c76760</td>
        <td>CNNVD-202112-2644 (CVE-2021-45906)</td>
-       <td>2021-12-27 23:39:05 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:39:05</td>
        <td>OpenWrt  跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2644">详情</a></td>
       </tr>
@@ -806,7 +886,7 @@
       <tr>
        <td>4a2c3076b0c9195294d69c6d57765bf2</td>
        <td>CNNVD-202112-2645 (CVE-2020-21237)</td>
-       <td>2021-12-27 23:39:03 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:39:03</td>
        <td>Ljcmsshop  安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2645">详情</a></td>
       </tr>
@@ -814,7 +894,7 @@
       <tr>
        <td>abde135253da379c8aad48a6c726970f</td>
        <td>CNNVD-202112-2646 (CVE-2021-45911)</td>
-       <td>2021-12-27 23:39:02 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:39:02</td>
        <td>gif2apng 缓冲区错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2646">详情</a></td>
       </tr>
@@ -822,7 +902,7 @@
       <tr>
        <td>4e3a52fe921936422d2362510c120c64</td>
        <td>CNNVD-202112-2647 (CVE-2021-45908)</td>
-       <td>2021-12-27 23:38:59 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:59</td>
        <td>gif2apng 缓冲区错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2647">详情</a></td>
       </tr>
@@ -830,7 +910,7 @@
       <tr>
        <td>367729ef9d320c97a55940bcc4fa2b81</td>
        <td>CNNVD-202112-2648 (CVE-2021-45890)</td>
-       <td>2021-12-27 23:38:57 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:57</td>
        <td>AuthGuard 授权问题漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2648">详情</a></td>
       </tr>
@@ -838,7 +918,7 @@
       <tr>
        <td>ab8fc6af464f6b561da44545ed0e1486</td>
        <td>CNNVD-202112-2649 (CVE-2020-20943)</td>
-       <td>2021-12-27 23:38:55 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:55</td>
        <td>Qibosoft 跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2649">详情</a></td>
       </tr>
@@ -846,7 +926,7 @@
       <tr>
        <td>76e77844bd7285a8c4c2c23aa631ed36</td>
        <td>CNNVD-202112-2650 (CVE-2020-20944)</td>
-       <td>2021-12-27 23:38:53 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:53</td>
        <td>Qibosoft 授权问题漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2650">详情</a></td>
       </tr>
@@ -854,7 +934,7 @@
       <tr>
        <td>fec80f38d6cfe551f7253befc712f5f6</td>
        <td>CNNVD-202112-2651 (CVE-2020-20945)</td>
-       <td>2021-12-27 23:38:51 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:51</td>
        <td>Qibosoft 跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2651">详情</a></td>
       </tr>
@@ -862,7 +942,7 @@
       <tr>
        <td>8951bd89e9f15579df3bcb8d01190848</td>
        <td>CNNVD-202112-2526 (CVE-2021-45701)</td>
-       <td>2021-12-27 23:38:50 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:50</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2526">详情</a></td>
       </tr>
@@ -870,7 +950,7 @@
       <tr>
        <td>50197ec9a5d0e3ed0f8e78b7181d976a</td>
        <td>CNNVD-202112-2652 (CVE-2020-20946)</td>
-       <td>2021-12-27 23:38:49 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:49</td>
        <td>Qibosoft 跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2652">详情</a></td>
       </tr>
@@ -878,7 +958,7 @@
       <tr>
        <td>44c6fc7880a4d9a53231676e07365b9d</td>
        <td>CNNVD-202112-2527 (CVE-2021-45702)</td>
-       <td>2021-12-27 23:38:48 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:48</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2527">详情</a></td>
       </tr>
@@ -886,7 +966,7 @@
       <tr>
        <td>aab34f1ab89f4e553daf6b764eb59260</td>
        <td>CNNVD-202112-2653 (CVE-2020-20948)</td>
-       <td>2021-12-27 23:38:47 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:47</td>
        <td>jeecg 访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2653">详情</a></td>
       </tr>
@@ -894,7 +974,7 @@
       <tr>
        <td>171584f7b40d3a82f4abd33a12645795</td>
        <td>CNNVD-202112-2528 (CVE-2021-45703)</td>
-       <td>2021-12-27 23:38:46 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:46</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2528">详情</a></td>
       </tr>
@@ -902,7 +982,7 @@
       <tr>
        <td>de52724d0de4510fff48a3271476dad1</td>
        <td>CNNVD-202112-2529 (CVE-2021-45708)</td>
-       <td>2021-12-27 23:38:44 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:44</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2529">详情</a></td>
       </tr>
@@ -910,7 +990,7 @@
       <tr>
        <td>a913083526caf69b10f881af3c9f639d</td>
        <td>CNNVD-202112-2530 (CVE-2021-45706)</td>
-       <td>2021-12-27 23:38:42 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:42</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2530">详情</a></td>
       </tr>
@@ -918,7 +998,7 @@
       <tr>
        <td>3b61f4083b46660bb1a5841be1be76af</td>
        <td>CNNVD-202112-2531 (CVE-2021-45704)</td>
-       <td>2021-12-27 23:38:40 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:40</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2531">详情</a></td>
       </tr>
@@ -926,7 +1006,7 @@
       <tr>
        <td>df92bca8eb0bb226e5d6247663e3b3e3</td>
        <td>CNNVD-202112-2532 (CVE-2021-45707)</td>
-       <td>2021-12-27 23:38:39 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:39</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2532">详情</a></td>
       </tr>
@@ -934,7 +1014,7 @@
       <tr>
        <td>9afd95e51004e738411bdef1d0d56674</td>
        <td>CNNVD-202112-2533 (CVE-2021-45709)</td>
-       <td>2021-12-27 23:38:36 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:36</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2533">详情</a></td>
       </tr>
@@ -942,7 +1022,7 @@
       <tr>
        <td>233c87c1fba559e582f37ef4ddbab07f</td>
        <td>CNNVD-202112-2534 (CVE-2021-45710)</td>
-       <td>2021-12-27 23:38:35 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:35</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2534">详情</a></td>
       </tr>
@@ -950,89 +1030,9 @@
       <tr>
        <td>a1ec468a8459d59a6a808e0eef665cb7</td>
        <td>CNNVD-202112-2535 (CVE-2021-45711)</td>
-       <td>2021-12-27 23:38:33 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:33</td>
        <td>Rust 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2535">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c0c24310ffb3f819eec92de46121ad9</td>
-       <td>CNNVD-202112-2239 (CVE-2017-2488)</td>
-       <td>2021-12-23 23:39:14</td>
-       <td>Apple Remote Desktop 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2239">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>481ed8f56a0863472bc00514d057291c</td>
-       <td>CNNVD-202112-2240 (CVE-2017-13910)</td>
-       <td>2021-12-23 23:39:10</td>
-       <td>Apple macOS High Sierra 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2240">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2fdcfeec3886a837eea244d3e6e8087</td>
-       <td>CNNVD-202112-2241 (CVE-2018-4302)</td>
-       <td>2021-12-23 23:39:08</td>
-       <td>多款Apple产品安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>46c2e548cfdcaf1a4ab26347daea149d</td>
-       <td>CNNVD-202112-2242 (CVE-2019-8643)</td>
-       <td>2021-12-23 23:39:04</td>
-       <td>Apple macOS Mojave 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2242">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c1e33e839f8f034176281e36add7cae</td>
-       <td>CNNVD-202112-2243 (CVE-2021-27006)</td>
-       <td>2021-12-23 23:39:02</td>
-       <td>Netapp StorageGRID 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2243">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3e26d5a3f2b6534f7689390e1295c30</td>
-       <td>CNNVD-202112-2244 (CVE-2021-27007)</td>
-       <td>2021-12-23 23:38:58</td>
-       <td>NetApp Virtual Desktop Service 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2244">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f05b767672d2ee42f7271b3ac47260a2</td>
-       <td>CNNVD-202112-2245 (CVE-2021-35243)</td>
-       <td>2021-12-23 23:38:54</td>
-       <td>Solarwinds Web Help Desk 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2245">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a27352edf82382781d4fca782e867889</td>
-       <td>CNNVD-202112-2246 (CVE-2021-4161)</td>
-       <td>2021-12-23 23:38:52</td>
-       <td>Moxa MGate 多款产品安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2246">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a898e18dd6795f995456d73eff2ff878</td>
-       <td>CNNVD-202112-2247 (CVE-2021-45470)</td>
-       <td>2021-12-23 23:38:50</td>
-       <td>cve-search 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2247">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>275fc5a125991f29762d7ab043085980</td>
-       <td>CNNVD-202112-2248 (CVE-2020-35398)</td>
-       <td>2021-12-23 23:38:47</td>
-       <td>Nch Software UTI Mutual fund 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2248">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ce4ea7d773aad9532a54c64e8e6b1331</td>
+       <td>CVE-2020-6298</td>
+       <td>2021-12-29 13:43:25 <img src="imgs/new.gif" /></td>
+       <td>SAP Banking Services 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd9cfe0f8f7f4c1cb41b4bddc456d42c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4840ff465685c7a8ebd64c38c73f53c</td>
+       <td>CVE-2020-6299</td>
+       <td>2021-12-29 13:43:22 <img src="imgs/new.gif" /></td>
+       <td>SAP NetWeaver AS ABAP和ABAP Platform 信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b4bc9f2552454475b469ffa205a51887">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>45af848a6f6ff3841d8fe6421f2f749d</td>
+       <td>CVE-2020-6295</td>
+       <td>2021-12-29 13:43:19 <img src="imgs/new.gif" /></td>
+       <td>SAP Adaptive Server Enterprise 信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ff93de3719ee4545b8ad67ab6ee51743">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e770ea998b4fec544c0293fd032b43c0</td>
+       <td>CVE-2020-6296</td>
+       <td>2021-12-29 13:43:16 <img src="imgs/new.gif" /></td>
+       <td>SAP NetWeaver AS ABAP和ABAP Platform 代码注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=500d6559caa74212b6548b7e09d373fb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1a04c54052df0752af65564f3a68a02</td>
+       <td>CVE-2020-2236</td>
+       <td>2021-12-29 13:43:13 <img src="imgs/new.gif" /></td>
+       <td>CloudBees Jenkins Yet Another Build Visualizer Plugin 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c1602a86a9584f5f890150e596df70a4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>606594953a523108edc28de38e24d499</td>
+       <td>CVE-2020-2237</td>
+       <td>2021-12-29 13:43:09 <img src="imgs/new.gif" /></td>
+       <td>CloudBees Jenkins Flaky Test Handler Plugin 跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=74150cf2ac0444a78cb0e0ff4928783b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8873d78e3c2fded5e55bbadf3e34ecc</td>
+       <td>CVE-2020-2233</td>
+       <td>2021-12-29 13:43:06 <img src="imgs/new.gif" /></td>
+       <td>CloudBees Jenkins Pipeline Maven Integration Plugin 授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ce2653381c446eba49c1109062c1cdc">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62c335d75b6b118f93c5b8af2cd061b7</td>
+       <td>CVE-2020-2234</td>
+       <td>2021-12-29 13:43:03 <img src="imgs/new.gif" /></td>
+       <td>CloudBees Jenkins Pipeline Maven Integration Plugin 授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c1359a4fa51d4fda9c508b4340d4910a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2f2d0ccb8756a1e449c9b6a9c5c7f39</td>
+       <td>CVE-2020-2229</td>
+       <td>2021-12-29 13:42:59 <img src="imgs/new.gif" /></td>
+       <td>CloudBees Jenkins和LTS 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=717610627c1f404597b55bdae2b18801">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9935be01877957ace87faede6bdeb523</td>
        <td>CVE-2020-15139</td>
        <td>2021-12-28 13:41:53 <img src="imgs/new.gif" /></td>
@@ -1758,7 +1830,7 @@
       <tr>
        <td>f91c9702d982d8393a46611b8808886f</td>
        <td>CVE-2020-4410</td>
-       <td>2021-12-27 13:41:30 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:30</td>
        <td>IBM Jazz Foundation 和 IBM Engineering Test Management 信息泄露漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6597c54506774ad5b379dc8ee79596bc">详情</a></td>
       </tr>
@@ -1766,7 +1838,7 @@
       <tr>
        <td>fba2c2a6004db41e5735bfe10c1a4770</td>
        <td>CVE-2020-11584</td>
-       <td>2021-12-27 13:41:26 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:26</td>
        <td>Plesk Onyx 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8510b89dc62a45ed9430b841908899c6">详情</a></td>
       </tr>
@@ -1774,7 +1846,7 @@
       <tr>
        <td>5969d2ce33e770670324f70d5249a5b2</td>
        <td>CVE-2020-8574</td>
-       <td>2021-12-27 13:41:23 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:23</td>
        <td>NetApp Active IQ Unified Manager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=883db9906e8e40669528f3a575227018">详情</a></td>
       </tr>
@@ -1782,7 +1854,7 @@
       <tr>
        <td>d40aced9fc07a6500aea38ab83c63a91</td>
        <td>CVE-2020-4459</td>
-       <td>2021-12-27 13:41:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:20</td>
        <td>IBM Security Secret Server 信任管理问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7bfede492a074fd3af968853db4c76a0">详情</a></td>
       </tr>
@@ -1790,7 +1862,7 @@
       <tr>
        <td>6764320b71190f0fff27820b8c42dc7b</td>
        <td>CVE-2020-4554</td>
-       <td>2021-12-27 13:41:16 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:16</td>
        <td>IBM i2 Analysts Notebook 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0ef9c8e67e7c47a0a530671b8ba1a09c">详情</a></td>
       </tr>
@@ -1798,7 +1870,7 @@
       <tr>
        <td>201d764b13dfcb7045450b0978e9d558</td>
        <td>CVE-2020-16116</td>
-       <td>2021-12-27 13:41:12 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:12</td>
        <td>KDE Ark 路径遍历漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c9fb3844b017404a9f0b37962c477e77">详情</a></td>
       </tr>
@@ -1806,7 +1878,7 @@
       <tr>
        <td>68628a20d13f5e066750969c504db231</td>
        <td>CVE-2020-4551</td>
-       <td>2021-12-27 13:41:09 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:09</td>
        <td>IBM i2 Analysts Notebook 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1724902ee3a04819acdb326ac2a90b1f">详情</a></td>
       </tr>
@@ -1814,7 +1886,7 @@
       <tr>
        <td>69ec7f5a78df4829a64fe8231d86b7f4</td>
        <td>CVE-2020-8575</td>
-       <td>2021-12-27 13:41:05 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:05</td>
        <td>NetApp Active IQ Unified Manager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=996bbd4760d2443986c5b1a14916eb07">详情</a></td>
       </tr>
@@ -1822,7 +1894,7 @@
       <tr>
        <td>486cc18e6d862b09048b0f4b1e4ba0ce</td>
        <td>CVE-2020-4525</td>
-       <td>2021-12-27 13:41:02 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:41:02</td>
        <td>IBM Engineering Workflow Management 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=126868e77be348e6ac19d637808a3b36">详情</a></td>
       </tr>
@@ -1830,7 +1902,7 @@
       <tr>
        <td>6db393bf7cf5cb409c1f0ce1917e353f</td>
        <td>CVE-2020-4534</td>
-       <td>2021-12-27 13:40:59 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 13:40:59</td>
        <td>IBM WebSphere Application Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=82a04a6efede4507a725ab4aa8c2344b">详情</a></td>
       </tr>
@@ -1841,78 +1913,6 @@
        <td>2021-12-26 13:44:35</td>
        <td>IBM Maximo Asset Management 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f17fead5638c4a3aa09b43b6ce1d382d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>286ff3cf33fcc5c6b69b93370d748c65</td>
-       <td>CVE-2020-15417</td>
-       <td>2021-12-26 13:44:32</td>
-       <td>NETGEAR R6700 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd198bb92a6245eabe66588c82ed5f4c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1d1ca437ea004726494cd30acd65726</td>
-       <td>CVE-2020-15099</td>
-       <td>2021-12-26 13:44:28</td>
-       <td>TYPO3 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cb2d467873fd4fec9152dbed5b5e2347">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f6e032478ddb9582a5fe88beaaf905d4</td>
-       <td>CVE-2020-16094</td>
-       <td>2021-12-26 13:44:26</td>
-       <td>Claws Mail 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=12373111c50a45ac857ca8f94c9abbe6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c564d67cd2c61ddd617841e8aaf0f84</td>
-       <td>CVE-2020-13997</td>
-       <td>2021-12-26 13:44:22</td>
-       <td>Shopware 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=154159a6c7f34684a3130c74e09b59a9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb36c362666d0c391e9129225a116ccd</td>
-       <td>CVE-2020-15416</td>
-       <td>2021-12-26 13:44:19</td>
-       <td>NETGEAR R6700 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a6afa93577de41aea8b6c88cb13585fb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3b7b281d251a96297a768653ed397a9</td>
-       <td>CVE-2020-11934</td>
-       <td>2021-12-26 13:44:15</td>
-       <td>Canonical snapd 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cc6bad5a38bf4ff99fc8451037a0c2fb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e0977483629c01d46d146ff48cc37c7</td>
-       <td>CVE-2020-15098</td>
-       <td>2021-12-26 13:44:12</td>
-       <td>TYPO3 Backend User Interface组件代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5ebb0894d5b84cb9a8ea950e285f138f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca89b402261b2029ff71c1f370ab25c6</td>
-       <td>CVE-2020-10929</td>
-       <td>2021-12-26 13:44:09</td>
-       <td>NETGEAR R6700 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8a5eadd00fff48f5aee05ec5d2378ab1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>37e254de10a3460f25983a6396ae8296</td>
-       <td>CVE-2020-13970</td>
-       <td>2021-12-26 13:44:06</td>
-       <td>Shopware 代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a718d1ec39584d999a497119baf25a47">详情</a></td>
       </tr>
 
      </tbody>
@@ -1932,9 +1932,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>96834a6bdcbe5d119af0b6db1239fada</td>
+       <td>CVE-2021-38019</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome CORS策略执行不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9795395a2f78c907113b9ac97786014</td>
+       <td>CVE-2021-38020</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Contacts Picker策略执行不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62583">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a1a891a281581672e1f6cf724a5e364c</td>
+       <td>CVE-2021-38021</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Referrer实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>86eed9746a61a6fea2c6b20ff419d843</td>
+       <td>CVE-2021-38022</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome WebAuthentication实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62581">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0dab3c5fa475a41b8f379264c515d630</td>
+       <td>CVE-2021-38018</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Navigation实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62580">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6024d20cf85f873cecbf44e3e2dbcab4</td>
+       <td>CVE-2021-38017</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Iframe Sandbox策略执行不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62579">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1dffe6cab0d759e8f0b3596d89ae0d8</td>
+       <td>CVE-2021-38016</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Background Fetch策略执行不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62578">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a641e68d009da5d818fe980bbb49b8db</td>
+       <td>CVE-2021-38015</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Input实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62577">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b03fe29a56e5f59f8f6545126c02daa5</td>
+       <td>CVE-2021-38014</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Swiftshader越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62576">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e7f03670f0ae41026a72f8f358ad3976</td>
+       <td>CVE-2021-38013</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Fingerprint Recognition堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62575">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1caf731d1db59679cf9919b70965503b</td>
+       <td>CVE-2021-38012</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome V8类型混淆漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62574">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da6efe8bf4e1c641a5a5f618649a468f</td>
+       <td>CVE-2021-38011</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Storage Foundation内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62573">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8543c3db8bc205a4e3f06f19469da2aa</td>
+       <td>CVE-2021-38010</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Service Workers实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62572">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13287afe04530c12bee40334169ec7a6</td>
+       <td>CVE-2021-38009</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Cache实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62571">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>427646bb8773908d7d5a80ae143011b3</td>
+       <td>CVE-2021-38008</td>
+       <td>2021-12-29 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Media内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62570">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0d77becded861dde9a7c06d1a670ca5e</td>
        <td>CVE-2021-34936</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62550">详情</a></td>
       </tr>
@@ -1942,7 +2062,7 @@
       <tr>
        <td>a73d29a06930d6b00b9cbd32a902e43c</td>
        <td>CVE-2021-34934</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存破坏漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62549">详情</a></td>
       </tr>
@@ -1950,7 +2070,7 @@
       <tr>
        <td>05b574e244c1d729c898f4cd3d44292e</td>
        <td>CVE-2021-34909</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62548">详情</a></td>
       </tr>
@@ -1958,7 +2078,7 @@
       <tr>
        <td>320b030f1c3387efafb02643d9d3e9d9</td>
        <td>CVE-2021-34935</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62547">详情</a></td>
       </tr>
@@ -1966,7 +2086,7 @@
       <tr>
        <td>fa21ed0333f0986d5c2aa837717d072e</td>
        <td>CVE-2021-34908</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62546">详情</a></td>
       </tr>
@@ -1974,7 +2094,7 @@
       <tr>
        <td>56f298d3ded2ae7ae91e1d3cf26e5b3e</td>
        <td>CVE-2021-34937</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62545">详情</a></td>
       </tr>
@@ -1982,7 +2102,7 @@
       <tr>
        <td>81e0e0445d4400c12e469cde69029f10</td>
        <td>CVE-2021-34907</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62544">详情</a></td>
       </tr>
@@ -1990,7 +2110,7 @@
       <tr>
        <td>94c30e12f4c6eb2378007579b23f7295</td>
        <td>CVE-2021-34905</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62543">详情</a></td>
       </tr>
@@ -1998,7 +2118,7 @@
       <tr>
        <td>64f5bc6db3541d2ad505a439654751bc</td>
        <td>CVE-2021-34904</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62542">详情</a></td>
       </tr>
@@ -2006,7 +2126,7 @@
       <tr>
        <td>1e8a8c6eb94a82b729484aeb15715225</td>
        <td>CVE-2021-34902</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62541">详情</a></td>
       </tr>
@@ -2014,7 +2134,7 @@
       <tr>
        <td>03eaf73eefa3aaf3424daefb24f0b507</td>
        <td>CVE-2021-34938</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62540">详情</a></td>
       </tr>
@@ -2022,7 +2142,7 @@
       <tr>
        <td>d35b55ceb988ef07e7ae7399f3c1cdca</td>
        <td>CVE-2021-34939</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62539">详情</a></td>
       </tr>
@@ -2030,7 +2150,7 @@
       <tr>
        <td>f0802e4275e7902a5602e124d3a4da87</td>
        <td>CVE-2021-34901</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62538">详情</a></td>
       </tr>
@@ -2038,7 +2158,7 @@
       <tr>
        <td>120e473eb5c70626d06cf6bef9f6329b</td>
        <td>CVE-2021-34900</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62537">详情</a></td>
       </tr>
@@ -2046,129 +2166,9 @@
       <tr>
        <td>bf4c5878ea26756e19fd351d7a0d2e90</td>
        <td>CVE-2021-34899</td>
-       <td>2021-12-27 23:38:20 <img src="imgs/new.gif" /></td>
+       <td>2021-12-27 23:38:20</td>
        <td>Bentley View越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62536">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d970a5b2f6803e2824663805ae111ab</td>
-       <td>CVE-2021-21880</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave目录遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62516">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc0f0d0149f6533bf657ac8395254e6e</td>
-       <td>CVE-2021-21881</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave OS命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62515">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43036b29f04690a72f997d84f0642fe7</td>
-       <td>CVE-2021-21873</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave OS命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7256eb9da0051f438ececd64999dc902</td>
-       <td>CVE-2021-21874</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave OS命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62513">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>421e0baa324aa8f60e92797edb85024f</td>
-       <td>CVE-2021-34903</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Bentley View越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5f9f1f45a3ea322ca2e84b83c03a74f</td>
-       <td>CVE-2021-34930</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Bentley View越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13895b26663f92c15545d9c5c2785724</td>
-       <td>CVE-2021-34931</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Bentley View内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ba57e310bfe5522e2114b9f8e6c79ae</td>
-       <td>CVE-2021-34910</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Bentley View越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a88862bcb4bec1003042753c555e1040</td>
-       <td>CVE-2021-34933</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Bentley View内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62508">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71c065701b5fc14622c3f171565cb71a</td>
-       <td>CVE-2021-21928</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Advantech R-SeeNet SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62507">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a2b31c380ad42c737d64a75d77e119d</td>
-       <td>CVE-2021-21917</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Advantech R-SeeNet SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62506">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99a57ddea8fc58ee6b942b586dc2d6ad</td>
-       <td>CVE-2021-21929</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Advantech R-SeeNet SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62505">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>86a27ce45ae0defba2c0b74dbdbe1ac9</td>
-       <td>CVE-2021-21930</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Advantech R-SeeNet SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>056d212b14195200ad7487d6e06af0c4</td>
-       <td>CVE-2021-21876</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave OS命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6d5b08710535712d6fd201286f032f0</td>
-       <td>CVE-2021-21872</td>
-       <td>2021-12-24 23:38:33</td>
-       <td>Lantronix PremierWave OS命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/62502">详情</a></td>
       </tr>
 
      </tbody>
@@ -2193,6 +2193,38 @@
        <td>2021-12-24 02:15:07 </td>
        <td>In MediaWiki through 1.37, XSS can occur in Wikibase because an external identifier property can have a URL format that includes a $1 formatter substitution marker, and the javascript: URL scheme (among others) can be used.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45472">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42afb3667158a794c7991a803677eb75</td>
+       <td>CVE-2021-45474</td>
+       <td>2021-12-24 02:15:07 </td>
+       <td>In MediaWiki through 1.37, the Special:ImportFile URI (aka FileImporter) allows XSS, as demonstrated by the clientUrl parameter.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45474">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d404dc246b9e0b8ca1022fc03a4bfd06</td>
+       <td>CVE-2021-45473</td>
+       <td>2021-12-24 02:15:07 </td>
+       <td>In MediaWiki through 1.37, Wikibase item descriptions allow XSS, which is triggered upon a visit to an action=info URL (aka a page-information sidebar).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45473">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb6e91399ce03baf17ed108d3b66289f</td>
+       <td>CVE-2021-45471</td>
+       <td>2021-12-24 02:15:07 </td>
+       <td>In MediaWiki through 1.37, blocked IP addresses are allowed to edit EntitySchema items.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45471">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f1d8c891722555ab65249c5f57a4784</td>
+       <td>CVE-2021-45470</td>
+       <td>2021-12-23 21:15:09 </td>
+       <td>lib/DatabaseLayer.py in cve-search before 4.1.0 allows regular expression injection, which can lead to ReDoS (regular expression denial of service) or other impacts.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45470">详情</a></td>
       </tr>
 
       <tr>
@@ -2257,6 +2289,14 @@
        <td>2021-12-22 17:15:09 </td>
        <td>A stack overflow vulnerability exists in gpac 1.1.0 via the gf_bifs_dec_proto_list function, which causes a segmentation fault and application crash.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45258">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b845bb02908ff179d5da4b866f1421d</td>
+       <td>CVE-2021-45459</td>
+       <td>2021-12-22 06:15:07 </td>
+       <td>lib/cmd.js in the node-windows package before 1.0.0-beta.6 for Node.js allows command injection via the PID parameter.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45459">详情</a></td>
       </tr>
 
       <tr>
@@ -2385,46 +2425,6 @@
        <td>2021-12-17 17:15:13 </td>
        <td>IBM Business Automation Workflow 18.0, 19.0, 20,0 and 21.0 and IBM Business Process Manager 8.5 and 8.6 are vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 209165.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-38883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfd5c730bbe422336b610e9007b7fe2f</td>
-       <td>CVE-2021-38883</td>
-       <td>2021-12-17 17:15:13 </td>
-       <td>IBM Business Automation Workflow 18.0, 19.0, 20,0 and 21.0 and IBM Business Process Manager 8.5 and 8.6 are vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 209165.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-38883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f75f12171a108c7d14b1c60187d95523</td>
-       <td>CVE-2021-45038</td>
-       <td>2021-12-17 04:15:39 </td>
-       <td>An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. By using an action=rollback query, attackers can view private wiki contents.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45038">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>58014f75eb04f94b8f664b07ca31f27c</td>
-       <td>CVE-2021-44857</td>
-       <td>2021-12-17 04:15:39 </td>
-       <td>An issue was discovered in MediaWiki before 1.35.5, 1.36.x before 1.36.3, and 1.37.x before 1.37.1. It is possible to use action=mcrundo followed by action=mcrrestore to replace the content of any arbitrary page (that the user doesn't have edit rights for). This applies to any public wiki, or a private wiki that has at least one page set in $wgWhitelistRead.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-44857">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3b1122a904a31d7f959d29f4b8b45eb</td>
-       <td>CVE-2021-3179</td>
-       <td>2021-12-16 20:15:07 </td>
-       <td>GGLocker iOS application, contains an insecure data storage of the password hash value which results in an authentication bypass.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-3179">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bc7847c1c0fb20b03e730c3ab7d56c68</td>
-       <td>CVE-2021-37262</td>
-       <td>2021-12-16 19:15:08 </td>
-       <td>JFinal_cms 5.1.0 is vulnerable to regex injection that may lead to Denial of Service.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-37262">详情</a></td>
       </tr>
 
      </tbody>
