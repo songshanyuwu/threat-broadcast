@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-01-01 05:37:09 -->
+<!-- RELEASE TIME : 2022-01-01 23:38:50 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>df2a5ca0a52a6028d78229448be5dbeb</td>
+       <td>CVE-2021-45960</td>
+       <td>2022-01-01 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45960">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55cb3e028dc1fbf5ab984b4924fee93a</td>
+       <td>CVE-2021-44852</td>
+       <td>2022-01-01 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in BS_RCIO64.sys in Biostar RACING GT Evo 2.1.1905.1700. A low-integrity process can open the driver's device object and issue IOCTLs to read or write to arbitrary physical memory locations (or call an arbitrary address), leading to execution of arbitrary code. This is associated with 0x226040, 0x226044, and 0x226000.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44852">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a74bd7463c1d753738ff98b4d26b4ae6</td>
+       <td>CVE-2021-43333</td>
+       <td>2022-01-01 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Datalogic DXU service on (for example) DL-Axist devices does not require authentication for configuration changes or disclosure of configuration settings.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43333">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2299c3305a0ea26d994d1d07a448cf9b</td>
+       <td>CVE-2021-41819</td>
+       <td>2022-01-01 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>CGI::Cookie.parse in Ruby through 2.6.8 mishandles security prefixes in cookie names. This also affects the CGI gem through 0.3.0 for Ruby.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41819">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>002ebae092b8a9bbcadab308d4a99a1f</td>
+       <td>CVE-2021-44717</td>
+       <td>2022-01-01 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Go before 1.16.12 and 1.17.x before 1.17.5 on UNIX allows write operations to an unintended file or unintended network connection as a consequence of erroneous closing of file descriptor 0 after file-descriptor exhaustion.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44717">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>05e60f7d52328abcb3df9186aba6674b</td>
+       <td>CVE-2021-44716</td>
+       <td>2022-01-01 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>net/http in Go before 1.16.12 and 1.17.x before 1.17.5 allows uncontrolled memory consumption in the header canonicalization cache via HTTP/2 requests.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44716">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e151c44d0644dbcbd70d316cfc859297</td>
+       <td>CVE-2021-41817</td>
+       <td>2022-01-01 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Date.parse in the date gem through 3.2.0 for Ruby allows ReDoS (regular expression Denial of Service) via a long string. The fixed versions are 3.2.1, 3.1.2, 3.0.2, and 2.0.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41817">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91c9029ad28ef603abd1c161ad901779</td>
+       <td>CVE-2021-45943</td>
+       <td>2022-01-01 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>GDAL 3.3.0 through 3.4.0 has a heap-based buffer overflow in PCIDSK::CPCIDSKFile::ReadFromFile (called from PCIDSK::CPCIDSKSegment::ReadFromFile and PCIDSK::CPCIDSKBinarySegment::CPCIDSKBinarySegment).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45943">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51b8c7fb2381359210d2b61f3e6d8d9a</td>
+       <td>CVE-2021-45942</td>
+       <td>2022-01-01 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenEXR 3.1.0 through 3.1.3 has a heap-based buffer overflow in Imf_3_1::LineCompositeTask::execute (called from IlmThread_3_1::NullThreadPoolProvider::addTask and IlmThread_3_1::ThreadPool::addGlobalTask).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45942">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0e48c32bb03dcfa46926c20adde54db</td>
+       <td>CVE-2021-45941</td>
+       <td>2022-01-01 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>libbpf 0.6.0 and 0.6.1 has a heap-based buffer overflow (8 bytes) in __bpf_object__open (called from bpf_object__open_mem and bpf-object-fuzzer.c).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45941">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cda9f9a337e3735964d316d993bf3e09</td>
        <td>CVE-2021-45959</td>
        <td>2022-01-01 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2021-12-30 22:15:00</td>
        <td>Crash in the pcapng file parser in Wireshark 3.6.0 allows denial of service via crafted capture file</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4183">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55cc38fb4fdf520af215dd2076e3c28f</td>
-       <td>CVE-2021-4182</td>
-       <td>2021-12-30 22:15:00</td>
-       <td>Crash in the RFC 7468 dissector in Wireshark 3.6.0 and 3.4.0 to 3.4.10 allows denial of service via packet injection or crafted capture file</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4182">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b41e08199fb5113e909e81f76884a99</td>
-       <td>CVE-2021-4181</td>
-       <td>2021-12-30 22:15:00</td>
-       <td>Crash in the Sysdig Event dissector in Wireshark 3.6.0 and 3.4.0 to 3.4.10 allows denial of service via packet injection or crafted capture file</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36b793e219c9bb6282368a1d9aa1abcc</td>
-       <td>CVE-2021-45379</td>
-       <td>2021-12-30 18:15:00</td>
-       <td>Glewlwyd 2.0.0, fixed in 2.6.1 is affected by an incorrect access control vulnerability. One user can attempt to log in as another user without its password.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45379">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03d00d29636c8a1b2d4010d7fa3f9bce</td>
-       <td>CVE-2021-38876</td>
-       <td>2021-12-30 17:15:00</td>
-       <td>IBM i 7.2, 7.3, and 7.4 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 208404.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-38876">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0de5bc2ed6ccc0149830a2b72c1bef48</td>
-       <td>CVE-2020-29292</td>
-       <td>2021-12-30 17:15:00</td>
-       <td>iBall WRD12EN 1.0.0 devices allow cross-site request forgery (CSRF) attacks as demonstrated by enabling DNS settings or modifying the range for IP addresses.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-29292">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b18eb0b8d10f9da9d1c5f59c96ba19c5</td>
-       <td>CVE-2021-43862</td>
-       <td>2021-12-30 15:15:00</td>
-       <td>jQuery Terminal Emulator is a plugin for creating command line interpreters in your applications. Versions prior to 2.31.1 contain a low impact and limited cross-site scripting (XSS) vulnerability. The code for XSS payload is always visible, but an attacker can use other techniques to hide the code the victim sees. If the application uses the `execHash` option and executes code from URL, the attacker can use this URL to execute their code. The scope is limited because the javascript attribute used is added to span tag, so no automatic execution like with `onerror` on images is possible. This issue is fixed in version 2.31.1. As a workaround, the user can use formatting that wrap whole user input and its no op. The code for this workaround is available in the GitHub Security Advisory. The fix will only work when user of the library is not using different formatters (e.g. to highlight code in different way).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26eea6ac972d0353261a1ce89696e4bc</td>
-       <td>CVE-2021-43861</td>
-       <td>2021-12-30 14:15:00</td>
-       <td>Mermaid is a Javascript based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. Prior to version 8.13.8, malicious diagrams can run javascript code at diagram readers' machines. Users should upgrade to version 8.13.8 to receive a patch. There are no known workarounds aside from upgrading.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43861">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d03f042363410b4f64caed5a3833a503</td>
-       <td>CVE-2021-45818</td>
-       <td>2021-12-30 13:15:00</td>
-       <td>SAFARI Montage 8.7.32 is affected by a CRLF injection vulnerability which can lead to can lead to HTTP response splitting.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45818">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42c893cd0022964e9f0e5db84165cba4</td>
-       <td>CVE-2021-45815</td>
-       <td>2021-12-30 13:15:00</td>
-       <td>Quectel UC20 UMTS/HSPA+ UC20 6.3.14 is affected by a Cross Site Scripting (XSS) vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>428a9318245d1503ab5f765989ef2071</td>
-       <td>CVE-2021-45427</td>
-       <td>2021-12-30 12:15:00</td>
-       <td>Emerson XWEB 300D EVO 3.0.7--3ee403 is affected by: unauthenticated arbitrary file deletion due to path traversal. An attacker can browse and delete files without any authentication due to incorrect access control and directory traversal.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45427">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ea67ddbcd3c65beea6141e9e2449885c</td>
+       <td>CVE-2020-1530</td>
+       <td>2022-01-01 13:42:19 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Remote Access 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bcff97caf3ad4d84936e3dcd75e216fe">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da6ede3ef29f64d84b75a15b26cb7423</td>
+       <td>CVE-2020-1527</td>
+       <td>2022-01-01 13:42:16 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Custom Protocol Engine 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=20605a8b161047f385d02eda0d257d60">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a6a962c93ba4e0704643c6d0de390d00</td>
+       <td>CVE-2020-1524</td>
+       <td>2022-01-01 13:42:12 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Speech Shell 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=81aba7d342ca4aa38c795094255a317f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>609a583dec5e716e5175f47086f9d5b3</td>
+       <td>CVE-2020-1520</td>
+       <td>2022-01-01 13:42:09 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Font Driver 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd417a0cbc9d4785a4b8275bbf14fb53">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0fee9bb1fcfb222740b9c85010da179</td>
+       <td>CVE-2020-1529</td>
+       <td>2022-01-01 13:42:06 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Graphics Device Interface 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cbd596b1ff964e63a1f52c7796959c01">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5141288366e5d7b7628db992a30b5441</td>
+       <td>CVE-2020-1517</td>
+       <td>2022-01-01 13:42:03 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows File Server Resource Management Service 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=21118c888a7849ca83c07cc41b16f65b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1aff004e3e92e62acc0d46211fdc271b</td>
+       <td>CVE-2020-1526</td>
+       <td>2022-01-01 13:42:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Network Connection Broker 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8e39b3ac0ba744189ee1631740da5670">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c8bcf7800f3234333886a42d460f2d0</td>
+       <td>CVE-2020-1513</td>
+       <td>2022-01-01 13:41:56 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows CSC Service 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ecfef8090b0545bcbe85f07b3702fe7b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3837efc19adde778256ae9429ca24a95</td>
+       <td>CVE-2020-1522</td>
+       <td>2022-01-01 13:41:53 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Network Connection Broker 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=156ba76d414f4cb9b21159f63069e240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5883fe95891cbdef502f5a34a91ff8c5</td>
+       <td>CVE-2020-1510</td>
+       <td>2022-01-01 13:41:50 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Win32k 信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0f906351a24e458985f8a7d2eb362218">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a94e33b04e2668bc4b405583b655d2a8</td>
        <td>CVE-2020-1490</td>
        <td>2021-12-31 13:44:23 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2021-12-30 13:44:59</td>
        <td>Intel LED Manager for NUC 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=25587fecded84f7f9dd67b5585e93014">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce4ea7d773aad9532a54c64e8e6b1331</td>
-       <td>CVE-2020-6298</td>
-       <td>2021-12-29 13:43:25</td>
-       <td>SAP Banking Services 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd9cfe0f8f7f4c1cb41b4bddc456d42c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4840ff465685c7a8ebd64c38c73f53c</td>
-       <td>CVE-2020-6299</td>
-       <td>2021-12-29 13:43:22</td>
-       <td>SAP NetWeaver AS ABAP和ABAP Platform 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b4bc9f2552454475b469ffa205a51887">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>45af848a6f6ff3841d8fe6421f2f749d</td>
-       <td>CVE-2020-6295</td>
-       <td>2021-12-29 13:43:19</td>
-       <td>SAP Adaptive Server Enterprise 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ff93de3719ee4545b8ad67ab6ee51743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e770ea998b4fec544c0293fd032b43c0</td>
-       <td>CVE-2020-6296</td>
-       <td>2021-12-29 13:43:16</td>
-       <td>SAP NetWeaver AS ABAP和ABAP Platform 代码注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=500d6559caa74212b6548b7e09d373fb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1a04c54052df0752af65564f3a68a02</td>
-       <td>CVE-2020-2236</td>
-       <td>2021-12-29 13:43:13</td>
-       <td>CloudBees Jenkins Yet Another Build Visualizer Plugin 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c1602a86a9584f5f890150e596df70a4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>606594953a523108edc28de38e24d499</td>
-       <td>CVE-2020-2237</td>
-       <td>2021-12-29 13:43:09</td>
-       <td>CloudBees Jenkins Flaky Test Handler Plugin 跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=74150cf2ac0444a78cb0e0ff4928783b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8873d78e3c2fded5e55bbadf3e34ecc</td>
-       <td>CVE-2020-2233</td>
-       <td>2021-12-29 13:43:06</td>
-       <td>CloudBees Jenkins Pipeline Maven Integration Plugin 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ce2653381c446eba49c1109062c1cdc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>62c335d75b6b118f93c5b8af2cd061b7</td>
-       <td>CVE-2020-2234</td>
-       <td>2021-12-29 13:43:03</td>
-       <td>CloudBees Jenkins Pipeline Maven Integration Plugin 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c1359a4fa51d4fda9c508b4340d4910a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2f2d0ccb8756a1e449c9b6a9c5c7f39</td>
-       <td>CVE-2020-2229</td>
-       <td>2021-12-29 13:42:59</td>
-       <td>CloudBees Jenkins和LTS 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=717610627c1f404597b55bdae2b18801">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9935be01877957ace87faede6bdeb523</td>
-       <td>CVE-2020-15139</td>
-       <td>2021-12-28 13:41:53</td>
-       <td>MyBB 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3300df12c1f6449a9ee813dccd2dd9f5">详情</a></td>
       </tr>
 
      </tbody>
