@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-01-04 05:37:28 -->
+<!-- RELEASE TIME : 2022-01-04 23:39:23 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>0dd2b4e54c1e7d58b6a543d5cd6168ce</td>
+       <td></td>
+       <td>2022-01-04 09:42:59 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 (12.27-01.02)</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=ce64517cd4b55bd9e1e65e3899e70814">详情</a></td>
+      </tr>
+
       <tr>
        <td>1f4414b232828031852a1c0ccd0338a8</td>
        <td>CVE-2021-45232</td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=3f2c29ac347485e1bfc3a9586e3db558">详情</a></td>
       </tr>
 
-      <tr>
-       <td>58138920f2aaf7fe331bd6f96f7cd225</td>
-       <td></td>
-       <td>2021-12-20 07:38:33</td>
-       <td>安全事件周报 (12.13-12.19)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=3f2c29ac347485e1bfc3a9586e3db558">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>e8ccf5d3e748f017c27bd48efccfc80b</td>
+       <td>CVE-2022-21648</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Latte is an open source template engine for PHP. Versions since 2.8.0 Latte has included a template sandbox and in affected versions it has been found that a sandbox escape exists allowing for injection into web pages generated from Latte. This may lead to XSS attacks. The issue is fixed in the versions 2.8.8, 2.9.6 and 2.10.8. Users unable to upgrade should not accept template input from untrusted sources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21648">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0fecbfbdbbbde7b42c6b6bc67ba55610</td>
+       <td>CVE-2022-21647</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>CodeIgniter is an open source PHP full-stack web framework. Deserialization of Untrusted Data was found in the `old()` function in CodeIgniter4. Remote attackers may inject auto-loadable arbitrary objects with this vulnerability, and possibly execute existing PHP code on the server. We are aware of a working exploit, which can lead to SQL injection. Users are advised to upgrade to v4.1.6 or later. Users unable to upgrade as advised to not use the `old()` function and form_helper nor `RedirectResponse::withInput()` and `redirect()->withInput()`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21647">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>85683f2a877fed77fe747dcfe264bec5</td>
+       <td>CVE-2022-21644</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>USOC is an open source CMS with a focus on simplicity. In affected versions USOC allows for SQL injection via usersearch.php. In search terms provided by the user were not sanitized and were used directly to construct a sql statement. The only users permitted to search are site admins. Users are advised to upgrade as soon as possible. There are not workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21644">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5327a309a1e5e59bbe6ac28629c8030f</td>
+       <td>CVE-2022-21643</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>USOC is an open source CMS with a focus on simplicity. In affected versions USOC allows for SQL injection via register.php. In particular usernames, email addresses, and passwords provided by the user were not sanitized and were used directly to construct a sql statement. Users are advised to upgrade as soon as possible. There are not workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f42196b1a6834d729fe08ff30628ca0</td>
+       <td>CVE-2021-43852</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>OroPlatform is a PHP Business Application Platform. In affected versions by sending a specially crafted request, an attacker could inject properties into existing JavaScript language construct prototypes, such as objects. Later this injection may lead to JS code execution by libraries that are vulnerable to Prototype Pollution. This issue has been patched in version 4.2.8. Users unable to upgrade may configure a firewall to drop requests containing next strings: `__proto__` , `constructor[prototype]`, and `constructor.prototype` to mitigate this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43852">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cc2315eb76187fd6b5df949120c04b1e</td>
+       <td>CVE-2021-43850</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open source platform for community discussion. In affected versions admins users can trigger a Denial of Service attack via the `/message-bus/_diagnostics` path. The impact of this vulnerability is greater on multisite Discourse instances (where multiple forums are served from a single application server) where any admin user on any of the forums are able to visit the `/message-bus/_diagnostics` path. The problem has been patched. Please upgrade to 2.8.0.beta10 or 2.7.12. No workarounds for this issue exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43850">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>40aa15736abc380316fdcb78736215dd</td>
+       <td>CVE-2021-43832</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Spinnaker is an open source, multi-cloud continuous delivery platform. Spinnaker has improper permissions allowing pipeline creation & execution. This lets an arbitrary user with access to the gate endpoint to create a pipeline and execute it without authentication. If users haven't setup Role-based access control (RBAC) with-in spinnaker, this enables remote execution and access to deploy almost any resources on any account. Patches are available on the latest releases of the supported branches and users are advised to upgrade as soon as possible. Users unable to upgrade should enable RBAC on ALL accounts and applications. This mitigates the ability of a pipeline to affect any accounts. Block application access unless permission are enabled. Users should make sure ALL application creation is restricted via appropriate wildcards.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43832">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8cb9a5db8d222275ab9bcc2f3bdb3031</td>
+       <td>CVE-2021-43677</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Fluxbb v1.4.12 is affected by a Cross Site Scripting (XSS) vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43677">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>729729ed82571c1f18ab5b52da8a54d9</td>
+       <td>CVE-2021-41610</td>
+       <td>2022-01-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2020-27339. Reason: This candidate is a reservation duplicate of CVE-2020-27339. Notes: All CVE users should reference CVE-2020-27339 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41610">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>34e0149323dc06b021ad1d8681abe5a4</td>
+       <td>CVE-2021-41236</td>
+       <td>2022-01-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>OroPlatform is a PHP Business Application Platform. In affected versions the email template preview is vulnerable to XSS payload added to email template content. An attacker must have permission to create or edit an email template. For successful payload, execution the attacked user must preview a vulnerable email template. There are no workarounds that address this vulnerability. Users are advised to upgrade as soon as is possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41236">详情</a></td>
+      </tr>
+
       <tr>
        <td>47eb18779d2ceb858445deabd95dcbf0</td>
        <td>CVE-2021-45829</td>
@@ -441,86 +521,6 @@
        <td>2022-01-03 13:15:00 <img src="imgs/new.gif" /></td>
        <td>The Speed Booster Pack âš¡ PageSpeed Optimization Suite WordPress plugin before 4.3.3.1 does not escape the sbp_convert_table_name parameter before using it in a SQL statement to convert the related table, leading to an SQL injection</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-25023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93f4ef6dbb12712a83c2963801d17eb6</td>
-       <td>CVE-2021-36751</td>
-       <td>2022-01-02 16:15:00</td>
-       <td>ENC DataVault 7.1.1W uses an inappropriate encryption algorithm, such that an attacker (who does not know the secret key) can make ciphertext modifications that are reflected in modified plaintext. There is no data integrity mechanism. (This behavior occurs across USB drives sold under multiple brand names.)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47a920c34b975d11d9b149b3f92eceec</td>
-       <td>CVE-2022-0080</td>
-       <td>2022-01-02 12:15:00</td>
-       <td>mruby is vulnerable to Heap-based Buffer Overflow</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b172e97e5e83787b50ad3075b578a18</td>
-       <td>CVE-2022-22293</td>
-       <td>2022-01-02 00:15:00</td>
-       <td>admin/limits.php in Dolibarr 7.0.2 allows HTML injection, as demonstrated by the MAIN_MAX_DECIMALS_TOT parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22293">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2054e1ed426540ae28aaa61ca25b632a</td>
-       <td>CVE-2021-44896</td>
-       <td>2022-01-01 23:15:00</td>
-       <td>DMP Roadmap before 3.0.4 allows XSS.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44896">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>536cc784ce64a5b5c3b088a24744d57f</td>
-       <td>CVE-2021-45972</td>
-       <td>2022-01-01 21:15:00</td>
-       <td>The giftrans function in giftrans 1.12.2 contains a stack-based buffer overflow because a value inside the input file determines the amount of data to write. This allows an attacker to overwrite up to 250 bytes outside of the allocated buffer with arbitrary data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45972">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df2a5ca0a52a6028d78229448be5dbeb</td>
-       <td>CVE-2021-45960</td>
-       <td>2022-01-01 19:15:00</td>
-       <td>In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45960">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55cb3e028dc1fbf5ab984b4924fee93a</td>
-       <td>CVE-2021-44852</td>
-       <td>2022-01-01 06:15:00</td>
-       <td>An issue was discovered in BS_RCIO64.sys in Biostar RACING GT Evo 2.1.1905.1700. A low-integrity process can open the driver's device object and issue IOCTLs to read or write to arbitrary physical memory locations (or call an arbitrary address), leading to execution of arbitrary code. This is associated with 0x226040, 0x226044, and 0x226000.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a74bd7463c1d753738ff98b4d26b4ae6</td>
-       <td>CVE-2021-43333</td>
-       <td>2022-01-01 06:15:00</td>
-       <td>The Datalogic DXU service on (for example) DL-Axist devices does not require authentication for configuration changes or disclosure of configuration settings.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43333">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2299c3305a0ea26d994d1d07a448cf9b</td>
-       <td>CVE-2021-41819</td>
-       <td>2022-01-01 06:15:00</td>
-       <td>CGI::Cookie.parse in Ruby through 2.6.8 mishandles security prefixes in cookie names. This also affects the CGI gem through 0.3.0 for Ruby.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41819">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>002ebae092b8a9bbcadab308d4a99a1f</td>
-       <td>CVE-2021-44717</td>
-       <td>2022-01-01 05:15:00</td>
-       <td>Go before 1.16.12 and 1.17.x before 1.17.5 on UNIX allows write operations to an unintended file or unintended network connection as a consequence of erroneous closing of file descriptor 0 after file-descriptor exhaustion.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44717">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>01d573d5b89a106c70176bae02bc2c6a</td>
+       <td>CNNVD-202201-074 (CVE-2021-45428)</td>
+       <td>2022-01-03 23:39:22 <img src="imgs/new.gif" /></td>
+       <td>Telesquare TLR-2005KSH 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-074">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>946910857bc1d5b3ccbeaa4bcc854411</td>
+       <td>CNNVD-202201-075 (CVE-2021-45817)</td>
+       <td>2022-01-03 23:39:20 <img src="imgs/new.gif" /></td>
+       <td>Hanwha DVR 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-075">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01570e18d1a269d56139723a92acf532</td>
+       <td>CNNVD-202201-076 (CVE-2021-46109)</td>
+       <td>2022-01-03 23:39:18 <img src="imgs/new.gif" /></td>
+       <td>ASUS RT-AC52U_B1 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-076">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19c07436410a42035436c6614131a881</td>
+       <td>CNNVD-202201-077 (CVE-2020-23026)</td>
+       <td>2022-01-03 23:39:17 <img src="imgs/new.gif" /></td>
+       <td>dhrystone 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-077">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fef12f534b814e8a827d33eed0b9d7d5</td>
+       <td>CNNVD-202201-078 (CVE-2021-20148)</td>
+       <td>2022-01-03 23:39:14 <img src="imgs/new.gif" /></td>
+       <td>ZOHO ManageEngine ADSelfService Plus 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-078">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f3af5e048b0871ba0250f4ae8ac59e3</td>
+       <td>CNNVD-202201-079 (CVE-2021-20147)</td>
+       <td>2022-01-03 23:39:12 <img src="imgs/new.gif" /></td>
+       <td>ZOHO ManageEngine ADSelfService Plus 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d8f3b1c35371aef0faccd4470183683</td>
+       <td>CNNVD-202201-080 (CVE-2021-37120)</td>
+       <td>2022-01-03 23:39:10 <img src="imgs/new.gif" /></td>
+       <td>Huawei Smartphone 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7463328da80781459cc4a6d33cc652bc</td>
+       <td>CNNVD-202201-081 (CVE-2021-37121)</td>
+       <td>2022-01-03 23:39:08 <img src="imgs/new.gif" /></td>
+       <td>HuaWei Smartphone 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-081">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da569fe20ce015decf152a2cc4efdcf4</td>
+       <td>CNNVD-202201-082 (CVE-2021-38576)</td>
+       <td>2022-01-03 23:39:06 <img src="imgs/new.gif" /></td>
+       <td>Tianocore EDK II 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cf36b476eb765ba3b73e01d80b58bd4</td>
+       <td>CNNVD-202201-083 (CVE-2021-45829)</td>
+       <td>2022-01-03 23:39:04 <img src="imgs/new.gif" /></td>
+       <td>HDF5 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-083">详情</a></td>
+      </tr>
+
+      <tr>
        <td>4d6b4229d03770dfc2c16fd6023edd36</td>
        <td>CNNVD-202112-2813 (CVE-2021-20170)</td>
        <td>2021-12-30 23:38:53</td>
@@ -953,86 +1033,6 @@
        <td>2021-12-29 23:38:46</td>
        <td>Amios Emuse - eServices eNvoice SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2773">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c99f80c542ced66825b163a4a56cf12</td>
-       <td>CNNVD-202112-2735 (CVE-2021-45903)</td>
-       <td>2021-12-28 23:38:49</td>
-       <td>SuiteCRM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61d2003d1e19d3788a36fcc73ed7dce3</td>
-       <td>CNNVD-202112-2736 (CVE-2021-45813)</td>
-       <td>2021-12-28 23:38:47</td>
-       <td>SLICAN WebCTI 跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2736">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3dc26a5ef4b63488b00e45eb95d8153e</td>
-       <td>CNNVD-202112-2738 (CVE-2021-45814)</td>
-       <td>2021-12-28 23:38:45</td>
-       <td>Nettmp NNT  SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2738">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84604a1e08b91e1f52a3226794f49e81</td>
-       <td>CNNVD-202112-2739 (CVE-2021-42583)</td>
-       <td>2021-12-28 23:38:43</td>
-       <td>Max Mazurov Maddy 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dca43386de76157e283939bd5750cca2</td>
-       <td>CNNVD-202112-2742 (CVE-2021-45812)</td>
-       <td>2021-12-28 23:38:41</td>
-       <td>NUUO Network Video Recorder 跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2742">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56d6d7b949858d1c67712a59f33e2e46</td>
-       <td>CNNVD-202112-2743 (CVE-2021-44832)</td>
-       <td>2021-12-28 23:38:40</td>
-       <td>Apache Log4j 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49ba580118e93ac31eac51c4b708da7f</td>
-       <td>CNNVD-202112-2745 (CVE-2020-22057)</td>
-       <td>2021-12-28 23:38:38</td>
-       <td>EVGA Precision XOC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2745">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>557499862d3f74955957a2f59d9ac738</td>
-       <td>CNNVD-202112-2746 (CVE-2020-22061)</td>
-       <td>2021-12-28 23:38:36</td>
-       <td>SUPERAntispyware 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2746">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd4b8ffe2e978972401adfbd99971ee7</td>
-       <td>CNNVD-202112-2747 (CVE-2020-7878)</td>
-       <td>2021-12-28 23:38:34</td>
-       <td>VideoOffice 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2747">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>91b1726c834a0411469e2c65e6a8e7a6</td>
-       <td>CNNVD-202112-2748 (CVE-2020-7883)</td>
-       <td>2021-12-28 23:38:32</td>
-       <td>Printchaser 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2748">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c0c6116387986c1e7f50aa1ff58f528d</td>
+       <td>CVE-2020-10174</td>
+       <td>2022-01-04 13:42:18 <img src="imgs/new.gif" /></td>
+       <td>Timeshift 竞争条件问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1b2e9aca59624b97917f4cbf1b00763b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f01030cc18ee8184b930db91c435618e</td>
+       <td>CVE-2020-10110</td>
+       <td>2022-01-04 13:42:05 <img src="imgs/new.gif" /></td>
+       <td>Citrix Systems Gateway 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d110a6b2b52c4351bc9f07d7ebeb295f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f8a14dfbb462f466f54a22de648409a</td>
+       <td>CVE-2020-9429</td>
+       <td>2022-01-04 13:42:01 <img src="imgs/new.gif" /></td>
+       <td>Wireshark WireGuard 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5444231c19db458e97a264241a33ee57">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3f25d0859e20d7edf39caf7d5d65cca</td>
+       <td>CVE-2020-6793</td>
+       <td>2022-01-04 13:41:58 <img src="imgs/new.gif" /></td>
+       <td>Mozilla Thunderbird 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=364f5d9c142045989e3b3e93f1c94216">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1cdffa8b5164fa0405dcefd92e08b391</td>
+       <td>CVE-2020-6801</td>
+       <td>2022-01-04 13:41:51 <img src="imgs/new.gif" /></td>
+       <td>Mozilla Firefox 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cf88c19c23b240ac9b0ae1f62b9b2ef5">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dcb006783a9e0ef5061187c9ea8036d8</td>
        <td>CVE-2020-0502</td>
        <td>2022-01-03 13:42:21 <img src="imgs/new.gif" /></td>
@@ -1873,46 +1913,6 @@
        <td>2022-01-01 13:42:06</td>
        <td>Microsoft Windows Graphics Device Interface 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cbd596b1ff964e63a1f52c7796959c01">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5141288366e5d7b7628db992a30b5441</td>
-       <td>CVE-2020-1517</td>
-       <td>2022-01-01 13:42:03</td>
-       <td>Microsoft Windows File Server Resource Management Service 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=21118c888a7849ca83c07cc41b16f65b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1aff004e3e92e62acc0d46211fdc271b</td>
-       <td>CVE-2020-1526</td>
-       <td>2022-01-01 13:42:00</td>
-       <td>Microsoft Windows Network Connection Broker 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8e39b3ac0ba744189ee1631740da5670">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c8bcf7800f3234333886a42d460f2d0</td>
-       <td>CVE-2020-1513</td>
-       <td>2022-01-01 13:41:56</td>
-       <td>Microsoft Windows CSC Service 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ecfef8090b0545bcbe85f07b3702fe7b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3837efc19adde778256ae9429ca24a95</td>
-       <td>CVE-2020-1522</td>
-       <td>2022-01-01 13:41:53</td>
-       <td>Microsoft Windows Network Connection Broker 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=156ba76d414f4cb9b21159f63069e240">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5883fe95891cbdef502f5a34a91ff8c5</td>
-       <td>CVE-2020-1510</td>
-       <td>2022-01-01 13:41:50</td>
-       <td>Microsoft Windows Win32k 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0f906351a24e458985f8a7d2eb362218">详情</a></td>
       </tr>
 
      </tbody>
@@ -2228,6 +2228,86 @@
       </tr>
 
       <tr>
+       <td>49ad7b13ac776dfee335675ca61300f5</td>
+       <td>CVE-2021-45575</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45575">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0321a062d9f46366c473d3250390d068</td>
+       <td>CVE-2021-45574</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45574">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec2c5107e8c8aa3231dcb742f4ea6789</td>
+       <td>CVE-2021-45572</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45572">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1115e48cf4e79418a43c8c03237dcf88</td>
+       <td>CVE-2021-45571</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45571">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>013339e9bfc14b7615886950be13f852</td>
+       <td>CVE-2021-45570</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45570">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2126bac8e214dadb9422d8b96e69a90a</td>
+       <td>CVE-2021-45569</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45569">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d02f76416a918d11025e86a1e0202511</td>
+       <td>CVE-2021-45568</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45568">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f90d46f7aaf424decabbab264885e289</td>
+       <td>CVE-2021-45567</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45567">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26cf41bcd40f89c2127b7e929750e073</td>
+       <td>CVE-2021-45566</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45566">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d78d9a8752b08b75e7513a219ee6366</td>
+       <td>CVE-2021-45565</td>
+       <td>2021-12-26 01:15:16 </td>
+       <td>Certain NETGEAR devices are affected by command injection by an authenticated user. This affects RBK752 before 3.2.16.6, RBR750 before 3.2.16.6, RBS750 before 3.2.16.6, RBK852 before 3.2.16.6, RBR850 before 3.2.16.6, and RBS850 before 3.2.16.6.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45565">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0f084f46ceca156e8e85dae2fc40d60d</td>
        <td>CVE-2021-45519</td>
        <td>2021-12-26 01:15:13 </td>
@@ -2345,86 +2425,6 @@
        <td>2021-12-22 17:15:09 </td>
        <td>An Invalid pointer reference vulnerability exists in gpac 1.1.0 via the gf_svg_node_del function, which causes a segmentation fault and application crash.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45259">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3896b958d4885f6482a132e95889a96</td>
-       <td>CVE-2021-45258</td>
-       <td>2021-12-22 17:15:09 </td>
-       <td>A stack overflow vulnerability exists in gpac 1.1.0 via the gf_bifs_dec_proto_list function, which causes a segmentation fault and application crash.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45258">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b845bb02908ff179d5da4b866f1421d</td>
-       <td>CVE-2021-45459</td>
-       <td>2021-12-22 06:15:07 </td>
-       <td>lib/cmd.js in the node-windows package before 1.0.0-beta.6 for Node.js allows command injection via the PID parameter.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45459">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cfe8354c6e8d89045783e61f4e36549</td>
-       <td>CVE-2021-45297</td>
-       <td>2021-12-21 19:15:08 </td>
-       <td>An infinite loop vulnerability exists in Gpac 1.0.1 in gf_get_bit_size.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45297">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a94fff6d98f81aa8ae9df894200c9ab</td>
-       <td>CVE-2021-38966</td>
-       <td>2021-12-21 19:15:07 </td>
-       <td>IBM Cloud Pak for Automation 21.0.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 212357.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-38966">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2a88eaf35506d11ce762385c8bc33123</td>
-       <td>CVE-2021-45292</td>
-       <td>2021-12-21 18:15:08 </td>
-       <td>The gf_isom_hint_rtp_read function in GPAC 1.0.1 allows attackers to cause a denial of service (Invalid memory address dereference) via a crafted file in the MP4Box command.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45292">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>32148971cbb5a0497acebb8314b3d7dc</td>
-       <td>CVE-2021-45291</td>
-       <td>2021-12-21 18:15:08 </td>
-       <td>The gf_dump_setup function in GPAC 1.0.1 allows malicoius users to cause a denial of service (Invalid memory address dereference) via a crafted file in the MP4Box command.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45291">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa30efa26d0990a1391cc26cb7b3fda5</td>
-       <td>CVE-2021-45289</td>
-       <td>2021-12-21 18:15:08 </td>
-       <td>A vulnerability exists in GPAC 1.0.1 due to an omission of security-relevant Information, which could cause a Denial of Service. The program terminates with signal SIGKILL.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45289">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>359b810d17db0144be701e20268da617</td>
-       <td>CVE-2021-45253</td>
-       <td>2021-12-21 12:15:07 </td>
-       <td>The id parameter in view_storage.php from Simple Cold Storage Management System 1.0 appears to be vulnerable to SQL injection attacks. A payload injects a SQL sub-query that calls MySQL's load_file function with a UNC file path that references a URL on an external domain. The application interacted with that domain, indicating that the injected SQL query was executed.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45253">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>561a58861d0682923c1a55ff39592267</td>
-       <td>CVE-2021-45252</td>
-       <td>2021-12-21 12:15:07 </td>
-       <td>Multiple SQL injection vulnerabilities are found on Simple Forum-Discussion System 1.0 For example on three applications which are manage_topic.php, manage_user.php, and ajax.php. The attacker can be retrieving all information from the database of this system by using this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45252">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>46ac6c0c25666ca0416962c9b416d65c</td>
-       <td>CVE-2021-44699</td>
-       <td>2021-12-20 21:15:11 </td>
-       <td>Adobe Audition versions 14.4 (and earlier), and 22.0 (and earlier)are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious MP4 file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-44699">详情</a></td>
       </tr>
 
      </tbody>
