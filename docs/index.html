@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-01-06 05:38:11 -->
+<!-- RELEASE TIME : 2022-01-06 23:40:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>75702db2105ebee6548b2a4b3327a41c</td>
+       <td>CVE-2021-43045</td>
+       <td>2022-01-06 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability in the .NET SDK of Apache Avro allows an attacker to allocate excessive resources, potentially causing a denial-of-service attack.  This issue affects .NET applications using Apache Avro version 1.10.2 and prior versions.  Users should update to version 1.11.0 which addresses this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43045">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c2761a1c980bee3e0b5567c4b5bc246</td>
+       <td>CVE-2021-4194</td>
+       <td>2022-01-06 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>bookstack is vulnerable to Improper Access Control</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4194">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6005cb8319d24a8a7a06840d1bb45dad</td>
+       <td>CVE-2021-28715</td>
+       <td>2022-01-06 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Guest can force Linux netback driver to hog large amounts of kernel memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Incoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time. (CVE-2021-28715) The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing. (CVE-2021-28714)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-28715">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13b4a5698607f16110b09b321cb5795e</td>
+       <td>CVE-2021-28714</td>
+       <td>2022-01-06 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Guest can force Linux netback driver to hog large amounts of kernel memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Incoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time. (CVE-2021-28715) The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing. (CVE-2021-28714)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-28714">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1280025a54e90a70e69f73fe0c47519e</td>
+       <td>CVE-2022-0128</td>
+       <td>2022-01-06 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>vim is vulnerable to Out-of-bounds Read</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0128">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f6778b89faab3d1ab229e6f85bec2aa2</td>
+       <td>CVE-2021-46079</td>
+       <td>2022-01-06 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Unrestricted File Upload vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. A remote attacker can upload malicious files leading to Html Injection.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b30c0fd1a9c08af9c1be4612bc99a7b</td>
+       <td>CVE-2021-46078</td>
+       <td>2022-01-06 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Unrestricted File Upload vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. A remote attacker can upload malicious files leading to a Stored Cross-Site Scripting vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46078">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8a3bd43c715cce8f65ce837c1bbcc6a</td>
+       <td>CVE-2021-46075</td>
+       <td>2022-01-06 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Privilege Escalation vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. Staff account users can access the admin resources and perform CRUD Operations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46075">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8673fd2f9067662f3c51b90953bbc325</td>
+       <td>CVE-2021-46074</td>
+       <td>2022-01-06 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Stored Cross Site Scripting (XSS) vulnerability exists in Sourcecodester Vehicle Service Management System 1.0 via the Settings Section in login panel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46074">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d81f2142b72d50f63d57d02db98a2232</td>
+       <td>CVE-2021-46073</td>
+       <td>2022-01-06 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Stored Cross Site Scripting (XSS) vulnerability exists in Sourcecodester Vehicle Service Management System 1.0 via the User List Section in login panel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46073">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7cc420bbefd00e1630116a4ff198fc0c</td>
        <td>CVE-2021-45971</td>
        <td>2022-01-06 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-01-05 17:15:00 <img src="imgs/new.gif" /></td>
        <td>Rogue backends can cause DoS of guests via high frequency events T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Xen offers the ability to run PV backends in regular unprivileged guests, typically referred to as "driver domains". Running PV backends in driver domains has one primary security advantage: if a driver domain gets compromised, it doesn't have the privileges to take over the system. However, a malicious driver domain could try to attack other guests via sending events at a high frequency leading to a Denial of Service in the guest due to trying to service interrupts for elongated amounts of time. There are three affected backends: * blkfront patch 1, CVE-2021-28711 * netfront patch 2, CVE-2021-28712 * hvc_xen (console) patch 3, CVE-2021-28713</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-28712">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7397cc5dec7202e5bfd72b181cd68e2</td>
-       <td>CVE-2021-45452</td>
-       <td>2022-01-05 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Storage.save in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1 allows directory traversal if crafted filenames are directly passed to it.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45452">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f3a8349ce86c675237b5e439a1ed142</td>
-       <td>CVE-2021-45116</td>
-       <td>2022-01-05 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language's variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45116">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c2ba7d46cb7066f4994c6aa555ef0b8</td>
-       <td>CVE-2021-45115</td>
-       <td>2022-01-05 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. UserAttributeSimilarityValidator incurred significant overhead in evaluating a submitted password that was artificially large in relation to the comparison values. In a situation where access to user registration was unrestricted, this provided a potential vector for a denial-of-service attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45115">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b48c98d132c5c768877a4802f2b5d731</td>
-       <td>CVE-2021-41388</td>
-       <td>2022-01-04 22:15:00</td>
-       <td>Netskope client prior to 89.x on macOS is impacted by a local privilege escalation vulnerability. The XPC implementation of nsAuxiliarySvc process does not perform validation on new connections before accepting the connection. Thus any low privileged user can connect and call external methods defined in XPC service as root, elevating their privilege to the highest level.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41388">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c79ae17daa5e9361a47ac647f6f7459a</td>
-       <td>CVE-2021-22045</td>
-       <td>2022-01-04 22:15:00</td>
-       <td>VMware ESXi (7.0, 6.7 before ESXi670-202111101-SG and 6.5 before ESXi650-202110101-SG), VMware Workstation (16.2.0) and VMware Fusion (12.2.0) contains a heap-overflow vulnerability in CD-ROM device emulation. A malicious actor with access to a virtual machine with CD-ROM device emulation may be able to exploit this vulnerability in conjunction with other issues to execute code on the hypervisor from a virtual machine.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-22045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2cc5b838e196b8cddce6d4bff74e358</td>
-       <td>CVE-2022-21650</td>
-       <td>2022-01-04 21:15:00</td>
-       <td>Convos is an open source multi-user chat that runs in a web browser. You can't use SVG extension in Convos' chat window, but you can upload a file with an .html extension. By uploading an SVG file with an html extension the upload filter can be bypassed. This causes Stored XSS. Also, after uploading a file the XSS attack is triggered upon a user viewing the file. Through this vulnerability, an attacker is capable to execute malicious scripts. Users are advised to update as soon as possible.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21650">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2afdc255963cb0b9971e5885f6e0f38a</td>
-       <td>CVE-2022-21649</td>
-       <td>2022-01-04 21:15:00</td>
-       <td>Convos is an open source multi-user chat that runs in a web browser. Characters starting with "https://" in the chat window create an <a> tag. Stored XSS vulnerability using onfocus and autofocus occurs because escaping exists for "<" or ">" but escaping for double quotes does not exist. Through this vulnerability, an attacker is capable to execute malicious scripts. Users are advised to update as soon as possible.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21649">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8ccf5d3e748f017c27bd48efccfc80b</td>
-       <td>CVE-2022-21648</td>
-       <td>2022-01-04 20:15:00</td>
-       <td>Latte is an open source template engine for PHP. Versions since 2.8.0 Latte has included a template sandbox and in affected versions it has been found that a sandbox escape exists allowing for injection into web pages generated from Latte. This may lead to XSS attacks. The issue is fixed in the versions 2.8.8, 2.9.6 and 2.10.8. Users unable to upgrade should not accept template input from untrusted sources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21648">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fecbfbdbbbde7b42c6b6bc67ba55610</td>
-       <td>CVE-2022-21647</td>
-       <td>2022-01-04 20:15:00</td>
-       <td>CodeIgniter is an open source PHP full-stack web framework. Deserialization of Untrusted Data was found in the `old()` function in CodeIgniter4. Remote attackers may inject auto-loadable arbitrary objects with this vulnerability, and possibly execute existing PHP code on the server. We are aware of a working exploit, which can lead to SQL injection. Users are advised to upgrade to v4.1.6 or later. Users unable to upgrade as advised to not use the `old()` function and form_helper nor `RedirectResponse::withInput()` and `redirect()->withInput()`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21647">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85683f2a877fed77fe747dcfe264bec5</td>
-       <td>CVE-2022-21644</td>
-       <td>2022-01-04 20:15:00</td>
-       <td>USOC is an open source CMS with a focus on simplicity. In affected versions USOC allows for SQL injection via usersearch.php. In search terms provided by the user were not sanitized and were used directly to construct a sql statement. The only users permitted to search are site admins. Users are advised to upgrade as soon as possible. There are not workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21644">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>446d67667a5365137907a45b0a644ff1</td>
+       <td>CNNVD-202201-315 (CVE-2020-23986)</td>
+       <td>2022-01-06 23:40:18 <img src="imgs/new.gif" /></td>
+       <td>github-readme-stats 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-315">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>216fd85a04919bbf0fda6dd93dd1041f</td>
+       <td>CNNVD-202201-316 (CVE-2020-27428)</td>
+       <td>2022-01-06 23:40:16 <img src="imgs/new.gif" /></td>
+       <td>Scratch-Svg-Renderer 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-316">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d9bba1d1f33b6a43e386293bbe6e674</td>
+       <td>CNNVD-202201-317 (CVE-2021-41842)</td>
+       <td>2022-01-06 23:40:13 <img src="imgs/new.gif" /></td>
+       <td>Insyde InsydeH2O 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35f38f38dea0127cbdacbab40742a566</td>
+       <td>CNNVD-202201-308 (CVE-2021-45969)</td>
+       <td>2022-01-05 23:40:35 <img src="imgs/new.gif" /></td>
+       <td>Insyde InsydeH2O 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-308">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97efcb0864da4e4abfbed0d6db3d3b53</td>
+       <td>CNNVD-202201-309 (CVE-2021-45970)</td>
+       <td>2022-01-05 23:40:33 <img src="imgs/new.gif" /></td>
+       <td>Insyde InsydeH2O 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-309">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>136d758361c8b2b5bd54239bc6992624</td>
+       <td>CNNVD-202201-310 (CVE-2021-46038)</td>
+       <td>2022-01-05 23:40:30 <img src="imgs/new.gif" /></td>
+       <td>GPAC 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-310">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b18ea8bbf9aff06f7fc18ff71ffdc000</td>
+       <td>CNNVD-202201-311 (CVE-2021-45833)</td>
+       <td>2022-01-05 23:40:28 <img src="imgs/new.gif" /></td>
+       <td>HDF5 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-311">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e37469dfece36d4beb921cf83f7234c</td>
+       <td>CNNVD-202201-312 (CVE-2021-40026)</td>
+       <td>2022-01-05 23:40:25 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS Wearables 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-312">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>54b2b757c2f47b1bebf2a636266db06d</td>
+       <td>CNNVD-202201-313 (CVE-2021-45971)</td>
+       <td>2022-01-05 23:40:23 <img src="imgs/new.gif" /></td>
+       <td>Insyde InsydeH2O 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-313">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>983aa1f3d6a66c8f87c59ac4ef7b1638</td>
+       <td>CNNVD-202201-314 (CVE-2021-40009)</td>
+       <td>2022-01-05 23:40:20 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS Wearables 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-314">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6a27e9a907937b8687a7f95d49258ec5</td>
        <td>CNNVD-202201-184 (CVE-2021-43852)</td>
        <td>2022-01-04 23:39:31</td>
@@ -953,86 +1033,6 @@
        <td>2022-01-03 23:39:04</td>
        <td>HDF5 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202201-083">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d6b4229d03770dfc2c16fd6023edd36</td>
-       <td>CNNVD-202112-2813 (CVE-2021-20170)</td>
-       <td>2021-12-30 23:38:53</td>
-       <td>Netgear RAX43 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2813">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>800ca68d17d90f6302ed81e326ccc0eb</td>
-       <td>CNNVD-202112-2814 (CVE-2021-20171)</td>
-       <td>2021-12-30 23:38:50</td>
-       <td>Netgear RAX43 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2814">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>079deeffc1e0d4bbf6f7e3022f2d525e</td>
-       <td>CNNVD-202112-2815 (CVE-2021-20173)</td>
-       <td>2021-12-30 23:38:48</td>
-       <td>Netgear Nighthawk R6700 命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9ea8bcfc716ba1ad5fa9ae7654b4768</td>
-       <td>CNNVD-202112-2816 (CVE-2021-20174)</td>
-       <td>2021-12-30 23:38:46</td>
-       <td>Netgear Nighthawk R6700 信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2816">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d71066e40fd650e13ea71cedd8f43b6</td>
-       <td>CNNVD-202112-2817 (CVE-2021-4190)</td>
-       <td>2021-12-30 23:38:44</td>
-       <td>Wireshark 输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2817">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c5136b6c865b7925a08d35bc44696ce</td>
-       <td>CNNVD-202112-2818 (CVE-2021-23147)</td>
-       <td>2021-12-30 23:38:41</td>
-       <td>Netgear Nighthawk R6700 授权问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2818">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af53c9746c73a6fbdd311252587b351a</td>
-       <td>CNNVD-202112-2819 (CVE-2021-45077)</td>
-       <td>2021-12-30 23:38:39</td>
-       <td>Netgear Nighthawk R6700 加密问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2819">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19838763a50a6cb9a2dda5375243fe4e</td>
-       <td>CNNVD-202112-2820 (CVE-2021-20175)</td>
-       <td>2021-12-30 23:38:37</td>
-       <td>Netgear Nighthawk R6700 加密问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2820">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a9075f2439d2f7b41b2f421f30b752e</td>
-       <td>CNNVD-202112-2821 (CVE-2021-45732)</td>
-       <td>2021-12-30 23:38:35</td>
-       <td>Netgear Nighthawk R6700 加密问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2821">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a1edae4527bab57311c86eed8b833f0a</td>
-       <td>CNNVD-202112-2822 (CVE-2021-44466)</td>
-       <td>2021-12-30 23:38:33</td>
-       <td>Bitmask 访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202112-2822">详情</a></td>
       </tr>
 
      </tbody>
@@ -1420,6 +1420,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>88a8c676b52a739c0335d7c21ca810a9</td>
+       <td></td>
+       <td>2022-01-06 08:19:17 <img src="imgs/new.gif" /></td>
+       <td>MeterSphere 远程代码执行漏洞</td>
+       <td><a target="_blank" href="https://vas.riskivy.com/vuln-detail?id=107">详情</a></td>
+      </tr>
+
+      <tr>
        <td>76cad61d2d5a8750a6a714ab2c6dbc97</td>
        <td>CVE-2021-45232</td>
        <td>2021-12-28 10:31:16</td>
@@ -1651,14 +1659,6 @@
        <td><a target="_blank" href="https://vas.riskivy.com/vuln-detail?id=103">详情</a></td>
       </tr>
 
-      <tr>
-       <td>1911c90c4cf886d9867ff81b4756eb3f</td>
-       <td></td>
-       <td>2021-12-02 06:37:58</td>
-       <td>VMware vCenter 服务端请求伪造漏洞</td>
-       <td><a target="_blank" href="https://vas.riskivy.com/vuln-detail?id=103">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1675,6 +1675,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>d79ebcca362bc03f8b54401b60d1712d</td>
+       <td>CVE-2020-10188</td>
+       <td>2022-01-06 13:46:13 <img src="imgs/new.gif" /></td>
+       <td>netkit telnet 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=140cbd34e9744986b1f6c02674de9ae0">详情</a></td>
+      </tr>
+
       <tr>
        <td>93bb57561723f5c368c804895c348841</td>
        <td>CVE-2020-10174</td>
@@ -1905,14 +1913,6 @@
        <td>2022-01-01 13:42:19</td>
        <td>Microsoft Windows Remote Access 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bcff97caf3ad4d84936e3dcd75e216fe">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da6ede3ef29f64d84b75a15b26cb7423</td>
-       <td>CVE-2020-1527</td>
-       <td>2022-01-01 13:42:16</td>
-       <td>Microsoft Windows Custom Protocol Engine 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=20605a8b161047f385d02eda0d257d60">详情</a></td>
       </tr>
 
      </tbody>
