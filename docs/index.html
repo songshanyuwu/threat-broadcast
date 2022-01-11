@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-01-10 23:40:59 -->
+<!-- RELEASE TIME : 2022-01-11 05:37:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>89f3478717fbefdd9aaa3bb7ae48f27f</td>
+       <td>CVE-2021-36414</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A heab-based buffer overflow vulnerability exists in MP4Box in GPAC 1.0.1 via media.c, which allows attackers to cause a denial of service or execute arbitrary code via a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36414">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c815af33c95f499c2e6b122d66341e66</td>
+       <td>CVE-2021-36412</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A heap-based buffer overflow vulnerability exists in MP4Box in GPAC 1.0.1 via the gp_rtp_builder_do_mpeg12_video function, which allows attackers to possibly have unspecified other impact via a crafted file in the MP4Box command,</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36412">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5f345822804ea50e3f9d958dd14ef6b</td>
+       <td>CVE-2021-36411</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue has been found in libde265 v1.0.8 due to incorrect access control. A SEGV caused by a READ memory access in function derive_boundaryStrength of deblock.cc has occurred. The vulnerability causes a segmentation fault and application crash, which leads to remote denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36411">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79b4d0af6a0db9c7d01bb7cc1132bb5b</td>
+       <td>CVE-2021-36410</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stack-buffer-overflow exists in libde265 v1.0.8 via fallback-motion.cc in function put_epel_hv_fallback when running program dec265.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36410">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>141aee6d2f5dda41852611469014c728</td>
+       <td>CVE-2021-36409</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is an Assertion `scaling_list_pred_matrix_id_delta==1' failed at sps.cc:925 in libde265 v1.0.8 when decoding file, which allows attackers to cause a Denial of Service (DoS) by running the application with a crafted file or possibly have unspecified other impact.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36409">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecc1ca5919a0d300bfb71f33004f836e</td>
+       <td>CVE-2021-36408</td>
+       <td>2022-01-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in libde265 v1.0.8.There is a Heap-use-after-free in intrapred.h when decoding file using dec265.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-36408">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b85eb88e47e52f78381ffb4a1d77c37</td>
+       <td>CVE-2021-35452</td>
+       <td>2022-01-10 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Incorrect Access Control vulnerability exists in libde265 v1.0.8 due to a SEGV in slice.cc.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-35452">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>93cf200d98b77651b09f27c2fe643e90</td>
+       <td>CVE-2020-25427</td>
+       <td>2022-01-10 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Null pointer dereference vulnerability exits in MP4Box - GPAC version 0.8.0-rev177-g51a8ef874-master via the gf_isom_get_track_id function, which causes a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-25427">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e21e4bbc34ee5f893619eacb333cfef</td>
+       <td>CVE-2022-21672</td>
+       <td>2022-01-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>make-ca is a utility to deliver and manage a complete PKI configuration for workstations and servers. Starting with version 0.9 and prior to version 1.10, make-ca misinterprets Mozilla certdata.txt and treats explicitly untrusted certificates like trusted ones, causing those explicitly untrusted certificates trusted by the system. The explicitly untrusted certificates were used by some CAs already hacked. Hostile attackers may perform a MIM attack exploiting them. Everyone using the affected versions of make-ca should upgrade to make-ca-1.10, and run `make-ca -f -g` as the `root` user to regenerate the trusted store immediately. As a workaround, users may delete the untrusted certificates from /etc/pki/tls and /etc/ssl/certs manually (or by a script), but this is not recommended because the manual changes will be overwritten next time running make-ca to update the trusted anchor.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0d8141e859d40f4546e42ea8637d096</td>
+       <td>CVE-2022-21670</td>
+       <td>2022-01-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>markdown-it is a Markdown parser. Prior to version 1.3.2, special patterns with length greater than 50 thousand characterss could slow down the parser significantly. Users should upgrade to version 12.3.2 to receive a patch. There are no known workarounds aside from upgrading.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21670">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fea4613dd5980e2fdcc1f04feaea9b81</td>
        <td>CVE-2022-21666</td>
        <td>2022-01-10 20:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-01-06 20:15:00</td>
        <td>A Pointer Dereference Vulnerability exists in GPAC 1.0.1 via the _fseeko function, which causes a Denial of Service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea97be08c487e929f0daf1086644e374</td>
-       <td>CVE-2021-46041</td>
-       <td>2022-01-06 20:15:00</td>
-       <td>A Segmentation Fault Vulnerability exists in GPAC 1.0.1 via the co64_box_new function, which causes a Denial of Service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46041">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75702db2105ebee6548b2a4b3327a41c</td>
-       <td>CVE-2021-43045</td>
-       <td>2022-01-06 18:15:00</td>
-       <td>A vulnerability in the .NET SDK of Apache Avro allows an attacker to allocate excessive resources, potentially causing a denial-of-service attack.  This issue affects .NET applications using Apache Avro version 1.10.2 and prior versions.  Users should update to version 1.11.0 which addresses this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c2761a1c980bee3e0b5567c4b5bc246</td>
-       <td>CVE-2021-4194</td>
-       <td>2022-01-06 18:15:00</td>
-       <td>bookstack is vulnerable to Improper Access Control</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4194">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6005cb8319d24a8a7a06840d1bb45dad</td>
-       <td>CVE-2021-28715</td>
-       <td>2022-01-06 18:15:00</td>
-       <td>Guest can force Linux netback driver to hog large amounts of kernel memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Incoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time. (CVE-2021-28715) The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing. (CVE-2021-28714)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-28715">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13b4a5698607f16110b09b321cb5795e</td>
-       <td>CVE-2021-28714</td>
-       <td>2022-01-06 18:15:00</td>
-       <td>Guest can force Linux netback driver to hog large amounts of kernel memory T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Incoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time. (CVE-2021-28715) The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing. (CVE-2021-28714)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-28714">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1280025a54e90a70e69f73fe0c47519e</td>
-       <td>CVE-2022-0128</td>
-       <td>2022-01-06 17:15:00</td>
-       <td>vim is vulnerable to Out-of-bounds Read</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f6778b89faab3d1ab229e6f85bec2aa2</td>
-       <td>CVE-2021-46079</td>
-       <td>2022-01-06 16:15:00</td>
-       <td>An Unrestricted File Upload vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. A remote attacker can upload malicious files leading to Html Injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46079">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b30c0fd1a9c08af9c1be4612bc99a7b</td>
-       <td>CVE-2021-46078</td>
-       <td>2022-01-06 16:15:00</td>
-       <td>An Unrestricted File Upload vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. A remote attacker can upload malicious files leading to a Stored Cross-Site Scripting vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46078">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8a3bd43c715cce8f65ce837c1bbcc6a</td>
-       <td>CVE-2021-46075</td>
-       <td>2022-01-06 16:15:00</td>
-       <td>A Privilege Escalation vulnerability exists in Sourcecodester Vehicle Service Management System 1.0. Staff account users can access the admin resources and perform CRUD Operations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46075">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8673fd2f9067662f3c51b90953bbc325</td>
-       <td>CVE-2021-46074</td>
-       <td>2022-01-06 16:15:00</td>
-       <td>A Stored Cross Site Scripting (XSS) vulnerability exists in Sourcecodester Vehicle Service Management System 1.0 via the Settings Section in login panel.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46074">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>6a8860f13cb5fb2540fca596d9135dde</td>
        <td>CVE-2020-2806</td>
-       <td>2022-01-09 13:44:52 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:52</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a5a2338674af41f283ca4f0eeade01e6">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>0967b8c2ccfa4d02b5fdca65e69b8768</td>
        <td>CVE-2020-2804</td>
-       <td>2022-01-09 13:44:52 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:52</td>
        <td>Oracle MySQL 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5db279a9ba0d44728d526195b9fb8f2e">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>5803136c6713737375536d8586ae7ff5</td>
        <td>CVE-2020-2779</td>
-       <td>2022-01-09 13:44:44 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:44</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5377c6d38f3c465cab84117a2f21dda4">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>3a04330bd9c5e4483aabce2a92b1db88</td>
        <td>CVE-2020-2780</td>
-       <td>2022-01-09 13:44:44 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:44</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2221c28db39544fbb7880b277628ddc1">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>c0e22391140614fd38bce1747a833de4</td>
        <td>CVE-2020-2770</td>
-       <td>2022-01-09 13:44:36 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:36</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e20985cb59044cccaaf362afb4b70c04">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>d2d1f2df001884e926080c557b5cd760</td>
        <td>CVE-2020-2768</td>
-       <td>2022-01-09 13:44:35 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:35</td>
        <td>Oracle MySQL Cluster 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d446fb436fad41519224d55bab08f32c">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>dc63082a2b1e8822b623f85d5791cf29</td>
        <td>CVE-2020-2763</td>
-       <td>2022-01-09 13:44:30 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:30</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f39f10ac03d64716aebe56c4ab62fd1f">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>0a61a51263d0e5a95ee84c7c32bcba97</td>
        <td>CVE-2020-2762</td>
-       <td>2022-01-09 13:44:26 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:26</td>
        <td>Oracle MySQL 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f43ceb813ac5410cb538cfc8752d7ad1">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>86c7ccf477773f9f141c8d8ee3817e7c</td>
        <td>CVE-2020-2760</td>
-       <td>2022-01-09 13:44:23 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:23</td>
        <td>Oracle MySQL 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=54979f96bbb8416f9a8a9d8c6684fca9">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>72ee43ab9f8a0a093ff634b3919e4328</td>
        <td>CVE-2020-2759</td>
-       <td>2022-01-09 13:44:19 <img src="imgs/new.gif" /></td>
+       <td>2022-01-09 13:44:19</td>
        <td>Oracle MySQL Server 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=391143ff5cb64bb89fd77457b75bc2f8">详情</a></td>
       </tr>
