@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-01 23:36:34 -->
+<!-- RELEASE TIME : 2022-02-02 05:35:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2e9114450518054454b8fd08d40c698b</td>
+       <td>CVE-2021-42638</td>
+       <td>2022-02-01 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>PrinterLogic Web Stack versions 19.1.1.13 SP9 and below do not sanitize user input resulting in pre-auth remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42638">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cd44b21d24df98369a54b5030f2f73ec</td>
        <td>CVE-2022-24198</td>
        <td>2022-02-01 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +374,7 @@
       <tr>
        <td>d5ef45777d9eb19c3c666b368f104d4f</td>
        <td>CVE-2022-24266</td>
-       <td>2022-01-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 22:15:00</td>
        <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the order_by parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24266">详情</a></td>
       </tr>
@@ -374,7 +382,7 @@
       <tr>
        <td>4b6732618f835902872ed0ca42149421</td>
        <td>CVE-2022-24265</td>
-       <td>2022-01-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 22:15:00</td>
        <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/menu/ via the path=component/menu/&menu_filter=3 parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24265">详情</a></td>
       </tr>
@@ -382,7 +390,7 @@
       <tr>
        <td>2b24d01737c60bf94d96919f0c1469e8</td>
        <td>CVE-2022-24264</td>
-       <td>2022-01-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 22:15:00</td>
        <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the search_word parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24264">详情</a></td>
       </tr>
@@ -390,7 +398,7 @@
       <tr>
        <td>89adf105319ea184ec007caaebb9d882</td>
        <td>CVE-2022-24263</td>
-       <td>2022-01-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 22:15:00</td>
        <td>Hospital Management System v4.0 was discovered to contain a SQL injection vulnerability in /Hospital-Management-System-master/func.php via the email parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24263">详情</a></td>
       </tr>
@@ -398,7 +406,7 @@
       <tr>
        <td>8782ba974c6bcea0ed7097319483ff5a</td>
        <td>CVE-2022-23872</td>
-       <td>2022-01-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 22:15:00</td>
        <td>Emlog pro v1.1.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the component /admin/configure.php via the parameter footer_info.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23872">详情</a></td>
       </tr>
@@ -406,7 +414,7 @@
       <tr>
        <td>6448ac72d47efbbb3f9b36e6202bc963</td>
        <td>CVE-2022-21659</td>
-       <td>2022-01-31 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 21:15:00</td>
        <td>Flask-AppBuilder is an application development framework, built on top of the Flask web framework. In affected versions there exists a user enumeration vulnerability. This vulnerability allows for a non authenticated user to enumerate existing accounts by timing the response time from the server when you are logging in. Users are advised to upgrade to version 3.4.4 as soon as possible. There are no known workarounds for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21659">详情</a></td>
       </tr>
@@ -513,14 +521,6 @@
        <td>2022-01-11 22:15:00</td>
        <td>SpiceDB is a database system for managing security-critical application permissions. Any user making use of a wildcard relationship under the right hand branch of an `exclusion` or within an `intersection` operation will see `Lookup`/`LookupResources` return a resource as "accessible" if it is *not* accessible by virtue of the inclusion of the wildcard in the intersection or the right side of the exclusion. In `v1.3.0`, the wildcard is ignored entirely in lookup's dispatch, resulting in the `banned` wildcard being ignored in the exclusion. Version 1.4.0 contains a patch for this issue. As a workaround, don't make use of wildcards on the right side of intersections or within exclusions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21646">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cef8f1f2a3fa5ffc5f2ea3b953d6128</td>
-       <td>CVE-2021-46283</td>
-       <td>2022-01-11 22:15:00</td>
-       <td>nf_tables_newset in net/netfilter/nf_tables_api.c in the Linux kernel before 5.12.13 allows local users to cause a denial of service (NULL pointer dereference and general protection fault) because of the missing initialization for nft_set_elem_expr_alloc. A local user can set a netfilter table expression in their own namespace.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46283">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>b8ac366a3a42c3637828117b453547f4</td>
        <td>CVE-2020-16932</td>
-       <td>2022-01-31 13:44:32 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:32</td>
        <td>Microsoft Excel 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2a2decd822944c22885e442d048bd005">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>b7327d9028fcb5bceb4160e443100be8</td>
        <td>CVE-2020-16931</td>
-       <td>2022-01-31 13:44:28 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:28</td>
        <td>Microsoft Excel 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=70563701801a475393fc39f75f411273">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>2e4c9928c483e1cb236bf0a8fd5fd4d2</td>
        <td>CVE-2020-16930</td>
-       <td>2022-01-31 13:44:25 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:25</td>
        <td>Microsoft Excel 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a35e7450c13b4830a49219ce8f1b1450">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>ba17fde525cd17902aa5811b6c32f2f3</td>
        <td>CVE-2020-16927</td>
-       <td>2022-01-31 13:44:21 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:21</td>
        <td>Microsoft RDP 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0ba268782ac04f628054a21ed2c3ffd3">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>8c14053a10b420e069dd0755b284b132</td>
        <td>CVE-2020-16928</td>
-       <td>2022-01-31 13:44:18 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:18</td>
        <td>Microsoft Office 授权问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ea2119cf8de48dab5fd38528c4d0cc9">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>eafa9f6874f53aa71a97f56c6dc4fd37</td>
        <td>CVE-2020-16924</td>
-       <td>2022-01-31 13:44:14 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:14</td>
        <td>Microsoft Windows Jet 数据库引擎缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f92c1a5b3d29431eb8cec8dc9b2158c2">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>982b7b58fa2f66930ea5f85da932f691</td>
        <td>CVE-2020-16921</td>
-       <td>2022-01-31 13:44:11 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:11</td>
        <td>Microsoft Windows 文本服务框架缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f67bfcd37ce64793880421b99557e18a">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>f6b220ce94548356791f36ce2b5a4811</td>
        <td>CVE-2020-16919</td>
-       <td>2022-01-31 13:44:07 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:07</td>
        <td>Microsoft Windows 信息泄露漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f737835a9ef64c36a3fbc059c6c26785">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>3eae1c28b86e1e49709c41823ebf8882</td>
        <td>CVE-2020-16920</td>
-       <td>2022-01-31 13:44:04 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:04</td>
        <td>Microsoft Windows 应用程序兼容性客户端库授权问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8c0237e580004c4e9f0aa82123a41977">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>27047bd3e314d19eb48aea6f5eecef28</td>
        <td>CVE-2020-16915</td>
-       <td>2022-01-31 13:44:00 <img src="imgs/new.gif" /></td>
+       <td>2022-01-31 13:44:00</td>
        <td>Microsoft Windows 媒体基础缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a0c05646bdac4aae9fedffe913509efd">详情</a></td>
       </tr>
