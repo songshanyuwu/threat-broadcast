@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-03 05:35:05 -->
+<!-- RELEASE TIME : 2022-02-03 23:35:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>78565ce9f3edf071e7018dfdc3fe0ffd</td>
+       <td>CVE-2022-24307</td>
+       <td>2022-02-03 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mastodon before 3.3.2 and 3.4.x before 3.4.6 has incorrect access control because it does not compact incoming signed JSON-LD activities. (JSON-LD signing has been supported since version 1.6.0.)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24307">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eae7146b6518a215ee83ec88af8982cc</td>
+       <td>CVE-2022-21741</td>
+       <td>2022-02-03 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. ### Impact An attacker can craft a TFLite model that would trigger a division by zero in the implementation of depthwise convolutions. The parameters of the convolution can be user controlled and are also used within a division operation to determine the size of the padding that needs to be added before applying the convolution. There is no check before this division that the divisor is strictly positive. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c6bb8c0fc7bf72552898388aade0f60</td>
+       <td>CVE-2022-21740</td>
+       <td>2022-02-03 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `SparseCountSparseOutput` is vulnerable to a heap overflow. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21740">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7da898d5da1dc6568890e62d5b32f7b6</td>
+       <td>CVE-2022-21739</td>
+       <td>2022-02-03 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `QuantizedMaxPool` has an undefined behavior where user controlled inputs can trigger a reference binding to null pointer. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7014751d0b6121d4cb5e905f4a9ad220</td>
+       <td>CVE-2022-21738</td>
+       <td>2022-02-03 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `SparseCountSparseOutput` can be made to crash a TensorFlow process by an integer overflow whose result is then used in a memory allocation. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef01da219782bcc6493624b3f987cefb</td>
+       <td>CVE-2022-21737</td>
+       <td>2022-02-03 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `*Bincount` operations allows malicious users to cause denial of service by passing in arguments which would trigger a `CHECK`-fail. There are several conditions that the input arguments must satisfy. Some are not caught during shape inference and others are not caught during kernel implementation. This results in `CHECK` failures later when the output tensors get allocated. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21737">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72aee0af41b67e9bd84cdf84f9e637c3</td>
+       <td>CVE-2021-44866</td>
+       <td>2022-02-03 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Online-Movie-Ticket-Booking-System 1.0. The file about.php does not perform input validation on the 'id' paramter. An attacker can append SQL queries to the input to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44866">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab47616aee7b976259ea3512217fb3d7</td>
+       <td>CVE-2022-23569</td>
+       <td>2022-02-03 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. Multiple operations in TensorFlow can be used to trigger a denial of service via `CHECK`-fails (i.e., assertion failures). This is similar to TFSA-2021-198 and has similar fixes. We have patched the reported issues in multiple GitHub commits. It is possible that other similar instances exist in TensorFlow, we will issue fixes as these are discovered. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23569">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0ea681500deb1133738633e75e5e618e</td>
+       <td>CVE-2022-21735</td>
+       <td>2022-02-03 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `FractionalMaxPool` can be made to crash a TensorFlow process via a division by 0. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21735">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c5200a4a624f5342442596fffbeb07f</td>
+       <td>CVE-2022-21734</td>
+       <td>2022-02-03 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tensorflow is an Open Source Machine Learning Framework. The implementation of `MapStage` is vulnerable a `CHECK`-fail if the key tensor is not a scalar. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21734">详情</a></td>
+      </tr>
+
+      <tr>
        <td>bf58027c47c10458665830d84afff728</td>
        <td>CVE-2022-24069</td>
        <td>2022-02-03 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-02-01 19:15:00</td>
        <td>eliteCMS v1.0 was discovered to contain a SQL injection vulnerability via /admin/edit_user.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24222">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b2356b50b13a6364584fea67a35797e</td>
-       <td>CVE-2022-24221</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>eliteCMS v1.0 was discovered to contain a SQL injection vulnerability via /admin/functions/functions.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24221">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01f1607bd138d97a3abe1d9c1046791c</td>
-       <td>CVE-2022-24220</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>eliteCMS v1.0 was discovered to contain a SQL injection vulnerability via /admin/edit_post.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24220">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f82bbd70e5ee9e3607d7d499acf83ded</td>
-       <td>CVE-2022-24219</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>eliteCMS v1.0 was discovered to contain a SQL injection vulnerability via /admin/edit_page.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24219">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>451e84f2fdd798ac4af81995289d4dc2</td>
-       <td>CVE-2022-24218</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>An issue in /admin/delete_image.php of eliteCMS v1.0 allows attackers to delete arbitrary files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24218">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b08ae2d9561941dbb3890d1f4f730be6</td>
-       <td>CVE-2021-46093</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>eliteCMS v1.0 is vulnerable to Insecure Permissions via manage_uploads.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46093">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5ef45777d9eb19c3c666b368f104d4f</td>
-       <td>CVE-2022-24266</td>
-       <td>2022-01-31 22:15:00</td>
-       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the order_by parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24266">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b6732618f835902872ed0ca42149421</td>
-       <td>CVE-2022-24265</td>
-       <td>2022-01-31 22:15:00</td>
-       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/menu/ via the path=component/menu/&menu_filter=3 parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24265">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b24d01737c60bf94d96919f0c1469e8</td>
-       <td>CVE-2022-24264</td>
-       <td>2022-01-31 22:15:00</td>
-       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the search_word parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24264">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89adf105319ea184ec007caaebb9d882</td>
-       <td>CVE-2022-24263</td>
-       <td>2022-01-31 22:15:00</td>
-       <td>Hospital Management System v4.0 was discovered to contain a SQL injection vulnerability in /Hospital-Management-System-master/func.php via the email parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8782ba974c6bcea0ed7097319483ff5a</td>
-       <td>CVE-2022-23872</td>
-       <td>2022-01-31 22:15:00</td>
-       <td>Emlog pro v1.1.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the component /admin/configure.php via the parameter footer_info.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23872">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>45aad88efb469e12862d20821e8afa43</td>
+       <td>CVE-2020-14864</td>
+       <td>2022-02-03 13:47:06 <img src="imgs/new.gif" /></td>
+       <td>Oracle Business Intelligence Enterprise Edition 访问控制错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=58545ccd0e88489b8ca4a9d96900459c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f5b17d178705b9c97299db701bcb5ed</td>
+       <td>CVE-2020-14861</td>
+       <td>2022-02-03 13:47:02 <img src="imgs/new.gif" /></td>
+       <td>Oracle MySQL 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9e2c6018a0a24352bf98b0f9a27dbd93">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f00c0a35923c9eff99cd2e162c34860</td>
+       <td>CVE-2020-14862</td>
+       <td>2022-02-03 13:46:59 <img src="imgs/new.gif" /></td>
+       <td>Oracle Universal Work Queue 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=82815f9b1aa0442b9ac5cede4ee94f8e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1b74ed6bd942b95375308ba678eaf463</td>
+       <td>CVE-2020-14858</td>
+       <td>2022-02-03 13:46:56 <img src="imgs/new.gif" /></td>
+       <td>Oracle Hospitality OPERA Property Services 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=032b9748ee594470805043cb8b9a455e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b2afa9f6b49e6a287fed0942585dbe5</td>
+       <td>CVE-2020-14863</td>
+       <td>2022-02-03 13:46:53 <img src="imgs/new.gif" /></td>
+       <td>Oracle One-to-One Fulfillment 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ddb1636f98bc450ab61269f7759051b9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23b99ade2f9bd12fac5e5d3ac2ae46f1</td>
+       <td>CVE-2020-14859</td>
+       <td>2022-02-03 13:46:50 <img src="imgs/new.gif" /></td>
+       <td>Oracle WebLogic Server Core 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=446731b4c25f485aaf40340e8212962d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce2331b809bcf8825f34922f5aa8d6aa</td>
+       <td>CVE-2020-14855</td>
+       <td>2022-02-03 13:46:46 <img src="imgs/new.gif" /></td>
+       <td>Oracle Universal Work Queue 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=285ba2cf6f084399887ea11f8bcee1ad">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e84b864d76ad727ebe0a3013eb38dfc9</td>
+       <td>CVE-2020-14860</td>
+       <td>2022-02-03 13:46:43 <img src="imgs/new.gif" /></td>
+       <td>Oracle MySQL 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=77954381f4a043f086f492a4fbb5f922">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>170fbd9efc4c32251241c6d2006ab7d4</td>
+       <td>CVE-2020-14856</td>
+       <td>2022-02-03 13:46:39 <img src="imgs/new.gif" /></td>
+       <td>Oracle Trade Management product 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4ff241e6871441f5a067c61acb10bc21">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7ecb0c1d1c5cc8de5e29174520a5977</td>
+       <td>CVE-2020-14852</td>
+       <td>2022-02-03 13:46:36 <img src="imgs/new.gif" /></td>
+       <td>Oracle MySQL 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=85e9159c5b1b4b519e16fda98749699a">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5191a339743aa22ec58c86ca805904f2</td>
        <td>CVE-2020-14776</td>
        <td>2022-02-02 13:45:47 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-02-01 13:44:37</td>
        <td>SAP 多款产品代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b2581363a8ea43828221265a9de76309">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b8ac366a3a42c3637828117b453547f4</td>
-       <td>CVE-2020-16932</td>
-       <td>2022-01-31 13:44:32</td>
-       <td>Microsoft Excel 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2a2decd822944c22885e442d048bd005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7327d9028fcb5bceb4160e443100be8</td>
-       <td>CVE-2020-16931</td>
-       <td>2022-01-31 13:44:28</td>
-       <td>Microsoft Excel 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=70563701801a475393fc39f75f411273">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e4c9928c483e1cb236bf0a8fd5fd4d2</td>
-       <td>CVE-2020-16930</td>
-       <td>2022-01-31 13:44:25</td>
-       <td>Microsoft Excel 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a35e7450c13b4830a49219ce8f1b1450">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba17fde525cd17902aa5811b6c32f2f3</td>
-       <td>CVE-2020-16927</td>
-       <td>2022-01-31 13:44:21</td>
-       <td>Microsoft RDP 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0ba268782ac04f628054a21ed2c3ffd3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c14053a10b420e069dd0755b284b132</td>
-       <td>CVE-2020-16928</td>
-       <td>2022-01-31 13:44:18</td>
-       <td>Microsoft Office 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ea2119cf8de48dab5fd38528c4d0cc9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eafa9f6874f53aa71a97f56c6dc4fd37</td>
-       <td>CVE-2020-16924</td>
-       <td>2022-01-31 13:44:14</td>
-       <td>Microsoft Windows Jet 数据库引擎缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f92c1a5b3d29431eb8cec8dc9b2158c2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>982b7b58fa2f66930ea5f85da932f691</td>
-       <td>CVE-2020-16921</td>
-       <td>2022-01-31 13:44:11</td>
-       <td>Microsoft Windows 文本服务框架缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f67bfcd37ce64793880421b99557e18a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f6b220ce94548356791f36ce2b5a4811</td>
-       <td>CVE-2020-16919</td>
-       <td>2022-01-31 13:44:07</td>
-       <td>Microsoft Windows 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f737835a9ef64c36a3fbc059c6c26785">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3eae1c28b86e1e49709c41823ebf8882</td>
-       <td>CVE-2020-16920</td>
-       <td>2022-01-31 13:44:04</td>
-       <td>Microsoft Windows 应用程序兼容性客户端库授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8c0237e580004c4e9f0aa82123a41977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27047bd3e314d19eb48aea6f5eecef28</td>
-       <td>CVE-2020-16915</td>
-       <td>2022-01-31 13:44:00</td>
-       <td>Microsoft Windows 媒体基础缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a0c05646bdac4aae9fedffe913509efd">详情</a></td>
       </tr>
 
      </tbody>
@@ -2220,6 +2220,30 @@
       </tr>
 
       <tr>
+       <td>6796a14d7a1012e7650b768ea7088f93</td>
+       <td>CVE-2022-24266</td>
+       <td>2022-01-31 22:15:07 </td>
+       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the order_by parameter.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24266">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dde8ad3236b9f57122636ecd9fcf9433</td>
+       <td>CVE-2022-24265</td>
+       <td>2022-01-31 22:15:07 </td>
+       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/menu/ via the path=component/menu/&amp;menu_filter=3 parameter.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24265">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a03dded04555614065d418221a5e2bdb</td>
+       <td>CVE-2022-24264</td>
+       <td>2022-01-31 22:15:07 </td>
+       <td>Cuppa CMS v1.0 was discovered to contain a SQL injection vulnerability in /administrator/components/table_manager/ via the search_word parameter.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24264">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9975bb41d3eae5eeb1a4adbf51210996</td>
        <td>CVE-2022-23979</td>
        <td>2022-01-28 20:15:12 </td>
@@ -2401,30 +2425,6 @@
        <td>2022-01-21 23:15:08 </td>
        <td>graphql-go is a GraphQL server with a focus on ease of use. In versions prior to 1.3.0 there exists a DoS vulnerability that is possible due to a bug in the library that would allow an attacker with specifically designed queries to cause stack overflow panics. Any user with access to the GraphQL handler can send these queries and cause stack overflows. This in turn could potentially compromise the ability of the server to serve data to its users. The issue has been patched in version `v1.3.0`. The only known workaround for this issue is to disable the `graphql.MaxDepth` option from your schema which is not recommended.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21708">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0247cf7b6ef45d8707ec533f0ec462d8</td>
-       <td>CVE-2022-21707</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>wasmCloud Host Runtime is a server process that securely hosts and provides dispatch for web assembly (WASM) actors and capability providers. In versions prior to 0.52.2 actors can bypass capability authorization. Actors are normally required to declare their capabilities for inbound invocations, but with this vulnerability actor capability claims are not verified upon receiving invocations. This compromises the security model for actors as they can receive unauthorized invocations from linked capability providers. The problem has been patched in versions `0.52.2` and greater. There is no workaround and users are advised to upgrade to an unaffected version as soon as possible.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21707">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8c6909dafd62333eaff47f5e4667fae</td>
-       <td>CVE-2022-23837</td>
-       <td>2022-01-21 21:15:09 </td>
-       <td>In api.rb in Sidekiq before 6.4.0, there is no limit on the number of days when requesting stats for the graph. This overloads the system, affecting the Web UI, and makes it unavailable to users.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23837">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>627f91eef3e81d1b2eb78eaf5f0ad210</td>
-       <td>CVE-2022-21933</td>
-       <td>2022-01-21 09:15:06 </td>
-       <td>ASUS VivoMini/Mini PC device has an improper input validation vulnerability. A local attacker with system privilege can use system management interrupt (SMI) to modify memory, resulting in arbitrary code execution for controlling the system or disrupting service.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21933">详情</a></td>
       </tr>
 
      </tbody>
