@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-04 05:35:02 -->
+<!-- RELEASE TIME : 2022-02-04 23:35:11 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3ecdffaf5f04c9be7c5dcf1aa3eb0d4e</td>
+       <td>CVE-2022-24448</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in fs/nfs/dir.c in the Linux kernel before 5.16.5. If an application sets the O_DIRECTORY flag, and tries to open a regular file, nfs_atomic_open() performs a regular lookup. If a regular file is found, ENOTDIR should occur, but the server instead returns uninitialized data in the file descriptor.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24448">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f62f8b35784e76fecbc69aa0e860ea63</td>
+       <td>CVE-2022-24129</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The OIDC OP plugin before 3.0.4 for Shibboleth Identity Provider allows server-side request forgery (SSRF) due to insufficient restriction of the request_uri parameter. This allows attackers to interact with arbitrary third-party HTTP services.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24129">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0784cce5d87acf0ef783da644a194b0e</td>
+       <td>CVE-2021-45408</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Open Redirect vulnerability exists in SeedDMS 6.0.15 in out.Login.php, which llows remote malicious users to redirect users to malicious sites using the "referuri" parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45408">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2207e9c513f5d9eafbafe84348350999</td>
+       <td>CVE-2021-23507</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The package object-path-set before 1.0.2 are vulnerable to Prototype Pollution via the setPath method, as it allows an attacker to merge object prototypes into it.*Note:*  This vulnerability derives from an incomplete fix in https://security.snyk.io/vuln/SNYK-JS-OBJECTPATHSET-607908</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23507">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32a22bf696442cd867fa8e71729f75e5</td>
+       <td>CVE-2021-23497</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects the package @strikeentco/set before 1.0.2. It allows an attacker to cause a denial of service and may lead to remote code execution.**Note:**  This vulnerability derives from an incomplete fix in https://security.snyk.io/vuln/SNYK-JS-STRIKEENTCOSET-1038821</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23497">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d50bb6c9d5e39abd22766c86900d1c3</td>
+       <td>CVE-2021-23470</td>
+       <td>2022-02-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects the package putil-merge before 3.8.0. The merge() function does not check the values passed into the argument. An attacker can supply a malicious value by adjusting the value to include the constructor property.Note:  This vulnerability derives from an incomplete fix in https://security.snyk.io/vuln/SNYK-JS-PUTILMERGE-1317077</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23470">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23c647ec99caf0e19768becf3e218e36</td>
+       <td>CVE-2022-24249</td>
+       <td>2022-02-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Null Pointer Dereference vulnerability exists in GPAC 1.1.0 via the xtra_box_write function in /box_code_base.c, which causes a Denial of Service. This vulnerability was fixed in commit 71f9871.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24249">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>166a9217fc00dadbee354ec424c7383b</td>
+       <td>CVE-2021-45429</td>
+       <td>2022-02-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Buffer Overflow vulnerablity exists in VirusTotal YARA git commit: 605b2edf07ed8eb9a2c61ba22eb2e7c362f47ba7 via yr_set_configuration in yara/libyara/libyara.c, which could cause a Denial of Service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0fad087811ad7d6cb06e87de0bb36faa</td>
+       <td>CVE-2021-29398</td>
+       <td>2022-02-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Directory traversal in /northstar/Common/NorthFileManager/fileManagerObjects.jsp Northstar Technologies Inc NorthStar Club Management 6.3 allows remote unauthenticated users to browse and list the directories across the entire filesystem of the host of the web application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-29398">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13e586bdc986739f675dd2eb9d12be96</td>
+       <td>CVE-2021-29397</td>
+       <td>2022-02-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cleartext Transmission of Sensitive Information in /northstar/Admin/login.jsp in Northstar Technologies Inc NorthStar Club Management 6.3 allows remote local user to intercept users credentials transmitted in cleartext over HTTP.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-29397">详情</a></td>
+      </tr>
+
+      <tr>
        <td>72e9917f0c83681b79da9e9561944aee</td>
        <td>CVE-2021-45268</td>
        <td>2022-02-03 22:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-02-02 18:15:00</td>
        <td>PrinterLogic Web Stack versions 19.1.1.13 SP9 and below are vulnerable to multiple reflected cross site scripting vulnerabilities. Attacker controlled input is reflected back in the page without sanitization.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42639">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d131603c3cd56805876c674eb39017ac</td>
-       <td>CVE-2021-42637</td>
-       <td>2022-02-02 18:15:00</td>
-       <td>PrinterLogic Web Stack versions 19.1.1.13 SP9 and below use user-controlled input to craft a URL, resulting in a Server Side Request Forgery (SSRF) vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42637">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7486dbeb0fcb9f77d9570aa0a781ce66</td>
-       <td>CVE-2021-42633</td>
-       <td>2022-02-02 18:15:00</td>
-       <td>PrinterLogic Web Stack versions 19.1.1.13 SP9 and below are vulnerable to SQL Injection, which may allow an attacker to access additional audit records.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42633">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ce4bcab8bb895e4179981dd75f223eb</td>
-       <td>CVE-2022-22510</td>
-       <td>2022-02-02 13:15:00</td>
-       <td>Codesys Profinet in version V4.2.0.0 is prone to null pointer dereference that allows a denial of service (DoS) attack of an unauthenticated user via SNMP.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c62d58d351469438223ede121ec613b</td>
-       <td>CVE-2022-22509</td>
-       <td>2022-02-02 13:15:00</td>
-       <td>In Phoenix Contact FL SWITCH Series 2xxx in version 3.00 an incorrect privilege assignment allows an low privileged user to enable full access to the device configuration.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e40dc8b6ebb7b52db42b6800358321fa</td>
-       <td>CVE-2022-21817</td>
-       <td>2022-02-02 13:15:00</td>
-       <td>NVIDIA Omniverse Launcher contains a Cross-Origin Resource Sharing (CORS) vulnerability which can allow an unprivileged remote attacker, if they can get user to browse malicious site, to acquire access tokens allowing them to access resources in other security domains, which may lead to code execution, escalation of privileges, and impact to confidentiality and integrity.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21817">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e9114450518054454b8fd08d40c698b</td>
-       <td>CVE-2021-42638</td>
-       <td>2022-02-01 23:15:00</td>
-       <td>PrinterLogic Web Stack versions 19.1.1.13 SP9 and below do not sanitize user input resulting in pre-auth remote code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42638">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cd44b21d24df98369a54b5030f2f73ec</td>
-       <td>CVE-2022-24198</td>
-       <td>2022-02-01 20:15:00</td>
-       <td>iText v7.1.17 was discovered to contain an out-of-bounds exception via the component ARCFOUREncryption.encryptARCFOUR, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24198">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>575693da441b12d9abc85fa8b7084a39</td>
-       <td>CVE-2022-24197</td>
-       <td>2022-02-01 20:15:00</td>
-       <td>iText v7.1.17 was discovered to contain a stack-based buffer overflow via the component ByteBuffer.append, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24197">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>379eb29f21f39658ddc2838f8e58a743</td>
-       <td>CVE-2022-24196</td>
-       <td>2022-02-01 20:15:00</td>
-       <td>iText v7.1.17 was discovered to contain an out-of-memory error via the component readStreamBytesRaw, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24196">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8fe287897567448fc4faeb29c095fea</td>
-       <td>CVE-2022-24223</td>
-       <td>2022-02-01 19:15:00</td>
-       <td>AtomCMS v2.0 was discovered to contain a SQL injection vulnerability via /admin/login.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24223">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4428e7c8932c182d6c0752b57b9e1da2</td>
+       <td>CVE-2020-3555</td>
+       <td>2022-02-04 13:47:48 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Threat Defense和Cisco Adaptive Security Appliances Software 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bdc3b1ff703445238791ca066eba5999">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7389676e7af60d871cba8ad43dce3620</td>
+       <td>CVE-2020-3553</td>
+       <td>2022-02-04 13:47:44 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Management Center 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4c83b0657a2e4387aafa6dcc73ea568d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b82aba133dda0ab2578067f38e7238dc</td>
+       <td>CVE-2020-3554</td>
+       <td>2022-02-04 13:47:44 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Threat Defense和Cisco Adaptive Security Appliances Software 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=273270d4fe294c3f9f1a56581f1d5bd1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35f42c6b142f381134a8ad3665f03bcc</td>
+       <td>CVE-2020-3533</td>
+       <td>2022-02-04 13:47:36 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Threat Defense 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=da0639bf58764d049e7b6e88a256aa22">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8132531ac62285c22a9aaa75e8f8ea73</td>
+       <td>CVE-2020-3549</td>
+       <td>2022-02-04 13:47:36 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Management Center和Cisco Firepower Threat Defense 加密问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0cdb8e934b7497089cf6950234a8d81">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7812995c2d006833a8a9455b18f680e4</td>
+       <td>CVE-2020-3550</td>
+       <td>2022-02-04 13:47:30 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Management Center和Cisco Firepower Threat Defense 路径遍历漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8e9146bbd1a94153a9fbbfb9e73bd99b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa774686f86916b5826d2ea96a51f687</td>
+       <td>CVE-2020-3528</td>
+       <td>2022-02-04 13:47:29 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Threat Defense和Cisco Adaptive Security Appliances Software 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=042b072a0e0d4736ac2a4428d93277a4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3c5eae9250f2c2ef326204a3714713bd</td>
+       <td>CVE-2020-3529</td>
+       <td>2022-02-04 13:47:21 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Threat Defense和Cisco Adaptive Security Appliances Software 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=51e6f9ee0bce409abcb96992ebde83b2">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6e31cb4d9a63bd3fb2d2af259e8fc70</td>
+       <td>CVE-2020-3515</td>
+       <td>2022-02-04 13:46:27 <img src="imgs/new.gif" /></td>
+       <td>Cisco Firepower Management Center 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bb5609baefa040fd9da07f3feda17b50">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>826f0a2e84521b5297403ed8b05d0f8c</td>
+       <td>CVE-2020-3459</td>
+       <td>2022-02-04 13:46:24 <img src="imgs/new.gif" /></td>
+       <td>Cisco FXOS Software 操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=67638f822e3540ef8b932dd59caa1ecf">详情</a></td>
+      </tr>
+
+      <tr>
        <td>45aad88efb469e12862d20821e8afa43</td>
        <td>CVE-2020-14864</td>
        <td>2022-02-03 13:47:06 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-02-02 13:45:15</td>
        <td>Oracle Solaris Kernel 授权问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f97d607386494e85bc48902ba077703f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a937e133ddc8a91622d3b6386433bbd9</td>
-       <td>CVE-2020-7146</td>
-       <td>2022-02-01 13:45:09</td>
-       <td>HPE Intelligent Management Center 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f3ed8493a9344f29b063fd89260c3154">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c260704823f0824b067e56230077c64</td>
-       <td>CVE-2020-7147</td>
-       <td>2022-02-01 13:45:05</td>
-       <td>HPE Intelligent Management Center (iMC) 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4756ec1823364b76a43245a3165fa7a0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>11191afb2651a6c7d078426b0c154435</td>
-       <td>CVE-2020-7143</td>
-       <td>2022-02-01 13:45:02</td>
-       <td>HPE Intelligent Management Center (iMC) 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e95f268048e54e96a7426b2da98a789c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f5ab810c95e4e98e3c6b78d3433e43a</td>
-       <td>CVE-2020-7144</td>
-       <td>2022-02-01 13:44:58</td>
-       <td>HPE Intelligent Management Center 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2606640864cd455a99526da7f57c79d3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e423d5644344e6bd8ea2824c300e2813</td>
-       <td>CVE-2020-6370</td>
-       <td>2022-02-01 13:44:55</td>
-       <td>SAP 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=236db7321e1e4587b6fbb81b7f2bb06c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b8069cb3ccff8595783738c6e43a9f87</td>
-       <td>CVE-2020-7141</td>
-       <td>2022-02-01 13:44:51</td>
-       <td>HPE Intelligent Management Center (iMC) 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=15454b697ac941b2bfeb77accb13fe06">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b6df985ce86d691ad33392913075ad33</td>
-       <td>CVE-2020-6366</td>
-       <td>2022-02-01 13:44:48</td>
-       <td>SAP 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=57f2fe27bf0f4a74b369c89c522458e4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>678d48b4f60aac4a6f2aefe43146a6ee</td>
-       <td>CVE-2020-6315</td>
-       <td>2022-02-01 13:44:44</td>
-       <td>SAP BusinessObjects Business Intelligence Platform 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a1978d69b5de48a69a8ac233c713b020">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5091ae68fb2fb198a33ceef7f74e3bdf</td>
-       <td>CVE-2020-5640</td>
-       <td>2022-02-01 13:44:41</td>
-       <td>OneThird CMS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1c288ba12e2c450da78499d07992aaef">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a47f546f040e626aadac6db59c2d187</td>
-       <td>CVE-2020-6308</td>
-       <td>2022-02-01 13:44:37</td>
-       <td>SAP 多款产品代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b2581363a8ea43828221265a9de76309">详情</a></td>
       </tr>
 
      </tbody>
@@ -2188,6 +2188,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3a0c180b431b6a3d77a9e56e64fedc24</td>
+       <td>CVE-2022-24197</td>
+       <td>2022-02-01 20:15:11 </td>
+       <td>iText v7.1.17 was discovered to contain a stack-based buffer overflow via the component ByteBuffer.append, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24197">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4a204d58d38955e227e196360d0d4ca</td>
+       <td>CVE-2022-24196</td>
+       <td>2022-02-01 20:15:11 </td>
+       <td>iText v7.1.17 was discovered to contain an out-of-memory error via the component readStreamBytesRaw, which allows attackers to cause a Denial of Service (DoS) via a crafted PDF file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24196">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6cb48d12a607ac89fefa1a04d0e59dce</td>
        <td>CVE-2022-24222</td>
        <td>2022-02-01 19:15:07 </td>
@@ -2244,6 +2260,46 @@
       </tr>
 
       <tr>
+       <td>b2d4cb9b238a71ead2f1847418791260</td>
+       <td>CVE-2022-24130</td>
+       <td>2022-01-31 05:15:08 </td>
+       <td>xterm through Patch 370, when Sixel support is enabled, allows attackers to trigger a buffer overflow in set_sixel in graphics_sixel.c via crafted text.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24130">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3175afb60bc3e8997c6a4760ac0c3869</td>
+       <td>CVE-2022-24032</td>
+       <td>2022-01-30 01:15:07 </td>
+       <td>Adenza AxiomSL ControllerView through 10.8.1 is vulnerable to user enumeration. An attacker can identify valid usernames on the platform because a failed login attempt produces a different error message when the username is valid.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24032">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>995554b8bf72989ce659fb33c0f93f13</td>
+       <td>CVE-2022-24124</td>
+       <td>2022-01-29 23:15:07 </td>
+       <td>The query API in Casdoor before 1.13.1 has a SQL injection vulnerability related to the field and value parameters, as demonstrated by api/get-organizations.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24124">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e3473b11fe8dcfed6a3b4dcce87fbd0</td>
+       <td>CVE-2022-24123</td>
+       <td>2022-01-29 23:15:07 </td>
+       <td>MarkText through 0.16.3 does not sanitize the input of a mermaid block before rendering. This could lead to Remote Code Execution via a .md file containing a mutation Cross-Site Scripting (XSS) payload.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24123">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ae61d6ed444ed69dc9371045e001f9f</td>
+       <td>CVE-2022-24122</td>
+       <td>2022-01-29 22:15:07 </td>
+       <td>kernel/ucount.c in the Linux kernel 5.14 through 5.16.4, when unprivileged user namespaces are enabled, allows a use-after-free and privilege escalation because a ucounts object can outlive its namespace.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24122">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9975bb41d3eae5eeb1a4adbf51210996</td>
        <td>CVE-2022-23979</td>
        <td>2022-01-28 20:15:12 </td>
@@ -2273,6 +2329,14 @@
        <td>2022-01-26 19:15:08 </td>
        <td>Expat (aka libexpat) before 2.4.4 has an integer overflow in the doProlog function.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23990">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b43befd4d6b325c9c992584c65258640</td>
+       <td>CVE-2022-23993</td>
+       <td>2022-01-26 19:15:08 </td>
+       <td>/usr/local/www/pkg.php in pfSense through 2.5.2 uses $_REQUEST['pkg_filter'] in a PHP echo call.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23993">详情</a></td>
       </tr>
 
       <tr>
@@ -2361,70 +2425,6 @@
        <td>2022-01-24 02:15:06 </td>
        <td>Expat (aka libexpat) before 2.4.4 has a signed integer overflow in XML_GetBuffer, for configurations with a nonzero XML_CONTEXT_BYTES.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c80a8e9114975c74db44b00bef0f622</td>
-       <td>CVE-2022-23850</td>
-       <td>2022-01-23 07:15:10 </td>
-       <td>xhtml_translate_entity in xhtml.c in epub2txt (aka epub2txt2) through 2.02 allows a stack-based buffer overflow via a crafted EPUB document.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23850">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4bce58f17f65cf9167050138b52e96c</td>
-       <td>CVE-2022-23808</td>
-       <td>2022-01-22 02:15:07 </td>
-       <td>An issue was discovered in phpMyAdmin 5.1 before 5.1.2. An attacker can inject malicious code into aspects of the setup script, which can allow XSS or HTML injection.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23808">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fe4e0d128ec8ef2d0436b6f485214d5</td>
-       <td>CVE-2022-23807</td>
-       <td>2022-01-22 02:15:07 </td>
-       <td>An issue was discovered in phpMyAdmin 4.9 before 4.9.8 and 5.1 before 5.1.2. A valid user who is already authenticated to phpMyAdmin can manipulate their account to bypass two-factor authentication for future login instances.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23807">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5e9ce4ddc62c7b1ca03a904321b5115</td>
-       <td>CVE-2022-23366</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>HMS v1.0 was discovered to contain a SQL injection vulnerability via patientlogin.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23366">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>109498b156c4a67e2371b9bbd80a774c</td>
-       <td>CVE-2022-23365</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>HMS v1.0 was discovered to contain a SQL injection vulnerability via doctorlogin.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23365">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cba72cd5fee4e114ad701b0797ad7384</td>
-       <td>CVE-2022-23364</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>HMS v1.0 was discovered to contain a SQL injection vulnerability via adminlogin.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23364">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5488095494b6c4a854d15f1cf1c132b1</td>
-       <td>CVE-2022-23363</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>Online Banking System v1.0 was discovered to contain a SQL injection vulnerability via index.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23363">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1332d6d5a91008d258d025a7982c85f2</td>
-       <td>CVE-2022-21708</td>
-       <td>2022-01-21 23:15:08 </td>
-       <td>graphql-go is a GraphQL server with a focus on ease of use. In versions prior to 1.3.0 there exists a DoS vulnerability that is possible due to a bug in the library that would allow an attacker with specifically designed queries to cause stack overflow panics. Any user with access to the GraphQL handler can send these queries and cause stack overflows. This in turn could potentially compromise the ability of the server to serve data to its users. The issue has been patched in version `v1.3.0`. The only known workaround for this issue is to disable the `graphql.MaxDepth` option from your schema which is not recommended.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21708">详情</a></td>
       </tr>
 
      </tbody>
