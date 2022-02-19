@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-19 05:35:31 -->
+<!-- RELEASE TIME : 2022-02-19 23:37:35 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7ccdc338145cf5e52f0cf3a3ee00b917</td>
+       <td>CVE-2021-46700</td>
+       <td>2022-02-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In libsixel 1.8.6, sixel_encoder_output_without_macro (called from sixel_encoder_encode_frame in encoder.c) has a double free.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f926f37a75227cae3e0a9ea95a588ca2</td>
+       <td>CVE-2022-0690</td>
+       <td>2022-02-19 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Reflected in Packagist microweber/microweber prior to 1.2.11.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0690">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8902b28ad9c0d351c92b689483d468d1</td>
+       <td>CVE-2016-1239</td>
+       <td>2022-02-19 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>duck before 0.10 did not properly handle loading of untrusted code from the current directory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-1239">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a705131c2ceeea6225516414975bcdb</td>
+       <td>CVE-2022-23376</td>
+       <td>2022-02-19 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>WikiDocs version 0.1.18 has multiple reflected XSS vulnerabilities on different pages.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23376">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afd7e4752c511bfeaf104187f355fb20</td>
+       <td>CVE-2022-23375</td>
+       <td>2022-02-19 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>WikiDocs version 0.1.18 has an authenticated remote code execution vulnerability. An attacker can upload a malicious file using the image upload form through index.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23375">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b4feadf9553ceac1e0964e868c59bb6</td>
+       <td>CVE-2022-0689</td>
+       <td>2022-02-19 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use multiple time the one-time coupon in Packagist microweber/microweber prior to 1.2.11.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0689">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d4e51577dfcaac10653ecec97b998790</td>
+       <td>CVE-2022-0632</td>
+       <td>2022-02-19 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>NULL Pointer Dereference in Homebrew mruby prior to 3.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0632">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77899d3d745980abf869ecab7b21f04b</td>
+       <td>CVE-2022-0630</td>
+       <td>2022-02-19 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Out-of-bounds Read in Homebrew mruby prior to 3.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0630">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>785daa171911c177dd977f8b5577fbe7</td>
+       <td>CVE-2022-0678</td>
+       <td>2022-02-19 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Reflected in Packagist microweber/microweber prior to 1.2.11.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0678">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f32ece047fbdc11c33ec9e607bf61cf</td>
+       <td>CVE-2022-0409</td>
+       <td>2022-02-19 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unrestricted Upload of File with Dangerous Type in Packagist showdoc/showdoc prior to 2.10.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0409">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ea0f0751d0a480663ab46eb85f269742</td>
        <td>CVE-2022-25137</td>
        <td>2022-02-19 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-02-18 20:15:00 <img src="imgs/new.gif" /></td>
        <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader 11.1.0.52543. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15987.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24362">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2d6fc6d3445eb67f07e276ecb636c5b</td>
-       <td>CVE-2021-41599</td>
-       <td>2022-02-18 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>A remote code execution vulnerability was identified in GitHub Enterprise Server that could be exploited when building a GitHub Pages site. To exploit this vulnerability, an attacker would need permission to create and build a GitHub Pages site on the GitHub Enterprise Server instance. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.3 and was fixed in versions 3.0.21, 3.1.13, 3.2.5. This vulnerability was reported via the GitHub Bug Bounty program.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>82e5fe71286d59bdf649aa90e479b69e</td>
-       <td>CVE-2021-44731</td>
-       <td>2022-02-17 23:15:00</td>
-       <td>A race condition existed in the snapd 2.54.2 snap-confine binary when preparing a private mount namespace for a snap. This could allow a local attacker to gain root privileges by bind-mounting their own contents inside the snap's private mount namespace and causing snap-confine to execute arbitrary code and hence gain privilege escalation. Fixed in snapd versions 2.54.3+18.04, 2.54.3+20.04 and 2.54.3+21.10.1</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44731">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>66157ce5333796d34733f27f97763af9</td>
-       <td>CVE-2021-44730</td>
-       <td>2022-02-17 23:15:00</td>
-       <td>snapd 2.54.2 did not properly validate the location of the snap-confine binary. A local attacker who can hardlink this binary to another location to cause snap-confine to execute other arbitrary binaries and hence gain privilege escalation. Fixed in snapd versions 2.54.3+18.04, 2.54.3+20.04 and 2.54.3+21.10.1</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44730">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f956da934cc9b2791b3587a4c5e4deb0</td>
-       <td>CVE-2021-4120</td>
-       <td>2022-02-17 23:15:00</td>
-       <td>snapd 2.54.2 fails to perform sufficient validation of snap content interface and layout paths, resulting in the ability for snaps to inject arbitrary AppArmor policy rules via malformed content interface and layout declarations and hence escape strict snap confinement. Fixed in snapd versions 2.54.3+18.04, 2.54.3+20.04 and 2.54.3+21.10.1</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4120">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c57c9624f479f606035b66440ca22e0</td>
-       <td>CVE-2021-3155</td>
-       <td>2022-02-17 23:15:00</td>
-       <td>snapd 2.54.2 and earlier created ~/snap directories in user home directories without specifying owner-only permissions. This could allow a local attacker to read information that should have been private. Fixed in snapd versions 2.54.3+18.04, 2.54.3+20.04 and 2.54.3+21.10.1</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-3155">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>771e77029066a1b78e6297f5154893b3</td>
-       <td>CVE-2022-22916</td>
-       <td>2022-02-17 22:15:00</td>
-       <td>O2OA v6.4.7 was discovered to contain a remote code execution (RCE) vulnerability via /x_program_center/jaxrs/invoke.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22916">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>48f732846cf922e8402865b14e252b25</td>
-       <td>CVE-2021-46319</td>
-       <td>2022-02-17 22:15:00</td>
-       <td>Remote Code Execution (RCE) vulnerability exists in D-Link Router DIR-846 DIR846A1_FW100A43.bin and DIR846enFW100A53DLA-Retail.bin. Malicious users can use this vulnerability to use "\ " or backticks to bypass the shell metacharacters in the ssid0 or ssid1 parameters to execute arbitrary commands.This vulnerability is due to the fact that CVE-2019-17509 is not fully patched and can be bypassed by using line breaks or backticks on its basis.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46319">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5978dae7eb932fefbd0488d99dacfa8</td>
-       <td>CVE-2021-46315</td>
-       <td>2022-02-17 22:15:00</td>
-       <td>Remote Command Execution (RCE) vulnerability exists in HNAP1/control/SetWizardConfig.php in D-Link Router DIR-846 DIR846A1_FW100A43.bin and DIR846enFW100A53DLA-Retail.bin. Malicoius users can use this vulnerability to use "\ " or backticks in the shell metacharacters in the ssid0 or ssid1 parameters to cause arbitrary command execution. Since CVE-2019-17510 vulnerability has not been patched and improved www/hnap1/control/setwizardconfig.php, can also use line breaks and backquotes to bypass.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46315">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2291735fadf2f1da44f6445d46bcc431</td>
-       <td>CVE-2022-23646</td>
-       <td>2022-02-17 21:15:00</td>
-       <td>Next.js is a React framework. Starting with version 10.0.0 and prior to version 12.1.0, Next.js is vulnerable to User Interface (UI) Misrepresentation of Critical Information. In order to be affected, the `next.config.js` file must have an `images.domains` array assigned and the image host assigned in `images.domains` must allow user-provided SVG. If the `next.config.js` file has `images.loader` assigned to something other than default, the instance is not affected. Version 12.1.0 contains a patch for this issue. As a workaround, change `next.config.js` to use a different `loader configuration` other than the default.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23646">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53d4bce429a343a9b6948b580d4b13c5</td>
-       <td>CVE-2022-22914</td>
-       <td>2022-02-17 21:15:00</td>
-       <td>An incorrect access control issue in the component FileManager of Ovidentia CMS 6.0 allows authenticated attackers to to view and download content in the upload directory via path traversal.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22914">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>22f3fea526ea1c8f75f16c2c2d038987</td>
+       <td>CVE-2020-27766</td>
+       <td>2022-02-19 13:48:58 <img src="imgs/new.gif" /></td>
+       <td>ImageMagick Studio ImageMagick 输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b2636a2ce88341c082606b7cb79e9082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>153919b24be9dcd295b3a5533bfe40d9</td>
+       <td>CVE-2020-27765</td>
+       <td>2022-02-19 13:48:54 <img src="imgs/new.gif" /></td>
+       <td>ImageMagick Studio ImageMagick 数字错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=70b2b4d3b72b40c8a29750abafdf1cda">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14a40be8110fae04646ee2fcf0592ab6</td>
+       <td>CVE-2020-17527</td>
+       <td>2022-02-19 13:48:51 <img src="imgs/new.gif" /></td>
+       <td>Apache Tomcat 信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b8b4a25d97a04bc5a5524f71b1922274">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>acf8b6c9112e596a82dcdb670edc3349</td>
+       <td>CVE-2020-16123</td>
+       <td>2022-02-19 13:48:47 <img src="imgs/new.gif" /></td>
+       <td>PulseAudio 竞争条件问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8bd04d0c80343dfa759bda964d6defb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c96faeb84cc291d3ed81d5a6f282f6c6</td>
+       <td>CVE-2020-5680</td>
+       <td>2022-02-19 13:48:43 <img src="imgs/new.gif" /></td>
+       <td>Ec-cube 输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ee63c28e390c4168b9af0472e9809e27">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f3bfcf3cb90b5db1b3ecd0f5421481c</td>
+       <td>CVE-2020-5679</td>
+       <td>2022-02-19 13:48:40 <img src="imgs/new.gif" /></td>
+       <td>Ec-cube 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1ed1345bd33842979c994f953a638a24">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>175a68b410bebfc4373cf7e8efcea50e</td>
+       <td>CVE-2020-5677</td>
+       <td>2022-02-19 13:48:36 <img src="imgs/new.gif" /></td>
+       <td>WESEEK GROWI 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b1f27ea0c644e36b96a8fd33a48f6ba">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>345aae17397eee0c1238d86a80d3c299</td>
+       <td>CVE-2020-5676</td>
+       <td>2022-02-19 13:48:33 <img src="imgs/new.gif" /></td>
+       <td>WESEEK GROWI 信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=250a3878cc1e4f0cbe028b1a00bbb14d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be7aa8c5229e76d4c9a20857f359ff8f</td>
+       <td>CVE-2020-29279</td>
+       <td>2022-02-19 13:48:29 <img src="imgs/new.gif" /></td>
+       <td>74CMS 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b56ba5997a9341ca8c474047e946361a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f19228a551c8f6d22d796a0a23b97dd0</td>
+       <td>CVE-2020-28923</td>
+       <td>2022-02-19 13:48:25 <img src="imgs/new.gif" /></td>
+       <td>Play Framework 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=be437424c8444db1b2bdc1dd8a798d62">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0a848cdb8c0de03c8cc4318a7271f754</td>
        <td>CVE-2020-4624</td>
        <td>2022-02-18 13:48:46 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-02-17 13:47:46</td>
        <td>Intel PROSet/Wireless WiFi Software 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=be8e0d653e5f4c8096e9849a53f3d5fd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>806eb95c1940128e47577a95d83c8d74</td>
-       <td>CVE-2020-3367</td>
-       <td>2022-02-16 13:48:02</td>
-       <td>Cisco AsyncOS 操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e1e0ead7741f473798bd5694f4437f34">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4aa9a5c715905753490ca309bc59875</td>
-       <td>CVE-2020-28367</td>
-       <td>2022-02-16 13:47:58</td>
-       <td>Google Go 参数注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=812a799e5f4849cdb511da7b905be05f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31457d5411b161935368c25f2b283977</td>
-       <td>CVE-2020-3392</td>
-       <td>2022-02-16 13:47:55</td>
-       <td>Cisco IoT Field Network Director 访问控制错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7bf7cf4ca0fe46acbe3437978479d30b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98e411849fa1e1453efa2e5b5cf505e7</td>
-       <td>CVE-2020-28366</td>
-       <td>2022-02-16 13:47:51</td>
-       <td>Google Go 代码注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=764ddbfaa87e417f8aeefbad1b2fdc9a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>58caf44f984e7380cd7c3865ec422b34</td>
-       <td>CVE-2020-28724</td>
-       <td>2022-02-16 13:47:48</td>
-       <td>Pallets Werkzeug 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6549edb732cc4af286fedc4ba146efda">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e80f8effe23c3fa75e05c2a29139680</td>
-       <td>CVE-2020-28092</td>
-       <td>2022-02-16 13:47:44</td>
-       <td>Lazyphp Pescms Team 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ca857813e88b40908e6f150bb4d5acb0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e0c7e6917a22a4453e243b8d681a358</td>
-       <td>CVE-2020-28361</td>
-       <td>2022-02-16 13:47:41</td>
-       <td>Fhg Fokus Kamailio 环境问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2cfc230551ff453dae33b29324291f49">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bb35337556c466b79cb07c11f22fc2e</td>
-       <td>CVE-2020-26933</td>
-       <td>2022-02-16 13:47:37</td>
-       <td>Trusted Computing Group Trusted Platform Module 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f53cc25c92b24a6395ec0266c6b9bf50">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aadc401a6591c3dd6786c833b36ccea5</td>
-       <td>CVE-2020-27126</td>
-       <td>2022-02-16 13:47:34</td>
-       <td>Cisco Webex Meetings 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b9eb69c515364fd9a848f89d008793fd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb36c6cb79675a4de22de19939b8f527</td>
-       <td>CVE-2020-26216</td>
-       <td>2022-02-16 13:47:30</td>
-       <td>TYPO3 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b1cdd9c6a9be488993a812ce08e5467c">详情</a></td>
       </tr>
 
      </tbody>
@@ -2300,6 +2300,70 @@
       </tr>
 
       <tr>
+       <td>c38cb1055df0ee5ec9148b5a9c3cf224</td>
+       <td>CVE-2022-23049</td>
+       <td>2022-02-09 23:15:19 </td>
+       <td>Exponent CMS 2.6.0patch2 allows an authenticated user to inject persistent JavaScript code on the &quot;User-Agent&quot; header when logging in. When an administrator user visits the &quot;User Sessions&quot; tab, the JavaScript will be triggered allowing an attacker to compromise the administrator session.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23049">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bfa8c822fb6ca97645a0a3ba228a475c</td>
+       <td>CVE-2022-23048</td>
+       <td>2022-02-09 23:15:19 </td>
+       <td>Exponent CMS 2.6.0patch2 allows an authenticated admin user to upload a malicious extension in the format of a ZIP file with a PHP file inside it. After upload it, the PHP file will be placed at &quot;themes/simpletheme/{rce}.php&quot; from where can be accessed in order to execute commands.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23048">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c9614d009b7f6be0d580f4da2f51c95</td>
+       <td>CVE-2022-23047</td>
+       <td>2022-02-09 23:15:19 </td>
+       <td>Exponent CMS 2.6.0patch2 allows an authenticated admin user to inject persistent JavaScript code inside the &quot;Site/Organization Name&quot;,&quot;Site Title&quot; and &quot;Site Header&quot; parameters while updating the site settings on &quot;/exponentcms/administration/configure_site&quot;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23047">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bdb399fbf3e3d76d4a9abda3a84798ba</td>
+       <td>CVE-2022-22812</td>
+       <td>2022-02-09 23:15:19 </td>
+       <td>A CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability exists that could cause a web session compromise when an attacker injects and then executes arbitrary malicious JavaScript code inside the target browser. Affected Product: spaceLYnk (V2.6.2 and prior), Wiser for KNX (formerly homeLYnk) (V2.6.2 and prior), fellerLYnk (V2.6.2 and prior)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22812">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81f765ec788285cdbfaf4bb2ad0272c7</td>
+       <td>CVE-2022-23255</td>
+       <td>2022-02-09 17:15:10 </td>
+       <td>Microsoft OneDrive for Android Security Feature Bypass Vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23255">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19952ef56b3141dc86773e6e5fbbb56f</td>
+       <td>CVE-2022-23254</td>
+       <td>2022-02-09 17:15:10 </td>
+       <td>Microsoft Power BI Information Disclosure Vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23254">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cd4f15a8d8664ae980d714b3437925d</td>
+       <td>CVE-2022-23252</td>
+       <td>2022-02-09 17:15:10 </td>
+       <td>Microsoft Office Information Disclosure Vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c7b8c055a9d2c5b803f5d7f38d6e92f</td>
+       <td>CVE-2022-23102</td>
+       <td>2022-02-09 16:15:15 </td>
+       <td>A vulnerability has been identified in SINEMA Remote Connect Server (All versions &lt; V2.0). Affected products contain an open redirect vulnerability. An attacker could trick a valid authenticated user to the device into clicking a malicious link there by leading to phishing attacks.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23102">详情</a></td>
+      </tr>
+
+      <tr>
        <td>251ea34f4cc488effc8c3de4cc7630ef</td>
        <td>CVE-2022-24694</td>
        <td>2022-02-09 05:15:09 </td>
@@ -2361,70 +2425,6 @@
        <td>2022-02-08 15:15:07 </td>
        <td>Two Heap based buffer overflow vulnerabilities exist in ffjpeg through 01.01.2021. It is similar to CVE-2020-23852. Issues that are in the jfif_decode function at ffjpeg/src/jfif.c (line 552) could cause a Denial of Service by using a crafted jpeg file.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-44956">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6777adbb9f2ac512897e57d1f7da9161</td>
-       <td>CVE-2022-21805</td>
-       <td>2022-02-08 11:15:08 </td>
-       <td>Reflected cross-site scripting vulnerability in the attached file name of php_mailform versions prior to Version 1.40 allows a remote unauthenticated attacker to inject an arbitrary script via unspecified vectors.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21805">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c25eb8a3b6cbdaa5f65f8756d284d0c</td>
-       <td>CVE-2022-21799</td>
-       <td>2022-02-08 11:15:08 </td>
-       <td>Cross-site scripting vulnerability in ELECOM LAN router WRC-300FEBK-R firmware v1.13 and earlier allows an attacker on the adjacent network to inject an arbitrary script via unspecified vectors.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f08beadf4de628cfab417c70b65b9189</td>
-       <td>CVE-2022-24450</td>
-       <td>2022-02-08 02:15:06 </td>
-       <td>NATS nats-server before 2.7.2 has Incorrect Access Control. Any authenticated user can obtain the privileges of the System account by misusing the &quot;dynamically provisioned sandbox accounts&quot; feature.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24450">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fbfd89906fc5626d3ec62e41759c2c3</td>
-       <td>CVE-2022-21712</td>
-       <td>2022-02-07 22:15:08 </td>
-       <td>twisted is an event-driven networking engine written in Python. In affected versions twisted exposes cookies and authorization headers when following cross-origin redirects. This issue is present in the `twited.web.RedirectAgent` and `twisted.web. BrowserLikeRedirectAgent` functions. Users are advised to upgrade. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21712">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb2e3c7941ceaf852480f16118c9933f</td>
-       <td>CVE-2022-21813</td>
-       <td>2022-02-07 20:15:07 </td>
-       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel driver, where improper handling of insufficient permissions or privileges may allow an unprivileged local user limited write access to protected memory, which can lead to denial of service.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21813">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed00d6a55c1510da0f0f2c6938e018b9</td>
-       <td>CVE-2022-24552</td>
-       <td>2022-02-06 21:15:08 </td>
-       <td>StarWind SAN and NAS before 0.2 build 1685 allows remote code execution via a virtual disk management command.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24552">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c0fe0989ea1c5d4e4fc5671fe60c683</td>
-       <td>CVE-2022-24551</td>
-       <td>2022-02-06 21:15:08 </td>
-       <td>StarWind SAN and NAS before 0.2 build 1685 allows users to reset other users' passwords.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4d90138cd7f3b07d2970a509451c53b</td>
-       <td>CVE-2022-24115</td>
-       <td>2022-02-04 23:15:16 </td>
-       <td>Local privilege escalation due to unrestricted loading of unsigned libraries. The following products are affected: Acronis Cyber Protect Home Office (macOS) before build 39605, Acronis True Image 2021 (macOS) before build 39287</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24115">详情</a></td>
       </tr>
 
      </tbody>
