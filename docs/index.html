@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-22 23:37:19 -->
+<!-- RELEASE TIME : 2022-02-23 05:35:18 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>43000e60105fe6ae26efb80beb50a929</td>
        <td></td>
-       <td>2022-02-21 05:32:27 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 05:32:27</td>
        <td>安全事件周报 (02.14-02.20)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=dcdf20879ba73afa5834786dc01098f8">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e6e6e7f156d560a6da9097391e2a1c25</td>
+       <td>CVE-2022-0654</td>
+       <td>2022-02-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information to an Unauthorized Actor in GitHub repository fgribreau/node-request-retry prior to 7.0.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0654">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28444a435104ebc2b5a52b00b718250a</td>
+       <td>CVE-2022-23612</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenMRS is a patient-based medical record system focusing on giving providers a free customizable electronic medical record system. Affected versions are subject to arbitrary file exfiltration due to failure to sanitize request when satisfying GET requests for `/images` & `/initfilter/scripts`. This can allow an attacker to access any file on a system running OpenMRS that is accessible to the user id OpenMRS is running under. Affected implementations should update to the latest patch version of OpenMRS Core for the minor version they use. These are: 2.1.5, 2.2.1, 2.3.5, 2.4.5 and 2.5.3. As a general rule, this vulnerability is already mitigated by Tomcat's URL normalization in Tomcat 7.0.28+. Users on older versions of Tomcat should consider upgrading their Tomcat instance as well as their OpenMRS instance.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23612">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b3551a71433db7d51c23e81471751926</td>
+       <td>CVE-2022-23606</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. When a cluster is deleted via Cluster Discovery Service (CDS) all idle connections established to endpoints in that cluster are disconnected. A recursion was introduced in the procedure of disconnecting idle connections that can lead to stack exhaustion and abnormal process termination when a cluster has a large number of idle connections. This infinite recursion causes Envoy to crash. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23606">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2bf9996c7c1641a25452ff5a625815c</td>
+       <td>CVE-2022-21657</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. In affected versions Envoy does not restrict the set of certificates it accepts from the peer, either as a TLS client or a TLS server, to only those certificates that contain the necessary extendedKeyUsage (id-kp-serverAuth and id-kp-clientAuth, respectively). This means that a peer may present an e-mail certificate (e.g. id-kp-emailProtection), either as a leaf certificate or as a CA in the chain, and it will be accepted for TLS. This is particularly bad when combined with the issue described in pull request #630, in that it allows a Web PKI CA that is intended only for use with S/MIME, and thus exempted from audit or supervision, to issue TLS certificates that will be accepted by Envoy. As a result Envoy will trust upstream certificates that should not be trusted. There are no known workarounds to this issue. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21657">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e96d39c0e7f5a8a03c744f366b7131f</td>
+       <td>CVE-2022-21656</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. The default_validator.cc implementation used to implement the default certificate validation routines has a "type confusion" bug when processing subjectAltNames. This processing allows, for example, an rfc822Name or uniformResourceIndicator to be authenticated as a domain name. This confusion allows for the bypassing of nameConstraints, as processed by the underlying OpenSSL/BoringSSL implementation, exposing the possibility of impersonation of arbitrary servers. As a result Envoy will trust upstream certificates that should not be trusted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21656">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ccf91b2cfbf6169f7c681b15c3cceeb6</td>
+       <td>CVE-2022-21655</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. The envoy common router will segfault if an internal redirect selects a route configured with direct response or redirect actions. This will result in a denial of service. As a workaround turn off internal redirects if direct response entries are configured on the same listener.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>beb31b4792f7cd40591a03ed4fc5645e</td>
+       <td>CVE-2022-21654</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. Envoy's tls allows re-use when some cert validation settings have changed from their default configuration. The only workaround for this issue is to ensure that default tls settings are used. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21654">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d361e44e9d5f9ad443a281ebf76414bf</td>
+       <td>CVE-2021-43826</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. In affected versions of Envoy a crash occurs when configured for :ref:`upstream tunneling <envoy_v3_api_field_extensions.filters.network.tcp_proxy.v3.TcpProxy.tunneling_config>` and the downstream connection disconnects while the the upstream connection or http/2 stream is still being established. There are no workarounds for this issue. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43826">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb4b885e6b9cb74bdd8b6b1ea6ce8c20</td>
+       <td>CVE-2021-43825</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. Sending a locally generated response must stop further processing of request or response data. Envoy tracks the amount of buffered request and response data and aborts the request if the amount of buffered data is over the limit by sending 413 or 500 responses. However when the buffer overflows while response is processed by the filter chain the operation may not be aborted correctly and result in accessing a freed memory block. If this happens Envoy will crash resulting in a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43825">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c91b1752c2ccb38e56ae2b425ffbf614</td>
+       <td>CVE-2021-43824</td>
+       <td>2022-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Envoy is an open source edge and service proxy, designed for cloud-native applications. In affected versions a crafted request crashes Envoy when a CONNECT request is sent to JWT filter configured with regex match. This provides a denial of service attack vector. The only workaround is to not use regex in the JWT filter. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43824">详情</a></td>
+      </tr>
+
+      <tr>
        <td>10ada06d3ecd9b1d88e43e1c70de94bc</td>
        <td>CVE-2022-23654</td>
        <td>2022-02-22 20:15:00 <img src="imgs/new.gif" /></td>
@@ -374,7 +454,7 @@
       <tr>
        <td>73832df48a412628758ea47672d738c8</td>
        <td>CVE-2022-24564</td>
-       <td>2022-02-21 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:15:00</td>
        <td>Checkmk <=2.0.0p19 contains a Cross Site Scripting (XSS) vulnerability. While creating or editing a user attribute, the Help Text is subject to HTML injection, which can be triggered for editing a user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24564">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>e2a9f40c5f910c47c3d618499a328420</td>
        <td>CVE-2021-4115</td>
-       <td>2022-02-21 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 22:15:00</td>
        <td>There is a flaw in polkit which can allow an unprivileged user to cause polkit to crash, due to process file descriptor exhaustion. The highest threat from this vulnerability is to availability. NOTE: Polkit process outage duration is tied to the failing process being reaped and a new one being spawned</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4115">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>3fc146d0536e9cb7fd5f5e0268c01f07</td>
        <td>CVE-2022-0696</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>NULL Pointer Dereference in Conda vim prior to 8.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0696">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>594db510c4140d119391308d9834b5a1</td>
        <td>CVE-2021-44577</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>Two heap-overflow vulnerabilities exist in openSUSE libsolv through 13 Dec 2020 bugs in the propagate function at src/solver.c: line 490 and 524.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44577">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>4f2aedaf5ce5c8665641a51bc70046a6</td>
        <td>CVE-2021-44576</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>Two memory vulnerabilities exists in openSUSE libsolv through 13 Dec 2020 in the resolve_weak function at src/solver.c: line 2222 and 2249.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44576">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>f422878fcdfea41c2f61249965730be9</td>
        <td>CVE-2021-44575</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>Two heap-overflow vulnerabilities exists in openSUSE libsolv through 13 Dec 2020 in the makeruledecisions function at src/solver.c: line 147 and 307.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44575">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>db2742034075c0446f240b99531d3cb7</td>
        <td>CVE-2021-44574</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>A heap-overflow vulnerability exists in openSUSE libsolv through 13 Dec 2020 in the resolve_jobrules function at src/solver.c at line 1599.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44574">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>1a0a0d4876a2b6f0c89e9caecc96c7b4</td>
        <td>CVE-2021-44573</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>Two heap overflow vulnerabilities exist in oenSUSE libsolv through 13 Dec 2020 in the resolve_installed function at src/solver.c: line 1728 & 1766.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44573">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>08042550ca4844ad8c30e78e0c2c0ea3</td>
        <td>CVE-2021-44571</td>
-       <td>2022-02-21 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 20:15:00</td>
        <td>A heap overflow vulnerability exisfts in openSUSE libsolv through 13 Dec 2020 in the prefer_suggested function at src/policy.c: line 442.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44571">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94ea048320020b29fc0449a7008963ad</td>
-       <td>CVE-2022-0563</td>
-       <td>2022-02-21 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A flaw was found in the Linux kernel’s util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an "INPUTRC" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0563">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9988f1482f4c658888e586860131aae0</td>
-       <td>CVE-2021-44570</td>
-       <td>2022-02-21 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Two heap-overflow vulnerabilities exists in openSUSE/libsolv through 13 Dec 2020 in the bugs in the solver_get_recommendations funtion function at src/solver.c: line 4286 & line 4305 FOR_PROVIDES.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44570">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9102a5a4a0233eeca5c564fbdff50962</td>
-       <td>CVE-2021-44569</td>
-       <td>2022-02-21 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A heap-buffer openSUSE libsolv through 13 Dec 2020 exists in the solver_solve function at src/solver.c: line 3445.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44569">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d17bd7b1764d868c038e534aabbed1a</td>
-       <td>CVE-2021-46701</td>
-       <td>2022-02-20 21:15:00</td>
-       <td>PreMiD 2.2.0 allows unintended access via the websocket transport. An attacker can receive events from a socket and emit events to a socket, potentially interfering with a victim's "now playing" status on Discord.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>378650fc61da8f054a989598d53c6b0e</td>
-       <td>CVE-2022-25375</td>
-       <td>2022-02-20 20:15:00</td>
-       <td>An issue was discovered in drivers/usb/gadget/function/rndis.c in the Linux kernel before 5.16.10. The RNDIS USB gadget lacks validation of the size of the RNDIS_MSG_SET command. Attackers can obtain sensitive information from kernel memory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25375">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15d8712bd742336c9f7ce3b37cdd0e9b</td>
-       <td>CVE-2022-25372</td>
-       <td>2022-02-20 20:15:00</td>
-       <td>Pritunl Client through 1.2.3019.52 on Windows allows local privilege escalation, related to an ACL entry for CREATOR OWNER in platform_windows.go.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25372">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a000925de9666c9fadbc659d166e7261</td>
-       <td>CVE-2022-23848</td>
-       <td>2022-02-20 19:15:00</td>
-       <td>In Alluxio before 2.7.3, the logserver does not validate the input stream. NOTE: this is not the same as the CVE-2021-44228 Log4j vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23848">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49d9b4e8d1f4976896b2e436a1969348</td>
-       <td>CVE-2022-23054</td>
-       <td>2022-02-20 19:15:00</td>
-       <td>Openmct versions 1.3.0 to 1.7.7 are vulnerable against stored XSS via the “Summary Widget” element, that allows the injection of malicious JavaScript into the ‘URL’ field. This issue affects: nasa openmct 1.7.7 version and prior versions; 1.3.0 version and later versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23054">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6adbc6a9159de7bdb919748ff14c06b</td>
-       <td>CVE-2022-23053</td>
-       <td>2022-02-20 19:15:00</td>
-       <td>Openmct versions 1.3.0 to 1.7.7 are vulnerable against stored XSS via the “Condition Widget” element, that allows the injection of malicious JavaScript into the ‘URL’ field. This issue affects: nasa openmct 1.7.7 version and prior versions; 1.3.0 version and later versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23053">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed9c42153f6e03188bed5c4fa3fe6313</td>
-       <td>CVE-2022-22126</td>
-       <td>2022-02-20 19:15:00</td>
-       <td>Openmct versions 1.3.0 to 1.7.7 are vulnerable against stored XSS via the “Web Page” element, that allows the injection of malicious JavaScript into the ‘URL’ field. This issue affects: nasa openmct 1.7.7 version and prior versions; 1.3.0 version and later versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22126">详情</a></td>
       </tr>
 
      </tbody>
@@ -806,7 +806,7 @@
       <tr>
        <td>b707738d7374f61ad2d8127339e32055</td>
        <td>CNNVD-202202-1720 (CVE-2021-44574)</td>
-       <td>2022-02-21 23:37:18 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:18</td>
        <td>libsolv 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1720">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>edcba65e5f93eef44df4e0ce98777011</td>
        <td>CNNVD-202202-1721 (CVE-2021-44573)</td>
-       <td>2022-02-21 23:37:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:16</td>
        <td>libsolv 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1721">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>bd85cf20c52bfed9faa60d8e9a778939</td>
        <td>CNNVD-202202-1722 (CVE-2022-23308)</td>
-       <td>2022-02-21 23:37:14 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:14</td>
        <td>libxml2 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1722">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>747030af872c6fd9575b3e9dcfe2528f</td>
        <td>CNNVD-202202-1723 (CVE-2021-44571)</td>
-       <td>2022-02-21 23:37:12 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:12</td>
        <td>libsolv  安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1723">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>913848129408125d97718ed0ddc74d25</td>
        <td>CNNVD-202202-1724 (CVE-2021-44570)</td>
-       <td>2022-02-21 23:37:10 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:10</td>
        <td>libsolv 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1724">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>0a843275e9f0f0e4763e0f115d2ba2c2</td>
        <td>CNNVD-202202-1725 (CVE-2021-44569)</td>
-       <td>2022-02-21 23:37:08 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:08</td>
        <td>libsolv 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1725">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>f5b39363f2e2fd8e85888c6578ca91af</td>
        <td>CNNVD-202202-1726 (CVE-2021-45414)</td>
-       <td>2022-02-21 23:37:06 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:06</td>
        <td>Datarobot 代码注入漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1726">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>4d149e6747ee0c13b3cf25ba4a8593bb</td>
        <td>CNNVD-202202-1727 (CVE-2022-0284)</td>
-       <td>2022-02-21 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:04</td>
        <td>Imagemagick Studio ImageMagick 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1727">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>26ef6ef27e7ed253f6361a943f7a53ae</td>
        <td>CNNVD-202202-1728 (CVE-2022-24564)</td>
-       <td>2022-02-21 23:37:02 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:37:02</td>
        <td>Checkmk 跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-1728">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>f53451b661d823da17cd19a3149500d1</td>
        <td>CVE-2020-26264</td>
-       <td>2022-02-21 13:47:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:47:16</td>
        <td>Ethereum Go-ethereum 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6a69a2867da84a05bf5e717a787b7e8a">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>5a8cf7d8fb018b7ba9003aa24cd00211</td>
        <td>CVE-2020-24634</td>
-       <td>2022-02-21 13:47:13 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:47:13</td>
        <td>Aruba Networks ArubaOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8cba6355cf546bbbef34d5387a842d5">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>8d18f301d9e2353316d371af7a289783</td>
        <td>CVE-2020-19527</td>
-       <td>2022-02-21 13:47:09 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:47:09</td>
        <td>idreamsoft iCMS 操作系统命令注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=aa4a62e8b5d9453e8e1ebfb8535e6fca">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>57e0df659188c0ba034e66f9d06dd24f</td>
        <td>CVE-2020-25838</td>
-       <td>2022-02-21 13:47:05 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:47:05</td>
        <td>Micro Focus Filr product 信息泄露漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3414fa04ec044a3c8505f7236a1d19da">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>1e2699fc05e80693fa687a93b094c7e3</td>
        <td>CVE-2020-13526</td>
-       <td>2022-02-21 13:47:01 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:47:01</td>
        <td>ProcessMaker SQL注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2bf28dea66304fc08b858a96707f1343">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>3fc837ef6809a253009a59a1487d6bbf</td>
        <td>CVE-2020-24633</td>
-       <td>2022-02-21 13:46:58 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:46:58</td>
        <td>Aruba Networks ArubaOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e3007411a29c44e4bb844765335204cb">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>bd09e41df18cb537c2025f6ae6a07a28</td>
        <td>CVE-2020-12149</td>
-       <td>2022-02-21 13:46:54 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:46:54</td>
        <td>Silver Peak Unity ECOSTM 操作系统命令注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b3c502da115d4347867e3b1121915e58">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>31da3ac2b567ff3ccb65ce5be5fc797c</td>
        <td>CVE-2020-24440</td>
-       <td>2022-02-21 13:46:51 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:46:51</td>
        <td>Adobe Prelude 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f84d0e725b7040dfb5aefea35da591b9">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>6997f63c09f6f47a212008b0d6f41b6f</td>
        <td>CVE-2020-8919</td>
-       <td>2022-02-21 13:46:47 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:46:47</td>
        <td>Gerrit 授权问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=902935663b9d47d88279ef2bc0705d25">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>e6e6c94d84efddb17d37cddca09d4312</td>
        <td>CVE-2020-17530</td>
-       <td>2022-02-21 13:46:43 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 13:46:43</td>
        <td>Apache Struts 代码注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d47e4c59e1a6470fbf1c1cf9e302dff2">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>16dc52c9cead4e67d01fa8b66b6f7a4a</td>
        <td>CVE-2022-24364</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63234">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>c0ed7cc9d5841a73fca31db56c49c3c6</td>
        <td>CVE-2022-24363</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63233">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>dc675b9dd47e9f3d13064fa8b761af48</td>
        <td>CVE-2022-24362</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63232">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>9e24c25b7f8ff198b6124219e7807305</td>
        <td>CVE-2022-24361</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63231">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>3354995e1c116521a0c49e73a6cea0bd</td>
        <td>CVE-2022-24360</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63230">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>0fa92621b615ddb61dc481b9d3ebfa4e</td>
        <td>CVE-2022-24359</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63229">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>026f33bed459042e307ae1ac8d65d9b3</td>
        <td>CVE-2022-24056</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Santesoft DICOM Viewer Pro越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63228">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>d69db1f667160d7237efe475e9583b2a</td>
        <td>CVE-2022-24058</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Santesoft DICOM Viewer Pro越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63227">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>7df496bf80983f6f6326168353411934</td>
        <td>CVE-2022-24061</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Santesoft DICOM Viewer Pro内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63226">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>2dfe111110f843c16d7020cf1a82c5a1</td>
        <td>CVE-2022-24365</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63225">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>226e7edf9f437cc4eb23dee4fc48506f</td>
        <td>CVE-2022-24366</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63224">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>ab172387666ea7b6af21a5c78d36702c</td>
        <td>CVE-2022-24367</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63223">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>4482e95262a04a4cd6e750a4148abcd5</td>
        <td>CVE-2022-24368</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63222">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>ac9725bee80024b9528afffd4ea7ad0d</td>
        <td>CVE-2022-24358</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Foxit PDF Reader越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63221">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>c7337220dd4d688192b72f055976a046</td>
        <td>CVE-2022-23054</td>
-       <td>2022-02-21 23:36:16 <img src="imgs/new.gif" /></td>
+       <td>2022-02-21 23:36:16</td>
        <td>Openmct跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63220">详情</a></td>
       </tr>
