@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-01 23:37:27 -->
+<!-- RELEASE TIME : 2022-03-02 05:35:17 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>50321d22a99c8f9f1bedd33bce8924af</td>
        <td></td>
-       <td>2022-02-28 03:10:28 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 03:10:28</td>
        <td>安全事件周报 (02.21-02.27)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=fa38e12f0832a65af6ffb48e7be739f7">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4dfb3f9c4cf84679788f9b19f7b9c465</td>
+       <td>CVE-2022-25051</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Off-by-one Error occurs in cmr113_decode of rtl_433 21.12 when decoding a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25051">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>10e0f9114348b215900f8e71909234a6</td>
+       <td>CVE-2022-25050</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>rtl_433 21.12 was discovered to contain a stack overflow in the function somfy_iohc_decode(). This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25050">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>936e8084e4d9a071347ae52492f42f19</td>
+       <td>CVE-2021-45864</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>tsMuxer git-c6a0277 was discovered to contain a segmentation fault via DTSStreamReader::findFrame in dtsStreamReader.cpp.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45864">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22af5e4344219fab9891c3c3f9cac898</td>
+       <td>CVE-2021-45863</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>tsMuxer git-2678966 was discovered to contain a heap-based buffer overflow via the function HevcUnit::updateBits in hevc.cpp.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45863">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09d2013100422d1464042697dcb13cc4</td>
+       <td>CVE-2021-45861</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is an Assertion `num <= INT_BIT' failed at BitStreamReader::skipBits in /bitStream.h:132 of tsMuxer git-c6a0277.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45861">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>781a42bab967215490b9152475d5a181</td>
+       <td>CVE-2021-45860</td>
+       <td>2022-03-02 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An integer overflow in DTSStreamReader::findFrame() of tsMuxer git-2678966 allows attackers to cause a Denial of Service (DoS) via a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45860">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0daa7ade63598f9b07aa7233317f8f73</td>
+       <td>CVE-2022-25012</td>
+       <td>2022-03-01 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Argus Surveillance DVR v4.0 employs weak password encryption.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25012">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c5e221904cb1e4ffb8d88d17d691645b</td>
+       <td>CVE-2022-25010</td>
+       <td>2022-03-01 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>The component /rootfs in RageFile of Stepmania v5.1b2 and below allows attackers access to the entire file system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25010">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>87b2da00865f78f6336909786cbd0668</td>
+       <td>CVE-2022-24720</td>
+       <td>2022-03-01 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>image_processing is an image processing wrapper for libvips and ImageMagick/GraphicsMagick. Prior to version 1.12.2, using the `#apply` method from image_processing to apply a series of operations that are coming from unsanitized user input allows the attacker to execute shell commands. This method is called internally by Active Storage variants, so Active Storage is vulnerable as well. The vulnerability has been fixed in version 1.12.2 of image_processing. As a workaround, users who process based on user input should always sanitize the user input by allowing only a constrained set of operations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24720">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>038aad80f853574a6bdcf1f4b759d35b</td>
+       <td>CVE-2022-24255</td>
+       <td>2022-03-01 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Extensis Portfolio v4.0 was discovered to contain hardcoded credentials which allows attackers to gain administrator privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24255">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2609f0ef300e82e884aa282e8c12d00a</td>
        <td>CVE-2022-24718</td>
        <td>2022-03-01 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>7e07156d17f0e85315dd09e35c7c8c74</td>
        <td>CVE-2022-25413</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Maxsite CMS v108 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the parameter f_tags at /admin/page_edit/3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25413">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>1dca2ab41b8c7a60e675f1658252a845</td>
        <td>CVE-2022-25412</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Maxsite CMS v180 was discovered to contain multiple arbitrary file deletion vulnerabilities in /admin_page/all-files-update-ajax.php via the dir and deletefile parameters.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25412">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>614ac6139d8f38c60097b73e2c435c2a</td>
        <td>CVE-2022-25411</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>A Remote Code Execution (RCE) vulnerability at /admin/options in Maxsite CMS v180 allows attackers to execute arbitrary code via a crafted PHP file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25411">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>da9f96692262a73329db3a64a24280b8</td>
        <td>CVE-2022-25410</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Maxsite CMS v180 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the parameter f_file_description at /admin/files.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25410">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>dbee0980f2252a97669ab67b3c5ca629</td>
        <td>CVE-2022-25409</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Hospital Management System v1.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the demail parameter at /admin-panel1.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25409">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>75d3a3ae568287a29c15ae0ba74cca7c</td>
        <td>CVE-2022-25408</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Hospital Management System v1.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the dpassword parameter at /admin-panel1.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25408">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>25b6dd0064526372cf23ac85ddc34690</td>
        <td>CVE-2022-25407</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Hospital Management System v1.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the Doctor parameter at /admin-panel1.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25407">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>c500027e7a80969bef3851edcb084bc2</td>
        <td>CVE-2022-25029</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Home Owners Collection Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter under /admin/?page=members/view_member&id=2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25029">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>160397a4623a897cfb2c89ec2f0a3319</td>
        <td>CVE-2022-25028</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>Home Owners Collection Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the collected_by parameter under the List of Collections module.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25028">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>abaf2bd7ffbd932bd53ca63d28cf235f</td>
        <td>CVE-2022-23907</td>
-       <td>2022-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:15:00</td>
        <td>CMS Made Simple v2.2.15 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the parameter m1_fmmessage.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23907">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6cc56848883193c221697d4e90629a04</td>
-       <td>CVE-2021-41112</td>
-       <td>2022-02-28 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Rundeck is an open source automation service with a web console, command line tools and a WebAPI. In versions prior to 3.4.5, authenticated users could craft a request to modify or delete System or Project level Calendars, without appropriate authorization. Modifying or removing calendars could cause Scheduled Jobs to execute, or not execute on desired calendar days. Severity depends on trust level of authenticated users and impact of running or not running scheduled jobs on days governed by calendar definitions. Version 3.4.5 contains a patch for this issue. There are currently no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41112">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61f623d85dd94753f2ef7c6de7a4a79e</td>
-       <td>CVE-2021-41111</td>
-       <td>2022-02-28 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Rundeck is an open source automation service with a web console, command line tools and a WebAPI. Prior to versions 3.4.5 and 3.3.15, an authenticated user with authorization to read webhooks in one project can craft a request to reveal Webhook definitions and tokens in another project. The user could use the revealed webhook tokens to trigger webhooks. Severity depends on trust level of authenticated users and whether any webhooks exist that trigger sensitive actions. There are patches for this vulnerability in versions 3.4.5 and 3.3.15. There are currently no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41111">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08417d33375ba2dbe1c6ccc44294b89b</td>
-       <td>CVE-2022-26315</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>qrcp through 0.8.4, in receive mode, allows ../ Directory Traversal via the file name specified by the uploader.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26315">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be09bbbfb23e0e75ac5157472dbc5138</td>
-       <td>CVE-2022-26181</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dropbox Lepton v1.2.1-185-g2a08b77 was discovered to contain a heap-buffer-overflow in the function aligned_dealloc():src/lepton/bitops.cc:108.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0aa839c7812b7ebf7610db840a8cc6fb</td>
-       <td>CVE-2022-25023</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Audio File commit 004065d was discovered to contain a heap-buffer overflow in the function fouBytesToInt():AudioFile.h.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b23ea9446203ff0cfe55641a1ef4267</td>
-       <td>CVE-2022-25015</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A stored cross-site scripting (XSS) vulnerability in Ice Hrm 30.0.0.OS allows attackers to steal cookies via a crafted payload inserted into the First Name field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25015">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>255b536afd0821011037eb3193107d92</td>
-       <td>CVE-2022-25014</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Ice Hrm 30.0.0.OS was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the "m" parameter in the Dashboard of the current user. This vulnerability allows attackers to compromise session credentials via user interaction with a crafted link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25014">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7da291e302de1335ea9f3bec586d678e</td>
-       <td>CVE-2022-25013</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Ice Hrm 30.0.0.OS was discovered to contain multiple reflected cross-site scripting (XSS) vulnerabilities via the "key" and "fm" parameters in the component login.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25013">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>012fd8b794252dc967ff6d6ddb3efaed</td>
-       <td>CVE-2020-22845</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A buffer overflow in Mikrotik RouterOS 6.47 allows unauthenticated attackers to cause a denial of service (DOS) via crafted FTP requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-22845">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55cac8f6cde3009c9fe899cc5113f110</td>
-       <td>CVE-2020-22844</td>
-       <td>2022-02-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A buffer overflow in Mikrotik RouterOS 6.47 allows unauthenticated attackers to cause a denial of service (DOS) via crafted SMB requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-22844">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>e864ee88274ccd72b8d2842eb3f64b78</td>
        <td>CNNVD-202202-2204 (CVE-2022-23907)</td>
-       <td>2022-02-28 23:37:25 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:25</td>
        <td>CMS Made Simple 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2204">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>3b21ee88ecf1f0e694dc5358e4f86b00</td>
        <td>CNNVD-202202-2205 (CVE-2022-25028)</td>
-       <td>2022-02-28 23:37:23 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:23</td>
        <td>Home Owners Collection Management System  安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2205">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>879fe5b2553be428ba86f5ce6fc4c1aa</td>
        <td>CNNVD-202202-2206 (CVE-2022-25029)</td>
-       <td>2022-02-28 23:37:21 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:21</td>
        <td>Home Owners Collection Management System  安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2206">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>db45fb104ed720e733e0841c0dd22a92</td>
        <td>CNNVD-202202-2207 (CVE-2022-25407)</td>
-       <td>2022-02-28 23:37:19 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:19</td>
        <td>PHPGurukul Hospital Management System 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2207">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>9fce126f54c8e46a897d4471104152cc</td>
        <td>CNNVD-202202-2208 (CVE-2022-25408)</td>
-       <td>2022-02-28 23:37:17 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:17</td>
        <td>HealthNode Hospital Management System  安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2208">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>572012585d2d99a2640556d2c07005ac</td>
        <td>CNNVD-202202-2209 (CVE-2022-25409)</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>HealthNode Hospital Management System安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2209">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>2bc607bd52422dd60f40af592340caa3</td>
        <td>CNNVD-202202-2210 (CVE-2022-25410)</td>
-       <td>2022-02-28 23:37:14 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:14</td>
        <td>Maxsite CMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2210">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>0028d300ca97b0b1fd9310c2e06981cd</td>
        <td>CNNVD-202202-2211 (CVE-2022-25411)</td>
-       <td>2022-02-28 23:37:12 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:12</td>
        <td>Maxsite CMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2211">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>7f704941c54bbc26550f8cc1cc2c1aac</td>
        <td>CNNVD-202202-2212 (CVE-2022-25412)</td>
-       <td>2022-02-28 23:37:10 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:10</td>
        <td>Maxsite CMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2212">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>9610faf11cc31ca45b1369003e0f0d7f</td>
        <td>CNNVD-202202-2213 (CVE-2022-25413)</td>
-       <td>2022-02-28 23:37:08 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:08</td>
        <td>MaxSite CMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202202-2213">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>a605ca97494a8833aa934234829ccd3b</td>
        <td>CVE-2020-24386</td>
-       <td>2022-02-28 13:47:34 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:34</td>
        <td>Dovecot 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=51d5727b66404283a05d4fd5c7113314">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>bcb90e451117dc8715f81bc3370a195c</td>
        <td>CVE-2020-25275</td>
-       <td>2022-02-28 13:47:30 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:30</td>
        <td>Dovecot 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad47e9a365b44cbca0a12fde528b4207">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>3438c2513ab7460920406aceb51bb218</td>
        <td>CVE-2020-28852</td>
-       <td>2022-02-28 13:47:26 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:26</td>
        <td>Google Go 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b10f260412dc40e28c5916e27c3b7236">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>74bde181f9861a9a6ba8f9565c6f9269</td>
        <td>CVE-2021-3002</td>
-       <td>2022-02-28 13:47:26 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:26</td>
        <td>SEO Panel 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a31e34847be145deb32e345070b3b13c">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>8140edb97c136c773deb592b54a9c6ba</td>
        <td>CVE-2020-28851</td>
-       <td>2022-02-28 13:47:17 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:17</td>
        <td>Google Go 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e58011050ea548c78836eb71c73ccbb2">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>9172e44204ca01a2f1c8b0fa3fb4655b</td>
        <td>CVE-2020-35948</td>
-       <td>2022-02-28 13:47:17 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:17</td>
        <td>WordPress XCloner Backup and Restore plugin 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=50b93e961fbc4f818a2a06fc4e650b2a">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>f8dee8ac9443aca2d467f992be1a1e4b</td>
        <td>CVE-2020-35932</td>
-       <td>2022-02-28 13:47:09 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:09</td>
        <td>WordPress Newsletter plugin 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e7ccbc5fd46149d6b015f18ecfce5023">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>507e92f8a9056e05b812cb44b5c29cb9</td>
        <td>CVE-2020-35945</td>
-       <td>2022-02-28 13:47:09 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:09</td>
        <td>WordPress 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=38d1a9bce6984627a54b0a49f713445e">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>fa3e324a0fdddb5f9c2a61dbffb5e2d0</td>
        <td>CVE-2020-35931</td>
-       <td>2022-02-28 13:47:03 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:03</td>
        <td>Foxit Reader和Foxit PhantomPDF 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a375564e2c24174a6d793abb79f9a8e">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>154ceb92389b35ef7fdef9607dd2dfb5</td>
        <td>CVE-2020-35717</td>
-       <td>2022-02-28 13:47:02 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 13:47:02</td>
        <td>Zonetti Zonote 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c7f50f4a5ee34ff88e35bc672d51cca8">详情</a></td>
       </tr>
@@ -1956,9 +1956,129 @@
       </tr>
 
       <tr>
+       <td>f670a24e298a7defe0e49499203c44d5</td>
+       <td>CVE-2021-46152</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap类型混淆漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63345">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f791d395d18ab8ba9c969bb04dcadf22</td>
+       <td>CVE-2021-46153</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap内存破坏漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63344">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>47b5563313cf52d617e6ae9e8d5d517c</td>
+       <td>CVE-2021-46154</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63343">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bcf58bdd77840e1692d32a46bdb633b1</td>
+       <td>CVE-2021-46155</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63342">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d541529fe0368caf55cc51e5cc4766ce</td>
+       <td>CVE-2021-46156</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63341">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c1bd5fc008534fa76d92f6b95b6d16ad</td>
+       <td>CVE-2021-46157</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap内存破坏漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63340">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5fded4d52e5a87995974e5ef197ac1e5</td>
+       <td>CVE-2021-46158</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63339">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3980e6a3f14d64300fd1ecb593fe05e0</td>
+       <td>CVE-2021-46151</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>02027ba4ff0862b0d7d0477df8094af5</td>
+       <td>CVE-2021-46159</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf88c23be2414cb66d8bf45e0329e738</td>
+       <td>CVE-2021-46160</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63336">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6062206306c1a01bb82fd823516b8438</td>
+       <td>CVE-2021-46161</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>Siemens Simcenter Femap越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63335">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ea2705987ae03cc2810e0ab2049a1b4</td>
+       <td>CVE-2020-22844</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>MikroTik RouterOS缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63334">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa63370c8dacdb9d54cbb0bc8739979e</td>
+       <td>CVE-2020-22845</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>MikroTik RouterOS缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63333">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fd2a8f0a46a163e05f49e82fa49b320</td>
+       <td>CVE-2022-23906</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>CMS Made Simple远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63332">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a430e1055c246380242c911fa58de81</td>
+       <td>CVE-2022-23907</td>
+       <td>2022-03-01 05:34:39 <img src="imgs/new.gif" /></td>
+       <td>CMS Made Simple跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63331">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9f57cd6e65de883f2e1b7a6d7e58442e</td>
        <td>CVE-2022-25075</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A3000RU命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63323">详情</a></td>
       </tr>
@@ -1966,7 +2086,7 @@
       <tr>
        <td>8902507ecdb0285aedb9701bf4f970a4</td>
        <td>CVE-2022-25084</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink T6命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63322">详情</a></td>
       </tr>
@@ -1974,7 +2094,7 @@
       <tr>
        <td>86a66e48b930328bc04e6feba1e7f214</td>
        <td>CVE-2022-25083</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A860R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63321">详情</a></td>
       </tr>
@@ -1982,7 +2102,7 @@
       <tr>
        <td>d1d35268aa19f2f75a5753515ce711f0</td>
        <td>CVE-2022-25082</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A950RG命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63320">详情</a></td>
       </tr>
@@ -1990,7 +2110,7 @@
       <tr>
        <td>787083d528423dcc9e81bdc95bf3c1a8</td>
        <td>CVE-2022-25076</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A800R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63319">详情</a></td>
       </tr>
@@ -1998,7 +2118,7 @@
       <tr>
        <td>fe04e776630f41c14c2ca9af5ad0a695</td>
        <td>CVE-2022-25077</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A3100R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63318">详情</a></td>
       </tr>
@@ -2006,7 +2126,7 @@
       <tr>
        <td>e2cde0a99cf7aa0a78c288bf9e4c67c7</td>
        <td>CVE-2022-25078</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A3600R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63317">详情</a></td>
       </tr>
@@ -2014,7 +2134,7 @@
       <tr>
        <td>6326025b05174c0cb1f4f55ad8f99fef</td>
        <td>CVE-2022-25081</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink T10命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63316">详情</a></td>
       </tr>
@@ -2022,7 +2142,7 @@
       <tr>
        <td>b9052a0fe0a33e1211cfd6d426d3ce4f</td>
        <td>CVE-2022-25079</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A810R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63315">详情</a></td>
       </tr>
@@ -2030,7 +2150,7 @@
       <tr>
        <td>c77a7a6e36c89a35e841ba933f3de3a0</td>
        <td>CVE-2022-25080</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>TOTOLink A830R命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63314">详情</a></td>
       </tr>
@@ -2038,7 +2158,7 @@
       <tr>
        <td>bf728975e09e1b61c3ef67dcb7573d1c</td>
        <td>CVE-2022-24948</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>Apache JSPWiki跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63313">详情</a></td>
       </tr>
@@ -2046,129 +2166,9 @@
       <tr>
        <td>0363716e8b11f1fd5281fe0fbcd54ab8</td>
        <td>CVE-2022-24947</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
+       <td>2022-02-28 23:37:15</td>
        <td>Apache JSPWiki跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63312">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>313f33b3f2a34fb7c1432f89851ff1dd</td>
-       <td>CVE-2022-25064</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
-       <td>TP-LINK TL-WR840N远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63311">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f294b56f4524a3b7adde98d5ca9ce11</td>
-       <td>CVE-2022-25060</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
-       <td>TP-LINK TL-WR840N命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63310">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b2894d2e128dc7e490c05ac15216645</td>
-       <td>CVE-2022-25062</td>
-       <td>2022-02-28 23:37:15 <img src="imgs/new.gif" /></td>
-       <td>TP-LINK TL-WR840N整数溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63309">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb151e474b572ff4adfb2b5e81b3ada8</td>
-       <td>CVE-2022-21366</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63307">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16d26e7303b372975c4740acc1146e7a</td>
-       <td>CVE-2022-21296</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63306">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>474fc059361c8383c1f5dda1cee2af85</td>
-       <td>CVE-2022-21299</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63305">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f65a7766ded1e45137381308ee41755f</td>
-       <td>CVE-2022-21305</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63304">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0a0aca2781befeb3895994dbc3ccce3</td>
-       <td>CVE-2022-21349</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63303">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36b1926601490b6ea0b9dd52ec9004f2</td>
-       <td>CVE-2022-21291</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle Java SE和GraalVM Enterprise Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63302">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d92cbb12fe087f047fc30235cfcd6147</td>
-       <td>CVE-2022-21280</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle MySQL Cluster输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63301">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec31a36ece5aecceb1d3bd818799a5f2</td>
-       <td>CVE-2022-21285</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle MySQL Cluster输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63300">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0de564c0a6cbf7d473a1e710386b4c82</td>
-       <td>CVE-2022-21286</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle MySQL Cluster输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63299">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7417110ff7f154dfb3747914a3b19bc3</td>
-       <td>CVE-2022-21287</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle MySQL Cluster输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63298">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5943cd27399e7cfdc5df896ae774b23c</td>
-       <td>CVE-2022-21345</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle PeopleSoft Enterprise PeopleTools信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63297">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ae6608281906ce9ad46373da1f0a481</td>
-       <td>CVE-2022-21300</td>
-       <td>2022-02-24 05:34:46</td>
-       <td>Oracle PeopleSoft Enterprise CS SA Integration Pack信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63296">详情</a></td>
       </tr>
 
      </tbody>
@@ -2187,6 +2187,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>b88fb4e37070e5ea0c8c7c8d7a0245e3</td>
+       <td>CVE-2022-0726</td>
+       <td>2022-02-23 14:15:07 </td>
+       <td>Improper Authorization in GitHub repository chocobozzz/peertube prior to 4.1.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0726">详情</a></td>
+      </tr>
+
       <tr>
        <td>c9a5486d9dfa8ecea1290b779e3031f5</td>
        <td>CVE-2022-24553</td>
@@ -2233,6 +2241,22 @@
        <td>2022-02-18 20:15:18 </td>
        <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader 11.1.0.52543. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15702.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24359">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f30a4ac626d5af3fd8cb274c5df8798</td>
+       <td>CVE-2022-21143</td>
+       <td>2022-02-18 18:15:12 </td>
+       <td>MMP: All versions prior to v1.0.3, PTP C-series: Device versions prior to v2.8.6.1, and PTMP C-series and A5x: Device versions prior to v2.5.4.1 does not properly sanitize user input on several locations, which may allow an attacker to inject arbitrary commands.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21143">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>65103df5b5ba93b5c1b0752b1afce2c3</td>
+       <td>CVE-2022-21141</td>
+       <td>2022-02-18 18:15:12 </td>
+       <td>MMP: All versions prior to v1.0.3, PTP C-series: Device versions prior to v2.8.6.1, and PTMP C-series and A5x: Device versions prior to v2.5.4.1 does not perform proper authorization checks on multiple API functions. An attacker may gain access to these functions and achieve remote code execution, create a denial-of-service condition, and obtain sensitive information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21141">详情</a></td>
       </tr>
 
       <tr>
@@ -2340,6 +2364,30 @@
       </tr>
 
       <tr>
+       <td>6218af6e9cea0b7664f41c1611bb68e4</td>
+       <td>CVE-2022-20750</td>
+       <td>2022-02-17 15:15:09 </td>
+       <td>A vulnerability in the checkpoint manager implementation of Cisco Redundancy Configuration Manager (RCM) for Cisco StarOS Software could allow an unauthenticated, remote attacker to cause the checkpoint manager process to restart upon receipt of malformed TCP data. This vulnerability is due to improper input validation of an ingress TCP packet. An attacker could exploit this vulnerability by sending crafted TCP data to the affected application. A successful exploit could allow the attacker to cause a denial of service (DoS) condition due to the checkpoint manager process restarting.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20750">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96e8697b53a34460a07bf273a3852aaa</td>
+       <td>CVE-2022-20659</td>
+       <td>2022-02-17 15:15:09 </td>
+       <td>A vulnerability in the web-based management interface of Cisco Prime Infrastructure and Cisco Evolved Programmable Network (EPN) Manager could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface of an affected device. This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20659">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>777d5bad241b0689beef1d3656ca0427</td>
+       <td>CVE-2022-20653</td>
+       <td>2022-02-17 15:15:09 </td>
+       <td>A vulnerability in the DNS-based Authentication of Named Entities (DANE) email verification component of Cisco AsyncOS Software for Cisco Email Security Appliance (ESA) could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. This vulnerability is due to insufficient error handling in DNS name resolution by the affected software. An attacker could exploit this vulnerability by sending specially formatted email messages that are processed by an affected device. A successful exploit could allow the attacker to cause the device to become unreachable from management interfaces or to process additional email messages for a period of time until the device recovers, resulting in a DoS condition. Continued attacks could cause the device to become completely unavailable, resulting in a persistent DoS condition.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20653">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ab08fc2dd1afd2240934e4f73e6f23fc</td>
        <td>CVE-2022-22899</td>
        <td>2022-02-17 13:15:07 </td>
@@ -2377,54 +2425,6 @@
        <td>2022-02-16 22:15:07 </td>
        <td>Jeecg-boot v3.0 was discovered to contain a SQL injection vulnerability via the code parameter in /jeecg-boot/sys/user/queryUserByDepId.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22880">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb92297581017408a2f3e94ad7b01768</td>
-       <td>CVE-2022-22853</td>
-       <td>2022-02-16 18:15:07 </td>
-       <td>A stored cross-site scripting (XSS) vulnerability in Hospital Patient Record Management System v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload inserted into the Name field.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22853">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f83ff7022b1c2e7a9fd3c2653d7f91e</td>
-       <td>CVE-2022-24664</td>
-       <td>2022-02-16 17:15:13 </td>
-       <td>PHP Everywhere &lt;= 2.0.3 included functionality that allowed execution of PHP Code Snippets via WordPress metaboxes, which could be used by any user able to edit posts.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>972b2596523f15c78be73aa6be5c46bd</td>
-       <td>CVE-2022-24663</td>
-       <td>2022-02-16 17:15:13 </td>
-       <td>PHP Everywhere &lt;= 2.0.3 included functionality that allowed execution of PHP Code Snippets via WordPress shortcodes, which can be used by any authenticated user.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-24663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84fe42c54ccbce7b9ffd39e91c44ecb1</td>
-       <td>CVE-2022-25242</td>
-       <td>2022-02-16 02:15:06 </td>
-       <td>In FileCloud before 21.3, file upload is not protected against Cross-Site Request Forgery (CSRF).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25242">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5fba7e240ced726b2b2d02de621ac464</td>
-       <td>CVE-2022-25241</td>
-       <td>2022-02-16 02:15:06 </td>
-       <td>In FileCloud before 21.3, the CSV user import functionality is vulnerable to Cross-Site Request Forgery (CSRF).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6e96d6def300edcb194041367d6ceba4</td>
-       <td>CVE-2022-25236</td>
-       <td>2022-02-16 01:15:07 </td>
-       <td>xmlparse.c in Expat (aka libexpat) before 2.4.5 allows attackers to insert namespace-separator characters into namespace URIs.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25236">详情</a></td>
       </tr>
 
      </tbody>
