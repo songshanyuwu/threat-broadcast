@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-05 05:35:35 -->
+<!-- RELEASE TIME : 2022-03-05 23:37:19 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f506fc3f37be724210c950bf5bc1148c</td>
+       <td>CVE-2022-24921</td>
+       <td>2022-03-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>regexp.Compile in Go before 1.16.15 and 1.17.x before 1.17.8 allows stack exhaustion via a deeply nested expression.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24921">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7f2dd405deda2d9fdaebf4668ca60b1</td>
+       <td>CVE-2022-0849</td>
+       <td>2022-03-05 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use After Free in r_reg_get_name_idx in GitHub repository radareorg/radare2 prior to 5.6.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0849">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>16524919082e32f528f788288dc3f5ac</td>
+       <td>CVE-2022-25465</td>
+       <td>2022-03-05 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Espruino 2v11 release was discovered to contain a stack buffer overflow via src/jsvar.c in jsvGetNextSibling.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25465">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4cac0c691ba4aeecbe34f1f64874cb95</td>
+       <td>CVE-2022-25044</td>
+       <td>2022-03-05 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Espruino 2v11.251 was discovered to contain a stack buffer overflow via src/jsvar.c in jsvNewFromString.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25044">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>807b3396d8a1e17467af24ec3182b2de</td>
+       <td>CVE-2022-25069</td>
+       <td>2022-03-05 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mark Text v0.16.3 was discovered to contain a DOM-based cross-site scripting (XSS) vulnerability which allows attackers to perform remote code execution (RCE) via injecting a crafted payload into /lib/contentState/pasteCtrl.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25069">详情</a></td>
+      </tr>
+
+      <tr>
        <td>be98a7a537e0b8226cbb7c649846a43e</td>
        <td>CVE-2022-25312</td>
        <td>2022-03-05 00:15:00 <img src="imgs/new.gif" /></td>
@@ -481,46 +521,6 @@
        <td>2022-03-03 22:15:00</td>
        <td>PeteReport Version 0.5 allows an authenticated admin user to inject persistent JavaScript code inside the markdown descriptions while creating a product, report or finding.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25220">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd8ec8736869e2e640bdf98f300773b3</td>
-       <td>CVE-2022-24725</td>
-       <td>2022-03-03 22:15:00</td>
-       <td>Shescape is a shell escape package for JavaScript. An issue in versions 1.4.0 to 1.5.1 allows for exposure of the home directory on Unix systems when using Bash with the `escape` or `escapeAll` functions from the _shescape_ API with the `interpolation` option set to `true`. Other tested shells, Dash and Zsh, are not affected. Depending on how the output of _shescape_ is used, directory traversal may be possible in the application using _shescape_. The issue was patched in version 1.5.1. As a workaround, manually escape all instances of the tilde character (`~`) using `arg.replace(/~/g, "\\~")`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24725">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad7587ac632473ebc9bdbf587ba4d774</td>
-       <td>CVE-2022-23710</td>
-       <td>2022-03-03 22:15:00</td>
-       <td>A cross-site-scripting (XSS) vulnerability was discovered in the Data Preview Pane (previously known as Index Pattern Preview Pane) which could allow arbitrary JavaScript to be executed in a victim’s browser.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23710">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ac77344305c747b6abcf5feca352aa7</td>
-       <td>CVE-2022-23709</td>
-       <td>2022-03-03 22:15:00</td>
-       <td>A flaw was discovered in Kibana in which users with Read access to the Uptime feature could modify alerting rules. A user with this privilege would be able to create new alerting rules or overwrite existing ones. However, any new or modified rules would not be enabled, and a user with this privilege could not modify alerting connectors. This effectively means that Read users could disable existing alerting rules.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23709">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1c2d7b272a088cbf19bcb1764d934c5</td>
-       <td>CVE-2022-23708</td>
-       <td>2022-03-03 22:15:00</td>
-       <td>A flaw was discovered in Elasticsearch 7.17.0’s upgrade assistant, in which upgrading from version 6.x to 7.x would disable the in-built protections on the security index, allowing authenticated users with “*” index permissions access to this index.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23708">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4a9423655107ffdd5c23542f4b59016</td>
-       <td>CVE-2022-24724</td>
-       <td>2022-03-03 20:15:00</td>
-       <td>cmark-gfm is GitHub's extended version of the C reference implementation of CommonMark. Prior to versions 0.29.0.gfm.3 and 0.28.3.gfm.21, an integer overflow in cmark-gfm's table row parsing `table.c:row_from_string` may lead to heap memory corruption when parsing tables who's marker rows contain more than UINT16_MAX columns. The impact of this heap corruption ranges from Information Leak to Arbitrary Code Execution depending on how and where `cmark-gfm` is used. If `cmark-gfm` is used for rendering remote user controlled markdown, this vulnerability may lead to Remote Code Execution (RCE) in applications employing affected versions of the `cmark-gfm` library. This vulnerability has been patched in the following cmark-gfm versions 0.29.0.gfm.3 and 0.28.3.gfm.21. A workaround is available. The vulnerability exists in the table markdown extensions of cmark-gfm. Disabling the table extension will prevent this vulnerability from being triggered.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24724">详情</a></td>
       </tr>
 
      </tbody>
