@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-10 05:35:26 -->
+<!-- RELEASE TIME : 2022-03-10 23:37:38 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>200a786bc507f717d0e72956f0bac140</td>
+       <td>CVE-2022-23042</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23042">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1083873025706605a83359547aceecaa</td>
+       <td>CVE-2022-23041</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23041">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d95df21d5151db42caa4b04261d1aa40</td>
+       <td>CVE-2022-23040</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23040">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e73d7db1d88bbba6c31a4dfc2739c65</td>
+       <td>CVE-2022-23039</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23039">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c9887db78aaee7f7b2b739839500524</td>
+       <td>CVE-2022-23038</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1aea399614012fc8c295ca99f8dc577</td>
+       <td>CVE-2022-23037</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ddff6218b9920c7b3e8a4725d99d607</td>
+       <td>CVE-2022-23036</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23036">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b36779cc50a338f86a191089b065423a</td>
+       <td>CVE-2021-39025</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>IBM Guardium Data Encryption (GDE) 4.0.0.0 and 5.0.0.0 could disclose internal IP address information when the web backend is down. IBM X-Force 213863.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-39025">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb7f46b05440ea6816e96280e1c64c6c</td>
+       <td>CVE-2021-39022</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>IBM Guardium Data Encryption (GDE) 4.0.0.0 and 5.0.0.0 saves user-provided information into a Comma-Separated Value (CSV) file, but it does not neutralize or incorrectly neutralizes special elements that could be interpreted as a command when the file is opened by spreadsheet software. IBM X-Force ID: 213858.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-39022">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c71c9558fdc4ccffe8f51ea99932941</td>
+       <td>CVE-2021-38910</td>
+       <td>2022-03-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>IBM DataPower Gateway V10CD, 10.0.1, and 2108.4.1 could allow a remote attacker to bypass security restrictions, caused by the improper validation of input. By sending a specially crafted JSON message, an attacker could exploit this vulnerability to modify structure and fields. IBM X-Force ID: 209824.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-38910">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fbe9957b5814f6717daff667da8b4524</td>
        <td>CVE-2022-24753</td>
        <td>2022-03-09 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-03-09 18:15:00 <img src="imgs/new.gif" /></td>
        <td>Usage of a weak cryptographic algorithm in Palo Alto Networks PAN-OS software where the password hashes of administrator and local user accounts are not created with a sufficient level of computational effort, which allows for password cracking attacks on accounts in normal (non-FIPS-CC) operational mode.An attacker must have access to the account password hashes to take advantage of this weakness and can acquire those hashes if they are able to gain access to the PAN-OS software configuration.Fixed versions of PAN-OS software use a secure cryptographic algorithm for account password hashes.This issue does not impact Prisma Access firewalls.This issue impacts:PAN-OS 8.1 versions earlier than PAN-OS 8.1.21;All versions of PAN-OS 9.0;PAN-OS 9.1 versions earlier than PAN-OS 9.1.11;PAN-OS 10.0 versions earlier than PAN-OS 10.0.7.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0022">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a9d6e4dc178003391c1abbbd935e2bd5</td>
-       <td>CVE-2022-26337</td>
-       <td>2022-03-08 22:15:00</td>
-       <td>Trend Micro Password Manager (Consumer) installer version 5.0.0.1262 and below is vulnerable to an Uncontrolled Search Path Element vulnerability that could allow an attacker to use a specially crafted file to exploit the vulnerability and escalate local privileges on the affected machine.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26337">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7b5ade9b58048ce595d2d3a4e1517cc</td>
-       <td>CVE-2022-26319</td>
-       <td>2022-03-08 22:15:00</td>
-       <td>An installer search patch element vulnerability in Trend Micro Portable Security 3.0 Pro, 3.0 and 2.0 could allow a local attacker to place an arbitrarily generated DLL file in an installer folder to elevate local privileges.Please note: an attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26319">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>917559ef00284331e2d69a0afc37f06b</td>
-       <td>CVE-2022-24739</td>
-       <td>2022-03-08 22:15:00</td>
-       <td>alltube is an html front end for youtube-dl. On releases prior to 3.0.3, an attacker could craft a special HTML page to trigger either an open redirect attack or a Server-Side Request Forgery attack (depending on how AllTube is configured). The impact is mitigated by the fact the SSRF attack is only possible when the `stream` option is enabled in the configuration. (This option is disabled by default.) 3.0.3 contains a fix for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>115aab1d8e1f3648b6854a7447b50924</td>
-       <td>CVE-2022-24716</td>
-       <td>2022-03-08 20:15:00</td>
-       <td>Icinga Web 2 is an open source monitoring web interface, framework and command-line interface. Unauthenticated users can leak the contents of files of the local system accessible to the web-server user, including `icingaweb2` configuration files with database credentials. This issue has been resolved in versions 2.9.6 and 2.10 of Icinga Web 2. Database credentials should be rotated.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24716">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da643d357f966cf0aad5344cec5bba64</td>
-       <td>CVE-2022-24715</td>
-       <td>2022-03-08 20:15:00</td>
-       <td>Icinga Web 2 is an open source monitoring web interface, framework and command-line interface. Authenticated users, with access to the configuration, can create SSH resource files in unintended directories, leading to the execution of arbitrary code. This issue has been resolved in versions 2.8.6, 2.9.6 and 2.10 of Icinga Web 2. Users unable to upgrade should limit access to the Icinga Web 2 configuration.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24715">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18fc7905c3046daeab9c42455df2a760</td>
-       <td>CVE-2022-24714</td>
-       <td>2022-03-08 20:15:00</td>
-       <td>Icinga Web 2 is an open source monitoring web interface, framework and command-line interface. Installations of Icinga 2 with the IDO writer enabled are affected. If you use service custom variables in role restrictions, and you regularly decommission service objects, users with said roles may still have access to a collection of content. Note that this only applies if a role has implicitly permitted access to hosts, due to permitted access to at least one of their services. If access to a host is permitted by other means, no sensible information has been disclosed to unauthorized users. This issue has been resolved in versions 2.8.6, 2.9.6 and 2.10 of Icinga Web 2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24714">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36003b4f8a551126e063bc92ce364226</td>
-       <td>CVE-2022-24713</td>
-       <td>2022-03-08 19:15:00</td>
-       <td>regex is an implementation of regular expressions for the Rust language. The regex crate features built-in mitigations to prevent denial of service attacks caused by untrusted regexes, or untrusted input matched by trusted regexes. Those (tunable) mitigations already provide sane defaults to prevent attacks. This guarantee is documented and it's considered part of the crate's API. Unfortunately a bug was discovered in the mitigations designed to prevent untrusted regexes to take an arbitrary amount of time during parsing, and it's possible to craft regexes that bypass such mitigations. This makes it possible to perform denial of service attacks by sending specially crafted regexes to services accepting user-controlled, untrusted regexes. All versions of the regex crate before or equal to 1.5.4 are affected by this issue. The fix is include starting from regex 1.5.5. All users accepting user-controlled regexes are recommended to upgrade immediately to the latest version of the regex crate. Unfortunately there is no fixed set of problematic regexes, as there are practically infinite regexes that could be crafted to exploit this vulnerability. Because of this, it us not recommend to deny known problematic regexes.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24713">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25ba5f93210e0c99f91a84704b66a986</td>
-       <td>CVE-2021-41241</td>
-       <td>2022-03-08 19:15:00</td>
-       <td>Nextcloud server is a self hosted system designed to provide cloud style services. The groupfolders application for Nextcloud allows sharing a folder with a group of people. In addition, it allows setting "advanced permissions" on subfolders, for example, a user could be granted access to the groupfolder but not specific subfolders. Due to a lacking permission check in affected versions, a user could still access these subfolders by copying the groupfolder to another location. It is recommended that the Nextcloud Server is upgraded to 20.0.14, 21.0.6 or 22.2.1. Users unable to upgrade should disable the "groupfolders" application in the admin settings.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de5c1041684b1d5ca27cb8b63dd79098</td>
-       <td>CVE-2021-41239</td>
-       <td>2022-03-08 18:15:00</td>
-       <td>Nextcloud server is a self hosted system designed to provide cloud style services. In affected versions the User Status API did not consider the user enumeration settings by the administrator. This allowed a user to enumerate other users on the instance, even when user listings where disabled. It is recommended that the Nextcloud Server is upgraded to 20.0.14, 21.0.6 or 22.2.1. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41239">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9271506f79927e8a6a9b574bfc5216b</td>
-       <td>CVE-2021-41181</td>
-       <td>2022-03-08 18:15:00</td>
-       <td>Nextcloud talk is a self hosting messaging service. In versions prior to 12.3.0 the Nextcloud Android Talk application did not properly detect the lockscreen state when a call was incoming. If an attacker got physical access to the locked phone, and the victim received a phone call the attacker could gain access to the chat messages and files  of the user. It is recommended that the Nextcloud Android Talk App is upgraded to 12.3.0. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41181">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7b3f477784401249a0fe64132c7a828f</td>
+       <td>CNNVD-202203-835 (CVE-2021-4203)</td>
+       <td>2022-03-10 23:37:18 <img src="imgs/new.gif" /></td>
+       <td>Linux kernel 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c79128d4c97d8289dc88909a14855d6</td>
+       <td>CNNVD-202203-826 (CVE-2022-24741)</td>
+       <td>2022-03-09 23:37:37 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server 资源管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-826">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c001c73b9a0f6b0eee94e4d8097d3a00</td>
+       <td>CNNVD-202203-827 (CVE-2022-24322)</td>
+       <td>2022-03-09 23:37:35 <img src="imgs/new.gif" /></td>
+       <td>Schneider Electric EcoStruxure Control Experta 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-827">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>267acfbb47534d2e2259cbde7c32b4cb</td>
+       <td>CNNVD-202203-828 (CVE-2022-24744)</td>
+       <td>2022-03-09 23:37:33 <img src="imgs/new.gif" /></td>
+       <td>Shopware 代码问题漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-828">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>022ea3e8f4036e153c0c470ee23382ca</td>
+       <td>CNNVD-202203-829 (CVE-2022-24323)</td>
+       <td>2022-03-09 23:37:31 <img src="imgs/new.gif" /></td>
+       <td>Schneider Electric EcoStruxure Control Expert和Schneider Electric EcoStruxure Process Exper 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-829">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89727479c66af42c6f80fa75a65016ad</td>
+       <td>CNNVD-202203-830 (CVE-2022-24745)</td>
+       <td>2022-03-09 23:37:29 <img src="imgs/new.gif" /></td>
+       <td>Shopware 授权问题漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-830">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>163161b0607672f576b30dad5b186a30</td>
+       <td>CNNVD-202203-831 (CVE-2022-24746)</td>
+       <td>2022-03-09 23:37:27 <img src="imgs/new.gif" /></td>
+       <td>Shopware 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-831">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fdedc5889644be80985f26f11c431908</td>
+       <td>CNNVD-202203-832 (CVE-2022-24747)</td>
+       <td>2022-03-09 23:37:25 <img src="imgs/new.gif" /></td>
+       <td>Shopware 信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-832">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c411ed11d1bd1f25d08c29b7ca42c534</td>
+       <td>CNNVD-202203-833 (CVE-2022-24753)</td>
+       <td>2022-03-09 23:37:22 <img src="imgs/new.gif" /></td>
+       <td>Stripe CLI 操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-833">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53c00e4b56f2c6d546a53968b2fde317</td>
+       <td>CNNVD-202203-834 (CVE-2022-24748)</td>
+       <td>2022-03-09 23:37:20 <img src="imgs/new.gif" /></td>
+       <td>Shopware 授权问题漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-834">详情</a></td>
+      </tr>
+
+      <tr>
        <td>72be2dfcbf57ff2c690c3c7edb39dbc2</td>
        <td>CNNVD-202203-769 (CVE-2021-41181)</td>
        <td>2022-03-08 23:37:32</td>
@@ -953,86 +1033,6 @@
        <td>2022-03-07 23:37:14</td>
        <td>Httpie 信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-648">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cbeae2716449e5a47db032fe7c4bf220</td>
-       <td>CNNVD-202203-510 (CVE-2022-0869)</td>
-       <td>2022-03-06 23:37:12</td>
-       <td>Github spirit 输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22953ecd6c647500b4a6a51eb7365af9</td>
-       <td>CNNVD-202203-511 (CVE-2022-26505)</td>
-       <td>2022-03-06 23:37:10</td>
-       <td>ReadyMedia 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>183af04f1c034f4c7995a6767f8b2b48</td>
-       <td>CNNVD-202203-512 (CVE-2021-46704)</td>
-       <td>2022-03-06 23:37:07</td>
-       <td>GenieACS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10cb9cab199a8589d158c3c84f27cce1</td>
-       <td>CNNVD-202203-513 (CVE-2022-26496)</td>
-       <td>2022-03-06 23:37:06</td>
-       <td>nbd 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-513">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d5d2d3eb9ccf0c4f73cf8a74f099561</td>
-       <td>CNNVD-202203-514 (CVE-2022-26495)</td>
-       <td>2022-03-06 23:37:04</td>
-       <td>nbd 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84742dde8a780f55e31c5534ef1056c6</td>
-       <td>CNNVD-202203-515 (CVE-2021-46703)</td>
-       <td>2022-03-06 23:37:02</td>
-       <td>Antaris RazorEngine 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-515">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c2fc69c8fd496bc222a5296f994e92d</td>
-       <td>CNNVD-202203-516 (CVE-2022-0868)</td>
-       <td>2022-03-06 23:36:59</td>
-       <td>Medialize URI.js 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-516">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42153e9673ecee511827db8480719554</td>
-       <td>CNNVD-202203-517 (CVE-2021-44749)</td>
-       <td>2022-03-06 23:36:57</td>
-       <td>F-Secure SAFE 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-517">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a0bd5f2a5fbf0089163cd07b88272f25</td>
-       <td>CNNVD-202203-518 (CVE-2021-44748)</td>
-       <td>2022-03-06 23:36:55</td>
-       <td>F-secure F-Secure SAFE 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-518">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fd6f91a84b568df44c6c735cfded3a2</td>
-       <td>CNNVD-202203-519 (CVE-2022-0697)</td>
-       <td>2022-03-06 23:36:53</td>
-       <td>archivy 输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-519">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>92733cfaa5a8524d79f46971cefae0fc</td>
+       <td>CVE-2020-11217</td>
+       <td>2022-03-10 13:51:57 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=82118e9f2a67410486170e136ee0ebfa">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d24294329595b520f3c2799afd3c04a5</td>
+       <td>CVE-2020-27221</td>
+       <td>2022-03-10 13:51:43 <img src="imgs/new.gif" /></td>
+       <td>Eclipse OpenJ9 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=44f3bf9d78fd4adbb6882e40219f37ac">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>960a4453bd805fa92ab747cef384562e</td>
+       <td>CVE-2020-11225</td>
+       <td>2022-03-10 13:51:38 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dae3fcdd970f4036b37c146d90e8eff0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f44568ddde3f124356814256a9a3db26</td>
+       <td>CVE-2020-11214</td>
+       <td>2022-03-10 13:51:34 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=77cb6687aea2429d8c518eff06cea764">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>199eb19093eb21031d91a7ae8aa25b1f</td>
+       <td>CVE-2020-11215</td>
+       <td>2022-03-10 13:51:34 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0f122cc4f84e443faae11ec5bd239635">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3cd5b6db0113c0869e3549e440ad2fc7</td>
+       <td>CVE-2020-11213</td>
+       <td>2022-03-10 13:51:26 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2a75d933d4244aa3b742dcd43678e395">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3407e19d719b229258e49b0e6010ccdf</td>
+       <td>CVE-2020-11212</td>
+       <td>2022-03-10 13:51:25 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=66b37fe355214e88813da0bf53606393">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>67b23226be1758449c46d305e8e8bfe4</td>
+       <td>CVE-2020-11197</td>
+       <td>2022-03-10 13:51:16 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=697f6456bd764b24af664e7d3eb9e270">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad6b49c3bd6885ab673bc772f1b3e233</td>
+       <td>CVE-2020-11185</td>
+       <td>2022-03-10 13:51:15 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=154e7f49e04c45f69268b525369d8553">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ff6a7bdd10fe8bd250910db37a9f8ad</td>
+       <td>CVE-2020-11216</td>
+       <td>2022-03-10 13:50:52 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=224cd17361a34dde818ce689abbeb164">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6b3d98d05d58db1a54a155c66fbd4e3d</td>
        <td>CVE-2021-2082</td>
        <td>2022-03-09 13:50:43 <img src="imgs/new.gif" /></td>
@@ -1835,86 +1915,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b06d1d82eb534f2e8d4c2ad6d515408c">详情</a></td>
       </tr>
 
-      <tr>
-       <td>9d54e823d40291822a31def381a6283a</td>
-       <td>CVE-2021-21261</td>
-       <td>2022-03-07 13:48:08</td>
-       <td>Flatpak 注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f9a457f61f344f0db313eff3644153fc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>707900437d569b1faa0c8b6399d91af4</td>
-       <td>CVE-2021-0221</td>
-       <td>2022-03-07 13:48:04</td>
-       <td>Juniper Networks Junos OS QFX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6f61ed204d0345b5ae5c5f5037a394ab">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5030e9cb919407031abd3d052097c828</td>
-       <td>CVE-2021-0220</td>
-       <td>2022-03-07 13:48:00</td>
-       <td>Juniper Networks Junos OS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ee1467d4add4fe5b7ace6b5cda22bb2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4626d3b2242d6c9def0a4c2b2a68172f</td>
-       <td>CVE-2021-0215</td>
-       <td>2022-03-07 13:47:56</td>
-       <td>Juniper Networks Junos OS 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8b26e26392a645b3bafe3dce2a28e1e8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aad108029b3cf0a4c931297aca610a6d</td>
-       <td>CVE-2021-0212</td>
-       <td>2022-03-07 13:47:52</td>
-       <td>Juniper Networks Contrail Networking 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=92c8136ecd704790a00f8caf592be13f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2a58dfca08ea757ed30002c4ac9748a1</td>
-       <td>CVE-2021-0209</td>
-       <td>2022-03-07 13:47:49</td>
-       <td>Juniper Networks Junos OS Evolved 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=19a189d79eda41479316a9d498367123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41c2faf809a9f2b87b311b24ba25336d</td>
-       <td>CVE-2021-0206</td>
-       <td>2022-03-07 13:47:45</td>
-       <td>Juniper Networks Junos OS 产品代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=56c2e95af39343b29b5d2c7036f78573">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d62fd03a27324346add2f47fe3d84866</td>
-       <td>CVE-2021-0203</td>
-       <td>2022-03-07 13:47:41</td>
-       <td>Juniper Networks Junos OS EX和 Junos OS QFX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a011da2b2d804a5fabe7952abd818be5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f4c9429899ec6bc520d96151ed6a8f1</td>
-       <td>CVE-2021-0223</td>
-       <td>2022-03-07 13:47:37</td>
-       <td>Juniper Networks Junos OS 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f680bf7e5c24c67ba108c147be5f614">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be76df80e4355ab6cb8081d168597959</td>
-       <td>CVE-2020-6572</td>
-       <td>2022-03-07 13:47:37</td>
-       <td>Google Chrome 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0c1bbc06ef104cc9ac2e95c526e23447">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1931,6 +1931,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>e0113cee3aedf00ff5348e019e4a7427</td>
+       <td>CVE-2021-43579</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>HTMLDOC堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63524">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4e91e734350660fa59a6e3b9be40140</td>
+       <td>CVE-2021-40038</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS双重释放漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63523">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6c343b8b47282fb88fdd2ef1860fe75</td>
+       <td>CVE-2021-40000</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS Bluetooth越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63522">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a73fff808fce85a2296e8f81b4a86e1</td>
+       <td>CVE-2022-21661</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63521">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e28169f14c5c44c48e5cfc29a56a0a5a</td>
+       <td>CVE-2021-38956</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>IBM Security Verify信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63520">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f206a6201797f61fb58710208bba6df7</td>
+       <td>CVE-2021-41842</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Insyde InsydeH2O任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63519">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2750c0ab16701d7bb7685a1c30ee89c1</td>
+       <td>CVE-2020-10137</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Silicon Labs 700 series chipsets数据验证漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63518">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1a143504c5d57cdc650a672dc566705</td>
+       <td>CVE-2020-9061</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Silicon Labs Z-Wave Chipsets授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63517">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4962065a358e9b5ccc11eb4e238b9309</td>
+       <td>CVE-2021-45458</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Apache Kylin加密错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63516">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5a121eae2886cd859ada71954a43a17</td>
+       <td>CVE-2021-31522</td>
+       <td>2022-03-10 23:37:04 <img src="imgs/new.gif" /></td>
+       <td>Apache Kylin输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63515">详情</a></td>
+      </tr>
+
       <tr>
        <td>29b03f47c6d8373cd69d46b3497a1c60</td>
        <td>CVE-2022-24519</td>
@@ -2091,86 +2171,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63457">详情</a></td>
       </tr>
 
-      <tr>
-       <td>43933e1d350a41ab35a5abbb88a89f36</td>
-       <td>CVE-2022-0805</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Browser Switcher内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63456">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eaefa650315a83571cedd7d2bbdb3879</td>
-       <td>CVE-2022-0796</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Media内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63455">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89f6e5d5bb01d115fb227f54905a4290</td>
-       <td>CVE-2022-0800</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Cast UI堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63454">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7801cf0b60b89d7fb40a325d7388a3c1</td>
-       <td>CVE-2022-0809</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome WebXR越界内存读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63453">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d33aeaefeaa0779145221a8e4530d94e</td>
-       <td>CVE-2022-0801</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome HTML parser实现不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63452">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>951730ff6c5de5b406bb8632eedd3d9b</td>
-       <td>CVE-2022-0804</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Full screen mode实现不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63451">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>191bee3fff869a07d2f514aab41641ba</td>
-       <td>CVE-2022-0806</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Canvas数据泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63450">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9b63c20b73551f07959d24bcafc7dfc</td>
-       <td>CVE-2022-0793</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Views实现不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63449">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bdae0df8453bbc3a3325d4c22a6d58d9</td>
-       <td>CVE-2022-0792</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome ANGLE越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63448">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60bfb91550ceea21f4527278b4eb85e9</td>
-       <td>CVE-2022-0803</td>
-       <td>2022-03-09 05:35:07 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome Permissions实现不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/63447">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2187,6 +2187,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>89096ddc0d7e69d5284d97142ad9e967</td>
+       <td>CVE-2022-26201</td>
+       <td>2022-03-04 14:15:08 </td>
+       <td>Victor CMS v1.0 was discovered to contain a SQL injection vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26201">详情</a></td>
+      </tr>
+
       <tr>
        <td>ebd7d3e564e230bb2cde3c493fa6d915</td>
        <td>CVE-2022-26332</td>
@@ -2417,14 +2425,6 @@
        <td>2022-02-24 15:15:30 </td>
        <td>ECTouch v2 suffers from arbitrary file deletion due to insufficient filtering of the filename parameter.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25098">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aaa76a75b97c3078b890f44f65c700bc</td>
-       <td>CVE-2022-25075</td>
-       <td>2022-02-24 15:15:30 </td>
-       <td>TOTOLink A3000RU V5.9c.2280_B20180512 was discovered to contain a command injection vulnerability in the &quot;Main&quot; function. This vulnerability allows attackers to execute arbitrary commands via the QUERY_STRING parameter.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25075">详情</a></td>
       </tr>
 
      </tbody>
