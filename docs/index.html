@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-04-11 23:39:48 -->
+<!-- RELEASE TIME : 2022-04-12 05:36:50 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>65185f3d5797956e8ae5d0b41f2f0b04</td>
+       <td>CVE-2022-24839</td>
+       <td>2022-04-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>org.cyberneko.html is an html parser written in Java. The fork of `org.cyberneko.html` used by Nokogiri (Rubygem) raises a `java.lang.OutOfMemoryError` exception when parsing ill-formed HTML markup. Users are advised to upgrade to `>= 1.9.22.noko2`. Note: The upstream library `org.cyberneko.html` is no longer maintained. Nokogiri uses its own fork of this library located at https://github.com/sparklemotion/nekohtml and this CVE applies only to that fork. Other forks of nekohtml may have a similar vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>df551902132dfd2c8278fe8c6d14a0eb</td>
+       <td>CVE-2022-24836</td>
+       <td>2022-04-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nokogiri is an open source XML and HTML library for Ruby. Nokogiri `< v1.13.4` contains an inefficient regular expression that is susceptible to excessive backtracking when attempting to detect encoding in HTML documents. Users are advised to upgrade to Nokogiri `>= 1.13.4`. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24836">详情</a></td>
+      </tr>
+
+      <tr>
        <td>316b2c992a0c76457254c3c2d5ecf418</td>
        <td>CVE-2022-24838</td>
        <td>2022-04-11 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +382,7 @@
       <tr>
        <td>194fa3ff08cfd5669a9934b34a6b76d6</td>
        <td>CVE-2022-27961</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>A cross-site scripting (XSS) vulnerability at /ofcms/company-c-47 in OFCMS v1.1.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Comment text box.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27961">详情</a></td>
       </tr>
@@ -374,7 +390,7 @@
       <tr>
        <td>0549891aabc43b64c95dfe0e2bc0bbd2</td>
        <td>CVE-2022-27960</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>Insecure permissions configured in the user_id parameter at SysUserController.java of OFCMS v1.1.4 allows attackers to access and arbitrarily modify users' personal information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27960">详情</a></td>
       </tr>
@@ -382,7 +398,7 @@
       <tr>
        <td>9328e04f97676ac9957a8c046a0358cd</td>
        <td>CVE-2022-27958</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>Insecure permissions configured in the userid parameter at /user/getuserprofile of FEBS-Security v1.0 allows attackers to access and arbitrarily modify users' personal information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27958">详情</a></td>
       </tr>
@@ -390,7 +406,7 @@
       <tr>
        <td>ab9abe90ca5b262ab83e13d0897ab1b2</td>
        <td>CVE-2022-27477</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>Newbee-Mall v1.0.0 was discovered to contain an arbitrary file upload via the Upload function at /admin/goods/edit.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27477">详情</a></td>
       </tr>
@@ -398,7 +414,7 @@
       <tr>
        <td>1b3c241b377f2fcfde82eb9c16878ae9</td>
        <td>CVE-2022-27476</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>A cross-site scripting (XSS) vulnerability at /admin/goods/update in Newbee-Mall v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the goodsName parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27476">详情</a></td>
       </tr>
@@ -406,7 +422,7 @@
       <tr>
        <td>f7a67f51449f082716a7f4fae7c07cc3</td>
        <td>CVE-2022-27295</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>D-Link DIR-619 Ax v1.00 was discovered to contain a stack overflow in the function formAdvanceSetup. This vulnerability allows attackers to cause a Denial of Service (DoS) via the webpage parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27295">详情</a></td>
       </tr>
@@ -414,7 +430,7 @@
       <tr>
        <td>2b095bab4cdc0c381a3ef7c725b55db4</td>
        <td>CVE-2022-27294</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>D-Link DIR-619 Ax v1.00 was discovered to contain a stack overflow in the function formWlanWizardSetup. This vulnerability allows attackers to cause a Denial of Service (DoS) via the webpage parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27294">详情</a></td>
       </tr>
@@ -422,7 +438,7 @@
       <tr>
        <td>ed0013ace0cf87beab7aec4f1c2f89b7</td>
        <td>CVE-2022-27293</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>D-Link DIR-619 Ax v1.00 was discovered to contain a stack overflow in the function formWlanSetup. This vulnerability allows attackers to cause a Denial of Service (DoS) via the webpage parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27293">详情</a></td>
       </tr>
@@ -430,7 +446,7 @@
       <tr>
        <td>2faa9f65601518a16637d403b077f0d9</td>
        <td>CVE-2022-27292</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>D-Link DIR-619 Ax v1.00 was discovered to contain a stack overflow in the function formLanguageChange. This vulnerability allows attackers to cause a Denial of Service (DoS) via the nextPage parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27292">详情</a></td>
       </tr>
@@ -438,7 +454,7 @@
       <tr>
        <td>8cde6796324b0e79d62eb263d1f4e176</td>
        <td>CVE-2022-27291</td>
-       <td>2022-04-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 21:15:00</td>
        <td>D-Link DIR-619 Ax v1.00 was discovered to contain a stack overflow in the function formdumpeasysetup. This vulnerability allows attackers to cause a Denial of Service (DoS) via the config.save_network_enabled parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27291">详情</a></td>
       </tr>
@@ -505,22 +521,6 @@
        <td>2022-04-09 00:15:00</td>
        <td>A link following vulnerability in Trend Micro Antivirus for Mac 11.5 could allow an attacker to create a specially-crafted file as a symlink that can lead to privilege escalation. Please note that an attacker must at least have low-level privileges on the system to attempt to exploit this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a95c73e43778cf62f2a92009a4957b2</td>
-       <td>CVE-2022-26588</td>
-       <td>2022-04-08 21:15:00</td>
-       <td>A Cross-Site Request Forgery (CSRF) in IceHrm 31.0.0.OS allows attackers to delete arbitrary users or achieve account takeover via the app/service.php URI.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26588">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a07280b3a2ee3a12fdf985b25907445</td>
-       <td>CVE-2022-26180</td>
-       <td>2022-04-08 21:15:00</td>
-       <td>qdPM 9.2 allows Cross-Site Request Forgery (CSRF) via the index.php/myAccount/update URI.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26180">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>63f118761452a5ef57cd03d310f32c22</td>
        <td>CNNVD-202204-2760 (CVE-2022-27290)</td>
-       <td>2022-04-10 23:39:47 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:47</td>
        <td>D-Link DIR-619 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2760">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>4de7963efc05b2aea7a5c3baa4bb66b5</td>
        <td>CNNVD-202204-2761 (CVE-2022-27291)</td>
-       <td>2022-04-10 23:39:45 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:45</td>
        <td>D-Link DIR-619 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2761">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>9761d41f4d55addca76f9c2233b243a5</td>
        <td>CNNVD-202204-2762 (CVE-2022-27292)</td>
-       <td>2022-04-10 23:39:42 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:42</td>
        <td>D-Link DIR-619 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2762">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>e84616c710d791c085cc49cdc32d704a</td>
        <td>CNNVD-202204-2763 (CVE-2022-27293)</td>
-       <td>2022-04-10 23:39:40 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:40</td>
        <td>D-Link DIR-619 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2763">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>82972a05604e65f3b10fdedabb12d10c</td>
        <td>CNNVD-202204-2764 (CVE-2022-27476)</td>
-       <td>2022-04-10 23:39:38 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:38</td>
        <td>Newbee-Mall 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2764">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>c517227eada1e52c37fa00eacb83dd25</td>
        <td>CNNVD-202204-2765 (CVE-2022-27295)</td>
-       <td>2022-04-10 23:39:36 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:36</td>
        <td>D-Link DIR-619 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2765">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>a2d08150b08990ae8de6a1e4e6a81ca0</td>
        <td>CNNVD-202204-2766 (CVE-2022-27477)</td>
-       <td>2022-04-10 23:39:34 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:34</td>
        <td>newbee-mall 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2766">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>528a1b0a01683ee793863d0a153e9d70</td>
        <td>CNNVD-202204-2767 (CVE-2022-27958)</td>
-       <td>2022-04-10 23:39:31 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:31</td>
        <td>FEBS-Security 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2767">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>7745e24098e0a58344a4de928cdc2f7a</td>
        <td>CNNVD-202204-2768 (CVE-2022-27960)</td>
-       <td>2022-04-10 23:39:29 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:29</td>
        <td>中天网络科技 OFCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2768">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>1ff90e0031d16774f700f575fb0aaeef</td>
        <td>CNNVD-202204-2769 (CVE-2022-27961)</td>
-       <td>2022-04-10 23:39:27 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 23:39:27</td>
        <td>中天网络科技 OFCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-2769">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>c0bc3d57c036f1727f8bf76b14a25cfc</td>
        <td>CVE-2020-27618</td>
-       <td>2022-04-10 13:54:28 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:28</td>
        <td>GNU C Library 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0a1aaccd92d542b3a7d6d69cca192736">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>4724d4776150ce475eb936c8d9685f56</td>
        <td>CVE-2021-3410</td>
-       <td>2022-04-10 13:54:20 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:20</td>
        <td>libcaca 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e96a1e1348204017a17958e55bebf85b">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>7bbb55c714a632f93e38f828ade31022</td>
        <td>CVE-2021-23337</td>
-       <td>2022-04-10 13:54:16 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:16</td>
        <td>lodash 命令注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3f6e86c757bd4da3bf9f94aff5d8d0e1">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>d3fae22448e9061ada310cd261a1812d</td>
        <td>CVE-2021-23840</td>
-       <td>2022-04-10 13:54:12 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:12</td>
        <td>OpenSSL 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=17dbfebb248b47488400aa5590c3428c">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>8728b2f5039a4ff876a4d0b76214679d</td>
        <td>CVE-2020-28493</td>
-       <td>2022-04-10 13:54:08 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:08</td>
        <td>Pallets Jinja 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d7f9d505c2c42299a97205cac56d1c8">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>0121b4ff36a067fe337ca96add75df4f</td>
        <td>CVE-2020-36231</td>
-       <td>2022-04-10 13:54:04 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:54:04</td>
        <td>Atlassian Jira Server and Data Center 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=75e65b71786847c4bc28c4026afafefd">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>5148bb8ad4e9af690f308aa9bb7e285d</td>
        <td>CVE-2020-8554</td>
-       <td>2022-04-10 13:53:56 <img src="imgs/new.gif" /></td>
+       <td>2022-04-10 13:53:56</td>
        <td>Kubernetes 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=faf898c740bd43e892f75a7bdca74582">详情</a></td>
       </tr>
