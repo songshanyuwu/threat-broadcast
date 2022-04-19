@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-04-18 23:37:10 -->
+<!-- RELEASE TIME : 2022-04-19 05:43:23 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>20d9d1b50c2494f23ef50c6e6737bdf3</td>
+       <td>CVE-2022-28108</td>
+       <td>2022-04-19 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Selenium Server (Grid) before 4 allows CSRF because it permits non-JSON content types such as application/x-www-form-urlencoded, multipart/form-data, and text/plain.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffaa4ae8a6646af7da6a4ce8d7958272</td>
+       <td>CVE-2022-29464</td>
+       <td>2022-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Certain WSO2 products allow unrestricted file upload with resultant remote code execution. This affects WSO2 API Manager 2.2.0 and above through 4.0.0; WSO2 Identity Server 5.2.0 and above through 5.11.0; WSO2 Identity Server Analytics 5.4.0, 5.4.1, 5.5.0, and 5.6.0; WSO2 Identity Server as Key Manager 5.3.0 and above through 5.10.0; and WSO2 Enterprise Integrator 6.2.0 and above through 6.6.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29464">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8dcb2bfd08cdc925ae9d2ca4055c4c9c</td>
+       <td>CVE-2022-24841</td>
+       <td>2022-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>fleetdm/fleet is an open source device management, built on osquery. All versions of fleet making use of the teams feature are affected by this authorization bypass issue. Fleet instances without teams, or with teams but without restricted team accounts are not affected. In affected versions a team admin can erroneously add themselves as admin, maintainer or observer on other teams. Users are advised to upgrade to version 4.13. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24841">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d67c4ef993534f851d7d600b083d4cf4</td>
        <td>CVE-2022-29458</td>
        <td>2022-04-18 21:15:00 <img src="imgs/new.gif" /></td>
@@ -497,30 +521,6 @@
        <td>2022-04-15 20:15:00</td>
        <td>7-Zip through 21.07 on Windows allows privilege escalation and command execution when a file with the .7z extension is dragged to the Help>Contents area. This is caused by misconfiguration of 7z.dll and a heap overflow. The command runs in a child process under the 7zFM.exe process,</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29072">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c1dd2c02aa47a4c2a900701a85da8a32</td>
-       <td>CVE-2022-28113</td>
-       <td>2022-04-15 19:15:00</td>
-       <td>An issue in upload.csp of FANTEC GmbH MWiD25-DS Firmware v2.000.030 allows attackers to write files and reset the user passwords without having a valid session cookie.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28113">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93e1d1e451fb7c9410adbd6feea50f0e</td>
-       <td>CVE-2022-24855</td>
-       <td>2022-04-14 22:15:00</td>
-       <td>Metabase is an open source business intelligence and analytics application. In affected versions Metabase ships with an internal development endpoint `/_internal` that can allow for cross site scripting (XSS) attacks, potentially leading to phishing attempts with malicious links that could lead to account takeover. Users are advised to either upgrade immediately, or block access in your firewall to `/_internal` endpoints for Metabase. The following patches (or greater versions) are available: 0.42.4 and 1.42.4, 0.41.7 and 1.41.7, 0.40.8 and 1.40.8.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24855">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70f8c38870a5b54dcca6697d8a6671c7</td>
-       <td>CVE-2022-24854</td>
-       <td>2022-04-14 22:15:00</td>
-       <td>Metabase is an open source business intelligence and analytics application. SQLite has an FDW-like feature called `ATTACH DATABASE`, which allows connecting multiple SQLite databases via the initial connection. If the attacker has SQL permissions to at least one SQLite database, then it can attach this database to a second database, and then it can query across all the tables. To be able to do that the attacker also needs to know the file path to the second database. Users are advised to upgrade as soon as possible. If you're unable to upgrade, you can modify your SQLIte connection strings to contain the url argument `?limit_attached=0`, which will disallow making connections to other SQLite databases. Only users making use of SQLite are affected.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24854">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>6e41f245450b72b47f4056309b2b88cf</td>
        <td>CNNVD-202204-3540 (CVE-2022-1382)</td>
-       <td>2022-04-17 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 23:35:21</td>
        <td>radare2 代码问题漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3540">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>764fcfef97f3a47199c2d48dd1ff3029</td>
        <td>CNNVD-202204-3541 (CVE-2022-1383)</td>
-       <td>2022-04-17 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 23:35:10</td>
        <td>radare2 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3541">详情</a></td>
       </tr>
@@ -865,6 +865,14 @@
        <td>2022-04-15 23:36:06</td>
        <td>WordPress Plugin MicroPayments 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3533">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f632c3a3c2866daaffb70df46d9e106</td>
+       <td>CNNVD-202204-3532 (CVE-2022-1365)</td>
+       <td>2022-04-15 05:43:22</td>
+       <td>cross-fetch 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3532">详情</a></td>
       </tr>
 
       <tr>
@@ -1025,14 +1033,6 @@
        <td>2022-04-13 23:38:32</td>
        <td>GeoServer 输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3368">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8970ae34cd3f71bf4b40c90d55d5c8e2</td>
-       <td>CNNVD-202204-3293 (CVE-2022-1107)</td>
-       <td>2022-04-13 23:38:00</td>
-       <td>Lenovo ThinkPad 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-3293">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>69a7c349d51273b67244a75d92d2b938</td>
        <td>CVE-2021-1382</td>
-       <td>2022-04-17 13:52:47 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:47</td>
        <td>Cisco IOS XE SD-WAN Software 命令注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fcf55015bb1f406ba56e95e0d7a0f2ef">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>37f42a4c2784938b3e8f294d11ec16bf</td>
        <td>CVE-2021-1376</td>
-       <td>2022-04-17 13:52:43 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:43</td>
        <td>Cisco IOS XE 数据伪造问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bb99f1f420504ac4a77a3ae786947ace">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>559a86cd8336eb489560e99d5cf129b9</td>
        <td>CVE-2021-1374</td>
-       <td>2022-04-17 13:52:38 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:38</td>
        <td>思科 Cisco IOS XE Wireless Controller software 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=24b51eee001f46fc85ccc597ccd38d1c">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>da01740024206894ef6133ebd4f625ae</td>
        <td>CVE-2021-1381</td>
-       <td>2022-04-17 13:52:35 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:35</td>
        <td>思科 Cisco IOS XE Software 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7527f454dfb24fef9192e3f381176c63">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>e23f0ce8576098c13e44e40b90ee5cb4</td>
        <td>CVE-2021-1371</td>
-       <td>2022-04-17 13:52:31 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:31</td>
        <td>Cisco IOS XE SD-WAN Software 默认配置问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fba848d93e9246ba8b7303d6456318c0">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>892c8242f3345b50f458c411ebcbcedc</td>
        <td>CVE-2021-1383</td>
-       <td>2022-04-17 13:52:28 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:28</td>
        <td>Cisco IOS XE SD-WAN Software 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55f56cc5172542ad802ab2ec3273c094">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>65b1f96caeccc4a69a36e22c2e1ac0ba</td>
        <td>CVE-2021-1375</td>
-       <td>2022-04-17 13:52:24 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:24</td>
        <td>Cisco IOS XE SD-WAN Software 数据伪造问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3db1e3ede23f4f059c4b4044bd7fd1eb">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>543713ceae55ff775c3a2462d1ceacad</td>
        <td>CVE-2021-1220</td>
-       <td>2022-04-17 13:52:20 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:20</td>
        <td>Cisco IOS XE Software 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=61a9b3050eea455ebbf26174c710a69f">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>9f803ce55757ddef94789100430da6d4</td>
        <td>CVE-2021-1377</td>
-       <td>2022-04-17 13:52:15 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:15</td>
        <td>Cisco IOS和IOS XE 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9b8e762706b741e5b006e12d098c926b">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>89edc7692aed1a71913e63580f0be932</td>
        <td>CVE-2021-1356</td>
-       <td>2022-04-17 13:52:11 <img src="imgs/new.gif" /></td>
+       <td>2022-04-17 13:52:11</td>
        <td>Cisco IOS XE Software 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c5f1343cdfd646b2832e1ae8aabb9f85">详情</a></td>
       </tr>
@@ -2228,6 +2228,22 @@
       </tr>
 
       <tr>
+       <td>62f44e9ff3e7d5baba71862c03dbdff6</td>
+       <td>CVE-2022-26414</td>
+       <td>2022-04-11 13:15:07 </td>
+       <td>A potential buffer overflow vulnerability was identified in some internal functions of Zyxel VMG3312-T20A firmware version 5.30(ABFX.5)C0, which could be exploited by a local authenticated attacker to cause a denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26414">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b8d860965bdc835320a7aeb85b6e8f0</td>
+       <td>CVE-2022-26413</td>
+       <td>2022-04-11 13:15:07 </td>
+       <td>A command injection vulnerability in the CGI program of Zyxel VMG3312-T20A firmware version 5.30(ABFX.5)C0 could allow a local authenticated attacker to execute arbitrary OS commands on a vulnerable device via a LAN interface.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26413">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c4c7d6a3d12041cbc4ed4a3b56b15823</td>
        <td>CVE-2022-28893</td>
        <td>2022-04-11 05:15:07 </td>
@@ -2340,6 +2356,14 @@
       </tr>
 
       <tr>
+       <td>359ef4a84f42eb62dcdababea88b36c0</td>
+       <td>CVE-2022-26624</td>
+       <td>2022-04-08 09:15:11 </td>
+       <td>Bootstrap v3.1.11 and v3.3.7 was discovered to contain a cross-site scripting (XSS) vulnerability via the Title parameter in /vendor/views/add_product.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26624">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7124111a3571f64e2851b7145e83b1b1</td>
        <td>CVE-2022-28805</td>
        <td>2022-04-08 06:15:07 </td>
@@ -2361,6 +2385,14 @@
        <td>2022-04-07 20:15:09 </td>
        <td>Server-Side Request Forgery (SSRF) vulnerability in Johnson Controls Metasys could allow an authenticated attacker to inject malicious code into the MUI PDF export feature. This issue affects: Johnson Controls Metasys All 10 versions versions prior to 10.1.5; All 11 versions versions prior to 11.0.2.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36202">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed845b765ea7fc6783734bad2e392650</td>
+       <td>CVE-2022-26671</td>
+       <td>2022-04-07 19:15:09 </td>
+       <td>Taiwan Secom Dr.ID Access Control system&acirc;&euro;&trade;s login page has a hard-coded credential in the source code. An unauthenticated remote attacker can use the hard-coded credential to acquire partial system information and modify system setting to cause partial disrupt of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26671">详情</a></td>
       </tr>
 
       <tr>
@@ -2393,38 +2425,6 @@
        <td>2022-04-07 19:15:08 </td>
        <td>A bug in CmpUserMgr component can lead to only partially applied security policies. This can result in enabled, anonymous access to components part of the applied security policy.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22518">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7cd0b47ce913c70bebd4182ce36ee96</td>
-       <td>CVE-2022-22517, control_runtime_system_toolkit, control_win_sl, development_system, edge_gateway, embedded_target_visu_toolkit, gateway, hmi_sl, remote_target_visu_toolkit)</td>
-       <td>2022-04-07 19:15:08 </td>
-       <td>An unauthenticated, remote attacker can disrupt existing communication channels between CODESYS products by guessing a valid channel ID and injecting packets. This results in the communication channel to be closed.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22517, control_runtime_system_toolkit, control_win_sl, development_system, edge_gateway, embedded_target_visu_toolkit, gateway, hmi_sl, remote_target_visu_toolkit)">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd0bc6ae789f27bcb9ddf8e6cb3f24a3</td>
-       <td>CVE-2022-22516, control_win_sl, development_system)</td>
-       <td>2022-04-07 19:15:08 </td>
-       <td>The SysDrv3S driver in the CODESYS Control runtime system on Microsoft Windows allows any system user to read and write within restricted memory space.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22516, control_win_sl, development_system)">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22eae360f3ba13e850e6e2fc7f7f41fa</td>
-       <td>CVE-2022-22515, control_runtime_system_toolkit, control_win_sl, development_system, embedded_target_visu_toolkit, hmi_sl, remote_target_visu_toolkit)</td>
-       <td>2022-04-07 19:15:08 </td>
-       <td>A remote, unauthenticated attacker could utilize the control programmer of the CODESYS Control runtime system to use the vulnerability in order to read and modify the configuration file(s) of the affected products.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22515, control_runtime_system_toolkit, control_win_sl, development_system, embedded_target_visu_toolkit, hmi_sl, remote_target_visu_toolkit)">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ff113cc30dd196acd9941e52490353b</td>
-       <td>CVE-2022-22514, control_runtime_system_toolkit, control_win_sl, development_system, edge_gateway, embedded_target_visu_toolkit, gateway, hmi_sl, remote_target_visu_toolkit)</td>
-       <td>2022-04-07 19:15:08 </td>
-       <td>An authenticated, remote attacker can gain access to a dereferenced pointer contained in a request. This causes a null pointer dereference in the CmpSettings component of the affected CODESYS products and leads to a crash.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22514, control_runtime_system_toolkit, control_win_sl, development_system, edge_gateway, embedded_target_visu_toolkit, gateway, hmi_sl, remote_target_visu_toolkit)">详情</a></td>
       </tr>
 
      </tbody>
