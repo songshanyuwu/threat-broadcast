@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-05 23:40:43 -->
+<!-- RELEASE TIME : 2022-05-06 05:38:42 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>93b9132ed6b1bb28af57d8f1327866e4</td>
+       <td>CVE-2022-29535</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine OPManager through 125588 allows SQL Injection via a few default reports.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29535">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>696d2bc85108fd935960159dfe140705</td>
+       <td>CVE-2022-29175</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Vyper is a pythonic smart contract language for the ethereum virtual machine. Since version 0.3.2, decimals use the full range of the underlying int168 type. multiplication of 168 bit integers can wrap in 256-bit arithmetic, but safemul does not check for that. This has been patched in v0.3.4. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>510a8ee7f7c9e6b308c1333b4e667cde</td>
+       <td>CVE-2022-29173</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>go-tuf is a Go implementation of The Update Framework (TUF). go-tuf does not correctly implement the client workflow for updating the metadata files for roles other than the root role. Specifically, checks for rollback attacks are not implemented correctly meaning an attacker can cause clients to install software that is older than the software which the client previously knew to be available, and may include software with known vulnerabilities. In more detail, the client code of go-tuf has several issues in regards to preventing rollback attacks: 1. It does not take into account the content of any previously trusted metadata, if available, before proceeding with updating roles other than the root role (i.e., steps 5.4.3.1 and 5.5.5 of the detailed client workflow). This means that any form of version verification done on the newly-downloaded metadata is made using the default value of zero, which always passes. 2. For both timestamp and snapshot roles, go-tuf saves these metadata files as trusted before verifying if the version of the metafiles they refer to is correct (i.e., steps 5.5.4 and 5.6.4 of the detailed client workflow). A fix is available in version 0.3.0 or newer. No workarounds are known for this issue apart from upgrading.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51712df3bba604391af5776b3fc6709b</td>
+       <td>CVE-2022-29172</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth0 is an authentication broker that supports both social and enterprise identity providers, including Active Directory, LDAP, Google Apps, and Salesforce. In versions before `11.33.0`, when the â€œadditional signup fieldsâ€? feature [is configured](https://github.com/auth0/lock#additional-sign-up-fields), a malicious actor can inject invalidated HTML code into these additional fields, which is then stored in the service `user_metdata` payload (using the `name` property). Verification emails, when applicable, are generated using this metadata. It is therefor possible for an actor to craft a malicious link by injecting HTML, which is then rendered as the recipient's name within the delivered email template. You are impacted by this vulnerability if you are using `auth0-lock` version `11.32.2` or lower and are using the â€œadditional signup fieldsâ€? feature in your application. Upgrade to version `11.33.0`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e7b8df445ae234d7d8c3c5757b52a1e</td>
+       <td>CVE-2022-29167</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Hawk is an HTTP authentication scheme providing mechanisms for making authenticated HTTP requests with partial cryptographic verification of the request and response, covering the HTTP method, request URI, host, and optionally the request payload. Hawk used a regular expression to parse `Host` HTTP header (`Hawk.utils.parseHost()`), which was subject to regular expression DoS attack - meaning each added character in the attacker's input increases the computation time exponentially. `parseHost()` was patched in `9.0.1` to use built-in `URL` class to parse hostname instead. `Hawk.authenticate()` accepts `options` argument. If that contains `host` and `port`, those would be used instead of a call to `utils.parseHost()`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29167">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81d5c19718638a5b159b06ba234a41b9</td>
+       <td>CVE-2022-29166</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>matrix-appservice-irc is a Node.js IRC bridge for Matrix. The vulnerability in node-irc allows an attacker to manipulate a Matrix user into executing IRC commands by having them reply to a maliciously crafted message. The vulnerability has been patched in matrix-appservice-irc 0.33.2. Refrain from replying to messages from untrusted participants in IRC-bridged Matrix rooms. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>779fcd4b9391ef286cdd79f0f4c360f9</td>
+       <td>CVE-2022-29176</td>
+       <td>2022-05-05 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Rubygems is a package registry used to supply software for the Ruby language ecosystem. Due to a bug in the yank action, it was possible for any RubyGems.org user to remove and replace certain gems even if that user was not authorized to do so. To be vulnerable, a gem needed: one or more dashes in its name creation within 30 days OR no updates for over 100 days At present, we believe this vulnerability has not been exploited. RubyGems.org sends an email to all gem owners when a gem version is published or yanked. We have not received any support emails from gem owners indicating that their gem has been yanked without authorization. An audit of gem changes for the last 18 months did not find any examples of this vulnerability being used in a malicious way. A deeper audit for any possible use of this exploit is ongoing, and we will update this advisory once it is complete. Using Bundler in --frozen or --deployment mode in CI and during deploys, as the Bundler team has always recommended, will guarantee that your application does not silently switch to versions created using this exploit. To audit your application history for possible past exploits, review your Gemfile.lock and look for gems whose platform changed when the version number did not change. For example, gemname-3.1.2 updating to gemname-3.1.2-java could indicate a possible abuse of this vulnerability. RubyGems.org has been patched and is no longer vulnerable to this issue as of the 5th of May 2022.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29176">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1b39278d6010497cf8547e23d41dd37f</td>
        <td>CVE-2022-27411</td>
        <td>2022-05-05 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +422,7 @@
       <tr>
        <td>99e33c7ed2b5fc7ce4adbf959d513b43</td>
        <td>CVE-2022-30292</td>
-       <td>2022-05-04 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 23:15:00</td>
        <td>thread_call in sqbaselib.cpp in SQUIRREL 3.2 lacks a certain sq_reservestack call.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30292">详情</a></td>
       </tr>
@@ -374,7 +430,7 @@
       <tr>
        <td>f16a5ac4ead9c56934f8ca0f732eacae</td>
        <td>CVE-2022-30288</td>
-       <td>2022-05-04 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 23:15:00</td>
        <td>Agoo through 2.14.2 does not reject GraphQL fragment spreads that form cycles, leading to an application crash.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30288">详情</a></td>
       </tr>
@@ -382,7 +438,7 @@
       <tr>
        <td>edd120d28612b9d1b942abf409e7469d</td>
        <td>CVE-2022-30284</td>
-       <td>2022-05-04 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 22:15:00</td>
        <td>In the python-libnmap package through 0.7.2 for Python, remote command execution can occur (if used in a client application that does not validate arguments).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30284">详情</a></td>
       </tr>
@@ -390,7 +446,7 @@
       <tr>
        <td>6018f0510b61ea9d651492d5eef6de8c</td>
        <td>CVE-2022-29155</td>
-       <td>2022-05-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:15:00</td>
        <td>In OpenLDAP 2.x before 2.5.12 and 2.6.x before 2.6.2, a SQL injection vulnerability exists in the experimental back-sql backend to slapd, via a SQL statement within an LDAP query. This can occur during an LDAP search operation when the search filter is processed, due to a lack of proper escaping.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29155">详情</a></td>
       </tr>
@@ -398,7 +454,7 @@
       <tr>
        <td>5c226495b45f49208f66a17a56a0b84f</td>
        <td>CVE-2022-30241</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>The jquery.json-viewer library through 1.4.0 for Node.js does not properly escape characters such as < in a JSON object, as demonstrated by a SCRIPT element.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30241">详情</a></td>
       </tr>
@@ -406,7 +462,7 @@
       <tr>
        <td>d02ccebe351e05f2fd2f8722944bcc86</td>
        <td>CVE-2022-29943</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Talend Administration Center has a vulnerability that allows an authenticated user to use XML External Entity (XXE) processing to achieve read access as root on the remote filesystem. The issue is fixed for versions 8.0.x in TPS-5189, versions 7.3.x in TPS-5175, and versions 7.2.x in TPS-5201. Earlier versions of Talend Administration Center may also be impacted; users are encouraged to update to a supported version.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29943">详情</a></td>
       </tr>
@@ -414,7 +470,7 @@
       <tr>
        <td>e2fd584bd4782e76af02b0078d66bff4</td>
        <td>CVE-2022-29942</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Talend Administration Center has a vulnerability that allows an authenticated user to use the Service Registry 'Add' functionality to perform SSRF HTTP GET requests on URLs in the internal network. The issue is fixed for versions 8.0.x in TPS-5189, versions 7.3.x in TPS-5175, and versions 7.2.x in TPS-5201. Earlier versions of Talend Administration Center may also be impacted; users are encouraged to update to a supported version.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29942">详情</a></td>
       </tr>
@@ -422,7 +478,7 @@
       <tr>
        <td>680249e272575e589c2da2d4ffaad92f</td>
        <td>CVE-2022-25786</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Unprotected Alternate Channel vulnerability in debug console of GateManager allows system administrator to obtain sensitive information. This issue affects: GateManager all versions prior to 9.7.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25786">详情</a></td>
       </tr>
@@ -430,7 +486,7 @@
       <tr>
        <td>125a77e81038ab3a94f78e584657ea7b</td>
        <td>CVE-2022-1584</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Reflected XSS in GitHub repository microweber/microweber prior to 1.2.16. Executing JavaScript as the victim</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1584">详情</a></td>
       </tr>
@@ -438,7 +494,7 @@
       <tr>
        <td>f39152b1d969e000b2adddd9e2c14cdf</td>
        <td>CVE-2022-23724</td>
-       <td>2022-05-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 17:15:00</td>
        <td>Use of static encryption key material allows forging an authentication token to other users within a tenant organization. MFA may be bypassed by redirecting an authentication flow to a target user. To exploit the vulnerability, must have compromised user credentials.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23724">详情</a></td>
       </tr>
@@ -446,7 +502,7 @@
       <tr>
        <td>af8ee3a8faca24f73f3863ae99c3e03d</td>
        <td>CVE-2022-20801</td>
-       <td>2022-05-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 17:15:00</td>
        <td>Multiple vulnerabilities in the web-based management interface of Cisco Small Business RV340 and RV345 Routers could allow an authenticated, remote attacker to inject and execute arbitrary commands on the underlying operating system of an affected device. These vulnerabilities are due to insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending malicious input to an affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying Linux operating system of the affected device. To exploit these vulnerabilities, an attacker would need to have valid Administrator credentials on the affected device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20801">详情</a></td>
       </tr>
@@ -454,7 +510,7 @@
       <tr>
        <td>b6ce5e734062d492df726de3c3cf8459</td>
        <td>CVE-2022-20799</td>
-       <td>2022-05-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 17:15:00</td>
        <td>Multiple vulnerabilities in the web-based management interface of Cisco Small Business RV340 and RV345 Routers could allow an authenticated, remote attacker to inject and execute arbitrary commands on the underlying operating system of an affected device. These vulnerabilities are due to insufficient validation of user-supplied input. An attacker could exploit these vulnerabilities by sending malicious input to an affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying Linux operating system of the affected device. To exploit these vulnerabilities, an attacker would need to have valid Administrator credentials on the affected device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20799">详情</a></td>
       </tr>
@@ -462,65 +518,9 @@
       <tr>
        <td>a092db086f01eb9463283867e14c3e2d</td>
        <td>CVE-2022-20796</td>
-       <td>2022-05-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 17:15:00</td>
        <td>On May 4, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in Clam AntiVirus (ClamAV) versions 0.103.4, 0.103.5, 0.104.1, and 0.104.2 could allow an authenticated, local attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20796">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38d9de5d8f63905759337ed1b6f01099</td>
-       <td>CVE-2022-27413</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the adminname parameter in admin.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c7f5274e534847bb2c85e130d8e4290</td>
-       <td>CVE-2022-21743</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In ion, there is a possible use after free due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06371108; Issue ID: ALPS06371108.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff2b9742d97b34c32629b674f15d366c</td>
-       <td>CVE-2022-20111</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In ion, there is a possible use after free due to incorrect error handling. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06366069; Issue ID: ALPS06366069.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20111">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4c1d078de92f13707ab89564fddc304</td>
-       <td>CVE-2022-20108</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In voice service, there is a possible out of bounds write due to a stack-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330702; Issue ID: DTV03330702.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20108">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fda2d78b83bb4570622828699cbbbb81</td>
-       <td>CVE-2022-20107</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In subtitle service, there is a possible application crash due to an integer overflow. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330673; Issue ID: DTV03330673.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20107">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>890141d66f187ac282cda435464b83b2</td>
-       <td>CVE-2022-20106</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In MM service, there is a possible out of bounds write due to a heap-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330460; Issue ID: DTV03330460.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20106">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c38ba7466b34592b58e0aa9b863881c0</td>
-       <td>CVE-2022-20105</td>
-       <td>2022-05-03 21:15:00</td>
-       <td>In MM service, there is a possible out of bounds write due to a stack-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330460; Issue ID: DTV03330460.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20105">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3eea244977d3238701a463d78750e96c</td>
+       <td>CNNVD-202204-4640 (CVE-2022-29265)</td>
+       <td>2022-04-30 05:38:31</td>
+       <td>Apache NiFi 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4640">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9bc4d14d499482d511dfcaaf1a5f6880</td>
+       <td>CNNVD-202204-4641 (CVE-2022-28323)</td>
+       <td>2022-04-30 05:38:29</td>
+       <td>MediaWiki 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4641">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8238db9adfafe8c608a61c266304b687</td>
+       <td>CNNVD-202204-4642 (CVE-2021-42001)</td>
+       <td>2022-04-30 05:38:27</td>
+       <td>Desk 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4642">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>803c5d0660a0c382f1ad504672fa61c4</td>
+       <td>CNNVD-202204-4643 (CVE-2021-41994)</td>
+       <td>2022-04-30 05:38:25</td>
+       <td>Ping Identity iOS App 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bc7511b2ec1635b7506a3de8c540413b</td>
+       <td>CNNVD-202204-4644 (CVE-2021-41992)</td>
+       <td>2022-04-30 05:38:22</td>
+       <td>Ping Identity Windows PingId 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4644">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>639df03486e444a76ebad2b54272a689</td>
+       <td>CNNVD-202204-4645 (CVE-2021-41993)</td>
+       <td>2022-04-30 05:38:19</td>
+       <td>Ping Identity Android App 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4645">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>647a8cbacfba4251295aac9520ad77ca</td>
+       <td>CNNVD-202204-4636 (CVE-2022-1114)</td>
+       <td>2022-04-29 05:38:41</td>
+       <td>Imagemagick Studio ImageMagick 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4636">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ade32a9e7a4181b1b027ac349afefc8e</td>
+       <td>CNNVD-202204-4637 (CVE-2022-29856)</td>
+       <td>2022-04-29 05:38:39</td>
+       <td>Automation 360 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b1c56d31808a8256266f8b832fcf09a</td>
+       <td>CNNVD-202204-4638 (CVE-2022-0669)</td>
+       <td>2022-04-29 05:38:36</td>
+       <td>DPDK 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4638">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f24ce7ccc98631fa6fcdef49bd910a3</td>
+       <td>CNNVD-202204-4639 (CVE-2021-3839)</td>
+       <td>2022-04-29 05:38:34</td>
+       <td>DPDK 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4639">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c23d16700c1a66a823c9c867d9c6f324</td>
        <td>CNNVD-202204-4588 (CVE-2022-1514)</td>
        <td>2022-04-28 23:39:32</td>
@@ -953,86 +1033,6 @@
        <td>2022-04-26 23:42:37</td>
        <td>Apache Doris 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4430">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>065bcffcb792cbd18bec0ea27881ce9b</td>
-       <td>CNNVD-202204-4370 (CVE-2022-1152)</td>
-       <td>2022-04-25 23:39:34</td>
-       <td>WordPress plugin Menubar 跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4370">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bdba1db4e73af5e7c5f9801fa9a7043b</td>
-       <td>CNNVD-202204-4371 (CVE-2022-0876)</td>
-       <td>2022-04-25 23:39:32</td>
-       <td>WordPress plugin Social comments by WpDevArt跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4371">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f7b93ebd877635c920c0b3ce91cffc8</td>
-       <td>CNNVD-202204-4372 (CVE-2022-1094)</td>
-       <td>2022-04-25 23:39:30</td>
-       <td>WordPress plugin amr users  跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4372">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a9a999a88d9c0b8c7dd63cfb01021431</td>
-       <td>CNNVD-202204-4373 (CVE-2022-1092)</td>
-       <td>2022-04-25 23:39:28</td>
-       <td>WordPress plugin myCred 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4373">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>79e2c7bb4949fd1dd7612a04fac02967</td>
-       <td>CNNVD-202204-4374 (CVE-2022-1027)</td>
-       <td>2022-04-25 23:39:26</td>
-       <td>WordPress plugin Page Restriction 跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4374">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>885c2f515654922dc74bbb52bd836dbd</td>
-       <td>CNNVD-202204-4375 (CVE-2021-38874)</td>
-       <td>2022-04-25 23:39:24</td>
-       <td>IBM QRadar SIEM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4375">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aae0bca7da7f86968545712be358c461</td>
-       <td>CNNVD-202204-4376 (CVE-2022-22345)</td>
-       <td>2022-04-25 23:39:22</td>
-       <td>IBM QRadar SIEM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4376">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6b6aa822d8f35e2ba1d787c401d586e6</td>
-       <td>CNNVD-202204-4377 (CVE-2021-38869)</td>
-       <td>2022-04-25 23:39:20</td>
-       <td>IBM QRadar SIEM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36acf4daaeff0296956e5c8d9c192cbb</td>
-       <td>CNNVD-202204-4378 (CVE-2022-23457)</td>
-       <td>2022-04-25 23:39:18</td>
-       <td>OWASP ESAPI 路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c31b7b17bb463c314055f93eeaa53870</td>
-       <td>CNNVD-202204-4379 (CVE-2022-24880)</td>
-       <td>2022-04-25 23:39:16</td>
-       <td>flask-session-captcha 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4379">详情</a></td>
       </tr>
 
      </tbody>
@@ -1686,7 +1686,7 @@
       <tr>
        <td>1d218ad4489cd7dce32e931af37fc9e7</td>
        <td>CVE-2022-29531</td>
-       <td>2022-05-04 20:36:59 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:36:59</td>
        <td>MISP 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f8764d8b3b954528a652ed366479f6a8">详情</a></td>
       </tr>
@@ -1694,7 +1694,7 @@
       <tr>
        <td>ed4022e0da8f5f7662157e0d23471d27</td>
        <td>CVE-2021-41570</td>
-       <td>2022-05-04 20:36:34 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:36:34</td>
        <td>Veritas NetBackup 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ae87aacb93764f12a3b704a9f86f5af0">详情</a></td>
       </tr>
