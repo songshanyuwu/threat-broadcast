@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-17 05:41:57 -->
+<!-- RELEASE TIME : 2022-05-17 23:40:47 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>21b93fb9a4eff49444a3840b224ffcc6</td>
+       <td>CVE-2022-29174</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>countly-server is the server-side part of Countly, a product analytics solution. Prior to versions 22.03.7 and 21.11.4, a malicious actor who knows an account email address/username and full name specified in the database is capable of guessing the password reset token. The actor may use this information to reset the password and take over the account. The problem has been patched in Countly Server version 22.03.7 for servers using the new user interface and in 21.11.4 for servers using the old user interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0d3af1f0fb4483349f4e6ec70a87105c</td>
+       <td>CVE-2022-28616</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A remote server-side request forgery (ssrf) vulnerability was discovered in HPE OneView version(s): Prior to 7.0. HPE has provided a software update to resolve this vulnerability in HPE OneView.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28616">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c20de92291654e3792f6906d9d1f35a</td>
+       <td>CVE-2022-1359</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro is vulnerable to an arbitrary file-write through improper limitation of a pathname to a restricted directory inside a specific route. If an attacker supplied path traversal charters (../) as part of a filename, the server will save the file where the attacker chooses. This could allow an attacker to write any data to any file in the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1359">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09c00d5d33a1d59527e2971d569f448a</td>
+       <td>CVE-2022-1358</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise is vulnerable to data exfiltration through improper neutralization of special elements used in an SQL command. This could allow an attacker to exfiltrate and dump all data held in the cnMaestro database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1358">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de0ac2699ecdb78d3b11235f130137b0</td>
+       <td>CVE-2022-1356</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>cnMaestro is vulnerable to a local privilege escalation. By default, a user does not have root privileges. However, a user can run scripts as sudo, which could allow an attacker to gain root privileges when running user scripts outside allowed commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1356">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8fcfe571ac67d207338bddd7f2cb3640</td>
+       <td>CVE-2022-28192</td>
+       <td>2022-05-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (nvidia.ko), where it may lead to a use-after-free, which in turn may cause denial of service. This attack is complex to carry out because the attacker needs to have control over freeing some host side resources out of sequence, which requires elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28192">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8570309c5a7e63cc2e5617e78aec7462</td>
+       <td>CVE-2022-28190</td>
+       <td>2022-05-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where improper input validation can cause denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28190">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>74218e49252389922b1d005847dec895</td>
+       <td>CVE-2022-28189</td>
+       <td>2022-05-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where a NULL pointer dereference may lead to a system crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28189">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>814ff4a3275ef5bd1a0d1c0cf6284e30</td>
+       <td>CVE-2022-28187</td>
+       <td>2022-05-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys), where the memory management software does not release a resource after its effective lifetime has ended, which may lead to denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28187">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8b57fd7107ad3d8f381b429fe0449536</td>
+       <td>CVE-2022-28186</td>
+       <td>2022-05-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where the product receives input or data, but does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly, which may lead to denial of service or data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28186">详情</a></td>
+      </tr>
+
+      <tr>
        <td>94896b34c5887141e4185c163a56465f</td>
        <td>CVE-2022-23670</td>
        <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-05-14 00:15:00</td>
        <td>OpenClinica is an open source software for Electronic Data Capture (EDC) and Clinical Data Management (CDM). OpenClinica prior to version 3.16 is vulnerable to path traversal in multiple endpoints, leading to arbitrary file read/write, and potential remote code execution. There are no known workarounds. This issue has been patched and users are recommended to upgrade.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24830">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>427d652dd4dab25cff0c58d34a5c202b</td>
-       <td>CVE-2022-25865</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>The package workspace-tools before 0.18.4 are vulnerable to Command Injection via git argument injection. When calling the fetchRemoteBranch(remote: string, remoteBranch: string, cwd: string) function, both the remote and remoteBranch parameters are passed to the git fetch subcommand in a way that additional flags can be set. The additional flags can be used to perform a command injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25865">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ecf77dbde9dad7f883ed20c00c13dd39</td>
-       <td>CVE-2022-25862</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>This affects the package sds from 0.0.0. The library could be tricked into adding or modifying properties of the Object.prototype by abusing the set function located in js/set.js. **Note:** This vulnerability derives from an incomplete fix to [CVE-2020-7618](https://security.snyk.io/vuln/SNYK-JS-SDS-564123)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a49e60b73b216acb52a77b9e37402b9c</td>
-       <td>CVE-2022-22282</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions incorrectly restricts access to a resource using HTTP connections from an unauthorized actor leading to Improper Access Control vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22282">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>faa90594943d9181e19cc73f811a3ad5</td>
-       <td>CVE-2022-22281</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>A buffer overflow vulnerability in the SonicWall SSL-VPN NetExtender Windows Client (32 and 64 bit) in 10.2.322 and earlier versions, allows an attacker to potentially execute arbitrary code in the host windows operating system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22281">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b2ad9630a55c9aff2306f2b2fc252596</td>
-       <td>CVE-2022-21190</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>This affects the package convict before 6.2.3. This is a bypass of [CVE-2022-22143](https://security.snyk.io/vuln/SNYK-JS-CONVICT-2340604). The [fix](https://github.com/mozilla/node-convict/commit/3b86be087d8f14681a9c889d45da7fe3ad9cd880) introduced, relies on the startsWith method and does not prevent the vulnerability: before splitting the path, it checks if it starts with __proto__ or this.constructor.prototype. To bypass this check it's possible to prepend the dangerous paths with any string value followed by a dot, like for example foo.__proto__ or foo.this.constructor.prototype.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21190">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff778ebce254d48658a0e09e3f268d12</td>
-       <td>CVE-2022-1702</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions accept a user-controlled input that specifies a link to an external site and uses that link in a redirect which leads to Open redirection vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1702">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6c279433bb4039ae503c09713f5e921</td>
-       <td>CVE-2022-1701</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions uses a shared and hard-coded encryption key to store data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57252bdc4ccf84ad633052ad2ecb5fcb</td>
-       <td>CVE-2022-22393</td>
-       <td>2022-05-13 17:15:00</td>
-       <td>IBM WebSphere Application Server Liberty 17.0.0.3 through 22.0.0.5 , with the adminCenter-1.0 feature configured, could allow an authenticated user to issue a request to obtain the status of HTTP/HTTPS ports which are accessible by the application server. IBM X-Force ID: 222078.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22393">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6d5f30908b202628deb6bdcbaffc109</td>
-       <td>CVE-2022-22325</td>
-       <td>2022-05-13 17:15:00</td>
-       <td>IBM MQ (IBM MQ for HPE NonStop 8.1.0) can inadvertently disclose sensitive information under certain circumstances to a local user from a stack trace. IBM X-Force ID: 218853.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22325">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f0b6b693f96a4ad7c904545f61ccad0</td>
-       <td>CVE-2022-1715</td>
-       <td>2022-05-13 17:15:00</td>
-       <td>Account Takeover in GitHub repository neorazorx/facturascripts prior to 2022.07.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1715">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f8971763e3bd6912dfd16ae74f90e149</td>
+       <td>CNNVD-202205-3530 (CVE-2022-23666)</td>
+       <td>2022-05-16 23:40:45 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3530">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b41e09b3fd539fad6f4c669011049979</td>
+       <td>CNNVD-202205-3531 (CVE-2022-23665)</td>
+       <td>2022-05-16 23:40:43 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3531">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>867834706e1ddc09a48c44d5d61fffe5</td>
+       <td>CNNVD-202205-3532 (CVE-2022-23664)</td>
+       <td>2022-05-16 23:40:41 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3532">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a03505166265d6f81c38c971a73ba115</td>
+       <td>CNNVD-202205-3533 (CVE-2022-23663)</td>
+       <td>2022-05-16 23:40:38 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3533">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d338ef8c80062f772951bfedbfed60b7</td>
+       <td>CNNVD-202205-3534 (CVE-2022-23661)</td>
+       <td>2022-05-16 23:40:36 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3534">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc1e857e509d43c8452b07f80de3d78b</td>
+       <td>CNNVD-202205-3535 (CVE-2022-23657)</td>
+       <td>2022-05-16 23:40:33 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3535">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d7a945b49c80fd8c58007deeaab5aab</td>
+       <td>CNNVD-202205-3536 (CVE-2022-23662)</td>
+       <td>2022-05-16 23:40:31 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3536">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f776d32fc592665ea80ed56b8ef05664</td>
+       <td>CNNVD-202205-3537 (CVE-2022-23658)</td>
+       <td>2022-05-16 23:40:29 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3537">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2814f4bf2b71600a622c9a3603d1e046</td>
+       <td>CNNVD-202205-3538 (CVE-2022-23659)</td>
+       <td>2022-05-16 23:40:26 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3538">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ff18eb85a69124b492f07c4028cfa5e</td>
+       <td>CNNVD-202205-3539 (CVE-2022-23660)</td>
+       <td>2022-05-16 23:40:24 <img src="imgs/new.gif" /></td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3539">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e9031064656557f94b39821ee85bc8b2</td>
        <td>CNNVD-202205-3358 (CVE-2022-30708)</td>
        <td>2022-05-15 23:40:19</td>
@@ -953,86 +1033,6 @@
        <td>2022-05-12 23:42:13</td>
        <td>Microsoft Windows Print Spooler Components 缓冲区错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3208">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dde96d2d257309f9612d440e12e5f743</td>
-       <td>CNNVD-202205-3042 (CVE-2022-21136)</td>
-       <td>2022-05-12 23:41:25</td>
-       <td>Intel Xeon Processors 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f6c33a0b9f9d17e2c6101f79487cbe4</td>
-       <td>CNNVD-202205-3043 (CVE-2021-33135)</td>
-       <td>2022-05-12 23:41:23</td>
-       <td>Intel Software Guard Extensions（SGX） 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3043">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>828c04d94edcf2404babe7d3f8ae5949</td>
-       <td>CNNVD-202205-3044 (CVE-2022-22139)</td>
-       <td>2022-05-12 23:41:21</td>
-       <td>Intel Extreme Tuning Utility 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3044">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c79d6574d076e6be1badfa0748893b85</td>
-       <td>CNNVD-202205-3045 (CVE-2021-33117)</td>
-       <td>2022-05-12 23:41:19</td>
-       <td>Intel 3rd Generation Xeon Scalable Processors 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b773f24b285bf05c9a05964f27b683d</td>
-       <td>CNNVD-202205-3046 (CVE-2022-21128)</td>
-       <td>2022-05-12 23:41:17</td>
-       <td>Intel Advisor software 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3046">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f275ca480e8d715da2707db6795c0768</td>
-       <td>CNNVD-202205-3047 (CVE-2022-21237)</td>
-       <td>2022-05-12 23:41:14</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb42d1e3a5fd6d5de95e5aa01d1111a1</td>
-       <td>CNNVD-202205-3048 (CVE-2022-24297)</td>
-       <td>2022-05-12 23:41:12</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>746c5ea0cc6481f31062bfd784b958e7</td>
-       <td>CNNVD-202205-3049 (CVE-2022-24382)</td>
-       <td>2022-05-12 23:41:10</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db6edc60d0c01815321c11cea2d571b2</td>
-       <td>CNNVD-202205-3050 (CVE-2021-26258)</td>
-       <td>2022-05-12 23:41:08</td>
-       <td>Intel Killer Control Center 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3050">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd8faf922bee793861e362bbf186a317</td>
-       <td>CNNVD-202205-3051 (CVE-2021-33130)</td>
-       <td>2022-05-12 23:41:06</td>
-       <td>Intel RealSense ID Solution F450 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3051">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2ff286fee0895e9673d49ed4f3dea7ec</td>
+       <td>CVE-2021-39027</td>
+       <td>2022-05-17 20:30:35 <img src="imgs/new.gif" /></td>
+       <td>IBM Guardium Data Encryption 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=490c361bd4e04338ad3261aef0ac44d3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>85e2260794b974d6a7db3157d45d6a4d</td>
+       <td>CVE-2022-27183</td>
+       <td>2022-05-17 20:30:30 <img src="imgs/new.gif" /></td>
+       <td>Splunk Enterprise 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea3074fa9c8b44edb5fb5a0297309105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>05fc875ab2a5143e8e63e584a8613524</td>
+       <td>CVE-2022-27784</td>
+       <td>2022-05-17 20:30:17 <img src="imgs/new.gif" /></td>
+       <td>Adobe After Effects 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f782da893e774b9b822071731165864c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>527516b0465eb41e42a329d45efa959f</td>
+       <td>CVE-2022-28272</td>
+       <td>2022-05-17 20:30:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Photoshop 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d7d70c3cbf7486d85eef0be711aa4c8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5aa3479e95eda248319392d18af345b5</td>
+       <td>CVE-2022-28275</td>
+       <td>2022-05-17 20:29:58 <img src="imgs/new.gif" /></td>
+       <td>Adobe Photoshop 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c729c643db5b4097ac14bd0308f1f021">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0ca9df374bdd9d708980985e6cccf1f4</td>
        <td>CVE-2022-28163</td>
        <td>2022-05-16 20:24:23 <img src="imgs/new.gif" /></td>
@@ -1873,46 +1913,6 @@
        <td>2022-05-14 20:19:19</td>
        <td>Cisco Enterprise NFV Infrastructure Software 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=88fedc54d65c4f5dac1a8f98f158126b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>adbf9a0046f4e9b3929a5c1e786951e5</td>
-       <td>CVE-2022-0882</td>
-       <td>2022-05-14 20:19:15</td>
-       <td>Fuchsia kernel 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b9fddd23a196442d843c0c83cd0c3a67">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad34ba4bb1a8c8d105419e1d9ee21591</td>
-       <td>CVE-2022-20799</td>
-       <td>2022-05-14 20:19:11</td>
-       <td>Cisco Small Business RV Series Routers 命令注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e79bad6811494915971ec1f294b0a3d8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b618051ed64fbcd178e736b0a41e0ec</td>
-       <td>CVE-2021-41959</td>
-       <td>2022-05-13 20:11:59</td>
-       <td>JerryScript Git 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a5f7181eeb5c48c9a9b82a516d86b846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15f2aaa220d9a5fb008fcbb44f0e617d</td>
-       <td>CVE-2021-22573</td>
-       <td>2022-05-13 20:11:55</td>
-       <td>Google google-oauth-java-client 数据伪造问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c688982d12b1492aa9ec1270f1400102">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27a967b55ae00f205af9f27f3f97e4ef</td>
-       <td>CVE-2022-28589</td>
-       <td>2022-05-13 20:11:46</td>
-       <td>Pixelimity 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1f547fc7db194f769ee591a962371f3b">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,30 @@
       </tr>
 
       <tr>
+       <td>e1ad89395d294cdbd77d30389029f4fb</td>
+       <td>CVE-2022-23066</td>
+       <td>2022-05-09 07:15:08 </td>
+       <td>In Solana rBPF versions 0.2.26 and 0.2.27 are affected by Incorrect Calculation which is caused by improper implementation of sdiv instruction. This can lead to the wrong execution path, resulting in huge loss in specific cases. For example, the result of a sdiv instruction may decide whether to transfer tokens or not. The vulnerability affects both integrity and may cause serious availability problems.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23066">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fda6f3d151528ff22717323b3905033a</td>
+       <td>CVE-2022-23802</td>
+       <td>2022-05-06 18:15:09 </td>
+       <td>Joomla Guru extension 5.2.5 is affected by: Insecure Permissions. The impact is: obtain sensitive information (remote). The component is: Access to private information and components, possibility to view other users' information. Information disclosure Access to private information and components, possibility to view other users' information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23802">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d2e1a060e2d2bfb7dddb07a359b5567</td>
+       <td>CVE-2022-23205</td>
+       <td>2022-05-06 18:15:09 </td>
+       <td>Adobe Photoshop versions 22.5.6 (and earlier)and 23.2.2 (and earlier) are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23205">详情</a></td>
+      </tr>
+
+      <tr>
        <td>103768027988800851fb2e9cb336c8b4</td>
        <td>CVE-2021-36912</td>
        <td>2022-05-06 17:15:08 </td>
@@ -2401,30 +2425,6 @@
        <td>2022-05-04 17:15:08 </td>
        <td>On April 20, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in CHM file parser of Clam AntiVirus (ClamAV) versions 0.104.0 through 0.104.2 and LTS version 0.103.5 and prior versions could allow an unauthenticated, remote attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog. This advisory will be updated as additional information becomes available.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ba52264ec01e255af9caa62ab2e9076</td>
-       <td>CVE-2022-20764</td>
-       <td>2022-05-04 17:15:08 </td>
-       <td>Multiple vulnerabilities in the web engine of Cisco TelePresence Collaboration Endpoint (CE) Software and Cisco RoomOS Software could allow a remote attacker to cause a denial of service (DoS) condition, view sensitive data on an affected device, or redirect users to an attacker-controlled destination. For more information about these vulnerabilities, see the Details section of this advisory.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20764">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6946ddda5d6b24243878490a64d4a786</td>
-       <td>CVE-2022-25784</td>
-       <td>2022-05-04 14:15:08 </td>
-       <td>Cross-site Scripting (XSS) vulnerability in Web GUI of SiteManager allows logged-in user to inject scripting. This issue affects: Secomea SiteManager all versions prior to 9.7.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25784">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d13c2ede75621bde7c79e8e51108227</td>
-       <td>CVE-2022-25783</td>
-       <td>2022-05-04 14:15:08 </td>
-       <td>Insufficient Logging vulnerability in web server of Secomea GateManager allows logged in user to issue improper queries without logging. This issue affects: Secomea GateManager versions prior to 9.7.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25783">详情</a></td>
       </tr>
 
      </tbody>
