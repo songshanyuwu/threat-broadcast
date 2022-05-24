@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-23 23:41:15 -->
+<!-- RELEASE TIME : 2022-05-24 05:42:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e89f311d1bb0c2fecdac9298856ea5bd</td>
+       <td>CVE-2022-31263</td>
+       <td>2022-05-24 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>app/models/user.rb in Mastodon before 3.5.0 allows a bypass of e-mail restrictions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31263">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2dabf2759aace26c5fca148187be89bd</td>
+       <td>CVE-2022-29309</td>
+       <td>2022-05-24 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>mysiteforme v2.2.1 was discovered to contain a Server-Side Request Forgery.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29309">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4aceb078a8470a6958fecd0fa969db8a</td>
+       <td>CVE-2022-29305</td>
+       <td>2022-05-24 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>imgurl v2.31 was discovered to contain a Blind SQL injection vulnerability via /upload/localhost.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29305">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9cf7972f744aaac2438891d14e52412</td>
+       <td>CVE-2022-0910</td>
+       <td>2022-05-24 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A downgrade from two-factor authentication to one-factor authentication vulnerability in the CGI program of Zyxel USG/ZyWALL series firmware versions 4.32 through 4.71, USG FLEX series firmware versions 4.50 through 5.21, ATP series firmware versions 4.32 through 5.21, and VPN series firmware versions 4.32 through 5.21, that could allow an authenticated attacker to bypass the second authentication phase to connect the IPsec VPN server even though the two-factor authentication (2FA) was enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0910">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c054182755bc09c6b92900f96e30afd</td>
+       <td>CVE-2022-0734</td>
+       <td>2022-05-24 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting vulnerability was identified in the CGI program of Zyxel USG/ZyWALL series firmware versions 4.35 through 4.70, USG FLEX series firmware versions 4.50 through 5.20, ATP series firmware versions 4.35 through 5.20, and VPN series firmware versions 4.35 through 5.20, that could allow an attacker to obtain some information stored in the user's browser, such as cookies or session tokens, via a malicious script.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a61302f119c8b55a6becc2a3ea808880</td>
+       <td>CVE-2022-29377</td>
+       <td>2022-05-24 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Totolink A3600R V4.1.2cu.5182_B20201102 was discovered to contain a stacker overflow in the fread function at infostat.cgi. This vulnerability allows attackers to cause a Denial of Service (DoS) via the parameter CONTENT_LENGTH.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29377">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cdead27a4b80ef505c857df361603bb1</td>
        <td>CVE-2022-30015</td>
        <td>2022-05-23 21:16:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +414,7 @@
       <tr>
        <td>24f0f7dbf7422bde9366318592a805d2</td>
        <td>CVE-2022-1813</td>
-       <td>2022-05-22 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 16:15:00</td>
        <td>OS Command Injection in GitHub repository yogeshojha/rengine prior to 1.2.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1813">详情</a></td>
       </tr>
@@ -473,54 +521,6 @@
        <td>2022-05-21 00:15:00</td>
        <td>TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.histogram_fixed_width` is vulnerable to a crash when the values array contain `Not a Number` (`NaN`) elements. The implementation assumes that all floating point operations are defined and then converts a floating point result to an integer index. If `values` contains `NaN` then the result of the division is still `NaN` and the cast to `int32` would result in a crash. This only occurs on the CPU implementation. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29211">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5332216677a2b2b0ba8e44d157a22610</td>
-       <td>CVE-2022-29210</td>
-       <td>2022-05-21 00:15:00</td>
-       <td>TensorFlow is an open source platform for machine learning. In version 2.8.0, the `TensorKey` hash function used total estimated `AllocatedBytes()`, which (a) is an estimate per tensor, and (b) is a very poor hash function for constants (e.g. `int32_t`). It also tried to access individual tensor bytes through `tensor.data()` of size `AllocatedBytes()`. This led to ASAN failures because the `AllocatedBytes()` is an estimate of total bytes allocated by a tensor, including any pointed-to constructs (e.g. strings), and does not refer to contiguous bytes in the `.data()` buffer. The discoverers could not use this byte vector anyway because types such as `tstring` include pointers, whereas they needed to hash the string values themselves. This issue is patched in Tensorflow versions 2.9.0 and 2.8.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29210">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fb32d8fc50d5b354c2d8948335163a2</td>
-       <td>CVE-2022-31258</td>
-       <td>2022-05-20 23:15:00</td>
-       <td>In Checkmk before 1.6.0p29, 2.x before 2.0.0p25, and 2.1.x before 2.1.0b10, a site user can escalate to root by editing an OMD hook symlink.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31258">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>86771f9b8fd7d598fd844c36733c7609</td>
-       <td>CVE-2022-29208</td>
-       <td>2022-05-20 23:15:00</td>
-       <td>TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.EditDistance` has incomplete validation. Users can pass negative values to cause a segmentation fault based denial of service. In multiple places throughout the code, one may compute an index for a write operation. However, the existing validation only checks against the upper bound of the array. Hence, it is possible to write before the array by massaging the input to generate negative values for `loc`. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29208">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>58f6cf3910d4b3779e7b956bdabc8d1c</td>
-       <td>CVE-2022-29206</td>
-       <td>2022-05-20 23:15:00</td>
-       <td>TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.SparseTensorDenseAdd` does not fully validate the input arguments. In this case, a reference gets bound to a `nullptr` during kernel execution. This is undefined behavior. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29206">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee5cb652165364cc7961aceb944d8e10</td>
-       <td>CVE-2022-29205</td>
-       <td>2022-05-20 23:15:00</td>
-       <td>TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, there is a potential for segfault / denial of service in TensorFlow by calling `tf.compat.v1.*` ops which don't yet have support for quantized types, which was added after migration to TensorFlow 2.x. In these scenarios, since the kernel is missing, a `nullptr` value is passed to `ParseDimensionValue` for the `py_value` argument. Then, this is dereferenced, resulting in segfault. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29205">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c1a9ea34bd2ecbac62170f73c009406</td>
-       <td>CVE-2022-29204</td>
-       <td>2022-05-20 23:15:00</td>
-       <td>TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.UnsortedSegmentJoin` does not fully validate the input arguments. This results in a `CHECK`-failure which can be used to trigger a denial of service attack. The code assumes `num_segments` is a positive scalar but there is no validation. Since this value is used to allocate the output tensor, a negative value would result in a `CHECK`-failure (assertion failure), as per TFSA-2021-198. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29204">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>168004052b20fa32036e35216f8d5a71</td>
        <td>CNNVD-202205-3947 (CVE-2022-1813)</td>
-       <td>2022-05-22 23:40:54 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 23:40:54</td>
        <td>rengine 操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3947">详情</a></td>
       </tr>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>44b17b3de20a9c289eb00469032f67ee</td>
        <td>CVE-2021-0153</td>
-       <td>2022-05-22 20:11:06 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:11:06</td>
        <td>Intel BIOS firmware 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=124ce9c64d724ddebebb89567307ba56">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>82e7f6754eaf02a55df3138394c0420c</td>
        <td>CVE-2021-0188</td>
-       <td>2022-05-22 20:11:01 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:11:01</td>
        <td>Intel BIOS firmware 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3fc292a90b194d6290ccfd69f0c12059">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>4440b14f8fae85574d849cf4ae7a19ee</td>
        <td>CVE-2021-0190</td>
-       <td>2022-05-22 20:10:56 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:56</td>
        <td>Intel BIOS firmware 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7a0c71cb9e254adc934fe9804d11f55c">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>65ab002f725d017fa79161a7ca355d3e</td>
        <td>CVE-2021-33077</td>
-       <td>2022-05-22 20:10:51 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:51</td>
        <td>多款Intel产品安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f4b9fc14082a45b0aa1035be5511445b">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>713bdade830debec44a7e47afe0ab05a</td>
        <td>CVE-2021-0159</td>
-       <td>2022-05-22 20:10:47 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:47</td>
        <td>Intel BIOS firmware 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4c2fa6734dd14306a14d6ce7eaa80bee">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>7bc04d632a32360fc8e8c4f37a743c8e</td>
        <td>CVE-2022-29977</td>
-       <td>2022-05-22 20:10:42 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:42</td>
        <td>libsixel 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0fac3b22cf914c2983ccd7a0f8319bff">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>52f0d221e0cda655bea5a019880db745</td>
        <td>CVE-2021-33074</td>
-       <td>2022-05-22 20:10:38 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:38</td>
        <td>多款Intel产品安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=75e967dbf7e3487698b6a46ca8f303c7">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>17f2eadf311774fdaeca3eab09f729a2</td>
        <td>CVE-2021-38969</td>
-       <td>2022-05-22 20:10:33 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:33</td>
        <td>IBM Spectrum Virtualize 信任管理问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b61f666c6a834f008d1ad8527129e8ab">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>5d35ec3f322285385f6b635f4a641c36</td>
        <td>CVE-2021-33075</td>
-       <td>2022-05-22 20:10:28 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:28</td>
        <td>多款Intel产品竞争条件问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4f898e710ed2472d97797d7a1f6cd93c">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>e2b98f4620198bbd5a8e7fd1547cd8b2</td>
        <td>CVE-2021-43066</td>
-       <td>2022-05-22 20:10:24 <img src="imgs/new.gif" /></td>
+       <td>2022-05-22 20:10:24</td>
        <td>Fortinet FortiClient 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=90a4de9d9ec64517b99daae630f68f2a">详情</a></td>
       </tr>
