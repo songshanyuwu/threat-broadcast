@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-06-11 05:36:06 -->
+<!-- RELEASE TIME : 2022-06-11 23:37:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>63d86330f415942b79f5205d77bbd56c</td>
+       <td>CVE-2022-30780</td>
+       <td>2022-06-11 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Lighttpd 1.4.56 through 1.4.58 allows a remote attacker to cause a denial of service (CPU consumption from stuck connections) because connection_read_header_more in connections.c has a typo that disrupts use of multiple read operations on large headers.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30780">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f63357fa9e9639c416c6ae6eb118844</td>
+       <td>CVE-2021-44266</td>
+       <td>2022-06-11 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>GUnet Open eClass (aka openeclass) before 3.12.2 allows XSS via the modules/auth/formuser.php auth parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44266">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>544c25aa59c8c2b4732de4a7e608d310</td>
+       <td>CVE-2021-41738</td>
+       <td>2022-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>ZeroShell 3.9.5 has a command injection vulnerability in /cgi-bin/kerbynet IP parameter, which may allow an authenticated attacker to execute system commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d6681813a52b8e56c8c2fff8a0f89e98</td>
+       <td>CVE-2021-41502</td>
+       <td>2022-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Subrion CMS v4.2.1 There is a stored cross-site scripting (XSS) vulnerability that can execute malicious JavaScript code by modifying the name of the uploaded image, closing the html tag, or adding the onerror attribute.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41502">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>70a98c5cdede23fdd9f4656e7720714d</td>
+       <td>CVE-2017-20040</td>
+       <td>2022-06-11 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SICUNET Access Controller 0.32-05z. It has been declared as problematic. This vulnerability affects unknown code of the component Password Storage. The manipulation leads to weak encryption. Attacking locally is a requirement.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20040">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9e22f33edec8b005235b80e9cdbf8ac</td>
+       <td>CVE-2017-20039</td>
+       <td>2022-06-11 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SICUNET Access Controller 0.32-05z. It has been classified as very critical. This affects an unknown part. The manipulation leads to weak authentication. It is possible to initiate the attack remotely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20039">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2ee56e9af02a14f1e0363672f36344e3</td>
+       <td>CVE-2017-20038</td>
+       <td>2022-06-11 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SICUNET Access Controller 0.32-05z and classified as critical. Affected by this issue is some unknown functionality of the file card_scan_decoder.php. The manipulation of the argument No/door leads to privilege escalation. The attack may be launched remotely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2544b3e29633c4fc18b82527427edda9</td>
+       <td>CVE-2017-20037</td>
+       <td>2022-06-11 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in SICUNET Access Controller 0.32-05z and classified as critical. Affected by this vulnerability is an unknown functionality. The manipulation of the argument c leads to privilege escalation. The attack can be launched remotely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20037">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9135eebc1f8b5cae787e4854e35b487d</td>
        <td>CVE-2021-41756</td>
        <td>2022-06-10 22:15:00 <img src="imgs/new.gif" /></td>
@@ -457,70 +521,6 @@
        <td>2022-06-09 23:15:00</td>
        <td>A vulnerability classified as problematic was found in Solare Solar-Log 2.8.4-56/3.5.2-85. Affected by this vulnerability is an unknown functionality of the component Config Handler. The manipulation leads to information disclosure. The attack can be launched remotely. Upgrading to version 3.5.3-86 is able to address this issue. It is recommended to upgrade the affected component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20019">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84b0fefcdc8a88db5ff91dad664644c3</td>
-       <td>CVE-2022-31045</td>
-       <td>2022-06-09 21:15:00</td>
-       <td>Istio is an open platform to connect, manage, and secure microservices. In affected versions ill-formed headers sent to Envoy in certain configurations can lead to unexpected memory access resulting in undefined behavior or crashing. Users are most likely at risk if they have an Istio ingress Gateway exposed to external traffic. This vulnerability has been resolved in versions 1.12.8, 1.13.5, and 1.14.1. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7137cb0611688bef5c971c9e4a2d2ef5</td>
-       <td>CVE-2022-30703</td>
-       <td>2022-06-09 21:15:00</td>
-       <td>Trend Micro Security 2021 and 2022 (Consumer) is vulnerable to an exposed dangerous method vulnerability that could allow an attacker to obtain access to leaked kernel addresses and disclose sensitive information. This vulnerability could also potentially be chained for privilege escalation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30703">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b96a358f2ba021294c42f4fa26419d1</td>
-       <td>CVE-2022-30702</td>
-       <td>2022-06-09 21:15:00</td>
-       <td>Trend Micro Security 2022 and 2021 (Consumer) is vulnerable to an Out-Of-Bounds Read Information Disclosure vulnerability that could allow an attacker to disclose sensitive information on an affected machine.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30702">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6834a52572f8fb0e3292dc50c4e88b61</td>
-       <td>CVE-2022-21499</td>
-       <td>2022-06-09 21:15:00</td>
-       <td>KGDB and KDB allow read and write access to kernel memory, and thus should be restricted during lockdown. An attacker with access to a serial port could trigger the debugger so it is important that the debugger respect the lockdown mode when/if it is triggered. CVSS 3.1 Base Score 6.5 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5cfab12dd8fe3474ca49b08083ddd3b7</td>
-       <td>CVE-2022-31051</td>
-       <td>2022-06-09 20:15:00</td>
-       <td>semantic-release is an open source npm package for automated version management and package publishing. In affected versions secrets that would normally be masked by semantic-release can be accidentally disclosed if they contain characters that are excluded from uri encoding by `encodeURI`. Occurrence is further limited to execution contexts where push access to the related repository is not available without modifying the repository url to inject credentials. Users are advised to upgrade. Users unable to upgrade should ensure that secrets that do not contain characters that are excluded from encoding with `encodeURI` when included in a URL are already masked properly.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31051">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eed954a46c7b2a291f1f123b59f9fe98</td>
-       <td>CVE-2022-31033</td>
-       <td>2022-06-09 20:15:00</td>
-       <td>The Mechanize library is used for automating interaction with websites. Mechanize automatically stores and sends cookies, follows redirects, and can follow links and submit forms. In versions prior to 2.8.5 the Authorization header is leaked after a redirect to a different port on the same site. Users are advised to upgrade to Mechanize v2.8.5 or later. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31033">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7dc3c6e3187799d88f6da3f62713037</td>
-       <td>CVE-2022-29250</td>
-       <td>2022-06-09 20:15:00</td>
-       <td>GLPI is a Free Asset and IT Management Software package, that provides ITIL Service Desk features, licenses tracking and software auditing. In versions prior to version 10.0.1 it is possible to add extra information by SQL injection on search pages. In order to exploit this vulnerability a user must be logged in.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d28485094a2f1f905e75564a2e4c41b</td>
-       <td>CVE-2022-29228</td>
-       <td>2022-06-09 20:15:00</td>
-       <td>Envoy is a cloud-native high-performance proxy. In versions prior to 1.22.1 the OAuth filter would try to invoke the remaining filters in the chain after emitting a local response, which triggers an ASSERT() in newer versions and corrupts memory on earlier versions. continueDecoding() shouldnâ€™t ever be called from filters after a local reply has been sent. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29228">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c98f7393259f741acdf339781cd55e87</td>
+       <td>CVE-2020-9453</td>
+       <td>2022-06-11 20:21:54 <img src="imgs/new.gif" /></td>
+       <td>Epson Iprojection 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=91201b8d7d2748d0bab252e012b0cc7e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7fb120cca9841270ed721f35d706079e</td>
+       <td>CVE-2021-42197</td>
+       <td>2022-06-11 20:21:51 <img src="imgs/new.gif" /></td>
+       <td>Swftools 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e6062420fb3c4ae0b9f181ce357ab40a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee3bf10b8e235285939edd493d640f14</td>
+       <td>CVE-2021-42199</td>
+       <td>2022-06-11 20:21:46 <img src="imgs/new.gif" /></td>
+       <td>Swftools 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=13c6db5f304245cc8c907c885ed6fc54">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07c35d2f80e84d3d9e982d399bd8c797</td>
+       <td>CVE-2021-42198</td>
+       <td>2022-06-11 20:21:42 <img src="imgs/new.gif" /></td>
+       <td>Swftools 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=32ed3903cb234e61923d5523ddc983d9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9631f7078c832d3542b37a1c89d19f4</td>
+       <td>CVE-2021-42200</td>
+       <td>2022-06-11 20:21:38 <img src="imgs/new.gif" /></td>
+       <td>Swftools 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bfe3806c59664a66b85b42a8ee92b731">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>486508fcd6613f9b4543d546328a2f7d</td>
+       <td>CVE-2021-42202</td>
+       <td>2022-06-11 20:21:33 <img src="imgs/new.gif" /></td>
+       <td>Swftools 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4d5f570c00d44c6d991bf5c0ea8296b0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ca3a383241396f840f221b091c86589</td>
+       <td>CVE-2021-42203</td>
+       <td>2022-06-11 20:21:29 <img src="imgs/new.gif" /></td>
+       <td>Swftools 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef26d5e91c4842219f67da46de5bd3de">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc7f5de31a818868a0850d3f566d723b</td>
+       <td>CVE-2020-26185</td>
+       <td>2022-06-11 20:21:25 <img src="imgs/new.gif" /></td>
+       <td>Dell BSAFE Micro Edition Suite 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a6fbfa1df01f4e678122afa8d6e25099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>789628cbb291c8fd2432222cc7a6ae8d</td>
+       <td>CVE-2021-27914</td>
+       <td>2022-06-11 20:21:21 <img src="imgs/new.gif" /></td>
+       <td>Mautic 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=36b1a9a438fb4493866bc318a491b8a0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22f5143dd660b6f4d878747a6c34aa7b</td>
+       <td>CVE-2022-1942</td>
+       <td>2022-06-11 20:21:12 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a41ae77cde544e36a4c6e31e0b3a1f2d">详情</a></td>
+      </tr>
+
+      <tr>
        <td>98f716f139cbb0fdba5c9ce815d2fe50</td>
        <td>CVE-2021-34360</td>
        <td>2022-06-10 20:09:35 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-06-06 20:04:03</td>
        <td>Libmobi 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cc0e34e75ff04a64b271584dac34de02">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72d8a75492b0ce6caab4626ba761a506</td>
-       <td>CVE-2022-20668</td>
-       <td>2022-06-06 20:03:58</td>
-       <td>Cisco Common Services Platform Collector 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c4f0504a49f545b89602080c493600cb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ecf62316bbef46e99d2a6489d5f6d44</td>
-       <td>CVE-2022-20671</td>
-       <td>2022-06-06 20:03:48</td>
-       <td>Cisco Common Services Platform Collector 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8e2a9fc5df94f83b274563dbdcd8be5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>797f3486a8cec0e267e2d44391bbeeed</td>
-       <td>CVE-2022-1886</td>
-       <td>2022-06-05 20:06:09</td>
-       <td>Vim 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=09759d8c15984694ad6dba90af86ce48">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b508242ead9f8b9df8d00ffe5d4e24dd</td>
-       <td>CVE-2022-24287</td>
-       <td>2022-06-05 20:05:50</td>
-       <td>Siemens SIMATIC WinCC 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1105b0dcfe2347ada7b49566eccbd65a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fba3a374b5824e0ad9a3c0d7ee93c403</td>
-       <td>CVE-2022-29165</td>
-       <td>2022-06-05 20:05:46</td>
-       <td>ArgoCD 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=81bbb2c0161b4e23a577d0aefb229978">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f83489e072512f487ea249176bb6881</td>
-       <td>CVE-2022-29160</td>
-       <td>2022-06-05 20:05:41</td>
-       <td>Nextcloud 访问控制错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=58f1bd43d9a649a786473007c1705afc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6ffb77fe788cf6345655e38d044e056</td>
-       <td>CVE-2022-22972</td>
-       <td>2022-06-05 20:05:32</td>
-       <td>多款VMware产品授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c3a5db8e7b204735bbf273036282ed57">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba849d0996594916e458db9bfd72215b</td>
-       <td>CVE-2021-42586</td>
-       <td>2022-06-02 20:08:49</td>
-       <td>GNU LibreDWG 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4958e2d7c1684acc9d22b7a9c1585d6c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ccaa4013a02f72736d45215bff77254a</td>
-       <td>CVE-2022-29028</td>
-       <td>2022-06-02 20:08:40</td>
-       <td>Siemens JT2GO和Siemens Teamcenter Visualization 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6379324c58234a6abe4003c21323a0f2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e64ff71a5787a211a655e2a8a3fa5c6</td>
-       <td>CVE-2021-42585</td>
-       <td>2022-06-01 20:15:39</td>
-       <td>GNU LibreDWG 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9f0d36f63a284bffb8c6032202923cc4">详情</a></td>
       </tr>
 
      </tbody>
@@ -2340,6 +2340,46 @@
       </tr>
 
       <tr>
+       <td>1fa317964aa8ee5cfaf218965da09057</td>
+       <td>CVE-2022-30799</td>
+       <td>2022-06-02 14:15:55 </td>
+       <td>Online Ordering System v1.0 by oretnom23 has SQL injection via store/orderpage.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-30799">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e49af509b96f0638207342f80d5f5f56</td>
+       <td>CVE-2022-30798</td>
+       <td>2022-06-02 14:15:55 </td>
+       <td>Online Ordering System v1.0 by oretnom23 is vulnerable to SQL Injection via admin/viewreport.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-30798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50a6e247f312867ec3a38be50f1c0cfc</td>
+       <td>CVE-2022-30797</td>
+       <td>2022-06-02 14:15:54 </td>
+       <td>Online Ordering System 1.0 by oretnom23 is vulnerable to SQL Injection via admin/vieworders.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-30797">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eb61fa0eb1c5dcd89e7b743476cf158f</td>
+       <td>CVE-2022-30795</td>
+       <td>2022-06-02 14:15:54 </td>
+       <td>Online Ordering System v1.0 by oretnom23 is vulnerable to SQL Injection via admin/editproductimage.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-30795">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bac6a5041962d24dfac78873eee11729</td>
+       <td>CVE-2022-30794</td>
+       <td>2022-06-02 14:15:54 </td>
+       <td>Online Ordering System v1.0 by oretnom23 is vulnerable to SQL Injection via admin/editproductetails.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-30794">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2690d813c785aadce3c3965589b05747</td>
        <td>CVE-2022-31022</td>
        <td>2022-06-01 20:15:08 </td>
@@ -2385,46 +2425,6 @@
        <td>2022-05-26 19:15:08 </td>
        <td>This issue was addressed with improved entitlements. This issue is fixed in Security Update 2022-004 Catalina, macOS Monterey 12.4. A malicious application may be able to modify protected parts of the file system.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26727">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>184b9dd2c623098c4bedccf6aef0a0f4</td>
-       <td>CVE-2022-26724</td>
-       <td>2022-05-26 19:15:08 </td>
-       <td>An authentication issue was addressed with improved state management. This issue is fixed in tvOS 15.5. A local user may be able to enable iCloud Photos without authentication.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26724">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8dc1247ece5f269520c6f8dc581adffa</td>
-       <td>CVE-2022-26712</td>
-       <td>2022-05-26 19:15:08 </td>
-       <td>This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Monterey 12.4, macOS Big Sur 11.6.6. A malicious application may be able to modify protected parts of the file system.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26712">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69d1c0c1ae7080d885f3cf45d3a36f88</td>
-       <td>CVE-2022-26711</td>
-       <td>2022-05-26 19:15:08 </td>
-       <td>An integer overflow issue was addressed with improved input validation. This issue is fixed in tvOS 15.5, iTunes 12.12.4 for Windows, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4. A remote attacker may be able to cause unexpected application termination or arbitrary code execution.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26711">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>30b24fb6f312cc26efa110326edecfdb</td>
-       <td>CVE-2022-26708</td>
-       <td>2022-05-26 19:15:08 </td>
-       <td>This issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.4. An attacker may be able to cause unexpected application termination or arbitrary code execution.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26708">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ff8430c41dbd4407bc2c1a0bdc1caf8</td>
-       <td>CVE-2022-26706</td>
-       <td>2022-05-26 19:15:08 </td>
-       <td>An access issue was addressed with additional sandbox restrictions on third-party applications. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Big Sur 11.6.6, macOS Monterey 12.4. A sandboxed process may be able to circumvent sandbox restrictions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26706">详情</a></td>
       </tr>
 
      </tbody>
