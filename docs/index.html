@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-06-25 05:37:35 -->
+<!-- RELEASE TIME : 2022-06-25 23:38:51 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8dc37ca9f6e7db7277030a6918a1be39</td>
+       <td>CVE-2022-29931</td>
+       <td>2022-06-25 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Raytion 7.2.0 allows reflected Cross-site Scripting (XSS).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>545103acae42f8cf9ce7bb7d8671c0da</td>
+       <td>CVE-2022-31017</td>
+       <td>2022-06-25 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zulip is an open-source team collaboration tool. Versions 2.1.0 through and including 5.2 are vulnerable to a logic error. A stream configured as private with protected history, where new subscribers should not be allowed to see messages sent before they were subscribed, when edited causes the server to incorrectly send an API event that includes the edited message to all of the stream’s current subscribers. This API event is ignored by official clients, but can be observed by using a modified client or the browser’s developer tools. This bug will be fixed in Zulip Server 5.3. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31017">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72ceeca6af6e0e1b99f34fb3043e6aec</td>
+       <td>CVE-2022-31016</td>
+       <td>2022-06-25 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Argo CD is a declarative continuous deployment for Kubernetes. Argo CD versions v0.7.0 and later are vulnerable to an uncontrolled memory consumption bug, allowing an authorized malicious user to crash the repo-server service, resulting in a Denial of Service. The attacker must be an authenticated Argo CD user authorized to deploy Applications from a repository which contains (or can be made to contain) a large file. The fix for this vulnerability is available in versions 2.3.5, 2.2.10, 2.1.16, and later. There are no known workarounds. Users are recommended to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31016">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b694cd1610f0fac8460dd6190f60fff</td>
+       <td>CVE-2022-29168</td>
+       <td>2022-06-25 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>Wire is a secure messaging application. Wire is vulnerable to arbitrary HTML and Javascript execution via insufficient escaping when rendering `@mentions` in the wire-webapp. If a user receives and views a malicious message, arbitrary code is injected and executed in the context of the victim allowing the attacker to fully control the user account. Wire-desktop clients that are connected to a vulnerable wire-webapp version are also vulnerable to this attack. The issue has been fixed in wire-webapp 2022-05-04-production.0 and is already deployed on all Wire managed services. On-premise instances of wire-webapp need to be updated to docker tag 2022-05-04-production.0-v0.29.7-0-a6f2ded or wire-server 2022-05-04 (chart/4.11.0) or later. No known workarounds exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca5ec75c9c441ebc7e08fca88bb4c47f</td>
+       <td>CVE-2022-24893</td>
+       <td>2022-06-25 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>ESP-IDF is the official development framework for Espressif SoCs. In Espressif’s Bluetooth Mesh SDK (`ESP-BLE-MESH`), a memory corruption vulnerability can be triggered during provisioning, because there is no check for the `SegN` field of the Transaction Start PDU. This can result in memory corruption related attacks and potentially attacker gaining control of the entire system. Patch commits are available on the 4.1, 4.2, 4.3 and 4.4 branches and users are recommended to upgrade. The upgrade is applicable for all applications and users of `ESP-BLE-MESH` component from `ESP-IDF`. As it is implemented in the Bluetooth Mesh stack, there is no workaround for the user to fix the application layer without upgrading the underlying firmware.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24893">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5768a2d1a6b5afeab18abf182372ec3f</td>
+       <td>CVE-2019-25071</td>
+       <td>2022-06-25 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>** DISPUTED ** A vulnerability was found in Apple iPhone up to 12.4.1. It has been declared as critical. Affected by this vulnerability is Siri. Playing an audio or video file might be able to initiate Siri on the same device which makes it possible to execute commands remotely. Exploit details have been disclosed to the public. The existence and implications of this vulnerability are doubted by Apple even though multiple public videos demonstrating the attack exist. Upgrading to version 13.0 migt be able to address this issue. It is recommended to upgrade affected devices.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-25071">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>199b00b4b24ebec67724a8a43de5255b</td>
+       <td>CVE-2022-33128</td>
+       <td>2022-06-25 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>RG-EG series gateway EG350 EG_RGOS 11.1(6) was discovered to contain a SQL injection vulnerability via the function get_alarmAction at /alarm_pi/alarmService.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33128">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1fe9e691fd0f9083d5f3bce752879911</td>
        <td>CVE-2021-40894</td>
        <td>2022-06-24 22:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-06-22 18:15:00</td>
        <td>In openlibrary versions deploy-2016-07-0 through deploy-2021-12-22 are vulnerable to Reflected XSS.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23081">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>602c74f1f13649bae12e41a0135ec594</td>
-       <td>CVE-2022-23080</td>
-       <td>2022-06-22 16:15:00</td>
-       <td>In directus versions v9.0.0-beta.2 through 9.6.0 are vulnerable to server-side request forgery (SSRF) in the media upload functionality which allows a low privileged user to perform internal network port scans.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77d893c6d3369163d830fe4931a15cb1</td>
-       <td>CVE-2022-32549</td>
-       <td>2022-06-22 15:15:00</td>
-       <td>Apache Sling Commons Log <= 5.4.0 and Apache Sling API <= 2.25.0 are vulnerable to log injection. The ability to forge logs may allow an attacker to cover tracks by injecting fake logs and potentially corrupt log files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32549">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>557185309b5c870c799322ad874111cb</td>
-       <td>CVE-2022-20651</td>
-       <td>2022-06-22 14:15:00</td>
-       <td>A vulnerability in the logging component of Cisco Adaptive Security Device Manager (ASDM) could allow an authenticated, local attacker to view sensitive information in clear text on an affected system. Cisco ADSM must be deployed in a shared workstation environment for this issue to be exploited. This vulnerability is due to the storage of unencrypted credentials in certain logs. An attacker could exploit this vulnerability by accessing the logs on an affected system. A successful exploit could allow the attacker to view the credentials of other users of the shared device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20651">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9a35045b6aaf2db9802fce05a927b03</td>
-       <td>CVE-2022-23079</td>
-       <td>2022-06-22 13:15:00</td>
-       <td>In motor-admin versions 0.0.1 through 0.2.56 are vulnerable to host header injection in the password reset functionality where malicious actor can send fake password reset email to arbitrary victim.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23079">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f6388d3492f8f0cff4cecb3078ae468</td>
-       <td>CVE-2022-23078</td>
-       <td>2022-06-22 12:15:00</td>
-       <td>In habitica versions v4.119.0  through v4.232.2 are vulnerable to open redirect via the login page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23078">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cdf4f28d428703a03a0d1230e4b232f7</td>
-       <td>CVE-2022-23077</td>
-       <td>2022-06-22 12:15:00</td>
-       <td>In habitica versions v4.119.0 through v4.232.2 are vulnerable to DOM XSS via the login page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23077">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a675ea4f9938ef7124ef69141386309b</td>
-       <td>CVE-2022-2174</td>
-       <td>2022-06-22 12:15:00</td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository microweber/microweber prior to 1.2.18.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2174">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>769b47f48a30a3e18989f858bb05f701</td>
+       <td>CVE-2021-30327</td>
+       <td>2022-06-25 19:59:27 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c127fbd69f154d7ebc4c5ff3dfe59ffa">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2cc848f450b76c3127ccd60d512fb8eb</td>
+       <td>CVE-2021-30346</td>
+       <td>2022-06-25 19:59:19 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品配置错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d8871f284da54ffab9ada2d545d91f8e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>130c8915b86879618833cc89e0b66b85</td>
+       <td>CVE-2021-30345</td>
+       <td>2022-06-25 19:59:14 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品配置错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=043952f3a968486cb31b20deacbfae12">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d45ec6dd1a8b3a762a530e23c2bc25c</td>
+       <td>CVE-2021-30349</td>
+       <td>2022-06-25 19:59:09 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品访问控制错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a71ebfb1ab634ff48e8f847e9e462c24">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>846fbea9d823c97c002c565d0a83fb3d</td>
+       <td>CVE-2021-35070</td>
+       <td>2022-06-25 19:59:04 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f5e1ab705a043af9cc09d62d728d927">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>105dacfdce4afd00a1d960cf09acfa4f</td>
+       <td>CVE-2021-35071</td>
+       <td>2022-06-25 19:58:59 <img src="imgs/new.gif" /></td>
+       <td>多款Qualcomm产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f44dd7604a944b219ce8a0476400de48">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2129f43bd79223bbc961b04ddc060ae4</td>
+       <td>CVE-2021-35073</td>
+       <td>2022-06-25 19:58:54 <img src="imgs/new.gif" /></td>
+       <td>Qualcomm 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a3ae60245a5e4a5d885dce53db9cdccf">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ead3668a907b875094b63225a21acf60</td>
+       <td>CVE-2021-35076</td>
+       <td>2022-06-25 19:58:49 <img src="imgs/new.gif" /></td>
+       <td>Qualcomm 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2c7bfe6788d24749be674bbec4c4a3fb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d5d306824d31c388561404f90954d9a</td>
+       <td>CVE-2021-35078</td>
+       <td>2022-06-25 19:58:45 <img src="imgs/new.gif" /></td>
+       <td>Qualcomm多款产品 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a9939e85474045f3aaaac35642c01edd">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8ff4fdc25ebff09e45fc6400906f3cbb</td>
        <td>CVE-2021-35083</td>
        <td>2022-06-24 19:56:21 <img src="imgs/new.gif" /></td>
@@ -1841,78 +1913,6 @@
        <td>2022-06-20 19:58:22</td>
        <td>HUAWEI EMUI 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d55817682739417f8266235cc3f38bb7">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b8d09d48ac5d3eb8bd257d191c3e8c54</td>
-       <td>CVE-2022-1208</td>
-       <td>2022-06-20 19:58:17</td>
-       <td>WordPress plugin Ultimate Member 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bd4e0e06736b4a95bd309229f1825872">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc907702c3a3888592a132df0ce8e003</td>
-       <td>CVE-2022-31762</td>
-       <td>2022-06-20 19:58:13</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d1f59e6f48942cea6b4c651bd2ee681">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>12bdcc1f8fb51484df71fd903f3b0793</td>
-       <td>CVE-2022-31761</td>
-       <td>2022-06-20 19:58:08</td>
-       <td>HUAWEI EMUI 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=83860226bb2641779b76b9fa7ea38f78">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6023b611b4d00ccf0517a2a6dd94333d</td>
-       <td>CVE-2022-31751</td>
-       <td>2022-06-20 19:58:04</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=31507dff67ea4229856fd7c5c3c84590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>becc99a78f0d6a732194252c5db3ea1b</td>
-       <td>CVE-2022-1992</td>
-       <td>2022-06-19 19:58:55</td>
-       <td>Gogs 路径遍历漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7de950dffa11444895a2f584d11e754c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4553adaa6d1b0719e9e2d25026d9619</td>
-       <td>CVE-2022-1647</td>
-       <td>2022-06-19 19:58:50</td>
-       <td>WordPress plugin FormCraft 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a6473c29520e4d5fa38f1e21ce77f03a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d600cf126d2bf555affe3bea1e0a24f</td>
-       <td>CVE-2022-1998</td>
-       <td>2022-06-19 19:58:30</td>
-       <td>Linux kernel 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=05742e2c28ee409d9777df31eab4c454">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1487283971c16d7ac484dabafd0ca70a</td>
-       <td>CVE-2022-31030</td>
-       <td>2022-06-18 20:08:40</td>
-       <td>Apache containerd 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1ad29e303ec6441481e9ffe4bb7bb858">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be35d044d9687d5a4ba90459fe5f3c30</td>
-       <td>CVE-2022-32272</td>
-       <td>2022-06-18 20:08:35</td>
-       <td>OPSWAT MetaDefender Core 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=647f7bc59fef490f81edb4714d44cbe7">详情</a></td>
       </tr>
 
      </tbody>
