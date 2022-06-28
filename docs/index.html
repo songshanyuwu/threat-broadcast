@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-06-27 23:38:55 -->
+<!-- RELEASE TIME : 2022-06-28 05:44:25 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4ccaafb75bb36d4993bae7fd1f05dfa0</td>
+       <td>CVE-2022-34134</td>
+       <td>2022-06-28 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Benjamin BALET Jorani v1.0 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /application/controllers/Users.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34134">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>275290c3b08839d3e0f0ec8e49ca14d2</td>
+       <td>CVE-2022-34133</td>
+       <td>2022-06-28 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Benjamin BALET Jorani v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the Comment parameter at application/controllers/Leaves.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34133">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f262df2d60880acefc0e70db0bd7ef1f</td>
+       <td>CVE-2022-34132</td>
+       <td>2022-06-28 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Benjamin BALET Jorani v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at application/controllers/Leaves.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34132">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44b7408980fd381b21b8d6d9d05a8973</td>
+       <td>CVE-2022-31104</td>
+       <td>2022-06-28 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Wasmtime is a standalone runtime for WebAssembly. In affected versions wasmtime's implementation of the SIMD proposal for WebAssembly on x86_64 contained two distinct bugs in the instruction lowerings implemented in Cranelift. The aarch64 implementation of the simd proposal is not affected. The bugs were presented in the `i8x16.swizzle` and `select` WebAssembly instructions. The `select` instruction is only affected when the inputs are of `v128` type. The correspondingly affected Cranelift instructions were `swizzle` and `select`. The `swizzle` instruction lowering in Cranelift erroneously overwrote the mask input register which could corrupt a constant value, for example. This means that future uses of the same constant may see a different value than the constant itself. The `select` instruction lowering in Cranelift wasn't correctly implemented for vector types that are 128-bits wide. When the condition was 0 the wrong instruction was used to move the correct input to the output of the instruction meaning that only the low 32 bits were moved and the upper 96 bits of the result were left as whatever the register previously contained (instead of the input being moved from). The `select` instruction worked correctly if the condition was nonzero, however. This bug in Wasmtime's implementation of these instructions on x86_64 represents an incorrect implementation of the specified semantics of these instructions according to the WebAssembly specification. The impact of this is benign for hosts running WebAssembly but represents possible vulnerabilities within the execution of a guest program. For example a WebAssembly program could take unintended branches or materialize incorrect values internally which runs the risk of exposing the program itself to other related vulnerabilities which can occur from miscompilations. We have released Wasmtime 0.38.1 and cranelift-codegen (and other associated cranelift crates) 0.85.1 which contain the corrected implementations of these two instructions in Cranelift. If upgrading is not an option for you at this time, you can avoid the vulnerability by disabling the Wasm simd proposal. Additionally the bug is only present on x86_64 hosts. Other aarch64 hosts are not affected. Note that s390x hosts don't yet implement the simd proposal and are not affected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31104">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>273bcdec4d9f883ef8a77a027f4cecd9</td>
+       <td>CVE-2022-33009</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stored cross-site scripting (XSS) vulnerability in LightCMS v1.3.11 allows attackers to execute arbitrary web scripts or HTML via uploading a crafted PDF file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33009">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3447d8283fe9caa4484f5f7891593c07</td>
+       <td>CVE-2022-32995</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Halo CMS v1.5.3 was discovered to contain a Server-Side Request Forgery (SSRF) via the template remote download function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32995">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f996951b366492e489b6409fa20249b4</td>
+       <td>CVE-2022-32994</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Halo CMS v1.5.3 was discovered to contain an arbitrary file upload vulnerability via the component /api/admin/attachments/upload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32994">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd069dd280238c4fb041000d007cf42c</td>
+       <td>CVE-2022-31103</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>lettersanitizer is a DOM-based HTML email sanitizer for in-browser email rendering. All versions of lettersanitizer below 1.0.2 are affected by a denial of service issue when processing a CSS at-rule `@keyframes`. This package is depended on by [react-letter](https://github.com/mat-sz/react-letter), therefore everyone using react-letter is also at risk. The problem has been patched in version 1.0.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d210e05bc289eadc72912d18b83ffabd</td>
+       <td>CVE-2022-31101</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>prestashop/blockwishlist is a prestashop extension which adds a block containing the customer's wishlists. In affected versions an authenticated customer can perform SQL injection. This issue is fixed in version 2.1.1. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31101">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5aafa6e07fd3bf3597ee5e94d0918091</td>
+       <td>CVE-2022-31099</td>
+       <td>2022-06-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>rulex is a new, portable, regular expression language. When parsing untrusted rulex expressions, the stack may overflow, possibly enabling a Denial of Service attack. This happens when parsing an expression with several hundred levels of nesting, causing the process to abort immediately. This is a security concern for you, if your service parses untrusted rulex expressions (expressions provided by an untrusted user), and your service becomes unavailable when the process running rulex aborts due to a stack overflow. The crash is fixed in version **0.4.3**. Affected users are advised to update to this version. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31099">详情</a></td>
+      </tr>
+
+      <tr>
        <td>12b538cc8b2d40df1ab7e42a77a1f76a</td>
        <td>CVE-2022-31035</td>
        <td>2022-06-27 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>8ed806c82f66ac97a90ea19473f88d5b</td>
        <td>CVE-2022-30932</td>
-       <td>2022-06-26 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 19:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30932">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>d9527aa0a3e1c07e5eb953a9c7c55842</td>
        <td>CVE-2022-2206</td>
-       <td>2022-06-26 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 19:15:00</td>
        <td>Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2206">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>03b698a24256714b1f6be47a6130e48a</td>
        <td>CVE-2022-34495</td>
-       <td>2022-06-26 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 16:15:00</td>
        <td>rpmsg_probe in drivers/rpmsg/virtio_rpmsg_bus.c in the Linux kernel before 5.18.4 has a double free.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34495">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>3009c693f19aa278a947a3b4ce65cc7f</td>
        <td>CVE-2022-34494</td>
-       <td>2022-06-26 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 16:15:00</td>
        <td>rpmsg_virtio_add_ctrl_dev in drivers/rpmsg/virtio_rpmsg_bus.c in the Linux kernel before 5.18.4 has a double free.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34494">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>f165694d5f617dd9196a5b547963f25b</td>
        <td>CVE-2020-27509</td>
-       <td>2022-06-26 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 13:15:00</td>
        <td>Persistent XSS in Galaxkey Secure Mail Client in Galaxkey up to 5.6.11.5 allows an attacker to perform an account takeover by intercepting the HTTP Post request when sending an email and injecting a specially crafted XSS payload in the 'subject' field. The payload executes when the recipient logs into their mailbox.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-27509">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2022-06-25 07:15:00</td>
        <td>Wire is a secure messaging application. Wire is vulnerable to arbitrary HTML and Javascript execution via insufficient escaping when rendering `@mentions` in the wire-webapp. If a user receives and views a malicious message, arbitrary code is injected and executed in the context of the victim allowing the attacker to fully control the user account. Wire-desktop clients that are connected to a vulnerable wire-webapp version are also vulnerable to this attack. The issue has been fixed in wire-webapp 2022-05-04-production.0 and is already deployed on all Wire managed services. On-premise instances of wire-webapp need to be updated to docker tag 2022-05-04-production.0-v0.29.7-0-a6f2ded or wire-server 2022-05-04 (chart/4.11.0) or later. No known workarounds exist.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca5ec75c9c441ebc7e08fca88bb4c47f</td>
-       <td>CVE-2022-24893</td>
-       <td>2022-06-25 07:15:00</td>
-       <td>ESP-IDF is the official development framework for Espressif SoCs. In Espressif’s Bluetooth Mesh SDK (`ESP-BLE-MESH`), a memory corruption vulnerability can be triggered during provisioning, because there is no check for the `SegN` field of the Transaction Start PDU. This can result in memory corruption related attacks and potentially attacker gaining control of the entire system. Patch commits are available on the 4.1, 4.2, 4.3 and 4.4 branches and users are recommended to upgrade. The upgrade is applicable for all applications and users of `ESP-BLE-MESH` component from `ESP-IDF`. As it is implemented in the Bluetooth Mesh stack, there is no workaround for the user to fix the application layer without upgrading the underlying firmware.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24893">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5768a2d1a6b5afeab18abf182372ec3f</td>
-       <td>CVE-2019-25071</td>
-       <td>2022-06-25 06:15:00</td>
-       <td>** DISPUTED ** A vulnerability was found in Apple iPhone up to 12.4.1. It has been declared as critical. Affected by this vulnerability is Siri. Playing an audio or video file might be able to initiate Siri on the same device which makes it possible to execute commands remotely. Exploit details have been disclosed to the public. The existence and implications of this vulnerability are doubted by Apple even though multiple public videos demonstrating the attack exist. Upgrading to version 13.0 migt be able to address this issue. It is recommended to upgrade affected devices.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-25071">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>199b00b4b24ebec67724a8a43de5255b</td>
-       <td>CVE-2022-33128</td>
-       <td>2022-06-25 02:15:00</td>
-       <td>RG-EG series gateway EG350 EG_RGOS 11.1(6) was discovered to contain a SQL injection vulnerability via the function get_alarmAction at /alarm_pi/alarmService.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fe9e691fd0f9083d5f3bce752879911</td>
-       <td>CVE-2021-40894</td>
-       <td>2022-06-24 22:15:00</td>
-       <td>A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in underscore-99xp v1.7.2 when the deepValueSearch function is called.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-40894">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01a645c9fea30979498553facaa06fcb</td>
-       <td>CVE-2022-34066</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Texercise package in PyPI v0.0.1 to v0.0.12 was discovered to contain a code execution backdoor. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34066">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8318faf282983f6f225d6354672079f2</td>
-       <td>CVE-2022-34065</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Rondolu-YT-Concate package in PyPI v0.1.0 was discovered to contain a code execution backdoor. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34065">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d27215947ee140c4b2fcf1820786873</td>
-       <td>CVE-2022-34064</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Zibal package in PyPI v1.0.0 was discovered to contain a code execution backdoor. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34064">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54d705bef83356a93e2202e85dbf0d76</td>
-       <td>CVE-2022-34061</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Catly-Translate package in PyPI v0.0.3 to v0.0.5 was discovered to contain a code execution backdoor. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34061">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>052fc9365469ac75faaca97ddbbb69b7</td>
-       <td>CVE-2022-34060</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Togglee package in PyPI version v0.0.8 was discovered to contain a code execution backdoor. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34060">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84723dd69752d776383cf11f97c7bee2</td>
-       <td>CVE-2022-34059</td>
-       <td>2022-06-24 21:15:00</td>
-       <td>The Sixfab-Tool in PyPI v0.0.2 to v0.0.3 was discovered to contain a code execution backdoor via the request package. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34059">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>4cf6b4a672f84aa2b15a241eea4350f3</td>
        <td>CNNVD-202206-2545 (CVE-2020-27509)</td>
-       <td>2022-06-26 23:38:38 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 23:38:38</td>
        <td>Galaxkey 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2545">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>09919062e71689395c015584fc9f4bb0</td>
        <td>CNNVD-202206-2546 (CVE-2022-34495)</td>
-       <td>2022-06-26 23:38:36 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 23:38:36</td>
        <td>Linux kernel 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2546">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>d1e9409efd6a0d3174dff3bfa834bce6</td>
        <td>CNNVD-202206-2547 (CVE-2022-34494)</td>
-       <td>2022-06-26 23:38:33 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 23:38:33</td>
        <td>Linux kernel 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2547">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>6b6e1dadb96a4e21705b6ebd6a148c7a</td>
        <td>CNNVD-202206-2549 (CVE-2022-2206)</td>
-       <td>2022-06-26 23:38:30 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 23:38:30</td>
        <td>Vim 缓冲区错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2549">详情</a></td>
       </tr>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>f1522cee7130e634c9a34c3d95ba8753</td>
        <td>CVE-2022-20125</td>
-       <td>2022-06-26 20:02:17 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:02:17</td>
        <td>Google Android 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=36066ca09aa24d1a94664d60d710e0ec">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>0dc019a7358ebd67f5a9fc37f2a1648e</td>
        <td>CVE-2022-20130</td>
-       <td>2022-06-26 20:02:12 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:02:12</td>
        <td>Google Android 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9c74cd7b97b74817a4f75e069664d9d7">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>d6fc3a86a5c3b9425bb1aa7222814647</td>
        <td>CVE-2022-20124</td>
-       <td>2022-06-26 20:02:07 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:02:07</td>
        <td>Google Android 权限许可和访问控制问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1137b1d1d7be4508976c1bb6f1ea687b">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>8b208bebd6095c4ceb0708ba3a1be0d4</td>
        <td>CVE-2022-20132</td>
-       <td>2022-06-26 20:02:01 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:02:01</td>
        <td>Google Android 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2047742d673845e3a16ef169e5d7fc19">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>a580272180a42c8ef6a57d415e6729b4</td>
        <td>CVE-2022-20127</td>
-       <td>2022-06-26 20:01:56 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:56</td>
        <td>Google Android 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2fb66ff04f4a499ca2fc81f17c6c3f4b">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>c07b86a4cc67b3b84c7b03d6c591fac2</td>
        <td>CVE-2022-20142</td>
-       <td>2022-06-26 20:01:51 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:51</td>
        <td>Google Android 权限许可和访问控制问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=aeb1842a4fc64087bd9bb0a38f602058">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>614c5fbe4a28a4e2121ae27954f49d82</td>
        <td>CVE-2022-20134</td>
-       <td>2022-06-26 20:01:50 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:50</td>
        <td>Google Android 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8d6d38c10a7241d0a2bce91e8217491a">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>f1b2a7822ca6ef5ff49c6be73da68dc9</td>
        <td>CVE-2022-20149</td>
-       <td>2022-06-26 20:01:39 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:39</td>
        <td>Google Android 信息泄露漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c966c6ea83f444c593c59350ce6d90fa">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>42f549fcf65e76c80880f30e47968891</td>
        <td>CVE-2022-20135</td>
-       <td>2022-06-26 20:01:39 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:39</td>
        <td>Google Android 权限许可和访问控制问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=99f15732b2054c3497368cbef070e0a9">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>5f51dac1d438c01ede440da51f78a704</td>
        <td>CVE-2022-20146</td>
-       <td>2022-06-26 20:01:31 <img src="imgs/new.gif" /></td>
+       <td>2022-06-26 20:01:31</td>
        <td>Google Android 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fbe51f6ee19843ebbd18a2bc4dfdebd1">详情</a></td>
       </tr>
@@ -2188,6 +2188,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2d8701399bdb77d39590a5c4ce5aab6a</td>
+       <td>CVE-2022-33913</td>
+       <td>2022-06-20 16:15:08 </td>
+       <td>In Mahara 21.04 before 21.04.6, 21.10 before 21.10.4, and 22.04.2, files can sometimes be downloaded through thumb.php with no permission check.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33913">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b5474ad4a82d47241c66796f244df67a</td>
        <td>CVE-2022-31795</td>
        <td>2022-06-20 15:15:13 </td>
@@ -2201,6 +2209,54 @@
        <td>2022-06-20 15:15:13 </td>
        <td>An issue was discovered on Fujitsu ETERNUS CentricStor CS8000 (Control Center) devices before 8.1A SP02 P04. The vulnerability resides in the requestTempFile function in hw_view.php. An attacker is able to influence the unitName POST parameter and inject special characters such as semicolons, backticks, or command-substitution sequences in order to force the application to execute arbitrary commands.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31794">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>461fecf8d0555d2850382eda6a7ef4fb</td>
+       <td>CVE-2022-33756</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an entropy weakness vulnerability in the Automic AutomationEngine that could allow a remote attacker to potentially access sensitive data.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33756">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>910852c4fd6b4fd695ae5e52c2e4d87f</td>
+       <td>CVE-2022-33755</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an insecure input handling vulnerability in the Automic Agent that could allow a remote attacker to potentially enumerate users.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33755">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>78d8af472c95a7c68287fafb62c529e3</td>
+       <td>CVE-2022-33754</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an insufficient input validation vulnerability in the Automic agent that could allow a remote attacker to potentially execute arbitrary code.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33754">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>977ae893866df49a6332fdc496fc6972</td>
+       <td>CVE-2022-33753</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an insecure file creation and handling vulnerability in the Automic agent that could allow a user to potentially elevate privileges.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33753">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>788f0fb42b25ca9e306b42c5156d9295</td>
+       <td>CVE-2022-33752</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an insufficient input validation vulnerability in the Automic agent that could allow a remote attacker to potentially execute arbitrary code.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33752">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a183ec382d28ff7481c42c09b8ec82c</td>
+       <td>CVE-2022-33751</td>
+       <td>2022-06-16 22:15:08 </td>
+       <td>CA Automic Automation 12.2 and 12.3 contain an insecure memory handling vulnerability in the Automic agent that could allow a remote attacker to potentially access sensitive data.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33751">详情</a></td>
       </tr>
 
       <tr>
@@ -2369,62 +2425,6 @@
        <td>2022-06-13 23:15:08 </td>
        <td>An issue was discovered in Couchbase Server before 7.0.4. The Backup Service log leaks unredacted usernames and document ids.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32565">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa66bc98e17d920dc7a41de7379333ec</td>
-       <td>CVE-2022-32562</td>
-       <td>2022-06-13 23:15:08 </td>
-       <td>An issue was discovered in Couchbase Server before 7.0.4. Operations may succeed on a collection using stale RBAC permission.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32562">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61d163cd96dbd242a62302d3387da78e</td>
-       <td>CVE-2022-32564</td>
-       <td>2022-06-13 21:15:08 </td>
-       <td>An issue was discovered in Couchbase Server before 7.0.4. In couchbase-cli, server-eshell leaks the Cluster Manager cookie.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32564">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea626bda903972bc331f773e5acc8e1a</td>
-       <td>CVE-2022-32560</td>
-       <td>2022-06-13 21:15:08 </td>
-       <td>An issue was discovered in Couchbase Server before 7.0.4. XDCR lacks role checking when changing internal settings.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32560">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>21d7e6c9ea35bb206ef6b942236470a2</td>
-       <td>CVE-2022-32558</td>
-       <td>2022-06-13 21:15:07 </td>
-       <td>An issue was discovered in Couchbase Server before 7.0.4. Sample bucket loading may leak internal user passwords during a failure.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f176b447db3c1ae66de10556af33fee4</td>
-       <td>CVE-2022-31761</td>
-       <td>2022-06-13 16:15:08 </td>
-       <td>Configuration defects in the secure OS module. Successful exploitation of this vulnerability will affect confidentiality.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31761">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>055530ca89c8ba89494043e05e0d99f5</td>
-       <td>CVE-2022-31760</td>
-       <td>2022-06-13 16:15:08 </td>
-       <td>Dialog boxes can still be displayed even if the screen is locked in carrier-customized USSD services. Successful exploitation of this vulnerability may affect data integrity and confidentiality.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57e34fdf7ab06ff08a6f3bb2b0ef8948</td>
-       <td>CVE-2022-31757</td>
-       <td>2022-06-13 16:15:08 </td>
-       <td>The setting module has a vulnerability of improper use of APIs. Successful exploitation of this vulnerability may affect data confidentiality.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31757">详情</a></td>
       </tr>
 
      </tbody>
