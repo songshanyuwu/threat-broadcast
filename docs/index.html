@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-07-02 05:38:04 -->
+<!-- RELEASE TIME : 2022-07-02 23:37:44 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9ea40fff7f6f8924718fcad1b8fd53e4</td>
+       <td>CVE-2022-34913</td>
+       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>** DISPUTED ** md2roff 1.7 has a stack-based buffer overflow via a Markdown file containing a large number of consecutive characters to be processed. NOTE: the vendor's position is that the product is not intended for untrusted input.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34913">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>292f3cc91b69883405d3e0fc235f4eaa</td>
+       <td>CVE-2022-34912</td>
+       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in MediaWiki before 1.37.3 and 1.38.x before 1.38.1. The contributions-title, used on Special:Contributions, is used as page title without escaping. Hence, in a non-default configuration where a username contains HTML entities, it won't be escaped.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34912">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c50ad90b9d4b0bed9617c65541444a46</td>
+       <td>CVE-2022-34911</td>
+       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in MediaWiki before 1.35.7, 1.36.x and 1.37.x before 1.37.3, and 1.38.x before 1.38.1. XSS can occur in configurations that allow a JavaScript payload in a username. After account creation, when it sets the page title to "Welcome" followed by the username, the username is not escaped: SpecialCreateAccount::successfulAction() calls ::showSuccessPage() with a message as second parameter, and OutputPage::setPageTitle() uses text().</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61c3c3c58d13059f6453672564609e84</td>
+       <td>CVE-2022-2286</td>
+       <td>2022-07-02 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2286">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e46b0ef93215c543a4c5368fdb4c7c4</td>
+       <td>CVE-2022-2285</td>
+       <td>2022-07-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2285">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9b1d80620f78f0a69a9d460a7332a10</td>
+       <td>CVE-2022-2284</td>
+       <td>2022-07-02 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2284">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>028aa441457e6c8ffc0409eebfff78f9</td>
+       <td>CVE-2022-33016</td>
+       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33016">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2150ea1c81c8f6c78fde72d2964b928</td>
+       <td>CVE-2022-33015</td>
+       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33015">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>99fc7c765eadbfc44dbd940d9dd4e3bf</td>
+       <td>CVE-2022-33014</td>
+       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33014">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53be259d9717ed2f53b05e396e8cc10d</td>
+       <td>CVE-2022-28200</td>
+       <td>2022-07-02 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the BiosCfgTool, where a local user with elevated privileges can read and write beyond intended bounds in SMRAM, which may lead to code execution, escalation of privileges, denial of service, and information disclosure. The scope of impact can extend to other components.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28200">详情</a></td>
+      </tr>
+
+      <tr>
        <td>df963a00816bbcba65b1105927fe5e2c</td>
        <td>CVE-2022-34903</td>
        <td>2022-07-01 22:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-06-30 21:15:00</td>
        <td>Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2257">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28d1345d87d447098b09ea7ab27d5cb3</td>
-       <td>CVE-2014-0156</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>Awesome spawn contains OS command injection vulnerability, which allows execution of additional commands passed to Awesome spawn as arguments. If untrusted input was included in command arguments, attacker could use this flaw to execute arbitrary command.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-0156">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>965ba3bca053b89cdec58bf9fed6023c</td>
-       <td>CVE-2014-0068</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>It was reported that watchman in openshift node-utils creates /var/run/watchman.pid and /var/log/watchman.ouput with world writable permission.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-0068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47c2ba4749b73273563786f1e129c527</td>
-       <td>CVE-2013-7253</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-7253">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>084419c1b22ae4c1a2d645c80e461f5b</td>
-       <td>CVE-2013-6498</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-6498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d741eb4c82eef70eb42fcec0f9bb7437</td>
-       <td>CVE-2013-6471</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-6471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08d472c1669382435ebfd31d7b412512</td>
-       <td>CVE-2013-6464</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-6464">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>45b09572912ed083bcf155f9be4bad64</td>
-       <td>CVE-2013-6423</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-6423">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81a2e9d9c02968e498fe751130252e9d</td>
-       <td>CVE-2013-6390</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-6390">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b300f4cdec7a21d320ae25ad86ce290</td>
-       <td>CVE-2013-5683</td>
-       <td>2022-06-30 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2013. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-5683">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bf0953d6dd178d3268289c21bba78d57</td>
-       <td>CVE-2022-30467</td>
-       <td>2022-06-29 20:15:00</td>
-       <td>Joy ebike Wolf Manufacturing year 2022 is vulnerable to Denial of service, which allows remote attackers to jam the key fob request via RF.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30467">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6ecf7607675a8af7cf88b6089efd5ddb</td>
+       <td>CVE-2022-34305</td>
+       <td>2022-07-02 20:41:35 <img src="imgs/new.gif" /></td>
+       <td>Apache Tomcat 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=efc283c715894ec69e01032f9e5bd6f4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c277005ce5c34f4fd57f1b37d1919039</td>
+       <td>CVE-2022-34170</td>
+       <td>2022-07-02 20:41:31 <img src="imgs/new.gif" /></td>
+       <td>Jenkins 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=59d074b346b04448a0174b08fb482a69">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad4b414e846e1199ecf0c99895e79c78</td>
+       <td>CVE-2022-34172</td>
+       <td>2022-07-02 20:41:27 <img src="imgs/new.gif" /></td>
+       <td>Jenkins 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc2e2ddbc7814ee39affae0850bb90e6">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71a54061cff37693f1db85e8d3bc9bc1</td>
+       <td>CVE-2022-34173</td>
+       <td>2022-07-02 20:41:22 <img src="imgs/new.gif" /></td>
+       <td>Jenkins 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eecb2e1286fc4f51a3ed9e5b2bb4466e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52e095d482150aa19f8dcf9b7a09e6f9</td>
+       <td>CVE-2022-34175</td>
+       <td>2022-07-02 20:41:18 <img src="imgs/new.gif" /></td>
+       <td>Jenkins 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a1d35efb3f03450e92343556174732eb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>90c36b170b1bbffce0ac528b48a8e576</td>
+       <td>CVE-2022-34176</td>
+       <td>2022-07-02 20:41:13 <img src="imgs/new.gif" /></td>
+       <td>Jenkins 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=63ff5db1bc7849e6b9aa56238630612b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d56b26ffc825a336b8624b6834640853</td>
+       <td>CVE-2022-34192</td>
+       <td>2022-07-02 20:41:09 <img src="imgs/new.gif" /></td>
+       <td>Jenkins和Jenkins Plugin 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad66590e876e4b21a4307c3bddccfe0b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe48d7b341e965496b7a86bae4b9824c</td>
+       <td>CVE-2022-34195</td>
+       <td>2022-07-02 20:41:05 <img src="imgs/new.gif" /></td>
+       <td>Jenkins和Jenkins Plugin 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=132e4d5074df4149b4d6eeb1dd7937ee">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11dcd799e9dfc7979405aa79413f2d65</td>
+       <td>CVE-2022-34198</td>
+       <td>2022-07-02 20:41:00 <img src="imgs/new.gif" /></td>
+       <td>Jenkins Plugin Stash Branch Parameter 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=618e08604be94f59981d63144e337bf1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a77484d626aacf204ce256e59bb98479</td>
+       <td>CVE-2022-2182</td>
+       <td>2022-07-02 20:40:55 <img src="imgs/new.gif" /></td>
+       <td>Vim 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=920dd9c247af4817b833c2049ef774e5">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5a85b80553b50a5dff0082da8313b6b1</td>
        <td>CVE-2021-25229</td>
        <td>2022-07-01 20:27:56 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-06-30 20:31:40</td>
        <td>Adobe InDesign 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ba64d60d55374021aff9294a39730f3f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af11b58393e87cf536c3ee71cefacebb</td>
-       <td>CVE-2022-20126</td>
-       <td>2022-06-29 20:08:51</td>
-       <td>Google Android 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bd5597e9ecaa43d6890065a037025fd9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>12edec3df0079b5589715fefc0723842</td>
-       <td>CVE-2022-20123</td>
-       <td>2022-06-29 20:08:42</td>
-       <td>Google Android 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=693d263909b143c1a24f87bc1eab9f6e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>789753af4bbfec155c1af1a7309bfbf3</td>
-       <td>CVE-2022-20133</td>
-       <td>2022-06-29 20:08:37</td>
-       <td>Google Android 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e6a5e633240a4b0484ef1e8f04f986a9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6305b4ab50970d98ddf3721b2bf35a4a</td>
-       <td>CVE-2022-20125</td>
-       <td>2022-06-29 20:08:33</td>
-       <td>Google Android 其他漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=36066ca09aa24d1a94664d60d710e0ec">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>336e5525d1f31e6cff94c45d6b42c70a</td>
-       <td>CVE-2021-39691</td>
-       <td>2022-06-28 20:03:55</td>
-       <td>Google Android 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d02b5e800770490ea90ef56a6648ffc9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b591ea14f0d403f9ee03021d959de9aa</td>
-       <td>CVE-2022-20131</td>
-       <td>2022-06-28 20:03:44</td>
-       <td>Google Android 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d79cf73bf5734233912c0a4d23e080ac">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ded2849fe651cb889544b57ed85df45a</td>
-       <td>CVE-2022-20138</td>
-       <td>2022-06-28 20:03:34</td>
-       <td>Google Android 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6fe07c0e85b84966ac33ec727e80f0cf">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9a4e763f455b8db0ea1b45ded68f4229</td>
-       <td>CVE-2022-20143</td>
-       <td>2022-06-28 20:03:22</td>
-       <td>Google Android 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=99cd435dadf141719ba630f90f64614b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da40b2b0edc0cbe67076df57c60d016c</td>
-       <td>CVE-2022-20141</td>
-       <td>2022-06-28 20:03:12</td>
-       <td>Google Android 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=52728a7e90da4192b083d210b9739097">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60022e4c5aec4efe4296a0545e1c473f</td>
-       <td>CVE-2022-20126</td>
-       <td>2022-06-27 20:03:36</td>
-       <td>Google Android 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bd5597e9ecaa43d6890065a037025fd9">详情</a></td>
       </tr>
 
      </tbody>
@@ -2188,6 +2188,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d2d3d5f58ef40fffe1298fca036b197c</td>
+       <td>CVE-2022-1965</td>
+       <td>2022-06-24 08:15:07 </td>
+       <td>Multiple products of CODESYS implement a improper error handling. A low privilege remote attacker may craft a request, which is not properly processed by the error handling. In consequence, the file referenced by the request could be deleted. User interaction is not required.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-1965">详情</a></td>
+      </tr>
+
+      <tr>
        <td>77339a100fb22ca43509322eea3222e3</td>
        <td>CVE-2022-2147</td>
        <td>2022-06-23 21:15:07 </td>
@@ -2396,6 +2404,14 @@
       </tr>
 
       <tr>
+       <td>c47a7d7b60572bb7a5859560e48f84d7</td>
+       <td>CVE-2022-1833</td>
+       <td>2022-06-21 15:15:08 </td>
+       <td>A flaw was found in AMQ Broker Operator 7.9.4 installed via UI using OperatorHub where a low-privilege user that has access to the namespace where the AMQ Operator is deployed has access to clusterwide edit rights by checking the secrets. The service account used for building the Operator gives more permission than expected and an attacker could benefit from it. This requires at least an already compromised low-privilege account or insider attack.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-1833">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2d8701399bdb77d39590a5c4ce5aab6a</td>
        <td>CVE-2022-33913</td>
        <td>2022-06-20 16:15:08 </td>
@@ -2409,22 +2425,6 @@
        <td>2022-06-20 15:15:13 </td>
        <td>An issue was discovered on Fujitsu ETERNUS CentricStor CS8000 (Control Center) devices before 8.1A SP02 P04. The vulnerability resides in the grel_finfo function in grel.php. An attacker is able to influence the username (user), password (pw), and file-name (file) parameters and inject special characters such as semicolons, backticks, or command-substitution sequences in order to force the application to execute arbitrary commands.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31795">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c938afb59b5051ad4938e3c70fa04cae</td>
-       <td>CVE-2022-31794</td>
-       <td>2022-06-20 15:15:13 </td>
-       <td>An issue was discovered on Fujitsu ETERNUS CentricStor CS8000 (Control Center) devices before 8.1A SP02 P04. The vulnerability resides in the requestTempFile function in hw_view.php. An attacker is able to influence the unitName POST parameter and inject special characters such as semicolons, backticks, or command-substitution sequences in order to force the application to execute arbitrary commands.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31794">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2dbae3ad78967c554f582264a695fdb</td>
-       <td>CVE-2022-34000</td>
-       <td>2022-06-19 20:15:08 </td>
-       <td>libjxl 0.6.1 has an assertion failure in LowMemoryRenderPipeline::Init() in render_pipeline/low_memory_render_pipeline.cc.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-34000">详情</a></td>
       </tr>
 
      </tbody>
