@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-07-03 23:38:14 -->
+<!-- RELEASE TIME : 2022-07-04 23:38:41 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>f53bdb88601d6b5b6f226e98b8fc9c85</td>
+       <td></td>
+       <td>2022-07-04 07:28:40 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 (06.27-07.03)</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=9b62a5991b4cc604b5d5409a6594e2c6">详情</a></td>
+      </tr>
+
       <tr>
        <td>e89aa4c7b6d2ab33298297f878a719fa</td>
        <td>CVE-2022-2185</td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a1e0e3778899b23b80b8ff0ea5992c83">详情</a></td>
       </tr>
 
-      <tr>
-       <td>e7c1b670f81a9e6ec46db927363c7420</td>
-       <td></td>
-       <td>2022-04-06 08:50:12</td>
-       <td>安全事件周报 (03-28 ~ 04-03)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=cd914a4cd8b068037ae0676911b939f1">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>afb4e28e329571c5ca1c917fe6920333</td>
+       <td>CVE-2022-34918</td>
+       <td>2022-07-04 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 5.18.9. A type confusion bug in nft_set_elem_init (leading to a buffer overflow) could be used by a local attacker to escalate privileges, a different vulnerability than CVE-2022-32250. (The attacker can obtain root access, but must start with an unprivileged user namespace to obtain CAP_NET_ADMIN access.) This can be fixed in nft_setelem_parse_data in net/netfilter/nf_tables_api.c.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34918">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf6131e49df7bbec543b9df1f06444df</td>
+       <td>CVE-2022-34829</td>
+       <td>2022-07-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine ADSelfService Plus before 6203 allows a denial of service (application restart) via a crafted payload to the Mobile App Deployment API.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34829">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d73da19e16af8f29c1acd3db7a377b73</td>
+       <td>CVE-2022-31603</td>
+       <td>2022-07-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the IpSecDxe, where a user with high privileges and preconditioned IpSecDxe global data can exploit improper validation of an array index to cause code execution, which may lead to denial of service, data integrity impact, and information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31603">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>76ca1868feb42ae2fd9c18130fd622c5</td>
+       <td>CVE-2022-31602</td>
+       <td>2022-07-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the IpSecDxe, where a user with elevated privileges and a preconditioned heap can exploit an out-of-bounds write vulnerability, which may lead to code execution, denial of service, data integrity impact, and information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31602">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27bcbff138bd53570a8829e916b338af</td>
+       <td>CVE-2022-31601</td>
+       <td>2022-07-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the SmbiosPei, which may allow a highly privileged local attacker to cause an out-of-bounds write, which may lead to code execution, denial of service, compromised integrity, and information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31601">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f757e84dc624aa4830f05c0355ac7169</td>
+       <td>CVE-2022-31600</td>
+       <td>2022-07-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the SmmCore, where a user with high privileges can chain another vulnerability to this vulnerability, causing an integer overflow, possibly leading to code execution, escalation of privileges, denial of service, compromised integrity, and information disclosure. The scope of impact can extend to other components.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31600">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>18678c45ec969476e517e53258fe177d</td>
+       <td>CVE-2022-31599</td>
+       <td>2022-07-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the Ofbd, where a local user with elevated privileges can cause access to an uninitialized pointer, which may lead to code execution, escalation of privileges, denial of service, and information disclosure. The scope of impact can extend to other components.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6b3cd14c58cb811f117ec63005814900</td>
+       <td>CVE-2022-34265</td>
+       <td>2022-07-04 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Django 3.2 before 3.2.14 and 4.0 before 4.0.6. The Trunc() and Extract() database functions are subject to SQL injection if untrusted data is used as a kind/lookup_name value. Applications that constrain the lookup name and kind choice to a known safe list are unaffected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34265">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19dcd8ffdcd3c7ae3d331327317ed961</td>
+       <td>CVE-2022-33171</td>
+       <td>2022-07-04 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>** DISPUTED ** The findOne function in TypeORM before 0.3.0 can either be supplied with a string or a FindOneOptions object. When input to the function is a user-controlled parsed JSON object, supplying a crafted FindOneOptions instead of an id string leads to SQL injection. NOTE: the vendor's position is that the user's application is responsible for input validation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e0dc2e6b506c83af5cb146e0b0249a9</td>
+       <td>CVE-2022-2268</td>
+       <td>2022-07-04 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Import any XML or CSV File to WordPress plugin before 3.6.8 accepts all zip files and automatically extracts the zip file without validating the extracted file type. Allowing high privilege users such as admin to upload an arbitrary file like PHP, leading to RCE</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2268">详情</a></td>
+      </tr>
+
       <tr>
        <td>3d7be900b4df950b413dc0777a22358e</td>
        <td>CVE-2022-2289</td>
@@ -310,7 +390,7 @@
       <tr>
        <td>92f5fe61c4733d03f09667fdaa4d9559</td>
        <td>CVE-2022-2287</td>
-       <td>2022-07-02 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 22:15:00</td>
        <td>Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2287">详情</a></td>
       </tr>
@@ -318,7 +398,7 @@
       <tr>
        <td>9ea40fff7f6f8924718fcad1b8fd53e4</td>
        <td>CVE-2022-34913</td>
-       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:15:00</td>
        <td>** DISPUTED ** md2roff 1.7 has a stack-based buffer overflow via a Markdown file containing a large number of consecutive characters to be processed. NOTE: the vendor's position is that the product is not intended for untrusted input.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34913">详情</a></td>
       </tr>
@@ -326,7 +406,7 @@
       <tr>
        <td>292f3cc91b69883405d3e0fc235f4eaa</td>
        <td>CVE-2022-34912</td>
-       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:15:00</td>
        <td>An issue was discovered in MediaWiki before 1.37.3 and 1.38.x before 1.38.1. The contributions-title, used on Special:Contributions, is used as page title without escaping. Hence, in a non-default configuration where a username contains HTML entities, it won't be escaped.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34912">详情</a></td>
       </tr>
@@ -334,7 +414,7 @@
       <tr>
        <td>c50ad90b9d4b0bed9617c65541444a46</td>
        <td>CVE-2022-34911</td>
-       <td>2022-07-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:15:00</td>
        <td>An issue was discovered in MediaWiki before 1.35.7, 1.36.x and 1.37.x before 1.37.3, and 1.38.x before 1.38.1. XSS can occur in configurations that allow a JavaScript payload in a username. After account creation, when it sets the page title to "Welcome" followed by the username, the username is not escaped: SpecialCreateAccount::successfulAction() calls ::showSuccessPage() with a message as second parameter, and OutputPage::setPageTitle() uses text().</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34911">详情</a></td>
       </tr>
@@ -342,7 +422,7 @@
       <tr>
        <td>61c3c3c58d13059f6453672564609e84</td>
        <td>CVE-2022-2286</td>
-       <td>2022-07-02 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 19:15:00</td>
        <td>Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2286">详情</a></td>
       </tr>
@@ -350,7 +430,7 @@
       <tr>
        <td>4e46b0ef93215c543a4c5368fdb4c7c4</td>
        <td>CVE-2022-2285</td>
-       <td>2022-07-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 16:15:00</td>
        <td>Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2285">详情</a></td>
       </tr>
@@ -358,7 +438,7 @@
       <tr>
        <td>f9b1d80620f78f0a69a9d460a7332a10</td>
        <td>CVE-2022-2284</td>
-       <td>2022-07-02 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 15:15:00</td>
        <td>Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2284">详情</a></td>
       </tr>
@@ -366,7 +446,7 @@
       <tr>
        <td>028aa441457e6c8ffc0409eebfff78f9</td>
        <td>CVE-2022-33016</td>
-       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 14:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33016">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>d2150ea1c81c8f6c78fde72d2964b928</td>
        <td>CVE-2022-33015</td>
-       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 14:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33015">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>99fc7c765eadbfc44dbd940d9dd4e3bf</td>
        <td>CVE-2022-33014</td>
-       <td>2022-07-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 14:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33014">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>53be259d9717ed2f53b05e396e8cc10d</td>
        <td>CVE-2022-28200</td>
-       <td>2022-07-02 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 01:15:00</td>
        <td>NVIDIA DGX A100 contains a vulnerability in SBIOS in the BiosCfgTool, where a local user with elevated privileges can read and write beyond intended bounds in SMRAM, which may lead to code execution, escalation of privileges, denial of service, and information disclosure. The scope of impact can extend to other components.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28200">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2022-07-01 21:15:00</td>
        <td>College Management System v1.0 was discovered to contain a remote code execution (RCE) vulnerability via /College/admin/teacher.php. This vulnerability is exploited via a crafted PHP file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32420">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>611ea6b23fc2b16a62d157187ad8ddf5</td>
-       <td>CVE-2022-32384</td>
-       <td>2022-07-01 21:15:00</td>
-       <td>Tenda AC23 v16.03.07.44 was discovered to contain a stack overflow via the security_5g parameter in the function formWifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32384">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7894fb10a2943a5809471d4171f94533</td>
-       <td>CVE-2022-32095</td>
-       <td>2022-07-01 21:15:00</td>
-       <td>Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the editid parameter at orders.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32095">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>087cc41e544337caeb2dc857d07d4bbe</td>
-       <td>CVE-2022-32094</td>
-       <td>2022-07-01 21:15:00</td>
-       <td>Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the loginid parameter at doctorlogin.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32094">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7d2583c9c795c3c96ef38741fbc0d68</td>
-       <td>CVE-2022-32093</td>
-       <td>2022-07-01 21:15:00</td>
-       <td>Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the loginid parameter at adminlogin.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32093">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f11bc3a3e93e5d1366da0018d98b380</td>
-       <td>CVE-2022-31943</td>
-       <td>2022-07-01 21:15:00</td>
-       <td>MCMS v5.2.8 was discovered to contain an arbitrary file upload vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>83d60c4a815fec0d50f9ee88e1ba67b3</td>
-       <td>CVE-2022-32091</td>
-       <td>2022-07-01 20:15:00</td>
-       <td>MariaDB v10.7 was discovered to contain an use-after-poison in in __interceptor_memset at /libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32091">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76170e86d3de33a77ba81390880bc1d1</td>
-       <td>CVE-2022-32089</td>
-       <td>2022-07-01 20:15:00</td>
-       <td>MariaDB v10.5 to v10.7 was discovered to contain a segmentation fault via the component st_select_lex_unit::exclude_level.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32089">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dbb2c65e463a6aa1eb3258f53009743a</td>
-       <td>CVE-2022-32088</td>
-       <td>2022-07-01 20:15:00</td>
-       <td>MariaDB v10.2 to v10.7 was discovered to contain a segmentation fault via the component Exec_time_tracker::get_loops/Filesort_tracker::report_use/filesort.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32088">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b589099b524fac46af580b26766cf0f9</td>
-       <td>CVE-2022-32087</td>
-       <td>2022-07-01 20:15:00</td>
-       <td>MariaDB v10.2 to v10.7 was discovered to contain a segmentation fault via the component Item_args::walk_args.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32087">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>668409e643ddf798c41ef04bda6cb6fc</td>
-       <td>CVE-2022-33087</td>
-       <td>2022-06-30 23:15:00</td>
-       <td>A stack overflow in the function DM_ In fillobjbystr() of TP-Link Archer C50&A5(US)_V5_200407 allows attackers to cause a Denial of Service (DoS) via a crafted HTTP request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33087">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4f820cf73de252e6e8f31fe45be2e1e8</td>
+       <td>CNNVD-202207-341 (CVE-2022-2290)</td>
+       <td>2022-07-03 23:38:24 <img src="imgs/new.gif" /></td>
+       <td>Trilium Notes 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-341">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e5718475d27c876178d16a15f3bb650c</td>
+       <td>CNNVD-202207-342 (CVE-2022-2288)</td>
+       <td>2022-07-03 23:38:21 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-342">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fe3d4e8ac404a50c5bbf8db1a884b56</td>
+       <td>CNNVD-202207-343 (CVE-2022-2289)</td>
+       <td>2022-07-03 23:38:19 <img src="imgs/new.gif" /></td>
+       <td>Vim 资源管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-343">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d451dad14671340257bee46ba1604ede</td>
+       <td>CNNVD-202207-331 (CVE-2022-2284)</td>
+       <td>2022-07-02 23:38:39</td>
+       <td>Vim 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-331">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0e841569260db741690d27fddedf067</td>
+       <td>CNNVD-202207-332 (CVE-2022-2285)</td>
+       <td>2022-07-02 23:38:37</td>
+       <td>Vim 输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-332">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d138d3be7bcbf3359fca371e2fc9c9f</td>
+       <td>CNNVD-202207-333 (CVE-2022-2286)</td>
+       <td>2022-07-02 23:38:35</td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-333">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81108238f3af44e73a6e4f2f63169205</td>
+       <td>CNNVD-202207-334 (CVE-2022-34912)</td>
+       <td>2022-07-02 23:38:33</td>
+       <td>MediaWiki 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-334">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0a38246482f7aea0416b627bd491126</td>
+       <td>CNNVD-202207-336 (CVE-2022-34911)</td>
+       <td>2022-07-02 23:38:31</td>
+       <td>MediaWiki 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-336">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ca5f2ce639371c6eff0c3a86cde22e6</td>
+       <td>CNNVD-202207-338 (CVE-2022-2287)</td>
+       <td>2022-07-02 23:38:28</td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ebf2524449314d57e950c5406ac95dc</td>
+       <td>CNNVD-202207-340 (CVE-2022-34913)</td>
+       <td>2022-07-02 23:38:26</td>
+       <td>md2roff 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-340">详情</a></td>
+      </tr>
+
+      <tr>
        <td>de4001d7c964a9846f8d8b45c0526514</td>
        <td>CNNVD-202206-2935 (CVE-2022-27904)</td>
        <td>2022-06-30 23:38:41</td>
@@ -953,86 +1033,6 @@
        <td>2022-06-29 23:38:34</td>
        <td>Das U-Boot 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2824">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56835604a1bd08e95c2f7590098cf9fa</td>
-       <td>CNNVD-202206-2768 (CVE-2022-24444)</td>
-       <td>2022-06-28 23:38:44</td>
-       <td>silverstripe framework 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2768">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36cf122855779d8bed767ec6dbbb5512</td>
-       <td>CNNVD-202206-2769 (CVE-2022-25238)</td>
-       <td>2022-06-28 23:38:42</td>
-       <td>silverstripe framework 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72046b205165d98a18b819e8fbed3219</td>
-       <td>CNNVD-202206-2770 (CVE-2022-29269)</td>
-       <td>2022-06-28 23:38:39</td>
-       <td>Nagios XI 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>def126203e48db515e434c0b2885cb4f</td>
-       <td>CNNVD-202206-2771 (CVE-2022-31884)</td>
-       <td>2022-06-28 23:38:37</td>
-       <td>Marval MSM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2771">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a13ef92d1fda040a1503c7de720a3a19</td>
-       <td>CNNVD-202206-2772 (CVE-2022-31887)</td>
-       <td>2022-06-28 23:38:35</td>
-       <td>Marval MSM 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2772">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>070e68d44e8326081b88d9e6a3030b10</td>
-       <td>CNNVD-202206-2773 (CVE-2022-29858)</td>
-       <td>2022-06-28 23:38:32</td>
-       <td>silverstripe framework 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2773">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>017129b925af5fb16141e69a3d10afe2</td>
-       <td>CNNVD-202206-2774 (CVE-2017-20106)</td>
-       <td>2022-06-28 23:38:30</td>
-       <td>Khoros Forum 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2774">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2fe2bfa276d00c81ea5a3f0cc89e1f96</td>
-       <td>CNNVD-202206-2775 (CVE-2017-20105)</td>
-       <td>2022-06-28 23:38:28</td>
-       <td>Simplessus 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2775">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9434c30549b57eccc044ffef79fcf952</td>
-       <td>CNNVD-202206-2776 (CVE-2017-20104)</td>
-       <td>2022-06-28 23:38:25</td>
-       <td>Simplessus SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2776">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56395c1bc39379ca6e290ed857be428f</td>
-       <td>CNNVD-202206-2777 (CVE-2022-34750)</td>
-       <td>2022-06-28 23:38:23</td>
-       <td>MediaWiki 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202206-2777">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b5828e757fd96fecd574387a9510c816</td>
+       <td>CVE-2022-30028</td>
+       <td>2022-07-04 20:36:32 <img src="imgs/new.gif" /></td>
+       <td>Dradis 路径遍历漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=03e02fba0a8d46c8b8dc67ae2bfa8dfd">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ad89cf2c008072d15e9c2c8a5b2e2ca</td>
+       <td>CVE-2022-34213</td>
+       <td>2022-07-04 20:36:08 <img src="imgs/new.gif" /></td>
+       <td>Jenkins Plugin Squash TM Publisher 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0811a48515fe480abd7dcf03ff28e1ff">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>86b8c4aff97c3b34f04c1e6fd02c65a4</td>
+       <td>CVE-2022-2183</td>
+       <td>2022-07-04 20:35:59 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4d6f561199504027ab0f44442c5e64da">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fc9ad28b8d5c7c100db68207dd5e670d</td>
        <td>CVE-2021-25228</td>
        <td>2022-07-03 20:33:06 <img src="imgs/new.gif" /></td>
@@ -1726,7 +1750,7 @@
       <tr>
        <td>6ecf7607675a8af7cf88b6089efd5ddb</td>
        <td>CVE-2022-34305</td>
-       <td>2022-07-02 20:41:35 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:35</td>
        <td>Apache Tomcat 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=efc283c715894ec69e01032f9e5bd6f4">详情</a></td>
       </tr>
@@ -1734,7 +1758,7 @@
       <tr>
        <td>c277005ce5c34f4fd57f1b37d1919039</td>
        <td>CVE-2022-34170</td>
-       <td>2022-07-02 20:41:31 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:31</td>
        <td>Jenkins 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=59d074b346b04448a0174b08fb482a69">详情</a></td>
       </tr>
@@ -1742,7 +1766,7 @@
       <tr>
        <td>ad4b414e846e1199ecf0c99895e79c78</td>
        <td>CVE-2022-34172</td>
-       <td>2022-07-02 20:41:27 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:27</td>
        <td>Jenkins 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc2e2ddbc7814ee39affae0850bb90e6">详情</a></td>
       </tr>
@@ -1750,7 +1774,7 @@
       <tr>
        <td>71a54061cff37693f1db85e8d3bc9bc1</td>
        <td>CVE-2022-34173</td>
-       <td>2022-07-02 20:41:22 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:22</td>
        <td>Jenkins 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eecb2e1286fc4f51a3ed9e5b2bb4466e">详情</a></td>
       </tr>
@@ -1758,7 +1782,7 @@
       <tr>
        <td>52e095d482150aa19f8dcf9b7a09e6f9</td>
        <td>CVE-2022-34175</td>
-       <td>2022-07-02 20:41:18 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:18</td>
        <td>Jenkins 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a1d35efb3f03450e92343556174732eb">详情</a></td>
       </tr>
@@ -1766,7 +1790,7 @@
       <tr>
        <td>90c36b170b1bbffce0ac528b48a8e576</td>
        <td>CVE-2022-34176</td>
-       <td>2022-07-02 20:41:13 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:13</td>
        <td>Jenkins 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=63ff5db1bc7849e6b9aa56238630612b">详情</a></td>
       </tr>
@@ -1774,7 +1798,7 @@
       <tr>
        <td>d56b26ffc825a336b8624b6834640853</td>
        <td>CVE-2022-34192</td>
-       <td>2022-07-02 20:41:09 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:09</td>
        <td>Jenkins和Jenkins Plugin 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad66590e876e4b21a4307c3bddccfe0b">详情</a></td>
       </tr>
@@ -1782,7 +1806,7 @@
       <tr>
        <td>fe48d7b341e965496b7a86bae4b9824c</td>
        <td>CVE-2022-34195</td>
-       <td>2022-07-02 20:41:05 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:05</td>
        <td>Jenkins和Jenkins Plugin 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=132e4d5074df4149b4d6eeb1dd7937ee">详情</a></td>
       </tr>
@@ -1790,7 +1814,7 @@
       <tr>
        <td>11dcd799e9dfc7979405aa79413f2d65</td>
        <td>CVE-2022-34198</td>
-       <td>2022-07-02 20:41:00 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:41:00</td>
        <td>Jenkins Plugin Stash Branch Parameter 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=618e08604be94f59981d63144e337bf1">详情</a></td>
       </tr>
@@ -1798,7 +1822,7 @@
       <tr>
        <td>a77484d626aacf204ce256e59bb98479</td>
        <td>CVE-2022-2182</td>
-       <td>2022-07-02 20:40:55 <img src="imgs/new.gif" /></td>
+       <td>2022-07-02 20:40:55</td>
        <td>Vim 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=920dd9c247af4817b833c2049ef774e5">详情</a></td>
       </tr>
@@ -1889,30 +1913,6 @@
        <td>2022-06-30 20:32:23</td>
        <td>Knot Resolver 其他漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f36d7ee18a8f4c16a9b7876767f4eeb8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>913eafedcbc1f61ac60e110a08361479</td>
-       <td>CVE-2022-2125</td>
-       <td>2022-06-30 20:32:18</td>
-       <td>Vim 其他漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=773d273bcb9e4eb4bd930af0ccf060be">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39d56550691222ad6fc1e715c9ce1f8b</td>
-       <td>CVE-2022-33913</td>
-       <td>2022-06-30 20:32:14</td>
-       <td>Mahara 其他漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bcf59e8f9a274383ba1ac45594fa0292">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a5ba58dbf1a4ed591a095484b863f48f</td>
-       <td>CVE-2021-41654</td>
-       <td>2022-06-30 20:32:09</td>
-       <td>WUZHI CMS SQL注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=89555dadec734bc9b5214a99a1cd398f">详情</a></td>
       </tr>
 
      </tbody>
