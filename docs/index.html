@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-07-11 05:42:36 -->
+<!-- RELEASE TIME : 2022-07-11 23:38:44 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>f55243969d39f81ef413605a81e351ee</td>
+       <td></td>
+       <td>2022-07-11 06:37:28 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 (07.04-07.10)</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=1dc76c73ceb60789566d6f30c9c09c79">详情</a></td>
+      </tr>
+
       <tr>
        <td>eb544fa413df95f82a20dc53e87beb66</td>
        <td>CVE-2022-2274</td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=840995a8f77b07fdd0b433401081dc03">详情</a></td>
       </tr>
 
-      <tr>
-       <td>7f540b1dbbe25045f70683a01ea68166</td>
-       <td></td>
-       <td>2022-04-11 07:07:10</td>
-       <td>安全事件周报 (04-04 ~ 04-10)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=8bea961382a5490e81754e1b6952dd92">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>bd32b94426ba9051390f74c9c298c97d</td>
+       <td>CVE-2022-31080</td>
+       <td>2022-07-11 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, a large response received by the viaduct WSClient can cause a DoS from memory exhaustion. The entire body of the response is being read into memory which could allow an attacker to send a request that returns a response with a large body. The consequence of the exhaustion is that the process which invokes a WSClient will be in a denial of service. The software is affected If users who are authenticated to the edge side connect to `cloudhub` from the edge side through WebSocket protocol. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. There are currently no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c74b18023f143114906afe20fe06b05e</td>
+       <td>CVE-2022-31079</td>
+       <td>2022-07-11 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, the Cloud Stream server and the Edge Stream server reads the entire message into memory without imposing a limit on the size of this message. An attacker can exploit this by sending a large message to exhaust memory and cause a DoS. The Cloud Stream server and the Edge Stream server are under DoS attack in this case. The consequence of the exhaustion is that the CloudCore and EdgeCore will be in a denial of service. Only an authenticated user can cause this issue. It will be affected only when users enable `cloudStream` module in the config file `cloudcore.yaml` and enable `edgeStream` module in the config file `edgecore.yaml`. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. As a workaround, disable cloudStream module in the config file `cloudcore.yaml` and disable edgeStream module in the config file `edgecore.yaml`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09bf70a76fc7183ba99459c37e60d405</td>
+       <td>CVE-2022-31078</td>
+       <td>2022-07-11 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, the CloudCore Router does not impose a limit on the size of responses to requests made by the REST handler. An attacker could use this weakness to make a request that will return an HTTP response with a large body and cause DoS of CloudCore. In the HTTP Handler API, the rest handler makes a request to a pre-specified handle. The handle will return an HTTP response that is then read into memory. The consequence of the exhaustion is that CloudCore will be in a denial of service. Only an authenticated user of the cloud can make an attack. It will be affected only when users enable `router` module in the config file `cloudcore.yaml`. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. As a workaround, disable the router switch in the config file `cloudcore.yaml`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31078">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bb6b373c433eb291a372fb68cc7c8aa</td>
+       <td>CVE-2022-31075</td>
+       <td>2022-07-11 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, EdgeCore may be susceptible to a DoS attack on CloudHub if an attacker was to send a well-crafted HTTP request to `/edge.crt`. If an attacker can send a well-crafted HTTP request to CloudHub, and that request has a very large body, that request can crash the HTTP service through a memory exhaustion vector. The request body is being read into memory, and a body that is larger than the available memory can lead to a successful attack. Because the request would have to make it through authorization, only authorized users may perform this attack. The consequence of the exhaustion is that CloudHub will be in denial of service. KubeEdge is affected only when users enable the CloudHub module in the file `cloudcore.yaml`. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. As a workaround, disable the CloudHub switch in the config file `cloudcore.yaml`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31075">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61cda97832cc01c30ec2f44eefef72f7</td>
+       <td>CVE-2022-31140</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Valinor is a PHP library that helps to map any input into a strongly-typed value object structure. Prior to version 0.12.0, Valinor can use `Throwable#getMessage()` when it should not have permission to do so. This is a problem with cases such as an SQL exception showing an SQL snippet, a database connection exception showing database IP address/username/password, or a timeout detail / out of memory detail. Attackers could use this information for potential data exfiltration, denial of service attacks, enumeration attacks, etc. Version 0.12.0 contains a patch for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31140">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7846c1b549971244489e78f6e235f9f3</td>
+       <td>CVE-2022-31074</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, several endpoints in the Cloud AdmissionController may be susceptible to a DoS attack if an HTTP request containing a very large Body is sent to it. The consequence of the exhaustion is that the Cloud AdmissionController will be in denial of service. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. There is currently no known workaround.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31074">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2099a5ea5cd471707606e149fb38d8e1</td>
+       <td>CVE-2022-31073</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. Prior to versions 1.11.1, 1.10.2, and 1.9.4, the ServiceBus server on the edge side may be susceptible to a DoS attack if an HTTP request containing a very large Body is sent to it. It is possible for the node to be exhausted of memory. The consequence of the exhaustion is that other services on the node, e.g. other containers, will be unable to allocate memory and thus causing a denial of service. Malicious apps accidentally pulled by users on the host and have the access to send HTTP requests to localhost may make an attack. It will be affected only when users enable the `ServiceBus` module in the config file `edgecore.yaml`. This bug has been fixed in Kubeedge 1.11.1, 1.10.2, and 1.9.4. As a workaround, disable the `ServiceBus` module in the config file `edgecore.yaml`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31073">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>76b31c9280f4e4bff1087693042e498a</td>
+       <td>CVE-2020-35169</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite,versions before 4.5.2, contain an Improper Input Validation Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-35169">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3177e49b0fe9391d2284b0b5f9497f89</td>
+       <td>CVE-2020-35168</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite,versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-35168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f472439beaea7f28a5536ace2ab0eb9</td>
+       <td>CVE-2020-35167</td>
+       <td>2022-07-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite,versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-35167">详情</a></td>
+      </tr>
+
       <tr>
        <td>5d3f1fcf5f8bceff82082025bbddb6f5</td>
        <td>CVE-2022-2365</td>
@@ -441,86 +521,6 @@
        <td>2022-07-07 22:15:00</td>
        <td>AdminLTE is a Pi-hole Dashboard for stats and configuration. In affected versions inserting code like `<script>alert("XSS")</script>` in the field marked with "Domain to look for" and hitting <kbd>enter</kbd> (or clicking on any of the buttons) will execute the script. The user must be logged in to use this vulnerability. Usually only administrators have login access to pi-hole, minimizing the risks. Users are advised to upgrade. There are no known workarounds for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31029">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ae357e660b4577eee4c62035efe08de</td>
-       <td>CVE-2022-2191</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>In Eclipse Jetty versions 10.0.0 thru 10.0.9, and 11.0.0 thru 11.0.9 versions, SslConnection does not release ByteBuffers from configured ByteBufferPool in case of error code paths.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2191">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02ae6b2304e2cdbab9badf39af30399b</td>
-       <td>CVE-2022-2048</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>In Eclipse Jetty HTTP/2 server implementation, when encountering an invalid HTTP/2 request, the error handling has a bug that can wind up not properly cleaning up the active connections and associated resources. This can lead to a Denial of Service scenario where there are no enough resources left to process good requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a10ef373741bed54d213cc4fcebc4b96</td>
-       <td>CVE-2022-2047</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>In Eclipse Jetty versions 9.4.0 thru 9.4.46, and 10.0.0 thru 10.0.9, and 11.0.0 thru 11.0.9 versions, the parsing of the authority segment of an http scheme URI, the Jetty HttpURI class improperly detects an invalid input as a hostname. This can lead to failures in a Proxy scenario.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>00fa27eb418098d46d5b3b07007d8fae</td>
-       <td>CVE-2021-41042</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>In Eclipse Lyo versions 1.0.0 to 4.1.0, a TransformerFactory is initialized with the defaults that do not restrict DTD loading when working with RDF/XML. This allows an attacker to cause an external DTD to be retrieved.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-41042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>030f7ffb8a8fb3970e2c6bbf6c9394bc</td>
-       <td>CVE-2021-35283</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>SQL Injection vulnerability in product_admin.php in atoms183 CMS 1.0, allows attackers to execute arbitrary commands via the Name, Fname, and ID parameters to search.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-35283">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de2e9121e566265e3de73080ffaae9dd</td>
-       <td>CVE-2021-29281</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>File upload vulnerability in GFI Mail Archiver versions up to and including 15.1 via insecure implementation of Telerik Web UI plugin which is affected by CVE-2014-2217, and CVE-2017-11317.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-29281">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fe6a681291e2e525d5265467ab7505f</td>
-       <td>CVE-2020-27732</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2020. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-27732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>461bfded103bbe9abd09a0a43506681c</td>
-       <td>CVE-2020-27731</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2020. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-27731">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f022f4357edbc27fda0eaba658ff0801</td>
-       <td>CVE-2020-25591</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2020. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-25591">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>126c856ab662c2b6dae4b3d32c3a9520</td>
-       <td>CVE-2020-25590</td>
-       <td>2022-07-07 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2020. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-25590">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b036e7dfba2a18c7aaff49eea3534894</td>
+       <td>CNNVD-202207-687 (CVE-2022-27910)</td>
+       <td>2022-07-10 23:38:23 <img src="imgs/new.gif" /></td>
+       <td>Joomlatools DOCman 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-687">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad22bdb2cd8d0eb108b64835aeaef2c5</td>
+       <td>CNNVD-202207-688 (CVE-2022-2365)</td>
+       <td>2022-07-10 23:38:21 <img src="imgs/new.gif" /></td>
+       <td>Trilium Notes 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-688">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66156c33d5a079df2d350a45dd00fcd0</td>
+       <td>CNNVD-202207-686 (CVE-2022-2353)</td>
+       <td>2022-07-09 23:38:26</td>
+       <td>Microweber 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-686">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6849a7d661f0cb4d578d248ae2df63fa</td>
+       <td>CNNVD-202207-678 (CVE-2022-32215)</td>
+       <td>2022-07-08 23:38:43</td>
+       <td>Node.js 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-678">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5a006385cb6944a30e0f1da9e02496d</td>
+       <td>CNNVD-202207-679 (CVE-2022-31627)</td>
+       <td>2022-07-08 23:38:40</td>
+       <td>PHP 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-679">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4b458dc4abbae1ded53394102e377e7</td>
+       <td>CNNVD-202207-680 (CVE-2022-34866)</td>
+       <td>2022-07-08 23:38:38</td>
+       <td>Yokogawa Rental & Lease Passage Drive 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-680">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbf91b00e2d3c04bb0ae3cf787227874</td>
+       <td>CNNVD-202207-681 (CVE-2022-2345)</td>
+       <td>2022-07-08 23:38:36</td>
+       <td>Vim 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-681">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd9eb8612f30cb00b3b7ea66dce27add</td>
+       <td>CNNVD-202207-682 (CVE-2022-32222)</td>
+       <td>2022-07-08 23:38:33</td>
+       <td>Node.js 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-682">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3ce53485f9889f4245036630005cc572</td>
+       <td>CNNVD-202207-683 (CVE-2022-32213)</td>
+       <td>2022-07-08 23:38:31</td>
+       <td>Node.js 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-683">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d7e47add7ec0d58d8b35d6cca176f6e</td>
+       <td>CNNVD-202207-684 (CVE-2022-32212)</td>
+       <td>2022-07-08 23:38:28</td>
+       <td>Node.js 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-684">详情</a></td>
+      </tr>
+
+      <tr>
        <td>64338fe6c1feaf831272dc23806861cc</td>
        <td>CNNVD-202207-606 (CVE-2021-41042)</td>
        <td>2022-07-07 23:38:48</td>
@@ -953,86 +1033,6 @@
        <td>2022-07-06 23:39:02</td>
        <td>Google Android 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-536">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16e64479dc87168bf4b36dd9c06277d1</td>
-       <td>CNNVD-202207-410 (CVE-2022-26118)</td>
-       <td>2022-07-05 23:38:26</td>
-       <td>Fortinet FortiManager 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-410">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc5adfc50cd02c63d93a5d3f73863e73</td>
-       <td>CNNVD-202207-411 (CVE-2022-34737)</td>
-       <td>2022-07-05 23:38:24</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-411">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a0f93668cf6b8a51207a8f12c3d7d16a</td>
-       <td>CNNVD-202207-412 (CVE-2022-34738)</td>
-       <td>2022-07-05 23:38:21</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-412">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0649e691b9ecf10a08d2ab56e5b04da2</td>
-       <td>CNNVD-202207-413 (CVE-2022-32413)</td>
-       <td>2022-07-05 23:38:19</td>
-       <td>Dice 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ddf37f09e678df46d52efd5f23865bc</td>
-       <td>CNNVD-202207-414 (CVE-2022-34742)</td>
-       <td>2022-07-05 23:38:17</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-414">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f2d17d600cf02c258cfa27dbd6b3068</td>
-       <td>CNNVD-202207-415 (CVE-2022-32311)</td>
-       <td>2022-07-05 23:38:14</td>
-       <td>Stock Management System 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-415">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f91381e6dbcc13072dc91eec3610a927</td>
-       <td>CNNVD-202207-416 (CVE-2022-31770)</td>
-       <td>2022-07-05 23:38:12</td>
-       <td>IBM App Connect Enterprise 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-416">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c265aa32b0a952811767901c8738319</td>
-       <td>CNNVD-202207-417 (CVE-2022-34743)</td>
-       <td>2022-07-05 23:38:10</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-417">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aec04f716dad7a178706f5fffc9a0433</td>
-       <td>CNNVD-202207-418 (CVE-2022-31836)</td>
-       <td>2022-07-05 23:38:07</td>
-       <td>Beego 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-418">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5287845f2e9107803a4af5c95548fce4</td>
-       <td>CNNVD-202207-419 (CVE-2022-34736)</td>
-       <td>2022-07-05 23:38:05</td>
-       <td>HUAWEI HarmonyOS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-419">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>64678461071f111444de0a719d65e10f</td>
+       <td>CVE-2022-2284</td>
+       <td>2022-07-11 19:58:51 <img src="imgs/new.gif" /></td>
+       <td>Vim 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=692c05c84327462f89b4b28b5bca0e47">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f120b531c48bd7fab5d9ae313ef736fc</td>
+       <td>CVE-2022-2286</td>
+       <td>2022-07-11 19:58:47 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8bc42be6c0894d5ebb599d7310cf6a21">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8a25fc2c2d5226b5494c4fce5143ac9e</td>
+       <td>CVE-2022-1983</td>
+       <td>2022-07-11 19:58:38 <img src="imgs/new.gif" /></td>
+       <td>GitLab 授权问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f68c4e6c1ae84d33bd79f7c9247a7b80">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cee2ef02f2075469695ab7795c607bd1</td>
+       <td>CVE-2022-2227</td>
+       <td>2022-07-11 19:58:33 <img src="imgs/new.gif" /></td>
+       <td>GitLab 访问控制错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad06b32cef3b4a4bb03fe3dc7e7401f9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e27a4881316abeadceb1d472370ab0b</td>
+       <td>CVE-2022-22373</td>
+       <td>2022-07-11 19:58:29 <img src="imgs/new.gif" /></td>
+       <td>IBM InfoSphere Information Server 访问控制错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8671c8e711994b8583b4ec277eea3928">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2ea55d3a6d5703cabd4fbb83c88c612</td>
+       <td>CVE-2021-38954</td>
+       <td>2022-07-11 19:58:24 <img src="imgs/new.gif" /></td>
+       <td>IBM Sterling B2B Integrator 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=df34cca37f2b48ef8794bfb7ddb6197a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6675201bff5009817a8a41069822856e</td>
+       <td>CVE-2022-1852</td>
+       <td>2022-07-11 19:58:20 <img src="imgs/new.gif" /></td>
+       <td>Linux kernel 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6dee01d9658c4a73b4d6a0b069ffe07f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd5eedf9998685fce84cc236faa9c5b5</td>
+       <td>CVE-2022-2285</td>
+       <td>2022-07-11 19:58:16 <img src="imgs/new.gif" /></td>
+       <td>Vim 输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=95ce5eb62d634baf935abb3b27cfbdd0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b9cd27787ef4443d36ac2dd294aa5e5</td>
+       <td>CVE-2022-22496</td>
+       <td>2022-07-11 19:58:11 <img src="imgs/new.gif" /></td>
+       <td>IBM Spectrum Protect Server 安全特征问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2899dfb67b5a4d5a9f59bcd95b5ee6da">详情</a></td>
+      </tr>
+
+      <tr>
        <td>46f44d215221598197f0cf61d1e518b6</td>
        <td>CVE-2022-22487</td>
        <td>2022-07-10 20:09:45 <img src="imgs/new.gif" /></td>
@@ -1841,78 +1913,6 @@
        <td>2022-07-08 20:14:09</td>
        <td>CODESYS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b3f29240c5a84bf7a432257911a92d5e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>312d2d9a99c5ab83b4f00b03bdda7c28</td>
-       <td>CVE-2021-25246</td>
-       <td>2022-07-07 20:33:21</td>
-       <td>多款 Trend Micro 产品访问控制错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c048a9d57c9e4be7b50e920c537a7cff">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebbf0a687b11bd645bb36cc72dfceb6d</td>
-       <td>CVE-2021-20409</td>
-       <td>2022-07-07 20:33:12</td>
-       <td>IBM Security Verify Information Queue 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f33ad375792e4825a1f6dfe1fa41f019">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f91ca4226f5e8cffe2725abdc9196662</td>
-       <td>CVE-2022-30028</td>
-       <td>2022-07-06 20:33:00</td>
-       <td>Dradis 竞争条件问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=03e02fba0a8d46c8b8dc67ae2bfa8dfd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>336c52bcabe6bf7490a95aa6a9c83106</td>
-       <td>CVE-2022-34171</td>
-       <td>2022-07-06 20:31:54</td>
-       <td>Jenkins 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3560708bb03b42d48d8c17e9ff7ed0cd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e06b08eaa0d0e9b268a21ebf01e9f620</td>
-       <td>CVE-2022-34174</td>
-       <td>2022-07-06 20:31:45</td>
-       <td>Jenkins 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=96c3eaf01e4d434caacd8a02f7cb031f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5668e84988d37820d2138891e65212a3</td>
-       <td>CVE-2022-34192</td>
-       <td>2022-07-06 20:31:35</td>
-       <td>Jenkins Plugin ontrack Jenkins 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad66590e876e4b21a4307c3bddccfe0b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc3b48015511cdd8242040fc89ea6895</td>
-       <td>CVE-2021-25234</td>
-       <td>2022-07-05 20:38:57</td>
-       <td>多款 Trend Micro 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c9a66ba41ede4434ad688c13f8b8a407">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5828e757fd96fecd574387a9510c816</td>
-       <td>CVE-2022-30028</td>
-       <td>2022-07-04 20:36:32</td>
-       <td>Dradis 路径遍历漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=03e02fba0a8d46c8b8dc67ae2bfa8dfd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ad89cf2c008072d15e9c2c8a5b2e2ca</td>
-       <td>CVE-2022-34213</td>
-       <td>2022-07-04 20:36:08</td>
-       <td>Jenkins Plugin Squash TM Publisher 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0811a48515fe480abd7dcf03ff28e1ff">详情</a></td>
       </tr>
 
      </tbody>
@@ -2188,6 +2188,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>420ec158e16ae74c7445e6e6e84b3014</td>
+       <td>CVE-2022-34894</td>
+       <td>2022-07-01 10:15:10 </td>
+       <td>In JetBrains Hub before 2022.2.14799, insufficient access control allowed the hijacking of untrusted services</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-34894">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1811b9c62e4c9d541b77d36cfe84f4c5</td>
        <td>CVE-2022-34818</td>
        <td>2022-06-30 18:15:15 </td>
@@ -2417,14 +2425,6 @@
        <td>2022-06-24 21:15:08 </td>
        <td>The DR-Web-Engine package in PyPI v0.2.0b0 was discovered to contain a code execution backdoor via the request package. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-34053">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4242f29084fa62b5cd7fcb66e0ce1ad2</td>
-       <td>CVE-2022-33004</td>
-       <td>2022-06-24 21:15:08 </td>
-       <td>The Beginner package in PyPI v0.0.2 to v0.0.4 was discovered to contain a code execution backdoor via the request package. This vulnerability allows attackers to access sensitive user information and digital currency keys, as well as escalate privileges.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-33004">详情</a></td>
       </tr>
 
      </tbody>
