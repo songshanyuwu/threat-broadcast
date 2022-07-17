@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-07-17 05:38:33 -->
+<!-- RELEASE TIME : 2022-07-17 23:38:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc2ba958f078729987a6eb77fdb4d264</td>
+       <td>CVE-2022-30550</td>
+       <td>2022-07-17 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the auth component in Dovecot 2.2 and 2.3 before 2.3.20. When two passdb configuration entries exist with the same driver and args settings, incorrect username_filter and mechanism settings can be applied to passdb definitions. These incorrectly applied settings can lead to an unintended security configuration and can permit privilege escalation in certain configurations. The documentation does not advise against the use of passdb definitions that have the same driver and args settings. One such configuration would be where an administrator wishes to use the same PAM configuration or passwd file for both normal and master users but use the username_filter setting to restrict which of the users is able to be a master user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30550">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>584fa1be6a1ec832839d3d2a263363d9</td>
+       <td>CVE-2022-35861</td>
+       <td>2022-07-17 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>pyenv 1.2.24 through 2.3.2 allows local users to gain privileges via a .python-version file in the current working directory. An attacker can craft a Python version string in .python-version to execute shims under their control. (Shims are executables that pass a command along to a specific version of pyenv. The version string is used to construct the path to the command, and there is no validation of whether the version specified is a valid version. Thus, relative path traversal can occur.)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35861">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>083d40d0938d833866b4b3a4be02bcd9</td>
+       <td>CVE-2022-32320</td>
+       <td>2022-07-17 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Cross-Site Request Forgery (CSRF) in Ferdi through 5.8.1 and Ferdium through 6.0.0-nightly.98 allows attackers to read files via an uploaded file such as a settings/preferences file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32320">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>238182334601606315de2f5ad1ca9535</td>
+       <td>CVE-2022-2222</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Download Monitor WordPress plugin before 4.5.91 does not ensure that files to be downloaded are inside the blog folders, and not sensitive, allowing high privilege users such as admin to download the wp-config.php or /etc/passwd even in an hardened environment or multisite setup.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2222">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>015396ab5c22f95632d67d346b6c03a5</td>
+       <td>CVE-2022-2194</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Accept Stripe Payments WordPress plugin before 2.0.64 does not sanitize and escape some of its settings, allowing high privilege users such as admin to perform cross-Site Scripting attacks even when the unfiltered_html capability is disallowed.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2194">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14bda315bcb5e2f20edfdcccc42143c1</td>
+       <td>CVE-2022-2187</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Contact Form 7 Captcha WordPress plugin before 0.1.2 does not escape the $_SERVER['REQUEST_URI'] parameter before outputting it back in an attribute, which could lead to Reflected Cross-Site Scripting in old web browsers</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2187">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d1322205f4faf7bc76622056dc82b45</td>
+       <td>CVE-2022-2186</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple Post Notes WordPress plugin before 1.7.6 does not sanitise and escape its settings, allowing high privilege users such as admin to perform cross-Site Scripting attacks even when the unfiltered_html capability is disallowed.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2186">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84e5a7ad53bb384cd1472913b3980c15</td>
+       <td>CVE-2022-2173</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Advanced Database Cleaner WordPress plugin before 3.1.1 does not escape numerous generated URLs before outputting them back in href attributes of admin dashboard pages, leading to Reflected Cross-Site Scripting</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfa706b90f1b40c0ae9c099666051fb8</td>
+       <td>CVE-2022-2169</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Loading Page with Loading Screen WordPress plugin before 1.0.83 does not escape its settings, allowing high privilege users such as admin to perform cross-Site Scripting attacks even when the unfiltered_html capability is disallowed.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2169">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bd64e978ffc3a1d004e3218aef4d141</td>
+       <td>CVE-2022-2168</td>
+       <td>2022-07-17 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Download Manager WordPress plugin before 3.2.44 does not escape a generated URL before outputting it back in an attribute of the history dashboard, leading to Reflected Cross-Site Scripting</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2168">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fc89e795b68aba9e23eca4d75387f7be</td>
        <td>CVE-2022-36126</td>
        <td>2022-07-16 19:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-07-15 21:15:00</td>
        <td>Roxy-WI is a Web interface for managing HAProxy, Nginx and Keepalived servers. Prior to version 6.1.1.0, the system command can be run remotely via the subprocess_execute function without processing the inputs received from the user in the /app/options.py file. Version 6.1.1.0 contains a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31161">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b14894fe48425007b127fbe605ef688d</td>
-       <td>CVE-2021-34987</td>
-       <td>2022-07-15 19:15:00</td>
-       <td>This vulnerability allows local attackers to escalate privileges on affected installations of Parallels Desktop 16.5.1 (49187). An attacker must first obtain the ability to execute high-privileged code on the target guest system in order to exploit this vulnerability.The specific flaw exists within the HDAudio virtual device. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length buffer. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the hypervisor. Was ZDI-CAN-14969.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-34987">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce8579bc0b7f4debcce3b00006a6863b</td>
-       <td>CVE-2021-34986</td>
-       <td>2022-07-15 19:15:00</td>
-       <td>This vulnerability allows local attackers to escalate privileges on affected installations of Parallels Desktop 16.5.0 (49183). An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.The specific flaw exists within the Parallels Service. By creating a symbolic link, an attacker can abuse the service to execute a file. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of root. Was ZDI-CAN-13932.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-34986">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c364f01481d4ffa213426c0f6af8686f</td>
-       <td>CVE-2022-31159</td>
-       <td>2022-07-15 18:15:00</td>
-       <td>The AWS SDK for Java enables Java developers to work with Amazon Web Services. A partial-path traversal issue exists within the `downloadDirectory` method in the AWS S3 TransferManager component of the AWS SDK for Java v1 prior to version 1.12.261. Applications using the SDK control the `destinationDirectory` argument, but S3 object keys are determined by the application that uploaded the objects. The `downloadDirectory` method allows the caller to pass a filesystem object in the object key but contained an issue in the validation logic for the key name. A knowledgeable actor could bypass the validation logic by including a UNIX double-dot in the bucket key. Under certain conditions, this could permit them to retrieve a directory from their S3 bucket that is one level up in the filesystem from their working directory. This issue’s scope is limited to directories whose name prefix matches the destinationDirectory. E.g. for destination directory`/tmp/foo`, the actor can cause a download to `/tmp/foo-bar`, but not `/tmp/bar`. If `com.amazonaws.services.s3.transfer.TransferManager::downloadDirectory` is used to download an untrusted buckets contents, the contents of that bucket can be written outside of the intended destination directory. Version 1.12.261 contains a patch for this issue. As a workaround, when calling `com.amazonaws.services.s3.transfer.TransferManager::downloadDirectory`, pass a `KeyFilter` that forbids `S3ObjectSummary` objects that `getKey` method return a string containing the substring `..` .</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31159">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f478df686c63d35f4f984a2d9cd221bd</td>
-       <td>CVE-2022-31158</td>
-       <td>2022-07-15 18:15:00</td>
-       <td>LTI 1.3 Tool Library is a library used for building IMS-certified LTI 1.3 tool providers in PHP. Prior to version 5.0, the Nonce Claim Value was not being validated against the nonce value sent in the Authentication Request. Users should upgrade to version 5.0 to receive a patch. There are currently no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31158">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6316ff4d8b56a21e75409ff0320ddf3</td>
-       <td>CVE-2022-31157</td>
-       <td>2022-07-15 18:15:00</td>
-       <td>LTI 1.3 Tool Library is a library used for building IMS-certified LTI 1.3 tool providers in PHP. Prior to version 5.0, the function used to generate random nonces was not sufficiently cryptographically complex. Users should upgrade to version 5.0 to receive a patch. There are currently no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31157">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87d39a13607108747e8fd7a8250bccef</td>
-       <td>CVE-2022-31153</td>
-       <td>2022-07-15 18:15:00</td>
-       <td>OpenZeppelin Contracts for Cairo is a library for contract development written in Cairo for StarkNet, a decentralized ZK Rollup. Version 0.2.0 is vulnerable to an error that renders account contracts unusable on live networks. This issue affects all accounts (vanilla and ethereum flavors) in the v0.2.0 release of OpenZeppelin Contracts for Cairo, which are not whitelisted on StarkNet mainnet. Only goerli deployments of v0.2.0 accounts are affected. This faulty behavior is not observed in StarkNet's testing framework. This bug has been patched in v0.2.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31153">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39d1635858f18897a0759945a500f40d</td>
-       <td>CVE-2022-34252</td>
-       <td>2022-07-15 16:15:00</td>
-       <td>Adobe InCopy versions 17.2 (and earlier) and 16.4.1 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34252">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>552912de05fe63bf0e6788639571712d</td>
-       <td>CVE-2022-34251</td>
-       <td>2022-07-15 16:15:00</td>
-       <td>Adobe InCopy versions 17.2 (and earlier) and 16.4.1 (and earlier) are affected by an Out-Of-Bounds Write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a8f0a13bd8bcaf233818c96ca14f2a05</td>
-       <td>CVE-2022-34250</td>
-       <td>2022-07-15 16:15:00</td>
-       <td>Adobe InCopy versions 17.2 (and earlier) and 16.4.1 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a33a5eb072e04ed12e41b99dcb5a986</td>
-       <td>CVE-2022-34249</td>
-       <td>2022-07-15 16:15:00</td>
-       <td>Adobe InCopy versions 17.2 (and earlier) and 16.4.1 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34249">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4dd8f61c64a574fd9f7d677f55e14f62</td>
+       <td>CVE-2021-27173</td>
+       <td>2022-07-17 20:41:33 <img src="imgs/new.gif" /></td>
+       <td>FiberHome HG6245D devices 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c84770fff2dd4474b556819d9c1a3011">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>64037c959724e66c6ca73c3ab620617a</td>
+       <td>CVE-2022-32206</td>
+       <td>2022-07-17 20:41:24 <img src="imgs/new.gif" /></td>
+       <td>curl 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea636084aa7a46659db9358a83c890dc">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a5529de18a0e3502bffc514ee017683</td>
+       <td>CVE-2021-20623</td>
+       <td>2022-07-17 20:41:20 <img src="imgs/new.gif" /></td>
+       <td>Panasonic Video Insight VMS 代码注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c59b4e85f9ac4a74b30985d46a8b612b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad1a7e8ac43e8f9e71b529398ddb4e88</td>
+       <td>CVE-2022-32205</td>
+       <td>2022-07-17 20:41:15 <img src="imgs/new.gif" /></td>
+       <td>curl 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0ba9d551cb3646a2b4d723ee7c47ffc8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4867e320cd032a96cede8dceb42d28e1</td>
+       <td>CVE-2022-32441</td>
+       <td>2022-07-17 20:41:11 <img src="imgs/new.gif" /></td>
+       <td>Hex Rays Ida Pro 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=393ec21e3de44d28a31d8d58fa2e2c28">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b8772e0647d0ea1e746d722e0597fbf6</td>
+       <td>CVE-2021-21474</td>
+       <td>2022-07-17 20:41:06 <img src="imgs/new.gif" /></td>
+       <td>SAP HANA Database 加密问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=284cc028330f4b428ab2b1888a5ca5a4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfa598cc25996bf7c25d8622f86868f3</td>
+       <td>CVE-2022-32208</td>
+       <td>2022-07-17 20:41:01 <img src="imgs/new.gif" /></td>
+       <td>curl 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a7d868f597c74f03bb9a405519d7127b">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a8e797ee3dbace4424205e64210328ef</td>
        <td>CVE-2021-31676</td>
        <td>2022-07-16 22:23:35 <img src="imgs/new.gif" /></td>
@@ -1857,62 +1913,6 @@
        <td>2022-07-14 22:21:39</td>
        <td>MariaDB 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=25eaa75680b5407794fd0a04ccac99af">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53b67d9bb23fbc4a714de180fb3c52ae</td>
-       <td>CVE-2022-32084</td>
-       <td>2022-07-14 22:21:34</td>
-       <td>MariaDB 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2c19c53e317a4316a563d3d3cd9b860a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ca5428551843a39705a312a3edee13a</td>
-       <td>CVE-2022-32087</td>
-       <td>2022-07-14 22:21:28</td>
-       <td>MariaDB 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b941a931969a4c1fabecba786e15aca2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c94bd3ff53ce64e3c3904049d0bd1bd6</td>
-       <td>CVE-2022-32091</td>
-       <td>2022-07-14 22:21:23</td>
-       <td>MariaDB 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f752f27c283246cbaab99ec70e73e4e9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>415b8f5c55ef71f8883de69543bfcb36</td>
-       <td>CVE-2022-2078</td>
-       <td>2022-07-13 20:06:56</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=536e70bc0b4e474c83c618a0f48c1d5e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f968177cf90221420b4b9db76a4ce8c</td>
-       <td>CVE-2021-38954</td>
-       <td>2022-07-13 20:06:52</td>
-       <td>IBM Sterling B2B Integrator 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=df34cca37f2b48ef8794bfb7ddb6197a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>34a2711df278fbc1b8073fef192c69f8</td>
-       <td>CVE-2022-2287</td>
-       <td>2022-07-12 20:07:24</td>
-       <td>Vim 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c50161370f0a46c1847f46e6b7fd46d5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1cddcc0eba5278adf37b6dac5af0cdd8</td>
-       <td>CVE-2022-2185</td>
-       <td>2022-07-12 20:07:14</td>
-       <td>GitLab 命令注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fe95eab4677b4f4cbc164c178b753b15">详情</a></td>
       </tr>
 
      </tbody>
@@ -2300,6 +2300,86 @@
       </tr>
 
       <tr>
+       <td>cc540f9d2075b3f6b9a9dd351294758b</td>
+       <td>CVE-2022-31541</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The lyubolp/Barry-Voice-Assistant repository through 2021-01-18 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31541">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef0506ee87942e4b0b4091eea77038ad</td>
+       <td>CVE-2022-31540</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The kumardeepak/hin-eng-preprocessing repository through 2019-07-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31540">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9bd0e4598861b9814eefc17df4465016</td>
+       <td>CVE-2022-31539</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The kotekan/kotekan repository through 2021.11 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31539">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa41597fe4258e18133e8159f4acd0c2</td>
+       <td>CVE-2022-31538</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The joaopedro-fg/mp-m08-interface repository through 2020-12-10 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31538">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dafb1dd005a1bb6d92dedd27f4116fa9</td>
+       <td>CVE-2022-31537</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The jmcginty15/Solar-system-simulator repository through 2021-07-26 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31537">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6f3334ca83462ed7bedc9ee32ae92bd</td>
+       <td>CVE-2022-31536</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The jaygarza1982/ytdl-sync repository through 2021-01-02 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31536">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbd8e9b7010aa098a967ee9d40d3c1d1</td>
+       <td>CVE-2022-31535</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The freefood89/Fishtank repository through 2015-06-24 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31535">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>924f45cff4dbf9740c951aa9a90c9e8d</td>
+       <td>CVE-2022-31534</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The echoleegroup/PythonWeb repository through 2018-10-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31534">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4298f6123525506a1bf7f5a460c740a</td>
+       <td>CVE-2022-31533</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The decentraminds/umbral repository through 2020-01-15 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31533">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>adcdf45190c4cfb3dcad1c70f0a2bcfc</td>
+       <td>CVE-2022-31532</td>
+       <td>2022-07-11 01:15:09 </td>
+       <td>The dankolbman/travel_blahg repository through 2016-01-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31532">详情</a></td>
+      </tr>
+
+      <tr>
        <td>45d2733d89054c483dcdfeef060dbb43</td>
        <td>CVE-2022-31517</td>
        <td>2022-07-11 01:15:08 </td>
@@ -2345,86 +2425,6 @@
        <td>2022-07-11 01:15:08 </td>
        <td>The Atom02/flask-mvc repository through 2020-09-14 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5a705cea3743703d51c52a464b55ac5</td>
-       <td>CVE-2022-31511</td>
-       <td>2022-07-11 01:15:08 </td>
-       <td>The AFDudley/equanimity repository through 2014-04-23 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0132f9c821f4d62bd5f434e9c2f1eef9</td>
-       <td>CVE-2022-31510</td>
-       <td>2022-07-11 01:15:08 </td>
-       <td>The sergeKashkin/Simple-RAT repository before 2022-05-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9c3228c4a5f31bb7af5f5b976048646</td>
-       <td>CVE-2022-31509</td>
-       <td>2022-07-11 01:15:08 </td>
-       <td>The iedadata/usap-dc-website repository through 1.0.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09f4e57da48b336e1efc2dad3ec39adf</td>
-       <td>CVE-2022-31508</td>
-       <td>2022-07-11 01:15:08 </td>
-       <td>The idayrus/evoting repository before 2022-05-08 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31508">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>51c046a538676fc4207d255f778d5f31</td>
-       <td>CVE-2022-31136</td>
-       <td>2022-07-07 18:15:09 </td>
-       <td>Bookwyrm is an open source social reading and reviewing program. Versions of Bookwyrm prior to 0.4.1 did not properly sanitize html being rendered to users. Unprivileged users are able to inject scripts into user profiles, book descriptions, and statuses. These vulnerabilities may be exploited as cross site scripting attacks on users viewing these fields. Users are advised to upgrade to version 0.4.1. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31136">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b0efd85286b9bf8991c22914b272c1f</td>
-       <td>CVE-2022-31135</td>
-       <td>2022-07-07 18:15:09 </td>
-       <td>Akashi is an open source server implementation of the Attorney Online video game based on the Ace Attorney universe. Affected versions of Akashi are subject to a denial of service attack. An attacker can use a specially crafted evidence packet to make an illegal modification, causing a server crash. This can be used to mount a denial-of-service exploit. Users are advised to upgrade. There is no known workaround for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31135">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db7b27b7fd4c396a8f833f7dbc449cd5</td>
-       <td>CVE-2022-31133</td>
-       <td>2022-07-07 18:15:09 </td>
-       <td>HumHub is an Open Source Enterprise Social Network. Affected versions of HumHub are vulnerable to a stored Cross-Site Scripting (XSS) vulnerability. For exploitation, the attacker would need a permission to administer the Spaces feature. The names of individual &quot;spaces&quot; are not properly escaped and so an attacker with sufficient privilege could insert malicious javascript into a space name and exploit system users who visit that space. It is recommended that the HumHub is upgraded to 1.11.4, 1.10.5. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31133">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af499db728733cf7d0513410ecd735fc</td>
-       <td>CVE-2022-31121</td>
-       <td>2022-07-07 18:15:09 </td>
-       <td>Hyperledger Fabric is a permissioned distributed ledger framework. In affected versions if a consensus client sends a malformed consensus request to an orderer it may crash the orderer node. A fix has been added in commit 0f1835949 which checks for missing consensus messages and returns an error to the consensus client should the message be missing. Users are advised to upgrade to versions 2.2.7 or v2.4.5. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31121">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>295273bad1473c8c49b035fbeae23740</td>
-       <td>CVE-2022-31131</td>
-       <td>2022-07-06 18:15:19 </td>
-       <td>Nextcloud mail is a Mail app for the Nextcloud home server product. Versions of Nextcloud mail prior to 1.12.2 were found to be missing user account ownership checks when performing tasks related to mail attachments. Attachments may have been exposed to incorrect system users. It is recommended that the Nextcloud Mail app is upgraded to 1.12.2. There are no known workarounds for this issue. ### Workarounds No workaround available ### References * [Pull request](https://github.com/nextcloud/mail/pull/6600) * [HackerOne](https://hackerone.com/reports/1579820) ### For more information If you have any questions or comments about this advisory: * Create a post in [nextcloud/security-advisories](https://github.com/nextcloud/security-advisories/discussions) * Customers: Open a support ticket at [support.nextcloud.com](https://support.nextcloud.com)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31131">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>592dbe73f66cef1ffbe133eef5a645b8</td>
-       <td>CVE-2022-31129</td>
-       <td>2022-07-06 18:15:19 </td>
-       <td>moment is a JavaScript date library for parsing, validating, manipulating, and formatting dates. Affected versions of moment were found to use an inefficient parsing algorithm. Specifically using string-to-date parsing in moment (more specifically rfc2822 parsing, which is tried by default) has quadratic (N^2) complexity on specific inputs. Users may notice a noticeable slowdown is observed with inputs above 10k characters. Users who pass user-provided strings without sanity length checks to moment constructor are vulnerable to (Re)DoS attacks. The problem is patched in 2.29.4, the patch can be applied to all affected versions with minimal tweaking. Users are advised to upgrade. Users unable to upgrade should consider limiting date lengths accepted from user input.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31129">详情</a></td>
       </tr>
 
      </tbody>
