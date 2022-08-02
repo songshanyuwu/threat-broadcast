@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-01 23:43:00 -->
+<!-- RELEASE TIME : 2022-08-02 05:56:36 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>453f2671ce02514c3547cec75d7b4bd4</td>
+       <td>CVE-2022-37315</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>graphql-go (aka GraphQL for Go) through 0.8.0 has infinite recursion in the type definition parser.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37315">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2ec1381a8b6a8f0bb0acf3ed72fa603</td>
+       <td>CVE-2022-35922</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Rust-WebSocket is a WebSocket (RFC6455) library written in Rust. In versions prior to 0.26.5 untrusted websocket connections can cause an out-of-memory (OOM) process abort in a client or a server. The root cause of the issue is during dataframe parsing. Affected versions would allocate a buffer based on the declared dataframe size, which may come from an untrusted source. When `Vec::with_capacity` fails to allocate, the default Rust allocator will abort the current process, killing all threads. This affects only sync (non-Tokio) implementation. Async version also does not limit memory, but does not use `with_capacity`, so DoS can happen only when bytes for oversized dataframe or message actually got delivered by the attacker. The crashes are fixed in version 0.26.5 by imposing default dataframe size limits. Affected users are advised to update to this version. Users unable to upgrade are advised to filter websocket traffic externally or to only accept trusted traffic.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35922">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbd6a49509098e073043352c52398c8b</td>
+       <td>CVE-2022-35921</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>fof/byobu is a private discussions extension for Flarum forum. Affected versions were found to not respect private discussion disablement by users. Users of Byobu should update the extension to version 1.1.7, where this has been patched. Users of Byobu with Flarum 1.0 or 1.1 should upgrade to Flarum 1.2 or later, or evaluate the impact this issue has on your forum's users and choose to disable the extension if needed. There are no workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35921">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53e6708344c02e549ddfaf61cdb75e3d</td>
+       <td>CVE-2022-35920</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Sanic is an opensource python web server/framework. Affected versions of sanic allow access to lateral directories when using `app.static` if using encoded `%2F` URLs. Parent directory traversal is not impacted. Users are advised to upgrade. There is no known workaround for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35920">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>15293964fa3441c684cbb9ea7535fd29</td>
+       <td>CVE-2022-35919</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>MinIO is a High Performance Object Storage released under GNU Affero General Public License v3.0. In affected versions all 'admin' users authorized for `admin:ServerUpdate` can selectively trigger an error that in response, returns the content of the path requested. Any normal OS system would allow access to contents at any arbitrary paths that are readable by MinIO process. Users are advised to upgrade. Users unable to upgrade may disable ServerUpdate API by denying the `admin:ServerUpdate` action for your admin users via IAM policies.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35919">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>424ddcaef12e77400b5affa20fa77d3f</td>
+       <td>CVE-2022-35918</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Streamlit is a data oriented application development framework for python. Users hosting Streamlit app(s) that use custom components are vulnerable to a directory traversal attack that could leak data from their web server file-system such as: server logs, world readable files, and potentially other sensitive information. An attacker can craft a malicious URL with file paths and the streamlit server would process that URL and return the contents of that file or overwrite existing files on the web-server. This issue has been resolved in version 1.11.1. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35918">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf4674a493da42641a2aa9fdd199914b</td>
+       <td>CVE-2022-35917</td>
+       <td>2022-08-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Solana Pay is a protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services. When a Solana Pay transaction is located using a reference key, it may be checked to represent a transfer of the desired amount to the recipient, using the supplied `validateTransfer` function. An edge case regarding this mechanism could cause the validation logic to validate multiple transfers. This issue has been patched as of version `0.2.1`. Users of the Solana Pay SDK should upgrade to it. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35917">详情</a></td>
+      </tr>
+
+      <tr>
        <td>633cfa46695dd545ab64857e756cc060</td>
        <td>CVE-2022-35916</td>
        <td>2022-08-01 21:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-07-29 21:15:00</td>
        <td>Improperly Implemented Security Check vulnerability in the SonicWall Hosted Email Security leads to bypass of Capture ATP security service in the appliance. This vulnerability impacts 10.0.17.7319 and earlier versions</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2324">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>193a23a1c6374348bd20b107ccfbcd65</td>
-       <td>CVE-2022-22280</td>
-       <td>2022-07-29 21:15:00</td>
-       <td>Improper Neutralization of Special Elements used in an SQL Command leading to Unauthenticated SQL Injection vulnerability, impacting SonicWall GMS 9.3.1-SP2-Hotfix1, Analytics On-Prem 2.5.0.3-2520 and earlier versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22280">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b57a4d4c5e3ac49b4ace8aa1f2b087ee</td>
-       <td>CVE-2022-27866</td>
-       <td>2022-07-29 20:15:00</td>
-       <td>A maliciously crafted TIFF file when consumed through DesignReview.exe application can be forced to read beyond allocated boundaries when parsing the TIFF file. This vulnerability in conjunction with other vulnerabilities could lead to code execution in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27866">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>096c3ed9189c7dca48481cf9e9c25572</td>
-       <td>CVE-2022-27865</td>
-       <td>2022-07-29 20:15:00</td>
-       <td>A maliciously crafted TGA or PCX file may be used to write beyond the allocated buffer through DesignReview.exe application while parsing TGA and PCX files. This vulnerability may be exploited to execute arbitrary code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27865">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef6872cd724f5a984c213595119ec8e8</td>
-       <td>CVE-2022-27864</td>
-       <td>2022-07-29 20:15:00</td>
-       <td>A Double Free vulnerability allows remote attackers to execute arbitrary code through DesignReview.exe application on PDF files within affected installations. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27864">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8494675fe6dfe55c0551fc2b801a9889</td>
-       <td>CVE-2022-2323</td>
-       <td>2022-07-29 20:15:00</td>
-       <td>Improper neutralization of special elements used in a user input allows an authenticated malicious user to perform remote code execution in the host system. This vulnerability impacts SonicWall Switch 1.1.1.0-2s and earlier versions</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2323">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b89c77b5edf920c609d48f6f2fff12a</td>
-       <td>CVE-2022-36378</td>
-       <td>2022-07-29 19:15:00</td>
-       <td>Authenticated (author or higher user role) Stored Cross-Site Scripting (XSS) vulnerability in PluginlySpeaking Floating Div plugin <= 3.0 at WordPress.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b71bcea02c31096ec62c47f0f28de028</td>
-       <td>CVE-2022-2414</td>
-       <td>2022-07-29 19:15:00</td>
-       <td>Access to external entities when parsing XML documents can lead to XML external entity (XXE) attacks. This flaw allows a remote attacker to potentially retrieve the content of arbitrary files by sending specially crafted HTTP requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2414">详情</a></td>
       </tr>
 
      </tbody>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>2afa9adc814bba9514d737dacd7bd6cc</td>
        <td>CVE-2021-33438</td>
-       <td>2022-07-31 20:36:25 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:25</td>
        <td>Cesanta MJS 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=270e1123af474e29a419669faae5be23">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>da52e11b6a1dcafb46b62ed713cbde84</td>
        <td>CVE-2021-33437</td>
-       <td>2022-07-31 20:36:20 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:20</td>
        <td>Cesanta MJS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=66e9b78654d04727b3c671ba28e68581">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>bafb6a40496fed891e96628e2eb2b06c</td>
        <td>CVE-2021-33441</td>
-       <td>2022-07-31 20:36:15 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:15</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9bd7a111fa004be9a36e6864d054fd05">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>73b5e4b56a91ba7025e230bf88363fc2</td>
        <td>CVE-2021-33439</td>
-       <td>2022-07-31 20:36:11 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:11</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=53c5050582764e898a082e8dde7b2760">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>a513c51085b7c86bd3732d1d6b88c9f1</td>
        <td>CVE-2021-33440</td>
-       <td>2022-07-31 20:36:06 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:06</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d4787cb62674b5fbab41d6c3082844e">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>3f19ec07ea137ac6ec1a69dc431138de</td>
        <td>CVE-2021-33444</td>
-       <td>2022-07-31 20:36:01 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:36:01</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1736a262a39a46ffb4e21ddf5a69c9aa">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>9d52237fb36b29f71c1767b703a76bee</td>
        <td>CVE-2021-33442</td>
-       <td>2022-07-31 20:35:56 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:35:56</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b7f3e7b62f54cf69319eabfc2ea9df2">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>0f652bbf1e607b7a0d24c249aba96912</td>
        <td>CVE-2021-33443</td>
-       <td>2022-07-31 20:35:51 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:35:51</td>
        <td>Cesanta MJS 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5485bc4df8a44a498c81bec6fca366a5">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>9b6ae309eaf628519cd49cead2f91509</td>
        <td>CVE-2021-33447</td>
-       <td>2022-07-31 20:35:47 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:35:47</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=134f0e093f3e44c496a9a3c1ce28bcfa">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>df03238824c1692b287fb01eb263ba0b</td>
        <td>CVE-2021-33445</td>
-       <td>2022-07-31 20:35:42 <img src="imgs/new.gif" /></td>
+       <td>2022-07-31 20:35:42</td>
        <td>Cesanta MJS代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0356d1ed1f5b421e970581fa2b09a88a">详情</a></td>
       </tr>
@@ -2276,6 +2276,30 @@
       </tr>
 
       <tr>
+       <td>c2358b8001dc2fe047b36f4591612704</td>
+       <td>CVE-2022-36375</td>
+       <td>2022-07-25 20:15:08 </td>
+       <td>Authenticated (high role user) WordPress Options Change vulnerability in Biplob Adhikari's Tabs plugin &lt;= 3.6.0 at WordPress.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36375">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>212b84d2f385c68e420fe6953e1a8188</td>
+       <td>CVE-2022-35653</td>
+       <td>2022-07-25 16:15:08 </td>
+       <td>A reflected XSS issue was identified in the LTI module of Moodle. The vulnerability exists due to insufficient sanitization of user-supplied data in the LTI module. A remote attacker can trick the victim to follow a specially crafted link and execute arbitrary HTML and script code in user's browser in context of vulnerable website to steal potentially sensitive information, change appearance of the web page, can perform phishing and drive-by-download attacks. This vulnerability does not impact authenticated users.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35653">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>31cfe3e2c333733b46c994959c280939</td>
+       <td>CVE-2022-35652</td>
+       <td>2022-07-25 16:15:08 </td>
+       <td>An open redirect issue was found in Moodle due to improper sanitization of user-supplied data in mobile auto-login feature. A remote attacker can create a link that leads to a trusted website, however, when clicked, it redirects the victims to arbitrary URL/domain. Successful exploitation of this vulnerability may allow a remote attacker to perform a phishing attack and steal potentially sensitive information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35652">详情</a></td>
+      </tr>
+
+      <tr>
        <td>068079c064758ec78fe3fff616ca484e</td>
        <td>CVE-2022-1309</td>
        <td>2022-07-25 14:15:10 </td>
@@ -2340,6 +2364,38 @@
       </tr>
 
       <tr>
+       <td>cc47911bc43813b67315f3aceab54e6f</td>
+       <td>CVE-2022-36450</td>
+       <td>2022-07-25 07:15:07 </td>
+       <td>Obsidian 0.14.x and 0.15.x before 0.15.5 allows obsidian://hook-get-address remote code execution because window.open is used without checking the URL.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36450">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff7d408af944e4db78b5c7e7dbebf611</td>
+       <td>CVE-2022-36446</td>
+       <td>2022-07-25 06:15:07 </td>
+       <td>software/apt-lib.pl in Webmin before 1.997 lacks HTML escaping for a UI command.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36446">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebca71d236120f41c07b4407d2c3ccf0</td>
+       <td>CVE-2022-36444</td>
+       <td>2022-07-25 06:15:07 </td>
+       <td>An issue was discovered in Atos Unify OpenScape SBC 9 and 10 before 10R2.2.1, Atos Unify OpenScape Branch 9 and 10 before version 10R2.1.1, and Atos Unify OpenScape BCF 10 before 10R9.12.1. A remote code execution vulnerability may allow an unauthenticated attacker (with network access to the admin interface) to disrupt system availability or potentially compromise the confidentiality and integrity of the system.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36444">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fdba59b60fa31c41e42d40e3f4873fc3</td>
+       <td>CVE-2022-36415</td>
+       <td>2022-07-23 03:15:08 </td>
+       <td>A DLL hijacking vulnerability exists in the uninstaller in Scooter Beyond Compare 1.8a through 4.4.2 before 4.4.3 when installed via the EXE installer. The uninstaller attempts to load DLLs out of a Windows Temp folder. If a standard user places malicious DLLs in the C:\Windows\Temp\ folder, and then the uninstaller is run as SYSTEM, the DLLs will execute with elevated privileges.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36415">详情</a></td>
+      </tr>
+
+      <tr>
        <td>eb4939454688f2dc058725fc409581a3</td>
        <td>CVE-2022-1146</td>
        <td>2022-07-23 00:15:09 </td>
@@ -2364,67 +2420,11 @@
       </tr>
 
       <tr>
-       <td>6bde42b0b18c349d1de7f8f7a91ea75d</td>
-       <td>CVE-2022-28879</td>
-       <td>2022-07-22 16:15:08 </td>
-       <td>A Denial-of-Service (DoS) vulnerability was discovered in F-Secure Atlant and in certain WithSecure products whereby the scanning the aepack.dll component can crash the scanning engine.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28879">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>92c1cae2b3650c44bcd4179921242a7d</td>
-       <td>CVE-2022-28878</td>
-       <td>2022-07-22 16:15:08 </td>
-       <td>A Denial-of-Service vulnerability was discovered in the F-Secure Atlant and in certain WithSecure products while scanning fuzzed APK file it is possible that can crash the scanning engine.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28878">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb47bafd8c4ccca612c0d0db65fb53ba</td>
-       <td>CVE-2022-28700</td>
-       <td>2022-07-21 18:15:08 </td>
-       <td>Authenticated Arbitrary File Creation via Export function vulnerability in GiveWP's GiveWP plugin &lt;= 2.20.2 at WordPress.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28700">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ffa8e902d4ca63d5138dff3501ec61f8</td>
-       <td>CVE-2022-28666</td>
-       <td>2022-07-21 17:15:08 </td>
-       <td>Broken Access Control vulnerability in YIKES Inc. Custom Product Tabs for WooCommerce plugin &lt;= 1.7.7 at WordPress leading to &amp;yikes-the-content-toggle option update.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28666">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29c59abdbcd0c836ad7e6289a983a629</td>
-       <td>CVE-2022-36313</td>
-       <td>2022-07-21 16:15:09 </td>
-       <td>An issue was discovered in the file-type package before 16.5.4 and 17.x before 17.1.3 for Node.js. A malformed MKV file could cause the file type detector to get caught in an infinite loop. This would make the application become unresponsive and could be used to cause a DoS attack.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36313">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6db65c70e95e8335e377ad8ba8f1fc5</td>
-       <td>CVE-2022-28877</td>
-       <td>2022-07-21 16:15:09 </td>
-       <td>This vulnerability allows local user to delete arbitrary file in the system and bypassing security protection which can be abused for local privilege escalation on affected F-Secure &amp; WithSecure windows endpoint products. An attacker must have code execution rights on the victim machine prior to successful exploitation.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28877">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>48fadbb031c7d77b986642d8372f1f95</td>
-       <td>CVE-2022-22555</td>
-       <td>2022-07-21 04:15:11 </td>
-       <td>Dell EMC PowerStore, contains an OS command injection Vulnerability. A locally authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the PowerStore underlying OS, with the privileges of the vulnerable application. Exploitation may lead to an elevation of privilege.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22555">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e365fbc8d8271882888c1e2e977dbdc9</td>
-       <td>CVE-2022-1264</td>
-       <td>2022-07-20 16:15:08 </td>
-       <td>The affected product may allow an attacker with access to the Ignition web configuration to run arbitrary code.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-1264">详情</a></td>
+       <td>95a3a8b18ec83e000af1a24652d536cb</td>
+       <td>CVE-2022-36408</td>
+       <td>2022-07-22 22:15:08 </td>
+       <td>PrestaShop 1.6.0.10 through 1.7.x before 1.7.8.7 allows remote attackers to execute arbitrary code, aka a &quot;previously unknown vulnerability chain&quot; related to SQL injection and MySQL Smarty cache storage injection, as exploited in the wild in July 2022.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36408">详情</a></td>
       </tr>
 
      </tbody>
