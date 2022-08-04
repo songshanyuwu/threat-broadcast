@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-04 05:48:14 -->
+<!-- RELEASE TIME : 2022-08-04 23:40:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>41c2aff18515b65cc20fecbad830235e</td>
+       <td>CVE-2022-35927</td>
+       <td>2022-08-04 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Contiki-NG is an open-source, cross-platform operating system for IoT devices. In the RPL-Classic routing protocol implementation in the Contiki-NG operating system, an incoming DODAG Information Option (DIO) control message can contain a prefix information option with a length parameter. The value of the length parameter is not validated, however, and it is possible to cause a buffer overflow when copying the prefix in the set_ip_from_prefix function. This vulnerability affects anyone running a Contiki-NG version prior to 4.7 that can receive RPL DIO messages from external parties. To obtain a patched version, users should upgrade to Contiki-NG 4.7 or later. There are no workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35927">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>65c9157ded349e8926fb809e98a85b1e</td>
+       <td>CVE-2022-35926</td>
+       <td>2022-08-04 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Contiki-NG is an open-source, cross-platform operating system for IoT devices. Because of insufficient validation of IPv6 neighbor discovery options in Contiki-NG, attackers can send neighbor solicitation packets that trigger an out-of-bounds read. The problem exists in the module os/net/ipv6/uip-nd6.c, where memory read operations from the main packet buffer, <code>uip_buf</code>, are not checked if they go out of bounds. In particular, this problem can occur when attempting to read the 2-byte option header and the Source Link-Layer Address Option (SLLAO). This attack requires ipv6 be enabled for the network. The problem has been patched in the develop branch of Contiki-NG. The upcoming 4.8 release of Contiki-NG will include the patch.Users unable to upgrade may apply the patch in Contiki-NG PR #1654.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35926">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aae7e3fa0059c12754f23b80a85e0ab1</td>
+       <td>CVE-2021-32771</td>
+       <td>2022-08-04 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Contiki-NG is an open-source, cross-platform operating system for IoT devices. In affected versions it is possible to cause a buffer overflow when copying an IPv6 address prefix in the RPL-Classic implementation in Contiki-NG. In order to trigger the vulnerability, the Contiki-NG system must have joined an RPL DODAG. After that, an attacker can send a DAO packet with a Target option that contains a prefix length larger than 128 bits. The problem was fixed after the release of Contiki-NG 4.7. Users unable to upgrade may apply the patch in Contiki-NG PR #1615.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32771">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4eff0c8b319f3395d058e237a2c74768</td>
+       <td>CVE-2022-35858</td>
+       <td>2022-08-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The TEE_PopulateTransientObject and __utee_from_attr functions in Samsung mTower 0.3.0 allow a trusted application to trigger a memory overwrite, denial of service, and information disclosure by invoking the function TEE_PopulateTransientObject with a large number in the parameter attrCount.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35858">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2cc5942afcf197eef2ea8458d963d4b</td>
+       <td>CVE-2022-35144</td>
+       <td>2022-08-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Renato v0.17.0 was discovered to contain a cross-site scripting (XSS) vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06f6718c38a7386f36b61d2898d58440</td>
+       <td>CVE-2022-35143</td>
+       <td>2022-08-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Renato v0.17.0 employs weak password complexity requirements, allowing attackers to crack user passwords via brute-force attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35143">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55cd4b339803aca95807b07b40f20068</td>
+       <td>CVE-2022-35142</td>
+       <td>2022-08-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue in Renato v0.17.0 allows attackers to cause a Denial of Service (DoS) via a crafted payload injected into the Search parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35142">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f7a97443b728ba1f3e7fe014a50ed77</td>
+       <td>CVE-2022-35929</td>
+       <td>2022-08-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>cosign is a container signing and verification utility. In versions prior to 1.10.1 cosign can report a false positive if any attestation exists. `cosign verify-attestation` used with the `--type` flag will report a false positive verification when there is at least one attestation with a valid signature and there are NO attestations of the type being verified (--type defaults to "custom"). This can happen when signing with a standard keypair and with "keyless" signing with Fulcio. This vulnerability can be reproduced with the `distroless.dev/static@sha256:dd7614b5a12bc4d617b223c588b4e0c833402b8f4991fb5702ea83afad1986e2` image. This image has a `vuln` attestation but not an `spdx` attestation. However, if you run `cosign verify-attestation --type=spdx` on this image, it incorrectly succeeds. This issue has been addressed in version 1.10.1 of cosign. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35929">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9388e38673ea7ddaf0a5ba8c3b475a17</td>
+       <td>CVE-2022-34993</td>
+       <td>2022-08-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Totolink A3600R_Firmware V4.1.2cu.5182_B20201102 contains a hard code password for root in /etc/shadow.sample.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34993">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4f5a10ed1c450263d6eb117028b33eb</td>
+       <td>CVE-2022-34970</td>
+       <td>2022-08-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Crow before v1.0+4 was discovered to contain a buffer overflow via the function qs_parse at query_string.h. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34970">详情</a></td>
+      </tr>
+
+      <tr>
        <td>71ff4241660ec8ac1ba3f238b9eba038</td>
        <td>CVE-2022-35506</td>
        <td>2022-08-03 21:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-08-03 02:15:00 <img src="imgs/new.gif" /></td>
        <td>Improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability in webapi component in Synology DiskStation Manager (DSM) before 7.0.1-42218-3 allows remote authenticated users to execute arbitrary commands via unspecified vectors.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27616">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be6e9fa72adc1d5ea7f57ce8c79a7772</td>
-       <td>CVE-2022-35925</td>
-       <td>2022-08-02 21:15:00</td>
-       <td>BookWyrm is a social network for tracking reading. Versions prior to 0.4.5 were found to lack rate limiting on authentication views which allows brute-force attacks. This issue has been patched in version 0.4.5. Admins with existing instances will need to update their `nginx.conf` file that was created when the instance was set up. Users are advised advised to upgrade. Users unable to upgrade may update their nginx.conf files with the changes manually.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35925">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19eddbabbe9f61e795b7d04dc5649d7d</td>
-       <td>CVE-2022-35923</td>
-       <td>2022-08-02 20:15:00</td>
-       <td>v8n is a javascript validation library. Versions of v8n prior to 1.5.1 were found to have an inefficient regular expression complexity in the `lowercase()` and `uppercase()` regex which could lead to a denial of service attack. In testing of the `lowercase()` function a payload of 'a' + 'a'.repeat(i) + 'A' with 32 leading characters took 29443 ms to execute. The same issue happens with uppercase(). Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a46b05992a4d17b5caef3085ee5e810</td>
-       <td>CVE-2022-34924</td>
-       <td>2022-08-02 20:15:00</td>
-       <td>Lanling OA Landray Office Automation (OA) internal patch number #133383/#137780 contains an arbitrary file read vulnerability via the component /sys/ui/extend/varkind/custom.jsp.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34924">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2784c2092d7c6b1ced832c3c453d8dde</td>
-       <td>CVE-2022-35924</td>
-       <td>2022-08-02 18:15:00</td>
-       <td>NextAuth.js is a complete open source authentication solution for Next.js applications. `next-auth` users who are using the `EmailProvider` either in versions before `4.10.3` or `3.29.10` are affected. If an attacker could forge a request that sent a comma-separated list of emails (eg.: `attacker@attacker.com,victim@victim.com`) to the sign-in endpoint, NextAuth.js would send emails to both the attacker and the victim's e-mail addresses. The attacker could then login as a newly created user with the email being `attacker@attacker.com,victim@victim.com`. This means that basic authorization like `email.endsWith("@victim.com")` in the `signIn` callback would fail to communicate a threat to the developer and would let the attacker bypass authorization, even with an `@attacker.com` address. This vulnerability has been patched in `v4.10.3` and `v3.29.10` by normalizing the email value that is sent to the sign-in endpoint before accessing it anywhere else. We also added a `normalizeIdentifier` callback on the `EmailProvider` configuration, where you can further tweak your requirements for what your system considers a valid e-mail address. (E.g.: strict RFC2821 compliance). Users are advised to upgrade. There are no known workarounds for this vulnerability. If for some reason you cannot upgrade, you can normalize the incoming request using Advanced Initialization.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35924">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>595d953f663a9775a74f0f94f9f3a3f9</td>
-       <td>CVE-2022-30572</td>
-       <td>2022-08-02 17:15:00</td>
-       <td>The iWay Service Manager Console component of TIBCO Software Inc.'s TIBCO iWay Service Manager contains an easily exploitable Directory Traversal vulnerability that allows a low privileged attacker with network access to read arbitrary resources on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO iWay Service Manager: versions 8.0.6 and below.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5ee30ae3ecb98ae038d7a68a8c709f5</td>
-       <td>CVE-2022-30571</td>
-       <td>2022-08-02 17:15:00</td>
-       <td>The iWay Service Manager Console component of TIBCO Software Inc.'s TIBCO iWay Service Manager contains easily exploitable Reflected Cross Site Scripting (XSS) vulnerabilities that allow a low privileged attacker with network access to execute scripts targeting the affected system or the victim's local system. Affected releases are TIBCO Software Inc.'s TIBCO iWay Service Manager: versions 8.0.6 and below.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30571">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e87de39ff6e612078b4931a5be64847b</td>
-       <td>CVE-2022-2631</td>
-       <td>2022-08-02 17:15:00</td>
-       <td>Improper Access Control in GitHub repository tooljet/tooljet prior to v1.19.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2631">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16729901ea5e167517a35441f1477f2f</td>
-       <td>CVE-2022-35223</td>
-       <td>2022-08-02 16:15:00</td>
-       <td>EasyUse MailHunter Ultimate’s cookie deserialization function has an inadequate validation vulnerability. Deserializing a cookie containing malicious payload will trigger this insecure deserialization vulnerability, allowing an unauthenticated remote attacker to execute arbitrary code, manipulate system command or interrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35223">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>142beb28168076f1fc5743cf0dc0e692</td>
-       <td>CVE-2022-35222</td>
-       <td>2022-08-02 16:15:00</td>
-       <td>HiCOS Citizen verification component has a stack-based buffer overflow vulnerability due to insufficient parameter length validation. An unauthenticated physical attacker can exploit this vulnerability to execute arbitrary code, manipulate system command or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35222">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>194cdf98efc50e9f9475d0052408064e</td>
-       <td>CVE-2022-35221</td>
-       <td>2022-08-02 16:15:00</td>
-       <td>Teamplus Pro community discussion has an ‘allocation of resource without limits or throttling’ vulnerability on thread subject field. A remote attacker with general user privilege posting a thread subject with large content can cause the server to allocate too much memory, leading to missing partial post content and disrupt partial service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35221">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d6dc7e44fd66ee8ded1d7eee794d52eb</td>
+       <td>CNNVD-202208-2143 (CVE-2022-31607)</td>
+       <td>2022-08-04 23:39:52 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA graphics driver 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2143">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>345ffe1b5b39bb5171f22ab2ebed7c17</td>
+       <td>CNNVD-202208-2144 (CVE-2022-31615)</td>
+       <td>2022-08-04 23:39:50 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA graphics driver 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>405978907fc29626cc6669b0d68d1512</td>
+       <td>CNNVD-202208-2145 (CVE-2022-31608)</td>
+       <td>2022-08-04 23:39:48 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA graphics driver 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5e6da8027693f0ef75d433f92384b4f</td>
+       <td>CNNVD-202208-2134 (CVE-2022-35158)</td>
+       <td>2022-08-03 23:40:07 <img src="imgs/new.gif" /></td>
+       <td>Tencent TscanCode tsclua 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2134">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>240fbf5fdb1acb290c030f7d38821ed0</td>
+       <td>CNNVD-202208-2135 (CVE-2022-32543)</td>
+       <td>2022-08-03 23:40:05 <img src="imgs/new.gif" /></td>
+       <td>ESTsoft Alyac 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2135">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7b0ace7bbdd9c5b19f031de92337fb7</td>
+       <td>CNNVD-202208-2136 (CVE-2022-35928)</td>
+       <td>2022-08-03 23:40:02 <img src="imgs/new.gif" /></td>
+       <td>Packetizer AES Crypt 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2136">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2d793be3ef4e7cfc9aecb8fd777b260</td>
+       <td>CNNVD-202208-2137 (CVE-2022-27551)</td>
+       <td>2022-08-03 23:40:00 <img src="imgs/new.gif" /></td>
+       <td>HCL Technologies HCL Launch 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2137">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8c82804dd6c8f6adca84c0620188abc4</td>
+       <td>CNNVD-202208-2140 (CVE-2022-2603)</td>
+       <td>2022-08-03 23:39:58 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2140">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c050e543a4ee99a761939d197fd02d4c</td>
+       <td>CNNVD-202208-2141 (CVE-2022-20869)</td>
+       <td>2022-08-03 23:39:56 <img src="imgs/new.gif" /></td>
+       <td>Cisco BroadWorks Application 跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2141">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>181a91b8b473da52fb4d02eeca1d60ce</td>
+       <td>CNNVD-202208-2142 (CVE-2022-29886)</td>
+       <td>2022-08-03 23:39:54 <img src="imgs/new.gif" /></td>
+       <td>ESTsoft Alyac 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2142">详情</a></td>
+      </tr>
+
+      <tr>
        <td>110a03334dde364b197bed1c9ae69fdd</td>
        <td>CNNVD-202208-2038 (CVE-2022-35924)</td>
        <td>2022-08-02 23:40:33</td>
@@ -953,86 +1033,6 @@
        <td>2022-08-01 23:40:27</td>
        <td>Streamlit 路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-1992">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>693a4b2277f3bd27d16e28b6ef74b719</td>
-       <td>CNNVD-202207-2804 (CVE-2022-36336)</td>
-       <td>2022-07-30 23:42:44</td>
-       <td>Trend Micro Micro Worry-Free Business Security和Trend Micro Apex One 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2804">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3fca9789ba85cf8f6ade3b4d4be2302e</td>
-       <td>CNNVD-202207-2805 (CVE-2022-33158)</td>
-       <td>2022-07-30 23:42:41</td>
-       <td>Trend Micro VPN Proxy Pro 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2805">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e93441b729e35059ae0233e876d6597</td>
-       <td>CNNVD-202207-2806 (CVE-2021-27785)</td>
-       <td>2022-07-30 23:42:39</td>
-       <td>HCL Technologies HCL Commerce Remote Store server 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e23c478199b405fa5866de1bc8f4427</td>
-       <td>CNNVD-202207-2807 (CVE-2022-33994)</td>
-       <td>2022-07-30 23:42:37</td>
-       <td>WordPress plugin Gutenberg 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2807">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0cb8bebbf028074bd145b43bbab23011</td>
-       <td>CNNVD-202207-2798 (CVE-2022-34496)</td>
-       <td>2022-07-29 23:42:58</td>
-       <td>Hiby Music Hiby R3 PRO firmware 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2798">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9432509c182c6ddaa9673d3144645392</td>
-       <td>CNNVD-202207-2799 (CVE-2022-36293)</td>
-       <td>2022-07-29 23:42:55</td>
-       <td>Nintendo Wi-Fi Network Adptor WAP-001 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa5fc1cdc2ab980f12518be91096848d</td>
-       <td>CNNVD-202207-2800 (CVE-2022-36381)</td>
-       <td>2022-07-29 23:42:53</td>
-       <td>Nintendo Wi-Fi Network Adptor WAP-001 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7086d7ed5b0707eb67426b3074c6831e</td>
-       <td>CNNVD-202207-2801 (CVE-2022-25812)</td>
-       <td>2022-07-29 23:42:51</td>
-       <td>WordPress plugin Transposh WordPress Translation 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2801">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5b7730bd87bd96095fe11fcf0025015</td>
-       <td>CNNVD-202207-2802 (CVE-2022-30083)</td>
-       <td>2022-07-29 23:42:49</td>
-       <td>EllieGrid Android Application 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2802">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef57bb8af095de3e32d9a58dd1733cfe</td>
-       <td>CNNVD-202207-2803 (CVE-2022-2509)</td>
-       <td>2022-07-29 23:42:46</td>
-       <td>GnuTLS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202207-2803">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>481e02ae8d6c31bb2a8172902b3fb517</td>
+       <td>CVE-2021-33448</td>
+       <td>2022-08-04 20:26:32 <img src="imgs/new.gif" /></td>
+       <td>Cesanta MJS 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=623e98444c99446d81f5c0764cd0b170">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>df70ce3d78e95e9c65e8c1597e9e9b65</td>
+       <td>CVE-2022-1490</td>
+       <td>2022-08-04 20:26:28 <img src="imgs/new.gif" /></td>
+       <td>Google Chromium 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=43edfee604074d3f89c7b73275dd4efe">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6180dfe1b98cda8ad940bcaebcc26306</td>
        <td>CVE-2022-1477</td>
        <td>2022-08-03 20:29:17 <img src="imgs/new.gif" /></td>
@@ -1897,22 +1913,6 @@
        <td>2022-07-30 20:32:46</td>
        <td>Google Chrome 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=31242788a57c423d849903b2d164e9ce">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ab86229e2b9f9528e0401f8d01d28aa1</td>
-       <td>CVE-2022-1309</td>
-       <td>2022-07-30 20:32:41</td>
-       <td>Google Chrome权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f149a670446646b5ab1d8c3b2dba6fa6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9dbb8a3a9264c2785d806ff3ec2bb847</td>
-       <td>CVE-2022-1311</td>
-       <td>2022-07-30 20:32:36</td>
-       <td>Google Chrome 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d07234ef86746fdbf390c4cab4da73d">详情</a></td>
       </tr>
 
      </tbody>
@@ -2236,6 +2236,14 @@
       </tr>
 
       <tr>
+       <td>5ef537c8e1455d2cf5a136cfda698c25</td>
+       <td>CVE-2022-36956</td>
+       <td>2022-07-27 21:15:09 </td>
+       <td>In Veritas NetBackup, the NetBackup Client allows arbitrary command execution from any remote host that has access to a valid host-id NetBackup certificate/private key from the same domain. The affects 9.0.x through 9.0.0.1 and 9.1.x through 9.1.0.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36956">详情</a></td>
+      </tr>
+
+      <tr>
        <td>961a08c114b7b7496a371f6e0be14e7d</td>
        <td>CVE-2022-36951</td>
        <td>2022-07-27 21:15:08 </td>
@@ -2417,14 +2425,6 @@
        <td>2022-07-26 02:15:07 </td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in webapi component in Synology Calendar before 2.3.4-0631 allows remote authenticated users to hijack the authentication of administrators via unspecified vectors.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-22686">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2358b8001dc2fe047b36f4591612704</td>
-       <td>CVE-2022-36375</td>
-       <td>2022-07-25 20:15:08 </td>
-       <td>Authenticated (high role user) WordPress Options Change vulnerability in Biplob Adhikari's Tabs plugin &lt;= 3.6.0 at WordPress.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36375">详情</a></td>
       </tr>
 
      </tbody>
