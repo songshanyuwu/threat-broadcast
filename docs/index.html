@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-03 23:40:35 -->
+<!-- RELEASE TIME : 2022-08-04 05:48:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -446,7 +446,7 @@
       <tr>
        <td>be6e9fa72adc1d5ea7f57ce8c79a7772</td>
        <td>CVE-2022-35925</td>
-       <td>2022-08-02 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 21:15:00</td>
        <td>BookWyrm is a social network for tracking reading. Versions prior to 0.4.5 were found to lack rate limiting on authentication views which allows brute-force attacks. This issue has been patched in version 0.4.5. Admins with existing instances will need to update their `nginx.conf` file that was created when the instance was set up. Users are advised advised to upgrade. Users unable to upgrade may update their nginx.conf files with the changes manually.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35925">详情</a></td>
       </tr>
@@ -454,7 +454,7 @@
       <tr>
        <td>19eddbabbe9f61e795b7d04dc5649d7d</td>
        <td>CVE-2022-35923</td>
-       <td>2022-08-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 20:15:00</td>
        <td>v8n is a javascript validation library. Versions of v8n prior to 1.5.1 were found to have an inefficient regular expression complexity in the `lowercase()` and `uppercase()` regex which could lead to a denial of service attack. In testing of the `lowercase()` function a payload of 'a' + 'a'.repeat(i) + 'A' with 32 leading characters took 29443 ms to execute. The same issue happens with uppercase(). Users are advised to upgrade. There are no known workarounds for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35923">详情</a></td>
       </tr>
@@ -462,7 +462,7 @@
       <tr>
        <td>7a46b05992a4d17b5caef3085ee5e810</td>
        <td>CVE-2022-34924</td>
-       <td>2022-08-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 20:15:00</td>
        <td>Lanling OA Landray Office Automation (OA) internal patch number #133383/#137780 contains an arbitrary file read vulnerability via the component /sys/ui/extend/varkind/custom.jsp.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34924">详情</a></td>
       </tr>
@@ -470,7 +470,7 @@
       <tr>
        <td>2784c2092d7c6b1ced832c3c453d8dde</td>
        <td>CVE-2022-35924</td>
-       <td>2022-08-02 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 18:15:00</td>
        <td>NextAuth.js is a complete open source authentication solution for Next.js applications. `next-auth` users who are using the `EmailProvider` either in versions before `4.10.3` or `3.29.10` are affected. If an attacker could forge a request that sent a comma-separated list of emails (eg.: `attacker@attacker.com,victim@victim.com`) to the sign-in endpoint, NextAuth.js would send emails to both the attacker and the victim's e-mail addresses. The attacker could then login as a newly created user with the email being `attacker@attacker.com,victim@victim.com`. This means that basic authorization like `email.endsWith("@victim.com")` in the `signIn` callback would fail to communicate a threat to the developer and would let the attacker bypass authorization, even with an `@attacker.com` address. This vulnerability has been patched in `v4.10.3` and `v3.29.10` by normalizing the email value that is sent to the sign-in endpoint before accessing it anywhere else. We also added a `normalizeIdentifier` callback on the `EmailProvider` configuration, where you can further tweak your requirements for what your system considers a valid e-mail address. (E.g.: strict RFC2821 compliance). Users are advised to upgrade. There are no known workarounds for this vulnerability. If for some reason you cannot upgrade, you can normalize the incoming request using Advanced Initialization.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35924">详情</a></td>
       </tr>
@@ -478,7 +478,7 @@
       <tr>
        <td>595d953f663a9775a74f0f94f9f3a3f9</td>
        <td>CVE-2022-30572</td>
-       <td>2022-08-02 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 17:15:00</td>
        <td>The iWay Service Manager Console component of TIBCO Software Inc.'s TIBCO iWay Service Manager contains an easily exploitable Directory Traversal vulnerability that allows a low privileged attacker with network access to read arbitrary resources on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO iWay Service Manager: versions 8.0.6 and below.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30572">详情</a></td>
       </tr>
@@ -486,7 +486,7 @@
       <tr>
        <td>f5ee30ae3ecb98ae038d7a68a8c709f5</td>
        <td>CVE-2022-30571</td>
-       <td>2022-08-02 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 17:15:00</td>
        <td>The iWay Service Manager Console component of TIBCO Software Inc.'s TIBCO iWay Service Manager contains easily exploitable Reflected Cross Site Scripting (XSS) vulnerabilities that allow a low privileged attacker with network access to execute scripts targeting the affected system or the victim's local system. Affected releases are TIBCO Software Inc.'s TIBCO iWay Service Manager: versions 8.0.6 and below.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30571">详情</a></td>
       </tr>
@@ -494,7 +494,7 @@
       <tr>
        <td>e87de39ff6e612078b4931a5be64847b</td>
        <td>CVE-2022-2631</td>
-       <td>2022-08-02 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 17:15:00</td>
        <td>Improper Access Control in GitHub repository tooljet/tooljet prior to v1.19.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2631">详情</a></td>
       </tr>
@@ -502,7 +502,7 @@
       <tr>
        <td>16729901ea5e167517a35441f1477f2f</td>
        <td>CVE-2022-35223</td>
-       <td>2022-08-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 16:15:00</td>
        <td>EasyUse MailHunter Ultimate’s cookie deserialization function has an inadequate validation vulnerability. Deserializing a cookie containing malicious payload will trigger this insecure deserialization vulnerability, allowing an unauthenticated remote attacker to execute arbitrary code, manipulate system command or interrupt service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35223">详情</a></td>
       </tr>
@@ -510,7 +510,7 @@
       <tr>
        <td>142beb28168076f1fc5743cf0dc0e692</td>
        <td>CVE-2022-35222</td>
-       <td>2022-08-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 16:15:00</td>
        <td>HiCOS Citizen verification component has a stack-based buffer overflow vulnerability due to insufficient parameter length validation. An unauthenticated physical attacker can exploit this vulnerability to execute arbitrary code, manipulate system command or disrupt service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35222">详情</a></td>
       </tr>
@@ -518,7 +518,7 @@
       <tr>
        <td>194cdf98efc50e9f9475d0052408064e</td>
        <td>CVE-2022-35221</td>
-       <td>2022-08-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 16:15:00</td>
        <td>Teamplus Pro community discussion has an ‘allocation of resource without limits or throttling’ vulnerability on thread subject field. A remote attacker with general user privilege posting a thread subject with large content can cause the server to allocate too much memory, leading to missing partial post content and disrupt partial service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35221">详情</a></td>
       </tr>
@@ -798,7 +798,7 @@
       <tr>
        <td>110a03334dde364b197bed1c9ae69fdd</td>
        <td>CNNVD-202208-2038 (CVE-2022-35924)</td>
-       <td>2022-08-02 23:40:33 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:33</td>
        <td>NextAuth.js 输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2038">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>a9565a05dfcc18d247510e4ccf3cbfd9</td>
        <td>CNNVD-202208-2039 (CVE-2022-22299)</td>
-       <td>2022-08-02 23:40:31 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:31</td>
        <td>Fortinet FortiGate和FortiOS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2039">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>3d42bf22b17b342976aa03b1b0e51622</td>
        <td>CNNVD-202208-2040 (CVE-2022-29808)</td>
-       <td>2022-08-02 23:40:28 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:28</td>
        <td>Quest KACE Systems Management Appliance 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2040">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>fa7ccbad180cd91c2e1a832cfa9c7760</td>
        <td>CNNVD-202208-2041 (CVE-2022-29807)</td>
-       <td>2022-08-02 23:40:26 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:26</td>
        <td>Quest KACE Systems Management Appliance 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2041">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>d24b3ee43cad675bba270cb2a168836b</td>
        <td>CNNVD-202208-2042 (CVE-2022-30285)</td>
-       <td>2022-08-02 23:40:23 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:23</td>
        <td>Quest KACE Systems Management Appliance 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2042">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>79d874a87de4b417c58cc667007f0831</td>
        <td>CNNVD-202208-2043 (CVE-2022-36967)</td>
-       <td>2022-08-02 23:40:21 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:21</td>
        <td>Progress WS_FTP Server 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2043">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>9dd74e9278bd4a638be7ae5d38da79b3</td>
        <td>CNNVD-202208-2044 (CVE-2022-36968)</td>
-       <td>2022-08-02 23:40:19 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:19</td>
        <td>Progress WS_FTP Server 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2044">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>8b509a9732653c410289e5942aa00339</td>
        <td>CNNVD-202208-2045 (CVE-2022-33917)</td>
-       <td>2022-08-02 23:40:16 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:16</td>
        <td>Arm Mali GPU Kernel Driver 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2045">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>b3cd32a832ed6310300f08600ddaa54b</td>
        <td>CNNVD-202208-2046 (CVE-2022-34619)</td>
-       <td>2022-08-02 23:40:14 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:14</td>
        <td>Mealie 跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2046">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>df326a695639c254c47aca9d357c9945</td>
        <td>CNNVD-202208-2047 (CVE-2022-37035)</td>
-       <td>2022-08-02 23:40:12 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 23:40:12</td>
        <td>FRRouting FRR 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202208-2047">详情</a></td>
       </tr>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>6744b43f7ba7ef77ba936d6eec99ca1f</td>
        <td>CVE-2021-33446</td>
-       <td>2022-08-02 20:43:21 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 20:43:21</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8a3e977b74bd433eb4505912a7a09d02">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>b2cc068e08a9054787a2a671a83a58b9</td>
        <td>CVE-2022-1488</td>
-       <td>2022-08-02 20:43:17 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 20:43:17</td>
        <td>Google Chromium 安全特征问题特征问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3f1231e3791f4a17b9706c17205ff667">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>787f6185daba904a0dfee2172a18cf86</td>
        <td>CVE-2021-33449</td>
-       <td>2022-08-02 20:43:12 <img src="imgs/new.gif" /></td>
+       <td>2022-08-02 20:43:12</td>
        <td>Cesanta MJS 代码问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=006eb74b3a6d49b4958250c5d0c12948">详情</a></td>
       </tr>
@@ -2260,6 +2260,14 @@
       </tr>
 
       <tr>
+       <td>dfca2f093ec79329cece2bb00d25ae87</td>
+       <td>CVE-2022-36948</td>
+       <td>2022-07-27 21:15:08 </td>
+       <td>In Veritas NetBackup OpsCenter, a DOM XSS attack can occur. This affects 8.x through 8.3.0.2, 9.x through 9.0.0.1, 9.1.x through 9.1.0.1, and 10.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36948">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2adb95f89bb3c9a1ca119dbf35dc6f93</td>
        <td>CVE-2022-36921</td>
        <td>2022-07-27 15:15:13 </td>
@@ -2417,14 +2425,6 @@
        <td>2022-07-25 20:15:08 </td>
        <td>Authenticated (high role user) WordPress Options Change vulnerability in Biplob Adhikari's Tabs plugin &lt;= 3.6.0 at WordPress.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-36375">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>212b84d2f385c68e420fe6953e1a8188</td>
-       <td>CVE-2022-35653</td>
-       <td>2022-07-25 16:15:08 </td>
-       <td>A reflected XSS issue was identified in the LTI module of Moodle. The vulnerability exists due to insufficient sanitization of user-supplied data in the LTI module. A remote attacker can trick the victim to follow a specially crafted link and execute arbitrary HTML and script code in user's browser in context of vulnerable website to steal potentially sensitive information, change appearance of the web page, can perform phishing and drive-by-download attacks. This vulnerability does not impact authenticated users.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35653">详情</a></td>
       </tr>
 
      </tbody>
