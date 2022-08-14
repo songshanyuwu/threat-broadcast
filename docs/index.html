@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-13 23:38:35 -->
+<!-- RELEASE TIME : 2022-08-14 23:38:50 -->
 <html lang="zh-cn">
 
  <head>
@@ -286,7 +286,7 @@
       <tr>
        <td>dc3c007bfbe14e5fade3976ce5bc474e</td>
        <td>CVE-2022-35949</td>
-       <td>2022-08-12 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 23:15:00</td>
        <td>undici is an HTTP/1.1 client, written from scratch for Node.js.`undici` is vulnerable to SSRF (Server-side Request Forgery) when an application takes in **user input** into the `path/pathname` option of `undici.request`. If a user specifies a URL such as `http://127.0.0.1` or `//127.0.0.1` ```js const undici = require("undici") undici.request({origin: "http://example.com", pathname: "//127.0.0.1"}) ``` Instead of processing the request as `http://example.org//127.0.0.1` (or `http://example.org/http://127.0.0.1` when `http://127.0.0.1 is used`), it actually processes the request as `http://127.0.0.1/` and sends it to `http://127.0.0.1`. If a developer passes in user input into `path` parameter of `undici.request`, it can result in an _SSRF_ as they will assume that the hostname cannot change, when in actual fact it can change because the specified path parameter is combined with the base URL. This issue was fixed in `undici@5.8.1`. The best workaround is to validate user input before passing it to the `undici.request` call.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35949">详情</a></td>
       </tr>
@@ -294,7 +294,7 @@
       <tr>
        <td>2a329f4d699fefdb076e921ccf18b032</td>
        <td>CVE-2022-35942</td>
-       <td>2022-08-12 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 23:15:00</td>
        <td>Improper input validation on the `contains` LoopBack filter may allow for arbitrary SQL injection. When the extended filter property `contains` is permitted to be interpreted by the Postgres connector, it is possible to inject arbitrary SQL which may affect the confidentiality and integrity of data stored on the connected database. A patch was released in version 5.5.1. This affects users who does any of the following: - Connect to the database via the DataSource with `allowExtendedProperties: true` setting OR - Uses the connector's CRUD methods directly OR - Uses the connector's other methods to interpret the LoopBack filter. Users who are unable to upgrade should do the following if applicable: - Remove `allowExtendedProperties: true` DataSource setting - Add `allowExtendedProperties: false` DataSource setting - When passing directly to the connector functions, manually sanitize the user input for the `contains` LoopBack filter beforehand.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35942">详情</a></td>
       </tr>
@@ -302,7 +302,7 @@
       <tr>
        <td>baa76a0e244f09e5c74911872815e0ed</td>
        <td>CVE-2022-35956</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>This Rails gem adds two methods to the ActiveRecord::Base class that allow you to update many records on a single database hit, using a case sql statement for it. Before version 0.1.3 `update_by_case` gem used custom sql strings, and it was not sanitized, making it vulnerable to sql injection. Upgrade to version >= 0.1.3 that uses `Arel` instead to construct the resulting sql statement, with sanitized sql.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35956">详情</a></td>
       </tr>
@@ -310,7 +310,7 @@
       <tr>
        <td>38447acf20ecf69a10529b688d471127</td>
        <td>CVE-2022-35953</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>BookWyrm is a social network for tracking your reading, talking about books, writing reviews, and discovering what to read next. Some links in BookWyrm may be vulnerable to tabnabbing, a form of phishing that gives attackers an opportunity to redirect a user to a malicious site. The issue was patched in version 0.4.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35953">详情</a></td>
       </tr>
@@ -318,7 +318,7 @@
       <tr>
        <td>737c38ff532843f12a7604255f2d36ba</td>
        <td>CVE-2022-35943</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>Shield is an authentication and authorization framework for CodeIgniter 4. This vulnerability may allow [SameSite Attackers](https://canitakeyoursubdomain.name/) to bypass the [CodeIgniter4 CSRF protection](https://codeigniter4.github.io/userguide/libraries/security.html) mechanism with CodeIgniter Shield. For this attack to succeed, the attacker must have direct (or indirect, e.g., XSS) control over a subdomain site (e.g., `https://a.example.com/`) of the target site (e.g., `http://example.com/`). Upgrade to **CodeIgniter v4.2.3 or later** and **Shield v1.0.0-beta.2 or later**. As a workaround: set `Config\Security::$csrfProtection` to `'session,'`remove old session data right after login (immediately after ID and password match) and regenerate CSRF token right after login (immediately after ID and password match)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35943">详情</a></td>
       </tr>
@@ -326,7 +326,7 @@
       <tr>
        <td>5f0a9a90354d03296b0ded3d7625778c</td>
        <td>CVE-2022-38183</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>In Gitea before 1.16.9, it was possible for users to add existing issues to projects. Due to improper access controls, an attacker could assign any issue to any project in Gitea (there was no permission check for fetching the issue). As a result, the attacker would get access to private issue titles.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38183">详情</a></td>
       </tr>
@@ -334,7 +334,7 @@
       <tr>
        <td>0b6eaa8841cd0d8942d84072c5674cff</td>
        <td>CVE-2022-37397</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>An issue was discovered in the YugabyteDB 2.6.1 when using LDAP-based authentication in YCQL with Microsoft’s Active Directory. When anonymous or unauthenticated LDAP binding is enabled, it allows bypass of authentication with an empty password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37397">详情</a></td>
       </tr>
@@ -342,7 +342,7 @@
       <tr>
        <td>d0348ff858b3d765010a5a1d1a8b8fbc</td>
        <td>CVE-2022-2804</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability was found in SourceCodester Zoo Management System. It has been classified as critical. Affected is an unknown function of the file /pages/apply_vacancy.php. The manipulation of the argument filename leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-206250 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2804">详情</a></td>
       </tr>
@@ -350,7 +350,7 @@
       <tr>
        <td>59ab61ddcd507685fc042a46036ad7e2</td>
        <td>CVE-2022-2803</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability was found in SourceCodester Zoo Management System and classified as critical. This issue affects some unknown processing of the file /pages/animals.php. The manipulation of the argument class_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-206249 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2803">详情</a></td>
       </tr>
@@ -358,7 +358,7 @@
       <tr>
        <td>aabf1ba46a6846eb562845da719a6a80</td>
        <td>CVE-2022-2802</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability has been found in SourceCodester Gas Agency Management System and classified as critical. This vulnerability affects unknown code of the file gasmark/login.php. The manipulation of the argument username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-206248.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2802">详情</a></td>
       </tr>
@@ -366,7 +366,7 @@
       <tr>
        <td>dc7cb39fa8ed249725c4c07f847b028a</td>
        <td>CVE-2022-2801</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability, which was classified as critical, was found in SourceCodester Automated Beer Parlour Billing System. This affects an unknown part of the component Login. The manipulation of the argument username leads to sql injection. It is possible to initiate the attack remotely. The associated identifier of this vulnerability is VDB-206247.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2801">详情</a></td>
       </tr>
@@ -374,7 +374,7 @@
       <tr>
        <td>1ff9adf241ffa9fc1925a71691b59ed9</td>
        <td>CVE-2022-2800</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability, which was classified as problematic, has been found in SourceCodester Gym Management System. Affected by this issue is some unknown functionality. The manipulation leads to clickjacking. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-206246 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2800">详情</a></td>
       </tr>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9c1ff1ad73277c94a32da2d9e1d05dfb</td>
+       <td>CVE-2022-20347</td>
+       <td>2022-08-14 20:28:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7957b8c76e2a4430b2ec6efbba5c2b3c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3a1062f4340569bcfbbcfe836231976</td>
+       <td>CVE-2022-20353</td>
+       <td>2022-08-14 20:28:02 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f9ba03c8f9dc49a8a82627d07c07386b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bc8611ddb30c20300323d57a446e9d9</td>
+       <td>CVE-2022-20346</td>
+       <td>2022-08-14 20:27:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=67c672c1b9744e35ab6805b00561a121">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>36c1bc2b3cf3f920ed957088f323f27b</td>
+       <td>CVE-2022-20354</td>
+       <td>2022-08-14 20:27:53 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=142a0032ae6646bb9433a4382589cd5c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed09e5368e6f8af6fe716e419c3ed81e</td>
+       <td>CVE-2022-20349</td>
+       <td>2022-08-14 20:27:48 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d922be7661e4b1a889d13ae1f914322">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61c91876335fe7b24f7072b7a8c86e07</td>
+       <td>CVE-2022-20361</td>
+       <td>2022-08-14 20:27:44 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=964526ca28d342b28a90912d0e2a0d9f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>831ee64ffba7c87a0ad9eed94b804c87</td>
+       <td>CVE-2022-20350</td>
+       <td>2022-08-14 20:27:39 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d084b414ee8f41b2ab44edb40b8362cb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>25c89228fe03a9a2255d5360f276fcdb</td>
+       <td>CVE-2022-21979</td>
+       <td>2022-08-14 20:27:34 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Exchange Server 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=53583d79400c40d9ad76d36b2e76ac5f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd55af3bf2de3be4fe27d429d9057946</td>
+       <td>CVE-2022-20344</td>
+       <td>2022-08-14 20:27:30 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=88ddce8abdad4af1b9644d07ee6f2718">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be5d42d524f5550e91e3729745b37df0</td>
+       <td>CVE-2022-20358</td>
+       <td>2022-08-14 20:27:25 <img src="imgs/new.gif" /></td>
+       <td>Google Android 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8fc4f2410bac4bf5a47a3b9db91eb76e">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1a3be092129664dc4c4abd0363ddbfe6</td>
        <td>CVE-2022-26979</td>
        <td>2022-08-13 20:25:04 <img src="imgs/new.gif" /></td>
@@ -1758,7 +1838,7 @@
       <tr>
        <td>4687f1d2bb8553a403d55b3c766d3913</td>
        <td>CVE-2022-36359</td>
-       <td>2022-08-12 20:30:58 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:58</td>
        <td>Django 其他漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2528815973d6439191a84360dcb1215f">详情</a></td>
       </tr>
@@ -1766,7 +1846,7 @@
       <tr>
        <td>e80c45e2671bd1acaf1f85bff83b66b6</td>
        <td>CVE-2022-29154</td>
-       <td>2022-08-12 20:30:53 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:53</td>
        <td>rsync 其他漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5edb5b9729854a349fecb4c0825754d0">详情</a></td>
       </tr>
@@ -1774,7 +1854,7 @@
       <tr>
        <td>93ed11ba554c7116a34a10f7d487c61a</td>
        <td>CVE-2022-27617</td>
-       <td>2022-08-12 20:30:48 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:48</td>
        <td>Synology Calendar 路径遍历漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4eead74002f343c493ac7a8701e7bef7">详情</a></td>
       </tr>
@@ -1833,86 +1913,6 @@
        <td>2022-08-10 20:22:42</td>
        <td>Artica Pandora FMS 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=67fd9c30a52c4159bb698a83e1f03288">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95eda828e64c752ea489453f36041b12</td>
-       <td>CVE-2021-46676</td>
-       <td>2022-08-10 20:22:38</td>
-       <td>Artica Pandora FMS 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=77f61b60ddbe4352ae216d0f0a6a740d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ef9a9ba3cd0b877a76491d8c7ef31ce</td>
-       <td>CVE-2022-2215</td>
-       <td>2022-08-10 20:22:23</td>
-       <td>WordPress和WordPress plugin 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8012ee102ac94a93a3ffc26c0a21d730">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>249282cd65e2ec0dec9088c45abfe03b</td>
-       <td>CVE-2022-26427</td>
-       <td>2022-08-10 20:22:13</td>
-       <td>MediaTek 芯片 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=72d5c18a1e384d7fbf661be54d3fc6eb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d051da05c2b3e5c4753e0372738f7bf3</td>
-       <td>CVE-2021-21022</td>
-       <td>2022-08-09 20:19:58</td>
-       <td>Adobe Magento Commerce和Magento Open Source 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=145e3e11aa3448928964b875079ce070">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f088af995321bc695a1082eea5c66a26</td>
-       <td>CVE-2020-1754</td>
-       <td>2022-08-09 20:19:54</td>
-       <td>Moodle 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e531bfa88a4544d0b16b702ec38cdf01">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72810fe40ba524e16247e4a3b371dd29</td>
-       <td>CVE-2020-1691</td>
-       <td>2022-08-09 20:19:49</td>
-       <td>Moodle 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b9fbc0142ead4198a8b8c28f5ba5bf2e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eedc282aea3ca0ec0ced65c18fee8dcc</td>
-       <td>CVE-2021-46678</td>
-       <td>2022-08-09 20:19:44</td>
-       <td>Artica Pandora FMS 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9d42fa4b5ee04ded8839e0f1c3dde39c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afb7558e58cc679b6558d3c4ffe9ff13</td>
-       <td>CVE-2021-46677</td>
-       <td>2022-08-09 20:19:39</td>
-       <td>Artica Pandora FMS 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ed65e0d409474e2cafd9aa2bec8da10e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e80ce9cce0a118e2e59af41dcb35ad7</td>
-       <td>CVE-2022-23733</td>
-       <td>2022-08-09 20:19:34</td>
-       <td>GitHub Enterprise Server 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=845cee3c0af74016b6067b2ea6ba2e6e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>34645c3a6d1191e2607d709eb040bcd3</td>
-       <td>CVE-2021-46680</td>
-       <td>2022-08-09 20:19:29</td>
-       <td>Artica Pandora FMS 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b80b17dac85414caa567d06b678df3e">详情</a></td>
       </tr>
 
      </tbody>
