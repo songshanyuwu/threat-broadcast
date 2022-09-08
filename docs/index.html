@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-07 23:46:12 -->
+<!-- RELEASE TIME : 2022-09-08 06:25:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f561c5a490b8088beafb9fd06f006014</td>
+       <td>CVE-2022-37146</td>
+       <td>2022-09-08 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The PlexTrac platform prior to version 1.28.0 allows for username enumeration via HTTP response times on invalid login attempts for users configured to use the PlexTrac authentication provider. Login attempts for valid, unlocked users configured to use PlexTrac as their authentication provider take significantly longer than those for invalid users, allowing for valid users to be enumerated by an unauthenticated remote attacker. Note that the lockout policy implemented in Plextrac version 1.17.0 makes it impossible to distinguish between valid, locked user accounts and user accounts that do not exist, but does not prevent valid, unlocked users from being enumerated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37146">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de2c5b668f23b993888baa252f30b594</td>
+       <td>CVE-2022-37145</td>
+       <td>2022-09-08 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The PlexTrac platform prior to version 1.17.0 does not restrict excessive authentication attempts for accounts configured to use the PlexTrac authentication provider. An unauthenticated remote attacker could perform a bruteforce attack on the login page with no time or attempt limitation in an attempt to obtain valid credentials for the platform users configured to use the PlexTrac authentication provider.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96daa0ef7b6da5f80b831eb7a3d269a9</td>
+       <td>CVE-2022-37144</td>
+       <td>2022-09-08 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The PlexTrac platform prior to API version 1.17.0 does not restrict excessive MFA TOTP submission attempts. An unauthenticated remote attacker in possession of a valid username and password can bruteforce their way past MFA protections to login as the targeted user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27b19ca540125ef6bed090fb522d71ab</td>
+       <td>CVE-2022-38531</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>FPT G-97RG6M R4.2.98.035 and G-97RG3 R4.2.43.078 are vulnerable to Remote Command Execution in the ping function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38531">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>692a5a7fe80247eb4c896eb7346dc4ab</td>
+       <td>CVE-2022-37779</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Phicomm FIR151B A2, FIR302E A2, FIR300B A2, FIR303B A2 routers V3.0.1.17 were discovered to contain a remote command execution (RCE) vulnerability via the sendnum parameter of the ping function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37779">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ab51cce07498c81157ee454f7565e51</td>
+       <td>CVE-2022-37778</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Phicomm FIR151B A2, FIR302E A2, FIR300B A2, FIR303B A2 routers V3.0.1.17 were discovered to contain a remote command execution (RCE) vulnerability via the current_time parameter of the time function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37778">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>40f8834741dd20d025380aeaf57af51b</td>
+       <td>CVE-2022-37777</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Phicomm FIR151B A2, FIR302E A2, FIR300B A2, FIR303B A2 routers 3.0.1.17 and earlier were discovered to contain a remote command execution (RCE) vulnerability via the trHops parameter of the tracert function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37777">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e5052b2b9d1783a3823ee04604ebeb7</td>
+       <td>CVE-2022-36588</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>In D-Link DAP1650 v1.04 firmware, the fileaccess.cgi program in the firmware has a buffer overflow vulnerability caused by strncpy.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36588">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2af3492b220ac788ec7184cc2a78c662</td>
+       <td>CVE-2022-36586</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Tenda G3 US_G3V3.0br_V15.11.0.6(7663)_EN_TDE, there is a buffer overflow vulnerability caused by strcpy in function 0x869f4 in the httpd binary.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36586">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f3b1048a352f2afe90c629008f54ff0</td>
+       <td>CVE-2021-34236</td>
+       <td>2022-09-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer Overflow in Netgear R8000 Router with firmware v1.0.4.56 allows remote attackers to execute arbitrary code or cause a denial-of-service by sending a crafted POST to '/bd_genie_create_account.cgi' with a sufficiently long parameter 'register_country'.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-34236">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b371f17ab36443a6528a57bc43804084</td>
        <td>CVE-2022-36081</td>
        <td>2022-09-07 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>cffa4f453f50cdf9fc57ef7f3ceee1e7</td>
        <td>CVE-2022-38530</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>GPAC v2.1-DEV-rev232-gfcaa01ebb-master was discovered to contain a stack overflow when processing ISOM_IOD.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38530">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>9cdd6b7dbc4c357dbdbcfe8dc94733fe</td>
        <td>CVE-2022-38529</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>tinyexr commit 0647fb3 was discovered to contain a heap-buffer overflow via the component rleUncompress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38529">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>6367ee0155f6386e53f175ce802e7b40</td>
        <td>CVE-2022-38528</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>Open Asset Import Library (assimp) commit 3c253ca was discovered to contain a segmentation violation via the component Assimp::XFileImporter::CreateMeshes.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38528">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>e70bf5f34c30486d693d2a80e67d6f26</td>
        <td>CVE-2022-37344</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>Missing Access Control vulnerability in PHP Crafts Accommodation System plugin <= 1.0.1 at WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37344">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>5c776d3bdc7993993af419a3b9e1550b</td>
        <td>CVE-2022-36427</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>Missing Access Control vulnerability in About Rentals. Inc. About Rentals plugin <= 1.5 at WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36427">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>1e82484424d8fc7a9185828cff900b34</td>
        <td>CVE-2022-36387</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>Broken Access Control vulnerability in Alessio Caiazza's About Me plugin <= 1.0.12 at WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36387">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>cdff0135e4b9db856864c1dc92c354d0</td>
        <td>CVE-2022-35913</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>Samourai Wallet Stonewallx2 0.99.98e allows a denial of service via a P2P coinjoin. The attacker and victim must follow each other's paynym. Then, the victim must try to collaborate with the attacker for a Stonewallx2 transaction. Next, the attacker broadcasts a tx, spending the inputs used in Stonewallx2 before the victim can broadcast the collaborative transaction. The attacker does not signal opt in RBF, and uses the lowest fee rate. This would result in the victim being unable to perform Stonewallx2. (Note that the attacker could use multiple paynyms.)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35913">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>7fd060f058d5a651fca4fe3ea2cc55af</td>
        <td>CVE-2022-1525</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>The Cognex 3D-A1000 Dimensioning System in firmware version 1.0.3 (3354) and prior is vulnerable to CWE-602: Client-Side Enforcement of Server-Side Security, which could allow attackers to bypass web access controls by inspecting and modifying the source code of password protected web elements.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1525">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>cb9a5a5c43ec9d10e548e59aeb6e8afb</td>
        <td>CVE-2022-1522</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>The Cognex 3D-A1000 Dimensioning System in firmware version 1.0.3 (3354) and prior is vulnerable to CWE-117: Improper Output Neutralization for Logs, which allows an attacker to create false logs that show the password as having been changed when it is not, complicating forensics.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1522">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>4c399dbea4a9d26518a2480b2f96a361</td>
        <td>CVE-2022-1368</td>
-       <td>2022-09-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:15:00</td>
        <td>The Cognex 3D-A1000 Dimensioning System in firmware version 1.0.3 (3354) and prior is vulnerable to CWE-306: Missing Authentication for Critical Function, which allows unauthorized users to change the operator account password via webserver commands by monitoring web socket communications from an unauthenticated session. This could allow an attacker to escalate privileges to match those of the compromised account.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1368">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1a8eb9c74bb6657ce7c4b701683b5d4</td>
-       <td>CVE-2022-38176</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in YSoft SAFEQ 6 before 6.0.72. Incorrect privileges were configured as part of the installer package for the Client V3 services, allowing for local user privilege escalation by overwriting the executable file via an alternative data stream. NOTE: this is not the same as CVE-2021-31859.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38176">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>304bf42815a36ff52cef5fd00d68e76e</td>
-       <td>CVE-2022-36663</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Gluu Oxauth before v4.4.1 allows attackers to execute blind SSRF (Server-Side Request Forgery) attacks via a crafted request_uri parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a4b04fbcc3df5b00f6401493239b9b8e</td>
-       <td>CVE-2022-36072</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>SilverwareGames.io is a social network for users to play video games online. In version 1.1.8 and prior, due to an unobvious feature of PHP, hashes generated by built-in functions and starting with the `0e` symbols were being handled as zero multiplied with the `e` number. Therefore, the hash value was equal to 0. The maintainers fixed this in version 1.1.9 by using `===` instead of `==` in comparisons where it is possible (e.g. on sign in/sign up handlers).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36072">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f3980ce8e2f27631d6a1e5a74bce8e34</td>
-       <td>CVE-2022-36065</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>GrowthBook is an open-source platform for feature flagging and A/B testing. With some self-hosted configurations in versions prior to 2022-08-29, attackers can register new accounts and upload files to arbitrary directories within the container.  If the attacker uploads a Python script to the right location, they can execute arbitrary code within the container. To be affected, ALL of the following must be true: Self-hosted deployment (GrowthBook Cloud is unaffected); using local file uploads (as opposed to S3 or Google Cloud Storage); NODE_ENV set to a non-production value and JWT_SECRET set to an easily guessable string like `dev`. This issue is patched in commit 1a5edff8786d141161bf880c2fd9ccbe2850a264 (2022-08-29). As a workaround, set `JWT_SECRET` environment variable to a long random string. This will stop arbitrary file uploads, but the only way to stop attackers from registering accounts is by updating to the latest build.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36065">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d82759a53a57f55b5aedaf2c6062e559</td>
-       <td>CVE-2022-36064</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Shescape is a shell escape package for JavaScript. An Inefficient Regular Expression Complexity vulnerability impacts users that use Shescape to escape arguments for the Unix shells `Bash` and `Dash`, or any not-officially-supported Unix shell; and/or using the `escape` or `escapeAll` functions with the `interpolation` option set to `true`. An attacker can cause polynomial backtracking or quadratic runtime in terms of the input string length due to two Regular Expressions in Shescape that are vulnerable to Regular Expression Denial of Service (ReDoS). This bug has been patched in v1.5.10. For `Dash` only, this bug has been patched since v1.5.9. As a workaround, a maximum length can be enforced on input strings to Shescape to reduce the impact of the vulnerability. It is not recommended to try and detect vulnerable input strings, as the logic for this may end up being vulnerable to ReDoS itself.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36064">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>775cc076da1601ca71f914fb794bfd35</td>
-       <td>CVE-2022-36061</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Elrond go is the go implementation for the Elrond Network protocol. In versions prior to 1.3.35, read only calls between contracts can generate smart contracts results. For example, if contract A calls in read only mode contract B and the called function will make changes upon the contract's B state, the state will be altered for contract B as if the call was not made in the read-only mode. This can lead to some effects not designed by the original smart contracts programmers. This issue was patched in version 1.3.35. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36061">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>91ef90b1dea88ec64c8ff2a9c91c66dd</td>
-       <td>CVE-2022-26861</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dell BIOS versions contain an Insecure Automated Optimization vulnerability. A local authenticated malicious user could exploit this vulnerability by sending malicious input via SMI to obtain arbitrary code execution during SMM.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26861">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>830517f633664cb074fac5234e33b4a7</td>
-       <td>CVE-2022-26860</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dell BIOS versions contain a stack-based buffer overflow vulnerability. A local attacker could exploit this vulnerability by sending malicious input via SMI to bypass security checks resulting in arbitrary code execution in SMM.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26860">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba884698889b7c03e807f2db3a76ace4</td>
-       <td>CVE-2022-26859</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dell BIOS contains a race condition vulnerability. A local attacker could exploit this vulnerability by sending malicious input via SMI in order to bypass security checks during SMM.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26859">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b8979be3c663bb601f1605384db6b769</td>
-       <td>CVE-2022-26858</td>
-       <td>2022-09-06 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dell BIOS versions contain an Improper Authentication vulnerability. A locally authenticated malicious user could potentially exploit this vulnerability by sending malicious input to an SMI in order to bypass security controls.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26858">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>6ffe229f2cda55ce2742228eec6d92ca</td>
        <td>CNNVD-202209-409 (CVE-2022-37344)</td>
-       <td>2022-09-06 23:46:11 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:11</td>
        <td>WordPress plugin PHP Crafts Accommodation System 权限许可和访问控制问题漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-409">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>321ea416624629972578b87ea2c72dfb</td>
        <td>CNNVD-202209-410 (CVE-2022-35913)</td>
-       <td>2022-09-06 23:46:09 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:09</td>
        <td>Samourai Wallet Stonewallx2 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-410">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>a8186002ddf9e4107e1536df8fd4f09e</td>
        <td>CNNVD-202209-411 (CVE-2022-38528)</td>
-       <td>2022-09-06 23:46:06 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:06</td>
        <td>Open Asset Import Library 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-411">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>ec219aea39b97d2f6771d66014307620</td>
        <td>CNNVD-202209-412 (CVE-2022-37840)</td>
-       <td>2022-09-06 23:46:04 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:04</td>
        <td>TOTOLINK A860R 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-412">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>96d6c069de92a37dc8ee7f17405b1c3f</td>
        <td>CNNVD-202209-413 (CVE-2022-38529)</td>
-       <td>2022-09-06 23:46:02 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:02</td>
        <td>tinyexr 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-413">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>550b1a701c9454fe206d34a20c824127</td>
        <td>CNNVD-202209-414 (CVE-2022-36427)</td>
-       <td>2022-09-06 23:46:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:46:00</td>
        <td>WordPress plugin About Rentals 权限许可和访问控制问题漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-414">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>d6da8c83d7f1a118657ab27d18ffea44</td>
        <td>CNNVD-202209-415 (CVE-2022-3143)</td>
-       <td>2022-09-06 23:45:58 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:45:58</td>
        <td>Red Hat wildfly-elytron 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-415">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>2f1a2c97abc10453f6509daa3d2060a1</td>
        <td>CNNVD-202209-416 (CVE-2022-38530)</td>
-       <td>2022-09-06 23:45:56 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:45:56</td>
        <td>GPAC 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-416">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>945d246a6c7778daddf6146cfd0d8fb0</td>
        <td>CNNVD-202209-417 (CVE-2022-20398)</td>
-       <td>2022-09-06 23:45:54 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:45:54</td>
        <td>Google Android 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-417">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>9407598bd64a94f340bba86cf851d248</td>
        <td>CNNVD-202209-418 (CVE-2022-26859)</td>
-       <td>2022-09-06 23:45:51 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:45:51</td>
        <td>Dell BIOS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-418">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>74dbceba19269b601369d0b1b419eff5</td>
        <td>CVE-2022-36733</td>
-       <td>2022-09-06 20:32:01 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 20:32:01</td>
        <td>Library Management System SQL注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=301b97039ab04edd97bfda48c90fe127">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>4165dc82bb94bf5ea3d7f52793f01974</td>
        <td>CVE-2021-29864</td>
-       <td>2022-09-06 20:31:52 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 20:31:52</td>
        <td>IBM Security Identity Manager 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bfbaed50045246578284c7333cd679c4">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>2dc5d965f8ad953c1671c984fc841a31</td>
        <td>CVE-2022-30320</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Honeywell Saia Burgess Controls PCD信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69433">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>e88687d6022d9dde6613cc1f232905e0</td>
        <td>CVE-2022-2227</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>GitLab CE/EE访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69432">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>ca10135875fa6f6552e5100a77833aaa</td>
        <td>CVE-2022-33158</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Trend Micro VPN Proxy Pro权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69431">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>41d5593494b10d80e90efdfad790fff3</td>
        <td>CVE-2022-34526</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Tiffsplit越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69430">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>8af46573ebbde7cc577672f307117a9f</td>
        <td>CVE-2022-27866</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Autodesk Design Review越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69429">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>255317e9fd236362873113e3128176d5</td>
        <td>CVE-2022-26078</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Gallagher Controller 6000异常情况处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69428">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>3d3b7770ff872e4462569c2ec8eb08f0</td>
        <td>CVE-2022-24140</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>IOBit多款产品远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69427">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>970f2bb197b2e04d3a6393fc3dfbbac3</td>
        <td>CVE-2021-31677</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>PESCMS跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69426">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>490e2d96af00d9e46fab57a992005b85</td>
        <td>CVE-2022-30591</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>quic-go不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69425">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>bad4c7ab3e86988d5b92e2e778262cd8</td>
        <td>CVE-2022-2097</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>OpenSSL信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69424">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>a357558ee60fd06393bfdd40a06275b2</td>
        <td>CVE-2022-29471</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Cybozu Garoon信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69423">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>0032e3534ae8b93c90c5a2b3e1250d98</td>
        <td>CVE-2022-34151</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Omron Machine Automation Controller硬编码凭据漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69422">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>73129ad7420ef7c02f24351c15863722</td>
        <td>CVE-2022-28200</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>NVIDIA DGX A100越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69421">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>96cce0f83af56186b54cd7f352a9dcab</td>
        <td>CVE-2022-2254</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>Distributed Data Systems WebHMI跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69420">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>22cea4d8465fceb3c9510708a444a43d</td>
        <td>CVE-2022-27548</td>
-       <td>2022-09-06 23:43:55 <img src="imgs/new.gif" /></td>
+       <td>2022-09-06 23:43:55</td>
        <td>HCL Technologies HCL Launch信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69419">详情</a></td>
       </tr>
@@ -2187,6 +2187,46 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>f2d71e5d7dff2db19e9e818ce819d3f7</td>
+       <td>CVE-2022-39840</td>
+       <td>2022-09-05 06:15:18 </td>
+       <td>Cotonti Siena 0.9.20 allows admins to conduct stored XSS attacks via a direct message (DM).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39840">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a89acb25530725d160ffca46b77a57f</td>
+       <td>CVE-2022-39839</td>
+       <td>2022-09-05 06:15:18 </td>
+       <td>Cotonti Siena 0.9.20 allows admins to conduct stored XSS attacks via a forum post.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9583a624eca6ed4e15da98bc5cc9102e</td>
+       <td>CVE-2022-39830</td>
+       <td>2022-09-05 04:15:08 </td>
+       <td>sign_pFwInfo in Samsung mTower through 0.3.0 has a missing check on the return value of EC_KEY_set_public_key_affine_coordinates, leading to a denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39830">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>922cca8855dda5952db0944073c85934</td>
+       <td>CVE-2022-39829</td>
+       <td>2022-09-05 04:15:08 </td>
+       <td>There is a NULL pointer dereference in aes256_encrypt in Samsung mTower through 0.3.0 due to a missing check on the return value of EVP_CIPHER_CTX_new.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39829">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97e6bb74d612a00a90de1a8d37fffc73</td>
+       <td>CVE-2022-39828</td>
+       <td>2022-09-05 04:15:08 </td>
+       <td>sign_pFwInfo in Samsung mTower through 0.3.0 has a missing check on the return value of EC_KEY_set_private_key, leading to a denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39828">详情</a></td>
+      </tr>
+
       <tr>
        <td>7238a6f9fd03ce9c499ffe08406deffc</td>
        <td>CVE-2022-39194</td>
@@ -2385,46 +2425,6 @@
        <td>2022-08-27 21:15:08 </td>
        <td>Zaver through 2020-12-15 allows directory traversal via the GET /.. substring.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38794">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1399f7745e59565c4f05f04d1a7cf9fb</td>
-       <td>CVE-2022-38792</td>
-       <td>2022-08-27 20:15:08 </td>
-       <td>The exotel (aka exotel-py) package in PyPI as of 0.1.6 includes a code execution backdoor inserted by a third party.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38792">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb92883601d9c408905ecb039946c08f</td>
-       <td>CVE-2022-38791</td>
-       <td>2022-08-27 20:15:08 </td>
-       <td>In MariaDB before 10.9.2, compress_write in extra/mariabackup/ds_compress.cc does not release data_mutex upon a stream write failure, which allows local users to trigger a deadlock.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38791">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ea0a71c88a04c1ba082d7e6fcf5a260</td>
-       <td>CVE-2022-2915</td>
-       <td>2022-08-26 21:15:08 </td>
-       <td>A Heap-based Buffer Overflow vulnerability in the SonicWall SMA100 appliance allows a remote authenticated attacker to cause Denial of Service (DoS) on the appliance or potentially lead to code execution. This vulnerability impacts 10.2.1.5-34sv and earlier versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-2915">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a8efd4ae231a74c8f198a3a4fb1730d</td>
-       <td>CVE-2022-38533</td>
-       <td>2022-08-26 00:15:09 </td>
-       <td>In GNU Binutils before 2.40, there is a heap-buffer-overflow in the error function bfd_getl32 when called from the strip_main function in strip-new via a crafted file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38533">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44479b33d5f5c2149c07fea1a1134424</td>
-       <td>CVE-2022-37318</td>
-       <td>2022-08-25 23:15:08 </td>
-       <td>Archer Platform 6.9 SP2 P2 before 6.11 P3 (6.11.0.3) contain a reflected XSS vulnerability. A remote unauthenticated malicious Archer user could potentially exploit this vulnerability by tricking a victim application user into supplying malicious JavaScript code to the vulnerable web application. This code is then reflected to the victim and gets executed by the web browser in the context of the vulnerable web application. 6.10 P4 (6.10.0.4) and 6.11 P2 HF4 (6.11.0.2.4) are also fixed releases.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37318">详情</a></td>
       </tr>
 
      </tbody>
