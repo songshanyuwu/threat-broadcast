@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-14 23:44:37 -->
+<!-- RELEASE TIME : 2022-09-15 06:26:40 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>aa8f4b7776b9ac0fc36e68c9ca021b1c</td>
        <td></td>
-       <td>2022-09-13 07:39:56 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 07:39:56</td>
        <td>安全事件周报 (09.05-09.12)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=d0de983a1d91826aef8789b17d0146b3">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1d12877be064eeaaeb634e7a115edc3d</td>
+       <td>CVE-2022-40738</td>
+       <td>2022-09-15 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Bento4 through 1.6.0-639. A NULL pointer dereference occurs in AP4_DescriptorListWriter::Action in Core/Ap4Descriptor.h, called from AP4_EsDescriptor::WriteFields and AP4_Expandable::Write.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aebf87fa52af8cd0c2190445f4229772</td>
+       <td>CVE-2022-40737</td>
+       <td>2022-09-15 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Bento4 through 1.6.0-639. A buffer over-read exists in the function AP4_StdcFileByteStream::WritePartial located in System/StdC/Ap4StdCFileByteStream.cpp, called from AP4_ByteStream::Write and AP4_HdlrAtom::WriteFields.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40737">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35c8b6440242f8d7491ccb1f4d33ef3a</td>
+       <td>CVE-2022-40736</td>
+       <td>2022-09-15 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Bento4 1.6.0-639. There ie excessive memory consumption in AP4_CttsAtom::Create in Core/Ap4CttsAtom.cpp.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40736">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6541d26e197cabea46b0ee96e71a43d5</td>
+       <td>CVE-2022-38595</td>
+       <td>2022-09-15 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Church Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/edit_user.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38595">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dca5ab77cd4705814d17a7c7c41bf832</td>
+       <td>CVE-2022-38594</td>
+       <td>2022-09-15 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Church Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/edit_visitor.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38594">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29beec8e42ee053593d8f9a57e462904</td>
+       <td>CVE-2022-38352</td>
+       <td>2022-09-15 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>ThinkPHP v6.0.13 was discovered to contain a deserialization vulnerability via the component League\Flysystem\Cached\Storage\Psr6Cache. This vulnerability allows attackers to execute arbitrary code via a crafted payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38352">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af79319a67dc90481548c57f880637d2</td>
+       <td>CVE-2022-38323</td>
+       <td>2022-09-15 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Event Management System v1.0 was discovered to contain an arbitrary file upload vulnerability via the component /Royal_Event/update_image.php. This vulnerability allows attackers to execute arbitrary code via a crafted PHP file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38323">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ec8fb905400be2a3e1611cfa25cd54f</td>
+       <td>CVE-2018-25047</td>
+       <td>2022-09-15 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Smarty before 3.1.47 and 4.x before 4.2.1, libs/plugins/function.mailto.php allows XSS. A web page that uses smarty_function_mailto, and that could be parameterized using GET or POST input parameters, could allow injection of JavaScript code by a user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-25047">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>08d242f511513923114ef847ba6f234c</td>
+       <td>CVE-2022-40734</td>
+       <td>2022-09-14 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>UniSharp laravel-filemanager (aka Laravel Filemanager) through 2.5.1 allows download?working_dir=%2F.. directory traversal to read arbitrary files, as exploited in the wild in June 2022.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff1f9579cfe49fdd6eddbdc78d8c7992</td>
+       <td>CVE-2020-36603</td>
+       <td>2022-09-14 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>The HoYoVerse (formerly miHoYo) Genshin Impact mhyprot2.sys 1.0.0.0 anti-cheat driver does not adequately restrict unprivileged function calls, allowing local, unprivileged users to execute arbitrary code with SYSTEM privileges on Microsoft Windows systems. The mhyprot2.sys driver must first be installed by a user with administrative privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36603">详情</a></td>
+      </tr>
+
+      <tr>
        <td>367539da8e5a7b5bc825fc9120f4cb05</td>
        <td>CVE-2022-40476</td>
        <td>2022-09-14 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>6e93c59e3b7f87bd110a010d95862d64</td>
        <td>CVE-2022-38771</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>The mobile application in Transtek Mojodat FAM (Fixed Asset Management) 2.4.6 allows remote attackers to send SCRIPT tags as injected input to the API request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38771">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>ee1feee665dbdf011e0d140783a3eec4</td>
        <td>CVE-2022-38770</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>The mobile application in Transtek Mojodat FAM (Fixed Asset Management) 2.4.6 allows remote attackers to fetch other users' data upon a successful login request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38770">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>01975bc5ae4a11b71da888bb28017b43</td>
        <td>CVE-2022-38769</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>The mobile application in Transtek Mojodat FAM (Fixed Asset Management) 2.4.6 allows remote attackers to fetch cleartext passwords upon a successful login request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38769">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>1eef67957f683e766ac0b9a26c1edecc</td>
        <td>CVE-2022-38768</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>The mobile application in Transtek Mojodat FAM (Fixed Asset Management) 2.4.6 allows remote attackers to bypass authorization.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38768">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>ee2d355411ea3099b172baad747a4077</td>
        <td>CVE-2022-38305</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>AeroCMS v0.0.1 was discovered to contain an arbitrary file upload vulnerability via the component /admin/profile.php. This vulnerability allows attackers to execute arbitrary code via a crafted PHP file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38305">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>2cf47ce8375e135d4502ba269eed73e1</td>
        <td>CVE-2022-37191</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>The component "cuppa/api/index.php" of CuppaCMS v1.0 is Vulnerable to LFI. An authenticated user can read system files via crafted POST request using [function] parameter value as LFI payload.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37191">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>94b6509028c24f3203c6e591a107aeff</td>
        <td>CVE-2022-37190</td>
-       <td>2022-09-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:15:00</td>
        <td>CuppaCMS 1.0 is vulnerable to Remote Code Execution (RCE). An authenticated user can control both parameters (action and function) from "/api/index.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37190">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>99138c2e94e4b75846dc62aa7c452948</td>
        <td>CVE-2022-38633</td>
-       <td>2022-09-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 22:15:00</td>
        <td>Genymotion Desktop v3.2.1 was discovered to contain a DLL hijacking vulnerability which allows attackers to escalate privileges and execute arbitrary code via a crafted binary.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38633">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>5546f259dec5164eb45355d1b502c32a</td>
        <td>CVE-2022-35582</td>
-       <td>2022-09-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 22:15:00</td>
        <td>Penta Security Systems Inc WAPPLES 4.0.*, 5.0.0.*, 5.0.12.* are vulnerable to Incorrect Access Control. The operating system that WAPPLES runs on has a built-in non-privileged user penta with a predefined password. The password for this user, as well as its existence, is not disclosed in the documentation. Knowing the credentials, attackers can use this feature to gain uncontrolled access to the device and therefore are considered an undocumented possibility for remote control.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35582">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>a0452c9bad269a74a32a4bc126bfe93f</td>
        <td>CVE-2022-35413</td>
-       <td>2022-09-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 22:15:00</td>
        <td>WAPPLES through 6.0 has a hardcoded systemi account accessible via db/wp.no1 (as configured in the /opt/penta/wapples/script/wcc_auto_scaling.py file). A threat actor could use this account to access the system configuration and confidential information (such as SSL keys) via an HTTPS request to the /webapi/ URI on port 443 or 5001.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94e3c9e7c0dd05d7fa3bbf1bbcc7e513</td>
-       <td>CVE-2022-40623</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>The WAVLINK Quantum D4G (WN531G3) running firmware version M31G3.V5030.200325 does not utilize anti-CSRF tokens, which, when combined with other issues (such as CVE-2022-35518), can lead to remote, unauthenticated command execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40623">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ddfa8520a7b903c66545bbc722d8848</td>
-       <td>CVE-2022-40622</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>The WAVLINK Quantum D4G (WN531G3) running firmware version M31G3.V5030.200325 uses IP addresses to hold sessions and does not not use session tokens. Therefore, if an attacker changes their IP address to match the logged-in administrator's, or is behind the same NAT as the logged in administrator, session takeover is possible.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40622">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b355e87872bec5b7cf488c1ce444d7f2</td>
-       <td>CVE-2022-40621</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Because the WAVLINK Quantum D4G (WN531G3) running firmware version M31G3.V5030.200325 and earlier communicates over HTTP and not HTTPS, and because the hashing mechanism does not rely on a server-supplied key, it is possible for an attacker with sufficient network access to capture the hashed password of a logged on user and use it in a classic Pass-the-Hash style attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>687f7efab47fc6776148f5e19ebc7243</td>
-       <td>CVE-2022-39821</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, an Insertion of Sensitive Information into an Application Log File vulnerability occurs under /usr/Systems/OTNE_1_14_Master/maintenance/trace/web/.otn.default.log. The web application stores critical information, such as cleartext user credentials, in world-readable files in the filesystem.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39821">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>63fb31466f237b185d42c0b0f7ceec08</td>
-       <td>CVE-2022-39819</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, multiple OS Command Injection vulnerabilities occur in /cgi-bin/R14.2/log.pl via the cmd HTTP GET parameter and /cgi-bin/R14.2/checkping.pl via the addr HTTP GET parameter. This allows authenticated users to execute commands on the operating system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39819">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d974079fa1e730bca90a1397fd1d3042</td>
-       <td>CVE-2022-39817</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, multiple SQL Injection vulnerabilities occur in /cgi-bin/R14.2/easy1350.pl via the id or host HTTP GET parameter, or /cgi-bin/R14.2/cgi-bin/R14.2/host.pl via the host HTTP GET parameter. Exploitation requires an authenticated attacker.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39817">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>453f412db68e24e21e96ba3c48db2494</td>
-       <td>CVE-2022-39816</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, Insufficiently Protected Credentials (cleartext password) occur in /cgi-bin/R14.2/cgi-bin/R14.2/host.pl on the edit configuration page. Exploitation requires an authenticated attacker.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39816">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6d2e8f7659a41f333dbe0d47d51b407</td>
-       <td>CVE-2022-39815</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, multiple OS Command Injection vulnerabilities occur in /CGI-BIN/OTNE_1-14/runBatch.cgi via the file HTTP POST parameter, /CGI-BIN/OTNE_1-14/getRadioTLs.cgi via the context HTTP POST parameter, /CGI-BIN/OTNE_1-14/runRouteReport.cgi via the file HTTP POST parameter or /CGI-BIN/RemoteCommandManager.cgi via the command HTTP POST parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa3c27e22f429c3037e06900c1968a68</td>
-       <td>CVE-2022-39814</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>In NOKIA 1350 OMS R14.2, an Open Redirect vulnerability occurs is the login page via next HTTP GET parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39814">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d210eda5212e04636733d68668f97b0</td>
-       <td>CVE-2022-38637</td>
-       <td>2022-09-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Hospital Management System v1.0 was discovered to contain multiple SQL injection vulnerabilities via the Username and Password parameters on the Login page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38637">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>871092ac429c219b691970155cf226f6</td>
        <td>CNNVD-202209-963 (CVE-2022-35413)</td>
-       <td>2022-09-13 23:44:35 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:35</td>
        <td>Penta Security Systems WAPPLES 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-963">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>17f28ceb9206c2e7375b84fd9cd6e94e</td>
        <td>CNNVD-202209-964 (CVE-2022-37190)</td>
-       <td>2022-09-13 23:44:33 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:33</td>
        <td>CuppaCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-964">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>652cc788728937c7132fff6313d9d1bb</td>
        <td>CNNVD-202209-965 (CVE-2022-37191)</td>
-       <td>2022-09-13 23:44:30 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:30</td>
        <td>CuppaCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-965">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>ca80456c33c340563886a5d597d0ec6c</td>
        <td>CNNVD-202209-966 (CVE-2022-35582)</td>
-       <td>2022-09-13 23:44:27 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:27</td>
        <td>Penta Security Systems WAPPLES 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-966">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>e51e6faeb65f39876b014a53c463a315</td>
        <td>CNNVD-202209-967 (CVE-2022-3193)</td>
-       <td>2022-09-13 23:44:25 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:25</td>
        <td>ovirt-engine 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-967">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>985a1b791a93e066434530c51fb4e861</td>
        <td>CNNVD-202209-968 (CVE-2022-38768)</td>
-       <td>2022-09-13 23:44:22 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:22</td>
        <td>Transtek Mojodat FAM 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-968">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>afe9b63208f2ac45844a09af7ee1c45b</td>
        <td>CNNVD-202209-969 (CVE-2022-38305)</td>
-       <td>2022-09-13 23:44:19 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:19</td>
        <td>AeroCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-969">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>b9cef3d4fd91f87d468b68fcfa5ce0e5</td>
        <td>CNNVD-202209-970 (CVE-2022-38769)</td>
-       <td>2022-09-13 23:44:16 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:16</td>
        <td>Transtek Mojodat FAM 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-970">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>12f20fa6f94967d7dc6feda438453433</td>
        <td>CNNVD-202209-971 (CVE-2022-38770)</td>
-       <td>2022-09-13 23:44:13 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:13</td>
        <td>Transtek Mojodat FAM 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-971">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>55813354492c67a98ad84dbd3647e660</td>
        <td>CNNVD-202209-972 (CVE-2022-38771)</td>
-       <td>2022-09-13 23:44:10 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 23:44:10</td>
        <td>Transtek Mojodat FAM 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-972">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>df30a801c555a7232d7cf5587fc29b87</td>
        <td>CVE-2022-38249</td>
-       <td>2022-09-13 20:13:28 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 20:13:28</td>
        <td>Nagios XI 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e47bde199ec14fb7abbd7db1851fda8b">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>d632b21904f4e6d700e061ae9eacbbb5</td>
        <td>CVE-2022-27664</td>
-       <td>2022-09-13 20:12:49 <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 20:12:49</td>
        <td>Google Golang 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eb9a55ac99324b60a3c1f50f0ba8724b">详情</a></td>
       </tr>
@@ -2190,7 +2190,7 @@
       <tr>
        <td>ba55def7ddba4288573d72e01ddd520c</td>
        <td>CVE-2022-39156</td>
-       <td>2022-09-13 10:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:12 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application is vulnerable to out of bounds read past the end of an allocated buffer when parsing X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-18196)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39156">详情</a></td>
       </tr>
@@ -2198,7 +2198,7 @@
       <tr>
        <td>15a72000b7d0029846df756284f3731d</td>
        <td>CVE-2022-39155</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-18192)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39155">详情</a></td>
       </tr>
@@ -2206,7 +2206,7 @@
       <tr>
        <td>54ccc19af35bd4c8baa346d67fb54ead</td>
        <td>CVE-2022-39154</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-18188)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39154">详情</a></td>
       </tr>
@@ -2214,7 +2214,7 @@
       <tr>
        <td>3cc4ba0155607df3e8c5604e5c7d4cde</td>
        <td>CVE-2022-39153</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application is vulnerable to out of bounds read past the end of an allocated buffer when parsing X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-18187)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39153">详情</a></td>
       </tr>
@@ -2222,7 +2222,7 @@
       <tr>
        <td>bf3f5ab86c6116bb383982f3b3958467</td>
        <td>CVE-2022-39152</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17740)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39152">详情</a></td>
       </tr>
@@ -2230,7 +2230,7 @@
       <tr>
        <td>6c151d03c798191beee6d6076dcad786</td>
        <td>CVE-2022-39151</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17736)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39151">详情</a></td>
       </tr>
@@ -2238,7 +2238,7 @@
       <tr>
        <td>1db482fcc345461399d09583d1bf82db</td>
        <td>CVE-2022-39150</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17735)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39150">详情</a></td>
       </tr>
@@ -2246,7 +2246,7 @@
       <tr>
        <td>23b7f05bcef12a60ad4facc3a6a8c2a5</td>
        <td>CVE-2022-39149</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17733)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39149">详情</a></td>
       </tr>
@@ -2254,7 +2254,7 @@
       <tr>
        <td>f86c85d495ca59fcaf3979e14aed2ed7</td>
        <td>CVE-2022-39148</td>
-       <td>2022-09-13 10:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-09-13 10:15:11 </td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions &lt; V33.1.262), Parasolid V33.1 (All versions &gt;= V33.1.262 &lt; V33.1.263), Parasolid V34.0 (All versions &lt; V34.0.252), Parasolid V34.1 (All versions &lt; V34.1.242), Parasolid V35.0 (All versions &lt; V35.0.161), Parasolid V35.0 (All versions &gt;= V35.0.161 &lt; V35.0.164), Simcenter Femap V2022.1 (All versions &lt; V2022.1.3), Simcenter Femap V2022.2 (All versions &lt; V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17513)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39148">详情</a></td>
       </tr>
@@ -2265,6 +2265,30 @@
        <td>2022-09-11 21:15:08 </td>
        <td>SysAid Help Desk before 22.1.65 allows XSS in the Password Services module, aka FR# 67241.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40323">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c6da32548cf288ab889b9008475e434</td>
+       <td>CVE-2022-40325</td>
+       <td>2022-09-11 21:15:08 </td>
+       <td>SysAid Help Desk before 22.1.65 allows XSS via the Asset Dashboard, aka FR# 67262.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40325">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fdf8a545bc90707309e82a5e0cccb2b</td>
+       <td>CVE-2022-40324</td>
+       <td>2022-09-11 21:15:08 </td>
+       <td>SysAid Help Desk before 22.1.65 allows XSS via the Linked SRs field, aka FR# 67258.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40324">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a368a02f6b4a1c13c5102a54915c5e1e</td>
+       <td>CVE-2022-40322</td>
+       <td>2022-09-11 21:15:08 </td>
+       <td>SysAid Help Desk before 22.1.65 allows XSS, aka FR# 66542 and 65579.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40322">详情</a></td>
       </tr>
 
       <tr>
@@ -2297,6 +2321,14 @@
        <td>2022-09-09 15:15:15 </td>
        <td>A use-after-free(UAF) vulnerability was found in function 'vmw_execbuf_tie_context' in drivers/gpu/vmxgfx/vmxgfx_execbuf.c in Linux kernel's vmwgfx driver with device file '/dev/dri/renderD128 (or Dxxx)'. This flaw allows a local attacker with a user account on the system to gain privilege, causing a denial of service(DoS).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40133">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>16d62bea6ff94d5154611d1ea98bfc74</td>
+       <td>CVE-2022-39845</td>
+       <td>2022-09-09 15:15:14 </td>
+       <td>Improper validation of integrity check vulnerability in Samsung Kies prior to version 2.6.4.22074 allows local attackers to delete arbitrary directory using directory junction.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39845">详情</a></td>
       </tr>
 
       <tr>
@@ -2393,38 +2425,6 @@
        <td>2022-09-07 19:15:08 </td>
        <td>Tenda AC18 router v15.03.05.19 and v15.03.05.05 was discovered to contain a stack overflow via the time parameter at /goform/saveParentControlInfo.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38313">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53843fb45372e447141ffb47c900e7c6</td>
-       <td>CVE-2022-38312</td>
-       <td>2022-09-07 19:15:08 </td>
-       <td>Tenda AC18 router v15.03.05.19 and v15.03.05.05 was discovered to contain a stack overflow via the list parameter at /goform/SetIpMacBind.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38312">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77be738f4b27eea2aee3a41eab3e2f49</td>
-       <td>CVE-2022-38311</td>
-       <td>2022-09-07 19:15:08 </td>
-       <td>Tenda AC18 router v15.03.05.19 and v15.03.05.05 was discovered to contain a stack overflow via the time parameter at /goform/PowerSaveSet.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38311">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c1d3862d4566e60f7877fb5a3b081a9</td>
-       <td>CVE-2022-38310</td>
-       <td>2022-09-07 19:15:08 </td>
-       <td>Tenda AC18 router v15.03.05.19 and v15.03.05.05 was discovered to contain a stack overflow via the list parameter at /goform/SetStaticRouteCfg.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38310">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94606e3a6d7db6af5fc64ac5716439cd</td>
-       <td>CVE-2022-38309</td>
-       <td>2022-09-07 19:15:08 </td>
-       <td>Tenda AC18 router v15.03.05.19 and v15.03.05.05 was discovered to contain a stack overflow via the list parameter at /goform/SetVirtualServerCfg.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38309">详情</a></td>
       </tr>
 
      </tbody>
