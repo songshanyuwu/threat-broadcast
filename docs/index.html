@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-10-05 23:50:52 -->
+<!-- RELEASE TIME : 2022-10-06 23:51:55 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ea648f230d03f29f840ff3d33b6d9ef4</td>
+       <td>CVE-2022-41355</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Online Leave Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /leave_system/classes/Master.php?f=delete_department.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41355">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9efa7eaf687dc0598f5d328df97a4a0</td>
+       <td>CVE-2022-39284</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>CodeIgniter is a PHP full-stack web framework. In versions prior to 4.2.7 setting `$secure` or `$httponly` value to `true` in `Config\Cookie` is not reflected in `set_cookie()` or `Response::setCookie()`. As a result cookie values are erroneously exposed to scripts. It should be noted that this vulnerability does not affect session cookies. Users are advised to upgrade to v4.2.7 or later. Users unable to upgrade are advised to manually construct their cookies either by setting the options in code or by constructing Cookie objects. Examples of each workaround are available in the linked GHSA.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39284">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56a413a86c4bc35239fb0ae6a53f99f2</td>
+       <td>CVE-2022-39279</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>discourse-chat is a plugin for the Discourse message board which adds chat functionality. In versions prior to 0.9 some places render a chat channel's name and description in an unsafe way, allowing staff members to cause an cross site scripting (XSS) attack by inserting unsafe HTML into them. Version 0.9 has addressed this issue. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f94f0cb742f63815c517e156221f92a</td>
+       <td>CVE-2022-27810</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>It was possible to trigger an infinite recursion condition in the error handler when Hermes executed specific maliciously formed JavaScript. This condition was only possible to trigger in dev-mode (when asserts were enabled). This issue affects Hermes versions prior to v0.12.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>18800074cb6ca81682cdaeca472182e5</td>
+       <td>CVE-2022-41528</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain an authenticated stack overflow via the text parameter in the setSmsCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41528">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8f7623ce2279905f392621909aafc9b</td>
+       <td>CVE-2022-41527</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain an authenticated stack overflow via the pppoeUser parameter in the setOpModeCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41527">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>051f37613322bd8b7beed4defa9aecdb</td>
+       <td>CVE-2022-41526</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain an authenticated stack overflow via the ip parameter in the setDiagnosisCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41526">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61e33fe64188f1751fc9e4db1a1b6e2a</td>
+       <td>CVE-2022-41525</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain a command injection vulnerability via the OpModeCfg function at /cgi-bin/cstecgi.cgi.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41525">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a8f9872b2005c89d441f461c3887ec3</td>
+       <td>CVE-2022-41524</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain an authenticated stack overflow via the week, sTime, and eTime parameters in the setParentalRules function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41524">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8a1862fb64e27e289a859fa101519512</td>
+       <td>CVE-2022-41523</td>
+       <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK NR1800X V9.1.0u.6279_B20210910 was discovered to contain an authenticated stack overflow via the command parameter in the setTracerouteCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41523">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e174534529aadefe703f6c6e298994cc</td>
        <td>CVE-2022-42247</td>
        <td>2022-10-03 16:15:00</td>
@@ -441,86 +521,6 @@
        <td>2022-09-30 19:15:00</td>
        <td>mojoPortal v2.7 was discovered to contain an arbitrary file upload vulnerability which allows attackers to execute arbitrary code via a crafted PNG file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40341">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>24fa50be65600700e8ab4d3e54361ded</td>
-       <td>CVE-2022-35156</td>
-       <td>2022-09-30 19:15:00</td>
-       <td>Bus Pass Management System 1.0 was discovered to contain a SQL Injection vulnerability via the searchdata parameter at /buspassms/download-pass.php..</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35156">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c42acd59936fd449fd84385acc47b415</td>
-       <td>CVE-2022-35155</td>
-       <td>2022-09-30 19:15:00</td>
-       <td>Bus Pass Management System v1.0 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the searchdata parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35155">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b65c8283f8c660590d739c76779916e7</td>
-       <td>CVE-2022-20945</td>
-       <td>2022-09-30 19:15:00</td>
-       <td>A vulnerability in the 802.11 association frame validation of Cisco Catalyst 9100 Series Access Points (APs) could allow an unauthenticated, adjacent attacker to cause a denial of service (DoS) condition on an affected device. This vulnerability is due to insufficient input validation of certain parameters within association request frames received by the AP. An attacker could exploit this vulnerability by sending a crafted 802.11 association request to a nearby device. An exploit could allow the attacker to unexpectedly reload the device, resulting in a DoS condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a1b9eb45bf326759f2fb3d02c79c7e02</td>
-       <td>CVE-2022-2778</td>
-       <td>2022-09-30 04:15:00</td>
-       <td>In affected versions of Octopus Deploy it is possible to bypass rate limiting on login using null bytes.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2778">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc247139b62dac122727fabe037a0ba0</td>
-       <td>CVE-2022-41828</td>
-       <td>2022-09-29 21:15:00</td>
-       <td>In Amazon AWS Redshift JDBC Driver (aka amazon-redshift-jdbc-driver or redshift-jdbc42) before 2.1.0.8, the Object Factory does not check the class type when instantiating an object from a class name.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41828">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b654b19738ebb08c50a61897b0d0c95</td>
-       <td>CVE-2022-39232</td>
-       <td>2022-09-29 21:15:00</td>
-       <td>Discourse is an open source discussion platform. Starting with version 2.9.0.beta5 and prior to version 2.9.0.beta10, an incomplete quote can generate a JavaScript error which will crash the current page in the browser in some cases. Version 2.9.0.beta10 added a fix and tests to ensure incomplete quotes won't break the app. As a workaround, the quote can be fixed via the rails console.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dfcb77c8641e77398634d3594041f28a</td>
-       <td>CVE-2022-3364</td>
-       <td>2022-09-29 21:15:00</td>
-       <td>Allocation of Resources Without Limits or Throttling in GitHub repository ikus060/rdiffweb prior to 2.5.0a3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3364">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>320e2b0a9291e529c7db9b40ff9acb62</td>
-       <td>CVE-2022-40472</td>
-       <td>2022-09-29 20:15:00</td>
-       <td>ZKTeco Xiamen Information Technology ZKBio Time 8.0.7 Build: 20220721.14829 was discovered to contain a CSV injection vulnerability. This vulnerability allows attackers to execute arbitrary code via a crafted payload injected into the Content text field of the Add New Message module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1d244e21647e837b751f6f2e87cc680</td>
-       <td>CVE-2022-39226</td>
-       <td>2022-09-29 20:15:00</td>
-       <td>Discourse is an open source discussion platform. In versions prior to 2.8.9 on the `stable` branch and prior to 2.9.0.beta10 on the `beta` and `tests-passed` branches, a malicious actor can add large payloads of text into the Location and Website fields of a user profile, which causes issues for other users when loading that profile. A fix to limit the length of user input for these fields is included in version 2.8.9 on the `stable` branch and version 2.9.0.beta10 on the `beta` and `tests-passed` branches. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39226">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2d8ea6c2701d7e32b02e81cbf00de1f</td>
-       <td>CVE-2022-36068</td>
-       <td>2022-09-29 20:15:00</td>
-       <td>Discourse is an open source discussion platform. In versions prior to 2.8.9 on the `stable` branch and prior to 2.9.0.beta10 on the `beta` and `tests-passed` branches, a moderator can create new and edit existing themes by using the API when they should not be able to do so. The problem is patched in version 2.8.9 on the `stable` branch and version 2.9.0.beta10 on the `beta` and `tests-passed` branches. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36068">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>96984fd0f2a5588a69ed9f103c460854</td>
+       <td>CVE-2022-38732</td>
+       <td>2022-10-06 20:31:44 <img src="imgs/new.gif" /></td>
+       <td>NetApp SnapCenter 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c5c13a773ccf475ea0c0ee252c5eb3e1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a9c5655de2bee8ec9ccdea4e858980b</td>
+       <td>CVE-2022-41846</td>
+       <td>2022-10-06 20:31:39 <img src="imgs/new.gif" /></td>
+       <td>AXIOSYS BENTO4 Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=950ceae2815744f186a68993167503ec">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0783e79d7a6d54fc7f71bf2229010658</td>
+       <td>CVE-2022-39173</td>
+       <td>2022-10-06 20:31:34 <img src="imgs/new.gif" /></td>
+       <td>wolfSSL 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55775a2d56c64c75b6717b7e0b0e586a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9401d5aca4d59da86c37e36408c6709d</td>
+       <td>CVE-2022-41430</td>
+       <td>2022-10-06 20:31:18 <img src="imgs/new.gif" /></td>
+       <td>AXIOSYS BENTO4 Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=de29ea8c437e4512b825c9e06ffaeaca">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c12b1a2285c4193b02dc42c98606a14d</td>
+       <td>CVE-2020-15333</td>
+       <td>2022-10-06 20:31:17 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager SQL注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a0e3ee23ca844b9a8d634cdfc3c290ab">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>adacc4366a231f40f1b748c6a10b8636</td>
+       <td>CVE-2022-41841</td>
+       <td>2022-10-06 20:31:09 <img src="imgs/new.gif" /></td>
+       <td>AXIOSYS BENTO4 Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1c7e9efce7294d70a3389a02535820b3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6bc3c1a101a130b4eb226f20a88f5727</td>
+       <td>CVE-2020-15338</td>
+       <td>2022-10-06 20:31:06 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34f4d0b0bcb9465b9c710f8517c196b0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8335a89353a3826e7b0817ecd1222ba</td>
+       <td>CVE-2022-41429</td>
+       <td>2022-10-06 20:31:04 <img src="imgs/new.gif" /></td>
+       <td>AXIOSYS BENTO4 Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fa61f771db5646fb8fa40be599337f0d">详情</a></td>
+      </tr>
+
+      <tr>
        <td>673ae6b45c9906c8a9d0a0ae03dd52c2</td>
        <td>CVE-2022-36448</td>
        <td>2022-10-05 20:28:27 <img src="imgs/new.gif" /></td>
@@ -1710,7 +1774,7 @@
       <tr>
        <td>1c26dcd5ef093ce352489acf6e3a9b4e</td>
        <td>CVE-2020-15334</td>
-       <td>2022-10-04 20:31:39 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:39</td>
        <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e36749bb517347d485a3dbf1ca6851a1">详情</a></td>
       </tr>
@@ -1718,7 +1782,7 @@
       <tr>
        <td>a9819a74bafc6bfdba304f86755c1f36</td>
        <td>CVE-2020-15339</td>
-       <td>2022-10-04 20:31:34 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:34</td>
        <td>Zyxel CloudCNM SecuManager 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0fdb75f7d2a42a5b3bff50ce333ad79">详情</a></td>
       </tr>
@@ -1726,7 +1790,7 @@
       <tr>
        <td>f0c68a6a69a83976177883544d5a608f</td>
        <td>CVE-2020-15342</td>
-       <td>2022-10-04 20:31:24 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:24</td>
        <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e0e320d625f14f5ab8301f93a9dae01f">详情</a></td>
       </tr>
@@ -1734,7 +1798,7 @@
       <tr>
        <td>cb6b8550c75383381ae83c8304bc40c7</td>
        <td>CVE-2020-15329</td>
-       <td>2022-10-04 20:31:19 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:19</td>
        <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=edc573d3ada04bc2997e6b208d8f528e">详情</a></td>
       </tr>
@@ -1742,7 +1806,7 @@
       <tr>
        <td>977bdcf826a20cb20c99301fe2dc5307</td>
        <td>CVE-2020-15345</td>
-       <td>2022-10-04 20:31:14 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:14</td>
        <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e25fa1a30055463d923839b285ff02bd">详情</a></td>
       </tr>
@@ -1750,7 +1814,7 @@
       <tr>
        <td>e70c0d4a1a2c7a4597ace084712b5427</td>
        <td>CVE-2020-15332</td>
-       <td>2022-10-04 20:31:08 <img src="imgs/new.gif" /></td>
+       <td>2022-10-04 20:31:08</td>
        <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3469899f10f14275b35c4aa9df0946d7">详情</a></td>
       </tr>
@@ -1849,70 +1913,6 @@
        <td>2022-10-02 20:29:31</td>
        <td>Zyxel CloudCNM SecuManager 信任管理问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=14b7666c5fc2403ca8a96bb44b352083">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e33f53ec9c8edb4001ddf06dfe83bd2c</td>
-       <td>CVE-2020-15340</td>
-       <td>2022-10-02 20:29:25</td>
-       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=43d7d66ae7c243b2bc69c9adb4bc06f7">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>79c58d53c0bd7e0b6888bdc2fcafe55f</td>
-       <td>CVE-2022-40929</td>
-       <td>2022-10-02 20:29:20</td>
-       <td>XXL-JOB 命令注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=706cca17239142679825f764a8b31cf3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa6fba6d09cef8b348f0f894cca6467a</td>
-       <td>CVE-2020-15330</td>
-       <td>2022-10-02 20:29:15</td>
-       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b7ea9b7a1777422a9fcd58227a8c81a3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>685ce6f5fa68f5a829a41db2340d1628</td>
-       <td>CVE-2020-15343</td>
-       <td>2022-10-02 20:29:10</td>
-       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7dd57fc7f3347a6911b5136d65096fe">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>655fd0ac05f8f354cffa5c40a4fcb0b6</td>
-       <td>CVE-2020-15326</td>
-       <td>2022-10-02 20:29:05</td>
-       <td>Zyxel CloudCNM SecuManager 信任管理问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4929d5b9459f418f9fced3637b77ee73">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd6f6c5d897ca0bf8e862db327505c8b</td>
-       <td>CVE-2022-35282</td>
-       <td>2022-10-01 20:33:33</td>
-       <td>IBM WEBSPHERE_APPLICATION_SERVER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5a928094da5346b8a37174530a76fbf4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dda552a9dda8759535aa03dcff6dcadb</td>
-       <td>CVE-2022-22387</td>
-       <td>2022-10-01 20:33:28</td>
-       <td>IBM APPLICATION_GATEWAY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=caaaa038d1844ea3bf7b92ab890c1b9d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ba1b5424999b8027f5277bc79ede089</td>
-       <td>CVE-2022-39835</td>
-       <td>2022-10-01 20:33:23</td>
-       <td>Gajim 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4e844f321a7e4791be01ed2cc1873268">详情</a></td>
       </tr>
 
      </tbody>
