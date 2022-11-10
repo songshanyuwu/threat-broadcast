@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-09 23:42:36 -->
+<!-- RELEASE TIME : 2022-11-10 05:43:47 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a1a0dcfd222f307256c4925bbf7b780b</td>
+       <td>CVE-2022-39368</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Eclipse Californium is a Java implementation of RFC7252 - Constrained Application Protocol for IoT Cloud services. In versions prior to 3.7.0, and 2.7.4, Californium is vulnerable to a Denial of Service. Failing handshakes don't cleanup counters for throttling, causing the threshold to be reached without being released again. This results in permanently dropping records. The issue was reported for certificate based handshakes, but may also affect PSK based handshakes. It generally affects client and server as well. This issue is patched in version 3.7.0 and 2.7.4. There are no known workarounds. main: commit 726bac57659410da463dcf404b3e79a7312ac0b9 2.7.x: commit 5648a0c27c2c2667c98419254557a14bac2b1f3f</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39368">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>34823ac0799f69457e257e4f54a032d6</td>
+       <td>CVE-2022-3819</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An improper authorization issue in GitLab CE/EE affecting all versions from 15.0 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2 allows a malicious users to set emojis on internal notes they don't have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3819">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>39cbeafbf8fc4def883b7d9b569037a8</td>
+       <td>CVE-2022-3818</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An uncontrolled resource consumption issue when parsing URLs in GitLab CE/EE affecting all versions prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2 allows an attacker to cause performance issues and potentially a denial of service on the GitLab instance.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3818">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>644f59c6622b175cf92c42f9f1f7d33a</td>
+       <td>CVE-2022-3793</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An improper authorization issue in GitLab CE/EE affecting all versions from 14.4 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2 allows an attacker to read variables set directly in a GitLab CI/CD configuration file they don't have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3793">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>92561e00ecdaddabeeb0788399eeaa88</td>
+       <td>CVE-2022-3726</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Lack of sand-boxing of OpenAPI documents in GitLab CE/EE affecting all versions from 12.6 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2 allows an attacker to trick a user to click on the Swagger OpenAPI viewer and issue HTTP requests that affect the victim's account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3726">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8afc0ae9993da3f7022184daca8ff6d8</td>
+       <td>CVE-2022-3706</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper authorization in GitLab CE/EE affecting all versions from 7.14 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2 allows a user retrying a job in a downstream pipeline to take ownership of the retried jobs in the upstream pipeline even if the user doesn't have access to that project.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3706">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f972386fa7e1f3d241de21cc140185f</td>
+       <td>CVE-2022-3413</td>
+       <td>2022-11-10 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Incorrect authorization during display of Audit Events in GitLab EE affecting all versions from 14.5 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2, allowed Developers to view the project's Audit Events and Developers or Maintainers to view the group's Audit Events. These should have been restricted to Project Maintainers, Group Owners, and above.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3413">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>47f6128186556702f8361ccbb9198437</td>
+       <td>CVE-2022-39307</td>
+       <td>2022-11-09 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Grafana is an open-source platform for monitoring and observability. When using the forget password on the login page, a POST request is made to the `/api/user/password/sent-reset-email` URL. When the username or email does not exist, a JSON response contains a “user not found” message. This leaks information to unauthenticated users and introduces a security risk. This issue has been patched in 9.2.4 and backported to 8.5.15. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39307">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b880cec188fa652e9c798a5e8c0952f3</td>
+       <td>CVE-2022-3486</td>
+       <td>2022-11-09 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An open redirect vulnerability in GitLab EE/CE affecting all versions from 9.3 prior to 15.3.5, 15.4 prior to 15.4.4, and 15.5 prior to 15.5.2, allows an attacker to redirect users to an arbitrary location if they trust the URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3486">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>87b78a41cddeee80b3ed3852d0f0291f</td>
+       <td>CVE-2022-3483</td>
+       <td>2022-11-09 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue has been discovered in GitLab CE/EE affecting all versions starting from 12.1 before 15.3.5, all versions starting from 15.4 before 15.4.4, all versions starting from 15.5 before 15.5.2. A malicious maintainer could exfiltrate a Datadog integration's access token by modifying the integration URL such that authenticated requests are sent to an attacker controlled server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3483">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c9934612b346f266849d17528b1cb19c</td>
        <td>CVE-2022-42966</td>
        <td>2022-11-09 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>f136f0d2c99f644e44f4aa77c1a5fc89</td>
        <td>CVE-2022-43144</td>
-       <td>2022-11-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:15:00</td>
        <td>A cross-site scripting (XSS) vulnerability in Canteen Management System v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43144">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>4ec8f501d5b9025634da97362b009eba</td>
        <td>CVE-2022-39328</td>
-       <td>2022-11-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:15:00</td>
        <td>Grafana is an open-source platform for monitoring and observability. Versions starting with 9.2.0 and less than 9.2.4 contain a race condition in the authentication middlewares logic which may allow an unauthenticated user to query an administration endpoint under heavy load. This issue is patched in 9.2.4. There are no known workarounds.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39328">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>46afacd4a9bd6991d4d8a1eefa233717</td>
        <td>CVE-2022-30515</td>
-       <td>2022-11-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:15:00</td>
        <td>ZKTeco BioTime 8.5.4 is missing authentication on folders containing employee photos, allowing an attacker to view them through filename enumeration.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30515">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>6ff34cb91f78ce2249c274f2d6071e6a</td>
        <td>CVE-2022-41260</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>SAP Financial Consolidation - version 1010, does not sufficiently encode user-controlled input which may allow an unauthenticated attacker to inject a web script via a GET request. On successful exploitation, an attacker can view or modify information causing a limited impact on confidentiality and integrity of the application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41260">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>0283a6bf6c70d4d114acd6a03d4fd452</td>
        <td>CVE-2022-41259</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>SAP SQL Anywhere - version 17.0, allows an authenticated attacker to prevent legitimate users from accessing a SQL Anywhere database server by crashing the server with some queries that use an ARRAY constructor.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41259">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>4a892b6e2b57d72c81accf6032faaa58</td>
        <td>CVE-2022-41258</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>Due to insufficient input validation, SAP Financial Consolidation - version 1010, allows an authenticated attacker to inject malicious script when running a common query in the Web Administration Console. On successful exploitation, an attacker can view or modify information causing a limited impact on confidentiality, integrity and availability of the application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41258">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>70d0a9172f49feab1c18970de713af5f</td>
        <td>CVE-2022-41215</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>SAP NetWeaver ABAP Server and ABAP Platform allows an unauthenticated attacker to redirect users to a malicious site due to insufficient URL validation. This could lead to the user being tricked to disclose personal information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41215">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>b2b5362252197979971594a603144b7b</td>
        <td>CVE-2022-41214</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>Due to insufficient input validation, SAP NetWeaver Application Server ABAP and ABAP Platform allows an attacker with high level privileges to use a remote enabled function to delete a file which is otherwise restricted. On successful exploitation an attacker can completely compromise the integrity and availability of the application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41214">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>c51c70cef9268de18e6222bb37964e4b</td>
        <td>CVE-2022-41212</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>Due to insufficient input validation, SAP NetWeaver Application Server ABAP and ABAP Platform allows an attacker with high level privileges to use a remote enabled function to read a file which is otherwise restricted. On successful exploitation an attacker can completely compromise the confidentiality of the application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41212">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>316e7b13de052812125fc143fcb24eab</td>
        <td>CVE-2022-41211</td>
-       <td>2022-11-08 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 22:15:00</td>
        <td>Due to lack of proper memory management, when a victim opens manipulated file received from untrusted sources in SAP 3D Visual Enterprise Author and SAP 3D Visual Enterprise Viewer, Arbitrary Code Execution can be triggered when payload forces:Re-use of dangling pointer which refers to overwritten space in memory. The accessed memory must be filled with code to execute the attack. Therefore, repeated success is unlikely.Stack-based buffer overflow. Since the memory overwritten is random, based on access rights of the memory, repeated success is not assured.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41211">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>debb00bdd6e67c927005b3da812a0abb</td>
-       <td>CVE-2022-39377</td>
-       <td>2022-11-08 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>sysstat is a set of system performance tools for the Linux operating system. On 32 bit systems, in versions 9.1.16 and newer but prior to 12.7.1, allocate_structures contains a size_t overflow in sa_common.c. The allocate_structures function insufficiently checks bounds before arithmetic multiplication, allowing for an overflow in the size allocated for the buffer representing system activities. This issue may lead to Remote Code Execution (RCE). This issue has been patched in version 12.7.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f2517f7cd36eca6deffd51a0500c6cd</td>
-       <td>CVE-2022-33322</td>
-       <td>2022-11-08 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-site scripting vulnerability in Mitsubishi Electric consumer electronics products (Air Conditioning, Wi-Fi Interface, Refrigerator, HEMS adapter, Remote control with Wi-Fi Interface, BATHROOM THERMO VENTILATOR, Rice cooker, Mitsubishi Electric HEMS control adapter, Energy Recovery Ventilator, Smart Switch and Air Purifier) allows a remote unauthenticated attacker to execute an malicious script on a user's browser to disclose information, etc. The wide range of models/versions of Mitsubishi Electric consumer electronics products are affected by this vulnerability. As for the affected product models/versions, see the Mitsubishi Electric's advisory which is listed in [References] section.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33322">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>413f4e10c1110eff03ea0a8ceacd0bcb</td>
-       <td>CVE-2022-33321</td>
-       <td>2022-11-08 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cleartext Transmission of Sensitive Information vulnerability due to the use of Basic Authentication for HTTP connections in Mitsubishi Electric consumer electronics products (PHOTOVOLTAIC COLOR MONITOR ECO-GUIDE, HEMS adapter, Wi-Fi Interface, Air Conditioning, Induction hob, Mitsubishi Electric HEMS Energy Measurement Unit, Refrigerator, Remote control with Wi-Fi Interface, BATHROOM THERMO VENTILATOR, Rice cooker, Mitsubishi Electric HEMS control adapter, Energy Recovery Ventilator, Smart Switch, Ventilating Fan, Range hood fan, Energy Measurement Unit and Air Purifier) allows a remote unauthenticated attacker to disclose information in the products or cause a denial of service (DoS) condition as a result by sniffing credential information (username and password). The wide range of models/versions of Mitsubishi Electric consumer electronics products are affected by this vulnerability. As for the affected product models/versions, see the Mitsubishi Electric's advisory which is listed in [References] section.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33321">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c48010f17960bcd4e3c2ed502b77bed4</td>
-       <td>CVE-2022-44741</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability leading to Cross-Site Scripting (XSS) in David Anderson Testimonial Slider plugin <= 1.3.1 on WordPress.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d60e010624a0eb831be75d1a25b655e5</td>
-       <td>CVE-2022-43491</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Advanced Dynamic Pricing for WooCommerce plugin <= 4.1.5 on WordPress leading to plugin settings import.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2f119fbfd995116331300a548df85b4</td>
-       <td>CVE-2022-43481</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Advanced Coupons for WooCommerce Coupons plugin <= 4.5 on WordPress leading to notice dismissal.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43481">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93391701ac4d4ff51ed0f4426d2305ef</td>
-       <td>CVE-2022-42494</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Server Side Request Forgery (SSRF) vulnerability in All in One SEO Pro plugin <= 4.2.5.1 on WordPress.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d4dd970d009b4594a5e2ff0df6c34bb</td>
-       <td>CVE-2022-41980</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Auth. (admin+) Cross-Site Scripting (XSS) vulnerability in Mantenimiento web plugin <= 0.13 on WordPress.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41980">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9df44510404f3ee0a4a7570ab70f329</td>
-       <td>CVE-2022-41136</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability leading to Stored Cross-Site Scripting (XSS) in Vladimir Anokhin's Shortcodes Ultimate plugin <= 5.12.0 on WordPress.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41136">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de628ffa8184543bddc0359c2b6cd6b0</td>
-       <td>CVE-2022-40632</td>
-       <td>2022-11-08 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in gVectors Team wpForo Forum plugin <= 2.0.5 on WordPress leading to topic deletion.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40632">详情</a></td>
       </tr>
 
      </tbody>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>6acd0879b7bf59ba5e284a18804900d7</td>
        <td>CVE-2022-44646</td>
-       <td>2022-11-08 20:34:18 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 20:34:18</td>
        <td>JETBRAINS TEAMCITY Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c4124f4caffb4b0ba5ea4ec6ddd42b4b">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>1a5007f3a80aa009602b35720a8fff05</td>
        <td>CVE-2022-39370</td>
-       <td>2022-11-08 20:34:12 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 20:34:12</td>
        <td>GLPI-PROJECT GLPI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3f7d1b786bc24421960dee7106afc690">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>bfa4d270ba17c808a1351c7a0febcb77</td>
        <td>CVE-2022-39373</td>
-       <td>2022-11-08 20:34:01 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 20:34:01</td>
        <td>GLPI-PROJECT GLPI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=47d2c96a18df429eaf59863c91f03221">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>7e8382b79f9e39d9b74c267d2f497969</td>
        <td>CVE-2022-26119</td>
-       <td>2022-11-08 20:33:51 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 20:33:51</td>
        <td>FORTINET FORTISIEM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=61141bfe65e74b909ab3552ed866c705">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>32df9cb70389ee44d61dcbb644ebc516</td>
        <td>CVE-2022-25635</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Realtek Linux/Android Bluetooth Mesh SDK缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71852">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>20d41fc42abd47ae3e8802377faf045b</td>
        <td>CVE-2022-26529</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Realtek Linux/Android Bluetooth Mesh SDK缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71851">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>738859145a898aefcac8940e6616783c</td>
        <td>CVE-2022-36639</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Garage Management System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71850">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>e7d479efbcf8faaf5a69dcd5a196642d</td>
        <td>CVE-2022-1902</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Red Hat Advanced Cluster Security for Kubernetes提升权限漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71849">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>5f72addb473c752d8e657094130ff6b5</td>
        <td>CVE-2021-36773</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>IBM Cognos Analytics XML外部实体注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71848">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>4d0924e8678452a090e884cff4526f4c</td>
        <td>CVE-2022-39050</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>OTRS跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71847">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>b18e2d1feef2451eb93a14c86179a9c8</td>
        <td>CVE-2022-37317</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Archer Platform跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71846">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>d9e426026369ff8c7d666689cf1cc8c0</td>
        <td>CVE-2022-32742</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>Samba信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71845">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>9edb80056647f4af2638dbaaa0a9ef78</td>
        <td>CVE-2022-2320</td>
-       <td>2022-11-08 23:43:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 23:43:46</td>
        <td>xorg-x11-server越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/71844">详情</a></td>
       </tr>
@@ -2188,9 +2188,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2ccb6d4c5416afc36de6ceb0f43aaba3</td>
+       <td>CVE-2022-42494</td>
+       <td>2022-11-08 19:15:16 </td>
+       <td>Server Side Request Forgery (SSRF) vulnerability in All in One SEO Pro plugin &lt;= 4.2.5.1 on WordPress.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42494">详情</a></td>
+      </tr>
+
+      <tr>
        <td>30cf01df9bace49b121933bfb2669faf</td>
        <td>CVE-2022-44321</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the LexSkipComment function in lex.c when called from LexScanGetToken.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44321">详情</a></td>
       </tr>
@@ -2198,7 +2206,7 @@
       <tr>
        <td>d3996a18286cf1384df249bdf25db010</td>
        <td>CVE-2022-44320</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the ExpressionCoerceFP function in expression.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44320">详情</a></td>
       </tr>
@@ -2206,7 +2214,7 @@
       <tr>
        <td>fb83e63f850801615e6190506d93a9e1</td>
        <td>CVE-2022-44319</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the StdioBasePrintf function in cstdlib/string.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44319">详情</a></td>
       </tr>
@@ -2214,7 +2222,7 @@
       <tr>
        <td>37aef754e2533651f26b185b5ed7fd24</td>
        <td>CVE-2022-44318</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the StringStrcat function in cstdlib/string.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44318">详情</a></td>
       </tr>
@@ -2222,7 +2230,7 @@
       <tr>
        <td>cc309065583b4a1562d66afd138ee481</td>
        <td>CVE-2022-44317</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the StdioOutPutc function in cstdlib/stdio.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44317">详情</a></td>
       </tr>
@@ -2230,7 +2238,7 @@
       <tr>
        <td>846271cf7767bdd55a05d05c0792e2f0</td>
        <td>CVE-2022-44316</td>
-       <td>2022-11-08 15:15:12  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:12 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the LexGetStringConstant function in lex.c when called from LexScanGetToken.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44316">详情</a></td>
       </tr>
@@ -2238,7 +2246,7 @@
       <tr>
        <td>4307d2e109ac80cd50ae6f7aaa530d4f</td>
        <td>CVE-2022-44315</td>
-       <td>2022-11-08 15:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:11 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the ExpressionAssign function in expression.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44315">详情</a></td>
       </tr>
@@ -2246,7 +2254,7 @@
       <tr>
        <td>76f3e64f1d27341e3fd53a615babdd02</td>
        <td>CVE-2022-44314</td>
-       <td>2022-11-08 15:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:11 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the StringStrncpy function in cstdlib/string.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44314">详情</a></td>
       </tr>
@@ -2254,7 +2262,7 @@
       <tr>
        <td>7e8154122bf5e1bf6f104d9874b4b5a9</td>
        <td>CVE-2022-44313</td>
-       <td>2022-11-08 15:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:11 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the ExpressionCoerceUnsignedInteger function in expression.c when called from ExpressionParseFunctionCall.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44313">详情</a></td>
       </tr>
@@ -2262,7 +2270,7 @@
       <tr>
        <td>546a74c3c26d8c02aaafde8c53240b78</td>
        <td>CVE-2022-44312</td>
-       <td>2022-11-08 15:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-08 15:15:11 </td>
        <td>PicoC Version 3.2.2 was discovered to contain a heap buffer overflow in the ExpressionCoerceInteger function in expression.c when called from ExpressionInfixOperator.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44312">详情</a></td>
       </tr>
@@ -2273,6 +2281,14 @@
        <td>2022-11-07 00:15:09 </td>
        <td>In wolfSSL before 5.5.2, if callback functions are enabled (via the WOLFSSL_CALLBACKS flag), then a malicious TLS 1.3 client or network attacker can trigger a buffer over-read on the heap of 5 bytes. (WOLFSSL_CALLBACKS is only intended for debugging.)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42905">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab1f995c22cee8c37707ddef151c336a</td>
+       <td>CVE-2022-42707</td>
+       <td>2022-11-06 17:15:10 </td>
+       <td>In Mahara 21.04 before 21.04.7, 21.10 before 21.10.5, 22.04 before 22.04.3, and 22.10 before 22.10.0, embedded images are accessible without a sufficient permission check under certain conditions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42707">详情</a></td>
       </tr>
 
       <tr>
@@ -2409,22 +2425,6 @@
        <td>2022-11-03 06:15:10 </td>
        <td>In libpixman in Pixman before 0.42.2, there is an out-of-bounds write (aka heap-based buffer overflow) in rasterize_edges_8 due to an integer overflow in pixman_sample_floor_y.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44638">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e14cb5589f75495abc77e80a15831898</td>
-       <td>CVE-2022-44586</td>
-       <td>2022-11-02 22:15:17 </td>
-       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) in Ayoub Media AM-HiLi plugin &lt;= 1.0 on WordPress.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44586">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4451f8e431ae7fda627397290f9248ba</td>
-       <td>CVE-2022-44576</td>
-       <td>2022-11-02 22:15:17 </td>
-       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in AgentEasy Properties plugin &lt;= 1.0.4 on WordPress.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44576">详情</a></td>
       </tr>
 
      </tbody>
