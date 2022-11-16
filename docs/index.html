@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-15 23:38:45 -->
+<!-- RELEASE TIME : 2022-11-16 05:38:26 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>8c99d86ee570d5f7216e1bc9bdddf9bc</td>
        <td>CVE-2022-27510</td>
-       <td>2022-11-14 07:34:10 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 07:34:10</td>
        <td>CVE-2022-27510：Citrix Gateway/ADC身份认证绕过漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=cddbb41b204d770007e4108537e58395">详情</a></td>
       </tr>
@@ -38,7 +38,7 @@
       <tr>
        <td>68d7f15ea249630c9a95ff95be6610fa</td>
        <td></td>
-       <td>2022-11-14 07:23:29 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 07:23:29</td>
        <td>安全事件周报 (11.07-11.13)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=acc9fb8d90b76d3ccf3b8bb9d0245f1a">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b9e0449cae1eb38a1b7dd998c9c75cc1</td>
+       <td>CVE-2022-41917</td>
+       <td>2022-11-16 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenSearch is a community-driven, open source fork of Elasticsearch and Kibana. OpenSearch allows users to specify a local file when defining text analyzers to process data for text analysis. An issue in the implementation of this feature allows certain specially crafted queries to return a response containing the first line of text from arbitrary files. The list of potentially impacted files is limited to text files with read permissions allowed in the Java Security Manager policy configuration. OpenSearch version 1.3.7 and 2.4.0 contain a fix for this issue. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3160e8139cafa4de726066341821a6a</td>
+       <td>CVE-2022-3920</td>
+       <td>2022-11-16 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>HashiCorp Consul and Consul Enterprise 1.13.0 up to 1.13.3 do not filter cluster filtering's imported nodes and services for HTTP or RPC endpoints used by the UI. Fixed in 1.14.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3920">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3032fc96a1f60c7514c2558af0ae16dc</td>
+       <td>CVE-2022-41918</td>
+       <td>2022-11-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenSearch is a community-driven, open source fork of Elasticsearch and Kibana. There is an issue with the implementation of fine-grained access control rules (document-level security, field-level security and field masking) where they are not correctly applied to the indices that back data streams potentially leading to incorrect access authorization. OpenSearch 1.3.7 and 2.4.0 contain a fix for this issue. Users are advised to update. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41918">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>984ba071f3365288c791a54a57e50187</td>
+       <td>CVE-2022-41916</td>
+       <td>2022-11-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Heimdal is an implementation of ASN.1/DER, PKIX, and Kerberos. Versions prior to 7.7.1 are vulnerable to a denial of service vulnerability in Heimdal's PKI certificate validation library, affecting the KDC (via PKINIT) and kinit (via PKINIT), as well as any third-party applications using Heimdal's libhx509. Users should upgrade to Heimdal 7.7.1 or 7.8. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bae51ff8f2816ea503186fdcc3df82aa</td>
+       <td>CVE-2021-4241</td>
+       <td>2022-11-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, was found in phpservermon. Affected is the function setUserLoggedIn of the file src/psm/Service/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is bb10a5f3c68527c58073258cb12446782d223bc3. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-213744.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4241">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5fae5c000e6755b5a7883094162e72ce</td>
+       <td>CVE-2021-4240</td>
+       <td>2022-11-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, was found in phpservermon. This affects the function generatePasswordResetToken of the file src/psm/Service/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is 3daa804d5f56c55b3ae13bfac368bb84ec632193. It is recommended to apply a patch to fix this issue. The identifier VDB-213717 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e015a04e7f2e95154bd27fab2a4a4669</td>
+       <td>CVE-2022-4006</td>
+       <td>2022-11-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, has been found in WBCE CMS. Affected by this issue is the function increase_attempts of the file wbce/framework/class.login.php of the component Header Handler. The manipulation of the argument X-Forwarded-For leads to improper restriction of excessive authentication attempts. The attack may be launched remotely. The name of the patch is d394ba39a7bfeb31eda797b6195fd90ef74b2e75. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-213716.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4006">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c36e024eeabd864d31d237c068a7e179</td>
+       <td>CVE-2022-30769</td>
+       <td>2022-11-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Session fixation exists in ZoneMinder through 1.36.12 as an attacker can poison a session cookie to the next logged-in user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30769">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>320f7c6ad35d3115df399de144bbc119</td>
+       <td>CVE-2022-30768</td>
+       <td>2022-11-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Stored Cross Site Scripting (XSS) issue in ZoneMinder 1.36.12 allows an attacker to execute HTML or JavaScript code via the Username field when an Admin (or non-Admin users that can see other users logged into the platform) clicks on Logout. NOTE: this exists in later versions than CVE-2019-7348 and requires a different attack method.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30768">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a8a856a199d5731916a8c29807ebc51</td>
+       <td>CVE-2022-29279</td>
+       <td>2022-11-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use of a untrusted pointer allows tampering with SMRAM and OS memory in SdHostDriver and SdMmcDevice Use of a untrusted pointer allows tampering with SMRAM and OS memory in SdHostDriver and SdMmcDevice. This issue was discovered by Insyde during security review. It was fixed in: Kernel 5.0: version 05.09.17 Kernel 5.1: version 05.17.17 Kernel 5.2: version 05.27.17 Kernel 5.3: version 05.36.17 Kernel 5.4: version 05.44.17 Kernel 5.5: version 05.52.17 https://www.insyde.com/security-pledge/SA-2022062</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29279">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cb7a7020c3606719ee6c977e1ec4b307</td>
        <td>CVE-2022-43071</td>
        <td>2022-11-15 17:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-11-15 00:15:00 <img src="imgs/new.gif" /></td>
        <td>DMA transactions which are targeted at input buffers used for the SdHostDriver software SMI handler could cause SMRAM corruption through a TOCTOU attack. DMA transactions which are targeted at input buffers used for the software SMI handler used by the SdHostDriver driver could cause SMRAM corruption through a TOCTOU attack. This issue was discovered by Insyde engineering based on the general description provided by Intel's iSTARE group. Fixed in kernel 5.2: 05.27.25, kernel 5.3: 05.36.25, kernel 5.4: 05.44.25, kernel 5.5: 05.52.25 https://www.insyde.com/security-pledge/SA-2022050</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33908">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b084431e54003bd6c233466a642e408b</td>
-       <td>CVE-2022-44390</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site scripting (XSS) vulnerability in EyouCMS V1.5.9-UTF8-SP1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Public Security Record Number text field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44390">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4479f003dbc265b6275ed09d4571dbe1</td>
-       <td>CVE-2022-44389</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>EyouCMS V1.5.9-UTF8-SP1 was discovered to contain a Cross-Site Request Forgery (CSRF) via the Edit Admin Profile module. This vulnerability allows attackers to arbitrarily change Administrator account information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80de86857559fadd2d96b87d56ff6173</td>
-       <td>CVE-2022-44387</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>EyouCMS V1.5.9-UTF8-SP1 was discovered to contain a Cross-Site Request Forgery (CSRF) via the Basic Information component under the Edit Member module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>06d859bcaea5f9a1bd7a2b0a6cd812be</td>
-       <td>CVE-2022-43323</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>EyouCMS V1.5.9-UTF8-SP1 was discovered to contain a Cross-Site Request Forgery (CSRF) via the Top Up Balance component under the Edit Member module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43323">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb28c80737f57762e5a6878dfdeab26a</td>
-       <td>CVE-2022-34320</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM CICS TX 11.1 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information. IBM X-Force ID: 229464.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34320">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7504df7226fc3f7b22b5a6be5a9b0175</td>
-       <td>CVE-2022-34317</td>
-       <td>2022-11-14 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM CICS TX 11.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 229459.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34317">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>610d54793753b85585140b28fa3e22a3</td>
-       <td>CVE-2022-43694</td>
-       <td>2022-11-14 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to Reflected XSS in the image manipulation library due to un-sanitized output.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43694">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e22c85185e4cc81627ac30aa14877d0</td>
-       <td>CVE-2022-43692</td>
-       <td>2022-11-14 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 is vulnerable to Reflected XSS - user can cause an administrator to trigger reflected XSS with a url if the targeted administrator is using an old browser that lacks XSS protection. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43692">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f125f07beabad98b610640192cbe960</td>
-       <td>CVE-2022-34316</td>
-       <td>2022-11-14 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM CICS TX 11.1 does not neutralize or incorrectly neutralizes web scripting syntax in HTTP headers that can be used by web browser components that can process raw headers. IBM X-Force ID: 229452.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a21845c738a696c908aab4ac7c651bb</td>
-       <td>CVE-2022-34315</td>
-       <td>2022-11-14 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM CICS TX 11.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 229451.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34315">详情</a></td>
       </tr>
 
      </tbody>
@@ -1694,7 +1694,7 @@
       <tr>
        <td>d69a41be16eef55186348a496ae9565d</td>
        <td>CVE-2022-43119</td>
-       <td>2022-11-14 20:21:26 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 20:21:26</td>
        <td>CSPHERE CLANSPHERE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c788e20218e64d0a8f8e66828a17bebd">详情</a></td>
       </tr>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>512e1e97679603c4ac951e7133cfe577</td>
        <td>CVE-2022-41125</td>
-       <td>2022-11-14 20:21:13 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 20:21:13</td>
        <td>MICROSOFT Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c95831448b204810baada3e748af31f5">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>2d00ad4ab1f18eb694a3e69aaca0da0e</td>
        <td>CVE-2022-27914</td>
-       <td>2022-11-14 20:20:56 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 20:20:56</td>
        <td>JOOMLA JOOMLA\! Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=226735dab7494a2295db725746749ed4">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>08e2aa317dda6553d3b4d11b1a61ed73</td>
        <td>CVE-2022-3976</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MZ Automation Libiec61850路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72167">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>676a0ba0d98660e0533058c2b58684f6</td>
        <td>CVE-2022-3978</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>NodeBB跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72166">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>02c035fa210d0f13bbe293961e6f9f04</td>
        <td>CVE-2022-3965</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>LibTIFF整数溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72165">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>197dbd3cb190ec646b8e34079d655349</td>
        <td>CVE-2022-3968</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>Emlog跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72164">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>e2fc2ac5997a4e7e52f5b253d0715c2f</td>
        <td>CVE-2022-3967</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>Vesta Control Panel参数注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72163">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>3b1dfc707e184116d26e2b2e1a831728</td>
        <td>CVE-2022-32611</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72162">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>7e2c0fbafb94a87e73aec4914eb15d9f</td>
        <td>CVE-2022-32612</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72161">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>4c52ecd830e2150ea129563ed4721d3b</td>
        <td>CVE-2022-32613</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72160">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>fc31d4f266f163d2f0aba3f02868add4</td>
        <td>CVE-2022-32614</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets双重释放漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72159">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>4f2e5f484f11f5048de14f56601dd8d1</td>
        <td>CVE-2022-32615</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72158">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>e34024c7b460b62d97143c90658096ea</td>
        <td>CVE-2022-32616</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72157">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>28584ecbe38ee09bdad8cbfdf95ced01</td>
        <td>CVE-2022-32617</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72156">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>91c07aacd7d43a709d59211cde0ee7f1</td>
        <td>CVE-2022-32618</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72155">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>4cef0f8beb89474662cc0716f8cd1781</td>
        <td>CVE-2022-32610</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72154">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>3c7857d15984d88574b3d2aa1db39367</td>
        <td>CVE-2022-32609</td>
-       <td>2022-11-14 23:38:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-14 23:38:37</td>
        <td>MediaTek Chipsets竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72153">详情</a></td>
       </tr>
