@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-23 23:37:19 -->
+<!-- RELEASE TIME : 2022-11-24 05:36:02 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6fa19a269557bebe87d8ec139fc10dcb</td>
+       <td>CVE-2022-45873</td>
+       <td>2022-11-23 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>systemd 250 and 251 allows local users to achieve a systemd-coredump deadlock by triggering a crash that has a long backtrace. This occurs in parse_elf_object in shared/elf-util.c. The exploitation methodology is to crash a binary calling the same function recursively, and put it in a deeply nested directory to make its backtrace large enough to cause the deadlock. This must be done 16 times when MaxConnections=16 is set for the systemd/units/systemd-coredump.socket file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45873">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13357974d898a8b6717d8bd907ba33ee</td>
+       <td>CVE-2022-45872</td>
+       <td>2022-11-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>iTerm2 before 3.4.18 mishandles a DECRQSS response.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45872">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c46e2f672812a843c5e0205f35e4cf1</td>
+       <td>CVE-2022-45868</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states "This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that."</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45868">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0f2654abc57480027ca12495ec166d8</td>
+       <td>CVE-2022-45280</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting (XSS) vulnerability in the Url parameter in /login.php of EyouCMS v1.6.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45280">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0ddf24c6ab391752b425333944a1963</td>
+       <td>CVE-2022-45278</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Jizhicms v2.3.3 was discovered to contain a SQL injection vulnerability via the /index.php/admins/Fields/get_fields.html component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45278">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e0544e55cfaeaa275eb74c4cb501d42</td>
+       <td>CVE-2022-45276</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue in the /index/user/user_edit.html component of YJCMS v1.0.9 allows unauthenticated attackers to obtain the Administrator account password.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45276">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c38ba5c9e9402fed5d518be634867a7</td>
+       <td>CVE-2022-44789</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A logical issue in O_getOwnPropertyDescriptor() in Artifex MuJS 1.0.0 through 1.3.1 allows an attacker to achieve Remote Code Execution through memory corruption, via the loading of a crafted JavaScript file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44789">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fcf32f81cd919a4223b086a44fe44500</td>
+       <td>CVE-2022-44120</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>dedecmdv6 6.1.9 is vulnerable to SQL Injection. via sys_sql_query.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44120">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e038666df292d688630a9eedbdf720b7</td>
+       <td>CVE-2022-44118</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>dedecmdv6 v6.1.9 is vulnerable to Remote Code Execution (RCE) via file_manage_control.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fbf0f733da31325311258233894dbba3</td>
+       <td>CVE-2022-44117</td>
+       <td>2022-11-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Boa 0.94.14rc21 is vulnerable to SQL Injection via username.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44117">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2be908f675077ffcf69719decd6e83ed</td>
        <td>CVE-2022-45866</td>
        <td>2022-11-23 20:15:00 <img src="imgs/new.gif" /></td>
@@ -414,7 +494,7 @@
       <tr>
        <td>59368ffad484b02c2b04043cb534de1b</td>
        <td>CVE-2022-45536</td>
-       <td>2022-11-22 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:00</td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the id parameter at \admin\post_comments.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45536">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>38bc984a669bb86c0a4000f742d475f7</td>
        <td>CVE-2022-45535</td>
-       <td>2022-11-22 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:00</td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the edit parameter at \admin\categories.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45535">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>66f694991d8b1c7ad040de7e1c16e7a1</td>
        <td>CVE-2022-45529</td>
-       <td>2022-11-22 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:00</td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the post_category_id parameter at \admin\includes\edit_post.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45529">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>f84e4810bbbc72b254e22567b517e227</td>
        <td>CVE-2022-45331</td>
-       <td>2022-11-22 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:00</td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the p_id parameter at \post.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45331">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec7bfeb03f1bb31c4a1c82c71f5e68a0</td>
-       <td>CVE-2022-41919</td>
-       <td>2022-11-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Fastify is a web framework with minimal overhead and plugin architecture. The attacker can use the incorrect `Content-Type` to bypass the `Pre-Flight` checking of `fetch`. `fetch()` requests with Content-Typeâ€™s essence as "application/x-www-form-urlencoded", "multipart/form-data", or "text/plain", could potentially be used to invoke routes that only accepts `application/json` content type, thus bypassing any CORS protection, and therefore they could lead to a Cross-Site Request Forgery attack. This issue has been patched in version 4.10.2 and 3.29.4. As a workaround, implement Cross-Site Request Forgery protection using `@fastify/csrf'.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41919">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80c6d95d3014713f5aa2195d5e63c552</td>
-       <td>CVE-2022-39199</td>
-       <td>2022-11-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>immudb is a database with built-in cryptographic proof and verification. immudb client SDKs use server's UUID to distinguish between different server instance so that the client can connect to different immudb instances and keep the state for multiple servers. SDK does not validate this uuid and can accept any value reported by the server. A malicious server can change the reported UUID tricking the client to treat it as a different server thus accepting a state completely irrelevant to the one previously retrieved from the server. This issue has been patched in version 1.4.1. As a workaround, when initializing an immudb client object a custom state handler can be used to store the state. Providing custom implementation that ignores the server UUID can be used to ensure that even if the server changes the UUID, client will still consider it to be the same server.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39199">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71890725e9b44128c05be92ed595c7e6</td>
-       <td>CVE-2022-2791</td>
-       <td>2022-11-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Emerson Electric's Proficy Machine Edition Version 9.00 and prior is vulnerable to CWE-434 Unrestricted Upload of File with Dangerous Type, and will upload any file written into the PLC logic folder to the connected PLC.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2791">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfdef1627fdbaab55bb5d0083edd95c8</td>
-       <td>CVE-2022-41943</td>
-       <td>2022-11-22 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>sourcegraph is a code intelligence platform. As a site admin it was possible to execute arbitrary commands on Gitserver when the experimental `customGitFetch` feature was enabled. This experimental feature has now been disabled by default. This issue has been patched in version 4.1.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7d8a65c2e9a0651ed2425f2782efc8b0</td>
-       <td>CVE-2022-41942</td>
-       <td>2022-11-22 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Sourcegraph is a code intelligence platform. In versions prior to 4.1.0 a command Injection vulnerability existed in the gitserver service, present in all Sourcegraph deployments. This vulnerability was caused by a lack of input validation on the host parameter of the `/list-gitolite` endpoint. It was possible to send a crafted request to gitserver that would execute commands inside the container. Successful exploitation requires the ability to send local requests to gitserver. The issue is patched in version 4.1.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41942">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76c3c45faaea2fe96d37944f441e52cb</td>
-       <td>CVE-2022-4116</td>
-       <td>2022-11-22 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in quarkus. This security flaw happens in Dev UI Config Editor which is vulnerable to drive-by localhost attacks leading to remote code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4116">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>88c4844ef35dbd75e0fe3574c02e153d</td>
-       <td>CVE-2022-40228</td>
-       <td>2022-11-22 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM DataPower Gateway 10.0.3.0 through 10.0.4.0, 10.0.1.0 through 10.0.1.9, 2018.4.1.0 through 2018.4.1.22, and 10.5.0.0 through 10.5.0.2 does not invalidate session after a password change which could allow an authenticated user to impersonate another user on the system. IBM X-Force ID: 235527.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40228">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfae80776b0fd7d9222b87030cdaef4b</td>
-       <td>CVE-2022-3500</td>
-       <td>2022-11-22 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in keylime. This security issue happens in some circumstances, due to some improperly handled exceptions, there exists the possibility that a rogue agent could create errors on the verifier that stopped attestation attempts for that host leaving it in an attested state but not verifying that anymore.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3500">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f991aeb8f233cf1878c1caf653023b0</td>
-       <td>CVE-2022-43212</td>
-       <td>2022-11-22 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>Billing System Project v1.0 was discovered to contain a SQL injection vulnerability via the orderId parameter at fetchOrderData.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43212">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>432b234d1f1aafdcad5f30f04070621e</td>
-       <td>CVE-2022-41950</td>
-       <td>2022-11-22 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>super-xray is the GUI alternative for vulnerability scanning tool xray. In 0.2-beta, a privilege escalation vulnerability was discovered. This caused inaccurate default xray permissions. Note: this vulnerability only affects Linux and Mac OS systems. Users should upgrade to super-xray 0.3-beta.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41950">详情</a></td>
       </tr>
 
      </tbody>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>768c0ae40cf60047719711cb4f89a2e9</td>
        <td>CVE-2022-20839</td>
-       <td>2022-11-22 20:26:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:26:37</td>
        <td>CISCO FIREPOWER_MANAGEMENT_CENTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8de94c9885e64ae293b456e516d3b328">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>ab2914394a443d31f9c52a7217c0389f</td>
        <td>CVE-2022-20835</td>
-       <td>2022-11-22 20:26:32 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:26:32</td>
        <td>CISCO FIREPOWER_MANAGEMENT_CENTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=64d421f6e9454276b21cde9c064ae953">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>53d0e0aed11349290f1194607b387d6f</td>
        <td>CVE-2022-20838</td>
-       <td>2022-11-22 20:26:15 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:26:15</td>
        <td>CISCO FIREPOWER_MANAGEMENT_CENTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=479ee49820e0413289a121d0f0748bf5">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>0e8ea899df0065ffec0a3a4b597c7922</td>
        <td>CVE-2022-20932</td>
-       <td>2022-11-22 20:26:09 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:26:09</td>
        <td>CISCO FIREPOWER_MANAGEMENT_CENTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=644af2b6e67b44f495dbc43b180f1466">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>3aa109e165d51b85c3d342dc7bd294e2</td>
        <td>CVE-2022-20843</td>
-       <td>2022-11-22 20:26:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:26:03</td>
        <td>CISCO FIREPOWER_MANAGEMENT_CENTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=529239c7e7564d65baabe462ba51cda2">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>e0c4a7dee3f2c5bd15008284c00330f0</td>
        <td>CVE-2022-40753</td>
-       <td>2022-11-22 20:25:58 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 20:25:58</td>
        <td>IBM INFOSPHERE_INFORMATION_SERVER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=603d17ab84ae45cab291392555b53f07">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>27ba9a49c7997b5e0b4c44e5c71e3530</td>
        <td>CVE-2022-42831</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Apple多款产品竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72726">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>36c237719433aa12a09f336f12f48467</td>
        <td>CVE-2022-42832</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Apple多款产品竞争条件漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72725">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>a3d95942bc41cc993a812b323cb74b8f</td>
        <td>CVE-2022-24936</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Silicon Labs Gecko Bootloader越界错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72724">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>cdd60c26de73e1d4222763e1c753f31e</td>
        <td>CVE-2022-3181</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>VTScada输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72723">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>525a0a7112a3de009a66bc4cf549568e</td>
        <td>CVE-2022-3340</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Trellix IPS Manager XML外部实体注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72722">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>2809ec09d986f517393532939dd7993d</td>
        <td>CVE-2022-44796</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Object First存在未明漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72721">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>66900aa1f4c11b6c337802209983c4b2</td>
        <td>CVE-2022-42990</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Food Ordering Management System SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72720">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>4a3716aec79c8f23e1ceea313cf2da20</td>
        <td>CVE-2022-41773</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Delta Electronics DIAEnergie SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72719">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>fd7a20bdd4b0c1d73488d6eef8a46769</td>
        <td>CVE-2022-43143</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Beekeeper Studio跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72718">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>801c74db2f2c8c3a2315252ed3fc6971</td>
        <td>CVE-2022-32407</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Softr跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72717">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>fb539c4ee81af9f2d0b7221b64b984e4</td>
        <td>CVE-2022-32774</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72716">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>53c80b5aebf8e1621899f6dad6a173c3</td>
        <td>CVE-2022-37332</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72715">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>2b39c7a082350ec32179782d3f8fb460</td>
        <td>CVE-2022-38097</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>Foxit PDF Reader内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72714">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>fdcb21dae7c972efa1db7392aff5c214</td>
        <td>CVE-2022-42055</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>GL.iNet GoodCloud IoT Device Management System命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72713">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>b2460fa3c5e4a585691bb74043741cfe</td>
        <td>CVE-2022-42054</td>
-       <td>2022-11-22 23:36:41 <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 23:36:41</td>
        <td>GL.iNet GoodCloud IoT Device Management System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/72712">详情</a></td>
       </tr>
@@ -2190,7 +2190,7 @@
       <tr>
        <td>9578b4174f517382e8c2c2d21134a64f</td>
        <td>CVE-2022-45536</td>
-       <td>2022-11-22 21:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:11 </td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the id parameter at \admin\post_comments.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45536">详情</a></td>
       </tr>
@@ -2198,7 +2198,7 @@
       <tr>
        <td>644ab0b1547e2a2b228d042b861b2487</td>
        <td>CVE-2022-45535</td>
-       <td>2022-11-22 21:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:11 </td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the edit parameter at \admin\categories.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45535">详情</a></td>
       </tr>
@@ -2206,7 +2206,7 @@
       <tr>
        <td>f4638bcbb0685d198a0a24e48170ca0b</td>
        <td>CVE-2022-45529</td>
-       <td>2022-11-22 21:15:11  <img src="imgs/new.gif" /></td>
+       <td>2022-11-22 21:15:11 </td>
        <td>AeroCMS v0.0.1 was discovered to contain a SQL Injection vulnerability via the post_category_id parameter at \admin\includes\edit_post.php. This vulnerability allows attackers to access database information.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45529">详情</a></td>
       </tr>
