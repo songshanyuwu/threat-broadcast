@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-27 05:35:26 -->
+<!-- RELEASE TIME : 2022-11-27 23:36:55 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d6ea0ad4ff66948f1b0955065612c912</td>
+       <td>CVE-2022-45934</td>
+       <td>2022-11-27 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>030a78d61b98e2f4d484a49f89449575</td>
+       <td>CVE-2022-43705</td>
+       <td>2022-11-27 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Botan before 2.19.3, it is possible to forge OCSP responses due to a certificate verification error. This issue was introduced in Botan 1.11.34 (November 2016).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43705">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>190627df7e53eeeac90cbf3ac393b72d</td>
+       <td>CVE-2022-45933</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeView through 0.1.31 allows attackers to obtain control of a Kubernetes cluster because api/scrape/kube-system does not require authentication, and retrieves certificate files that can be used for authentication as kube-admin. NOTE: the vendor's position is that KubeView was a "fun side project and a learning exercise," and not "very secure."</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45933">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee472aef1d69746cd4f932344082ca56</td>
+       <td>CVE-2022-45932</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/RoleStore.java deleteRole function is affected when the API interface /auth/v1/roles/ is used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45932">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f62f6ab37f1b9920439669a23bb6e876</td>
+       <td>CVE-2022-45931</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/UserStore.java deleteUser function is affected when the API interface /auth/v1/users/ is used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77971b53298a138b824d7083eac97e32</td>
+       <td>CVE-2022-45930</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/DomainStore.java deleteDomain function is affected for the /auth/v1/domains/ API interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45930">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44e49857354067f3d27ebe2045e96769</td>
+       <td>CVE-2022-45919</td>
+       <td>2022-11-27 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 6.0.10. In drivers/media/dvb-core/dvb_ca_en50221.c, a use-after-free can occur is there is a disconnect after an open, because of the lack of a wait_event.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45919">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f300e49b33e7c472f625353ad00a7bbe</td>
+       <td>CVE-2022-45914</td>
+       <td>2022-11-27 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The ESL (Electronic Shelf Label) protocol, as implemented by (for example) the OV80e934802 RF transceiver on the ETAG-2130-V4.3 20190629 board, does not use authentication, which allows attackers to change label values via 433 MHz RF signals, as demonstrated by disrupting the organization of a hospital storage unit, or changing retail pricing.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45914">详情</a></td>
+      </tr>
+
+      <tr>
        <td>898267e008aa8d6c290d4ef808dd68f9</td>
        <td>CVE-2022-24999</td>
        <td>2022-11-26 22:15:00 <img src="imgs/new.gif" /></td>
@@ -457,70 +521,6 @@
        <td>2022-11-25 00:15:00</td>
        <td>Cleartext Storage of Sensitive Information vulnerability in Mitsubishi Electric GX Works3 versions 1.086Q and prior allows a remote unauthenticated attacker to disclose sensitive information. As a result, unauthorized users may view or execute programs illegally.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29826">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f56b1b6c6c0e91ecdab272e8b47b76b</td>
-       <td>CVE-2022-29825</td>
-       <td>2022-11-25 00:15:00</td>
-       <td>Use of Hard-coded Password vulnerability in Mitsubishi Electric GX Works3 all versions allows an unauthenticated attacker to disclose sensitive information. As a result, unauthorized users may view or execute programs illegally.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29825">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>648440e2a886e19a3233b67dad0ed072</td>
-       <td>CVE-2022-25164</td>
-       <td>2022-11-25 00:15:00</td>
-       <td>Cleartext Storage of Sensitive Information vulnerability in Mitsubishi Electric GX Works3 all versions and Mitsubishi Electric MX OPC UA Module Configurator-R all versions allows a remote unauthenticated attacker to disclose sensitive information. As a result, unauthorized users can gain unauthorized access to the CPU module and the OPC UA server module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25164">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76f7ceee01ecae72f17114d55b8897d0</td>
-       <td>CVE-2022-2650</td>
-       <td>2022-11-24 17:15:00</td>
-       <td>Improper Restriction of Excessive Authentication Attempts in GitHub repository wger-project/wger prior to 2.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2650">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be8b74240fd09df800650b87dbe2bb7b</td>
-       <td>CVE-2022-26885</td>
-       <td>2022-11-24 16:15:00</td>
-       <td>When using tasks to read config files, there is a risk of database password disclosure. We recommend you upgrade to version 2.0.6 or higher.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26885">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8a5ab8eec93f165ef7ae4e07fdb3ed3</td>
-       <td>CVE-2022-4090</td>
-       <td>2022-11-24 13:15:00</td>
-       <td>A vulnerability was found in rickxy Stock Management System and classified as problematic. This issue affects some unknown processing of the file us_transac.php?action=add. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-214331.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4090">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c54f7c808ae45e01ecd9bc606d9fcff2</td>
-       <td>CVE-2022-40977</td>
-       <td>2022-11-24 10:15:00</td>
-       <td>A path traversal vulnerability was discovered in Pilz PASvisu Server before 1.12.0. An unauthenticated remote attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip').</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c10275763ae54ee95241f1c5d4d91a0c</td>
-       <td>CVE-2022-40976</td>
-       <td>2022-11-24 10:15:00</td>
-       <td>A path traversal vulnerability was discovered in multiple Pilz products. An unauthenticated local attacker could use a zipped, malicious configuration file to trigger arbitrary file writes ('zip-slip').</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40976">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f283d274d7af45fe3d62254cd569cae</td>
-       <td>CVE-2022-4089</td>
-       <td>2022-11-24 10:15:00</td>
-       <td>A vulnerability was found in rickxy Stock Management System. It has been declared as problematic. This vulnerability affects unknown code of the file /pages/processlogin.php. The manipulation of the argument user leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-214324.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4089">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e9677a6462c9bcfa6055b14307441b91</td>
+       <td>CVE-2022-45016</td>
+       <td>2022-11-27 20:17:12 <img src="imgs/new.gif" /></td>
+       <td>WBCE WBCE_CMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e263850f5b454d469c5e1248a29c0089">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6fa87c281ef3ddb0896813882e9e030</td>
+       <td>CVE-2022-38755</td>
+       <td>2022-11-27 20:17:01 <img src="imgs/new.gif" /></td>
+       <td>MICROFOCUS FILR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dde96418be8749d5bc52b7b107413548">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b1006b005f40ade12b560c4375e968f</td>
+       <td>CVE-2022-45013</td>
+       <td>2022-11-27 20:16:50 <img src="imgs/new.gif" /></td>
+       <td>WBCE WBCE_CMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=84b091532c5640ad95a8ce6d73ad4262">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8558d0572a3f3bd9c487951243841c4b</td>
+       <td>CVE-2022-45471</td>
+       <td>2022-11-27 20:16:39 <img src="imgs/new.gif" /></td>
+       <td>JETBRAINS HUB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4a81119c3b6c4673ba36acf24143804c">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1424eb9d4e8a44289c15a8819fc19382</td>
        <td>CVE-2022-44191</td>
        <td>2022-11-26 20:21:12 <img src="imgs/new.gif" /></td>
@@ -1881,38 +1913,6 @@
        <td>2022-11-23 20:34:22</td>
        <td>DOLIBARR DOLIBARR_ERP\/CRM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c681ec8a69f840c58de426e59668e962">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fe654f4a70c060fc39926805c65dcec</td>
-       <td>CVE-2022-43457</td>
-       <td>2022-11-23 20:34:16</td>
-       <td>DELTAWW DIAENERGIE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7b3ce449f7a443697d16b0790344739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd6c2b16b7fefaf4ea3775b9d5800915</td>
-       <td>CVE-2022-39316</td>
-       <td>2022-11-23 20:34:01</td>
-       <td>FREERDP FREERDP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=be2ef3cc7a044765998fab4fb5946767">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c7a3049adf646e9dbaa6323e37c77f85</td>
-       <td>CVE-2022-39318</td>
-       <td>2022-11-23 20:33:46</td>
-       <td>FREERDP FREERDP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b8f7646817384e82a2bc7e6a271e0c02">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9c512fc2a7f40254b44d8aa6fc76320</td>
-       <td>CVE-2022-43183</td>
-       <td>2022-11-23 20:33:34</td>
-       <td>XUXUELI XXL-JOB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3e19e20e100e4818a8537685a6ccbfb1">详情</a></td>
       </tr>
 
      </tbody>
@@ -2268,6 +2268,14 @@
       </tr>
 
       <tr>
+       <td>dca50ef08b169e546adff3aa5dd70952</td>
+       <td>CVE-2022-45369</td>
+       <td>2022-11-18 23:15:30 </td>
+       <td>Auth. (subscriber+) Broken Access Control vulnerability in Plugin for Google Reviews plugin &lt;= 2.2.2 on WordPress.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45369">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e9ec5a7c5ca09701e07b382c9a16eaec</td>
        <td>CVE-2022-45474</td>
        <td>2022-11-18 18:15:10 </td>
@@ -2417,14 +2425,6 @@
        <td>2022-11-16 16:15:10 </td>
        <td>Zenario CMS 9.3.57186 is vulnerable to Cross Site Scripting (XSS) via the Nest library module.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44069">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>230d0e66741b672e8de6cf5eee1aaa96</td>
-       <td>CVE-2022-4022</td>
-       <td>2022-11-16 14:15:11 </td>
-       <td>The SVG Support plugin for WordPress defaults to insecure settings in version 2.5 and 2.5.1. SVG files containing malicious javascript are not sanitized. While version 2.5 adds the ability to sanitize image as they are uploaded, the plugin defaults to disable sanitization and does not restrict SVG upload to only administrators. This allows authenticated attackers, with author-level privileges and higher, to upload malicious SVG files that can be embedded in posts and pages by higher privileged users. Additionally, the embedded JavaScript is also triggered on visiting the image URL, which allows an attacker to execute malicious code in browsers visiting that URL.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4022">详情</a></td>
       </tr>
 
      </tbody>
