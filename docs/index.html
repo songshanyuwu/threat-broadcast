@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-29 05:35:58 -->
+<!-- RELEASE TIME : 2022-11-29 23:37:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>c2db08eeadf3aee68605a7ef55df86c0</td>
+       <td>CVE-2022-34721</td>
+       <td>2022-11-29 08:16:23 <img src="imgs/new.gif" /></td>
+       <td>CVE-2022-34721：Windows IKE协议扩展远程代码执行漏洞</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a92e2b4e0c3a580ec6ffcc1e30a11925">详情</a></td>
+      </tr>
+
       <tr>
        <td>4bd83f9bb8a0aa8f94e6c9333c158f1c</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=efdb130a19974f3582f3495a0bb8aa8f">详情</a></td>
       </tr>
 
-      <tr>
-       <td>0717bc3ddc00f3b106713a8e81240e37</td>
-       <td></td>
-       <td>2022-09-05 06:53:34</td>
-       <td>安全事件周报 (08.29-09.04)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=8c78896d6265cc0ff5e99999ab2d1155">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>3f9db7f5a7ac26d33b059b1b7f101df4</td>
+       <td>CVE-2022-44279</td>
+       <td>2022-11-29 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Garage Management System v1.0 is vulnerable to Cross Site Scripting (XSS) via /garage/php_action/createBrand.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79a6b74c0f5461f108294eb5da451ff8</td>
+       <td>CVE-2022-46150</td>
+       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open-source discussion platform. Prior to version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches, unauthorized users may learn of the existence of hidden tags and that they have been applied to topics that they have access to. This issue is patched in version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches. As a workaround, use the `disable_email` site setting to disable all emails to non-staff users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46150">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9281f0eda6b38c1d5af5e2c1919d9153</td>
+       <td>CVE-2022-4172</td>
+       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>An integer overflow and buffer overflow issues were found in the ACPI Error Record Serialization Table (ERST) device of QEMU in the read_erst_record() and write_erst_record() functions. Both issues may allow the guest to overrun the host buffer allocated for the ERST memory device. A malicious guest could use these flaws to crash the QEMU process on the host.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bedd4fc2d9b8b6586c148204e261490f</td>
+       <td>CVE-2022-4144</td>
+       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>An out-of-bounds read flaw was found in the QXL display device emulation in QEMU. The qxl_phys2virt() function does not check the size of the structure pointed to by the guest physical address, potentially reading past the end of the bar space into adjacent pages. A malicious guest user could use this flaw to crash the QEMU process on the host causing a denial of service condition.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01b0a019147522f6e62ff99f1af16d5e</td>
+       <td>CVE-2022-46152</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>OP-TEE Trusted OS is the secure side implementation of OP-TEE project, a Trusted Execution Environment. Versions prior to 3.19.0, contain an Improper Validation of Array Index vulnerability. The function `cleanup_shm_refs()` is called by both `entry_invoke_command()` and `entry_open_session()`. The commands `OPTEE_MSG_CMD_OPEN_SESSION` and `OPTEE_MSG_CMD_INVOKE_COMMAND` can be executed from the normal world via an OP-TEE SMC. This function is not validating the `num_params` argument, which is only limited to `OPTEE_MSG_MAX_NUM_PARAMS` (127) in the function `get_cmd_buffer()`. Therefore, an attacker in the normal world can craft an SMC call that will cause out-of-bounds reading in `cleanup_shm_refs` and potentially freeing of fake-objects in the function `mobj_put()`. A normal-world attacker with permission to execute SMC instructions may exploit this flaw. Maintainers believe this problem permits local privilege escalation from the normal world to the secure world. Version 3.19.0 contains a fix for this issue. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46152">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f77cc253a06885d08b17beff6a86eec</td>
+       <td>CVE-2022-46148</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open-source messaging platform. In versions 2.8.10 and prior on the `stable` branch and versions 2.9.0.beta11 and prior on the `beta` and `tests-passed` branches, users composing malicious messages and navigating to drafts page could self-XSS. This vulnerability can lead to a full XSS on sites which have modified or disabled Discourse’s default Content Security Policy. This issue is patched in the latest stable, beta and tests-passed versions of Discourse.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46148">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>045d53ab7c206ee83bbf26a2f99b8fe3</td>
+       <td>CVE-2022-44356</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>WAVLINK Quantum D4G (WL-WN531G3) running firmware versions M31G3.V5030.201204 and M31G3.V5030.200325 has an access control issue which allows unauthenticated attackers to download configuration data and log files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44356">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c735f2b848ed1b7adc36029d0048118e</td>
+       <td>CVE-2022-44355</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>SolarView Compact 7.0 is vulnerable to Cross-site Scripting (XSS) via /network_test.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44355">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61481788538641b241bc9ac94dd8187c</td>
+       <td>CVE-2022-44354</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>SolarView Compact 4.0 and 5.0 is vulnerable to Unrestricted File Upload via a crafted php file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44354">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>94eb35efc6ae3e64f5076b3c4b70d516</td>
+       <td>CVE-2022-25848</td>
+       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects all versions of package static-dev-server. This is because when paths from users to the root directory are joined, the assets for the path accessed are relative to that of the root directory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25848">详情</a></td>
+      </tr>
+
       <tr>
        <td>5f276d9f723b7467574a63b55375831e</td>
        <td>CVE-2022-45224</td>
@@ -441,86 +521,6 @@
        <td>2022-11-28 15:15:00 <img src="imgs/new.gif" /></td>
        <td>Dinstar FXO Analog VoIP Gateway DAG2000-16O is vulnerable to Cross Site Scripting (XSS).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44284">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d6ea0ad4ff66948f1b0955065612c912</td>
-       <td>CVE-2022-45934</td>
-       <td>2022-11-27 04:15:00</td>
-       <td>An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45934">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>030a78d61b98e2f4d484a49f89449575</td>
-       <td>CVE-2022-43705</td>
-       <td>2022-11-27 04:15:00</td>
-       <td>In Botan before 2.19.3, it is possible to forge OCSP responses due to a certificate verification error. This issue was introduced in Botan 1.11.34 (November 2016).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43705">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>190627df7e53eeeac90cbf3ac393b72d</td>
-       <td>CVE-2022-45933</td>
-       <td>2022-11-27 03:15:00</td>
-       <td>KubeView through 0.1.31 allows attackers to obtain control of a Kubernetes cluster because api/scrape/kube-system does not require authentication, and retrieves certificate files that can be used for authentication as kube-admin. NOTE: the vendor's position is that KubeView was a "fun side project and a learning exercise," and not "very secure."</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45933">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee472aef1d69746cd4f932344082ca56</td>
-       <td>CVE-2022-45932</td>
-       <td>2022-11-27 03:15:00</td>
-       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/RoleStore.java deleteRole function is affected when the API interface /auth/v1/roles/ is used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45932">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f62f6ab37f1b9920439669a23bb6e876</td>
-       <td>CVE-2022-45931</td>
-       <td>2022-11-27 03:15:00</td>
-       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/UserStore.java deleteUser function is affected when the API interface /auth/v1/users/ is used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77971b53298a138b824d7083eac97e32</td>
-       <td>CVE-2022-45930</td>
-       <td>2022-11-27 03:15:00</td>
-       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/DomainStore.java deleteDomain function is affected for the /auth/v1/domains/ API interface.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45930">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44e49857354067f3d27ebe2045e96769</td>
-       <td>CVE-2022-45919</td>
-       <td>2022-11-27 02:15:00</td>
-       <td>An issue was discovered in the Linux kernel through 6.0.10. In drivers/media/dvb-core/dvb_ca_en50221.c, a use-after-free can occur is there is a disconnect after an open, because of the lack of a wait_event.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45919">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f300e49b33e7c472f625353ad00a7bbe</td>
-       <td>CVE-2022-45914</td>
-       <td>2022-11-27 01:15:00</td>
-       <td>The ESL (Electronic Shelf Label) protocol, as implemented by (for example) the OV80e934802 RF transceiver on the ETAG-2130-V4.3 20190629 board, does not use authentication, which allows attackers to change label values via 433 MHz RF signals, as demonstrated by disrupting the organization of a hospital storage unit, or changing retail pricing.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45914">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>898267e008aa8d6c290d4ef808dd68f9</td>
-       <td>CVE-2022-24999</td>
-       <td>2022-11-26 22:15:00</td>
-       <td>qs before 6.10.3, as used in Express before 4.17.3 and other products, allows attackers to cause a Node process hang for an Express application because an __ proto__ key can be used. In many typical Express use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as a[__proto__]=b&a[__proto__]&a[length]=100000000. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4 (and therefore Express 4.17.3, which has "deps: qs@6.9.7" in its release description, is not vulnerable).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24999">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc800bf2df937db046746b2633a5cab6</td>
-       <td>CVE-2022-45909</td>
-       <td>2022-11-26 03:15:00</td>
-       <td>drachtio-server 0.8.18 has a heap-based buffer over-read via a long Request-URI in an INVITE request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45909">详情</a></td>
       </tr>
 
      </tbody>
@@ -1051,6 +1051,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>45ab4afdafe578698bcfccccd65d833e</td>
+       <td></td>
+       <td>yt</td>
+       <td>QiAnXinTI-SV-2020-0009 Microsoft Windows Type 1字体处理远程代码执行漏洞（ADV200006）通告</td>
+       <td><a target="_blank" href="wt">详情</a></td>
+      </tr>
+
       <tr>
        <td>6bd01daffa85191c80698354fc8e252f</td>
        <td></td>
@@ -1676,6 +1684,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ca3fbe2a01075c5fe92ff6be9460a932</td>
+       <td>CVE-2022-44193</td>
+       <td>2022-11-29 20:11:32 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b96875e703f84d27bcdf3070d61118c7">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0b9809e23c22e6b13bfcd2021c169430</td>
        <td>CVE-2022-44196</td>
        <td>2022-11-28 20:11:46 <img src="imgs/new.gif" /></td>
@@ -1905,14 +1921,6 @@
        <td>2022-11-24 20:24:43</td>
        <td>LIBRENMS LIBRENMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d9774fa17b9a49528626750cbd95c848">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10d605ff7b2c541198286bd33f8dd4c6</td>
-       <td>CVE-2022-4069</td>
-       <td>2022-11-24 20:24:37</td>
-       <td>LIBRENMS LIBRENMS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab862a4c63fd4cacaee41bc7b6a8a016">详情</a></td>
       </tr>
 
      </tbody>
@@ -2204,6 +2212,46 @@
       </tr>
 
       <tr>
+       <td>753bfa088c764c17a2b1078aaeb81899</td>
+       <td>CVE-2022-45888</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/char/xillybus/xillyusb.c has a race condition and use-after-free during physical removal of a USB device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45888">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b43c19672248581bb025b67338d91ff1</td>
+       <td>CVE-2022-45887</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/usb/ttusb-dec/ttusb_dec.c has a memory leak because of the lack of a dvb_frontend_detach call.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45887">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d3fb323a4aa349842a0bf3b60f2b3dd</td>
+       <td>CVE-2022-45886</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_net.c has a .disconnect versus dvb_device_open race condition that leads to a use-after-free.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45886">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8538c717683de9e7f9801e39f736d7de</td>
+       <td>CVE-2022-45885</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_frontend.c has a race condition that can cause a use-after-free when a device is disconnected.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45885">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>246de51d88c434053c164b85c96f34d4</td>
+       <td>CVE-2022-45884</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvbdev.c has a use-after-free, related to dvb_register_device dynamically allocating fops.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45884">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b84b5402a49fb22b65ede2d3cdd73bd3</td>
        <td>CVE-2022-45866</td>
        <td>2022-11-23 20:15:10 </td>
@@ -2385,46 +2433,6 @@
        <td>2022-11-17 05:15:15 </td>
        <td>The ScratchLogin extension through 1.1 for MediaWiki does not escape verification failure messages, which allows users with administrator privileges to perform cross-site scripting (XSS).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42985">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8efab90014afd9c4f6cb7a61c32914c7</td>
-       <td>CVE-2022-44006</td>
-       <td>2022-11-16 23:15:12 </td>
-       <td>An issue was discovered in BACKCLICK Professional 5.9.63. Due to improper validation or sanitization of upload filenames, an externally reachable, unauthenticated update function permits writing files outside the intended target location. Achieving remote code execution is possible, e.g., by uploading an executable file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44006">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15a4673079de8556ad14020add9a15d3</td>
-       <td>CVE-2022-44008</td>
-       <td>2022-11-16 22:15:11 </td>
-       <td>An issue was discovered in BACKCLICK Professional 5.9.63. Due to improper validation, arbitrary local files can be retrieved by accessing the back-end Tomcat server directly.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44008">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77d50f7cf890220936577165f577c410</td>
-       <td>CVE-2022-44007</td>
-       <td>2022-11-16 22:15:11 </td>
-       <td>An issue was discovered in BACKCLICK Professional 5.9.63. Due to an unsafe implementation of session tracking, it is possible for an attacker to trick users into opening an authenticated user session for a session identifier known to the attacker, aka Session Fixation.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44007">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>20ecaf6abbbf95c4451f06d418edff1f</td>
-       <td>CVE-2022-43135</td>
-       <td>2022-11-16 20:15:10 </td>
-       <td>Online Diagnostic Lab Management System v1.0 was discovered to contain a SQL injection vulnerability via the username parameter at /diagnostic/login.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-43135">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8cb8e616491e43621617578ba773d5d6</td>
-       <td>CVE-2022-44073</td>
-       <td>2022-11-16 16:15:11 </td>
-       <td>Zenario CMS 9.3.57186 is vulnerable to Cross Site Scripting (XSS) via svg,Users &amp; Contacts.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44073">详情</a></td>
       </tr>
 
      </tbody>
