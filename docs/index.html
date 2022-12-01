@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-30 23:37:07 -->
+<!-- RELEASE TIME : 2022-12-01 05:36:44 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>c2db08eeadf3aee68605a7ef55df86c0</td>
        <td>CVE-2022-34721</td>
-       <td>2022-11-29 08:16:23 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 08:16:23</td>
        <td>CVE-2022-34721：Windows IKE协议扩展远程代码执行漏洞</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a92e2b4e0c3a580ec6ffcc1e30a11925">详情</a></td>
       </tr>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c704d61f3b721d49e332c3aedb9f38d3</td>
+       <td>CVE-2022-40204</td>
+       <td>2022-12-01 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting (XSS) vulnerability exists in all current versions of Digital Alert Systems DASDEC software via the Host Header in undisclosed pages after login.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40204">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec685b714fd899a998d27efd38f97290</td>
+       <td>CVE-2022-46162</td>
+       <td>2022-11-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>discourse-bbcode is the official BBCode plugin for Discourse. Prior to commit 91478f5, CSS injection can occur when rendering content generated with the discourse-bccode plugin. This vulnerability only affects sites which have the discourse-bbcode plugin installed and enabled. This issue is patched in commit 91478f5. As a workaround, ensure that the Content Security Policy is enabled and monitor any posts that contain bbcode.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46162">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be8b98721631f6009f844783f8a442ce</td>
+       <td>CVE-2019-18265</td>
+       <td>2022-11-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Digital Alert Systems’ DASDEC software prior to version 4.1 contains a cross-site scripting (XSS) vulnerability that allows remote attackers to inject arbitrary web script or HTML via the SSH username, username field of the login page, or via the HTTP host header. The injected content is stored in logs and rendered when viewed in the web application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-18265">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2ca40668231a389632ecc2bb18ff2bfb</td>
+       <td>CVE-2022-46156</td>
+       <td>2022-11-30 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Synthetic Monitoring Agent for Grafana's Synthetic Monitoring application provides probe functionality and executes network checks for monitoring remote targets. Users running the Synthetic Monitoring agent prior to version 0.12.0 in their local network are impacted. The authentication token used to communicate with the Synthetic Monitoring API is exposed through a debugging endpoint. This token can be used to retrieve the Synthetic Monitoring checks created by the user and assigned to the agent identified with that token. The Synthetic Monitoring API will reject connections from already-connected agents, so access to the token does not guarantee access to the checks. Version 0.12.0 contains a fix. Users are advised to rotate the agent tokens. After upgrading to version v0.12.0 or later, it's recommended that users of distribution packages review the configuration stored in `/etc/synthetic-monitoring/synthetic-monitoring-agent.conf`, specifically the `API_TOKEN` variable which has been renamed to `SM_AGENT_API_TOKEN`. As a workaround for previous versions, it's recommended that users review the agent settings and set the HTTP listening address in a manner that limits the exposure, for example, localhost or a non-routed network, by using the command line parameter `-listen-address`, e.g. `-listen-address localhost:4050`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46156">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2e3195020c34baecd1e347b4c8aa80dc</td>
        <td>CVE-2022-23746</td>
        <td>2022-11-30 19:15:00 <img src="imgs/new.gif" /></td>
@@ -446,7 +478,7 @@
       <tr>
        <td>3f9db7f5a7ac26d33b059b1b7f101df4</td>
        <td>CVE-2022-44279</td>
-       <td>2022-11-29 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 20:15:00</td>
        <td>Garage Management System v1.0 is vulnerable to Cross Site Scripting (XSS) via /garage/php_action/createBrand.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44279">详情</a></td>
       </tr>
@@ -454,7 +486,7 @@
       <tr>
        <td>79a6b74c0f5461f108294eb5da451ff8</td>
        <td>CVE-2022-46150</td>
-       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 18:15:00</td>
        <td>Discourse is an open-source discussion platform. Prior to version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches, unauthorized users may learn of the existence of hidden tags and that they have been applied to topics that they have access to. This issue is patched in version 2.8.13 of the `stable` branch and version 2.9.0.beta14 of the `beta` and `tests-passed` branches. As a workaround, use the `disable_email` site setting to disable all emails to non-staff users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46150">详情</a></td>
       </tr>
@@ -462,7 +494,7 @@
       <tr>
        <td>9281f0eda6b38c1d5af5e2c1919d9153</td>
        <td>CVE-2022-4172</td>
-       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 18:15:00</td>
        <td>An integer overflow and buffer overflow issues were found in the ACPI Error Record Serialization Table (ERST) device of QEMU in the read_erst_record() and write_erst_record() functions. Both issues may allow the guest to overrun the host buffer allocated for the ERST memory device. A malicious guest could use these flaws to crash the QEMU process on the host.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4172">详情</a></td>
       </tr>
@@ -470,7 +502,7 @@
       <tr>
        <td>bedd4fc2d9b8b6586c148204e261490f</td>
        <td>CVE-2022-4144</td>
-       <td>2022-11-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 18:15:00</td>
        <td>An out-of-bounds read flaw was found in the QXL display device emulation in QEMU. The qxl_phys2virt() function does not check the size of the structure pointed to by the guest physical address, potentially reading past the end of the bar space into adjacent pages. A malicious guest user could use this flaw to crash the QEMU process on the host causing a denial of service condition.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4144">详情</a></td>
       </tr>
@@ -478,7 +510,7 @@
       <tr>
        <td>01b0a019147522f6e62ff99f1af16d5e</td>
        <td>CVE-2022-46152</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 17:15:00</td>
        <td>OP-TEE Trusted OS is the secure side implementation of OP-TEE project, a Trusted Execution Environment. Versions prior to 3.19.0, contain an Improper Validation of Array Index vulnerability. The function `cleanup_shm_refs()` is called by both `entry_invoke_command()` and `entry_open_session()`. The commands `OPTEE_MSG_CMD_OPEN_SESSION` and `OPTEE_MSG_CMD_INVOKE_COMMAND` can be executed from the normal world via an OP-TEE SMC. This function is not validating the `num_params` argument, which is only limited to `OPTEE_MSG_MAX_NUM_PARAMS` (127) in the function `get_cmd_buffer()`. Therefore, an attacker in the normal world can craft an SMC call that will cause out-of-bounds reading in `cleanup_shm_refs` and potentially freeing of fake-objects in the function `mobj_put()`. A normal-world attacker with permission to execute SMC instructions may exploit this flaw. Maintainers believe this problem permits local privilege escalation from the normal world to the secure world. Version 3.19.0 contains a fix for this issue. There are no known workarounds.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46152">详情</a></td>
       </tr>
@@ -486,41 +518,9 @@
       <tr>
        <td>9f77cc253a06885d08b17beff6a86eec</td>
        <td>CVE-2022-46148</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 17:15:00</td>
        <td>Discourse is an open-source messaging platform. In versions 2.8.10 and prior on the `stable` branch and versions 2.9.0.beta11 and prior on the `beta` and `tests-passed` branches, users composing malicious messages and navigating to drafts page could self-XSS. This vulnerability can lead to a full XSS on sites which have modified or disabled Discourse’s default Content Security Policy. This issue is patched in the latest stable, beta and tests-passed versions of Discourse.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>045d53ab7c206ee83bbf26a2f99b8fe3</td>
-       <td>CVE-2022-44356</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>WAVLINK Quantum D4G (WL-WN531G3) running firmware versions M31G3.V5030.201204 and M31G3.V5030.200325 has an access control issue which allows unauthenticated attackers to download configuration data and log files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44356">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c735f2b848ed1b7adc36029d0048118e</td>
-       <td>CVE-2022-44355</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>SolarView Compact 7.0 is vulnerable to Cross-site Scripting (XSS) via /network_test.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44355">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61481788538641b241bc9ac94dd8187c</td>
-       <td>CVE-2022-44354</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>SolarView Compact 4.0 and 5.0 is vulnerable to Unrestricted File Upload via a crafted php file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94eb35efc6ae3e64f5076b3c4b70d516</td>
-       <td>CVE-2022-25848</td>
-       <td>2022-11-29 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>This affects all versions of package static-dev-server. This is because when paths from users to the root directory are joined, the assets for the path accessed are relative to that of the root directory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25848">详情</a></td>
       </tr>
 
      </tbody>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>ca3fbe2a01075c5fe92ff6be9460a932</td>
        <td>CVE-2022-44193</td>
-       <td>2022-11-29 20:11:32 <img src="imgs/new.gif" /></td>
+       <td>2022-11-29 20:11:32</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b96875e703f84d27bcdf3070d61118c7">详情</a></td>
       </tr>
