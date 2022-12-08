@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-12-07 23:35:44 -->
+<!-- RELEASE TIME : 2022-12-08 05:35:23 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2475ba27c25238397cd4ba90ab8689bd</td>
+       <td>CVE-2022-4291</td>
+       <td>2022-12-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>The aswjsflt.dll library from Avast Antivirus windows contained a potentially exploitable heap corruption vulnerability that could enable an attacker to bypass the sandbox of the application it was loaded into, if applicable. This issue was fixed in version 18.0.1478 of the Script Shield Component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4291">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>21768122b3004ffc7f884755e3ac60a4</td>
+       <td>CVE-2022-4261</td>
+       <td>2022-12-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Rapid7 Nexpose versions prior to 6.6.172 failed to reliably validate the authenticity of update contents. This failure could allow an attacker to provide a malicious update and alter the functionality of Rapid7 Nexpose. The attacker would need some pre-existing mechanism to provide a malicious update, either through a social engineering effort, privileged access to replace downloaded updates in transit, or by performing an Attacker-in-the-Middle attack on the update service itself.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4261">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3478b915c2181b8c9496b9361733496</td>
+       <td>CVE-2022-3092</td>
+       <td>2022-12-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>GE CIMPICITY versions 2022 and prior is vulnerable to an out-of-bounds write, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3092">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f67e4c1ee511dd3a0d4f4cd2ba9ecb8</td>
+       <td>CVE-2022-3084</td>
+       <td>2022-12-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>GE CIMPICITY versions 2022 and prior is vulnerable when data from a faulting address controls code flow starting at gmmiObj!CGmmiRootOptionTable, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ba1f9d4a15fbea29636369f62717666</td>
+       <td>CVE-2022-2952</td>
+       <td>2022-12-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>GE CIMPICITY versions 2022 and prior is vulnerable when data from a faulting address controls code flow starting at gmmiObj!CGmmiOptionContainer, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2952">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6b41d8e9b85982f75ffca1a683e9d4b</td>
+       <td>CVE-2022-2948</td>
+       <td>2022-12-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>GE CIMPICITY versions 2022 and prior is vulnerable to a heap-based buffer overflow, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2948">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e719546f462a3d73b6f37aa2d5534dea</td>
+       <td>CVE-2022-23471</td>
+       <td>2022-12-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23471">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4c6a65de1c42030ac5df439995e5417</td>
+       <td>CVE-2022-2002</td>
+       <td>2022-12-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>GE CIMPICITY versions 2022 and prior is vulnerable when data from faulting address controls code flow starting at gmmiObj!CGmmiOptionContainer, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2002">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>39dd7fcfcc7eda95c1e5a64923bca420</td>
+       <td>CVE-2022-23491</td>
+       <td>2022-12-07 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi 2022.12.07 removes root certificates from "TrustCor" from the root store. These are in the process of being removed from Mozilla's trust store. TrustCor's root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware. Conclusions of Mozilla's investigation can be found in the linked google group discussion.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23491">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a62b6e207dde469245afcd63e2559ca2</td>
+       <td>CVE-2022-4341</td>
+       <td>2022-12-07 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in csliuwy coder-chain_gdut and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /back/index.php/user/User/?1. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-215095.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4341">详情</a></td>
+      </tr>
+
+      <tr>
        <td>15903c45443491c9ada1c2533a521f45</td>
        <td>CVE-2022-46770</td>
        <td>2022-12-07 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>73003eceba4711bb7cdca22f23ce055e</td>
        <td>CVE-2022-44030</td>
-       <td>2022-12-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 23:15:00</td>
        <td>Redmine 5.x before 5.0.4 allows downloading of file attachments of any Issue or any Wiki page due to insufficient permission checks. Depending on the configuration, this may require login as a registered user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44030">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>61e6ab426bd05272f740ca3befd5856d</td>
        <td>CVE-2022-42699</td>
-       <td>2022-12-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 23:15:00</td>
        <td>Auth. Remote Code Execution vulnerability in Easy WP SMTP plugin <= 1.5.1 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42699">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>763a57a3412826bda243aded16270880</td>
        <td>CVE-2022-45833</td>
-       <td>2022-12-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 22:15:00</td>
        <td>Auth. Path Traversal vulnerability in Easy WP SMTP plugin <= 1.5.1 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45833">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>c5e10d17be8be2954b625ce8df716b13</td>
        <td>CVE-2022-45829</td>
-       <td>2022-12-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 22:15:00</td>
        <td>Auth. Path Traversal vulnerability in Easy WP SMTP plugin <= 1.5.1 at WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45829">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>73e0be65a25d0e9fa58ae88428d14aee</td>
        <td>CVE-2022-45816</td>
-       <td>2022-12-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 22:15:00</td>
        <td>Auth. Stored Cross-Site Scripting (XSS) vulnerability in GD bbPress Attachments plugin <= 4.3.1 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45816">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>e0311e789e6a58176fcd47de4ba9102b</td>
        <td>CVE-2022-41910</td>
-       <td>2022-12-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 22:15:00</td>
        <td>TensorFlow is an open source platform for machine learning. The function MakeGrapplerFunctionItem takes arguments that determine the sizes of inputs and outputs. If the inputs given are greater than or equal to the sizes of the outputs, an out-of-bounds memory read or a crash is triggered. We have patched the issue in GitHub commit a65411a1d69edfb16b25907ffb8f73556ce36bb7. The fix will be included in TensorFlow 2.11.0. We will also cherrypick this commit on TensorFlow 2.8.4, 2.9.3, and 2.10.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41910">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>264ebe09d154f702e989032645d4a8d2</td>
        <td>CVE-2022-41902</td>
-       <td>2022-12-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 22:15:00</td>
        <td>TensorFlow is an open source platform for machine learning. The function MakeGrapplerFunctionItem takes arguments that determine the sizes of inputs and outputs. If the inputs given are greater than or equal to the sizes of the outputs, an out-of-bounds memory read or a crash is triggered. We have patched the issue in GitHub commit a65411a1d69edfb16b25907ffb8f73556ce36bb7. The fix will be included in TensorFlow 2.11.0. We will also cherrypick this commit on TensorFlow 2.8.4, 2.9.3, and 2.10.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41902">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>132e302e79aed50b333d81756dcfa795</td>
        <td>CVE-2022-45848</td>
-       <td>2022-12-06 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 21:15:00</td>
        <td>Unauth. Stored Cross-Site Scripting (XSS) vulnerability in Contest Gallery plugin <= 13.1.0.9 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45848">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>b41b0f3e6dbcd4464bb63699b3e1ba7b</td>
        <td>CVE-2022-45359</td>
-       <td>2022-12-06 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 21:15:00</td>
        <td>Unauth. Arbitrary File Upload vulnerability in YITH WooCommerce Gift Cards premium plugin <= 3.19.0 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45359">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>16e53be7fc06e0626b9e0e58a84e2758</td>
        <td>CVE-2022-42888</td>
-       <td>2022-12-06 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 21:15:00</td>
        <td>Unauth. Privilege Escalation vulnerability in ARMember premium plugin <= 5.5.1 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42888">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5522dc18abeba5af0e207348320d5ff6</td>
-       <td>CVE-2022-46333</td>
-       <td>2022-12-06 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>The admin user interface in Proofpoint Enterprise Protection (PPS/PoD) contains a command injection vulnerability that enables an admin to execute commands beyond their allowed scope. This affects all versions 8.19.0 and below.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46333">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c78c11199568cce00e3b328761f0df4c</td>
-       <td>CVE-2022-46332</td>
-       <td>2022-12-06 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>The Admin Smart Search feature in Proofpoint Enterprise Protection (PPS/PoD) contains a stored cross-site scripting vulnerability that enables an anonymous email sender to gain admin privileges within the user interface. This affects all versions 8.19.0 and below.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46332">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c161eb008ce6209e913117bdd9e7b1e</td>
-       <td>CVE-2022-44900</td>
-       <td>2022-12-06 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>A directory traversal vulnerability in the SevenZipFile.extractall() function of the python library py7zr v0.20.0 and earlier allows attackers to write arbitrary files via extracting a crafted 7z file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44900">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a7a9f089cc80ccfcabdcc899856d1ed</td>
-       <td>CVE-2022-23475</td>
-       <td>2022-12-06 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>daloRADIUS is an open source RADIUS web management application. daloRadius 1.3 and prior are vulnerable to a combination cross site scripting (XSS) and cross site request forgery (CSRF) vulnerability which leads to account takeover in the mng-del.php file because of an unescaped variable reflected in the DOM on line 116. This issue has been addressed in commit `ec3b4a419e`. Users are advised to manually apply the commit in order to mitigate this issue. Users may also mitigate this issue with in two parts 1) The CSRF vulnerability can be mitigated by making the daloRadius session cookie to samesite=Lax or by the implimentation of a CSRF token in all forms. 2) The XSS vulnerability may be mitigated by escaping it or by introducing a Content-Security policy.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23475">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0352ac2d72b94079e55e38bea9b35d20</td>
-       <td>CVE-2022-46161</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>pdfmake is an open source client/server side PDF printing in pure JavaScript. In versions up to and including 0.2.5 pdfmake contains an unsafe evaluation of user controlled input. Users of pdfmake are thus subject to arbitrary code execution in the context of the process running the pdfmake code. There are no known fixes for this issue. Users are advised to restrict access to trusted user input.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46161">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d52fce8156b188a19fa7c4576e5fcef</td>
-       <td>CVE-2022-46154</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Kodexplorer is a chinese language web based file manager and browser based code editor. Versions prior to 4.50 did not prevent unauthenticated users from requesting arbitrary files from the host OS file system. As a result any files available to the host process may be accessed by arbitrary users. This issue has been addressed in version 4.50. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46154">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93b7fbb96b8c42825e9b441f636b6df8</td>
-       <td>CVE-2022-45548</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>AyaCMS v3.1.2 has an Arbitrary File Upload vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45548">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60ddb328daf139e6e2713a49403bc7ed</td>
-       <td>CVE-2022-43867</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM Spectrum Scale 5.1.0.1 through 5.1.4.1 could allow a local attacker to execute arbitrary commands in the container. IBM X-Force ID: 239437.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43867">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed88a57f7164a5bf2776c6b0f13eb25c</td>
-       <td>CVE-2022-43369</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>AutoTaxi Stand Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the component search.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43369">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc9d2c0414e067ef6b6ed0c4d7a1bfe6</td>
-       <td>CVE-2022-41560</td>
-       <td>2022-12-06 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>The Statement Set Upload via the Web Client component of TIBCO Software Inc.'s TIBCO Nimbus contains an easily exploitable vulnerability that allows a low privileged attacker with network access to execute a Denial of Service Attack on the affected system. Affected releases are TIBCO Software Inc.'s TIBCO Nimbus: version 10.5.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41560">详情</a></td>
       </tr>
 
      </tbody>
@@ -1686,7 +1686,7 @@
       <tr>
        <td>288592b085c92fce92340d220c031a7a</td>
        <td>CVE-2022-4246</td>
-       <td>2022-12-06 20:25:07 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 20:25:07</td>
        <td>KAKAOCORP POTPLAYER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c00ee1255692416782c1c507d117c5d8">详情</a></td>
       </tr>
@@ -1694,7 +1694,7 @@
       <tr>
        <td>7a05b830d20500c916b4b433e4da14a9</td>
        <td>CVE-2021-31693</td>
-       <td>2022-12-06 20:24:52 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 20:24:52</td>
        <td>VMWARE TOOLS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=14c35402cd824f648a63db601da0ddfd">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>b2c0b8e5eca6025307f5bfc406cc12ab</td>
        <td>CVE-2022-42464</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>OpenHarmony默认权限错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73479">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>0028b54a60e9e273c5ce7c1a4845abc0</td>
        <td>CVE-2022-42308</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Veritas NetBackup路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73478">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>3379a6f88689b229d05cf526c3563ba6</td>
        <td>CVE-2022-32172</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Zinc跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73477">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>5b65b2348c47fa5934c618379d8ac70e</td>
        <td>CVE-2021-40166</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Autodesk Image Processing内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73476">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>fe2949696f34b415f056b41075f72bc0</td>
        <td>CVE-2022-39959</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Panini Everest Engine权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73475">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>c0fec36ad6fafd568717a632df08c14b</td>
        <td>CVE-2022-20870</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Cisco Catalyst拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73474">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>03ed0c45cf6fa28b8f50d17afb6ebe55</td>
        <td>CVE-2022-41745</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Trend Micro Apex One越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73473">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>117adfb0ce006e96e6558c9f720b2a66</td>
        <td>CVE-2022-38388</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>IBM Navigator Mobile Android访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73472">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>ecbf4852fdd2022765e8c2b9c21bfc6c</td>
        <td>CVE-2022-38138</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Triangle Microworks IEC多款产品拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73471">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>26980e24f907c19579a5ca962ed21010</td>
        <td>CVE-2021-36201</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Sensormatic Electronics C-CURE 9000信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73470">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>69c6a02234b7218974a3ed8952b1f166</td>
        <td>CVE-2022-41406</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Church Management System任意文件上传漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73469">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>88d3709bcfc62a6f8d487ed4fe143283</td>
        <td>CVE-2022-41348</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Synacor Zimbra Collaboration Suite跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73468">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>712c07c00fb44b2e947107fc9279e904</td>
        <td>CVE-2022-42900</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>Bentley Systems MicroStation越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73467">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>f40f1c159c4ff4131e8342e9c0a28a2d</td>
        <td>CVE-2022-39298</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>MelisFront不受信数据反序列化漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73466">详情</a></td>
       </tr>
@@ -2174,7 +2174,7 @@
       <tr>
        <td>b4854ab7b1808ab2991ca35df15670a9</td>
        <td>CVE-2022-41475</td>
-       <td>2022-12-06 05:35:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 05:35:12</td>
        <td>RPCMS跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73465">详情</a></td>
       </tr>
@@ -2198,7 +2198,7 @@
       <tr>
        <td>4d779643cfffa2e2532585f317f3fa89</td>
        <td>CVE-2022-38336</td>
-       <td>2022-12-06 00:15:10  <img src="imgs/new.gif" /></td>
+       <td>2022-12-06 00:15:10 </td>
        <td>An access control issue in MobaXterm before v22.1 allows attackers to make connections to the server via the SSH or SFTP protocols without authentication.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38336">详情</a></td>
       </tr>
@@ -2241,6 +2241,14 @@
        <td>2022-12-05 17:15:10 </td>
        <td>The Uji Countdown WordPress plugin through 2.2 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd5e2e0f3315ecff926061b6940c4134</td>
+       <td>CVE-2022-3086</td>
+       <td>2022-12-02 20:15:13 </td>
+       <td>Cradlepoint IBR600 NCOS versions 6.5.0.160bc2e and prior are vulnerable to shell escape, which enables local attackers with non-superuser credentials to gain full, unrestrictive shell access which may allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3086">详情</a></td>
       </tr>
 
       <tr>
@@ -2425,14 +2433,6 @@
        <td>2022-11-28 22:15:11 </td>
        <td>A NULL pointer dereference issue was discovered in the Linux kernel in the MPTCP protocol when traversing the subflow list at disconnect time. A local user could use this flaw to potentially crash the system causing a denial of service.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6f23d31c353eef5dd5db372186387d9</td>
-       <td>CVE-2022-4127</td>
-       <td>2022-11-28 22:15:11 </td>
-       <td>A NULL pointer dereference issue was discovered in the Linux kernel in io_files_update_with_index_alloc. A local user could use this flaw to potentially crash the system causing a denial of service.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4127">详情</a></td>
       </tr>
 
      </tbody>
