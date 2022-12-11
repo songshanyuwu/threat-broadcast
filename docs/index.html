@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-12-10 23:35:20 -->
+<!-- RELEASE TIME : 2022-12-11 05:35:29 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b7ee68a7be92c2a9d238dcac53f8ba78</td>
+       <td>CVE-2022-4399</td>
+       <td>2022-12-10 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in TicklishHoneyBee nodau. It has been rated as critical. Affected by this issue is some unknown functionality of the file src/db.c. The manipulation of the argument value/name leads to sql injection. The name of the patch is 7a7d737a3929f335b9717ddbd31db91151b69ad2. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-215252.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4399">详情</a></td>
+      </tr>
+
+      <tr>
        <td>94cf89122a05e554d2ef6788fc4e5789</td>
        <td>CVE-2022-4398</td>
        <td>2022-12-10 20:15:00 <img src="imgs/new.gif" /></td>
@@ -326,7 +334,7 @@
       <tr>
        <td>addc1921894ffbe0127ec75e1626a03e</td>
        <td>CVE-2022-23510</td>
-       <td>2022-12-09 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:15:00</td>
        <td>cube-js is a headless business intelligence platform. In version 0.31.23 all authenticated Cube clients could bypass SQL row-level security and run arbitrary SQL via the newly introduced /v1/sql-runner endpoint. This issue has been resolved in version 0.31.24. Users are advised to either upgrade to 0.31.24 or to downgrade to 0.31.22. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23510">详情</a></td>
       </tr>
@@ -334,7 +342,7 @@
       <tr>
        <td>33a58f858bd176f6f05edb91df387165</td>
        <td>CVE-2022-23497</td>
-       <td>2022-12-09 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:15:00</td>
        <td>FreshRSS is a free, self-hostable RSS aggregator. User configuration files can be accessed by a remote user. In addition to user preferences, such configurations contain hashed passwords (brypt with cost 9, salted) of FreshRSS Web interface. If the API is used, the configuration might contain a hashed password (brypt with cost 9, salted) of the GReader API, and a hashed password (MD5 salted) of the Fever API. Users should update to version 1.20.2 or edge. Users unable to upgrade can apply the patch manually or delete the file `./FreshRSS/p/ext.php`.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23497">详情</a></td>
       </tr>
@@ -342,7 +350,7 @@
       <tr>
        <td>a730b98ab0cb44cb83d23905289be6a9</td>
        <td>CVE-2022-45292</td>
-       <td>2022-12-09 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 22:15:00</td>
        <td>User invites for Funkwhale v1.2.8 do not permanently expire after being used for signup and can be used again after an account has been deleted.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45292">详情</a></td>
       </tr>
@@ -350,7 +358,7 @@
       <tr>
        <td>8bbf8b0ee2df82363b715dc8808ff71e</td>
        <td>CVE-2022-34297</td>
-       <td>2022-12-09 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 22:15:00</td>
        <td>Yii Yii2 Gii through 2.2.4 allows stored XSS by injecting a payload into any field.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34297">详情</a></td>
       </tr>
@@ -358,7 +366,7 @@
       <tr>
        <td>6c5f777e2d4e141ea45a896f84efaaf7</td>
        <td>CVE-2022-46166</td>
-       <td>2022-12-09 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 21:15:00</td>
        <td>Spring boot admins is an open source administrative user interface for management of spring boot applications. All users who run Spring Boot Admin Server, having enabled Notifiers (e.g. Teams-Notifier) and write access to environment variables via UI are affected. Users are advised to upgrade to the most recent releases of Spring Boot Admin 2.6.10 and 2.7.8 to resolve this issue. Users unable to upgrade may disable any notifier or disable write access (POST request) on `/env` actuator endpoint.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46166">详情</a></td>
       </tr>
@@ -366,7 +374,7 @@
       <tr>
        <td>bcad7f04a78afc1119c069931730d212</td>
        <td>CVE-2022-46157</td>
-       <td>2022-12-09 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 21:15:00</td>
        <td>Akeneo PIM is an open source Product Information Management (PIM). Akeneo PIM Community Edition versions before v5.0.119 and v6.0.53 allows remote authenticated users to execute arbitrary PHP code on the server by uploading a crafted image. Akeneo PIM Community Edition after the versions aforementioned provides patched Apache HTTP server configuration file, for docker setup and in documentation sample, to fix this vulnerability. Community Edition users must change their Apache HTTP server configuration accordingly to be protected. The patch for Cloud Based Akeneo PIM Services customers has been applied since 30th October 2022. Users are advised to upgrade. Users unable to upgrade may Replace any reference to `<FilesMatch \.php$>` in their apache httpd configurations with: `<Location "/index.php">`.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46157">详情</a></td>
       </tr>
@@ -374,7 +382,7 @@
       <tr>
        <td>7b8046aa0c9a4ac0c3e50379b485b767</td>
        <td>CVE-2022-44790</td>
-       <td>2022-12-09 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 21:15:00</td>
        <td>Interspire Email Marketer through 6.5.1 allows SQL Injection via the surveys module. An unauthenticated attacker could successfully perform an attack to extract potentially sensitive information from the database if the survey id exists.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44790">详情</a></td>
       </tr>
@@ -382,7 +390,7 @@
       <tr>
        <td>4a8cc900358d285a3b765ed7360ae733</td>
        <td>CVE-2022-4390</td>
-       <td>2022-12-09 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:15:00</td>
        <td>A network misconfiguration is present in versions prior to 1.0.9.90 of the NETGEAR RAX30 AX2400 series of routers. IPv6 is enabled for the WAN interface by default on these devices. While there are firewall restrictions in place that define access restrictions for IPv4 traffic, these restrictions do not appear to be applied to the WAN interface for IPv6. This allows arbitrary access to any services running on the device that may be inadvertently listening via IPv6, such as the SSH and Telnet servers spawned on ports 22 and 23 by default. This misconfiguration could allow an attacker to interact with services only intended to be accessible by clients on the local network.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4390">详情</a></td>
       </tr>
@@ -390,7 +398,7 @@
       <tr>
        <td>62635eda44417d62e753fc25cbea19b9</td>
        <td>CVE-2022-2993</td>
-       <td>2022-12-09 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:15:00</td>
        <td>There is an error in the condition of the last if-statement in the function smp_check_keys. It was rejecting current keys if all requirements were unmet.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2993">详情</a></td>
       </tr>
@@ -398,7 +406,7 @@
       <tr>
        <td>d275b3f16474e2692ee79ca32057838f</td>
        <td>CVE-2022-45290</td>
-       <td>2022-12-09 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 19:15:00</td>
        <td>Kbase Doc v1.0 was discovered to contain an arbitrary file deletion vulnerability via the component /web/IndexController.java.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45290">详情</a></td>
       </tr>
@@ -406,7 +414,7 @@
       <tr>
        <td>2352e94a3814a678c6704d871804ca34</td>
        <td>CVE-2022-41299</td>
-       <td>2022-12-09 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 19:15:00</td>
        <td>IBM Cloud Transformation Advisor 2.0.1 through 3.3.1 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 237214.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41299">详情</a></td>
       </tr>
@@ -414,7 +422,7 @@
       <tr>
        <td>4591799dc2988b9e15f6f8a1e84b8a06</td>
        <td>CVE-2022-4336</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>In BAOTA linux panel there exists a stored xss vulnerability attackers can use to obtain sensitive information via the log analysis feature.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4336">详情</a></td>
       </tr>
@@ -422,7 +430,7 @@
       <tr>
        <td>0819084c9c726021c686a08bccb53996</td>
        <td>CVE-2022-4170</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>The rxvt-unicode package is vulnerable to a remote code execution, in the Perl background extension, when an attacker can control the data written to the user's terminal and certain options are set.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4170">详情</a></td>
       </tr>
@@ -430,7 +438,7 @@
       <tr>
        <td>16aaec20885e629ee9bf53079bf26488</td>
        <td>CVE-2022-3724</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>Crash in the USB HID protocol dissector in Wireshark 3.6.0 to 3.6.8 allows denial of service via packet injection or crafted capture file on Windows</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3724">详情</a></td>
       </tr>
@@ -438,7 +446,7 @@
       <tr>
        <td>f1b9f098b590e0c5f32b7953c3332568</td>
        <td>CVE-2022-3259</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>Openshift 4.9 does not use HTTP Strict Transport Security (HSTS) which may allow man-in-the-middle (MITM) attacks.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3259">详情</a></td>
       </tr>
@@ -446,7 +454,7 @@
       <tr>
        <td>82e023b98f3d42788e0826d072f543bf</td>
        <td>CVE-2022-29839</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>Insufficiently Protected Credentials vulnerability in the remote backups application on Western Digital My Cloud devices that could allow an attacker who has gained access to a relevant endpoint to use that information to access protected data. This issue affects: Western Digital My Cloud My Cloud versions prior to 5.25.124 on Linux.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29839">详情</a></td>
       </tr>
@@ -454,7 +462,7 @@
       <tr>
        <td>57bc250800de1a96f938f3b802a396b8</td>
        <td>CVE-2022-29838</td>
-       <td>2022-12-09 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 18:15:00</td>
        <td>Improper Authentication vulnerability in the encrypted volumes and auto mount features of Western Digital My Cloud devices allows insecure direct access to the drive information in the case of a device reset. This issue affects: Western Digital My Cloud My Cloud versions prior to 5.25.124 on Linux.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29838">详情</a></td>
       </tr>
@@ -462,7 +470,7 @@
       <tr>
        <td>60756502a18d9008bc4ebae47b8cc531</td>
        <td>CVE-2022-38765</td>
-       <td>2022-12-09 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 00:15:00</td>
        <td>Canon Medical Informatics Vitrea Vision 7.7.76.1 does not adequately enforce access controls. An authenticated user is able to gain unauthorized access to imaging records by tampering with the vitrea-view/studies/search patientId parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38765">详情</a></td>
       </tr>
@@ -513,14 +521,6 @@
        <td>2022-12-08 22:15:00</td>
        <td>A vulnerability in Brocade Fabric OS software v9.1.1, v9.0.1e, v8.2.3c, v7.4.2j, and earlier versions could allow a remote unauthenticated attacker to execute on a Brocade Fabric OS switch commands capable of modifying zoning, disabling the switch, disabling ports, and modifying the switch IP address.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33186">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0e1b455df640aca08779ec9a9c55f73</td>
-       <td>CVE-2022-23496</td>
-       <td>2022-12-08 22:15:00</td>
-       <td>Yet Another UserAgent Analyzer (Yauaa) is a java library that tries to parse and analyze the useragent string and extract as many relevant attributes as possible. Applications using the Client Hints analysis feature introduced with 7.0.0 can crash because the Yauaa library throws an ArrayIndexOutOfBoundsException. If uncaught the exception will result in a program crash. Applications that do not use this feature are not affected. Users are advised to upgrade to version 7.9.0. Users unable to upgrade may catch and discard any ArrayIndexOutOfBoundsException thrown by the Yauaa library.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23496">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>ec048f84ef15ecfbb5feb9c04e02436e</td>
        <td>CVE-2022-32596</td>
-       <td>2022-12-09 20:26:29 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:29</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c617186b97a34839841ca36d8b76b71d">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>9e53db5b97d94f8739de0b53375a9364</td>
        <td>CVE-2022-45046</td>
-       <td>2022-12-09 20:26:24 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:24</td>
        <td>APACHE CAMEL Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9bd75f0c11f4451eafe962f2ff5aca57">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>0c7673686f0bf9c1197eddb206eab4ae</td>
        <td>CVE-2022-32619</td>
-       <td>2022-12-09 20:26:18 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:18</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=aed98b0610fb455b8df17f48d5d67506">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>566a47e53622e4262b9b612b29a9eb45</td>
        <td>CVE-2022-32597</td>
-       <td>2022-12-09 20:26:12 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:12</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d69aae2612f64f2189f9812eba781a62">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>fd5f4e6d50fa4035f88644a3d8e9caf2</td>
        <td>CVE-2022-32594</td>
-       <td>2022-12-09 20:26:06 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:06</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=11a82110027842deb210d917ecd8d365">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>4027076e14a035fabe25b559825e0233</td>
        <td>CVE-2022-32624</td>
-       <td>2022-12-09 20:26:01 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:26:01</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=57e5127cc23b4b04b06449df28780748">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>84c641437372552e69a6bb55244f5ca0</td>
        <td>CVE-2022-32620</td>
-       <td>2022-12-09 20:25:54 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:25:54</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=91b38775bf5b4d97a3d3830d5047242c">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>8b97c031fbff820f58eb4023d01ca226</td>
        <td>CVE-2022-32598</td>
-       <td>2022-12-09 20:25:49 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:25:49</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7f10e39aada94694acdfe53fab742173">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>d9bef33d1a21185826d7418cd12ed239</td>
        <td>CVE-2022-32634</td>
-       <td>2022-12-09 20:25:43 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:25:43</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f55b30d4368542b8934a8c60b757019e">详情</a></td>
       </tr>
@@ -1838,7 +1838,7 @@
       <tr>
        <td>c6e06a1aa54280010dc81027ac81f492</td>
        <td>CVE-2022-32625</td>
-       <td>2022-12-09 20:25:37 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 20:25:37</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1eadcfacc7e148c38cd393e14047e128">详情</a></td>
       </tr>
@@ -1942,7 +1942,7 @@
       <tr>
        <td>9a54f15c99b4dbad45b8e13b0d62610b</td>
        <td>CVE-2022-20437</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Google Android拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73723">详情</a></td>
       </tr>
@@ -1950,7 +1950,7 @@
       <tr>
        <td>f8308b0f9eb8db810ed1d8f37dc7231e</td>
        <td>CVE-2022-39296</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Melis Platform路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73722">详情</a></td>
       </tr>
@@ -1958,7 +1958,7 @@
       <tr>
        <td>dcb37c7accc705cc8dcb0fe54a7c117e</td>
        <td>CVE-2022-20421</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Google Android Kernel内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73721">详情</a></td>
       </tr>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>fb8a926e2cd9cff58bddaefb299e6283</td>
        <td>CVE-2022-42901</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Bentley Systems MicroStation和Bentley View越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73720">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>baa75600cc6942a0647cbd9339b8c833</td>
        <td>CVE-2022-40469</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>iKuai OS命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73719">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>d5d55b4918b42665eecd26713c58101a</td>
        <td>CVE-2022-41404</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>org.ini4j拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73718">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>b5f833d7bba433ffca2596c3641201b0</td>
        <td>CVE-2022-20351</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Google Android SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73717">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>becab33fbb36d7841bf684f7f6e0ad32</td>
        <td>CVE-2022-20415</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73716">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>c872195c88cccfe022d4c8ed887e35bc</td>
        <td>CVE-2022-20431</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73715">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>4c64440c5498c72c19208c9e3d745b7d</td>
        <td>CVE-2022-32486</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Dell BIOS输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73714">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>e7dc7b49636b8abc38545d648e281086</td>
        <td>CVE-2022-39271</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Containous Traefik不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73713">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>6f59cd30b1ebe1bb85492a22e20202ea</td>
        <td>CVE-2022-2839</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>WordPress Zephyr Project Manager Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73712">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>62c92b974ae2e6e86c06d565877d0970</td>
        <td>CVE-2022-42235</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Student Clearance System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73711">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>95c940121785631b41100298be2603a1</td>
        <td>CVE-2022-37599</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>loader-utils拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73710">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>e61e3d118bad7f8b0f4c1c621f5bd69c</td>
        <td>CVE-2022-40764</td>
-       <td>2022-12-09 23:35:35 <img src="imgs/new.gif" /></td>
+       <td>2022-12-09 23:35:35</td>
        <td>Snyk CLI命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73709">详情</a></td>
       </tr>
