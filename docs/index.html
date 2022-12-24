@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-12-24 05:35:17 -->
+<!-- RELEASE TIME : 2022-12-24 23:35:47 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e15ddcc252f5ba4da4e0314899d900dc</td>
+       <td>CVE-2022-46175</td>
+       <td>2022-12-24 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>JSON5 is an extension to the popular JSON file format that aims to be easier to write and maintain by hand (e.g. for config files). The `parse` method of the JSON5 library before and including version `2.2.1` does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object. This vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations. This vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution. `JSON5.parse` should restrict parsing of `__proto__` keys when parsing JSON strings to objects. As a point of reference, the `JSON.parse` method included in JavaScript ignores `__proto__` keys. Simply changing `JSON5.parse` to `JSON.parse` in the examples above mitigates this vulnerability. This vulnerability is patched in json5 version 2.2.2 and later.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46175">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fdd0fed8505c4950959862f7c3fd1207</td>
        <td>CVE-2022-45798</td>
        <td>2022-12-24 00:15:00 <img src="imgs/new.gif" /></td>
@@ -513,14 +521,6 @@
        <td>2022-12-22 23:15:00</td>
        <td>A Cross-Site Request Forgery (CSRF) vulnerability in the Add Administrator function of the default version of nbnbk allows attackers to arbitrarily add Administrator accounts.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94047c849bcf025345583989f85bb291</td>
-       <td>CVE-2022-4662</td>
-       <td>2022-12-22 22:15:00</td>
-       <td>A flaw incorrect access control in the Linux kernel USB core subsystem was found in the way user attaches usb device. A local user could use this flaw to crash the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4662">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fa6387e1ec862f22f0897730d5169013</td>
+       <td>CVE-2022-20608</td>
+       <td>2022-12-24 20:26:10 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fa0495383d744b00b7c00743fe8ba8c4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>39a633eaff70f4a765da30db3eea6f1d</td>
+       <td>CVE-2022-20605</td>
+       <td>2022-12-24 20:26:04 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=89864383cd7c4a3eacb42f96434644f2">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5a670d5895555dd1a562c8cc9616e59</td>
+       <td>CVE-2022-35696</td>
+       <td>2022-12-24 20:25:59 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d24297614f434c01b9143271bbe54247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7a3ede4016fe415026a9d2d43152ca9</td>
+       <td>CVE-2022-31708</td>
+       <td>2022-12-24 20:25:53 <img src="imgs/new.gif" /></td>
+       <td>VMWARE VREALIZE_OPERATIONS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f93857d6c66846d2a070b894b6bc5972">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3e016775261c71a8e486295b00f077be</td>
+       <td>CVE-2022-42367</td>
+       <td>2022-12-24 20:25:47 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=681536207f9f4e5895471def8a314d1a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77bbedeca3aaed0be8e85375396aaee7</td>
+       <td>CVE-2022-42360</td>
+       <td>2022-12-24 20:25:41 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=50fa725fb3b04b589cd361faf30bf2a7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>984ec87acaba6208ddb18911d9725a5e</td>
+       <td>CVE-2022-42504</td>
+       <td>2022-12-24 20:25:35 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a58096131cf47108755a1314060dd92">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2743f88b67b529a669d00a67c52266bd</td>
+       <td>CVE-2022-42502</td>
+       <td>2022-12-24 20:25:29 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cb86c241c95646f5a4f76fae2ebc3331">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d3f22aaa9ae432aaac717234df5ab3f</td>
+       <td>CVE-2022-42507</td>
+       <td>2022-12-24 20:25:23 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=243b259473c7485f96789bd2dca62680">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b77a51d5658a31edbef2ba55aab1e621</td>
+       <td>CVE-2022-20610</td>
+       <td>2022-12-24 20:25:17 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=587ab3cc52c34b0e85fad4dd54297786">详情</a></td>
+      </tr>
+
+      <tr>
        <td>4d25f0a46986048ec0acebdf310d1c60</td>
        <td>CVE-2021-28655</td>
        <td>2022-12-23 20:26:47 <img src="imgs/new.gif" /></td>
@@ -1841,86 +1921,6 @@
        <td>2022-12-22 20:24:13</td>
        <td>APPLE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a5f747bdfed944adaf48b823316c463a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9acb9ca0bea7b55e3885bad373664e60</td>
-       <td>CVE-2022-25682</td>
-       <td>2022-12-21 20:24:06</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c57ad037ef4b445594474539aaa33e53">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b6cc110726a1cee81a61d2f020c3ddb</td>
-       <td>CVE-2022-25689</td>
-       <td>2022-12-21 20:24:00</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=94a2532df6564ef1a904bb6b0b09e8aa">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>718bf7a3cb3ff77ac435984a0c84ccb2</td>
-       <td>CVE-2022-25692</td>
-       <td>2022-12-21 20:23:50</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0b30d0044cda46bcb263173dd203b384">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b6d1e6ea70e3cd6cd0650e96ac01eaf</td>
-       <td>CVE-2022-25691</td>
-       <td>2022-12-21 20:23:43</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=39fcc8a846664ce6a21f7d28b58b2f0b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa80b677b973404d572c5a86962ef891</td>
-       <td>CVE-2022-25698</td>
-       <td>2022-12-21 20:23:36</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a3910094de1c4c9ba6b5819229ce7c48">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a123d2c22f02fcfa90cb530da0756d6a</td>
-       <td>CVE-2022-25697</td>
-       <td>2022-12-21 20:23:29</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2adc27bd5deb4f33ac5809866ac99ecf">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>460cb4a37cf5517418eafcef929290aa</td>
-       <td>CVE-2022-25712</td>
-       <td>2022-12-21 20:23:23</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8a6f7d448a34c88bf7c124add0b4393">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0f1c8ff33c3334e42a2652e17e495e3</td>
-       <td>CVE-2022-25711</td>
-       <td>2022-12-21 20:23:17</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f281aa58544a46f3ba8984b7d8bcc23b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4298b8ff7668485152ffa8162b575f37</td>
-       <td>CVE-2022-31699</td>
-       <td>2022-12-21 20:23:10</td>
-       <td>VMWARE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=33b92eb0478049b1b9e2ca04aa7f6611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd3b77bd40a4f2943a8214b2b128a123</td>
-       <td>CVE-2022-3112</td>
-       <td>2022-12-20 20:28:00</td>
-       <td>LINUX LINUX_KERNEL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4186b1427213404997c0b8567ba07727">详情</a></td>
       </tr>
 
      </tbody>
@@ -2244,6 +2244,14 @@
       </tr>
 
       <tr>
+       <td>b17cef97d844c6ba41ac7cdf6d4511bb</td>
+       <td>CVE-2022-45041</td>
+       <td>2022-12-19 21:15:10 </td>
+       <td>SQL Injection exits in xinhu &lt; 2.5.0</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45041">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ce7d77b9193017c6b4422c2f6e36a781</td>
        <td>CVE-2022-44488</td>
        <td>2022-12-19 20:15:13 </td>
@@ -2305,6 +2313,30 @@
        <td>2022-12-19 20:15:13 </td>
        <td>Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If an attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44463">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2744f4d4988837d676d8abeaacb3f519</td>
+       <td>CVE-2022-44755</td>
+       <td>2022-12-19 11:15:11 </td>
+       <td>IBM Notes is susceptible to a stack based buffer overflow vulnerability in lasr.dll in Micro Focus KeyView. This could allow a remote unauthenticated attacker to crash the application or execute arbitrary code via a crafted Lotus Ami Pro file. This is different from the vulnerability described in CVE-2022-44751.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44755">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ed13e31b1cb68d80a3c5fd3faeb405c</td>
+       <td>CVE-2022-44754</td>
+       <td>2022-12-19 11:15:11 </td>
+       <td>IBM Domino is susceptible to a stack based buffer overflow vulnerability in lasr.dll in Micro Focus KeyView. This could allow a remote unauthenticated attacker to crash the application or execute arbitrary code via a crafted Lotus Ami Pro file. This is different from the vulnerability described in CVE-2022-44750.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44754">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d9c2810b72d8d229fa1ce0a653d0924</td>
+       <td>CVE-2022-44753</td>
+       <td>2022-12-19 11:15:11 </td>
+       <td>IBM Notes is susceptible to a stack based buffer overflow vulnerability in wp6sr.dll in Micro Focus KeyView. This could allow a remote unauthenticated attacker to crash the application or execute arbitrary code via a crafted WordPerfect file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44753">详情</a></td>
       </tr>
 
       <tr>
@@ -2401,38 +2433,6 @@
        <td>2022-12-15 21:15:12 </td>
        <td>A vulnerability was found in WSO2 carbon-registry up to 4.8.11. It has been rated as problematic. Affected by this issue is some unknown functionality of the file components/registry/org.wso2.carbon.registry.search.ui/src/main/resources/web/search/advancedSearchForm-ajaxprocessor.jsp of the component Advanced Search. The manipulation of the argument mediaType/rightOp/leftOp/rightPropertyValue/leftPropertyValue leads to cross site scripting. The attack may be launched remotely. Upgrading to version 4.8.12 is able to address this issue. The name of the patch is 0c827cc1b14b82d8eb86117ab2e43c34bb91ddb4. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-215900.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4520">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb9657ccd3454f5ee6e27a7e3e8f1734</td>
-       <td>CVE-2022-4519</td>
-       <td>2022-12-15 21:15:12 </td>
-       <td>The WP User plugin for WordPress is vulnerable to Stored Cross-Site Scripting via its settings parameters in versions up to, and including, 7.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4519">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8fd7ec257287510fcb9c68232326972f</td>
-       <td>CVE-2022-4514</td>
-       <td>2022-12-15 20:15:10 </td>
-       <td>A vulnerability, which was classified as problematic, was found in Opencaching Deutschland oc-server3. Affected is an unknown function of the file htdocs/lang/de/ocstyle/varset.inc.php. The manipulation of the argument varvalue leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 4bdd6a0e7b7760cea03b91812cbb80d7b16e3b5f. It is recommended to apply a patch to fix this issue. VDB-215886 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28e826adedd3c7fe570433bf1b9a5a38</td>
-       <td>CVE-2022-4513</td>
-       <td>2022-12-15 20:15:10 </td>
-       <td>A vulnerability, which was classified as problematic, has been found in European Environment Agency eionet.contreg. This issue affects some unknown processing. The manipulation of the argument searchTag/resourceUri leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 2022-06-27T0948 is able to address this issue. The name of the patch is a120c2153e263e62c4db34a06ab96a9f1c6bccb6. It is recommended to upgrade the affected component. The identifier VDB-215885 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4513">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>692d27db839e408d9833b7a275cee3fc</td>
-       <td>CVE-2022-4511</td>
-       <td>2022-12-15 20:15:09 </td>
-       <td>A vulnerability has been found in RainyGao DocSys and classified as critical. Affected by this vulnerability is an unknown functionality of the component com.DocSystem.controller.UserController#getUserImg. The manipulation leads to path traversal: '../filedir'. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-215851.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4511">详情</a></td>
       </tr>
 
      </tbody>
