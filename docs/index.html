@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-01 23:35:42 -->
+<!-- RELEASE TIME : 2023-01-02 23:35:38 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9c72e436244c985c988aef94336e8db8</td>
+       <td>CVE-2023-22452</td>
+       <td>2023-01-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>kenny2automate is a Discord bot. In the web interface for server settings, form elements were generated with Discord channel IDs as part of input names. Prior to commit a947d7c, no validation was performed to ensure that the channel IDs submitted actually belonged to the server being configured. Thus anyone who has access to the channel ID they wish to change settings for and the server settings panel for any server could change settings for the requested channel no matter which server it belonged to. Commit a947d7c resolves the issue and has been deployed to the official instance of the bot. The only workaround that exists is to disable the web config entirely by changing it to run on localhost. Note that a workaround is only necessary for those who run their own instance of the bot.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22452">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>33c969568221b23621fe9c36f9d6dfdf</td>
+       <td>CVE-2016-15007</td>
+       <td>2023-01-02 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Centralized-Salesforce-Dev-Framework. It has been declared as problematic. Affected by this vulnerability is the function SObjectService of the file src/classes/SObjectService.cls of the component SOQL Handler. The manipulation of the argument orderDirection leads to injection. The name of the patch is db03ac5b8a9d830095991b529c067a030a0ccf7b. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217195.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15007">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53f28b947e95d0e44b149fc296630f61</td>
+       <td>CVE-2014-125036</td>
+       <td>2023-01-02 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, has been found in drybjed ansible-ntp. Affected by this issue is some unknown functionality of the file meta/main.yml. The manipulation leads to insufficient control of network message volume. The attack can only be done within the local network. The name of the patch is ed4ca2cf012677973c220cdba36b5c60bfa0260b. It is recommended to apply a patch to fix this issue. VDB-217190 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125036">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7bb206e0a495a4fe60991719e29e505f</td>
+       <td>CVE-2014-125038</td>
+       <td>2023-01-02 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in IS_Projecto2 and classified as critical. This vulnerability affects unknown code of the file Cnn-EJB/ejbModule/ejbs/NewsBean.java. The manipulation of the argument date leads to sql injection. The name of the patch is aa128b2c9c9fdcbbf5ecd82c1e92103573017fe0. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217192.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52e8868cb3edfcd2d8878f50aa880c64</td>
+       <td>CVE-2014-125037</td>
+       <td>2023-01-02 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as critical, was found in License to Kill. This affects an unknown part of the file models/injury.rb. The manipulation of the argument name leads to sql injection. The name of the patch is cd11cf174f361c98e9b1b4c281aa7b77f46b5078. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217191.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06784227c35ad1c562c18ac3a9e9a089</td>
+       <td>CVE-2023-22451</td>
+       <td>2023-01-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Kiwi TCMS is an open source test management system. In version 11.6 and prior, when users register new accounts and/or change passwords, there is no validation in place which would prevent them from picking an easy to guess password. This issue is resolved by providing defaults for the `AUTH_PASSWORD_VALIDATORS` configuration setting. As of version 11.7, the password can’t be too similar to other personal information, must contain at least 10 characters, can’t be a commonly used password, and can’t be entirely numeric. As a workaround, an administrator may reset all passwords in Kiwi TCMS if they think a weak password may have been chosen.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22451">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24fd44bd8ea744f72af4ced1bac8ac90</td>
+       <td>CVE-2022-48197</td>
+       <td>2023-01-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>** UNSUPPORTED WHEN ASSIGNED ** Reflected cross-site scripting (XSS) exists in the TreeView of YUI2 through 2800: up.php sam.php renderhidden.php removechildren.php removeall.php readd.php overflow.php newnode2.php newnode.php. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48197">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a3392e12ae3a9dc94314ef5fbc2dac5</td>
+       <td>CVE-2017-20161</td>
+       <td>2023-01-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in rofl0r MacGeiger. Affected is the function dump_wlan_at of the file macgeiger.c of the component ESSID Handler. The manipulation leads to injection. Access to the local network is required for this attack to succeed. The name of the patch is 57f1dd50a4821b8c8e676e8020006ae4bfd3c9cb. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217188.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20161">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d52d0cc6881e9addd5931141d86e58bf</td>
+       <td>CVE-2015-10009</td>
+       <td>2023-01-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in nterchange up to 4.1.0. It has been rated as critical. This issue affects the function getContent of the file app/controllers/code_caller_controller.php. The manipulation of the argument q with the input %5C%27%29;phpinfo%28%29;/* leads to code injection. The exploit has been disclosed to the public and may be used. Upgrading to version 4.1.1 is able to address this issue. The name of the patch is fba7d89176fba8fe289edd58835fe45080797d99. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217187.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10009">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dfad9d7fdfb0e7bed9f7373fb2c54fb5</td>
+       <td>CVE-2014-125035</td>
+       <td>2023-01-02 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in Jobs-Plugin. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting. The attack can be launched remotely. The name of the patch is b8a56718b1d42834c6ec51d9c489c5dc20471d7b. It is recommended to apply a patch to fix this issue. The identifier VDB-217189 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125035">详情</a></td>
+      </tr>
+
+      <tr>
        <td>06ab9709c560eedc693aa0db91c6277c</td>
        <td>CVE-2021-4297</td>
        <td>2023-01-01 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>4b3f6b61cbdb28dc7b517bd031edb063</td>
        <td>CVE-2018-25061</td>
-       <td>2022-12-31 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:15:00</td>
        <td>A vulnerability was found in rgb2hex up to 0.1.5. It has been rated as problematic. This issue affects some unknown processing. The manipulation leads to inefficient regular expression complexity. The attack may be initiated remotely. Upgrading to version 0.1.6 is able to address this issue. The name of the patch is 9e0c38594432edfa64136fdf7bb651835e17c34f. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217151.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-25061">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>746451ffb49df0063e77e796fd747bd7</td>
        <td>CVE-2017-20160</td>
-       <td>2022-12-31 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:15:00</td>
        <td>A vulnerability was found in flitto express-param up to 0.x. It has been classified as critical. This affects an unknown part of the file lib/fetchParams.js. The manipulation leads to improper handling of extra parameters. It is possible to initiate the attack remotely. Upgrading to version 1.0.0 is able to address this issue. The name of the patch is db94f7391ad0a16dcfcba8b9be1af385b25c42db. It is recommended to upgrade the affected component. The identifier VDB-217149 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20160">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>7d3277c8ffbb87c9e604e893b7bd767d</td>
        <td>CVE-2014-125028</td>
-       <td>2022-12-31 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:15:00</td>
        <td>A vulnerability was found in valtech IDP Test Client and classified as problematic. Affected by this issue is some unknown functionality of the file python-flask/main.py. The manipulation leads to cross-site request forgery. The attack may be launched remotely. The name of the patch is f1e7b3d431c8681ec46445557125890c14fa295f. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217148.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125028">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>0eecdb8f7ede4884a6712c442886c565</td>
        <td>CVE-2014-125027</td>
-       <td>2022-12-31 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 16:15:00</td>
        <td>A vulnerability has been found in Yuna Scatari TBDev up to 2.1.17 and classified as problematic. Affected by this vulnerability is the function get_user_icons of the file usersearch.php. The manipulation of the argument n/r/r2/em/ip/co/ma/d/d2/ul/ul2/ls/ls2/dl/dl2 leads to cross site scripting. The attack can be launched remotely. Upgrading to version 2.1.18 is able to address this issue. The name of the patch is 0ba3fd4be29dd48fa4455c236a9403b3149a4fd4. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217147.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125027">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>32280bb02bfe0c25a2445fbfb97c0fd9</td>
        <td>CVE-2017-20159</td>
-       <td>2022-12-31 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 11:15:00</td>
        <td>A vulnerability was found in rf Keynote up to 0.x. It has been rated as problematic. Affected by this issue is some unknown functionality of the file lib/keynote/rumble.rb. The manipulation of the argument value leads to cross site scripting. The attack may be launched remotely. Upgrading to version 1.0.0 is able to address this issue. The name of the patch is 05be4356b0a6ca7de48da926a9b997beb5ffeb4a. It is recommended to upgrade the affected component. VDB-217142 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20159">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>0f07faefe114355658d2de6b49da6cfd</td>
        <td>CVE-2017-20158</td>
-       <td>2022-12-31 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 11:15:00</td>
        <td>** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in vova07 Yii2 FileAPI Widget up to 0.1.8. It has been declared as problematic. Affected by this vulnerability is the function run of the file actions/UploadAction.php. The manipulation of the argument file leads to cross site scripting. The attack can be launched remotely. Upgrading to version 0.1.9 is able to address this issue. The name of the patch is c00d1e4fc912257fca1fce66d7a163bdbb4c8222. It is recommended to upgrade the affected component. The identifier VDB-217141 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20158">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>6a2252e177711c56b1ec70a485c7feea</td>
        <td>CVE-2022-4868</td>
-       <td>2022-12-31 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 10:15:00</td>
        <td>Improper Authorization in GitHub repository froxlor/froxlor prior to 2.0.0-beta1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4868">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>f4daeeba470b363c3de056a856aef71f</td>
        <td>CVE-2017-20157</td>
-       <td>2022-12-31 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 10:15:00</td>
        <td>A vulnerability was found in Ariadne Component Library up to 2.x. It has been classified as critical. Affected is an unknown function of the file src/url/Url.php. The manipulation leads to server-side request forgery. Upgrading to version 3.0 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217140.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20157">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>09eac78839cde296308a1a43bece1fb0</td>
        <td>CVE-2017-20156</td>
-       <td>2022-12-31 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 10:15:00</td>
        <td>A vulnerability was found in Exciting Printer and classified as critical. This issue affects some unknown processing of the file lib/printer/jobs/prepare_page.rb of the component Argument Handler. The manipulation of the argument URL leads to command injection. The name of the patch is 5f8c715d6e2cc000f621a6833f0a86a673462136. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217139.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20156">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>45dff827bace6a2fa47cbed34317fbf9</td>
        <td>CVE-2022-4867</td>
-       <td>2022-12-31 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 09:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) in GitHub repository froxlor/froxlor prior to 2.0.0-beta1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4867">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a68a868420ce5eec3a76cffd0fcfef9c</td>
-       <td>CVE-2022-4864</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>Argument Injection in GitHub repository froxlor/froxlor prior to 2.0.0-beta1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4864">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>204f035e6160f5107b49003897d11a53</td>
-       <td>CVE-2022-42270</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA distributions of Linux contain a vulnerability in nvdla_emu_task_submit, where unvalidated input may allow a local attacker to cause stack-based buffer overflow in kernel code, which may lead to escalation of privileges, compromised integrity and confidentiality, and denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42270">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c3c4bc602f2e1437063e4533d3dda5f</td>
-       <td>CVE-2022-42269</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA Trusted OS contains a vulnerability in an SMC call handler, where failure to validate untrusted input may allow a highly privileged local attacker to cause information disclosure and compromise integrity. The scope of the impact can extend to other components.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42269">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8ae5217b1b344121e94f4ecad9a2c78</td>
-       <td>CVE-2022-42267</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability where a regular user can cause an out-of-bounds read, which may lead to code execution, denial of service, escalation of privileges, information disclosure, or data tampering.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42267">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c64d60cf47a4394dd7a3f441e804b245</td>
-       <td>CVE-2022-42266</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where an unprivileged regular user can cause exposure of sensitive information to an actor that is not explicitly authorized to have access to that information, which may lead to limited information disclosure.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42266">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad59dfa5cf37018c19aaf5dd4717c127</td>
-       <td>CVE-2022-42265</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to information disclosure or data tampering.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42265">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b301bd27f99d76ce5643f0a0ee8e6fe7</td>
-       <td>CVE-2022-42264</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where an unprivileged regular user can cause the use of an out-of-range pointer offset, which may lead to data tampering, data loss, information disclosure, or denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42264">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9782990a3407699ca7401d940a9bcd3e</td>
-       <td>CVE-2022-42263</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an Integer overflow may lead to denial of service or information disclosure.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31fe39009bac94e3f582b3dbe89f9626</td>
-       <td>CVE-2022-42262</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (vGPU plugin), where an input index is not validated, which may lead to buffer overrun, which in turn may cause data tampering, information disclosure, or denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42262">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e77f00be5a150f24e2bc329911e937de</td>
-       <td>CVE-2022-42261</td>
-       <td>2022-12-30 23:15:00</td>
-       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (vGPU plugin), where an input index is not validated, which may lead to buffer overrun, which in turn may cause data tampering, information disclosure, or denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42261">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>02ea97e7943caa3278db0e9d5a375b9f</td>
+       <td>CVE-2022-47932</td>
+       <td>2023-01-02 20:08:35 <img src="imgs/new.gif" /></td>
+       <td>BRAVE BRAVE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc4a30b106aa4b46a038e236607c923c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91eed219ba2d4be5b9d88dc8be6a8261</td>
+       <td>CVE-2022-44380</td>
+       <td>2023-01-02 20:08:29 <img src="imgs/new.gif" /></td>
+       <td>SNIPEITAPP SNIPE-IT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d0428576e484479c8c7a7e11f6de04c1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a35c5016f48b19fa1a5cbe80de5e296</td>
+       <td>CVE-2022-47933</td>
+       <td>2023-01-02 20:08:23 <img src="imgs/new.gif" /></td>
+       <td>BRAVE BRAVE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=94147409259142c48ab9df3ab57ecb82">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8eeb071621ecbb4a5de7002d28be549</td>
+       <td>CVE-2022-44381</td>
+       <td>2023-01-02 20:08:17 <img src="imgs/new.gif" /></td>
+       <td>SNIPEITAPP SNIPE-IT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f5d32b16e9aa448888472e55feebccf3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3df81c10a8aaaa5cbb6e39bc4e4179c9</td>
+       <td>CVE-2022-47524</td>
+       <td>2023-01-02 20:08:11 <img src="imgs/new.gif" /></td>
+       <td>F-SECURE SAFE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=74615827df5b4e0da9ad1af525e29267">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35b3df23dd6ee8ca99d261dc73f40ff8</td>
+       <td>CVE-2022-47940</td>
+       <td>2023-01-02 20:08:05 <img src="imgs/new.gif" /></td>
+       <td>LINUX LINUX_KERNEL Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b32c461e44614214825ec72021a48de5">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a81b5e385c6bd455b72508e6b3d5282</td>
+       <td>CVE-2022-40233</td>
+       <td>2023-01-02 20:07:58 <img src="imgs/new.gif" /></td>
+       <td>IBM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ec3edd68f1e04791aede73bdc2a3ec2b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7addb01214a0ccf5323f76b5cdb18849</td>
+       <td>CVE-2022-47934</td>
+       <td>2023-01-02 20:07:53 <img src="imgs/new.gif" /></td>
+       <td>BRAVE BRAVE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a4b27eec55f44a1fb34c6a8f41f58fe7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b67bc4914f855b2769b69d4c5f3adce2</td>
+       <td>CVE-2022-39164</td>
+       <td>2023-01-02 20:07:47 <img src="imgs/new.gif" /></td>
+       <td>IBM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b0b980808b74bc095b0176900b69d30">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f07195e17c7ce8855fd3be4cd33e1422</td>
+       <td>CVE-2022-47938</td>
+       <td>2023-01-02 20:07:41 <img src="imgs/new.gif" /></td>
+       <td>LINUX LINUX_KERNEL Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=54fb64fdf5674e78807cda2ab1e4bc14">详情</a></td>
+      </tr>
+
+      <tr>
        <td>192159c4b1250b4a731a90ee244cd5bf</td>
        <td>CVE-2022-45347</td>
        <td>2023-01-01 20:12:46 <img src="imgs/new.gif" /></td>
@@ -1766,7 +1846,7 @@
       <tr>
        <td>71a74355f863f42c0367b22b3d3d0303</td>
        <td>CVE-2022-43858</td>
-       <td>2022-12-31 20:08:50 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:50</td>
        <td>IBM I Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=31e6b81ec5eb42418d265db03d93c515">详情</a></td>
       </tr>
@@ -1774,7 +1854,7 @@
       <tr>
        <td>637658753f48bd45f40f4ae09156ab9f</td>
        <td>CVE-2022-40145</td>
-       <td>2022-12-31 20:08:44 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:44</td>
        <td>APACHE KARAF Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=62bf59f2e62145f18f167e60cdaedd67">详情</a></td>
       </tr>
@@ -1782,7 +1862,7 @@
       <tr>
        <td>84c619e30a8a83da8bc29a9fabee5773</td>
        <td>CVE-2022-43859</td>
-       <td>2022-12-31 20:08:38 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:38</td>
        <td>IBM I Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7c1f0abb402648b8bccc60666e03c68e">详情</a></td>
       </tr>
@@ -1790,7 +1870,7 @@
       <tr>
        <td>081043c485cc281288cc60b58511c347</td>
        <td>CVE-2022-43857</td>
-       <td>2022-12-31 20:08:33 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:33</td>
        <td>IBM I Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9044cdd18b8548c7aafc7e5bbc0ad542">详情</a></td>
       </tr>
@@ -1798,7 +1878,7 @@
       <tr>
        <td>85acda0e934c802dfb50f85e945eb206</td>
        <td>CVE-2022-38065</td>
-       <td>2022-12-31 20:08:15 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:15</td>
        <td>REDHAT OPENSTACK Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8f1c1a40053d449c95a1534e15a4a252">详情</a></td>
       </tr>
@@ -1806,7 +1886,7 @@
       <tr>
        <td>b2261bedc66726b0edc81d878399483d</td>
        <td>CVE-2022-46422</td>
-       <td>2022-12-31 20:08:09 <img src="imgs/new.gif" /></td>
+       <td>2022-12-31 20:08:09</td>
        <td>NETGEAR WNR2000_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=84a6a0e6d4a240b281646c94e38892c6">详情</a></td>
       </tr>
@@ -1841,86 +1921,6 @@
        <td>2022-12-30 20:19:18</td>
        <td>CLICKSTUDIOS PASSWORDSTATE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fb3bcdeed6054bc19d6093769791e2cc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5e5e08d84eeb36a406111b384d3d7eff</td>
-       <td>CVE-2022-31683</td>
-       <td>2022-12-30 20:19:06</td>
-       <td>PIVOTAL_SOFTWARE CONCOURSE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8a9921c5000b47a6818cbdeaf5479453">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80ef3afb3fc3b2b510618f1942a928f2</td>
-       <td>CVE-2021-4263</td>
-       <td>2022-12-30 20:18:54</td>
-       <td>LEANOTE LEANOTE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=793153f83156420fb80be764d738441e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>00597d375f74c3c0980c361030bf1db7</td>
-       <td>CVE-2022-35695</td>
-       <td>2022-12-30 20:18:48</td>
-       <td>ADOBE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e0fbd184556a416881786aaeae92ab97">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7504c6f73c674f6d1789fda5164d9d59</td>
-       <td>CVE-2022-4112</td>
-       <td>2022-12-29 20:25:03</td>
-       <td>VMS-STUDIO QUIZLORD Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55e8084f246b4ebeb7a3bd2840598a7c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>50b83f38aa55d08eed6c3caadb912007</td>
-       <td>CVE-2022-35693</td>
-       <td>2022-12-29 20:24:57</td>
-       <td>ADOBE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b474a9015f5d4fa595ed364f5c2a3ec1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>942d2443b3899946950e420ce512dc7c</td>
-       <td>CVE-2022-44467</td>
-       <td>2022-12-28 20:20:50</td>
-       <td>ADOBE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ae1b564c8f744ab29183882fce08a3cb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6356c0832c8da6e815fde1910c9e8d22</td>
-       <td>CVE-2022-44470</td>
-       <td>2022-12-28 20:20:44</td>
-       <td>ADOBE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8b6328719e742daad5dada2940b408c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7bda78951d71631b5625b330af08d8f</td>
-       <td>CVE-2022-38708</td>
-       <td>2022-12-28 20:20:37</td>
-       <td>IBM COGNOS_ANALYTICS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a97fe4df263c4a72aadaf92539f280c5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89836ca58722f0880b9ed3f0798d5357</td>
-       <td>CVE-2022-44474</td>
-       <td>2022-12-28 20:20:33</td>
-       <td>ADOBE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5ee19856e94e4f88aee0aa16c4883454">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5a3d8bd7a966c2c5edb06409c211dcf</td>
-       <td>CVE-2022-43883</td>
-       <td>2022-12-28 20:20:28</td>
-       <td>IBM COGNOS_ANALYTICS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c3a71bdf68f14684b36ccad76364af5f">详情</a></td>
       </tr>
 
      </tbody>
