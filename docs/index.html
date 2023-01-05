@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-05 05:35:29 -->
+<!-- RELEASE TIME : 2023-01-05 23:34:42 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>69c2de70d6af2246062c9313f8a2866e</td>
+       <td>CVE-2023-22454</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 3.0.0.beta16 on the `beta` and `tests-passed` branches, pending post titles can be used for cross-site scripting attacks. Pending posts can be created by unprivileged users when a category has the "require moderator approval of all new topics" setting set. This vulnerability can lead to a full XSS on sites which have modified or disabled Discourse’s default Content Security Policy. A patch is available in versions 2.8.14 and 3.0.0.beta16.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22454">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66adac241c9a3a7754b2655a59a20e7a</td>
+       <td>CVE-2023-22453</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 3.0.0.beta16 on the `beta` and `tests-passed` branches, the number of times a user posted in an arbitrary topic is exposed to unauthorized users through the `/u/username.json` endpoint. The issue is patched in version 2.8.14 and 3.0.0.beta16. There is no known workaround.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22453">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb650c10ee2fb9e2cfcd820633c0e0ae</td>
+       <td>CVE-2022-46177</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 3.0.0.beta16 on the `beta` and `tests-passed` branches, when a user requests for a password reset link email, then changes their primary email, the old reset email is still valid. When the old reset email is used to reset the password, the Discourse account's primary email would be re-linked to the old email. If the old email address is compromised or has transferred ownership, this leads to an account takeover. This is however mitigated by the SiteSetting `email_token_valid_hours` which is currently 48 hours. Users should upgrade to versions 2.8.14 or 3.0.0.beta15 to receive a patch. As a workaround, lower `email_token_valid_hours ` as needed.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>902e18652e49073826b3df484545241b</td>
+       <td>CVE-2017-20163</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in Red Snapper NView and classified as critical. This vulnerability affects the function mutate of the file src/Session.php. The manipulation of the argument session leads to sql injection. The name of the patch is cbd255f55d476b29e5680f66f48c73ddb3d416a8. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-217516.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20163">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8c02e624d1518e1b65abcc5771fc7c04</td>
+       <td>CVE-2014-125044</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as critical, was found in soshtolsus wing-tight. This affects an unknown part of the file index.php. The manipulation of the argument p leads to file inclusion. It is possible to initiate the attack remotely. Upgrading to version 1.0.0 is able to address this issue. The name of the patch is 567bc33e6ed82b0d0179c9add707ac2b257aeaf2. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217515.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125044">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26427215f6b49b0395ed5153997644dd</td>
+       <td>CVE-2014-125043</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, has been found in vicamo NetworkManager. Affected by this issue is the function send_arps of the file src/devices/nm-device.c. The manipulation leads to unchecked return value. The name of the patch is 4da19b89815cbf6e063e39bc33c04fe4b3f789df. It is recommended to apply a patch to fix this issue. VDB-217514 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125043">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afc03affbd798fc6fcfb94ccb1501a34</td>
+       <td>CVE-2014-125042</td>
+       <td>2023-01-05 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in vicamo NetworkManager. Affected by this vulnerability is the function nm_setting_vlan_add_priority_str/nm_utils_rsa_key_encrypt/nm_setting_vlan_add_priority_str. The manipulation leads to missing release of resource. The name of the patch is afb0e2c53c4c17dfdb89d63b39db5101cc864704. It is recommended to apply a patch to fix this issue. The identifier VDB-217513 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125042">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8873a05166614fc4ffac30b06dceb59f</td>
+       <td>CVE-2023-0088</td>
+       <td>2023-01-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Swifty Page Manager plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 3.0.1. This is due to missing or incorrect nonce validation on several AJAX actions handling page creation and deletion among other things. This makes it possible for unauthenticated attackers to invoke those functions, via forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0088">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14c58c74c6cee1edd0de064a5ed55847</td>
+       <td>CVE-2023-0087</td>
+       <td>2023-01-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Swifty Page Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘spm_plugin_options_page_tree_max_width’ parameter in versions up to, and including, 3.0.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0087">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5782e0894e3840dd510a4c8ab3840f95</td>
+       <td>CVE-2022-23549</td>
+       <td>2023-01-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 2.9.0.beta15 on the `beta` and `tests-passed` branches, users can create posts with raw body longer than the `max_length` site setting by including html comments that are not counted toward the character limit. This issue is patched in versions 2.8.14 and 2.9.0.beta16. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23549">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8f3dcd36eb88ea3dd1bdae4e90a65a96</td>
        <td>CVE-2022-4876</td>
        <td>2023-01-04 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-01-03 21:15:00</td>
        <td>In Config Manager, there is a possible command injection due to improper input validation. This could lead to remote escalation of privilege with User execution privileges needed. User interaction is needed for exploitation. Patch ID: A20220004; Issue ID: OSBNB00140929.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d55aea60eda742762459892beb8b69dc</td>
-       <td>CVE-2022-32659</td>
-       <td>2023-01-03 21:15:00</td>
-       <td>In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705066; Issue ID: GN20220705066.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32659">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f64718f95cd8205e359247f5582a4daf</td>
-       <td>CVE-2022-32658</td>
-       <td>2023-01-03 21:15:00</td>
-       <td>In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705059; Issue ID: GN20220705059.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32658">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d16b3d7476f82271dada37ca30bdc5d</td>
-       <td>CVE-2022-32657</td>
-       <td>2023-01-03 21:15:00</td>
-       <td>In Wi-Fi driver, there is a possible undefined behavior due to incorrect error handling. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220705042; Issue ID: GN20220705042.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32657">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>23f56b6455735f52d9e6bdbfaf7afb42</td>
-       <td>CVE-2022-44036</td>
-       <td>2023-01-03 21:15:00</td>
-       <td>** DISPUTED ** In b2evolution 7.2.5, if configured with admins_can_manipulate_sensitive_files, arbitrary file upload is allowed for admins, leading to command execution. NOTE: the vendor's position is that this is "very obviously a feature not an issue and if you don't like that feature it is very obvious how to disable it."</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44036">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10414d02a492e65313116b40344fa204</td>
-       <td>CVE-2022-3460</td>
-       <td>2023-01-03 00:15:00</td>
-       <td>In affected versions of Octopus Deploy it is possible for certain types of sensitive variables to inadvertently become unmasked when viewed in variable preview.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3460">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>647f1c45d507393dd2ef23ec11c72443</td>
-       <td>CVE-2022-4025</td>
-       <td>2023-01-02 23:15:00</td>
-       <td>Inappropriate implementation in Paint in Google Chrome prior to 98.0.4758.80 allowed a remote attacker to leak cross-origin data outside an iframe via a crafted HTML page. (Chrome security severity: Low)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb041f4023ce846f333c315645ad0ba2</td>
-       <td>CVE-2022-3863</td>
-       <td>2023-01-02 23:15:00</td>
-       <td>Use after free in Browser History in Google Chrome prior to 100.0.4896.75 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chrome security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3863">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>40af6f8d52e4a471a9632a0e75a7dc12</td>
-       <td>CVE-2022-3842</td>
-       <td>2023-01-02 23:15:00</td>
-       <td>Use after free in Passwords in Google Chrome prior to 105.0.5195.125 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3842">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7f26c58cb08e2b4e4d6402de80fc5e7a</td>
-       <td>CVE-2022-2743</td>
-       <td>2023-01-02 23:15:00</td>
-       <td>Integer overflow in Window Manager in Google Chrome on Chrome OS and Lacros prior to 104.0.5112.79 allowed a remote attacker who convinced a user to engage in specific UI interactions to perform an out of bounds memory write via crafted UI interactions. (Chrome security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>149478ae5a74b5307d6e5113b0b5a9ff</td>
-       <td>CVE-2022-2742</td>
-       <td>2023-01-02 23:15:00</td>
-       <td>Use after free in Exosphere in Google Chrome on Chrome OS and Lacros prior to 104.0.5112.79 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via crafted UI interactions. (Chrome security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2742">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f23b962fc537fde472470bddfd4296be</td>
+       <td>CVE-2022-4851</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Improper Handling of Values in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4851">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2ce2a5abc2886acddd1fde78c69702e8</td>
+       <td>CVE-2022-4850</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4850">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>83759e41973d24c40db10fcd9a9d93f0</td>
+       <td>CVE-2022-4849</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4849">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>86f70c4e4797514c625df074762b2688</td>
+       <td>CVE-2022-4848</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4848">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a18c9cb4450e95ab622f675aa880088</td>
+       <td>CVE-2022-4847</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Incorrectly Specified Destination in a Communication Channel in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4847">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9ee82899767cfb93f27886a2a5f39ad</td>
+       <td>CVE-2022-4846</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4846">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd9fc7e4e2c33570ad1a6a703ba56535</td>
+       <td>CVE-2022-4845</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44e3022e970f3b930901e62b514f56d6</td>
+       <td>CVE-2022-4844</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4844">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57f983dff313224a5803c197ddaf4535</td>
+       <td>CVE-2022-4843</td>
+       <td>2022-12-29 18:15:10 </td>
+       <td>NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>432f39c73e4ca1add1fbf9de4cf2a775</td>
+       <td>CVE-2022-4841</td>
+       <td>2022-12-29 17:15:21 </td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4841">详情</a></td>
+      </tr>
+
+      <tr>
        <td>94641f69a2f12b4750fe5ad2214ef3d5</td>
        <td>CVE-2022-47934</td>
        <td>2022-12-24 22:15:09 </td>
@@ -2353,86 +2433,6 @@
        <td>2022-12-20 15:15:12 </td>
        <td>Tenda F1203 V2.0.1.6 was discovered to contain a buffer overflow via the page parameter at /goform/DhcpListClient.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-46548">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>acf3308724a57cfcf7f215974e76f21e</td>
-       <td>CVE-2022-46547</td>
-       <td>2022-12-20 15:15:12 </td>
-       <td>Tenda F1203 V2.0.1.6 was discovered to contain a buffer overflow via the page parameter at /goform/VirtualSer.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-46547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee6d81c92a4e014398618ae5fb45c11c</td>
-       <td>CVE-2022-46546</td>
-       <td>2022-12-20 15:15:12 </td>
-       <td>Tenda F1203 V2.0.1.6 was discovered to contain a buffer overflow via the entrys parameter at /goform/RouteStatic.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-46546">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a92b4a1cf17d3e87848eacf632602bf</td>
-       <td>CVE-2022-46545</td>
-       <td>2022-12-20 15:15:12 </td>
-       <td>Tenda F1203 V2.0.1.6 was discovered to contain a buffer overflow via the page parameter at /goform/NatStaticSetting.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-46545">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28663c8b105e25aa3e2385f76dde12d6</td>
-       <td>CVE-2022-46544</td>
-       <td>2022-12-20 15:15:12 </td>
-       <td>Tenda F1203 V2.0.1.6 was discovered to contain a buffer overflow via the cmdinput parameter at /goform/exeCommand.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-46544">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a79b799d79d1de24f0562a92d9edc4de</td>
-       <td>CVE-2022-47578</td>
-       <td>2022-12-20 04:15:09 </td>
-       <td>** DISPUTED ** An issue was discovered in the endpoint protection agent in Zoho ManageEngine Device Control Plus 10.1.2228.15. Despite configuring complete restrictions on USB pendrives, USB HDD devices, memory cards, USB connections to mobile devices, etc., it is still possible to bypass the USB restrictions by booting into Safe Mode. This allows a file to be exchanged outside the laptop/system. Safe Mode can be launched by any user (even without admin rights). Data exfiltration can occur, and also malware might be introduced onto the system. NOTE: the vendor's position is &quot;it's not a vulnerability in our product.&quot;</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47578">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bc3b627d5e40f60ba3bc4feb1dbb773</td>
-       <td>CVE-2022-47577</td>
-       <td>2022-12-20 04:15:09 </td>
-       <td>** DISPUTED ** An issue was discovered in the endpoint protection agent in Zoho ManageEngine Device Control Plus 10.1.2228.15. Despite configuring complete restrictions on USB pendrives, USB HDD devices, memory cards, USB connections to mobile devices, etc., it is still possible to bypass the USB restrictions by making use of a virtual machine (VM). This allows a file to be exchanged outside the laptop/system. VMs can be created by any user (even without admin rights). The data exfiltration can occur without any record in the audit trail of Windows events on the host machine. NOTE: the vendor's position is &quot;it's not a vulnerability in our product.&quot;</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47577">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7724d91952f19b3f1acb3a69e6452f9e</td>
-       <td>CVE-2022-47551</td>
-       <td>2022-12-20 00:15:10 </td>
-       <td>Apiman 1.5.7 through 2.2.3.Final has insufficient checks for read permissions within the Apiman Manager REST API. The root cause of the issue is the Apiman project's accidental acceptance of a large contribution that was not fully compatible with the security model of Apiman versions before 3.0.0.Final. Because of this, 3.0.0.Final is not affected by the vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b17cef97d844c6ba41ac7cdf6d4511bb</td>
-       <td>CVE-2022-45041</td>
-       <td>2022-12-19 21:15:10 </td>
-       <td>SQL Injection exits in xinhu &lt; 2.5.0</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45041">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce7d77b9193017c6b4422c2f6e36a781</td>
-       <td>CVE-2022-44488</td>
-       <td>2022-12-19 20:15:13 </td>
-       <td>Adobe Experience Manager version 6.5.14 (and earlier) is affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fe6c4a97525f5b610a0ad50276d9002a</td>
-       <td>CVE-2022-44474</td>
-       <td>2022-12-19 20:15:13 </td>
-       <td>Adobe Experience Manager version 6.5.14 (and earlier) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. If an attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44474">详情</a></td>
       </tr>
 
      </tbody>
