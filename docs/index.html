@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-12 05:35:17 -->
+<!-- RELEASE TIME : 2023-01-12 23:35:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>720f5cf7b6a29e3f2d483601ba801a5a</td>
+       <td>CVE-2023-21752</td>
+       <td>2023-01-12 08:45:47 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-21752：Windows Backup Service权限提升漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a03d9f175f1fe37ffaf00519e080833c">详情</a></td>
+      </tr>
+
       <tr>
        <td>2e5d630025b06426092cf8d8a1e16c8e</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=9c90df3ea7e5ec70467e0903cd6b1cf7">详情</a></td>
       </tr>
 
-      <tr>
-       <td>2b86aa8fa772194368e207dff58f8004</td>
-       <td>CVE-2022-3602</td>
-       <td>2022-11-02 07:33:56</td>
-       <td>CVE-2022-3602/3786：OpenSSL缓冲区溢出漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=42ff1f09a5dafd10d59225d07544d8d6">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>fc54b45e4ab91bc12ce313cc7655a131</td>
+       <td>CVE-2023-22488</td>
+       <td>2023-01-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Flarum is a forum software for building communities. Using the notifications feature, one can read restricted/private content and bypass access checks that would be in place for such content. The notification-sending component does not check that the subject of the notification can be seen by the receiver, and proceeds to send notifications through their different channels. The alerts do not leak data despite this as they are listed based on a visibility check, however, emails are still sent out. This means that, for extensions which restrict access to posts, any actor can bypass the restriction by subscribing to the discussion if the Subscriptions extension is enabled. The attack allows the leaking of some posts in the forum database, including posts awaiting approval, posts in tags the user has no access to if they could subscribe to a discussion before it becomes private, and posts restricted by third-party extensions. All Flarum versions prior to v1.6.3 are affected. The vulnerability has been fixed and published as flarum/core v1.6.3. All communities running Flarum should upgrade as soon as possible to v1.6.3. As a workaround, disable the Flarum Subscriptions extension or disable email notifications altogether. There are no other supported workarounds for this issue for Flarum versions below 1.6.3.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22488">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fbe770866a675306473dd135fbb445fe</td>
+       <td>CVE-2023-23457</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Segmentation fault was found in UPX in PackLinuxElf64::invert_pt_dynamic() in p_lx_elf.cpp. An attacker with a crafted input file allows invalid memory address access that could lead to a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23457">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3dedda6c5577a4cea97468b8304f2b7d</td>
+       <td>CVE-2023-23456</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A heap-based buffer overflow issue was discovered in UPX in PackTmt::pack() in p_tmt.cpp file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23456">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4835508e4e50a1f34d70a6029f59082</td>
+       <td>CVE-2022-4842</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw NULL Pointer Dereference in the Linux kernel NTFS3 driver function attr_punch_hole() was found. A local user could use this flaw to crash the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4842">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>291eefc477ce76fda7fc98a05e405c15</td>
+       <td>CVE-2022-4743</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A potential memory leak issue was discovered in SDL2 in GLES_CreateTexture() function in SDL_render_gles.c. The vulnerability allows an attacker to cause a denial of service attack. The vulnerability affects SDL2 v2.0.4 and above. SDL-1.x are not affected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4743">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>082ce1d280b01b560353e32c3726c93c</td>
+       <td>CVE-2022-3977</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free flaw was found in the Linux kernel MCTP (Management Component Transport Protocol) functionality. This issue occurs when a user simultaneously calls DROPTAG ioctl and socket close happens, which could allow a local user to crash the system or potentially escalate their privileges on the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3977">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cfecacd186c5810ed9eb1fc29f1e20a</td>
+       <td>CVE-2022-3628</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow flaw was found in the Linux kernel Broadcom Full MAC Wi-Fi driver. This issue occurs when a user connects to a malicious USB device. This can allow a local user to crash the system or escalate their privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3628">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03e7d3042c29fdd4858e76211e76bf1b</td>
+       <td>CVE-2022-3145</td>
+       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An open redirect vulnerability exists in Okta OIDC Middleware prior to version 5.0.0 allowing an attacker to redirect a user to an arbitrary URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2eb958f0fc41ae542a699a93152b47ed</td>
+       <td>CVE-2023-0254</td>
+       <td>2023-01-12 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple Membership WP user Import plugin for WordPress is vulnerable to SQL Injection via the ‘orderby’ parameter in versions up to, and including, 1.7 due to insufficient escaping on the user supplied parameter. This makes it possible for authenticated attackers with administrative privileges to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0254">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2511fe55fac177218b7175b6f34312ee</td>
+       <td>CVE-2023-0247</td>
+       <td>2023-01-12 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Uncontrolled Search Path Element in GitHub repository bits-and-blooms/bloom prior to 3.3.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0247">详情</a></td>
+      </tr>
+
       <tr>
        <td>12deea91df3a8f5babcf85799b7fa2c1</td>
        <td>CVE-2022-4344</td>
@@ -441,86 +521,6 @@
        <td>2023-01-11 17:15:00 <img src="imgs/new.gif" /></td>
        <td>Due to a misconfiguration in the manifest file of the WARP client for Android, it was possible to a perform a task hijacking attack. An attacker could create a malicious mobile application which could hijack legitimate app and steal potentially sensitive information when installed on the victim's device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4457">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>450caf36ae6527f244fec70df404b6f4</td>
-       <td>CVE-2023-21793</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21793">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9395225c31951cd449835ea4565deaa</td>
-       <td>CVE-2023-21792</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21792">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>915334f6fb2ab224a16dca6fde897f7f</td>
-       <td>CVE-2023-21791</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21791">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99991d3e3b55e69a1c46266130c1127f</td>
-       <td>CVE-2023-21790</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21790">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18fff8a604769df3ed345e4635b8c140</td>
-       <td>CVE-2023-21789</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21789">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d914ad4c247fe834dd73bf9043913f06</td>
-       <td>CVE-2023-21788</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21788">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b05d163f67282b6faa80b7f3f5b2ac6</td>
-       <td>CVE-2023-21787</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21787">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a9265e3a5189e1113f472009025c4374</td>
-       <td>CVE-2023-21786</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21786">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47cb50cdecbabc2bfa89980f9b53d0e5</td>
-       <td>CVE-2023-21785</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21785">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>100388588c83e37dce1ff0d3623def4f</td>
-       <td>CVE-2023-21784</td>
-       <td>2023-01-10 22:15:00</td>
-       <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21780, CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21784">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2a71e7d9df5729bf675c1e8f3ad6ddad</td>
+       <td>CVE-2022-32644</td>
+       <td>2023-01-12 20:36:53 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6c4c4446a98649b7a8421b6fa2964429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00b3384eba59dea66701ff0457f8e445</td>
+       <td>CVE-2022-32645</td>
+       <td>2023-01-12 20:36:47 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fee890b5331c4ac69314fffd5c3ebabe">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>078a0817d9f4ed097f4d5eadb55475c0</td>
+       <td>CVE-2021-30558</td>
+       <td>2023-01-12 20:36:41 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE CHROME Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c7910e59bb5e41d7afd58089b103eeb6">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>46dac158873c48efd669bfe497f3619f</td>
+       <td>CVE-2022-32652</td>
+       <td>2023-01-12 20:36:37 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f821a251f94e42c292cb0398226f92cf">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>74969ca0eebe58243c2d2a6675aca067</td>
+       <td>CVE-2022-3842</td>
+       <td>2023-01-12 20:36:30 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE CHROME Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=849f6c389d94495d800ef8d0b09eba45">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d3c2b8686530116ab3107a0d43536b1</td>
+       <td>CVE-2022-2743</td>
+       <td>2023-01-12 20:36:24 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=915e6aff5ea64c5eb4ba767ecedef145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>75bbff2a2f301674e2ef7359baad106c</td>
+       <td>CVE-2022-3460</td>
+       <td>2023-01-12 20:36:18 <img src="imgs/new.gif" /></td>
+       <td>OCTOPUS OCTOPUS_DEPLOY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7d62ac4ce3f410e980c69f43f9f9ecc">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1134c80eb2c86ade74cff19db34f861e</td>
+       <td>CVE-2022-4025</td>
+       <td>2023-01-12 20:36:11 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE CHROME Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a3eb84178b9f42ea838734349f92918c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9479408994cd9e90faa1884a582392e8</td>
+       <td>CVE-2022-42475</td>
+       <td>2023-01-12 20:36:05 <img src="imgs/new.gif" /></td>
+       <td>FORTINET Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f92a6db696974d8fa2518b89c5af4dfe">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>059f16ae4c7fd7907981296691dac5fe</td>
+       <td>CVE-2022-46306</td>
+       <td>2023-01-12 20:35:58 <img src="imgs/new.gif" /></td>
+       <td>CHANGINGTEC SERVISIGN Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd8e0ca9c6e84f8dae70a5e106d044fd">详情</a></td>
+      </tr>
+
+      <tr>
        <td>df90d485778d0caff3cedd25abf435c7</td>
        <td>CVE-2022-42255</td>
        <td>2023-01-11 20:44:41 <img src="imgs/new.gif" /></td>
@@ -1841,86 +1921,6 @@
        <td>2023-01-08 20:20:23</td>
        <td>NVIDIA Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4aa52e7bae85431894078d600fd3612d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac57940017242e0e025d952aa9ab0986</td>
-       <td>CVE-2022-4730</td>
-       <td>2023-01-08 20:20:08</td>
-       <td>GRAPHITE_PROJECT GRAPHITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0f954bfb3a9045ca92f87cee31f5065f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>404a719f1c440ecd96139feaeb58fd82</td>
-       <td>CVE-2022-42257</td>
-       <td>2023-01-08 20:20:02</td>
-       <td>NVIDIA Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2d38226ec3445d69e427be471d821ec">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e2f035db1b1e299ad703e9035161d83</td>
-       <td>CVE-2022-4243</td>
-       <td>2023-01-07 20:21:15</td>
-       <td>WPSCOOP IMAGEINJECT Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eee7590444074eef9fe2fcc46f113a51">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aac8b8b92c98ebd5b700a90614d3edf6</td>
-       <td>CVE-2022-2582</td>
-       <td>2023-01-07 20:21:15</td>
-       <td>AMAZON AWS_SOFTWARE_DEVELOPMENT_KIT Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=99d806bca0544de0a50fab57ba32ff55">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85f5f18d804c9ac3ad00da75759b93a5</td>
-       <td>CVE-2022-37706</td>
-       <td>2023-01-07 20:21:01</td>
-       <td>Enlightenment 权限许可和访问控制问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8f76ebf3ce58458e83af2430e2c01b6c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8734b216b4482fd31e49d47cf38932d1</td>
-       <td>CVE-2022-41318</td>
-       <td>2023-01-07 20:20:48</td>
-       <td>Squid 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=045639a5d73e4cfcab5e5e871d8696ff">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07636a4eccc54b579721948fc2a6f32d</td>
-       <td>CVE-2022-31469</td>
-       <td>2023-01-06 20:17:38</td>
-       <td>OPEN-XCHANGE OPEN-XCHANGE_APPSUITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=53bc3ebf981e4405ba81296356d840f1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68e285ffc9d8d921258882c57f9d318c</td>
-       <td>CVE-2022-37307</td>
-       <td>2023-01-06 20:17:33</td>
-       <td>OPEN-XCHANGE OPEN-XCHANGE_APPSUITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5f5b37f2ff984c378c7deeb764065fe1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8be4a38332a91863e4d6be3e203bd3f0</td>
-       <td>CVE-2022-37312</td>
-       <td>2023-01-06 20:17:27</td>
-       <td>OPEN-XCHANGE OPEN-XCHANGE_APPSUITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=22e748bb94a948698674243c7078aace">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>672fa599b33210ba8ef0f489220c5079</td>
-       <td>CVE-2022-37313</td>
-       <td>2023-01-06 20:17:21</td>
-       <td>OPEN-XCHANGE OPEN-XCHANGE_APPSUITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=951ec8fd3b854a76a81e5f6d5598da48">详情</a></td>
       </tr>
 
      </tbody>
@@ -2228,6 +2228,14 @@
       </tr>
 
       <tr>
+       <td>d00cd2f392eb17255cef5a14f1ec7a09</td>
+       <td>CVE-2022-4200</td>
+       <td>2023-01-02 22:15:16 </td>
+       <td>The Login with Cognito WordPress plugin through 1.4.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4200">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0dafaaf08d7e2c0903a26c3f5593c0e5</td>
        <td>CVE-2023-0028</td>
        <td>2023-01-01 01:15:12 </td>
@@ -2273,6 +2281,78 @@
        <td>2022-12-30 23:15:11 </td>
        <td>Argument Injection in GitHub repository froxlor/froxlor prior to 2.0.0-beta1.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4864">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>592aa66bd36553b150a75cc05b0a6a52</td>
+       <td>CVE-2022-42267</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability where a regular user can cause an out-of-bounds read, which may lead to code execution, denial of service, escalation of privileges, information disclosure, or data tampering.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42267">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44ce3f735fed0af803500fd5e0ee2d0a</td>
+       <td>CVE-2022-42266</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer (nvlddmkm.sys) handler for DxgkDdiEscape, where an unprivileged regular user can cause exposure of sensitive information to an actor that is not explicitly authorized to have access to that information, which may lead to limited information disclosure.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42266">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95f9dab5c0b43cd4a0c19ddbe9baab71</td>
+       <td>CVE-2022-42265</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to information disclosure or data tampering.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42265">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79b7c328eadd4ac7cabe59459d4b9539</td>
+       <td>CVE-2022-42264</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where an unprivileged regular user can cause the use of an out-of-range pointer offset, which may lead to data tampering, data loss, information disclosure, or denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42264">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae9b81ca4507324ae5413fda10f38e88</td>
+       <td>CVE-2022-42263</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an Integer overflow may lead to denial of service or information disclosure.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42263">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f4681923d6e904fddf8079137e73db8</td>
+       <td>CVE-2022-42262</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (vGPU plugin), where an input index is not validated, which may lead to buffer overrun, which in turn may cause data tampering, information disclosure, or denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42262">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6113ec722d090c5236690c98f907aa6f</td>
+       <td>CVE-2022-42261</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager (vGPU plugin), where an input index is not validated, which may lead to buffer overrun, which in turn may cause data tampering, information disclosure, or denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42261">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cda78fbe94affb3129dc08d2fbf6f382</td>
+       <td>CVE-2022-42260</td>
+       <td>2022-12-30 23:15:11 </td>
+       <td>NVIDIA vGPU Display Driver for Linux guest contains a vulnerability in a D-Bus configuration file, where an unauthorized user in the guest VM can impact protected D-Bus endpoints, which may lead to code execution, denial of service, escalation of privileges, information disclosure, or data tampering.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42260">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7fa1cb8e5bf8f55125d2c59d0356253e</td>
+       <td>CVE-2022-42254</td>
+       <td>2022-12-30 23:15:10 </td>
+       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an out-of-bounds array access may lead to denial of service, data tampering, or information disclosure.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42254">详情</a></td>
       </tr>
 
       <tr>
@@ -2353,86 +2433,6 @@
        <td>2022-12-29 18:15:10 </td>
        <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd9fc7e4e2c33570ad1a6a703ba56535</td>
-       <td>CVE-2022-4845</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4845">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44e3022e970f3b930901e62b514f56d6</td>
-       <td>CVE-2022-4844</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4844">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57f983dff313224a5803c197ddaf4535</td>
-       <td>CVE-2022-4843</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>NULL Pointer Dereference in GitHub repository radareorg/radare2 prior to 5.8.2.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>432f39c73e4ca1add1fbf9de4cf2a775</td>
-       <td>CVE-2022-4841</td>
-       <td>2022-12-29 17:15:21 </td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4841">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>415d89025a1039a6a6713b00f611c6ef</td>
-       <td>CVE-2022-4779</td>
-       <td>2022-12-29 00:15:09 </td>
-       <td>StreamX applications from versions 6.02.01 to 6.04.34 are affected by a logic bug that allows to bypass the implemented authentication scheme. StreamX applications using StreamView HTML component with the public web server feature activated are affected.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4779">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f55fdc17a926386d4e309b33c63a26a1</td>
-       <td>CVE-2022-4802</td>
-       <td>2022-12-28 14:15:10 </td>
-       <td>Improper Authorization in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4802">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea3d43e7a3c09d719b2deddf5795ba39</td>
-       <td>CVE-2022-4801</td>
-       <td>2022-12-28 14:15:10 </td>
-       <td>Insufficient Granularity of Access Control in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4801">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e03611726f5967e5829fcab7a1aa5c7c</td>
-       <td>CVE-2022-4800</td>
-       <td>2022-12-28 14:15:10 </td>
-       <td>Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>acac5fb732902e4eee5ca49dea85f4ed</td>
-       <td>CVE-2022-4799</td>
-       <td>2022-12-28 14:15:10 </td>
-       <td>Improper Authentication in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5de59566323593a5bb000171d46f7722</td>
-       <td>CVE-2022-4798</td>
-       <td>2022-12-28 14:15:10 </td>
-       <td>Improper Authorization in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4798">详情</a></td>
       </tr>
 
      </tbody>
