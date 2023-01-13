@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-12 23:35:27 -->
+<!-- RELEASE TIME : 2023-01-13 05:35:24 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>2e5d630025b06426092cf8d8a1e16c8e</td>
        <td></td>
-       <td>2023-01-11 11:11:40 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 11:11:40</td>
        <td>2023-01 补丁日: 微软多个漏洞安全更新通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a6068120fd4e90d42cfaaabc397a7cbf">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b7672667c882b9c1b67966624d520d92</td>
+       <td>CVE-2023-22417</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Missing Release of Memory after Effective Lifetime vulnerability in the Flow Processing Daemon (flowd) of Juniper Networks Junos OS allows a network-based, unauthenticated attacker to cause a Denial of Service (DoS). In an IPsec VPN environment, a memory leak will be seen if a DH or ECDH group is configured. Eventually the flowd process will crash and restart. This issue affects Juniper Networks Junos OS on SRX Series: All versions prior to 19.3R3-S7; 19.4 versions prior to 19.4R2-S8, 19.4R3-S10; 20.2 versions prior to 20.2R3-S6; 20.3 versions prior to 20.3R3-S5; 20.4 versions prior to 20.4R3-S5; 21.1 versions prior to 21.1R3-S4; 21.2 versions prior to 21.2R3; 21.3 versions prior to 21.3R3; 21.4 versions prior to 21.4R2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22417">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>789d22dabfe2e7be934ec740205c094d</td>
+       <td>CVE-2023-22416</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Buffer Overflow vulnerability in SIP ALG of Juniper Networks Junos OS allows a network-based, unauthenticated attacker to cause a Denial of Service (DoS). On all MX Series and SRX Series platform with SIP ALG enabled, when a malformed SIP packet is received, the flow processing daemon (flowd) will crash and restart. This issue affects: Juniper Networks Junos OS on MX Series and SRX Series 20.4 versions prior to 20.4R3-S5; 21.1 versions prior to 21.1R3-S4; 21.2 versions prior to 21.2R3-S2; 21.3 versions prior to 21.3R3-S1; 21.4 versions prior to 21.4R3; 22.1 versions prior to 22.1R1-S2, 22.1R2; 22.2 versions prior to 22.2R1-S1, 22.2R2. This issue does not affect Juniper Networks Junos OS versions prior to 20.4R1 on SRX Series.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22416">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3ab43eb53b1023b710247b79a750fc45</td>
+       <td>CVE-2023-22415</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Out-of-Bounds Write vulnerability in the H.323 ALG of Juniper Networks Junos OS allows an unauthenticated, network-based attacker to cause Denial of Service (DoS). On all MX Series and SRX Series platform, when H.323 ALG is enabled and specific H.323 packets are received simultaneously, a flow processing daemon (flowd) crash will occur. Continued receipt of these specific packets will cause a sustained Denial of Service (DoS) condition. This issue affects: Juniper Networks Junos OS on MX Series and SRX Series All versions prior to 19.4R3-S10; 20.2 versions prior to 20.2R3-S6; 20.3 versions prior to 20.3R3-S6; 20.4 versions prior to 20.4R3-S5; 21.1 versions prior to 21.1R3-S4; 21.2 versions prior to 21.2R3-S3; 21.3 versions prior to 21.3R3-S3; 21.4 versions prior to 21.4R3; 22.1 versions prior to 22.1R2-S1, 22.1R3; 22.2 versions prior to 22.2R1-S2, 22.2R2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22415">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>479bda9aa0aa925a1722dd5497231ee8</td>
+       <td>CVE-2023-22414</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Missing Release of Memory after Effective Lifetime vulnerability in Flexible PIC Concentrator (FPC) of Juniper Networks Junos OS allows an adjacent, unauthenticated attacker from the same shared physical or logical network, to cause a heap memory leak and leading to FPC crash. On all Junos PTX Series and QFX10000 Series, when specific EVPN VXLAN Multicast packets are processed, an FPC heap memory leak is observed. The FPC memory usage can be monitored using the CLI command "show heap extensive". Following is an example output. ID Base Total(b) Free(b) Used(b) % Name Peak used % -- -------- --------- --------- --------- --- ----------- ----------- 0 37dcf000 3221225472 1694526368 1526699104 47 Kernel 47 1 17dcf000 1048576 1048576 0 0 TOE DMA 0 2 17ecf000 1048576 1048576 0 0 DMA 0 3 17fcf000 534773760 280968336 253805424 47 Packet DMA 47 This issue affects: Juniper Networks Junos OS PTX Series and QFX10000 Series 20.2 versions prior to 20.2R3-S6; 20.3 versions prior to 20.3R3-S6; 20.4 versions prior to 20.4R3-S4; 21.1 versions prior to 21.1R3-S3; 21.2 versions prior to 21.2R3-S1; 21.3 versions prior to 21.3R3; 21.4 versions prior to 21.4R3; 22.1 versions prior to 22.1R2; 22.2 versions prior to 22.2R2. This issue does not affect Juniper Networks Junos OS versions prior to 20.1R1 on PTX Series and QFX10000 Series.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22414">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f7b91987e8724d37959af74e419dce2</td>
+       <td>CVE-2023-22413</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Check or Handling of Exceptional Conditions vulnerability in the IPsec library of Juniper Networks Junos OS allows a network-based, unauthenticated attacker to cause Denial of Service (DoS). On all MX platforms with MS-MPC or MS-MIC card, when specific IPv4 packets are processed by an IPsec6 tunnel, the Multiservices PIC Management Daemon (mspmand) process will core and restart. This will lead to FPC crash. Traffic flow is impacted while mspmand restarts. Continued receipt of these specific packets will cause a sustained Denial of Service (DoS) condition. This issue only occurs if an IPv4 address is not configured on the multiservice interface. This issue affects: Juniper Networks Junos OS on MX Series All versions prior to 19.4R3-S9; 20.1 version 20.1R3-S5 and later versions; 20.2 versions prior to 20.2R3-S5; 20.3 versions prior to 20.3R3-S5; 20.4 versions prior to 20.4R3-S4; 21.1 versions prior to 21.1R3-S3; 21.2 versions prior to 21.2R3-S1; 21.3 versions prior to 21.3R3; 21.4 versions prior to 21.4R2-S1, 21.4R3; 22.1 versions prior to 22.1R2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22413">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e713b4af976aa4f2c735e8693d7e9208</td>
+       <td>CVE-2023-22412</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Locking vulnerability in the SIP ALG of Juniper Networks Junos OS on MX Series with MS-MPC or MS-MIC card and SRX Series allows an unauthenticated, network-based attacker to cause a flow processing daemon (flowd) crash and thereby a Denial of Service (DoS). Continued receipt of these specific packets will cause a sustained Denial of Service condition. This issue occurs when SIP ALG is enabled and specific SIP messages are processed simultaneously. This issue affects: Juniper Networks Junos OS on MX Series and SRX Series 20.4 versions prior to 20.4R3-S4; 21.1 versions prior to 21.1R3-S3; 21.2 versions prior to 21.2R3-S2; 21.3 versions prior to 21.3R3; 21.4 versions prior to 21.4R3; 22.1 versions prior to 22.1R2. This issue does not affect Juniper Networks Junos OS versions prior to 20.4R1 on MX Series, or SRX Series.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22412">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f69634a3fa994a12fe90b4a02acce345</td>
+       <td>CVE-2023-22411</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Out-of-Bounds Write vulnerability in Flow Processing Daemon (flowd) of Juniper Networks Junos OS allows an unauthenticated, network-based attacker to cause Denial of Service (DoS). On SRX Series devices using Unified Policies with IPv6, when a specific IPv6 packet goes through a dynamic-application filter which will generate an ICMP deny message, the flowd core is observed and the PFE is restarted. This issue affects: Juniper Networks Junos OS on SRX Series: 19.2 versions prior to 19.2R3-S6; 19.3 versions prior to 19.3R3-S6; 19.4 versions prior to 19.4R3-S9; 20.2 versions prior to 20.2R3-S5; 20.3 versions prior to 20.3R3-S4; 20.4 versions prior to 20.4R3-S3; 21.1 versions prior to 21.1R3; 21.2 versions prior to 21.2R3; 21.3 versions prior to 21.3R2; 21.4 versions prior to 21.4R2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22411">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84a941d2d40b6a11bfcd66e83d83bbf0</td>
+       <td>CVE-2023-22410</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Missing Release of Memory after Effective Lifetime vulnerability in the Juniper Networks Junos OS on MX Series platforms with MPC10/MPC11 line cards, allows an unauthenticated adjacent attacker to cause a Denial of Service (DoS). Devices are only vulnerable when the Suspicious Control Flow Detection (scfd) feature is enabled. Upon enabling this specific feature, an attacker sending specific traffic is causing memory to be allocated dynamically and it is not freed. Memory is not freed even after deactivating this feature. Sustained processing of such traffic will eventually lead to an out of memory condition that prevents all services from continuing to function, and requires a manual restart to recover. The FPC memory usage can be monitored using the CLI command "show chassis fpc". On running the above command, the memory of AftDdosScfdFlow can be observed to detect the memory leak. This issue affects Juniper Networks Junos OS on MX Series: All versions prior to 20.2R3-S5; 20.3 version 20.3R1 and later versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22410">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4166ea54548dc6359548a879aa58b66d</td>
+       <td>CVE-2023-22409</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Unchecked Input for Loop Condition vulnerability in a NAT library of Juniper Networks Junos OS allows a local authenticated attacker with low privileges to cause a Denial of Service (DoS). When an inconsistent "deterministic NAT" configuration is present on an SRX, or MX with SPC3 and then a specific CLI command is issued the SPC will crash and restart. Repeated execution of this command will lead to a sustained DoS. Such a configuration is characterized by the total number of port blocks being greater than the total number of hosts. An example for such configuration is: [ services nat source pool TEST-POOL address x.x.x.0/32 to x.x.x.15/32 ] [ services nat source pool TEST-POOL port deterministic block-size 1008 ] [ services nat source pool TEST-POOL port deterministic host address y.y.y.0/24] [ services nat source pool TEST-POOL port deterministic include-boundary-addresses] where according to the following calculation: 65536-1024=64512 (number of usable ports per IP address, implicit) 64512/1008=64 (number of port blocks per Nat IP) x.x.x.0/32 to x.x.x.15/32 = 16 (NAT IP addresses available in NAT pool) total port blocks in NAT Pool = 64 blocks per IP * 16 IPs = 1024 Port blocks host address y.y.y.0/24 = 256 hosts (with include-boundary-addresses) If the port block size is configured to be 4032, then the total port blocks are (64512/4032) * 16 = 256 which is equivalent to the total host addresses of 256, and the issue will not be seen. This issue affects Juniper Networks Junos OS on SRX Series, and MX Series with SPC3: All versions prior to 19.4R3-S10; 20.1 version 20.1R1 and later versions; 20.2 versions prior to 20.2R3-S6; 20.3 versions prior to 20.3R3-S6; 20.4 versions prior to 20.4R3-S5; 21.1 versions prior to 21.1R3-S4; 21.2 versions prior to 21.2R3-S3; 21.3 versions prior to 21.3R3-S3; 21.4 versions prior to 21.4R3-S1; 22.1 versions prior to 22.1R2-S2, 22.1R3; 22.2 versions prior to 22.2R2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22409">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c20088bc68a825016a8758d3db5a0900</td>
+       <td>CVE-2023-22408</td>
+       <td>2023-01-13 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Validation of Array Index vulnerability in the SIP ALG of Juniper Networks Junos OS on SRX 5000 Series allows a network-based, unauthenticated attacker to cause a Denial of Service (DoS). When an attacker sends an SIP packets with a malformed SDP field then the SIP ALG can not process it which will lead to an FPC crash and restart. Continued receipt of these specific packets will lead to a sustained Denial of Service. This issue can only occur when both below mentioned conditions are fulfilled: 1. Call distribution needs to be enabled: [security alg sip enable-call-distribution] 2. The SIP ALG needs to be enabled, either implicitly / by default or by way of configuration. To confirm whether SIP ALG is enabled on SRX, and MX with SPC3 use the following command: user@host> show security alg status | match sip SIP : Enabled This issue affects Juniper Networks Junos OS on SRX 5000 Series: 20.4 versions prior to 20.4R3-S5; 21.1 versions prior to 21.1R3-S4; 21.2 versions prior to 21.2R3-S3; 21.3 versions prior to 21.3R3-S3; 21.4 versions prior to 21.4R3-S2; 22.1 versions prior to 22.1R2-S2, 22.1R3; 22.2 versions prior to 22.2R3; 22.3 versions prior to 22.3R1-S1, 22.3R2. This issue does not affect Juniper Networks Junos OS versions prior to 20.4R1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22408">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fc54b45e4ab91bc12ce313cc7655a131</td>
        <td>CVE-2023-22488</td>
        <td>2023-01-12 20:15:00 <img src="imgs/new.gif" /></td>
@@ -382,7 +462,7 @@
       <tr>
        <td>037a69a7787638ca5adb3010562e1bea</td>
        <td>CVE-2017-16336</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_var, at 0x9d01eeb0, the value for the `s_value` key is copied using `strcpy` to the buffer at `$sp+0x10`.This buffer is 244 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16336">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>3717b6a0364facefa1585e5c876adad7</td>
        <td>CVE-2017-16335</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_var, at 0x9d01ee70, the value for the `s_offset` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16335">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>bed0629f7060baba8a3b05e5c18aa673</td>
        <td>CVE-2017-16334</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event, at 0x9d01edb8, the value for the `s_raw` key is copied using `strcpy` to the buffer at `$sp+0x10`.This buffer is 244 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16334">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>d928cd92c7664363d312ebbc618b18da</td>
        <td>CVE-2017-16333</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event, at 0x9d01ed7c, the value for the `s_offset` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16333">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>c0de2850c63e0b06d6ed288701e3f2d4</td>
        <td>CVE-2017-16332</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_alarm, at 0x9d01ec34, the value for the `s_aid` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16332">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>b09ee590ee9e24b9f9fc5ddddf3e70ad</td>
        <td>CVE-2017-16331</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_alarm, at 0x9d01ebd4, the value for the `s_tid` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16331">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>18e3173c54e1bd2c208f56ae5643a263</td>
        <td>CVE-2017-16330</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_alarm, at 0x9d01eb8c, the value for the `s_event_group` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16330">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>f63501dc43449b6a699f2d13cddec5ef</td>
        <td>CVE-2017-16329</td>
-       <td>2023-01-11 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 22:15:00</td>
        <td>Multiple exploitable buffer overflow vulnerabilities exist in the PubNub message handler for the "cc" channel of Insteon Hub running firmware version 1012. Specially crafted commands sent through the PubNub service can cause a stack-based buffer overflow overwriting arbitrary data. An attacker should send an authenticated HTTP request to trigger this vulnerability. In cmd s_event_alarm, at 0x9d01eb44, the value for the `s_event_delay` key is copied using `strcpy` to the buffer at `$sp+0x2b0`.This buffer is 32 bytes large, sending anything longer will cause a buffer overflow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-16329">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5def044167a522b79266635e3c965d2</td>
-       <td>CVE-2023-22492</td>
-       <td>2023-01-11 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>ZITADEL is a combination of Auth0 and Keycloak. RefreshTokens is an OAuth 2.0 feature that allows applications to retrieve new access tokens and refresh the user's session without the need for interacting with a UI. RefreshTokens were not invalidated when a user was locked or deactivated. The deactivated or locked user was able to obtain a valid access token only through a refresh token grant. When the locked or deactivated user’s session was already terminated (“logged out”) then it was not possible to create a new session. Renewal of access token through a refresh token grant is limited to the configured amount of time (RefreshTokenExpiration). As a workaround, ensure the RefreshTokenExpiration in the OIDC settings of your instance is set according to your security requirements. This issue has been patched in versions 2.17.3 and 2.16.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>37bd001cf857c063dc8ad249a57a110d</td>
-       <td>CVE-2023-22487</td>
-       <td>2023-01-11 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Flarum is a forum software for building communities. Using the mentions feature provided by the flarum/mentions extension, users can mention any post ID on the forum with the special `@"<username>"#p<id>` syntax. The following behavior never changes no matter if the actor should be able to read the mentioned post or not: A URL to the mentioned post is inserted into the actor post HTML, leaking its discussion ID and post number. The `mentionsPosts` relationship included in the `POST /api/posts` and `PATCH /api/posts/<id>` JSON responses leaks the full JSON:API payload of all mentioned posts without any access control. This includes the content, date, number and attributes added by other extensions. An attacker only needs the ability to create new posts on the forum to exploit the vulnerability. This works even if new posts require approval. If they have the ability to edit posts, the attack can be performed even more discreetly by using a single post to scan any size of database and hiding the attack post content afterward. The attack allows the leaking of all posts in the forum database, including posts awaiting approval, posts in tags the user has no access to, and private discussions created by other extensions like FriendsOfFlarum Byobu. This also includes non-comment posts like tag changes or renaming events. The discussion payload is not leaked but using the mention HTML payload it's possible to extract the discussion ID of all posts and combine all posts back together into their original discussions even if the discussion title remains unknown. All Flarum versions prior to 1.6.3 are affected. The vulnerability has been fixed and published as flarum/core v1.6.3. As a workaround, user can disable the mentions extension.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22487">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a51b6382d253c85ff20365e81a519866</td>
-       <td>CVE-2022-4499</td>
-       <td>2023-01-11 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>TP-Link routers, Archer C5 and WR710N-V1, using the latest software, the strcmp function used for checking credentials in httpd, is susceptible to a side-channel attack. By measuring the response time of the httpd process, an attacker could guess each byte of the username and password.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a8268a398c2d4e80f50732118f6b12d7</td>
-       <td>CVE-2015-10039</td>
-       <td>2023-01-11 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in dobos domino. It has been rated as critical. Affected by this issue is some unknown functionality in the library src/Complex.Domino.Lib/Lib/EntityFactory.cs. The manipulation leads to sql injection. Upgrading to version 0.1.5524.38553 is able to address this issue. The name of the patch is 16f039073709a21a76526110d773a6cce0ce753a. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-218024.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10039">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2cedd3cdad5fbd74d55613fec5c5c7d</td>
-       <td>CVE-2015-10038</td>
-       <td>2023-01-11 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in nym3r0s pplv2. It has been declared as critical. Affected by this vulnerability is an unknown functionality. The manipulation leads to sql injection. The name of the patch is 28f8b0550104044da09f04659797487c59f85b00. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-218023.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10038">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e478aa89a0f06ed217c636eb233461b</td>
-       <td>CVE-2014-125076</td>
-       <td>2023-01-11 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in NoxxieNl Criminals. It has been classified as critical. Affected is an unknown function of the file ingame/roulette.php. The manipulation of the argument gambleMoney leads to sql injection. The name of the patch is 0a60b31271d4cbf8babe4be993d2a3a1617f0897. It is recommended to apply a patch to fix this issue. VDB-218022 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125076">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>40427c2616b87c11663bf093f93f605a</td>
-       <td>CVE-2014-125075</td>
-       <td>2023-01-11 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in gmail-servlet and classified as critical. This issue affects the function search of the file src/Model.java. The manipulation leads to sql injection. The name of the patch is 5d72753c2e95bb373aa86824939397dc25f679ea. It is recommended to apply a patch to fix this issue. The identifier VDB-218021 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125075">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa6e194d270987b69466fba8c18fbd9b</td>
-       <td>CVE-2022-4885</td>
-       <td>2023-01-11 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been found in sviehb jefferson up to 0.3 and classified as critical. This vulnerability affects unknown code of the file src/scripts/jefferson. The manipulation leads to path traversal. The attack can be initiated remotely. Upgrading to version 0.4 is able to address this issue. The name of the patch is 53b3f2fc34af0bb32afbcee29d18213e61471d87. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-218020.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4885">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3293913b050b7e831fbdb10e77a2807f</td>
-       <td>CVE-2020-36650</td>
-       <td>2023-01-11 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability, which was classified as critical, was found in IonicaBizau node-gry up to 5.x. This affects an unknown part. The manipulation leads to command injection. Upgrading to version 6.0.0 is able to address this issue. The name of the patch is 5108446c1e23960d65e8b973f1d9486f9f9dbd6c. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-218019.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36650">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>000eb35fa01f0e11774682b4bc81efab</td>
-       <td>CVE-2022-4457</td>
-       <td>2023-01-11 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Due to a misconfiguration in the manifest file of the WARP client for Android, it was possible to a perform a task hijacking attack. An attacker could create a malicious mobile application which could hijack legitimate app and steal potentially sensitive information when installed on the victim's device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4457">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>df90d485778d0caff3cedd25abf435c7</td>
        <td>CVE-2022-42255</td>
-       <td>2023-01-11 20:44:41 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 20:44:41</td>
        <td>NVIDIA Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=73837ac09deb4e289e15511721c2b85b">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>f3c6ee857afee5f8dc11409f027cec00</td>
        <td>CVE-2022-42258</td>
-       <td>2023-01-11 20:44:29 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 20:44:29</td>
        <td>NVIDIA Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e3d073d4827b4c1aab2440497aafa496">详情</a></td>
       </tr>
@@ -1940,9 +1940,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>27780f65734d037a95a20cb46d161862</td>
+       <td>CVE-2023-0128</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Overview Mode内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75179">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>771651032697fbe544f80903f7a5611a</td>
+       <td>CVE-2023-0129</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Network Service堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75178">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b2d60308154f9ffc0a6a686815b36ee2</td>
+       <td>CVE-2023-0130</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Fullscreen API实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>977bf7ac1ff25d5c8505451f904abc0c</td>
+       <td>CVE-2023-0131</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome iframe Sandbox实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26a5492eb5734f0eef07b189c11a79ca</td>
+       <td>CVE-2023-0132</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Permission Prompts实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab4ae278303768ac993d489ff77ca745</td>
+       <td>CVE-2023-0133</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Permission Prompts实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eb74b0e2e26ca0b1989afce3bad50210</td>
+       <td>CVE-2023-0134</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Cart内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>697cf182cb4be7ba27b1349a0f6a1471</td>
+       <td>CVE-2023-0135</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Cart内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>473796f85a5736471a185edbc4ffc532</td>
+       <td>CVE-2023-0136</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Fullscreen API实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bec720024d5d618ac9e8e1bb945c9066</td>
+       <td>CVE-2023-0138</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome libphonenumber堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75170">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71ee08bc6258ce8b44b88f389803036a</td>
+       <td>CVE-2023-0139</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Downloads输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75169">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dfff5b69c6b9848d9a1cc5125a6209eb</td>
+       <td>CVE-2023-0140</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome File System API实现不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>46cb68cf0b59c851d6edbf4438df9653</td>
+       <td>CVE-2023-0141</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome CORS策略执行不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75167">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03a6a73a0041e63c3eb5ac17b7badda9</td>
+       <td>CVE-2023-0137</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome Platform Apps堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e06640cce5d9fc097548c656a9a16142</td>
+       <td>CVE-2022-3462</td>
+       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>WordPress Highlight Focus Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75165">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c0b2f8db124fd11969c1e4f70f16a18e</td>
        <td>CVE-2023-21762</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft Exchange Server欺骗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75130">详情</a></td>
       </tr>
@@ -1950,7 +2070,7 @@
       <tr>
        <td>a535143aeaa7c8340f9d171b0a8220f7</td>
        <td>CVE-2023-21785</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75129">详情</a></td>
       </tr>
@@ -1958,7 +2078,7 @@
       <tr>
        <td>e7f588b055e7f93a60033f6a2027ab1f</td>
        <td>CVE-2023-21784</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75128">详情</a></td>
       </tr>
@@ -1966,7 +2086,7 @@
       <tr>
        <td>55be7f58b57cc56944f9541879ad34f5</td>
        <td>CVE-2023-21783</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75127">详情</a></td>
       </tr>
@@ -1974,7 +2094,7 @@
       <tr>
        <td>40f5dbd2b61b63448dd13133011f5cc0</td>
        <td>CVE-2023-21782</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75126">详情</a></td>
       </tr>
@@ -1982,7 +2102,7 @@
       <tr>
        <td>b7f62c32db52d02ad0a2bb953430c74e</td>
        <td>CVE-2023-21781</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75125">详情</a></td>
       </tr>
@@ -1990,7 +2110,7 @@
       <tr>
        <td>70be746d6c4f948ea4b750172a54ff80</td>
        <td>CVE-2023-21790</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75124">详情</a></td>
       </tr>
@@ -1998,7 +2118,7 @@
       <tr>
        <td>438295a54d153ae5b816d4d29c28bea3</td>
        <td>CVE-2023-21789</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75123">详情</a></td>
       </tr>
@@ -2006,7 +2126,7 @@
       <tr>
        <td>90171bd6c2c4ccfa10655c2d6e098691</td>
        <td>CVE-2023-21786</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75122">详情</a></td>
       </tr>
@@ -2014,7 +2134,7 @@
       <tr>
        <td>b028feaf7c8baf38d9967c2d9670a819</td>
        <td>CVE-2023-21787</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75121">详情</a></td>
       </tr>
@@ -2022,7 +2142,7 @@
       <tr>
        <td>eb8f727f6556f73b8bf180dfe06e49c8</td>
        <td>CVE-2023-21788</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75120">详情</a></td>
       </tr>
@@ -2030,7 +2150,7 @@
       <tr>
        <td>9594513394ebb8b883b8fb89665dbe13</td>
        <td>CVE-2023-21780</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft 3D Builder远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75119">详情</a></td>
       </tr>
@@ -2038,7 +2158,7 @@
       <tr>
        <td>67d0f8043c5f5e3a37c08597020cf043</td>
        <td>CVE-2023-21771</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft Windows Local Session Manager (LSM)权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75118">详情</a></td>
       </tr>
@@ -2046,7 +2166,7 @@
       <tr>
        <td>5238f0de1dfea80dca091dea15299070</td>
        <td>CVE-2023-21772</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft Windows Kernel权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75117">详情</a></td>
       </tr>
@@ -2054,129 +2174,9 @@
       <tr>
        <td>5f4ae61ff789453fa5caf45a7b673ddb</td>
        <td>CVE-2023-21759</td>
-       <td>2023-01-11 23:35:34 <img src="imgs/new.gif" /></td>
+       <td>2023-01-11 23:35:34</td>
        <td>Microsoft Windows Smart Card Resource Management Server安全功能绕过漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75116">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>720245b64dc48dbefe7cd04870e969ef</td>
-       <td>CVE-2022-47660</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box整数溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74997">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e7579eaa2a17d077031fcab4036e9c97</td>
-       <td>CVE-2022-47661</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74996">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e669793b28e72637c3305b47e6bc673</td>
-       <td>CVE-2022-47662</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74995">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4bf8b4b5941e70f3c45ecafa0b6f2ef4</td>
-       <td>CVE-2022-47656</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74994">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dab9bf8ece844ec110d2adb99bd5fc49</td>
-       <td>CVE-2022-47659</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74993">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>346677a6102f11f884c38c7e55c2caa0</td>
-       <td>CVE-2022-47658</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74992">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a2c2ab48b9208a798caa2888b361a26</td>
-       <td>CVE-2022-47657</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74991">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49ccf3369550155082aad0cb833cf40d</td>
-       <td>CVE-2022-47654</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74990">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>efe74ef47da91e01add432e8286166c0</td>
-       <td>CVE-2022-46489</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box内存泄漏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74989">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fceb1237011b8d83eb0bd39df7f5c21</td>
-       <td>CVE-2022-46490</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box内存泄漏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74988">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75140b99f2b3378a69158d605a0fae0c</td>
-       <td>CVE-2022-47087</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74987">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fabb9315aa45320b141e19b20f0636f9</td>
-       <td>CVE-2022-47089</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>GPAC MP4Box缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74986">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>732cfcd87caaba09f6ead1697259e9bb</td>
-       <td>CVE-2022-39072</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>ZTE MF286R和MF289D SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74985">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ad171d30888be7ad2aa699f25cb1860</td>
-       <td>CVE-2022-39073</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>ZTE MF286R命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74984">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b8641ebd54e21383c503e4fa85b0309</td>
-       <td>CVE-2022-46761</td>
-       <td>2023-01-10 23:35:21</td>
-       <td>Huawei EMUI存在未明漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/74983">详情</a></td>
       </tr>
 
      </tbody>
@@ -2195,6 +2195,54 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>cfe9ff096a6529684244dd9dc9449efc</td>
+       <td>CVE-2022-3929</td>
+       <td>2023-01-05 22:15:09 </td>
+       <td>Communication between the client and the server application of the affected products is partially done using CORBA (Common Object Request Broker Architecture) over TCP/IP. This protocol is not encrypted and allows tracing of internal messages. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3929">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>30386ad07277069ee932a107317f74cc</td>
+       <td>CVE-2022-3928</td>
+       <td>2023-01-05 22:15:09 </td>
+       <td>Hardcoded credential is found in affected products' message queue. An attacker that manages to exploit this vulnerability will be able to access data to the internal message queue. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3928">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3bd4c5fc96f9a39da86840c68c583f6</td>
+       <td>CVE-2022-3927</td>
+       <td>2023-01-05 22:15:09 </td>
+       <td>The affected products store both public and private key that are used to sign and protect Custom Parameter Set (CPS) file from modification. An attacker that manages to exploit this vulnerability will be able to change the CPS file, sign it so that it is trusted as the legitimate CPS file. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3927">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3af1a78937c47a4e285acc6a97cc472</td>
+       <td>CVE-2022-39118</td>
+       <td>2023-01-04 10:15:12 </td>
+       <td>In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09fcf9bd87ad760ade7f06eca9224c24</td>
+       <td>CVE-2022-39116</td>
+       <td>2023-01-04 10:15:12 </td>
+       <td>In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39116">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cc829ad43aba4ed544bc55edc9d1a0c8</td>
+       <td>CVE-2022-39104</td>
+       <td>2023-01-04 10:15:11 </td>
+       <td>In contacts service, there is a missing permission check. This could lead to local denial of service in Contacts service with no additional execution privileges needed.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39104">详情</a></td>
+      </tr>
+
       <tr>
        <td>46416f30ee9ddde6dbb4f826fc64315e</td>
        <td>CVE-2022-46305</td>
@@ -2233,6 +2281,22 @@
        <td>2023-01-02 22:15:16 </td>
        <td>The Login with Cognito WordPress plugin through 1.4.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4200">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8b3fe3d49656315bb28cac07cd222740</td>
+       <td>CVE-2022-3936</td>
+       <td>2023-01-02 22:15:15 </td>
+       <td>The Team Members WordPress plugin before 5.2.1 does not sanitize and escapes some of its settings, which could allow high-privilege users such as editors to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example, in a multisite setup).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3936">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ad321da4e294aaf587951a1d8260f1b</td>
+       <td>CVE-2022-3911</td>
+       <td>2023-01-02 22:15:15 </td>
+       <td>The iubenda | All-in-one Compliance for GDPR / CCPA Cookie Consent + more WordPress plugin before 3.3.3 does does not have authorisation and CSRF in an AJAX action, and does not ensure that the options to be updated belong to the plugin as long as they are arrays. As a result, any authenticated users, such as subscriber can grant themselves any privileges, such as edit_plugins etc</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3911">详情</a></td>
       </tr>
 
       <tr>
@@ -2369,70 +2433,6 @@
        <td>2022-12-30 12:15:09 </td>
        <td>A vulnerability was found in KBase Metrics. It has been classified as critical. This affects the function upload_user_data of the file source/daily_cron_jobs/methods_upload_user_stats.py. The manipulation leads to sql injection. The name of the patch is 959dfb6b05991e30b0fa972a1ecdcaae8e1dae6d. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-217059.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4860">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2dd77e3cf3d0d6ed03e65862b0c7ad7</td>
-       <td>CVE-2022-4859</td>
-       <td>2022-12-30 12:15:09 </td>
-       <td>A vulnerability, which was classified as problematic, has been found in Joget up to 7.0.33. This issue affects the function submitForm of the file wflow-core/src/main/java/org/joget/plugin/enterprise/UserProfileMenu.java of the component User Profile Menu. The manipulation of the argument firstName/lastName leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 7.0.34 is able to address this issue. The name of the patch is 9a77f508a2bf8cf661d588f37a4cc29ecaea4fc8. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217055.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4859">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bf35f39ec64f600f008b1b0e9acd9ae</td>
-       <td>CVE-2022-4858</td>
-       <td>2022-12-30 12:15:09 </td>
-       <td>Insertion of Sensitive Information into Log Files in M-Files Server before 22.10.11846.0 could allow to obtain sensitive tokens from logs, if specific configurations were set.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4858">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f23b962fc537fde472470bddfd4296be</td>
-       <td>CVE-2022-4851</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Improper Handling of Values in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4851">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ce2a5abc2886acddd1fde78c69702e8</td>
-       <td>CVE-2022-4850</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4850">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>83759e41973d24c40db10fcd9a9d93f0</td>
-       <td>CVE-2022-4849</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4849">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>86f70c4e4797514c625df074762b2688</td>
-       <td>CVE-2022-4848</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Improper Verification of Source of a Communication Channel in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4848">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a18c9cb4450e95ab622f675aa880088</td>
-       <td>CVE-2022-4847</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Incorrectly Specified Destination in a Communication Channel in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4847">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9ee82899767cfb93f27886a2a5f39ad</td>
-       <td>CVE-2022-4846</td>
-       <td>2022-12-29 18:15:10 </td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository usememos/memos prior to 0.9.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4846">详情</a></td>
       </tr>
 
      </tbody>
