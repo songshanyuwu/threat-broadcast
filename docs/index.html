@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-13 23:35:37 -->
+<!-- RELEASE TIME : 2023-01-14 05:35:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>720f5cf7b6a29e3f2d483601ba801a5a</td>
        <td>CVE-2023-21752</td>
-       <td>2023-01-12 08:45:47 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 08:45:47</td>
        <td>CVE-2023-21752：Windows Backup Service权限提升漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a03d9f175f1fe37ffaf00519e080833c">详情</a></td>
       </tr>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>463672634a3044498fbb8d89e48c1137</td>
+       <td>CVE-2022-41721</td>
+       <td>2023-01-13 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41721">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b2c19a3daa3ffe4c9c210c220222b14c</td>
        <td>CVE-2022-46093</td>
        <td>2023-01-13 22:15:00 <img src="imgs/new.gif" /></td>
@@ -446,7 +454,7 @@
       <tr>
        <td>fc54b45e4ab91bc12ce313cc7655a131</td>
        <td>CVE-2023-22488</td>
-       <td>2023-01-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:15:00</td>
        <td>Flarum is a forum software for building communities. Using the notifications feature, one can read restricted/private content and bypass access checks that would be in place for such content. The notification-sending component does not check that the subject of the notification can be seen by the receiver, and proceeds to send notifications through their different channels. The alerts do not leak data despite this as they are listed based on a visibility check, however, emails are still sent out. This means that, for extensions which restrict access to posts, any actor can bypass the restriction by subscribing to the discussion if the Subscriptions extension is enabled. The attack allows the leaking of some posts in the forum database, including posts awaiting approval, posts in tags the user has no access to if they could subscribe to a discussion before it becomes private, and posts restricted by third-party extensions. All Flarum versions prior to v1.6.3 are affected. The vulnerability has been fixed and published as flarum/core v1.6.3. All communities running Flarum should upgrade as soon as possible to v1.6.3. As a workaround, disable the Flarum Subscriptions extension or disable email notifications altogether. There are no other supported workarounds for this issue for Flarum versions below 1.6.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22488">详情</a></td>
       </tr>
@@ -454,7 +462,7 @@
       <tr>
        <td>fbe770866a675306473dd135fbb445fe</td>
        <td>CVE-2023-23457</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A Segmentation fault was found in UPX in PackLinuxElf64::invert_pt_dynamic() in p_lx_elf.cpp. An attacker with a crafted input file allows invalid memory address access that could lead to a denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23457">详情</a></td>
       </tr>
@@ -462,7 +470,7 @@
       <tr>
        <td>3dedda6c5577a4cea97468b8304f2b7d</td>
        <td>CVE-2023-23456</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A heap-based buffer overflow issue was discovered in UPX in PackTmt::pack() in p_tmt.cpp file. The flow allows an attacker to cause a denial of service (abort) via a crafted file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23456">详情</a></td>
       </tr>
@@ -470,7 +478,7 @@
       <tr>
        <td>a4835508e4e50a1f34d70a6029f59082</td>
        <td>CVE-2022-4842</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A flaw NULL Pointer Dereference in the Linux kernel NTFS3 driver function attr_punch_hole() was found. A local user could use this flaw to crash the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4842">详情</a></td>
       </tr>
@@ -478,7 +486,7 @@
       <tr>
        <td>291eefc477ce76fda7fc98a05e405c15</td>
        <td>CVE-2022-4743</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A potential memory leak issue was discovered in SDL2 in GLES_CreateTexture() function in SDL_render_gles.c. The vulnerability allows an attacker to cause a denial of service attack. The vulnerability affects SDL2 v2.0.4 and above. SDL-1.x are not affected.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4743">详情</a></td>
       </tr>
@@ -486,7 +494,7 @@
       <tr>
        <td>082ce1d280b01b560353e32c3726c93c</td>
        <td>CVE-2022-3977</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A use-after-free flaw was found in the Linux kernel MCTP (Management Component Transport Protocol) functionality. This issue occurs when a user simultaneously calls DROPTAG ioctl and socket close happens, which could allow a local user to crash the system or potentially escalate their privileges on the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3977">详情</a></td>
       </tr>
@@ -494,7 +502,7 @@
       <tr>
        <td>9cfecacd186c5810ed9eb1fc29f1e20a</td>
        <td>CVE-2022-3628</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>A buffer overflow flaw was found in the Linux kernel Broadcom Full MAC Wi-Fi driver. This issue occurs when a user connects to a malicious USB device. This can allow a local user to crash the system or escalate their privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3628">详情</a></td>
       </tr>
@@ -502,7 +510,7 @@
       <tr>
        <td>03e7d3042c29fdd4858e76211e76bf1b</td>
        <td>CVE-2022-3145</td>
-       <td>2023-01-12 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 19:15:00</td>
        <td>An open redirect vulnerability exists in Okta OIDC Middleware prior to version 5.0.0 allowing an attacker to redirect a user to an arbitrary URL.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3145">详情</a></td>
       </tr>
@@ -510,17 +518,9 @@
       <tr>
        <td>2eb958f0fc41ae542a699a93152b47ed</td>
        <td>CVE-2023-0254</td>
-       <td>2023-01-12 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 18:15:00</td>
        <td>The Simple Membership WP user Import plugin for WordPress is vulnerable to SQL Injection via the ‘orderby’ parameter in versions up to, and including, 1.7 due to insufficient escaping on the user supplied parameter. This makes it possible for authenticated attackers with administrative privileges to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0254">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2511fe55fac177218b7175b6f34312ee</td>
-       <td>CVE-2023-0247</td>
-       <td>2023-01-12 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Uncontrolled Search Path Element in GitHub repository bits-and-blooms/bloom prior to 3.3.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0247">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>2a71e7d9df5729bf675c1e8f3ad6ddad</td>
        <td>CVE-2022-32644</td>
-       <td>2023-01-12 20:36:53 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:53</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6c4c4446a98649b7a8421b6fa2964429">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>00b3384eba59dea66701ff0457f8e445</td>
        <td>CVE-2022-32645</td>
-       <td>2023-01-12 20:36:47 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:47</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fee890b5331c4ac69314fffd5c3ebabe">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>078a0817d9f4ed097f4d5eadb55475c0</td>
        <td>CVE-2021-30558</td>
-       <td>2023-01-12 20:36:41 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:41</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c7910e59bb5e41d7afd58089b103eeb6">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>46dac158873c48efd669bfe497f3619f</td>
        <td>CVE-2022-32652</td>
-       <td>2023-01-12 20:36:37 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:37</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f821a251f94e42c292cb0398226f92cf">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>74969ca0eebe58243c2d2a6675aca067</td>
        <td>CVE-2022-3842</td>
-       <td>2023-01-12 20:36:30 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:30</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=849f6c389d94495d800ef8d0b09eba45">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>5d3c2b8686530116ab3107a0d43536b1</td>
        <td>CVE-2022-2743</td>
-       <td>2023-01-12 20:36:24 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:24</td>
        <td>GOOGLE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=915e6aff5ea64c5eb4ba767ecedef145">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>75bbff2a2f301674e2ef7359baad106c</td>
        <td>CVE-2022-3460</td>
-       <td>2023-01-12 20:36:18 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:18</td>
        <td>OCTOPUS OCTOPUS_DEPLOY Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7d62ac4ce3f410e980c69f43f9f9ecc">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>1134c80eb2c86ade74cff19db34f861e</td>
        <td>CVE-2022-4025</td>
-       <td>2023-01-12 20:36:11 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:11</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a3eb84178b9f42ea838734349f92918c">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>9479408994cd9e90faa1884a582392e8</td>
        <td>CVE-2022-42475</td>
-       <td>2023-01-12 20:36:05 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:36:05</td>
        <td>FORTINET Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f92a6db696974d8fa2518b89c5af4dfe">详情</a></td>
       </tr>
@@ -1838,7 +1838,7 @@
       <tr>
        <td>059f16ae4c7fd7907981296691dac5fe</td>
        <td>CVE-2022-46306</td>
-       <td>2023-01-12 20:35:58 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 20:35:58</td>
        <td>CHANGINGTEC SERVISIGN Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dd8e0ca9c6e84f8dae70a5e106d044fd">详情</a></td>
       </tr>
@@ -1942,7 +1942,7 @@
       <tr>
        <td>27780f65734d037a95a20cb46d161862</td>
        <td>CVE-2023-0128</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Overview Mode内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75179">详情</a></td>
       </tr>
@@ -1950,7 +1950,7 @@
       <tr>
        <td>771651032697fbe544f80903f7a5611a</td>
        <td>CVE-2023-0129</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Network Service堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75178">详情</a></td>
       </tr>
@@ -1958,7 +1958,7 @@
       <tr>
        <td>b2d60308154f9ffc0a6a686815b36ee2</td>
        <td>CVE-2023-0130</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Fullscreen API实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75177">详情</a></td>
       </tr>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>977bf7ac1ff25d5c8505451f904abc0c</td>
        <td>CVE-2023-0131</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome iframe Sandbox实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75176">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>26a5492eb5734f0eef07b189c11a79ca</td>
        <td>CVE-2023-0132</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Permission Prompts实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75175">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>ab4ae278303768ac993d489ff77ca745</td>
        <td>CVE-2023-0133</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Permission Prompts实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75174">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>eb74b0e2e26ca0b1989afce3bad50210</td>
        <td>CVE-2023-0134</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Cart内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75173">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>697cf182cb4be7ba27b1349a0f6a1471</td>
        <td>CVE-2023-0135</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Cart内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75172">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>473796f85a5736471a185edbc4ffc532</td>
        <td>CVE-2023-0136</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Fullscreen API实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75171">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>bec720024d5d618ac9e8e1bb945c9066</td>
        <td>CVE-2023-0138</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome libphonenumber堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75170">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>71ee08bc6258ce8b44b88f389803036a</td>
        <td>CVE-2023-0139</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Downloads输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75169">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>dfff5b69c6b9848d9a1cc5125a6209eb</td>
        <td>CVE-2023-0140</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome File System API实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75168">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>46cb68cf0b59c851d6edbf4438df9653</td>
        <td>CVE-2023-0141</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome CORS策略执行不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75167">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>03a6a73a0041e63c3eb5ac17b7badda9</td>
        <td>CVE-2023-0137</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>Google Chrome Platform Apps堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75166">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>e06640cce5d9fc097548c656a9a16142</td>
        <td>CVE-2022-3462</td>
-       <td>2023-01-12 05:35:13 <img src="imgs/new.gif" /></td>
+       <td>2023-01-12 05:35:13</td>
        <td>WordPress Highlight Focus Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75165">详情</a></td>
       </tr>
