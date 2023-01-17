@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-17 05:35:28 -->
+<!-- RELEASE TIME : 2023-01-17 23:35:30 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>4208fa511ff172ebf734affdd050796e</td>
+       <td>CVE-2023-22602</td>
+       <td>2023-01-17 09:31:42 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-22602：Apache Shiro身份认证绕过漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=e8afbbf9124804e0c81b82126b0c5c00">详情</a></td>
+      </tr>
+
       <tr>
        <td>62223983c51518a0ca7e9cbe9ea9b834</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=acc9fb8d90b76d3ccf3b8bb9d0245f1a">详情</a></td>
       </tr>
 
-      <tr>
-       <td>f98775f408249c11c8e1289d91f1d4bc</td>
-       <td></td>
-       <td>2022-11-09 07:56:59</td>
-       <td>2022-11 补丁日: 微软多个漏洞安全更新通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=240ddbe2af5fcfba7c0b35b5f1654193">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>13b23651651c6629b7cf100dc2d6a7ba</td>
+       <td>CVE-2023-23749</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The 'LDAP Integration with Active Directory and OpenLDAP - NTLM & Kerberos Login' extension is vulnerable to LDAP Injection since is not properly sanitizing the 'username' POST parameter. An attacker can manipulate this paramter to dump arbitrary contents form the LDAP Database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23749">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f89d71d79648bbacdb0a1a8b7d4a6ff8</td>
+       <td>CVE-2023-22624</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine Exchange Reporter Plus before 5708 allows attackers to conduct XXE attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22624">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5023fa6a43710f37ebbe81e1da051ed</td>
+       <td>CVE-2022-4891</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in Sisimai up to 4.25.14p11 and classified as problematic. This vulnerability affects the function to_plain of the file lib/sisimai/string.rb. The manipulation leads to inefficient regular expression complexity. The exploit has been disclosed to the public and may be used. Upgrading to version 4.25.14p12 is able to address this issue. The name of the patch is 51fe2e6521c9c02b421b383943dc9e4bbbe65d4e. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-218452.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4891">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8bbfe85b78a79b626bd827549bbaa1d9</td>
+       <td>CVE-2022-37436</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Prior to Apache HTTP Server 2.4.55, a malicious backend can cause the response headers to be truncated early, resulting in some headers being incorporated into the response body. If the later headers have any security purpose, they will not be interpreted by the client.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37436">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff4ffdcdc45d6bcf80c9b622357701ab</td>
+       <td>CVE-2022-36760</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Inconsistent Interpretation of HTTP Requests ('HTTP Request Smuggling') vulnerability in mod_proxy_ajp of Apache HTTP Server allows an attacker to smuggle requests to the AJP server it forwards requests to. This issue affects Apache HTTP Server Apache HTTP Server 2.4 version 2.4.54 and prior versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36760">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fdf5cd62caa069ca0ec1784d1930a421</td>
+       <td>CVE-2006-20001</td>
+       <td>2023-01-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A carefully crafted If: request header can cause a memory read, or write of a single zero byte, in a pool (heap) memory location beyond the header value sent. This could cause the process to crash. This issue affects Apache HTTP Server 2.4.54 and earlier.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2006-20001">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59682be70514c15197c250e0c9342135</td>
+       <td>CVE-2023-22875</td>
+       <td>2023-01-17 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>IBM QRadar SIEM 7.4 and 7.5copies certificate key files used for SSL/TLS in the QRadar web user interface to managed hosts in the deployment that do not require that key. IBM X-Force ID: 244356.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22875">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5c892bf2afa42a8d0618ed782d6779be</td>
+       <td>CVE-2022-47853</td>
+       <td>2023-01-17 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOlink A7100RU V7.4cu.2313_B20191024 is vulnerable to Command Injection Vulnerability in the httpd service. An attacker can obtain a stable root shell through a specially constructed payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47853">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec03b8de8c63fe8491c9cb8992443123</td>
+       <td>CVE-2022-40704</td>
+       <td>2023-01-17 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A XSS vulnerability was found in phoromatic_r_add_test_details.php in phoronix-test-suite.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40704">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07b5fe1e03644a7f1a9ac9f040488bcd</td>
+       <td>CVE-2022-3650</td>
+       <td>2023-01-17 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A privilege escalation flaw was found in Ceph. Ceph-crash.service allows a local attacker to escalate privileges to root in the form of a crash dump, and dump privileged information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3650">详情</a></td>
+      </tr>
+
       <tr>
        <td>81b4b7f414becf16ae7490304d902c9d</td>
        <td>CVE-2022-3087</td>
@@ -441,86 +521,6 @@
        <td>2023-01-15 22:15:00</td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.10.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0306">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99518bb44242dc99dfe2c2afb21b70f4</td>
-       <td>CVE-2018-25075</td>
-       <td>2023-01-15 20:15:00</td>
-       <td>A vulnerability classified as critical has been found in karsany OBridge up to 1.3. Affected is the function getAllStandaloneProcedureAndFunction of the file obridge-main/src/main/java/org/obridge/dao/ProcedureDao.java. The manipulation leads to sql injection. Upgrading to version 1.4 is able to address this issue. The name of the patch is 52eca4ad05f3c292aed3178b2f58977686ffa376. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-218376.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-25075">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be98b67fecce6e302d8e15e5e89ac9c6</td>
-       <td>CVE-2016-15019</td>
-       <td>2023-01-15 19:15:00</td>
-       <td>A vulnerability was found in tombh jekbox. It has been rated as problematic. This issue affects some unknown processing of the file lib/server.rb. The manipulation leads to exposure of information through directory listing. The attack may be initiated remotely. The name of the patch is 64eb2677671018fc08b96718b81e3dbc83693190. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-218375.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15019">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67a6688d9e7e2d42d4446aac568dc40b</td>
-       <td>CVE-2016-15018</td>
-       <td>2023-01-15 19:15:00</td>
-       <td>A vulnerability was found in krail-jpa up to 0.9.1. It has been classified as critical. This affects an unknown part. The manipulation leads to sql injection. Upgrading to version 0.9.2 is able to address this issue. The name of the patch is c1e848665492e21ef6cc9be443205e36b9a1f6be. It is recommended to upgrade the affected component. The identifier VDB-218373 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15018">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>622d69cfeaf852e19e974689ea58b5a6</td>
-       <td>CVE-2015-10052</td>
-       <td>2023-01-15 19:15:00</td>
-       <td>** UNSUPPPORTED WHEN ASSIGNED **** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as problematic, was found in calesanz gibb-modul-151. This affects the function bearbeiten/login. The manipulation leads to open redirect. It is possible to initiate the attack remotely. The name of the patch is 88a517dc19443081210c804b655e72770727540d. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-218379. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10052">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>924f470c5e1f9c8f2b074b35d9070e02</td>
-       <td>CVE-2015-10051</td>
-       <td>2023-01-15 18:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in bony2023 Discussion-Board. Affected by this issue is the function display_all_replies of the file functions/main.php. The manipulation of the argument str leads to sql injection. The name of the patch is 26439bc4c63632d63ba89ebc0f149b25a9010361. It is recommended to apply a patch to fix this issue. VDB-218378 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10051">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cf83aea4729de85f7130e44270c695aa</td>
-       <td>CVE-2015-10050</td>
-       <td>2023-01-15 18:15:00</td>
-       <td>A vulnerability was found in brandonfire miRNA_Database_by_PHP_MySql. It has been declared as critical. This vulnerability affects the function __construct/select_single_rna/count_rna of the file inc/model.php. The manipulation leads to sql injection. The name of the patch is 307c5d510841e6142ddcbbdbb93d0e8a0dc3fd6a. It is recommended to apply a patch to fix this issue. VDB-218374 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10050">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c70feeb98ef582f553a2eebb39077467</td>
-       <td>CVE-2015-10049</td>
-       <td>2023-01-15 18:15:00</td>
-       <td>A vulnerability was found in Overdrive Eletrônica course-builder up to 1.7.x and classified as problematic. Affected by this issue is some unknown functionality of the file coursebuilder/modules/oeditor/oeditor.html. The manipulation leads to cross site scripting. The attack may be launched remotely. Upgrading to version 1.8.0 is able to address this issue. The name of the patch is e39645fd714adb7e549908780235911ae282b21b. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-218372.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d4b7ff934d9597078dc8a0bf30939da</td>
-       <td>CVE-2023-0305</td>
-       <td>2023-01-15 12:15:00</td>
-       <td>A vulnerability classified as critical was found in SourceCodester Online Food Ordering System. This vulnerability affects unknown code of the file admin_class.php of the component Login Module. The manipulation of the argument username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-218386 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0305">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b14047e9639acc860f21650ff0ffde8</td>
-       <td>CVE-2023-0304</td>
-       <td>2023-01-15 12:15:00</td>
-       <td>A vulnerability classified as critical has been found in SourceCodester Online Food Ordering System. This affects an unknown part of the file admin_class.php of the component Signup Module. The manipulation of the argument email leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-218385 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0304">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98347cdf7e73962ac7caa879ab010254</td>
-       <td>CVE-2023-0303</td>
-       <td>2023-01-15 12:15:00</td>
-       <td>A vulnerability was found in SourceCodester Online Food Ordering System. It has been rated as critical. Affected by this issue is some unknown functionality of the file view_prod.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-218384.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0303">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>826037017948027d4ff1ce3e53d1e50e</td>
+       <td>CVE-2022-3417</td>
+       <td>2023-01-17 20:38:21 <img src="imgs/new.gif" /></td>
+       <td>BRAVENEWCODE WPTOUCH Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=18da7a06adb2489fa584d2bc16950d57">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4fd904aa42a099c942ed3b9e93a1aa03</td>
+       <td>CVE-2023-22909</td>
+       <td>2023-01-17 20:38:06 <img src="imgs/new.gif" /></td>
+       <td>MEDIAWIKI MEDIAWIKI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8c4ea2c3f5114ccdaede14580b6321ac">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea5d001533db75c0b4c5ad4a1d5acefb</td>
+       <td>CVE-2022-25715</td>
+       <td>2023-01-17 20:37:55 <img src="imgs/new.gif" /></td>
+       <td>QUALCOMM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8ca6ba1bf5de4b3ba6335414fd7360f7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fdf86280ac34136447b4cfb9374c786f</td>
+       <td>CVE-2022-25721</td>
+       <td>2023-01-17 20:37:38 <img src="imgs/new.gif" /></td>
+       <td>QUALCOMM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=48b42d5530d9481eb7615ae2df600cd4">详情</a></td>
+      </tr>
+
+      <tr>
        <td>86f3f8cf412e1a92fb38a6d469ca0189</td>
        <td>CVE-2022-38773</td>
        <td>2023-01-16 20:48:23 <img src="imgs/new.gif" /></td>
@@ -1889,38 +1921,6 @@
        <td>2023-01-14 20:43:40</td>
        <td>ARUBANETWORKS CLEARPASS_POLICY_MANAGER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e50080060f4c4563b96c1ec8f0a1e729">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>633ae85fdd264f4a8cc9c59b8a1f9098</td>
-       <td>CVE-2022-43538</td>
-       <td>2023-01-14 20:43:34</td>
-       <td>ARUBANETWORKS CLEARPASS_POLICY_MANAGER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=93e462f7214d4b3094c9073220be2ef7">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4c22c85f03fddc85e180a3fa7fa606d</td>
-       <td>CVE-2022-43533</td>
-       <td>2023-01-14 20:43:28</td>
-       <td>ARUBANETWORKS CLEARPASS_POLICY_MANAGER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b25fd479271f4f1588a367c0eabf15b2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1d9928a6bf313b6c39ddde672b66ba7</td>
-       <td>CVE-2022-45857</td>
-       <td>2023-01-14 20:43:22</td>
-       <td>FORTINET FORTIMANAGER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b86830dc27aa48698ad71c3e5f01a72d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e57545dc8275ebb1e4ae788c67b3251d</td>
-       <td>CVE-2022-43536</td>
-       <td>2023-01-14 20:43:16</td>
-       <td>ARUBANETWORKS CLEARPASS_POLICY_MANAGER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8ba382bfda6144d888690003b9b8571a">详情</a></td>
       </tr>
 
      </tbody>
@@ -2204,11 +2204,67 @@
       </tr>
 
       <tr>
+       <td>caac031d096564cf9bb7c86dce208703</td>
+       <td>CVE-2023-22479</td>
+       <td>2023-01-10 21:15:12 </td>
+       <td>KubePi is a modern Kubernetes panel. A session fixation attack allows an attacker to hijack a legitimate user session, versions 1.6.3 and below are susceptible. A patch will be released in version 1.6.4.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22479">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f47399fe20397d64a740c3d0fc77cfd</td>
+       <td>CVE-2023-22911</td>
+       <td>2023-01-10 08:15:10 </td>
+       <td>An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. E-Widgets does widget replacement in HTML attributes, which can lead to XSS, because widget authors often do not expect that their widget is executed in an HTML attribute context.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95c2cfb4e333eaa4458d859138b22ff7</td>
+       <td>CVE-2023-22909</td>
+       <td>2023-01-10 08:15:10 </td>
+       <td>An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. SpecialMobileHistory allows remote attackers to cause a denial of service because database queries are slow.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22909">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b14acc9c01fed6691483186abba8a015</td>
+       <td>CVE-2023-22903</td>
+       <td>2023-01-10 06:15:09 </td>
+       <td>api/views/user.py in LibrePhotos before e19e539 has incorrect access control.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22903">详情</a></td>
+      </tr>
+
+      <tr>
        <td>419027b43322c405b0a31f9c8751b251</td>
        <td>CVE-2023-22320</td>
        <td>2023-01-10 04:15:10 </td>
        <td>OpenAM Web Policy Agent (OpenAM Consortium Edition) provided by OpenAM Consortium parses URLs improperly, leading to a path traversal vulnerability(CWE-22). Furthermore, a crafted URL may be evaluated incorrectly.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22320">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7cea008eb652019a4bac96d33edf923</td>
+       <td>CVE-2023-22899</td>
+       <td>2023-01-10 02:15:09 </td>
+       <td>Zip4j through 2.11.2, as used in Threema and other products, does not always check the MAC when decrypting a ZIP archive.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22899">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>12571fc10d0ccc46a822af45f6517d48</td>
+       <td>CVE-2023-22898</td>
+       <td>2023-01-10 02:15:09 </td>
+       <td>workers/extractor.py in Pandora (aka pandora-analysis/pandora) 1.3.0 allows a denial of service when an attacker submits a deeply nested ZIP archive (aka ZIP bomb).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22898">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79ab0886ace6f4c85aaf1612b3cbda49</td>
+       <td>CVE-2023-22895</td>
+       <td>2023-01-10 01:15:10 </td>
+       <td>The bzip2 crate before 0.4.4 for Rust allow attackers to cause a denial of service via a large file that triggers an integer overflow in mem.rs. NOTE: this is unrelated to the https://crates.io/crates/bzip2-rs product.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22895">详情</a></td>
       </tr>
 
       <tr>
@@ -2249,6 +2305,14 @@
        <td>2023-01-06 15:15:09 </td>
        <td>Canarytokens is an open source tool which helps track activity and actions on your network. A Cross-Site Scripting vulnerability was identified in the history page of triggered Canarytokens prior to sha-fb61290. An attacker who discovers an HTTP-based Canarytoken (a URL) can use this to execute Javascript in the Canarytoken's trigger history page (domain: canarytokens.org) when the history page is later visited by the Canarytoken's creator. This vulnerability could be used to disable or delete the affected Canarytoken, or view its activation history. It might also be used as a stepping stone towards revealing more information about the Canarytoken's creator to the attacker. For example, an attacker could recover the email address tied to the Canarytoken, or place Javascript on the history page that redirect the creator towards an attacker-controlled Canarytoken to show the creator's network location. This vulnerability is similar to CVE-2022-31113, but affected parameters reported differently from the Canarytoken trigger request. An attacker could only act on the discovered Canarytoken. This issue did not expose other Canarytokens or other Canarytoken creators. Canarytokens Docker images sha-fb61290 and later contain a patch for this issue.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22475">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c935f38a099e45157b92d2279c0327e</td>
+       <td>CVE-2023-22671</td>
+       <td>2023-01-06 07:15:08 </td>
+       <td>Ghidra/RuntimeScripts/Linux/support/launch.sh in NSA Ghidra through 10.2.2 passes user-provided input into eval, leading to command injection when calling analyzeHeadless with untrusted input.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22671">详情</a></td>
       </tr>
 
       <tr>
@@ -2369,70 +2433,6 @@
        <td>2023-01-05 07:15:11 </td>
        <td>Multiple vulnerabilities within the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-43527">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f5b03a31f74f60ff71f6589a5d84a7e</td>
-       <td>CVE-2022-43526</td>
-       <td>2023-01-05 07:15:11 </td>
-       <td>Multiple vulnerabilities within the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow a remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface. A successful exploit could allow an attacker to execute arbitrary script code in a victim's browser in the context of the affected interface in Aruba EdgeConnect Enterprise Orchestration Software version(s): Aruba EdgeConnect Enterprise Orchestrator (on-premises), Aruba EdgeConnect Enterprise Orchestrator-as-a-Service, Aruba EdgeConnect Enterprise Orchestrator-SP and Aruba EdgeConnect Enterprise Orchestrator Global Enterprise Tenant Orchestrators - Orchestrator 9.2.1.40179 and below, - Orchestrator 9.1.4.40436 and below, - Orchestrator 9.0.7.40110 and below, - Orchestrator 8.10.23.40015 and below, - Any older branches of Orchestrator not specifically mentioned.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-43526">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44c7e56f2ae1b6e65fce2724d393069c</td>
-       <td>CVE-2022-25926</td>
-       <td>2023-01-04 18:15:09 </td>
-       <td>Versions of the package window-control before 1.4.5 are vulnerable to Command Injection via the sendKeys function, due to improper input sanitization.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25926">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8fd97f9a7a2a3677d35125a0f587dd0d</td>
-       <td>CVE-2023-22464</td>
-       <td>2023-01-04 16:15:09 </td>
-       <td>ViewVC is a browser interface for CVS and Subversion version control repositories. Versions prior to 1.2.3 and 1.1.30 are vulnerable to cross-site scripting. The impact of this vulnerability is mitigated by the need for an attacker to have commit privileges to a Subversion repository exposed by an otherwise trusted ViewVC instance. The attack vector involves files with unsafe names (names that, when embedded into an HTML stream, would cause the browser to run unwanted code), which themselves can be challenging to create. Users should update to at least version 1.2.3 (if they are using a 1.2.x version of ViewVC) or 1.1.30 (if they are using a 1.1.x version). ViewVC 1.0.x is no longer supported, so users of that release lineage should implement one of the following workarounds. Users can edit their ViewVC EZT view templates to manually HTML-escape changed path &quot;copyfrom paths&quot; during rendering. Locate in your template set's `revision.ezt` file references to those changed paths, and wrap them with `[format &quot;html&quot;]` and `[end]`. For most users, that means that references to `[changes.copy_path]` will become `[format &quot;html&quot;][changes.copy_path][end]`. (This workaround should be reverted after upgrading to a patched version of ViewVC, else &quot;copyfrom path&quot; names will be doubly escaped.)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22464">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3af1a78937c47a4e285acc6a97cc472</td>
-       <td>CVE-2022-39118</td>
-       <td>2023-01-04 10:15:12 </td>
-       <td>In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39118">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09fcf9bd87ad760ade7f06eca9224c24</td>
-       <td>CVE-2022-39116</td>
-       <td>2023-01-04 10:15:12 </td>
-       <td>In sprd_sysdump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service in kernel.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39116">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc829ad43aba4ed544bc55edc9d1a0c8</td>
-       <td>CVE-2022-39104</td>
-       <td>2023-01-04 10:15:11 </td>
-       <td>In contacts service, there is a missing permission check. This could lead to local denial of service in Contacts service with no additional execution privileges needed.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39104">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>05bc4eceed9a81469d8843e99ef28a35</td>
-       <td>CVE-2022-2967</td>
-       <td>2023-01-03 22:15:11 </td>
-       <td>Prosys OPC UA Simulation Server version prior to v5.3.0-64 and UA Modbus Server versions 1.4.18-5 and prior do not sufficiently protect credentials, which could allow an attacker to obtain user credentials and gain access to system data.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-2967">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26399cb5ffb54bbf669fc3bcf31e431f</td>
-       <td>CVE-2022-32635</td>
-       <td>2023-01-03 21:15:11 </td>
-       <td>In gps, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573237; Issue ID: ALPS07573237.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32635">详情</a></td>
       </tr>
 
      </tbody>
