@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-19 23:35:11 -->
+<!-- RELEASE TIME : 2023-01-20 05:35:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d9d61ab9a7bcf871a6b5c4fd92321b6d</td>
+       <td>CVE-2023-22745</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>tpm2-tss is an open source software implementation of the Trusted Computing Group (TCG) Trusted Platform Module (TPM) 2 Software Stack (TSS2). In affected versions `Tss2_RC_SetHandler` and `Tss2_RC_Decode` both index into `layer_handler` with an 8 bit layer number, but the array only has `TPM2_ERROR_TSS2_RC_LAYER_COUNT` entries, so trying to add a handler for higher-numbered layers or decode a response code with such a layer number reads/writes past the end of the buffer. This Buffer overrun, could result in arbitrary code execution. An example attack would be a MiTM bus attack that returns 0xFFFFFFFF for the RC. Given the common use case of TPM modules an attacker must have local access to the target machine with local system privileges which allows access to the TPM system. Usually TPM access requires administrative privilege.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd261db885cf92c38821ed5335abe43d</td>
+       <td>CVE-2022-46476</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>D-Link DIR-859 A1 1.05 was discovered to contain a command injection vulnerability via the service= variable in the soapcgi_main function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46476">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f68fc8b16450228d73b75afc8b4d1808</td>
+       <td>CVE-2022-31901</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer overflow in function Notepad_plus::addHotSpot in Notepad++ v8.4.3 and earlier allows attackers to crash the application via two crafted files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31901">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c50d718380c39982b6bc02ef49eafe6e</td>
+       <td>CVE-2023-22741</td>
+       <td>2023-01-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Sofia-SIP is an open-source SIP User-Agent library, compliant with the IETF RFC3261 specification. In affected versions Sofia-SIP **lacks both message length and attributes length checks** when it handles STUN packets, leading to controllable heap-over-flow. For example, in stun_parse_attribute(), after we get the attribute's type and length value, the length will be used directly to copy from the heap, regardless of the message's left size. Since network users control the overflowed length, and the data is written to heap chunks later, attackers may achieve remote code execution by heap grooming or other exploitation methods. The bug was introduced 16 years ago in sofia-sip 1.12.4 (plus some patches through 12/21/2006) to in tree libs with git-svn-id: http://svn.freeswitch.org/svn/freeswitch/trunk@3774 d0543943-73ff-0310-b7d9-9358b9ac24b2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22741">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1ac676bdebdc9c4a69983e163dce748e</td>
        <td>CVE-2023-0126</td>
        <td>2023-01-19 20:15:00 <img src="imgs/new.gif" /></td>
@@ -374,7 +406,7 @@
       <tr>
        <td>f2762e9b1967096af1ae384b74017f96</td>
        <td>CVE-2023-0290</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>Rapid7 Velociraptor did not properly sanitize the client ID parameter to the CreateCollection API, allowing a directory traversal in where the collection task could be written. It was possible to provide a client id of "../clients/server" to schedule the collection for the server (as a server artifact), but only require privileges to schedule collections on the client. Normally, to schedule an artifact on the server, the COLLECT_SERVER permission is required. This permission is normally only granted to "administrator" role. Due to this issue, it is sufficient to have the COLLECT_CLIENT privilege, which is normally granted to the "investigator" role. To exploit this vulnerability, the attacker must already have a Velociraptor user account at least "investigator" level, and be able to authenticate to the GUI and issue an API call to the backend. Typically, most users deploy Velociraptor with limited access to a trusted group, and most users will already be administrators within the GUI. This issue affects Velociraptor versions before 0.6.7-5. Version 0.6.7-5, released January 16, 2023, fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0290">详情</a></td>
       </tr>
@@ -382,7 +414,7 @@
       <tr>
        <td>86a195dba89007a10e3fd13e83d0c230</td>
        <td>CVE-2023-0164</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>OrangeScrum version 2.0.11 allows an authenticated external attacker to execute arbitrary commands on the server. This is possible because the application injects an attacker-controlled parameter into a system function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0164">详情</a></td>
       </tr>
@@ -390,7 +422,7 @@
       <tr>
        <td>a7f02bde8abb1ecacfa0a60404cc2aec</td>
        <td>CVE-2022-45927</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Java application server can be used to bypass the authentication of the QDS endpoints of the Content Server. These endpoints can be used to create objects and execute arbitrary code.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45927">详情</a></td>
       </tr>
@@ -398,7 +430,7 @@
       <tr>
        <td>4ab762eb9fd48f30590e76dc6e77a9e7</td>
        <td>CVE-2022-45923</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Common Gateway Interface (CGI) program cs.exe allows an attacker to increase/decrease an arbitrary memory address by 1 and trigger a call to a method of a vftable with a vftable pointer value chosen by the attacker.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45923">详情</a></td>
       </tr>
@@ -406,7 +438,7 @@
       <tr>
        <td>ece289cd208e3f14d0db8117569cb2da</td>
        <td>CVE-2022-4235</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>RushBet version 2022.23.1-b490616d allows a remote attacker to steal customer accounts via use of a malicious application. This is possible because the application exposes an activity and does not properly validate the data it receives.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4235">详情</a></td>
       </tr>
@@ -414,7 +446,7 @@
       <tr>
        <td>a020a0eb0a0f733891ebb4f83bfe41fb</td>
        <td>CVE-2023-0242</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>Rapid7 Velociraptor allows users to be created with different privileges on the server. Administrators are generally allowed to run any command on the server including writing arbitrary files. However, lower privilege users are generally forbidden from writing or modifying files on the server. The VQL copy() function applies permission checks for reading files but does not check for permission to write files. This allows a low privilege user (usually, users with the Velociraptor "investigator" role) to overwrite files on the server, including Velociraptor configuration files. To exploit this vulnerability, the attacker must already have a Velociraptor user account at a low privilege level (at least "analyst") and be able to log into the GUI and create a notebook where they can run the VQL query invoking the copy() VQL function. Typically, most users deploy Velociraptor with limited access to a trusted group (most users will be administrators within the GUI). This vulnerability is associated with program files https://github.Com/Velocidex/velociraptor/blob/master/vql/filesystem/copy.go https://github.Com/Velocidex/velociraptor/blob/master/vql/filesystem/copy.go and program routines copy(). This issue affects Velociraptor versions before 0.6.7-5. Version 0.6.7-5, released January 16, 2023, fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0242">详情</a></td>
       </tr>
@@ -422,7 +454,7 @@
       <tr>
        <td>7930df2b00c4d77a86095bb656f99a58</td>
        <td>CVE-2022-45928</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>A remote OScript execution issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). Multiple endpoints allow the user to pass the parameter htmlFile, which is included in the HTML output rendering pipeline of a request. Because the Content Server evaluates and executes Oscript code in HTML files, it is possible for an attacker to execute Oscript code. The Oscript scripting language allows the attacker (for example) to manipulate files on the filesystem, create new network connections, or execute OS commands.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45928">详情</a></td>
       </tr>
@@ -430,7 +462,7 @@
       <tr>
        <td>175e6d7748eb404b288a4b84c514ed3c</td>
        <td>CVE-2022-45926</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The endpoint notify.localizeEmailTemplate allows a low-privilege user to evaluate webreports.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45926">详情</a></td>
       </tr>
@@ -438,7 +470,7 @@
       <tr>
        <td>e336d03ab76e5f536155141407786442</td>
        <td>CVE-2022-45925</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The action xmlexport accepts the parameter requestContext. If this parameter is present, the response includes most of the HTTP headers sent to the server and some of the CGI variables like remote_adde and server_name, which is an information disclosure.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45925">详情</a></td>
       </tr>
@@ -446,7 +478,7 @@
       <tr>
        <td>4863e8c3573a68a935f6d0895c7a6777</td>
        <td>CVE-2023-22863</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>IBM Robotic Process Automation 20.12.0 through 21.0.2 defaults to HTTP in some RPA commands when the prefix is not explicitly specified in the URL. This could allow an attacker to obtain sensitive information using man in the middle techniques. IBM X-Force ID: 244109.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22863">详情</a></td>
       </tr>
@@ -454,7 +486,7 @@
       <tr>
        <td>a3d0bc4a46c8dc883ff46c0dc0ff7d60</td>
        <td>CVE-2023-22594</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>IBM Robotic Process Automation for Cloud Pak 20.12.0 through 21.0.4 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 244075.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22594">详情</a></td>
       </tr>
@@ -462,7 +494,7 @@
       <tr>
        <td>7a5c8f3e8aee10b265e3e50287c4ba20</td>
        <td>CVE-2023-22592</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>IBM Robotic Process Automation for Cloud Pak 21.0.1 through 21.0.4 could allow a local user to perform unauthorized actions due to insufficient permission settings. IBM X-Force ID: 244073.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22592">详情</a></td>
       </tr>
@@ -470,7 +502,7 @@
       <tr>
        <td>cf973a0a86341ceca8509b492c1e263e</td>
        <td>CVE-2023-21614</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21614">详情</a></td>
       </tr>
@@ -478,7 +510,7 @@
       <tr>
        <td>2fe58e9d52cf4b8953defec073855a84</td>
        <td>CVE-2023-21613</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21613">详情</a></td>
       </tr>
@@ -486,41 +518,9 @@
       <tr>
        <td>e23b4d694899897868b1423f31adea80</td>
        <td>CVE-2023-21612</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 19:15:00</td>
        <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by a Creation of Temporary File in Directory with Incorrect Permissions vulnerability that could result in privilege escalation in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21612">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f4aedf1bc8273167d343b0f73fb779e</td>
-       <td>CVE-2023-21611</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by a Creation of Temporary File in Directory with Incorrect Permissions vulnerability that could result in privilege escalation in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>537fb4cfac8ea28fb3ebedd117640066</td>
-       <td>CVE-2023-21610</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21610">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed648016a1f935fb61a651ca42a7acf0</td>
-       <td>CVE-2023-21609</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21609">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f224e1ac0d85e8e9c3e8ab3ba56f7afd</td>
-       <td>CVE-2023-21608</td>
-       <td>2023-01-18 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21608">详情</a></td>
       </tr>
 
      </tbody>
@@ -1694,7 +1694,7 @@
       <tr>
        <td>83e0bba345739ccbe9632bc7161f29c3</td>
        <td>CVE-2023-0132</td>
-       <td>2023-01-18 20:48:15 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:48:15</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=94e0fe3df6d04febaa02d2366f364258">详情</a></td>
       </tr>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>ea34fd69ca9d3f3f2e7c88b04aa3f14a</td>
        <td>CVE-2022-43514</td>
-       <td>2023-01-18 20:47:52 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:52</td>
        <td>SIEMENS AUTOMATION_LICENSE_MANAGER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=efb67e476eef427ab7aeefa1216d8b78">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>1ad459ad77bf2734a791660ca0e55745</td>
        <td>CVE-2023-0140</td>
-       <td>2023-01-18 20:47:45 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:45</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5d41ef8e0d3f4e4e96502fbe1580e2d7">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>62f4e2902adf4c45f8d69216db81bb05</td>
        <td>CVE-2022-4338</td>
-       <td>2023-01-18 20:47:32 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:32</td>
        <td>OPENVSWITCH OPENVSWITCH Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2d0f1a97facf401497a63053c3bf0023">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>a07c845d540178a402a1f645a46fa143</td>
        <td>CVE-2023-0135</td>
-       <td>2023-01-18 20:47:25 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:25</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=63e1da75c0c94ff48b755ea0c727e906">详情</a></td>
       </tr>
