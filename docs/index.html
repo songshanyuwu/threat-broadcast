@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-20 23:35:30 -->
+<!-- RELEASE TIME : 2023-01-21 05:34:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>86918d8f318d68a2079e320a75c0220b</td>
        <td></td>
-       <td>2023-01-19 08:24:18 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 08:24:18</td>
        <td>2023-01 补丁日: Oracle多个产品漏洞安全风险通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=001cb5ec0d56c817ed6202004b6ba384">详情</a></td>
       </tr>
@@ -38,7 +38,7 @@
       <tr>
        <td>29b3089137ef79c951aa6f60cb9b7122</td>
        <td>CVE-2023-21839</td>
-       <td>2023-01-19 08:09:30 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 08:09:30</td>
        <td>CVE-2023-21839：Oracle WebLogic Server 远程代码执行漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=8a82885405a8b29597ace7f2f37ec64c">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e758f95ba1fc7576257aec9de87557b4</td>
+       <td>CVE-2023-22742</td>
+       <td>2023-01-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>libgit2 is a cross-platform, linkable library implementation of Git. When using an SSH remote with the optional libssh2 backend, libgit2 does not perform certificate checking by default. Prior versions of libgit2 require the caller to set the `certificate_check` field of libgit2's `git_remote_callbacks` structure - if a certificate check callback is not set, libgit2 does not perform any certificate checking. This means that by default - without configuring a certificate check callback, clients will not perform validation on the server SSH keys and may be subject to a man-in-the-middle attack. Users are encouraged to upgrade to v1.4.5 or v1.5.1. Users unable to upgrade should ensure that all relevant certificates are manually checked.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22742">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a997cd856bcbe869362e34600d9f6175</td>
+       <td>CVE-2023-24028</td>
+       <td>2023-01-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In MISP 2.4.167, app/Controller/Component/ACLComponent.php has incorrect access control for the decaying import function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24028">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a270706065f2719d7c9518bc4a54079c</td>
+       <td>CVE-2023-24027</td>
+       <td>2023-01-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In MISP 2.4.167, app/webroot/js/action_table.js allows XSS via a network history name.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24027">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a70b345781a96f0b62187ed3f5c73dd5</td>
+       <td>CVE-2023-24026</td>
+       <td>2023-01-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In MISP 2.4.167, app/webroot/js/event-graph.js has an XSS vulnerability via an event-graph preview payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24026">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>884f7667d76394b033d8367e93b7f85d</td>
+       <td>CVE-2023-22726</td>
+       <td>2023-01-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>act is a project which allows for local running of github actions. The artifact server that stores artifacts from Github Action runs does not sanitize path inputs. This allows an attacker to download and overwrite arbitrary files on the host from a Github Action. This issue may lead to privilege escalation. The /upload endpoint is vulnerable to path traversal as filepath is user controlled, and ultimately flows into os.Mkdir and os.Open. The /artifact endpoint is vulnerable to path traversal as the path is variable is user controlled, and the specified file is ultimately returned by the server. This has been addressed in version 0.2.40. Users are advised to upgrade. Users unable to upgrade may, during implementation of Open and OpenAtEnd for FS, ensure to use ValidPath() to check against path traversal or clean the user-provided paths manually.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22726">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb74b59b4a2b5ce34968deb6fd72daeb</td>
+       <td>CVE-2023-0052</td>
+       <td>2023-01-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>SAUTER Controls Nova 200–220 Series with firmware version 3.3-006 and prior and BACnetstac version 4.2.1 and prior allows the execution of commands without credentials. As Telnet and file transfer protocol (FTP) are the only protocols available for device management, an unauthorized user could access the system and modify the device configuration, which could result in the unauthorized user executing unrestricted malicious commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0052">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27c76acd94dbd069eefab80fd91e7494</td>
+       <td>CVE-2023-24025</td>
+       <td>2023-01-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>CRYSTALS-DILITHIUM (in Post-Quantum Cryptography Selected Algorithms 2022) in PQClean d03da30 may allow universal forgeries of digital signatures via a template side-channel attack because of intermediate data leakage of one vector.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24025">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>36fa36f4029654cf854cacf173ee81f2</td>
+       <td>CVE-2023-23607</td>
+       <td>2023-01-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>erohtar/Dasherr is a dashboard for self-hosted services. In affected versions unrestricted file upload allows any unauthenticated user to execute arbitrary code on the server. The file /www/include/filesave.php allows for any file to uploaded to anywhere. If an attacker uploads a php file they can execute code on the server. This issue has been addressed in version 1.05.00. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23607">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c63744586881dab851fee1c68016957</td>
+       <td>CVE-2021-33642</td>
+       <td>2023-01-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>When a file is processed, an infinite loop occurs in next_inline() of the more_curly() function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33642">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2ad3ae467178586631afbe13ab3781dc</td>
+       <td>CVE-2021-33641</td>
+       <td>2023-01-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>When processing files, malloc stores the data of the current line. When processing comments, malloc incorrectly accesses the released memory (use after free).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33641">详情</a></td>
+      </tr>
+
+      <tr>
        <td>861191383b56d6d6c42403ff7bac67a4</td>
        <td>CVE-2022-3918</td>
        <td>2023-01-20 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>d9d61ab9a7bcf871a6b5c4fd92321b6d</td>
        <td>CVE-2023-22745</td>
-       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 23:15:00</td>
        <td>tpm2-tss is an open source software implementation of the Trusted Computing Group (TCG) Trusted Platform Module (TPM) 2 Software Stack (TSS2). In affected versions `Tss2_RC_SetHandler` and `Tss2_RC_Decode` both index into `layer_handler` with an 8 bit layer number, but the array only has `TPM2_ERROR_TSS2_RC_LAYER_COUNT` entries, so trying to add a handler for higher-numbered layers or decode a response code with such a layer number reads/writes past the end of the buffer. This Buffer overrun, could result in arbitrary code execution. An example attack would be a MiTM bus attack that returns 0xFFFFFFFF for the RC. Given the common use case of TPM modules an attacker must have local access to the target machine with local system privileges which allows access to the TPM system. Usually TPM access requires administrative privilege.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22745">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>bd261db885cf92c38821ed5335abe43d</td>
        <td>CVE-2022-46476</td>
-       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 23:15:00</td>
        <td>D-Link DIR-859 A1 1.05 was discovered to contain a command injection vulnerability via the service= variable in the soapcgi_main function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46476">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>f68fc8b16450228d73b75afc8b4d1808</td>
        <td>CVE-2022-31901</td>
-       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 23:15:00</td>
        <td>Buffer overflow in function Notepad_plus::addHotSpot in Notepad++ v8.4.3 and earlier allows attackers to crash the application via two crafted files.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31901">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>c50d718380c39982b6bc02ef49eafe6e</td>
        <td>CVE-2023-22741</td>
-       <td>2023-01-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 22:15:00</td>
        <td>Sofia-SIP is an open-source SIP User-Agent library, compliant with the IETF RFC3261 specification. In affected versions Sofia-SIP **lacks both message length and attributes length checks** when it handles STUN packets, leading to controllable heap-over-flow. For example, in stun_parse_attribute(), after we get the attribute's type and length value, the length will be used directly to copy from the heap, regardless of the message's left size. Since network users control the overflowed length, and the data is written to heap chunks later, attackers may achieve remote code execution by heap grooming or other exploitation methods. The bug was introduced 16 years ago in sofia-sip 1.12.4 (plus some patches through 12/21/2006) to in tree libs with git-svn-id: http://svn.freeswitch.org/svn/freeswitch/trunk@3774 d0543943-73ff-0310-b7d9-9358b9ac24b2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22741">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>1ac676bdebdc9c4a69983e163dce748e</td>
        <td>CVE-2023-0126</td>
-       <td>2023-01-19 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 20:15:00</td>
        <td>Pre-authentication path traversal vulnerability in SMA1000 firmware version 12.4.2, which allows an unauthenticated attacker to access arbitrary files and directories stored outside the web root directory.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0126">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>a07e6e904769a61a9abaf58022802d0b</td>
        <td>CVE-2022-47766</td>
-       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 19:15:00</td>
        <td>PopojiCMS v2.0.1 backend plugin function has a file upload vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47766">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>c42d2bc2849866494f5e19a47a2fcbdb</td>
        <td>CVE-2022-46890</td>
-       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 19:15:00</td>
        <td>Weak access control in NexusPHP before 1.7.33 allows a remote authenticated user to edit any post in the forum (this is caused by a lack of checks performed by the /forums.php?action=post page).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46890">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>075d413fe0af944a454726d0b0365faa</td>
        <td>CVE-2022-46889</td>
-       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 19:15:00</td>
        <td>A persistent cross-site scripting (XSS) vulnerability in NexusPHP before 1.7.33 allows remote authenticated attackers to permanently inject arbitrary web script or HTML via the title parameter used in /subtitles.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46889">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>c0490217a7e65f153b6417b556f0a311</td>
        <td>CVE-2022-46888</td>
-       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 19:15:00</td>
        <td>Multiple reflective cross-site scripting (XSS) vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to inject arbitrary web script or HTML via the secret parameter in /login.php; q parameter in /user-ban-log.php; query parameter in /log.php; text parameter in /moresmiles.php; q parameter in myhr.php; or id parameter in /viewrequests.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46888">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>a48ff838f672b9c9a45902a5d0be62d3</td>
        <td>CVE-2022-46887</td>
-       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 19:15:00</td>
        <td>Multiple SQL injection vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to execute arbitrary SQL commands via the conuser[] parameter in takeconfirm.php; the delcheater parameter in cheaterbox.php; or the usernw parameter in nowarn.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46887">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67d786ab854238074addcd69a9c811de</td>
-       <td>CVE-2023-0406</td>
-       <td>2023-01-19 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-Site Request Forgery (CSRF) in GitHub repository modoboa/modoboa prior to 2.0.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0406">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4c78179e5ec7d68a2d72456dd18fe29</td>
-       <td>CVE-2022-47745</td>
-       <td>2023-01-19 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>ZenTao 16.4 to 18.0.beta1 is vulnerable to SQL injection. After logging in with any user, you can complete SQL injection by constructing a special request and sending it to function importNotice.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47745">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aeb68a33a879e12d1a7931f77281834b</td>
-       <td>CVE-2022-47740</td>
-       <td>2023-01-19 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>Seltmann GmbH Content Management System 6 is vulnerable to SQL Injection via /index.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8dc37311492c39e547493fea723a82f5</td>
-       <td>CVE-2022-47197</td>
-       <td>2023-01-19 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `codeinjection_foot` for a post.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47197">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33a345443e47c691f9e775c178bc7b2d</td>
-       <td>CVE-2022-3085</td>
-       <td>2023-01-19 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>Fuji Electric Tellus Lite V-Simulator versions 4.0.12.0 and prior are vulnerable to a stack-based buffer overflow which may allow an attacker to execute arbitrary code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3085">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2762e9b1967096af1ae384b74017f96</td>
-       <td>CVE-2023-0290</td>
-       <td>2023-01-18 22:15:00</td>
-       <td>Rapid7 Velociraptor did not properly sanitize the client ID parameter to the CreateCollection API, allowing a directory traversal in where the collection task could be written. It was possible to provide a client id of "../clients/server" to schedule the collection for the server (as a server artifact), but only require privileges to schedule collections on the client. Normally, to schedule an artifact on the server, the COLLECT_SERVER permission is required. This permission is normally only granted to "administrator" role. Due to this issue, it is sufficient to have the COLLECT_CLIENT privilege, which is normally granted to the "investigator" role. To exploit this vulnerability, the attacker must already have a Velociraptor user account at least "investigator" level, and be able to authenticate to the GUI and issue an API call to the backend. Typically, most users deploy Velociraptor with limited access to a trusted group, and most users will already be administrators within the GUI. This issue affects Velociraptor versions before 0.6.7-5. Version 0.6.7-5, released January 16, 2023, fixes the issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0290">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>86a195dba89007a10e3fd13e83d0c230</td>
-       <td>CVE-2023-0164</td>
-       <td>2023-01-18 22:15:00</td>
-       <td>OrangeScrum version 2.0.11 allows an authenticated external attacker to execute arbitrary commands on the server. This is possible because the application injects an attacker-controlled parameter into a system function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0164">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a7f02bde8abb1ecacfa0a60404cc2aec</td>
-       <td>CVE-2022-45927</td>
-       <td>2023-01-18 22:15:00</td>
-       <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Java application server can be used to bypass the authentication of the QDS endpoints of the Content Server. These endpoints can be used to create objects and execute arbitrary code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45927">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ab762eb9fd48f30590e76dc6e77a9e7</td>
-       <td>CVE-2022-45923</td>
-       <td>2023-01-18 22:15:00</td>
-       <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Common Gateway Interface (CGI) program cs.exe allows an attacker to increase/decrease an arbitrary memory address by 1 and trigger a call to a method of a vftable with a vftable pointer value chosen by the attacker.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ece289cd208e3f14d0db8117569cb2da</td>
-       <td>CVE-2022-4235</td>
-       <td>2023-01-18 22:15:00</td>
-       <td>RushBet version 2022.23.1-b490616d allows a remote attacker to steal customer accounts via use of a malicious application. This is possible because the application exposes an activity and does not properly validate the data it receives.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4235">详情</a></td>
       </tr>
 
      </tbody>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>7612642948fb1fc99c44fd94daf14f98</td>
        <td>CVE-2022-25717</td>
-       <td>2023-01-19 20:15:02 <img src="imgs/new.gif" /></td>
+       <td>2023-01-19 20:15:02</td>
        <td>QUALCOMM Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9bff7a3825f04fc2a89b1ee8687e30be">详情</a></td>
       </tr>
