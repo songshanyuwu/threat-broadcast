@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-21 05:34:54 -->
+<!-- RELEASE TIME : 2023-01-21 23:35:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e2e0c76e3873adbbb10825477e3f2cd0</td>
+       <td>CVE-2023-22617</td>
+       <td>2023-01-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A remote attacker might be able to cause infinite recursion in PowerDNS Recursor 4.8.0 via a DNS query that retrieves DS records for a misconfigured domain, because QName minimization is used in QM fallback mode. This is fixed in 4.8.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22617">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9e63e57c48e107d086f54f45c55eed43</td>
+       <td>CVE-2023-0433</td>
+       <td>2023-01-21 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1225.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62bc2f4f91af5e479033cdc8bd799907</td>
+       <td>CVE-2023-22884</td>
+       <td>2023-01-21 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in Apache Software Foundation Apache Airflow, Apache Software Foundation Apache Airflow MySQL Provider.This issue affects Apache Airflow: before 2.5.1; Apache Airflow MySQL Provider: before 4.0.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22884">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de405c6b4096bef2ebad5c991dca9d00</td>
+       <td>CVE-2023-24042</td>
+       <td>2023-01-21 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>A race condition in LightFTP through 2.2 allows an attacker to achieve path traversal via a malformed FTP request. A handler thread can use an overwritten context->FileName.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24042">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa6da3b0d805f80fac07d8ab22110fe6</td>
+       <td>CVE-2023-24040</td>
+       <td>2023-01-21 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>** UNSUPPORTED WHEN ASSIGNED ** dtprintinfo in Common Desktop Environment 1.6 has a bug in the parser of lpstat (an invoked external command) during listing of the names of available printers. This allows low-privileged local users to inject arbitrary printer names via the $HOME/.printers file. This injection allows those users to manipulate the control flow and disclose memory contents on Solaris 10 systems. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24040">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b899a96e64d1c66a942ccc3e65bca087</td>
+       <td>CVE-2023-24039</td>
+       <td>2023-01-21 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>** UNSUPPORTED WHEN ASSIGNED ** A stack-based buffer overflow in ParseColors in libXm in Common Desktop Environment 1.6 can be exploited by local low-privileged users via the dtprintinfo setuid binary to escalate their privileges to root on Solaris 10 systems. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24039">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42ed592a47b17e3061cc6193b67dd5fc</td>
+       <td>CVE-2023-24038</td>
+       <td>2023-01-21 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The HTML-StripScripts module through 1.06 for Perl allows _hss_attval_style ReDoS because of catastrophic backtracking for HTML content with certain style attributes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0321cc5c7802c6ef77d5c135f4c1cb0a</td>
+       <td>CVE-2020-36655</td>
+       <td>2023-01-21 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Yii Yii2 Gii before 2.2.2 allows remote attackers to execute arbitrary code via the Generator.php messageCategory field. The attacker can embed arbitrary PHP code into the model file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36655">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e758f95ba1fc7576257aec9de87557b4</td>
        <td>CVE-2023-22742</td>
        <td>2023-01-20 23:15:00 <img src="imgs/new.gif" /></td>
@@ -457,70 +521,6 @@
        <td>2023-01-19 23:15:00</td>
        <td>D-Link DIR-859 A1 1.05 was discovered to contain a command injection vulnerability via the service= variable in the soapcgi_main function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46476">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f68fc8b16450228d73b75afc8b4d1808</td>
-       <td>CVE-2022-31901</td>
-       <td>2023-01-19 23:15:00</td>
-       <td>Buffer overflow in function Notepad_plus::addHotSpot in Notepad++ v8.4.3 and earlier allows attackers to crash the application via two crafted files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31901">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c50d718380c39982b6bc02ef49eafe6e</td>
-       <td>CVE-2023-22741</td>
-       <td>2023-01-19 22:15:00</td>
-       <td>Sofia-SIP is an open-source SIP User-Agent library, compliant with the IETF RFC3261 specification. In affected versions Sofia-SIP **lacks both message length and attributes length checks** when it handles STUN packets, leading to controllable heap-over-flow. For example, in stun_parse_attribute(), after we get the attribute's type and length value, the length will be used directly to copy from the heap, regardless of the message's left size. Since network users control the overflowed length, and the data is written to heap chunks later, attackers may achieve remote code execution by heap grooming or other exploitation methods. The bug was introduced 16 years ago in sofia-sip 1.12.4 (plus some patches through 12/21/2006) to in tree libs with git-svn-id: http://svn.freeswitch.org/svn/freeswitch/trunk@3774 d0543943-73ff-0310-b7d9-9358b9ac24b2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ac676bdebdc9c4a69983e163dce748e</td>
-       <td>CVE-2023-0126</td>
-       <td>2023-01-19 20:15:00</td>
-       <td>Pre-authentication path traversal vulnerability in SMA1000 firmware version 12.4.2, which allows an unauthenticated attacker to access arbitrary files and directories stored outside the web root directory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0126">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a07e6e904769a61a9abaf58022802d0b</td>
-       <td>CVE-2022-47766</td>
-       <td>2023-01-19 19:15:00</td>
-       <td>PopojiCMS v2.0.1 backend plugin function has a file upload vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47766">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c42d2bc2849866494f5e19a47a2fcbdb</td>
-       <td>CVE-2022-46890</td>
-       <td>2023-01-19 19:15:00</td>
-       <td>Weak access control in NexusPHP before 1.7.33 allows a remote authenticated user to edit any post in the forum (this is caused by a lack of checks performed by the /forums.php?action=post page).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46890">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>075d413fe0af944a454726d0b0365faa</td>
-       <td>CVE-2022-46889</td>
-       <td>2023-01-19 19:15:00</td>
-       <td>A persistent cross-site scripting (XSS) vulnerability in NexusPHP before 1.7.33 allows remote authenticated attackers to permanently inject arbitrary web script or HTML via the title parameter used in /subtitles.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46889">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c0490217a7e65f153b6417b556f0a311</td>
-       <td>CVE-2022-46888</td>
-       <td>2023-01-19 19:15:00</td>
-       <td>Multiple reflective cross-site scripting (XSS) vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to inject arbitrary web script or HTML via the secret parameter in /login.php; q parameter in /user-ban-log.php; query parameter in /log.php; text parameter in /moresmiles.php; q parameter in myhr.php; or id parameter in /viewrequests.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46888">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a48ff838f672b9c9a45902a5d0be62d3</td>
-       <td>CVE-2022-46887</td>
-       <td>2023-01-19 19:15:00</td>
-       <td>Multiple SQL injection vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to execute arbitrary SQL commands via the conuser[] parameter in takeconfirm.php; the delcheater parameter in cheaterbox.php; or the usernw parameter in nowarn.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46887">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f1f0686d75dadd9d7dc7e426573ab89d</td>
+       <td>CVE-2022-4167</td>
+       <td>2023-01-21 20:18:24 <img src="imgs/new.gif" /></td>
+       <td>GITLAB GITLAB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea6d1b47b4944a04b7fb9211986b1135">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afbedab0576ffc3a32fac90b16d09355</td>
+       <td>CVE-2022-42967</td>
+       <td>2023-01-21 20:18:19 <img src="imgs/new.gif" /></td>
+       <td>CARET CARET Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9f2113dcea994989880acccd3c14d94a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8e5a15bb0cf493cb9ed3a4538e38c4eb</td>
+       <td>CVE-2022-3514</td>
+       <td>2023-01-21 20:18:13 <img src="imgs/new.gif" /></td>
+       <td>GITLAB GITLAB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=27476e9f23c147639fbd380a04aef4b3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d37fbb9132afcbdb18de818430184f8f</td>
+       <td>CVE-2023-21551</td>
+       <td>2023-01-21 20:18:07 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1e8893c8468e489b9162b3c3fccdd7a8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf3ac59b7d05405d2545819de541f5cd</td>
+       <td>CVE-2022-4342</td>
+       <td>2023-01-21 20:18:01 <img src="imgs/new.gif" /></td>
+       <td>GITLAB GITLAB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3670b290ee8a42b39aa39815518f2d9d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2296c2793c069f052215415e269e797f</td>
+       <td>CVE-2022-4131</td>
+       <td>2023-01-21 20:17:55 <img src="imgs/new.gif" /></td>
+       <td>GITLAB GITLAB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8416695a1a44ec5aecc0c4fb4fdd97b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d12e37b2e2059dc33707b91508548519</td>
+       <td>CVE-2023-21555</td>
+       <td>2023-01-21 20:17:48 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e02bff0e5eaa4ec9b4b4e4ee94893e82">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8b702893aec57b6ba9a9bf1db97224c4</td>
+       <td>CVE-2023-21552</td>
+       <td>2023-01-21 20:17:42 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c975aaa489604a93b7fc167cc1ab4b1a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>139ab8a941749e040703ccace479cc34</td>
+       <td>CVE-2023-21550</td>
+       <td>2023-01-21 20:17:36 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e8557f255fa94c71a9bcac9b96626702">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7b13499d5b7d19206d04e2c345385934</td>
+       <td>CVE-2023-21557</td>
+       <td>2023-01-21 20:17:30 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=400fa8d001bf45c099b162e133df6dcd">详情</a></td>
+      </tr>
+
+      <tr>
        <td>636319fb3ed8e1368122050b4cc0566e</td>
        <td>CVE-2023-0131</td>
        <td>2023-01-20 20:23:22 <img src="imgs/new.gif" /></td>
@@ -1841,86 +1921,6 @@
        <td>2023-01-16 20:48:05</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e6aee6fc361942b28d8aa7e6db5a6615">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98b0cdd3b3762fdcde939d6736fcfc00</td>
-       <td>CVE-2023-0136</td>
-       <td>2023-01-16 20:47:52</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f0c2599c351c4338be9a48a50f7c29b1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68d5372c829204e5120d28c92f283005</td>
-       <td>CVE-2023-0134</td>
-       <td>2023-01-16 20:47:51</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cfc39882854747f3ac413c9bf25d7a33">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2883cd9e488fb2275a2bbf9990ed3104</td>
-       <td>CVE-2023-0139</td>
-       <td>2023-01-16 20:47:39</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=86056bef79564e29bf726d5724a894b0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d03db74ce8d79197b3fdd7a246ba3334</td>
-       <td>CVE-2023-0137</td>
-       <td>2023-01-16 20:47:34</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6066fb544a5d424592cd4a1304b76c95">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c6f3bff4d4efcedba1f6ea55205e7e7</td>
-       <td>CVE-2023-22469</td>
-       <td>2023-01-16 20:47:26</td>
-       <td>NEXTCLOUD DECK Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8a4cee636c2248abba582d48af0b0df1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc042a9edbd45187ec285cdf221c0f91</td>
-       <td>CVE-2022-46769</td>
-       <td>2023-01-15 20:40:37</td>
-       <td>APACHE SLING_CMS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a7fb4b7ffd794548bfda7e5f2752d1dc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f24949c9dc623a1a6a8f719b37449a7a</td>
-       <td>CVE-2022-4196</td>
-       <td>2023-01-15 20:40:31</td>
-       <td>MONDULA MULTI_STEP_FORM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f54620d00d0c4e189285eca37efb13a6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fffca6e6fa12fc6add863215f624150c</td>
-       <td>CVE-2023-22911</td>
-       <td>2023-01-15 20:40:24</td>
-       <td>MEDIAWIKI MEDIAWIKI Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f1790bfa71e047eab7df1fa69170f364">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2bfb68dd3359538eefb1327589d63092</td>
-       <td>CVE-2022-3416</td>
-       <td>2023-01-15 20:40:19</td>
-       <td>BRAVENEWCODE WPTOUCH Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2c2d996b9e764cbc9639cbbbb427ae36">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f715be08ce3294d11775f70cc88a187e</td>
-       <td>CVE-2022-0668</td>
-       <td>2023-01-15 20:40:12</td>
-       <td>JFROG ARTIFACTORY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9fc15fbb02d544aeb88e5807a74ec3d6">详情</a></td>
       </tr>
 
      </tbody>
