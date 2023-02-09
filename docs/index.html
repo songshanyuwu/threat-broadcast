@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-08 23:35:21 -->
+<!-- RELEASE TIME : 2023-02-09 05:35:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>e6486742b816640aa8af5fa8d5251384</td>
        <td>CVE-2023-22501</td>
-       <td>2023-02-07 02:28:13 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 02:28:13</td>
        <td>CVE-2023-22501：Jira 身份验证漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=c214a8b1304cadf5b0bc47f6a08e51c1">详情</a></td>
       </tr>
@@ -284,6 +284,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f763791bd847c6e00349bd2c5d062e14</td>
+       <td>CVE-2023-25168</td>
+       <td>2023-02-09 00:16:00 <img src="imgs/new.gif" /></td>
+       <td>Wings is Pterodactyl's server control plane. This vulnerability can be used to delete files and directories recursively on the host system. This vulnerability can be combined with `GHSA-p8r3-83r8-jwj5` to overwrite files on the host system. In order to use this exploit, an attacker must have an existing "server" allocated and controlled by Wings. This vulnerability has been resolved in version `v1.11.4` of Wings, and has been back-ported to the 1.7 release series in `v1.7.4`. Anyone running `v1.11.x` should upgrade to `v1.11.4` and anyone running `v1.7.x` should upgrade to `v1.7.4`. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f7ff978094af68e127f3d7922b5b35b</td>
+       <td>CVE-2023-0251</td>
+       <td>2023-02-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Delta Electronics DIAScreen versions 1.2.1.23 and prior are vulnerable to a buffer overflow through improper restrictions of operations within memory, which could allow an attacker to remotely execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d698e21fe1444e4da564ca7087ea4b06</td>
+       <td>CVE-2023-0250</td>
+       <td>2023-02-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Delta Electronics DIAScreen versions 1.2.1.23 and prior are vulnerable to a stack-based buffer overflow, which could allow an attacker to remotely execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>67ebff1dc703baad3f3a2182ac69a779</td>
+       <td>CVE-2023-0249</td>
+       <td>2023-02-08 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Delta Electronics DIAScreen versions 1.2.1.23 and prior are vulnerable to out-of-bounds write, which may allow an attacker to remotely execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0249">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7bb164b2dde72001655fdcf13538c1e3</td>
+       <td>CVE-2023-25163</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. All versions of Argo CD starting with v2.6.0-rc1 have an output sanitization bug which leaks repository access credentials in error messages. These error messages are visible to the user, and they are logged. The error message is visible when a user attempts to create or update an Application via the Argo CD API (and therefor the UI or CLI). The user must have `applications, create` or `applications, update` RBAC access to reach the code which may produce the error. The user is not guaranteed to be able to trigger the error message. They may attempt to spam the API with requests to trigger a rate limit error from the upstream repository. If the user has `repositories, update` access, they may edit an existing repository to introduce a URL typo or otherwise force an error message. But if they have that level of access, they are probably intended to have access to the credentials anyway. A patch for this vulnerability has been released in version 2.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25163">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd48db21edfa98d3bf7aadde6a7f6d9d</td>
+       <td>CVE-2022-47648</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Bosch Security Systems B420 firmware 02.02.0001 employs IP based authorization in its authentication mechanism, allowing attackers to access the device as long as they are on the same network as a legitimate user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47648">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1dd032663778b9309fb3a6090a4033cc</td>
+       <td>CVE-2022-45982</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>thinkphp 6.0.0~6.0.13 and 6.1.0~6.1.1 contains a deserialization vulnerability. This vulnerability allows attackers to execute arbitrary code via a crafted payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45982">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd6fbce643259ca20791b9acec35efdf</td>
+       <td>CVE-2022-38778</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw (CVE-2022-38900) was discovered in one of Kibana’s third party dependencies, that could allow an authenticated user to perform a request that crashes the Kibana server process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38778">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b9adb2b47c31b4609c5fa1fa70ab89d</td>
+       <td>CVE-2022-38777</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38777">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e4c6eaa965f428a135f04865f0ddf2b1</td>
        <td>CVE-2023-25167</td>
        <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
@@ -414,7 +486,7 @@
       <tr>
        <td>46c2a256e913cb212da5488e560c6672</td>
        <td>CVE-2023-23026</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross site scripting (XSS) vulnerability in sourcecodester oretnom23 sales management system 1.0, allows attackers to execute arbitrary code via the product_name and product_price inputs in file print.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23026">详情</a></td>
       </tr>
@@ -422,7 +494,7 @@
       <tr>
        <td>41f946e59933d8395557b8a686915bd8</td>
        <td>CVE-2023-23011</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross Site Scripting (XSS) vulnerability in InvoicePlane 1.6 via filter_product input to file modal_product_lookups.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23011">详情</a></td>
       </tr>
@@ -430,7 +502,7 @@
       <tr>
        <td>353c0c8f09364df73964665ecba3778d</td>
        <td>CVE-2023-0736</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository wallabag/wallabag prior to 2.5.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0736">详情</a></td>
       </tr>
@@ -438,7 +510,7 @@
       <tr>
        <td>e8f99868644173b769305d60d27563b0</td>
        <td>CVE-2023-0735</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) in GitHub repository wallabag/wallabag prior to 2.5.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0735">详情</a></td>
       </tr>
@@ -446,81 +518,9 @@
       <tr>
        <td>2b6f1f8f583ba7a6d35a61dbee489ee4</td>
        <td>CVE-2023-25194</td>
-       <td>2023-02-07 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:15:00</td>
        <td>A possible security vulnerability has been identified in Apache Kafka Connect. This requires access to a Kafka Connect worker, and the ability to create/modify connectors on it with an arbitrary Kafka client SASL JAAS config and a SASL-based security protocol, which has been possible on Kafka Connect clusters since Apache Kafka 2.3.0. When configuring the connector via the Kafka Connect REST API, an authenticated operator can set the `sasl.jaas.config` property for any of the connector's Kafka clients to "com.sun.security.auth.module.JndiLoginModule", which can be done via the `producer.override.sasl.jaas.config`, `consumer.override.sasl.jaas.config`, or `admin.override.sasl.jaas.config` properties. This will allow the server to connect to the attacker's LDAP server and deserialize the LDAP response, which the attacker can use to execute java deserialization gadget chains on the Kafka connect server. Attacker can cause unrestricted deserialization of untrusted data (or) RCE vulnerability when there are gadgets in the classpath. Since Apache Kafka 3.0.0, users are allowed to specify these properties in connector configurations for Kafka Connect clusters running with out-of-the-box configurations. Before Apache Kafka 3.0.0, users may not specify these properties unless the Kafka Connect cluster has been reconfigured with a connector client override policy that permits them. Since Apache Kafka 3.4.0, we have added a system property ("-Dorg.apache.kafka.disallowed.login.modules") to disable the problematic login modules usage in SASL JAAS configuration. Also by default "com.sun.security.auth.module.JndiLoginModule" is disabled in Apache Kafka 3.4.0. We advise the Kafka Connect users to validate connector configurations and only allow trusted JNDI configurations. Also examine connector dependencies for vulnerable versions and either upgrade their connectors, upgrading that specific dependency, or removing the connectors as options for remediation. Finally, in addition to leveraging the "org.apache.kafka.disallowed.login.modules" system property, Kafka Connect users can also implement their own connector client config override policy, which can be used to control which Kafka client properties can be overridden directly in a connector config and which cannot.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25194">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c628660c0266f2486d7a12d2c0e306c</td>
-       <td>CVE-2023-0732</td>
-       <td>2023-02-07 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been found in SourceCodester Online Eyewear Shop 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file oews/classes/Users.php of the component POST Request Handler. The manipulation of the argument firstname/middlename/lastname/lastname/contact leads to cross site scripting. The attack can be launched remotely. The identifier VDB-220369 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ba18f67269ac18e74c7ad4dc8a8034f</td>
-       <td>CVE-2022-47412</td>
-       <td>2023-02-07 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Given a malicious document provided by an attacker, the ONLYOFFICE Workspace DMS is vulnerable to a stored (persistent, or "Type II") cross-site scripting (XSS) condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47412">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eca362f5adf2890ac3fc6d6809d19e52</td>
-       <td>CVE-2023-24814</td>
-       <td>2023-02-07 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>TYPO3 is a free and open source Content Management Framework released under the GNU General Public License. In affected versions the TYPO3 core component `GeneralUtility::getIndpEnv()` uses the unfiltered server environment variable `PATH_INFO`, which allows attackers to inject malicious content. In combination with the TypoScript setting `config.absRefPrefix=auto`, attackers can inject malicious HTML code to pages that have not been rendered and cached, yet. As a result, injected values would be cached and delivered to other website visitors (persisted cross-site scripting). Individual code which relies on the resolved value of `GeneralUtility::getIndpEnv('SCRIPT_NAME')` and corresponding usages (as shown below) are vulnerable as well. Additional investigations confirmed that at least Apache web server deployments using CGI (FPM, FCGI/FastCGI, and similar) are affected. However, there still might be the risk that other scenarios like nginx, IIS, or Apache/mod_php are vulnerable. The usage of server environment variable `PATH_INFO` has been removed from corresponding processings in `GeneralUtility::getIndpEnv()`. Besides that, the public property `TypoScriptFrontendController::$absRefPrefix` is encoded for both being used as a URI component and for being used as a prefix in an HTML context. This mitigates the cross-site scripting vulnerability. Users are advised to update to TYPO3 versions 8.7.51 ELTS, 9.5.40 ELTS, 10.4.35 LTS, 11.5.23 LTS and 12.2.0 which fix this problem. For users who are unable to patch in a timely manner the TypoScript setting `config.absRefPrefix` should at least be set to a static path value, instead of using auto - e.g. `config.absRefPrefix=/`. This workaround **does not fix all aspects of the vulnerability**, and is just considered to be an intermediate mitigation to the most prominent manifestation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24814">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>45ebb6e6459c649dcd534037202516de</td>
-       <td>CVE-2023-24813</td>
-       <td>2023-02-07 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dompdf is an HTML to PDF converter written in php. Due to the difference in the attribute parser of Dompdf and php-svg-lib, an attacker can still call arbitrary URLs with arbitrary protocols. Dompdf parses the href attribute of `image` tags and respects `xlink:href` even if `href` is specified. However, php-svg-lib, which is later used to parse the svg file, parses the href attribute. Since `href` is respected if both `xlink:href` and `href` is specified, it's possible to bypass the protection on the Dompdf side by providing an empty `xlink:href` attribute. An attacker can exploit the vulnerability to call arbitrary URLs with arbitrary protocols if they provide an SVG file to the Dompdf. In PHP versions before 8.0.0, it leads to arbitrary unserialize, which will lead, at the very least, to arbitrary file deletion and might lead to remote code execution, depending on available classes. This vulnerability has been addressed in commit `95009ea98` which has been included in release version 2.0.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24813">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d21173fea47947a6b9d5c44005d99f8</td>
-       <td>CVE-2023-22735</td>
-       <td>2023-02-07 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Zulip is an open-source team collaboration tool. In versions of zulip prior to commit `2f6c5a8` but after commit `04cf68b` users could upload files with arbitrary `Content-Type` which would be served from the Zulip hostname with `Content-Disposition: inline` and no `Content-Security-Policy` header, allowing them to trick other users into executing arbitrary Javascript in the context of the Zulip application. Among other things, this enables session theft. Only deployments which use the S3 storage (not the local-disk storage) are affected, and only deployments which deployed commit 04cf68b45ebb5c03247a0d6453e35ffc175d55da, which has only been in `main`, not any numbered release. Users affected should upgrade from main again to deploy this fix. Switching from S3 storage to the local-disk storage would nominally mitigate this, but is likely more involved than upgrading to the latest `main` which addresses the issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>290003d4b211eb1cecf37359157203ce</td>
-       <td>CVE-2022-4883</td>
-       <td>2023-02-07 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A flaw was found in libXpm. When processing files with .Z or .gz extensions, the library calls external programs to compress and uncompress files, relying on the PATH environment variable to find these programs, which could allow a malicious user to execute other programs by manipulating the PATH environment variable.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>edc359290906d32c336258f8e735ef74</td>
-       <td>CVE-2022-46285</td>
-       <td>2023-02-07 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A flaw was found in libXpm. This issue occurs when parsing a file with a comment not closed; the end-of-file condition will not be detected, leading to an infinite loop and resulting in a Denial of Service in the application linked to the library.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0f26c5a8b9d65807714611f436500cd</td>
-       <td>CVE-2022-24990</td>
-       <td>2023-02-07 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>TerraMaster NAS 4.2.29 and earlier allows remote attackers to discover the administrative password by sending "User-Agent: TNAS" to module/api.php?mobile/webNasIPS and then reading the PWD field in the response.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24990">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9d7285846a3fdc5cf6ba04dfd826ed73</td>
-       <td>CVE-2022-41313</td>
-       <td>2023-02-07 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A stored cross-site scripting vulnerability exists in the web application functionality of Moxa SDS-3008 Series Industrial Ethernet Switch 2.1. A specially-crafted HTTP request can lead to arbitrary Javascript execution. An attacker can send an HTTP request to trigger this vulnerability.Form field id="switch_contact"</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41313">详情</a></td>
       </tr>
 
      </tbody>
@@ -1702,7 +1702,7 @@
       <tr>
        <td>6dbaed71f28efe63ccb6253c857ba8d7</td>
        <td>CVE-2023-24435</td>
-       <td>2023-02-07 20:34:31 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:34:31</td>
        <td>JENKINS GITHUB_PULL_REQUEST_BUILDER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6dd157e3e28d46c18aba102350740784">详情</a></td>
       </tr>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>e8f2071e6ba2d984859b79f357345191</td>
        <td>CVE-2023-24494</td>
-       <td>2023-02-07 20:34:06 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:34:06</td>
        <td>TENABLE TENABLE.SC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc46850b134449328d3dc8b74deadc90">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>44255fd589c4abbdc4d5f2d27f0b00d3</td>
        <td>CVE-2022-44264</td>
-       <td>2023-02-07 20:33:54 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:33:54</td>
        <td>DENTSPLYSIRONA SIDEXIS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=44702a1b61174e0bac3b565094da559b">详情</a></td>
       </tr>
@@ -1939,6 +1939,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>12b29d6d3096685ef15ca3cacc0434d0</td>
+       <td>CVE-2022-46903</td>
+       <td>2023-02-09 05:34:59 <img src="imgs/new.gif" /></td>
+       <td>WebSoft HCM跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75504">详情</a></td>
+      </tr>
+
       <tr>
        <td>c7b4805b5ec840bdda805e0aead6b577</td>
        <td>CVE-2022-4144</td>
@@ -2171,14 +2179,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75316">详情</a></td>
       </tr>
 
-      <tr>
-       <td>d8fdc6be52037db18b6fb0007ab3ba7e</td>
-       <td>CVE-2022-42785</td>
-       <td>2023-02-02 23:35:22</td>
-       <td>Wiesemann &amp; Theis Com-Server Family身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75315">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2212,6 +2212,14 @@
       </tr>
 
       <tr>
+       <td>b341832bfc45558e663538da58c3aaa0</td>
+       <td>CVE-2022-47714</td>
+       <td>2023-02-01 14:15:08 </td>
+       <td>Last Yard 22.09.8-1 does not enforce HSTS headers</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47714">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f31aacc996afa9eeeb0a29290737cbb0</td>
        <td>CVE-2022-47770</td>
        <td>2023-02-01 02:15:07 </td>
@@ -2233,6 +2241,38 @@
        <td>2023-02-01 02:15:07 </td>
        <td>Serenissima Informatica Fast Checkin 1.0 is vulnerable to Directory Traversal.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47768">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bc0f59abf6599aa30ac9203965624f9</td>
+       <td>CVE-2022-47701</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Cross Site Scripting (XSS).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf690d93843d380c8a2e8636806d3b67</td>
+       <td>CVE-2022-47700</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 and before is vulnerable to Incorrect Access Control. Improper authentication allows requests to be made to back-end scripts without a valid session or authentication.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a64d85abc721bea8846310d0b1290a11</td>
+       <td>CVE-2022-47699</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Incorrect Access Control.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24083858569956ec08048cbe1470c46e</td>
+       <td>CVE-2022-47698</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Cross Site Scripting (XSS) via the URL filtering feature in the router.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47698">详情</a></td>
       </tr>
 
       <tr>
@@ -2393,46 +2433,6 @@
        <td>2023-01-26 21:15:28 </td>
        <td>All versions of the package smartctl are vulnerable to Command Injection via the info method due to improper input sanitization.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21810">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1bba415a2971d541a731fe1981bc94b0</td>
-       <td>CVE-2021-36539</td>
-       <td>2023-01-26 21:15:23 </td>
-       <td>Instructure Canvas LMS didn't properly deny access to locked/unpublished files when the unprivileged user access the DocViewer based file preview URL (canvadoc_session_url).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36539">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c34c2ef0ea395174211a380e4e44689f</td>
-       <td>CVE-2022-42390</td>
-       <td>2023-01-26 18:59:56 </td>
-       <td>This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. Crafted data in a U3D file can trigger a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-18659.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42390">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>50d7b981efb992c5a4bc0c6542fb80bd</td>
-       <td>CVE-2022-42389</td>
-       <td>2023-01-26 18:59:56 </td>
-       <td>This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. Crafted data in a U3D file can trigger a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-18658.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>390464c4f383c82ab388cc040fbbfa7c</td>
-       <td>CVE-2022-42388</td>
-       <td>2023-01-26 18:59:56 </td>
-       <td>This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. Crafted data in a U3D file can trigger a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-18657.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42388">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2e7fcc33013269497355b552fe8e393</td>
-       <td>CVE-2022-42387</td>
-       <td>2023-01-26 18:59:56 </td>
-       <td>This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. Crafted data in a U3D file can trigger a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-18656.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42387">详情</a></td>
       </tr>
 
      </tbody>
