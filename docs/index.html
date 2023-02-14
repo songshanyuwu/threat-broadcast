@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-14 05:35:26 -->
+<!-- RELEASE TIME : 2023-02-14 23:35:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>0df664a9520ae1e14777320ae303a2ed</td>
+       <td>CVE-2023-23529</td>
+       <td>2023-02-14 07:40:35 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-23529：Apple WebKit任意代码执行漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=f454bc1e35a01d3033f375f9672bba89">详情</a></td>
+      </tr>
+
       <tr>
        <td>8b994ad3abb532605881c218362eb876</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=3b61f37f3259b6283592b493fb08c40d">详情</a></td>
       </tr>
 
-      <tr>
-       <td>13673018d7394e8a03c74e7a420c8328</td>
-       <td></td>
-       <td>2022-12-19 03:23:37</td>
-       <td>安全事件周报 (12.12-12.18)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=ab9ea970f1211818f2a36ba0a2017036">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>7c09575c2713582d3ffe0fd41edea610</td>
+       <td>CVE-2023-25577</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Werkzeug is a comprehensive WSGI web application library. Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers. Version 2.2.3 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25577">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8930fab2d46496bb7683663de9fd1403</td>
+       <td>CVE-2023-23946</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Git, a revision control system, is vulnerable to path traversal prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8. By feeding a crafted input to `git apply`, a path outside the working tree can be overwritten as the user who is running `git apply`. A fix has been prepared and will appear in v2.39.2, v2.38.4, v2.37.6, v2.36.5, v2.35.7, v2.34.7, v2.33.7, v2.32.6, v2.31.7, and v2.30.8. As a workaround, use `git apply --stat` to inspect a patch before applying; avoid applying one that creates a symbolic link and then creates a file beyond the symbolic link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23946">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>83bd53d32faee60555acaa79a159ff6c</td>
+       <td>CVE-2023-23934</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Werkzeug is a comprehensive WSGI web application library. Browsers may allow "nameless" cookies that look like `=value` instead of `key=value`. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like `=__Host-test=bad` for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie `=__Host-test=bad` as __Host-test=bad`. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key. The issue is fixed in Werkzeug 2.2.3.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7884b5089d4fb34764493402aa33fb94</td>
+       <td>CVE-2023-23390</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>3D Builder Remote Code Execution Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23390">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>558037cc20a105180d44fb790798e7f3</td>
+       <td>CVE-2023-23382</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Azure Machine Learning Compute Instance Information Disclosure Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23382">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2e263c3dd5cce19d9f827c8385966ee6</td>
+       <td>CVE-2023-23379</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Defender for IoT Elevation of Privilege Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23379">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e724fca534ff465e237d8910eb75edc3</td>
+       <td>CVE-2023-23378</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Print 3D Remote Code Execution Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23378">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d17c17573b170e3eae1a99f5561e3939</td>
+       <td>CVE-2023-23377</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>3D Builder Remote Code Execution Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23377">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d26db58da4761f6e1c999a0700091e6c</td>
+       <td>CVE-2023-23376</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Windows Common Log File System Driver Elevation of Privilege Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23376">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>67e6caa1ebd78d67a8443bd6fa7e1b84</td>
+       <td>CVE-2023-23374</td>
+       <td>2023-02-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23374">详情</a></td>
+      </tr>
+
       <tr>
        <td>02c998f0281c718956a462047b387a41</td>
        <td>CVE-2023-0804</td>
@@ -441,86 +521,6 @@
        <td>2023-02-13 18:15:00 <img src="imgs/new.gif" /></td>
        <td>The ccmweb component of Mitel MiContact Center Business server 9.2.2.0 through 9.4.1.0 could allow an unauthenticated attacker to download arbitrary files, due to insufficient restriction of URL parameters. A successful exploit could allow access to sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22854">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43db982fe469c40d40a024f3965f3238</td>
-       <td>CVE-2023-0680</td>
-       <td>2023-02-12 21:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0680">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53bbae8ff543d91e684e2cd30a7ecd9a</td>
-       <td>CVE-2020-36661</td>
-       <td>2023-02-12 21:15:00</td>
-       <td>A vulnerability was found in Kong lua-multipart 0.5.8-1. It has been declared as problematic. This vulnerability affects the function is_header of the file src/multipart.lua. The manipulation leads to inefficient regular expression complexity. Upgrading to version 0.5.9-1 is able to address this issue. The name of the patch is d632e5df43a2928fd537784a99a79dec288bf01b. It is recommended to upgrade the affected component. VDB-220642 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36661">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1b1566b424028493a369b44a3f01e32</td>
-       <td>CVE-2019-25103</td>
-       <td>2023-02-12 15:15:00</td>
-       <td>A vulnerability has been found in simple-markdown 0.5.1 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file simple-markdown.js. The manipulation leads to inefficient regular expression complexity. The attack can be launched remotely. Upgrading to version 0.5.2 is able to address this issue. The name of the patch is 89797fef9abb4cab2fb76a335968266a92588816. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-220639.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-25103">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>173d6b7c7d49606c5c93a3a33c988f62</td>
-       <td>CVE-2023-0794</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0794">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>802a77740ba4639371747eb86f155b95</td>
-       <td>CVE-2023-0793</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Weak Password Requirements in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0793">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7971c150aaa8edf8513e350fb07f247</td>
-       <td>CVE-2023-0792</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Code Injection in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0792">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c0296a45e203fabc5c9e321404ac381c</td>
-       <td>CVE-2023-0791</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0791">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e47f2487429968c2ee9032f8c1123e2</td>
-       <td>CVE-2023-0790</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Uncaught Exception in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0790">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e19c7860a4882c4935cc142df822cee7</td>
-       <td>CVE-2023-0789</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Command Injection in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0789">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1760a66119558510e04065df54af53eb</td>
-       <td>CVE-2023-0788</td>
-       <td>2023-02-12 14:15:00</td>
-       <td>Code Injection in GitHub repository thorsten/phpmyfaq prior to 3.1.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0788">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a9c09989942c0485b2816dbc767959e4</td>
+       <td>CVE-2023-0676</td>
+       <td>2023-02-14 20:30:29 <img src="imgs/new.gif" /></td>
+       <td>PHPIPAM PHPIPAM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3e642897cbf043baa62f43715d2c131c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae3a68ea64096a92c84e7f1e033c2938</td>
+       <td>CVE-2022-32595</td>
+       <td>2023-02-14 20:29:48 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=344a6fba90e740cba616b808dbe85882">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>442caca898131227ffcefe352b17bc4a</td>
+       <td>CVE-2022-4577</td>
+       <td>2023-02-14 20:29:35 <img src="imgs/new.gif" /></td>
+       <td>GOLDPLUGINS EASY_TESTIMONIALS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef059a652d604b179b3c526a3b517184">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef02e792f1d4efa2348776a0aa17f18f</td>
+       <td>CVE-2021-36425</td>
+       <td>2023-02-14 20:29:23 <img src="imgs/new.gif" /></td>
+       <td>PHPWCMS PHPWCMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e0a3f51458f94bc5a8634417dd2e2066">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fc5482a5c2ea16f1e69c934c2a154ff</td>
+       <td>CVE-2023-0677</td>
+       <td>2023-02-14 20:29:17 <img src="imgs/new.gif" /></td>
+       <td>PHPIPAM PHPIPAM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7597b84b5f5b4b5189b07cfd805d376c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32eaef18d25c2ada4a3eab62bd4dd3d1</td>
+       <td>CVE-2021-37316</td>
+       <td>2023-02-14 20:29:10 <img src="imgs/new.gif" /></td>
+       <td>ASUS RT-AC68U_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7799afedfd6f455ca392bf8b1451f80b">详情</a></td>
+      </tr>
+
+      <tr>
        <td>00dd3ab94d2642669284750657dea709</td>
        <td>CVE-2021-36424</td>
        <td>2023-02-13 20:12:13 <img src="imgs/new.gif" /></td>
@@ -1873,54 +1921,6 @@
        <td>2023-02-11 20:33:00</td>
        <td>TRENDNET TEW-652BRP_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34551fb5c4af40a2bd3230033e8fcd8f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>810455ca49cf45ca117415a4098a984e</td>
-       <td>CVE-2022-25147</td>
-       <td>2023-02-10 20:36:45</td>
-       <td>APACHE PORTABLE_RUNTIME_UTILITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=20c12933dbd1466d82cbb62f6b0540fc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb0c6b872322ec5ed82c41fe2aeb9930</td>
-       <td>CVE-2023-22610</td>
-       <td>2023-02-10 20:36:39</td>
-       <td>SCHNEIDER-ELECTRIC Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b8dbc275510c43d083f198fdd833d7b1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4310d1b77045412abd57f2c8ee4c728f</td>
-       <td>CVE-2023-0524</td>
-       <td>2023-02-10 20:36:32</td>
-       <td>TENABLE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=62105140f7e74b848858581d434f1fb6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18e3e2cd189f9ffc79e0ba68bff43e1e</td>
-       <td>CVE-2022-4496</td>
-       <td>2023-02-10 20:36:26</td>
-       <td>MINIORANGE SAML_SP_SINGLE_SIGN_ON Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f60e1b765a7541a89a062a7aac897d7d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0037720599610d966e457cf2287f5d0e</td>
-       <td>CVE-2022-24963</td>
-       <td>2023-02-10 20:36:22</td>
-       <td>APACHE PORTABLE_RUNTIME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2137366fd0a943138622fe166dd38a69">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>741e4f08caf4baef7072136884f07ae6</td>
-       <td>CVE-2023-24829</td>
-       <td>2023-02-10 20:36:15</td>
-       <td>APACHE IOTDB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=825f638ab3d7448f909352d087863272">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9f4d4bd9c87b47df15168cf2ccb5476d</td>
+       <td>CVE-2023-0776</td>
+       <td>2023-02-11 01:23:26 </td>
+       <td>Baicells Nova 436Q, Nova 430E, Nova 430I, and Neutrino 430 LTE TDD eNodeB devices with firmware through QRTB 2.12.7 are vulnerable to remote shell code exploitation via HTTP command injections. Commands are executed using pre-login execution and executed with root permissions. The following methods below have been tested and validated by a 3rd party analyst and has been confirmed exploitable special thanks to Rustam Amin for providing the steps to reproduce.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0776">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d2867a4310f6119c4e988950d0f200e</td>
+       <td>CVE-2023-0726</td>
+       <td>2023-02-08 02:15:08 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_edit_folder function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0726">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d77c2f60fe8055291c0dc8b33b2a5cb</td>
+       <td>CVE-2023-0725</td>
+       <td>2023-02-08 02:15:08 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_clone_folder function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0725">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1f3c9d6ab24f27e0221f01a628a05c2</td>
+       <td>CVE-2023-0724</td>
+       <td>2023-02-08 02:15:08 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_add_folder function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0724">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6da3ce9bfa26b1b149de5bef0016a46c</td>
+       <td>CVE-2023-0730</td>
+       <td>2023-02-07 23:15:09 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_save_folder_order function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0730">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c24c270079e0664da2144a7383456684</td>
+       <td>CVE-2023-0727</td>
+       <td>2023-02-07 23:15:09 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_delete_folder function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0727">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5c48ba9c14083c13c95d805477b420ce</td>
+       <td>CVE-2023-0723</td>
+       <td>2023-02-07 23:15:09 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_move_object function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0723">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27298f93a3ce4b24f06253070c20e343</td>
+       <td>CVE-2023-0728</td>
+       <td>2023-02-07 22:15:11 </td>
+       <td>The Wicked Folders plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.18.16. This is due to missing or incorrect nonce validation on the ajax_save_folder function. This makes it possible for unauthenticated attackers to invoke this function via forged request granted they can trick a site administrator into performing an action such as clicking on a link leading them to perform actions intended for administrators such as changing the folder structure maintained by the plugin.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0728">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f2ae72bcbefcde9e1eb5fa1a167c673</td>
+       <td>CVE-2023-20604</td>
+       <td>2023-02-06 20:15:14 </td>
+       <td>In ged, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494067; Issue ID: ALPS07494067.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-20604">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d988752fdc1b75e8409d3c76ee05ecc9</td>
+       <td>CVE-2023-20602</td>
+       <td>2023-02-06 20:15:14 </td>
+       <td>In ged, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07494107; Issue ID: ALPS07494107.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-20602">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cf1ec293b296baea1e577bc2123d4321</td>
        <td>CVE-2023-25193</td>
        <td>2023-02-04 20:15:08 </td>
@@ -2353,86 +2433,6 @@
        <td>2023-02-01 18:15:10 </td>
        <td>On versions 17.0.x before 17.0.0.2, 16.1.x before 16.1.3.3, 15.1.x before 15.1.8, 14.1.x before 14.1.5.3, and all versions of 13.1.x, when a BIG-IP AFM NAT policy with a destination NAT rule is configured on a FastL4 virtual server, undisclosed traffic can cause the Traffic Management Microkernel (TMM) to terminate. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22281">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0030ccf03c318be6b3ab9bf7b2a72899</td>
-       <td>CVE-2023-24997</td>
-       <td>2023-02-01 15:15:08 </td>
-       <td>Deserialization of Untrusted Data vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.1.0 through 1.5.0. Users are advised to upgrade to Apache InLong's latest version or cherry-pick https://github.com/apache/inlong/pull/7223 https://github.com/apache/inlong/pull/7223 to solve it.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24997">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bc1db3006872ca566b2571a362c2e295</td>
-       <td>CVE-2022-47717</td>
-       <td>2023-02-01 14:15:09 </td>
-       <td>Last Yard 22.09.8-1 is vulnerable to Cross-origin resource sharing (CORS).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47717">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5053d5cbda941f501d7e7d2214861626</td>
-       <td>CVE-2022-47715</td>
-       <td>2023-02-01 14:15:09 </td>
-       <td>In Last Yard 22.09.8-1, the cookie can be stolen via via unencrypted traffic.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47715">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b341832bfc45558e663538da58c3aaa0</td>
-       <td>CVE-2022-47714</td>
-       <td>2023-02-01 14:15:08 </td>
-       <td>Last Yard 22.09.8-1 does not enforce HSTS headers</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47714">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dee74276b6750e687d36283e84e4f10d</td>
-       <td>CVE-2023-24977</td>
-       <td>2023-02-01 10:15:10 </td>
-       <td>Out-of-bounds Read vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.1.0 through 1.5.0. Users are advised to upgrade to Apache InLong's latest version or cherry-pick https://github.com/apache/inlong/pull/7214 https://github.com/apache/inlong/pull/7214 to solve it.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22dbdfbfa2b87ab9ac3843ac6846dd5d</td>
-       <td>CVE-2023-20856</td>
-       <td>2023-02-01 03:15:08 </td>
-       <td>VMware vRealize Operations (vROps) contains a CSRF bypass vulnerability. A malicious user could execute actions on the vROps platform on behalf of the authenticated victim user.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-20856">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f31aacc996afa9eeeb0a29290737cbb0</td>
-       <td>CVE-2022-47770</td>
-       <td>2023-02-01 02:15:07 </td>
-       <td>Serenissima Informatica Fast Checkin version v1.0 is vulnerable to Unauthenticated SQL Injection.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0731fb457bad517078acc66baeaad0c1</td>
-       <td>CVE-2022-47769</td>
-       <td>2023-02-01 02:15:07 </td>
-       <td>An arbitrary file write vulnerability in Serenissima Informatica Fast Checkin v1.0 allows unauthenticated attackers to upload malicious files in the web root of the application to gain access to the server via the web shell.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>922086ab861f2129f4cb9da328c58e2e</td>
-       <td>CVE-2022-47768</td>
-       <td>2023-02-01 02:15:07 </td>
-       <td>Serenissima Informatica Fast Checkin 1.0 is vulnerable to Directory Traversal.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47768">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d24f6cdb39a440258ed5958a940c9860</td>
-       <td>CVE-2023-24956</td>
-       <td>2023-02-01 00:15:10 </td>
-       <td>Forget Heart Message Box v1.1 was discovered to contain a SQL injection vulnerability via the name parameter at /cha.php.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24956">详情</a></td>
       </tr>
 
      </tbody>
