@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-17 23:35:29 -->
+<!-- RELEASE TIME : 2023-02-18 05:35:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>dd5f8a8b0b616924d7653ed02b9d78af</td>
+       <td>CVE-2021-32846</td>
+       <td>2023-02-17 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>HyperKit is a toolkit for embedding hypervisor capabilities in an application. In versions 0.20210107, function `pci_vtsock_proc_tx` in `virtio-sock` can lead to to uninitialized memory use. In this situation, there is a check for the return value to be less or equal to `VTSOCK_MAXSEGS`, but that check is not sufficient because the function can return `-1` if it finds an error it cannot recover from. Moreover, the negative return value will be used by `iovec_pull` in a while condition that can further lead to more corruption because the function is not designed to handle a negative `iov_len`. This issue may lead to a guest crashing the host causing a denial of service and, under certain circumstance, memory corruption. This issue is fixed in commit af5eba2360a7351c08dfd9767d9be863a50ebaba.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32846">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bfd6e15551362ace70fde412eb3dd0a</td>
+       <td>CVE-2021-32845</td>
+       <td>2023-02-17 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>HyperKit is a toolkit for embedding hypervisor capabilities in an application. In versions 0.20210107 and prior of HyperKit, the implementation of `qnotify` at `pci_vtrnd_notify` fails to check the return value of `vq_getchain`. This leads to `struct iovec iov;` being uninitialized and used to read memory in `len = (int) read(sc->vrsc_fd, iov.iov_base, iov.iov_len);` when an attacker is able to make `vq_getchain` fail. This issue may lead to a guest crashing the host causing a denial of service and, under certain circumstance, memory corruption. This issue is fixed in commit 41272a980197917df8e58ff90642d14dec8fe948.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd531955ec22d8000a6a2cd21bfc162b</td>
+       <td>CVE-2021-32844</td>
+       <td>2023-02-17 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>HyperKit is a toolkit for embedding hypervisor capabilities in an application. In versions 0.20210107 and prior of HyperKit, ` vi_pci_write` has is a call to `vc_cfgwrite` that does not check for null which when called makes the host crash. This issue may lead to a guest crashing the host causing a denial of service. This issue is fixed in commit 451558fe8aaa8b24e02e34106e3bb9fe41d7ad13.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32844">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0cf4d795524c04bb70a1aa3d0a2ba846</td>
+       <td>CVE-2021-32843</td>
+       <td>2023-02-17 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>HyperKit is a toolkit for embedding hypervisor capabilities in an application. In versions 0.20210107 and prior of HyperKit, `virtio.c` has is a call to `vc_cfgread` that does not check for null which when called makes the host crash. This issue may lead to a guest crashing the host causing a denial of service. This issue is fixed in commit df0e46c7dbfd81a957d85e449ba41b52f6f7beb4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b27672ed618bc3368864c2019e0255f3</td>
+       <td>CVE-2023-24769</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Changedetection.io before v0.40.1.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the main page. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the URL parameter under the "Add a new change detection watch" function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24769">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e718c1f71e06174bb432d06a8a68ea0a</td>
+       <td>CVE-2023-23064</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK A720R V4.1.5cu.532_ B20210610 is vulnerable to Incorrect Access Control.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23064">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d251a198b91d9304914c911e2fe7907f</td>
+       <td>CVE-2023-22246</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Adobe Animate versions 22.0.8 (and earlier) and 23.0.0 (and earlier) are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22246">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51498554a94771afdeda28628d4bd133</td>
+       <td>CVE-2023-22244</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Adobe Premiere Rush version 2.6 (and earlier) is affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22244">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f2cb4e57caa3f1655a15379fb78a1a4</td>
+       <td>CVE-2023-22243</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Adobe Animate versions 22.0.8 (and earlier) and 23.0.0 (and earlier) are affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22243">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e59195bcf0a41c981984eefc423205b</td>
+       <td>CVE-2023-22239</td>
+       <td>2023-02-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>After Affects versions 23.1 (and earlier), 22.6.3 (and earlier) are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22239">详情</a></td>
+      </tr>
+
+      <tr>
        <td>43a42cf563d9b33c37409644a410385c</td>
        <td>CVE-2023-24809</td>
        <td>2023-02-17 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>1916e8ebf67722d9af973fc2d984d759</td>
        <td>CVE-2023-0821</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>HashiCorp Nomad and Nomad Enterprise 1.2.15 up to 1.3.8, and 1.4.3 jobs using a maliciously compressed artifact stanza source can cause excessive disk usage. Fixed in 1.2.16, 1.3.9, and 1.4.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0821">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>7ade717eae07cd025c84962b3484276f</td>
        <td>CVE-2022-47703</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>TIANJIE CPE906-3 is vulnerable to password disclosure. This is present on Software Version WEB5.0_LCD_20200513, Firmware Version MV8.003, and Hardware Version CPF906-V5.0_LCD_20200513.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47703">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>d566b9525661d550fd947d79279d5072</td>
        <td>CVE-2022-44299</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>SiteServerCMS 7.1.3 sscms has a file read vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44299">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>8a94f7c896bc3be6de1c32b4a68fbda3</td>
        <td>CVE-2022-0637</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>There was an open redirection vulnerability pollbot, which was used in https://pollbot.services.mozilla.com/ and https://pollbot.stage.mozaws.net/ An attacker could have redirected anyone to malicious sites.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0637">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>7390500b97f75e6f74206d0c0ec7a441</td>
        <td>CVE-2021-43529</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>Thunderbird versions prior to 91.3.0 are vulnerable to the heap overflow described in CVE-2021-43527 when processing S/MIME messages. Thunderbird versions 91.3.0 and later will not call the vulnerable code when processing S/MIME messages that contain certificates with DER-encoded DSA or RSA-PSS signatures.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43529">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>1e05b225c15d922972cf12c8144d5a7e</td>
        <td>CVE-2021-23980</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>A mutation XSS affects users calling bleach.clean with all of: svg or math in the allowed tags p or br in allowed tags style, title, noscript, script, textarea, noframes, iframe, or xmp in allowed tags the keyword argument strip_comments=False Note: none of the above tags are in the default allowed tags and strip_comments defaults to True.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23980">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>1485c6f2736fdc43e2b283a7d8806bf3</td>
        <td>CVE-2020-6817</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>bleach.clean behavior parsing style attributes could result in a regular expression denial of service (ReDoS). Calls to bleach.clean with an allowed tag with an allowed style attribute are vulnerable to ReDoS. For example, bleach.clean(..., attributes={'a': ['style']}).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-6817">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>8cfeec2945bf6659522bf5084432bf09</td>
        <td>CVE-2020-12413</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>The Raccoon attack is a timing attack on DHE ciphersuites inherit in the TLS specification. To mitigate this vulnerability, Firefox disabled support for DHE ciphersuites.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-12413">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>c7afd988f3a3faf780faf279568d1c00</td>
        <td>CVE-2019-17003</td>
-       <td>2023-02-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 22:15:00</td>
        <td>Scanning a QR code that contained a javascript: URL would have resulted in the Javascript being executed.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-17003">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>6fea722569d92e039a87b939e09f9f84</td>
        <td>CVE-2023-22380</td>
-       <td>2023-02-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 21:15:00</td>
        <td>A path traversal vulnerability was identified in GitHub Enterprise Server that allowed arbitrary file reading when building a GitHub Pages site. To exploit this vulnerability, an attacker would need permission to create and build a GitHub Pages site on the GitHub Enterprise Server instance. This vulnerability affected all versions of GitHub Enterprise Server since 3.7 and was fixed in version 3.7.6. This vulnerability was reported via the GitHub Bug Bounty program.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22380">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1177ee539c56bb81518eee0f43ded041</td>
-       <td>CVE-2023-0866</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Heap-based Buffer Overflow in GitHub repository gpac/gpac prior to 2.3.0-DEV.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0866">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9b3f85db770b998707d1a86f825087a</td>
-       <td>CVE-2022-40080</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Stack overflow vulnerability in Aspire E5-475G 's BIOS firmware, in the FpGui module, a second call to GetVariable services allows local attackers to execute arbitrary code in the UEFI DXE phase and gain escalated privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba5f8e7538ce766d335fa43f4cfb852d</td>
-       <td>CVE-2022-37329</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Uncontrolled search path in some Intel(R) Quartus(R) Prime Pro and Standard Edition software may allow an authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37329">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94be9d04b4c249778e1d536a1651f301</td>
-       <td>CVE-2022-36794</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper condition check in some Intel(R) SPS firmware before version SPS_E3_06.00.03.300.0 may allow a privileged user to potentially enable denial of service via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36794">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b21ba10da181b421e2154bfcd739bb2a</td>
-       <td>CVE-2022-36398</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Uncontrolled search path in the Intel(R) Battery Life Diagnostic Tool software before version 2.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36398">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fb032e02db02ace1abefbb251b288ad</td>
-       <td>CVE-2022-36348</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Active debug code in some Intel (R) SPS firmware before version SPS_E5_04.04.04.300.0 may allow an authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36348">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5be42f2bc1f4ba285b865e8058276145</td>
-       <td>CVE-2022-36278</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Insufficient control flow management in the Intel(R) Battery Life Diagnostic Tool software before version 2.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36278">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7223ae7c5c34e59d7a2e95873c34091</td>
-       <td>CVE-2022-34849</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Uncaught exception in the Intel(R) Iris(R) Xe MAX drivers for Windows before version 100.0.5.1436(v2) may allow a privileged user to potentially enable denial of service via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34849">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98c1d409ea410c6a61f1c7978e24b0fb</td>
-       <td>CVE-2022-34157</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper access control in the Intel(R) FPGA SDK for OpenCL(TM) with Intel(R) Quartus(R) Prime Pro Edition software before version 22.1 may allow authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34157">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e7a32f047e81142817a3301187ca59fc</td>
-       <td>CVE-2022-34153</td>
-       <td>2023-02-16 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper initialization in the Intel(R) Battery Life Diagnostic Tool software before version 2.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34153">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>a352340d195d3bca8581b7f03633bbc6</td>
        <td>CVE-2022-4838</td>
-       <td>2023-02-16 20:30:45 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 20:30:45</td>
        <td>CODECTION CLEAN_LOGIN Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0bd1bcfd530a4e3ab1eea03b41b8280d">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>205f80af32e526600a2e44d1252b0ceb</td>
        <td>CVE-2023-0678</td>
-       <td>2023-02-16 20:30:31 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 20:30:31</td>
        <td>PHPIPAM PHPIPAM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=27c29fa182b14dc1bbd14aa7c2fc9624">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>438bb643b2f0da949a70fff3e30784c8</td>
        <td>CVE-2021-37317</td>
-       <td>2023-02-16 20:30:24 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 20:30:24</td>
        <td>ASUS RT-AC68U_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3cacbfa1f38141708ea05876565cf2f7">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>adf0421e779d24b2218b42cca65d9587</td>
        <td>CVE-2023-22474</td>
-       <td>2023-02-16 20:30:11 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 20:30:11</td>
        <td>PARSEPLATFORM PARSE-SERVER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=72e1f918b4ab45ec8bc9f0989cbc923b">详情</a></td>
       </tr>
@@ -1942,7 +1942,7 @@
       <tr>
        <td>ed59b33a8308dc06830b2ba039b4fe2a</td>
        <td>CVE-2022-20604</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Google Android Kernel越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75847">详情</a></td>
       </tr>
@@ -1950,7 +1950,7 @@
       <tr>
        <td>d95e196d2755e5c003da0bb73585b3d4</td>
        <td>CVE-2022-20592</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Google Android Kernel信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75846">详情</a></td>
       </tr>
@@ -1958,7 +1958,7 @@
       <tr>
        <td>4cb4d65f41b2419b8f6f25652ed2bb9d</td>
        <td>CVE-2022-47581</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Isode M-Vault拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75845">详情</a></td>
       </tr>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>bb319535ccd6ab7799075273f95a2015</td>
        <td>CVE-2022-46771</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>IBM UrbanCode Deploy跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75844">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>ed97e99e28f201593449c4138c5d3635</td>
        <td>CVE-2022-4619</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>WordPress Sidebar Widgets by CodeLights Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75843">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>dfdc90e59e1d779de9bcaa49dc4ef6eb</td>
        <td>CVE-2022-25940</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>npm lite-server拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75842">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>d7cb8b5c5f9f26995ad7e577c35078d7</td>
        <td>CVE-2022-23536</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>cortex信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75841">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>3b6cd72848491f06a2516bf30ea0bf0a</td>
        <td>CVE-2022-42349</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Adobe Experience Manager跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75840">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>1ef8eac980525253be9df4dd998d75e5</td>
        <td>CVE-2022-3775</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>grub2越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75839">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>2b88b6f059bc5d33d14906923e47bad8</td>
        <td>CVE-2022-47512</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>SolarWinds Platform和Hybrid Cloud Observability信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75838">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>4d8087fb0fa8acb6ccb207ba57551867</td>
        <td>CVE-2022-3985</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>WordPress Videojs HTML5 Player Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75837">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>c84dfea48e0ac4c2a87d6852c9b9ec5c</td>
        <td>CVE-2021-38241</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Ruoyi不受信数据反序列化漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75836">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>5254202daa3bcd6babfe8a5ca4bbb7aa</td>
        <td>CVE-2022-47208</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>NETGEAR Nighthawk WiFi6 Router输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75835">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>2ecef7605f62c2bc697df2614d8371b0</td>
        <td>CVE-2022-20598</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Google Android Kernel整数溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75834">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>8ba5e987bfae5f6a1e9c6f35f9f3f90f</td>
        <td>CVE-2022-42543</td>
-       <td>2023-02-16 23:35:12 <img src="imgs/new.gif" /></td>
+       <td>2023-02-16 23:35:12</td>
        <td>Google Android Kernel越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75833">详情</a></td>
       </tr>
