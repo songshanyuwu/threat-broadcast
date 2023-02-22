@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-22 05:34:54 -->
+<!-- RELEASE TIME : 2023-02-22 23:35:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>458603c56baa4274a46f23558a6093a8</td>
+       <td>CVE-2023-24812</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Misskey is an open source, decentralized social media platform. In versions prior to 13.3.3 SQL injection is possible due to insufficient parameter validation in the note search API by tag (notes/search-by-tag). This has been fixed in version 13.3.3. Users are advised to upgrade. Users unable to upgrade should block access to the `api/notes/search-by-tag` endpoint.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24812">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1bac1d6bca67b3a395030a214a0df2ac</td>
+       <td>CVE-2023-24811</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Misskey is an open source, decentralized social media platform. In versions prior to 13.3.2 the URL preview function is subject to a cross site scripting vulnerability due to insufficient URL validation. Arbitrary JavaScript is executed when a malicious URL is loaded in the `View in Player` or `View in Window` preview. This has been fixed in version 13.3.2. Users are advised to upgrade. Users unable to upgrade should avoid usage of the `View in Player` or `View in Window` functions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24811">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a57f25042907bce1959f53b8a62dbc0e</td>
+       <td>CVE-2023-24810</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Misskey is an open source, decentralized social media platform. Due to insufficient validation of the redirect URL during `miauth` authentication in Misskey, arbitrary JavaScript can be executed when a user allows the link. All versions below 13.3.1 (including 12.x) are affected. This has been fixed in version 13.3.1. Users are advised to upgrade. Users unable to upgrade should not allow authentication of untrusted apps.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f83da86f67d3499d40b8bb9dca61b904</td>
+       <td>CVE-2023-24093</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An access control issue in H3C A210-G A210-GV100R005 allows attackers to authenticate without a password.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24093">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>262e2abe2f732b979a53b68928f3ec1e</td>
+       <td>CVE-2023-0966</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in SourceCodester Online Eyewear Shop 1.0. Affected by this vulnerability is an unknown functionality of the file admin/?page=orders/view_order. The manipulation of the argument id leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-221635.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0966">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c084e44e3f82655e72b7969410d20ec3</td>
+       <td>CVE-2023-0941</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in Prompts in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0941">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f70772ce7054e53756876ede733412c</td>
+       <td>CVE-2023-0933</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Integer overflow in PDF in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0933">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ded16eb73c716630340268849caff884</td>
+       <td>CVE-2023-0932</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in WebRTC in Google Chrome on Windows prior to 110.0.5481.177 allowed a remote attacker who convinced the user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0932">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7c4574ed984cc3a10cfa09c14ad8d09</td>
+       <td>CVE-2023-0931</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in Video in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d053ce1a3838638fa02ed77e8094df6</td>
+       <td>CVE-2023-0930</td>
+       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Heap buffer overflow in Video in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0930">详情</a></td>
+      </tr>
+
+      <tr>
        <td>19fcd0e8905e0f7a65bc1012ce841993</td>
        <td>CVE-2023-20858</td>
        <td>2023-02-22 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-02-21 15:15:00 <img src="imgs/new.gif" /></td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0934">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb4866a4fd3533fca647efff3a6f0089</td>
-       <td>CVE-2023-26235</td>
-       <td>2023-02-21 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>JD-GUI 1.6.6 allows XSS via util/net/InterProcessCommunicationUtil.java.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26235">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a044e2dd77a29b850f00f189c26c9ee</td>
-       <td>CVE-2023-26234</td>
-       <td>2023-02-21 00:15:00 <img src="imgs/new.gif" /></td>
-       <td>JD-GUI 1.6.6 allows deserialization via UIMainWindowPreferencesProvider.singleInstance.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26234">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c4c98858bf33f7eb2d7689465205755</td>
-       <td>CVE-2023-23453</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>Missing Authentication for Critical Function in SICK FX0-GENT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23453">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>411357026a64b9ec8267f603e0896300</td>
-       <td>CVE-2023-23452</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>Missing Authentication for Critical Function in SICK FX0-GPNT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23452">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19b84b6b9edda2b2f2d25af7fbd51eb3</td>
-       <td>CVE-2022-48339</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>An issue was discovered in GNU Emacs through 28.2. htmlfontify.el has a command injection vulnerability. In the hfy-istext-command function, the parameter file and parameter srcdir come from external input, and parameters are not escaped. If a file name or directory name contains shell metacharacters, code may be executed.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48339">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc0199d5201aa874c4fc7576533e6f87</td>
-       <td>CVE-2022-48338</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>An issue was discovered in GNU Emacs through 28.2. In ruby-mode.el, the ruby-find-library-file function has a local command injection vulnerability. The ruby-find-library-file function is an interactive function, and bound to C-c C-f. Inside the function, the external command gem is called through shell-command-to-string, but the feature-name parameters are not escaped. Thus, malicious Ruby source files may cause commands to be executed.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48338">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e56353171d6f2b286a7d5c7c7b47e29</td>
-       <td>CVE-2022-48337</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>GNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the etags program. For example, a victim may use the "etags -u *" command (suggested in the etags documentation) in a situation where the current working directory has contents that depend on untrusted input.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48337">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17743b22d1a3bbf0acf06d59ca4d6d44</td>
-       <td>CVE-2021-32853</td>
-       <td>2023-02-20 23:15:00</td>
-       <td>Erxes, an experience operating system (XOS) with a set of plugins, is vulnerable to cross-site scripting in versions 0.22.3 and prior. This results in client-side code execution. The victim must follow a malicious link or be redirected there from malicious web site. There are no known patches.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32853">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b075404144be82d14dd9583871adfb2</td>
-       <td>CVE-2021-32852</td>
-       <td>2023-02-20 22:15:00</td>
-       <td>Countly, a product analytics solution, is vulnerable to cross-site scripting prior to version 21.11 of the community edition. The victim must follow a malicious link or be redirected there from malicious web site. The attacker must have an account or be able to create one. This issue is patched in version 21.11.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8919fdc8ec6e3ab77abf20335d2452fe</td>
-       <td>CVE-2021-32851</td>
-       <td>2023-02-20 22:15:00</td>
-       <td>Mind-elixir is a free, open source mind map core. Prior to version 0.18.1, mind-elixir is prone to cross-site scripting when handling untrusted menus. This issue is patched in version 0.18.1</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-32851">详情</a></td>
       </tr>
 
      </tbody>
@@ -1940,6 +1940,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>be7de2b0e986abe06d0a384cdac707ec</td>
+       <td>CVE-2022-44652</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Trend Micro Apex One异常情况处理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7436e1eded86d8857b0e7c3a6fa8e01c</td>
+       <td>CVE-2022-38395</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>HP Support Assistant不受控制的搜索路径元素漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75922">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0fdbbd0ee639ec794dadae823dc7b697</td>
+       <td>CVE-2022-37018</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>HP PC BIOS权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75921">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4328fb816595d59bb792e2ae0eab9b5d</td>
+       <td>CVE-2021-3437</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>HP OMEN Gaming Hub SDK权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75920">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a040520448c442c81603bd0944396f7e</td>
+       <td>CVE-2022-46684</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Jenkins Checkmarx Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75919">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0ca8a4f28aee112fd65d2d98ecf4f974</td>
+       <td>CVE-2022-20968</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Cisco IP Phone越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75918">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5eb29eb2fdc60eb89183984e5c738049</td>
+       <td>CVE-2022-44790</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>BigCommerec Interspire Email Marketer SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>519d2661c75673c4275d00465af48134</td>
+       <td>CVE-2022-4264</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>M-Files Web权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3bc1b0099250f44dd2d2a42fe929cc48</td>
+       <td>CVE-2022-38765</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Canon Medical Informatics Vitrea Vision信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75915">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>658ce81bc436ab1270eb0d5cc5d4bf51</td>
+       <td>CVE-2022-33186</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Brocade Fabric OS操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75914">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e58d6ad2408e6904d1b4d152b7ed1205</td>
+       <td>CVE-2022-4123</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Buildah路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75913">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fbe6e37236c2b4ab8aca183ac3c44b7</td>
+       <td>CVE-2020-36562</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>dht不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75912">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4fe5a0f088cfd3fa4f9f05d7b4fd5e8</td>
+       <td>CVE-2022-42261</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA vGPU Software缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d64f330d98908b9eeda51a9b3ca4260</td>
+       <td>CVE-2022-20527</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Google Android越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75910">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>517ca35285e45fc82dbbb337c5bdc304</td>
+       <td>CVE-2022-20521</td>
+       <td>2023-02-21 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Google Android空指针解引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75909">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ed59b33a8308dc06830b2ba039b4fe2a</td>
        <td>CVE-2022-20604</td>
        <td>2023-02-16 23:35:12</td>
@@ -2059,126 +2179,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75833">详情</a></td>
       </tr>
 
-      <tr>
-       <td>46147e4c110d3abba76d5b9ddbd121a0</td>
-       <td>CVE-2023-24566</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75804">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b8dd66336732f67b2649bcb9e1a9610</td>
-       <td>CVE-2023-24565</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75803">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c979f772cb67caa574cfdc096d0684ac</td>
-       <td>CVE-2023-24558</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75802">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>24a92a31093e2a6fffd8df73ece7b776</td>
-       <td>CVE-2023-24559</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75801">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>97a65efeb9e97e90d3cca60cbda48e7c</td>
-       <td>CVE-2023-24560</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a4816daa8b603320e2e6efe262f54d9</td>
-       <td>CVE-2023-24561</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fc2cf63c2b621024243d9ff2d82133d</td>
-       <td>CVE-2023-24562</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75798">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2749027a6bcfe6d70e44bc433448dd0</td>
-       <td>CVE-2023-24581</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75797">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dcc64f72fffbae1c8c9754ba4e983d0e</td>
-       <td>CVE-2023-24982</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Tecnomatix Plant Simulation越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75796">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0c7dba641f0f5a69af63e630ec5e51c</td>
-       <td>CVE-2023-24981</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Tecnomatix Plant Simulation越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75795">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ddfad03b8b2f326432d2d6147c279874</td>
-       <td>CVE-2023-24980</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Tecnomatix Plant Simulation越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75794">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>860d7fa698ec6cafdd644975cf9d0362</td>
-       <td>CVE-2023-24979</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Tecnomatix Plant Simulation越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75793">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb5e13192ec60a10498c646bbd525042</td>
-       <td>CVE-2023-24978</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Tecnomatix Plant Simulation未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75792">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f66fad157f881249bcdf824b763290d</td>
-       <td>CVE-2023-24564</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge内存破坏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75791">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>984d0d2deeae2a1e3b5e61b8e423c681</td>
-       <td>CVE-2023-24563</td>
-       <td>2023-02-15 23:35:07</td>
-       <td>Siemens Solid Edge未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75790">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2196,11 +2196,75 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>824d702024849d17f16cafdaeb9fee2c</td>
+       <td>CVE-2023-25567</td>
+       <td>2023-02-14 18:15:13 </td>
+       <td>GSS-NTLMSSP, a mechglue plugin for the GSSAPI library that implements NTLM authentication, has an out-of-bounds read when decoding target information prior to version 1.2.0. The length of the `av_pair` is not checked properly for two of the elements which can trigger an out-of-bound read. The out-of-bounds read can be triggered via the main `gss_accept_sec_context` entry point and could cause a denial-of-service if the memory is unmapped. The issue is fixed in version 1.2.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25567">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6709f1f6932e9375cbeef32360e3af4c</td>
+       <td>CVE-2023-25566</td>
+       <td>2023-02-14 18:15:13 </td>
+       <td>GSS-NTLMSSP is a mechglue plugin for the GSSAPI library that implements NTLM authentication. Prior to version 1.2.0, a memory leak can be triggered when parsing usernames which can trigger a denial-of-service. The domain portion of a username may be overridden causing an allocated memory area the size of the domain name to be leaked. An attacker can leak memory via the main `gss_accept_sec_context` entry point, potentially causing a denial-of-service. This issue is fixed in version 1.2.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25566">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1bde781df8928678c844248a37dba21</td>
+       <td>CVE-2023-25565</td>
+       <td>2023-02-14 18:15:13 </td>
+       <td>GSS-NTLMSSP is a mechglue plugin for the GSSAPI library that implements NTLM authentication. Prior to version 1.2.0, an incorrect free when decoding target information can trigger a denial of service. The error condition incorrectly assumes the `cb` and `sh` buffers contain a copy of the data that needs to be freed. However, that is not the case. This vulnerability can be triggered via the main `gss_accept_sec_context` entry point. This will likely trigger an assertion failure in `free`, causing a denial-of-service. This issue is fixed in version 1.2.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25565">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>33818a491da780cdf8afe0827d886cd4</td>
+       <td>CVE-2023-25564</td>
+       <td>2023-02-14 18:15:13 </td>
+       <td>GSS-NTLMSSP is a mechglue plugin for the GSSAPI library that implements NTLM authentication. Prior to version 1.2.0, memory corruption can be triggered when decoding UTF16 strings. The variable `outlen` was not initialized and could cause writing a zero to an arbitrary place in memory if `ntlm_str_convert()` were to fail, which would leave `outlen` uninitialized. This can lead to a denial of service if the write hits unmapped memory or randomly corrupts a byte in the application memory space. This vulnerability can trigger an out-of-bounds write, leading to memory corruption. This vulnerability can be triggered via the main `gss_accept_sec_context` entry point. This issue is fixed in version 1.2.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25564">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7aa850fef973d2add9b3565ed71adbc</td>
+       <td>CVE-2023-25563</td>
+       <td>2023-02-14 18:15:13 </td>
+       <td>GSS-NTLMSSP is a mechglue plugin for the GSSAPI library that implements NTLM authentication. Prior to version 1.2.0, multiple out-of-bounds reads when decoding NTLM fields can trigger a denial of service. A 32-bit integer overflow condition can lead to incorrect checks of consistency of length of internal buffers. Although most applications will error out before accepting a singe input buffer of 4GB in length this could theoretically happen. This vulnerability can be triggered via the main `gss_accept_sec_context` entry point if the application allows tokens greater than 4GB in length. This can lead to a large, up to 65KB, out-of-bounds read which could cause a denial-of-service if it reads from unmapped memory. Version 1.2.0 contains a patch for the out-of-bounds reads.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25563">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>368d76b60794e321c1a93d1d7059c351</td>
+       <td>CVE-2023-25576</td>
+       <td>2023-02-14 16:15:11 </td>
+       <td>@fastify/multipart is a Fastify plugin to parse the multipart content-type. Prior to versions 7.4.1 and 6.0.1, @fastify/multipart may experience denial of service due to a number of situations in which an unlimited number of parts are accepted. This includes the multipart body parser accepting an unlimited number of file parts, the multipart body parser accepting an unlimited number of field parts, and the multipart body parser accepting an unlimited number of empty parts as field parts. This is fixed in v7.4.1 (for Fastify v4.x) and v6.0.1 (for Fastify v3.x). There are no known workarounds.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25576">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a0b7070a038cd1dd497a33a85084a6f</td>
+       <td>CVE-2023-25758</td>
+       <td>2023-02-14 07:15:11 </td>
+       <td>Onekey Touch devices through 4.0.0 and Onekey Mini devices through 2.10.0 allow man-in-the-middle attackers to obtain the seed phase. The man-in-the-middle access can only be obtained after disassembling a device (i.e., here, &quot;man-in-the-middle&quot; does not refer to the attacker's position on an IP network). NOTE: the vendor states that &quot;our hardware team has updated the security patch without anyone being affected.&quot;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25758">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f2ac6920ba1ad8336f4bc59bbeb72b3c</td>
        <td>CVE-2023-25614</td>
        <td>2023-02-14 04:15:13 </td>
        <td>SAP NetWeaver AS ABAP (BSP Framework) application - versions 700, 701, 702, 731, 740, 750, 751, 752, 753, 754, 755, 756, 757, allow an unauthenticated attacker to inject the code that can be executed by the application over the network. On successful exploitation it can gain access to the sensitive information which leads to a limited impact on the confidentiality and the integrity of the application.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25614">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bcb63326af735a8e872f621bfe4e5ef0</td>
+       <td>CVE-2023-25572</td>
+       <td>2023-02-13 21:15:15 </td>
+       <td>react-admin is a frontend framework for building browser applications on top of REST/GraphQL APIs. react-admin prior to versions 3.19.12 and 4.7.6, along with ra-ui-materialui prior to 3.19.12 and 4.7.6, are vulnerable to cross-site scripting. All React applications built with react-admin and using the `&lt;RichTextField&gt;` are affected. `&lt;RichTextField&gt;` outputs the field value using `dangerouslySetInnerHTML` without client-side sanitization. If the data isn't sanitized server-side, this opens a possible cross-site scripting (XSS) attack. Versions 3.19.12 and 4.7.6 now use `DOMPurify` to escape the HTML before outputting it with React and `dangerouslySetInnerHTML`. Users who already sanitize HTML data server-side do not need to upgrade. As a workaround, users may replace the `&lt;RichTextField&gt;` by a custom field doing sanitization by hand.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25572">详情</a></td>
       </tr>
 
       <tr>
@@ -2369,70 +2433,6 @@
        <td>2023-02-09 17:15:12 </td>
        <td>The bundle management module lacks authentication and control mechanisms in some APIs. Successful exploitation of this vulnerability may affect data confidentiality.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-48289">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cbf7a40465d562517b56efb7bf3ae5b5</td>
-       <td>CVE-2022-48288</td>
-       <td>2023-02-09 17:15:12 </td>
-       <td>The bundle management module lacks authentication and control mechanisms in some APIs. Successful exploitation of this vulnerability may affect data confidentiality.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-48288">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>482ff8fa7723dbef2500f6ea3866dc51</td>
-       <td>CVE-2023-25168</td>
-       <td>2023-02-09 00:16:36 </td>
-       <td>Wings is Pterodactyl's server control plane. This vulnerability can be used to delete files and directories recursively on the host system. This vulnerability can be combined with `GHSA-p8r3-83r8-jwj5` to overwrite files on the host system. In order to use this exploit, an attacker must have an existing &quot;server&quot; allocated and controlled by Wings. This vulnerability has been resolved in version `v1.11.4` of Wings, and has been back-ported to the 1.7 release series in `v1.7.4`. Anyone running `v1.11.x` should upgrade to `v1.11.4` and anyone running `v1.7.x` should upgrade to `v1.7.4`. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be725e59076b26cba110f75ae5a921f7</td>
-       <td>CVE-2023-25163</td>
-       <td>2023-02-08 21:15:10 </td>
-       <td>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. All versions of Argo CD starting with v2.6.0-rc1 have an output sanitization bug which leaks repository access credentials in error messages. These error messages are visible to the user, and they are logged. The error message is visible when a user attempts to create or update an Application via the Argo CD API (and therefor the UI or CLI). The user must have `applications, create` or `applications, update` RBAC access to reach the code which may produce the error. The user is not guaranteed to be able to trigger the error message. They may attempt to spam the API with requests to trigger a rate limit error from the upstream repository. If the user has `repositories, update` access, they may edit an existing repository to introduce a URL typo or otherwise force an error message. But if they have that level of access, they are probably intended to have access to the credentials anyway. A patch for this vulnerability has been released in version 2.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25163">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9dfa0e1d95f4579d30edca7caa552800</td>
-       <td>CVE-2023-25167</td>
-       <td>2023-02-08 20:15:25 </td>
-       <td>Discourse is an open source discussion platform. In affected versions a malicious user can cause a regular expression denial of service using a carefully crafted git URL. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25167">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a5f3ac19af8ddf4c623bc668b3ce5783</td>
-       <td>CVE-2023-25166</td>
-       <td>2023-02-08 20:15:25 </td>
-       <td>formula is a math and string formula parser. In versions prior to 3.0.1 crafted user-provided strings to formula's parser might lead to polynomial execution time and a denial of service. Users should upgrade to 3.0.1+. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25166">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9918dc1a8f2c5f4cf86e9e160a4ec8e7</td>
-       <td>CVE-2023-25165</td>
-       <td>2023-02-08 20:15:24 </td>
-       <td>Helm is a tool that streamlines installing and managing Kubernetes applications.`getHostByName` is a Helm template function introduced in Helm v3. The function is able to accept a hostname and return an IP address for that hostname. To get the IP address the function performs a DNS lookup. The DNS lookup happens when used with `helm install|upgrade|template` or when the Helm SDK is used to render a chart. Information passed into the chart can be disclosed to the DNS servers used to lookup the IP address. For example, a malicious chart could inject `getHostByName` into a chart in order to disclose values to a malicious DNS server. The issue has been fixed in Helm 3.11.1. Prior to using a chart with Helm verify the `getHostByName` function is not being used in a template to disclose any information you do not want passed to DNS servers.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25165">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9212c5ee0dc2ea74e6ff7425d8259d58</td>
-       <td>CVE-2023-25164</td>
-       <td>2023-02-08 20:15:24 </td>
-       <td>Tinacms is a Git-backed headless content management system with support for visual editing. Sites being built with @tinacms/cli &gt;= 1.0.0 &amp;&amp; &lt; 1.0.9 which store sensitive values in the process.env variable are impacted. These values will be added in plaintext to the index.js file. If you're on a version prior to 1.0.0 this vulnerability does not affect you. If you are affected and your Tina-enabled website has sensitive credentials stored as environment variables (eg. Algolia API keys) you should rotate those keys immediately. This issue has been patched in @tinacms/cli@1.0.9. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25164">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39cc8f1ff27245f9e735f939ba3bd131</td>
-       <td>CVE-2023-25151</td>
-       <td>2023-02-08 20:15:24 </td>
-       <td>opentelemetry-go-contrib is a collection of extensions for OpenTelemetry-Go. The v0.38.0 release of `go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp` uses the `httpconv.ServerRequest` function to annotate metric measurements for the `http.server.request_content_length`, `http.server.response_content_length`, and `http.server.duration` instruments. The `ServerRequest` function sets the `http.target` attribute value to be the whole request URI (including the query string)[^1]. The metric instruments do not &quot;forget&quot; previous measurement attributes when `cumulative` temporality is used, this means the cardinality of the measurements allocated is directly correlated with the unique URIs handled. If the query string is constantly random, this will result in a constant increase in memory allocation that can be used in a denial-of-service attack. This issue has been addressed in version 0.39.0. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25151">详情</a></td>
       </tr>
 
      </tbody>
