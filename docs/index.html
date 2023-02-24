@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-23 23:35:40 -->
+<!-- RELEASE TIME : 2023-02-24 05:35:53 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e35c3430e1e4d0876384029ed95bf060</td>
+       <td>CVE-2023-26468</td>
+       <td>2023-02-24 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cerebrate 1.12 does not properly consider organisation_id during creation of API keys.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26468">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9443a24a57f77d0c8693ae0c974d7b0d</td>
+       <td>CVE-2023-24212</td>
+       <td>2023-02-23 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda AX3 V16.03.12.11 was discovered to contain a stack overflow via the timeType function at /goform/SetSysTimeCfg.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24212">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>85cadaad0f582934af48cf3129d4f205</td>
+       <td>CVE-2023-23296</td>
+       <td>2023-02-23 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Korenix JetWave 4200 Series 1.3.0 and JetWave 3200 Series 1.6.0 are vulnerable to Denial of Service via /goform/formDefault.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23296">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>16015c82ab624f52e466cd93f084471d</td>
+       <td>CVE-2023-23295</td>
+       <td>2023-02-23 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Korenix Jetwave 4200 Series 1.3.0 and JetWave 3000 Series 1.6.0 are vulnerable to Command Injection via /goform/formSysCmd. An attacker an modify the sysCmd parameter in order to execute commands as root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23295">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f16c9fc738a011f7c179de979e3fefa</td>
+       <td>CVE-2023-23294</td>
+       <td>2023-02-23 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Korenix JetWave 4200 Series 1.3.0 and JetWave 3000 Series 1.6.0 are vulnerable to Command Injection. An attacker can modify the file_name parameter to execute commands as root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23294">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da494812803cb387386b4fe291c6384e</td>
+       <td>CVE-2023-25824</td>
+       <td>2023-02-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mod_gnutls is a TLS module for Apache HTTPD based on GnuTLS. Versions from 0.9.0 to 0.12.0 (including) did not properly fail blocking read operations on TLS connections when the transport hit timeouts. Instead it entered an endless loop retrying the read operation, consuming CPU resources. This could be exploited for denial of service attacks. If trace level logging was enabled, it would also produce an excessive amount of log output during the loop, consuming disk space. The problem has been fixed in commit d7eec4e598158ab6a98bf505354e84352f9715ec, please update to version 0.12.1. There are no workarounds, users who cannot update should apply the errno fix detailed in the security advisory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25824">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a3061013bde813fd7a4555a540b931e</td>
+       <td>CVE-2023-25823</td>
+       <td>2023-02-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Gradio is an open-source Python library to build machine learning and data science demos and web applications. Versions prior to 3.13.1 contain Use of Hard-coded Credentials. When using Gradio's share links (i.e. creating a Gradio app and then setting `share=True`), a private SSH key is sent to any user that connects to the Gradio machine, which means that a user could access other users' shared Gradio demos. From there, other exploits are possible depending on the level of access/exposure the Gradio app provides. This issue is patched in version 3.13.1, however, users are recommended to update to 3.19.1 or later where the FRP solution has been properly tested.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25823">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61dfeda2163eaf038639d468b28512c7</td>
+       <td>CVE-2023-24205</td>
+       <td>2023-02-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Clash for Windows v0.20.12 was discovered to contain a remote code execution (RCE) vulnerability which is exploited via overwriting the configuration file (cfw-setting.yaml).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24205">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a6b7a8fbdcdaef9ba0df8f72615aa13e</td>
+       <td>CVE-2023-0755</td>
+       <td>2023-02-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected products are vulnerable to an improper validation of array index, which could allow an attacker to crash the server and remotely execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0755">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37f1c8ded0cc99b45f54900a3c1bdefc</td>
+       <td>CVE-2023-0754</td>
+       <td>2023-02-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected products are vulnerable to an integer overflow or wraparound, which could allow an attacker to crash the server and remotely execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0754">详情</a></td>
+      </tr>
+
+      <tr>
        <td>08f813325e88589d3249438e3e9ee256</td>
        <td>CVE-2023-26326</td>
        <td>2023-02-23 20:15:00 <img src="imgs/new.gif" /></td>
@@ -374,7 +454,7 @@
       <tr>
        <td>e3a5d7024e44107f0d8b808c246575d3</td>
        <td>CVE-2023-26302</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>Denial of service could be caused to the command line interface of markdown-it-py, before v2.2.0, if an attacker was allowed to use invalid UTF-8 characters as input.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26302">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>70cc5aa20fe3592d17d172240ad6aaf3</td>
        <td>CVE-2023-0886</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>A lack of length validation in GitLab CE/EE affecting all versions from 12.4 before 15.6.7, 15.7 before 15.7.6, and 15.8 before 15.8.1 allows an authenticated attacker to create a large Issue description via GraphQL which, when repeatedly requested, saturates CPU usage.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0886">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>15c10fc90b9deae1d30c5f395b61642a</td>
        <td>CVE-2023-0885</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>An issue has been discovered in GitLab CE/EE affecting all versions starting from 14.0 before 15.6.7, all versions starting from 15.7 before 15.7.6, all versions starting from 15.8 before 15.8.1. It was possible to trigger a DoS attack by uploading a malicious Helm chart.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0885">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>06c772f2e88c5759bf67d8d9ec28d11d</td>
        <td>CVE-2023-0884</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>An issue has been discovered in GitLab CE/EE affecting all versions starting from 14.3 before 15.6.7, all versions starting from 15.7 before 15.7.6, all versions starting from 15.8 before 15.8.1. An attacker may upload a crafted CI job artifact zip file in a project that uses dynamic child pipelines and make a sidekiq job allocate a lot of memory. In GitLab instances where Sidekiq is memory-limited, this may cause Denial of Service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0884">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>b2ca182118a624c07906f67f101a70b1</td>
        <td>CVE-2022-48149</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>Online Student Admission System in PHP Free Source Code 1.0 was discovered to contain a SQL injection vulnerability via the username parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48149">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>f53f2fcc5e2a14773c0681eb17a6ed3c</td>
        <td>CVE-2017-1069</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2017. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-1069">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>a0d12bb1fb158281272de6b0ea42eb15</td>
        <td>CVE-2017-1068</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2017. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-1068">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>6897347114b5e55431c37a2b48f3541d</td>
        <td>CVE-2017-1067</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2017. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-1067">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>a69e039ffced59bc31f4da2cb19f3f92</td>
        <td>CVE-2017-1066</td>
-       <td>2023-02-22 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-22 23:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2017. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-1066">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>458603c56baa4274a46f23558a6093a8</td>
-       <td>CVE-2023-24812</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Misskey is an open source, decentralized social media platform. In versions prior to 13.3.3 SQL injection is possible due to insufficient parameter validation in the note search API by tag (notes/search-by-tag). This has been fixed in version 13.3.3. Users are advised to upgrade. Users unable to upgrade should block access to the `api/notes/search-by-tag` endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24812">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1bac1d6bca67b3a395030a214a0df2ac</td>
-       <td>CVE-2023-24811</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Misskey is an open source, decentralized social media platform. In versions prior to 13.3.2 the URL preview function is subject to a cross site scripting vulnerability due to insufficient URL validation. Arbitrary JavaScript is executed when a malicious URL is loaded in the `View in Player` or `View in Window` preview. This has been fixed in version 13.3.2. Users are advised to upgrade. Users unable to upgrade should avoid usage of the `View in Player` or `View in Window` functions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24811">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a57f25042907bce1959f53b8a62dbc0e</td>
-       <td>CVE-2023-24810</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Misskey is an open source, decentralized social media platform. Due to insufficient validation of the redirect URL during `miauth` authentication in Misskey, arbitrary JavaScript can be executed when a user allows the link. All versions below 13.3.1 (including 12.x) are affected. This has been fixed in version 13.3.1. Users are advised to upgrade. Users unable to upgrade should not allow authentication of untrusted apps.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24810">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f83da86f67d3499d40b8bb9dca61b904</td>
-       <td>CVE-2023-24093</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>An access control issue in H3C A210-G A210-GV100R005 allows attackers to authenticate without a password.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24093">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>262e2abe2f732b979a53b68928f3ec1e</td>
-       <td>CVE-2023-0966</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability classified as problematic was found in SourceCodester Online Eyewear Shop 1.0. Affected by this vulnerability is an unknown functionality of the file admin/?page=orders/view_order. The manipulation of the argument id leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-221635.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0966">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c084e44e3f82655e72b7969410d20ec3</td>
-       <td>CVE-2023-0941</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Use after free in Prompts in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0941">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f70772ce7054e53756876ede733412c</td>
-       <td>CVE-2023-0933</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Integer overflow in PDF in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0933">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ded16eb73c716630340268849caff884</td>
-       <td>CVE-2023-0932</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Use after free in WebRTC in Google Chrome on Windows prior to 110.0.5481.177 allowed a remote attacker who convinced the user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0932">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7c4574ed984cc3a10cfa09c14ad8d09</td>
-       <td>CVE-2023-0931</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Use after free in Video in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d053ce1a3838638fa02ed77e8094df6</td>
-       <td>CVE-2023-0930</td>
-       <td>2023-02-22 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>Heap buffer overflow in Video in Google Chrome prior to 110.0.5481.177 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0930">详情</a></td>
       </tr>
 
      </tbody>
@@ -2324,6 +2324,70 @@
       </tr>
 
       <tr>
+       <td>f9f38f97128a0a329454d3d89d61e957</td>
+       <td>CVE-2023-24556</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected applications contain an out of bounds read past the end of an allocated structure while parsing specially crafted PAR files. This could allow an attacker to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24556">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>99f04888d9f9d7ca057b86c4c3748dcd</td>
+       <td>CVE-2023-24555</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected applications contain an out of bounds read past the end of an allocated structure while parsing specially crafted PAR files. This could allow an attacker to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24555">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03fe43a8509ad85903d6113c83ab2d88</td>
+       <td>CVE-2023-24554</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected applications contain an out of bounds read past the end of an allocated structure while parsing specially crafted PAR files. This could allow an attacker to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24554">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8d240ecd9ebae5bca3ee5aed100f899</td>
+       <td>CVE-2023-24553</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected applications contain an out of bounds read past the end of an allocated structure while parsing specially crafted PAR files. This could allow an attacker to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24553">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9e02d09116f72dd2024cec8c5fb4c389</td>
+       <td>CVE-2023-24552</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected application contains an out of bounds read past the end of an allocated buffer while parsing a specially crafted PAR file. This could allow an attacker to to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24552">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d77e95b28b828b0e2f6eaf71a8ee2aca</td>
+       <td>CVE-2023-24551</td>
+       <td>2023-02-14 11:15:15 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected application is vulnerable to heap-based buffer underflow while parsing specially crafted PAR files. An attacker could leverage this vulnerability to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24551">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b8e3399b1c891669f3f63633ab72e179</td>
+       <td>CVE-2023-24550</td>
+       <td>2023-02-14 11:15:14 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected application is vulnerable to heap-based buffer while parsing specially crafted PAR files. An attacker could leverage this vulnerability to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24550">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>171912d4016efce3334ea03c726008ab</td>
+       <td>CVE-2023-24549</td>
+       <td>2023-02-14 11:15:14 </td>
+       <td>A vulnerability has been identified in Solid Edge SE2022 (All versions &lt; V2210Update12), Solid Edge SE2023 (All versions &lt; V2023Update2). The affected application is vulnerable to stack-based buffer while parsing specially crafted PAR files. An attacker could leverage this vulnerability to execute code in the context of the current process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24549">详情</a></td>
+      </tr>
+
+      <tr>
        <td>4a0b7070a038cd1dd497a33a85084a6f</td>
        <td>CVE-2023-25758</td>
        <td>2023-02-14 07:15:11 </td>
@@ -2340,6 +2404,22 @@
       </tr>
 
       <tr>
+       <td>18c35c8cae3d27dc7c4e0cc331680d3f</td>
+       <td>CVE-2023-24530</td>
+       <td>2023-02-14 04:15:13 </td>
+       <td>SAP BusinessObjects Business Intelligence Platform (CMC) - versions 420, 430, allows an authenticated admin user to upload malicious code that can be executed by the application over the network. On successful exploitation, attacker can perform operations that may completely compromise the application causing high impact on confidentiality, integrity and availability of the application.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24530">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6832d3bb682ac82d75724157ebd64760</td>
+       <td>CVE-2023-24529</td>
+       <td>2023-02-14 04:15:12 </td>
+       <td>Due to lack of proper input validation, BSP application (CRM_BSP_FRAME) - versions 700, 701, 702, 731, 740, 750, 751, 752, 75C, 75D, 75E, 75F, 75G, 75H, allow malicious inputs from untrusted sources, which can be leveraged by an attacker to execute a Reflected Cross-Site Scripting (XSS) attack. As a result, an attacker may be able to hijack a user session, read and modify some sensitive information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24529">详情</a></td>
+      </tr>
+
+      <tr>
        <td>bcb63326af735a8e872f621bfe4e5ef0</td>
        <td>CVE-2023-25572</td>
        <td>2023-02-13 21:15:15 </td>
@@ -2353,86 +2433,6 @@
        <td>2023-02-11 01:23:26 </td>
        <td>Baicells Nova 436Q, Nova 430E, Nova 430I, and Neutrino 430 LTE TDD eNodeB devices with firmware through QRTB 2.12.7 are vulnerable to remote shell code exploitation via HTTP command injections. Commands are executed using pre-login execution and executed with root permissions. The following methods below have been tested and validated by a 3rd party analyst and has been confirmed exploitable special thanks to Rustam Amin for providing the steps to reproduce.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0776">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2dc913e9b3123818850147fc8a8069e</td>
-       <td>CVE-2023-25562</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. In versions of DataHub prior to 0.8.45 Session cookies are only cleared on new sign-in events and not on logout events. Any authentication checks using the `AuthUtils.hasValidSessionCookie()` method could be bypassed by using a cookie from a logged out session, as a result any logged out session cookie may be accepted as valid and therefore lead to an authentication bypass to the system. Users are advised to upgrade. There are no known workarounds for this issue. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-083.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25562">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3958b186fa043b3ccbf52383e0d7677</td>
-       <td>CVE-2023-25561</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. In the event a system is using Java Authentication and Authorization Service (JAAS) authentication and that system is given a configuration which contains an error, the authentication for the system will fail open and allow an attacker to login using any username and password. The reason for this is that while an error is thrown in the `authenticateJaasUser` method it is swallowed without propagating the error. As a result of this issue unauthenticated users may gain access to the system. Users are advised to upgrade. There are no known workarounds for this issue. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-081.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25561">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>504c0057917ac2a28b1e2ab4878f30af</td>
-       <td>CVE-2023-25560</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. The AuthServiceClient which is responsible for creation of new accounts, verifying credentials, resetting them or requesting access tokens, crafts multiple JSON strings using format strings with user-controlled data. This means that an attacker may be able to augment these JSON strings to be sent to the backend and that can potentially be abused by including new or colliding values. This issue may lead to an authentication bypass and the creation of system accounts, which effectively can lead to full system compromise. Users are advised to upgrade. There are no known workarounds for this vulnerability. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-080.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25560">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7575f18c46cf5a53bfd028714c37849</td>
-       <td>CVE-2023-25559</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. When not using authentication for the metadata service, which is the default configuration, the Metadata service (GMS) will use the X-DataHub-Actor HTTP header to infer the user the frontend is sending the request on behalf of. When the backends retrieves the header, its name is retrieved in a case-insensitive way. This case differential can be abused by an attacker to smuggle an X-DataHub-Actor header with different casing (eg: X-DATAHUB-ACTOR). This issue may lead to an authorization bypass by allowing any user to impersonate the system user account and perform any actions on its behalf. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-079.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2558324879f9507a3eabf00ec883782</td>
-       <td>CVE-2023-25558</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. When the DataHub frontend is configured to authenticate via SSO, it will leverage the pac4j library. The processing of the `id_token` is done in an unsafe manner which is not properly accounted for by the DataHub frontend. Specifically, if any of the id_token claims value start with the {#sb64} prefix, pac4j considers the value to be a serialized Java object and will deserialize it. This issue may lead to Remote Code Execution (RCE) in the worst case. Although a `RestrictedObjectInputStream` is in place, that puts some restriction on what classes can be deserialized, it still allows a broad range of java packages and potentially exploitable with different gadget chains. Users are advised to upgrade. There are no known workarounds. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-086.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b20382d0c55e81538f3e92f3d940887</td>
-       <td>CVE-2023-25557</td>
-       <td>2023-02-11 01:23:26 </td>
-       <td>DataHub is an open-source metadata platform. The DataHub frontend acts as a proxy able to forward any REST or GraphQL requests to the backend. The goal of this proxy is to perform authentication if needed and forward HTTP requests to the DataHub Metadata Store (GMS). It has been discovered that the proxy does not adequately construct the URL when forwarding data to GMS, allowing external users to reroute requests from the DataHub Frontend to any arbitrary hosts. As a result attackers may be able to reroute a request from originating from the frontend proxy to any other server and return the result. This vulnerability was discovered and reported by the GitHub Security lab and is tracked as GHSL-2022-076.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>adf0b26bdbd87a14d73f6d0c764ee579</td>
-       <td>CVE-2023-23698</td>
-       <td>2023-02-10 13:15:11 </td>
-       <td>Dell Command | Update, Dell Update, and Alienware Update versions before 4.6.0 and 4.7.1 contain Insecure Operation on Windows Junction in the installer component. A local malicious user may potentially exploit this vulnerability leading to arbitrary file delete.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23698">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a415890ac00a0f38dd88590e4e23112f</td>
-       <td>CVE-2023-23631</td>
-       <td>2023-02-09 21:15:11 </td>
-       <td>github.com/ipfs/go-unixfsnode is an ADL IPLD prime node that wraps go-codec-dagpb's implementation of protobuf to enable pathing. In versions priot to 1.5.2 trying to read malformed HAMT sharded directories can cause panics and virtual memory leaks. If you are reading untrusted user input, an attacker can then trigger a panic. This is caused by bogus fanout parameter in the HAMT directory nodes. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23631">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>205400fa971e7cf95eeaf892a37ea778</td>
-       <td>CVE-2023-23912</td>
-       <td>2023-02-09 20:15:11 </td>
-       <td>A vulnerability, found in EdgeRouters Version 2.0.9-hotfix.5 and earlier and UniFi Security Gateways (USG) Version 4.4.56 and earlier with their DHCPv6 prefix delegation set to dhcpv6-stateless or dhcpv6-stateful, allows a malicious actor directly connected to the WAN interface of an affected device to create a remote code execution vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23912">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c42d60b18679641f79fe628b03a1b9a</td>
-       <td>CVE-2022-48298</td>
-       <td>2023-02-09 17:15:14 </td>
-       <td>The geofencing kernel code does not verify the length of the input data. Successful exploitation of this vulnerability may cause out-of-bounds memory access.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-48298">详情</a></td>
       </tr>
 
      </tbody>
