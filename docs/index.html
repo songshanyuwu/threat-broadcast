@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-28 05:35:57 -->
+<!-- RELEASE TIME : 2023-02-28 23:35:48 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c27a60f513793e75d6596f08a0d72507</td>
+       <td>CVE-2023-22999</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 5.16.3, drivers/usb/dwc3/dwc3-qcom.c misinterprets the dwc3_qcom_create_urs_usb_platdev return value (expects it to be NULL in the error case, whereas it is actually an error pointer).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22999">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a8d717caad4c0df91c0cf7fbd4c9c3e2</td>
+       <td>CVE-2023-22998</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 6.0.3, drivers/gpu/drm/virtio/virtgpu_object.c misinterprets the drm_gem_shmem_get_sg_table return value (expects it to be NULL in the error case, whereas it is actually an error pointer).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22998">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e9e719012bd05b448ec77d024e1bc59</td>
+       <td>CVE-2023-22997</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 6.1.2, kernel/module/decompress.c misinterprets the module_get_next_page return value (expects it to be NULL in the error case, whereas it is actually an error pointer).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22997">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b95e0512b28f619dca7f1d5c8d13785f</td>
+       <td>CVE-2023-22996</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 5.17.2, drivers/soc/qcom/qcom_aoss.c does not release an of_find_device_by_node reference after use, e.g., with put_device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22996">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01c68dd94fe7f4d69e91aae73de705c2</td>
+       <td>CVE-2023-1100</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in SourceCodester Online Catering Reservation System 1.0. This affects an unknown part of the file /reservation/add_message.php of the component POST Parameter Handler. The manipulation of the argument fullname leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-222003.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1100">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d84156e2945d3684a3ed549da64c0720</td>
+       <td>CVE-2023-1099</td>
+       <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SourceCodester Online Student Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file eduauth/edit-class-detail.php?editid=1. The manipulation of the argument editideditid leads to sql injection. The attack may be launched remotely. VDB-222002 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3be4a8fabce84dac4930f85eb3661729</td>
+       <td>CVE-2023-27372</td>
+       <td>2023-02-28 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>SPIP before 4.2.1 allows Remote Code Execution via form values in the public area because serialization is mishandled. The fixed versions are 3.2.18, 4.0.10, 4.1.8, and 4.2.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27372">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be7009cd5d833d12a4a2e210d77c8e95</td>
+       <td>CVE-2023-27371</td>
+       <td>2023-02-28 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>GNU libmicrohttpd before 0.9.76 allows remote DoS (Denial of Service) due to improper parsing of a multipart/form-data boundary in the postprocessor.c MHD_create_post_processor() method. This allows an attacker to remotely send a malicious HTTP POST packet that includes one or more '\0' bytes in a multipart/form-data boundary field, which - assuming a specific heap layout - will result in an out-of-bounds read and a crash in the find_boundary() function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27371">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f6200f283abb74e4a2d7eca66103e9f</td>
+       <td>CVE-2023-1065</td>
+       <td>2023-02-28 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>This vulnerability in the Snyk Kubernetes Monitor can result in irrelevant data being posted to a Snyk Organization, which could in turn obfuscate other, relevant, security issues. It does not expose the user of the integration to any direct security risk and no user data can be leaked. To exploit the vulnerability the attacker does not need to be authenticated to Snyk but does need to know the target's Integration ID (which may or may not be the same as the Organization ID, although this is an unpredictable UUID in either case).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1065">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>efcf1bf6cf38a46081e657908a25508b</td>
+       <td>CVE-2023-1017</td>
+       <td>2023-02-28 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An out-of-bounds write vulnerability exists in TPM2.0's Module Library allowing writing of a 2-byte data past the end of TPM2.0 command in the CryptParameterDecryption routine. An attacker who can successfully exploit this vulnerability can lead to denial of service (crashing the TPM chip/process or rendering it unusable) and/or arbitrary code execution in the TPM context.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1017">详情</a></td>
+      </tr>
+
+      <tr>
        <td>39586108c7f20371f33dd6bcea456a78</td>
        <td>CVE-2015-10086</td>
        <td>2023-02-28 00:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-02-26 20:15:00</td>
        <td>ASUS ASMB8 iKVM firmware through 1.14.51 allows remote attackers to execute arbitrary code by using SNMP to create extensions, as demonstrated by snmpset for NET-SNMP-EXTEND-MIB with /bin/sh for command execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26602">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6b6d96eb6b09969126aa2af91b3c1c4c</td>
-       <td>CVE-2023-1048</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in TechPowerUp Ryzen DRAM Calculator 1.2.0.5. This issue affects some unknown processing in the library WinRing0x64.sys. The manipulation leads to improper initialization. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-221807.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1e6e66d08b330572884507121d85095</td>
-       <td>CVE-2023-1047</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability classified as critical was found in TechPowerUp RealTemp 3.7.0.0. This vulnerability affects unknown code in the library WinRing0x64.sys. The manipulation leads to improper initialization. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. VDB-221806 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b13f143a4f5b6b98ed545ad4ebe39b13</td>
-       <td>CVE-2023-1046</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability classified as critical has been found in MuYuCMS 2.2. This affects an unknown part of the file /admin.php/update/getFile.html. The manipulation of the argument url leads to server-side request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-221805 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1046">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74258d4690f17b5793a34c858ec12ba5</td>
-       <td>CVE-2023-1045</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability was found in MuYuCMS 2.2. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /admin.php/accessory/filesdel.html. The manipulation of the argument filedelur leads to relative path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-221804.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6216d585f202c8a53bfa4c32151a3b7d</td>
-       <td>CVE-2023-1044</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability was found in MuYuCMS 2.2. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /editor/index.php. The manipulation of the argument file_path leads to relative path traversal. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-221803.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1044">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>147d240e49dbb642fed2fe1d25d1bbca</td>
-       <td>CVE-2023-1043</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability was found in MuYuCMS 2.2. It has been classified as problematic. Affected is an unknown function of the file /editor/index.php. The manipulation of the argument dir_path leads to relative path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-221802 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1043">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6f6f5a5724b3701eb1af88473b15413</td>
-       <td>CVE-2023-1042</td>
-       <td>2023-02-26 13:15:00</td>
-       <td>A vulnerability has been found in SourceCodester Online Pet Shop We App 1.0 and classified as problematic. This vulnerability affects unknown code of the file /pet_shop/admin/orders/update_status.php. The manipulation of the argument oid with the input 1"><script>alert(1111)</script> leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-221800.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e28f6c1d1aae92ab817e5b93c4b11637</td>
-       <td>CVE-2023-1041</td>
-       <td>2023-02-26 12:15:00</td>
-       <td>A vulnerability, which was classified as problematic, was found in SourceCodester Simple Responsive Tourism Website 1.0. This affects an unknown part of the file /tourism/rate_review.php. The manipulation of the argument id with the input 1"><script>alert(1111)</script> leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-221799.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1041">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b916193ed0ed7c5315c40e60444c8a5d</td>
-       <td>CVE-2023-1040</td>
-       <td>2023-02-26 12:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in SourceCodester Online Graduate Tracer System 1.0. Affected by this issue is some unknown functionality of the file tracking/admin/add_acc.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-221798 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1040">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8cdcdd01c7466f119512ab384d84d71</td>
-       <td>CVE-2022-48362</td>
-       <td>2023-02-25 21:15:00</td>
-       <td>Zoho ManageEngine Desktop Central and Desktop Central MSP before 10.1.2137.2 allow directory traversal via computerName to AgentLogUploadServlet. A remote, authenticated attacker could upload arbitrary code that would be executed when Desktop Central is restarted. (The attacker could authenticate by exploiting CVE-2021-44515.)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48362">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>68b853e9241af619a559a73623bf73a3</td>
+       <td>CVE-2023-22933</td>
+       <td>2023-02-28 20:26:06 <img src="imgs/new.gif" /></td>
+       <td>SPLUNK Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b09c19a6fcd2451d9706eee80f98426e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce688529cc6859574d13450821b746c6</td>
+       <td>CVE-2023-22935</td>
+       <td>2023-02-28 20:26:00 <img src="imgs/new.gif" /></td>
+       <td>SPLUNK Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bb03059d08d0484997f5a8f72a8f30ad">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bf6e2c8dda574b40325ddc6a2261d31</td>
+       <td>CVE-2023-22939</td>
+       <td>2023-02-28 20:25:41 <img src="imgs/new.gif" /></td>
+       <td>SPLUNK Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b3ea9b890f234be08fdb1e0e18c8cff9">详情</a></td>
+      </tr>
+
+      <tr>
        <td>856cc2501ae7a800aa151058fb1a6d61</td>
        <td>CVE-2022-43929</td>
        <td>2023-02-27 20:32:51 <img src="imgs/new.gif" /></td>
@@ -1897,30 +1921,6 @@
        <td>2023-02-25 20:32:14</td>
        <td>SIEMENS TECNOMATIX_PLANT_SIMULATION Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b4eee04ec34496da3b49ba98ae3047c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd33790bb5531718cde9fdd4c4de2f0f</td>
-       <td>CVE-2023-24981</td>
-       <td>2023-02-25 20:32:08</td>
-       <td>SIEMENS TECNOMATIX_PLANT_SIMULATION Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d1ac40e437d04f3d9d7063d94eb9d57f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7f5d483141975bd83f4c28e0ec8aa4d5</td>
-       <td>CVE-2023-25763</td>
-       <td>2023-02-25 20:32:01</td>
-       <td>JENKINS EMAIL_EXTENSION Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=273ea7272bf6434faee9f874aa0bd2a9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f63e4d0eeebd5af4444920eb50907e24</td>
-       <td>CVE-2023-24982</td>
-       <td>2023-02-25 20:31:55</td>
-       <td>SIEMENS TECNOMATIX_PLANT_SIMULATION Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=30aa9c9a5ef148b5944c5173f99ae0c8">详情</a></td>
       </tr>
 
      </tbody>
