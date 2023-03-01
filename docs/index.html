@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-28 23:35:48 -->
+<!-- RELEASE TIME : 2023-03-01 05:36:24 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>0b4545f346ae941fb86499887e937bfa</td>
        <td></td>
-       <td>2023-02-27 06:56:34 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 06:56:34</td>
        <td>安全事件周报 (02.20-02.26)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=cac2c0ab8515d9851b511e619dc674e0">详情</a></td>
       </tr>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8d62bbaeed6979e3438203f7a5eba7ac</td>
+       <td>CVE-2023-0847</td>
+       <td>2023-03-01 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Sub-IoT implementation of the DASH 7 Alliance protocol has a vulnerability that can lead to an out-of-bounds write prior to implementation version 0.5.0. If the protocol has been compiled using default settings, this will only grant the attacker access to allocated but unused memory. However, if it was configured using non-default settings, there is the possibility that exploiting this vulnerability could lead to system crashes and remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0847">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bec06c41e089a8e0c723126228c3e821</td>
+       <td>CVE-2022-38220</td>
+       <td>2023-03-01 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An XSS vulnerability exists within Quest KACE Systems Management Appliance (SMA) through 12.1 that may allow remote injection of arbitrary web script or HTML.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38220">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee0a5b18a5aaa5895cefea591f2f00b9</td>
+       <td>CVE-2023-25575</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>API Platform Core is the server component of API Platform: hypermedia and GraphQL APIs. Resource properties secured with the `security` option of the `ApiPlatform\Metadata\ApiProperty` attribute can be disclosed to unauthorized users. The problem affects most serialization formats, including raw JSON, which is enabled by default when installing API Platform. Custom serialization formats may also be impacted. Only collection endpoints are affected by the issue, item endpoints are not. The JSON-LD format is not affected by the issue. The result of the security rule is only executed for the first item of the collection. The result of the rule is then cached and reused for the next items. This bug can leak data to unauthorized users when the rule depends on the value of a property of the item. This bug can also hide properties that should be displayed to authorized users. This issue impacts the 2.7, 3.0 and 3.1 branches. Please upgrade to versions 2.7.10, 3.0.12 or 3.1.3. As a workaround, replace the `cache_key` of the context array of the Serializer inside a custom normalizer that works on objects if the security option of the `ApiPlatform\Metadata\ApiProperty` attribute is used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25575">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>783398d053af2759a71f83e9674a59ad</td>
+       <td>CVE-2023-1095</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>In nf_tables_updtable, if nf_tables_table_enable returns an error, nft_trans_destroy is called to free the transaction object. nft_trans_destroy() calls list_del(), but the transaction was never placed on a list -- the list head is all zeroes, this results in a NULL pointer dereference.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1095">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de13601de7926f1fc0a56b887d606dbd</td>
+       <td>CVE-2022-47076</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Smart Office Web 20.28 and earlier allows attackers to view sensitive information via DisplayParallelLogData.aspx.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47076">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea624be33df433167c6ee7fe49cc840e</td>
+       <td>CVE-2022-47075</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Smart Office Web 20.28 and earlier allows attackers to download sensitive information via the action name parameter to ExportEmployeeDetails.aspx, and to ExportReportingManager.aspx.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47075">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c68d072cdf86bc7e18d2990c2177111</td>
+       <td>CVE-2022-23240</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Active IQ Unified Manager for VMware vSphere, Linux, and Microsoft Windows versions prior to 9.11P1 are susceptible to a vulnerability which allows unauthorized users to update EMS Subscriptions via unspecified vectors.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66747b973d09dedec49e43e427f489f1</td>
+       <td>CVE-2022-23239</td>
+       <td>2023-02-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Active IQ Unified Manager for VMware vSphere, Linux, and Microsoft Windows versions prior to 9.11P1 are susceptible to a vulnerability which allows administrative users to perform a Stored Cross-Site Scripting (XSS) attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23239">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c27a60f513793e75d6596f08a0d72507</td>
        <td>CVE-2023-22999</td>
        <td>2023-02-28 21:15:00 <img src="imgs/new.gif" /></td>
@@ -374,7 +438,7 @@
       <tr>
        <td>b433ddb89ec6967f1dffcc67389b33ef</td>
        <td>CVE-2023-1055</td>
-       <td>2023-02-27 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 22:15:00</td>
        <td>A flaw was found in RHDS 11 and RHDS 12. While browsing entries LDAP tries to decode the userPassword attribute instead of the userCertificate attribute which could lead into sensitive information leaked. An attacker with a local account where the cockpit-389-ds is running can list the processes and display the hashed passwords. The highest threat from this vulnerability is to data confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1055">详情</a></td>
       </tr>
@@ -382,7 +446,7 @@
       <tr>
        <td>6a24bb79fb812301b47e412721e87a8b</td>
        <td>CVE-2023-26043</td>
-       <td>2023-02-27 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 21:15:00</td>
        <td>GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data. GeoNode is vulnerable to an XML External Entity (XXE) injection in the style upload functionality of GeoServer leading to Arbitrary File Read. This issue has been patched in version 4.0.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26043">详情</a></td>
       </tr>
@@ -390,7 +454,7 @@
       <tr>
        <td>2903d829da66f085e0abac97ebfe6f62</td>
        <td>CVE-2023-26041</td>
-       <td>2023-02-27 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 21:15:00</td>
        <td>Nextcloud Talk is a fully on-premises audio/video and chat communication service. When cron jobs were misconfigured and therefore messages are not expired, the API would still return them while they were then hidden by the frontend code. It is recommended that the Nextcloud Talk is upgraded to 15.0.3. There are no workaround available.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26041">详情</a></td>
       </tr>
@@ -398,7 +462,7 @@
       <tr>
        <td>d5d9a5e5394ff48b8ad01150fb19950c</td>
        <td>CVE-2023-24258</td>
-       <td>2023-02-27 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 21:15:00</td>
        <td>SPIP v4.1.5 and earlier was discovered to contain a SQL injection vulnerability via the _oups parameter. This vulnerability allows attackers to execute arbitrary code via a crafted POST request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24258">详情</a></td>
       </tr>
@@ -406,7 +470,7 @@
       <tr>
        <td>9e8ac9be77fcec92c980dfbc9f6f7dd6</td>
        <td>CVE-2023-23531</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.2, iOS 16.3 and iPadOS 16.3. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23531">详情</a></td>
       </tr>
@@ -414,7 +478,7 @@
       <tr>
        <td>5dcfb9f952859eb860dfeb66cd30efc1</td>
        <td>CVE-2023-23530</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.2, iOS 16.3 and iPadOS 16.3. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23530">详情</a></td>
       </tr>
@@ -422,7 +486,7 @@
       <tr>
        <td>0592d7d5441398fe216a39afe6861ecc</td>
        <td>CVE-2023-23529</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>A type confusion issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.2.1, iOS 16.3.1 and iPadOS 16.3.1, Safari 16.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23529">详情</a></td>
       </tr>
@@ -430,7 +494,7 @@
       <tr>
        <td>ffc13d38e5feac3b16f52976757af225</td>
        <td>CVE-2023-23524</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>A denial-of-service issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.2.1, iOS 16.3.1 and iPadOS 16.3.1, tvOS 16.3.2, watchOS 9.3.1. Processing a maliciously crafted certificate may lead to a denial-of-service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23524">详情</a></td>
       </tr>
@@ -438,7 +502,7 @@
       <tr>
        <td>0eab996881f7f47058848d209d0b03f6</td>
        <td>CVE-2023-23522</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>A privacy issue was addressed with improved handling of temporary files. This issue is fixed in macOS Ventura 13.2.1. An app may be able to observe unprotected user data..</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23522">详情</a></td>
       </tr>
@@ -446,7 +510,7 @@
       <tr>
        <td>dd945460e3a1c460a493b37ed58b777c</td>
        <td>CVE-2023-23520</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>A race condition was addressed with additional validation. This issue is fixed in macOS Ventura 13.2, iOS 16.3 and iPadOS 16.3. A user may be able to read arbitrary files as root.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23520">详情</a></td>
       </tr>
@@ -454,73 +518,9 @@
       <tr>
        <td>935de1486b00c4efaa84c8e0183b1178</td>
        <td>CVE-2023-23519</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:15:00</td>
        <td>A memory corruption issue was addressed with improved state management. This issue is fixed in macOS Ventura 13.2, tvOS 16.3, iOS 16.3 and iPadOS 16.3, watchOS 9.3. Processing an image may lead to a denial-of-service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23519">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a4916f30253d95cb233d6976265ad8b5</td>
-       <td>CVE-2023-23518</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.2, macOS Monterey 12.6.3, tvOS 16.3, Safari 16.3, watchOS 9.3, iOS 16.3 and iPadOS 16.3, macOS Big Sur 11.7.3. Processing maliciously crafted web content may lead to arbitrary code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23518">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b8ee24ec3883f8af9e0f1c0a233e30c</td>
-       <td>CVE-2023-23517</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.2, macOS Monterey 12.6.3, tvOS 16.3, Safari 16.3, watchOS 9.3, iOS 16.3 and iPadOS 16.3, macOS Big Sur 11.7.3. Processing maliciously crafted web content may lead to arbitrary code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23517">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31bf58e75cc9f1967475d938ca1982f4</td>
-       <td>CVE-2023-23514</td>
-       <td>2023-02-27 20:15:00 <img src="imgs/new.gif" /></td>
-       <td>A use after free issue was addressed with improved memory management. This issue is fixed in macOS Ventura 13.2.1, iOS 16.3.1 and iPadOS 16.3.1. An app may be able to execute arbitrary code with kernel privileges..</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7aacd757cd20183ad96dd9c9ef68986</td>
-       <td>CVE-2023-26607</td>
-       <td>2023-02-26 23:15:00</td>
-       <td>In the Linux kernel 6.0.8, there is an out-of-bounds read in ntfs_attr_find in fs/ntfs/attrib.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26607">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>088511b542c33fbad86953b25cf9a7ab</td>
-       <td>CVE-2023-26606</td>
-       <td>2023-02-26 23:15:00</td>
-       <td>In the Linux kernel 6.0.8, there is a use-after-free in ntfs_trim_fs in fs/ntfs3/bitmap.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26606">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1fa661f8f1bd2cfd73215d03ce77966</td>
-       <td>CVE-2023-26605</td>
-       <td>2023-02-26 23:15:00</td>
-       <td>In the Linux kernel 6.0.8, there is a use-after-free in inode_cgwb_move_to_attached in fs/fs-writeback.c, related to __list_del_entry_valid.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26605">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>795fcfeb7000925dad69220df59be6db</td>
-       <td>CVE-2022-48363</td>
-       <td>2023-02-26 23:15:00</td>
-       <td>In MPD before 0.23.8, as used on Automotive Grade Linux and other platforms, the PipeWire output plugin mishandles a Drain call in certain situations involving truncated files. Eventually there is an assertion failure in libmpdclient because libqtappfw passes in a NULL pointer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48363">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6bd8ed74f4009c27e892be0c15e0831c</td>
-       <td>CVE-2023-26602</td>
-       <td>2023-02-26 20:15:00</td>
-       <td>ASUS ASMB8 iKVM firmware through 1.14.51 allows remote attackers to execute arbitrary code by using SNMP to create extensions, as demonstrated by snmpset for NET-SNMP-EXTEND-MIB with /bin/sh for command execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26602">详情</a></td>
       </tr>
 
      </tbody>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>856cc2501ae7a800aa151058fb1a6d61</td>
        <td>CVE-2022-43929</td>
-       <td>2023-02-27 20:32:51 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:51</td>
        <td>IBM DB2 Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f1b170fce64f468cb891f241ccd66751">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>d8ff0fcbaf5cc6d31127a96560fedcc4</td>
        <td>CVE-2023-21575</td>
-       <td>2023-02-27 20:32:44 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:44</td>
        <td>ADOBE PHOTOSHOP Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f17e6bafcee84e069887afcde26c576f">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>4f6be83b10294793960d601d44b7f142</td>
        <td>CVE-2023-21578</td>
-       <td>2023-02-27 20:32:38 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:38</td>
        <td>ADOBE PHOTOSHOP Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b47e7fd3dfa4434c8c6bb87ffe13d31b">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>e90ec898c74544e4b7e3d2022088f3d7</td>
        <td>CVE-2023-24964</td>
-       <td>2023-02-27 20:32:32 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:32</td>
        <td>IBM INFOSPHERE_INFORMATION_SERVER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8b8009569911498db05d1cbb0ebd8db2">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>561d7f62afcc0fde3abf1ac3160729f5</td>
        <td>CVE-2023-22227</td>
-       <td>2023-02-27 20:32:26 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:26</td>
        <td>ADOBE BRIDGE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c50bb8d8e98b47c285a0af649ab8cad7">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>104818083ef22f352fc1e99ca488c5ba</td>
        <td>CVE-2023-21576</td>
-       <td>2023-02-27 20:32:19 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:19</td>
        <td>ADOBE PHOTOSHOP Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=03ef57fd265a43ed88669ef12a4b3de4">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>664f17eb8dff5099c409b63b6ee6529f</td>
        <td>CVE-2023-22230</td>
-       <td>2023-02-27 20:32:13 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:13</td>
        <td>ADOBE BRIDGE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e9d1525784e5457aad8a7017a13b03d9">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>db1a0461092d1f2b05fdbe79efa13c2b</td>
        <td>CVE-2023-21583</td>
-       <td>2023-02-27 20:32:06 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:06</td>
        <td>ADOBE BRIDGE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5ab1e94356f842e2a041a615784097a5">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>c4de4d171cb3cca371765ed0c8537eba</td>
        <td>CVE-2023-22237</td>
-       <td>2023-02-27 20:32:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:32:00</td>
        <td>ADOBE AFTER_EFFECTS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=41a8dc5902484ba39a8c31fde7e534a3">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>c0363553fc155eef0308946b831e4c10</td>
        <td>CVE-2023-22228</td>
-       <td>2023-02-27 20:31:54 <img src="imgs/new.gif" /></td>
+       <td>2023-02-27 20:31:54</td>
        <td>ADOBE BRIDGE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55f9737e1aff49d099cbf84d09429765">详情</a></td>
       </tr>
@@ -2268,6 +2268,46 @@
       </tr>
 
       <tr>
+       <td>ef0f8038cd01f1b35f501e8780a329e5</td>
+       <td>CVE-2022-27489</td>
+       <td>2023-02-16 19:15:12 </td>
+       <td>A improper neutralization of special elements used in an os command ('os command injection') in Fortinet FortiExtender 7.0.0 through 7.0.3, 5.3.2, 4.2.4 and below allows attacker to execute unauthorized code or commands via crafted HTTP requests.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27489">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09953228bdaee77cf5df7e934534fdde</td>
+       <td>CVE-2022-27897</td>
+       <td>2023-02-16 16:15:12 </td>
+       <td>Palantir Gotham versions prior to 3.22.11.2 included an unauthenticated endpoint that would load portions of maliciously crafted zip files to memory. An attacker could repeatedly upload a malicious zip file, which would allow them to exhaust memory resources on the dispatch server.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27897">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37e20924a16df87c3c42b4524f8b9da7</td>
+       <td>CVE-2022-27892</td>
+       <td>2023-02-16 16:15:12 </td>
+       <td>Palantir Gotham versions prior to 3.22.11.2 included an unauthenticated endpoint that would have allowed an attacker to exhaust the memory of the Gotham dispatch service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4d991ad2e501a646694733e099e133f5</td>
+       <td>CVE-2022-27891</td>
+       <td>2023-02-16 16:15:12 </td>
+       <td>Palantir Gotham included an unauthenticated endpoint that listed all active usernames on the stack with an active session. The affected services have been patched and automatically deployed to all Apollo-managed Gotham instances. It is highly recommended that customers upgrade all affected services to the latest version. This issue affects: Palantir Gotham versions prior to 103.30221005.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27891">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9bb5c9ab690fd85480c7d02dd9c7aaa</td>
+       <td>CVE-2022-27890</td>
+       <td>2023-02-16 16:15:11 </td>
+       <td>It was discovered that the sls-logging was not verifying hostnames in TLS certificates due to a misuse of the javax.net.ssl.SSLSocketFactory API. A malicious attacker in a privileged network position could abuse this to perform a man-in-the-middle attack. A successful man-in-the-middle attack would allow them to intercept, read, or modify network communications to and from the affected service. In the case of AtlasDB, the vulnerability was mitigated by other network controls such as two-way TLS when deployed as part of a Palantir platform. Palantir still recommends upgrading to a non-vulnerable version out of an abundance of caution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27890">详情</a></td>
+      </tr>
+
+      <tr>
        <td>87d873b639d2b8764ee97944b7df6e95</td>
        <td>CVE-2023-0862</td>
        <td>2023-02-16 10:15:11 </td>
@@ -2393,46 +2433,6 @@
        <td>2023-02-14 18:15:13 </td>
        <td>GSS-NTLMSSP is a mechglue plugin for the GSSAPI library that implements NTLM authentication. Prior to version 1.2.0, multiple out-of-bounds reads when decoding NTLM fields can trigger a denial of service. A 32-bit integer overflow condition can lead to incorrect checks of consistency of length of internal buffers. Although most applications will error out before accepting a singe input buffer of 4GB in length this could theoretically happen. This vulnerability can be triggered via the main `gss_accept_sec_context` entry point if the application allows tokens greater than 4GB in length. This can lead to a large, up to 65KB, out-of-bounds read which could cause a denial-of-service if it reads from unmapped memory. Version 1.2.0 contains a patch for the out-of-bounds reads.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25563">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53d2e5360080f48cce051e56bd9e1adc</td>
-       <td>CVE-2022-41564</td>
-       <td>2023-02-14 18:15:11 </td>
-       <td>The Hawk Console component of TIBCO Software Inc.'s TIBCO Hawk and TIBCO Operational Intelligence Hawk RedTail contains a vulnerability that will return the EMS transport password and EMS SSL password to a privileged user. Affected releases are TIBCO Software Inc.'s TIBCO Hawk: versions 6.1.0 through 6.2.1 and TIBCO Operational Intelligence Hawk RedTail: versions 7.0.0 through 7.2.0.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-41564">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cd12fd3f4ed19f436bd9efbd61a657a</td>
-       <td>CVE-2023-0830</td>
-       <td>2023-02-14 17:15:11 </td>
-       <td>A vulnerability classified as critical has been found in EasyNAS 1.1.0. Affected is the function system of the file /backup.pl. The manipulation leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to upgrade the affected component. VDB-220950 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0830">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>368d76b60794e321c1a93d1d7059c351</td>
-       <td>CVE-2023-25576</td>
-       <td>2023-02-14 16:15:11 </td>
-       <td>@fastify/multipart is a Fastify plugin to parse the multipart content-type. Prior to versions 7.4.1 and 6.0.1, @fastify/multipart may experience denial of service due to a number of situations in which an unlimited number of parts are accepted. This includes the multipart body parser accepting an unlimited number of file parts, the multipart body parser accepting an unlimited number of field parts, and the multipart body parser accepting an unlimited number of empty parts as field parts. This is fixed in v7.4.1 (for Fastify v4.x) and v6.0.1 (for Fastify v3.x). There are no known workarounds.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25576">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9be4dfb30f32472398e135312627051e</td>
-       <td>CVE-2023-0827</td>
-       <td>2023-02-14 13:15:12 </td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository pimcore/pimcore prior to 1.5.17.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-0827">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ecf8a68a17df79613b077ebac379a42e</td>
-       <td>CVE-2023-24994</td>
-       <td>2023-02-14 11:15:17 </td>
-       <td>A vulnerability has been identified in Tecnomatix Plant Simulation (All versions &lt; V2201.0006). The affected application contains an out of bounds write past the end of an allocated buffer while parsing a specially crafted SPP file. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-19816)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24994">详情</a></td>
       </tr>
 
      </tbody>
