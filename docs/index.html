@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-14 05:35:09 -->
+<!-- RELEASE TIME : 2023-03-14 23:35:23 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>ae733c9e19d8a91d1e36ae4ef7dbcdde</td>
+       <td>CVE-2023-23638</td>
+       <td>2023-03-14 07:05:15 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-23638：Apache Dubbo反序列化漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64101cab12d0ac6890a92c60">详情</a></td>
+      </tr>
+
       <tr>
        <td>f5c4a287130244d1e00dc124d7d36c78</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=72b434458054fe8f2a45ba4056119b93">详情</a></td>
       </tr>
 
-      <tr>
-       <td>14c20963965e361ecb3dd34b1228eb8d</td>
-       <td>CVE-2023-23560</td>
-       <td>2023-01-30 08:13:40</td>
-       <td>CVE-2023-23560：Lexmark打印机服务器端请求伪造漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=7786c3f024ed972624088bcb5834b56b">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>76686e5d958f06f7736421280fa6ca2f</td>
+       <td>CVE-2023-28339</td>
+       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenDoas through 6.8.2, when TIOCSTI is available, allows privilege escalation because of sharing a terminal with the original session. NOTE: TIOCSTI is unavailable in OpenBSD 6.0 and later, and can be made unavailable in the Linux kernel 6.2 and later.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28339">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56163d23ea307a90233a22ef033a7bb9</td>
+       <td>CVE-2023-28144</td>
+       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>KDAB Hotspot 1.3.x and 1.4.x through 1.4.1, in a non-default configuration, allows privilege escalation because of race conditions involving symlinks and elevate_perf_privileges.sh chown calls.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f91ea395eecce1f8a4bb8e71d90b8174</td>
+       <td>CVE-2023-27589</td>
+       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Minio is a Multi-Cloud Object Storage framework. Starting with RELEASE.2020-12-23T02-24-12Z and prior to RELEASE.2023-03-13T19-46-17Z, a user with `consoleAdmin` permissions can potentially create a user that matches the root credential `accessKey`. Once this user is created successfully, the root credential ceases to work appropriately. The issue is patched in RELEASE.2023-03-13T19-46-17Z. There are ways to work around this via adding higher privileges to the disabled root user via `mc admin policy set`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27589">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d622edc52342ae55699cc1398949b07</td>
+       <td>CVE-2023-27588</td>
+       <td>2023-03-14 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Hasura is an open-source product that provides users GraphQL or REST APIs. A path traversal vulnerability has been discovered within Hasura GraphQL Engine prior to versions 1.3.4, 2.55.1, 2.20.1, and 2.21.0-beta1. Projects running on Hasura Cloud were not vulnerable. Self-hosted Hasura Projects with deployments that are publicly exposed and not protected by a WAF or other HTTP protection layer should be upgraded to version 1.3.4, 2.55.1, 2.20.1, or 2.21.0-beta1 to receive a patch.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27588">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49ccbb4be1668767b5af2e4f5b825dd2</td>
+       <td>CVE-2023-27585</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>PJSIP is a free and open source multimedia communication library written in C. A buffer overflow vulnerability in versions 2.13 and prior affects applications that use PJSIP DNS resolver. It doesn't affect PJSIP users who do not utilise PJSIP DNS resolver. This vulnerability is related to CVE-2022-24793. A patch is available as commit `d1c5e4d` in the `master` branch. A workaround is to disable DNS resolution in PJSIP config (by setting `nameserver_count` to zero) or use an external resolver implementation instead.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae688e6360a647f48036bfb01c601a1d</td>
+       <td>CVE-2023-25206</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>PrestaShop ws_productreviews < 3.6.2 is vulnerable to SQL Injection.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25206">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c3aa08ea9f441a07bba5e2fb61689b0e</td>
+       <td>CVE-2023-24930</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft OneDrive for MacOS Elevation of Privilege Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24930">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d9b4a58743f48e45d99613eb22ea3c9b</td>
+       <td>CVE-2023-24923</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft OneDrive for Android Information Disclosure Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7bf746d370376628937e6b2c211e0687</td>
+       <td>CVE-2023-24922</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Dynamics 365 Information Disclosure Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24922">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e43ffabb230276cdd3bb591e0449d098</td>
+       <td>CVE-2023-24921</td>
+       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24921">详情</a></td>
+      </tr>
+
       <tr>
        <td>dc592b33278098fe4ffd698ec3ca7d70</td>
        <td>CVE-2023-27587</td>
@@ -441,86 +521,6 @@
        <td>2023-03-13 17:15:00 <img src="imgs/new.gif" /></td>
        <td>The Ocean Extra WordPress plugin before 2.1.3 does not ensure that the template to be loaded via a shortcode is actually a template, allowing any authenticated users such as subscriber to retrieve the content of arbitrary posts, such as draft, private or even password protected ones.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee19bd10d9e9d76b483b39acde1dc0b8</td>
-       <td>CVE-2016-15028</td>
-       <td>2023-03-12 15:15:00</td>
-       <td>A vulnerability was found in ICEPAY REST-API-NET 0.9. It has been declared as problematic. Affected by this vulnerability is the function RestClient of the file Classes/RestClient.cs of the component Checksum Validation. The manipulation leads to improper validation of integrity check value. The attack can be launched remotely. Upgrading to version 1.0 is able to address this issue. The name of the patch is 61f6b8758e5c971abff5f901cfa9f231052b775f. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-222847.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c53fa93835118917d735afe763aae80</td>
-       <td>CVE-2023-1360</td>
-       <td>2023-03-12 09:15:00</td>
-       <td>A vulnerability was found in SourceCodester Employee Payslip Generator with Sending Mail 1.2.0 and classified as critical. This issue affects some unknown processing of the file classes/Users.php?f=save of the component New User Creation. The manipulation of the argument username leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-222863.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1360">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>437510a7f28389bbd89b9885f57cf7a8</td>
-       <td>CVE-2023-1359</td>
-       <td>2023-03-12 08:15:00</td>
-       <td>A vulnerability has been found in SourceCodester Gadget Works Online Ordering System 1.0 and classified as problematic. This vulnerability affects unknown code of the file /philosophy/admin/user/controller.php?action=add of the component Add New User. The manipulation of the argument U_NAME leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-222862 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1359">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>40e46a733b4a2a15b82122f5bd68b446</td>
-       <td>CVE-2023-1358</td>
-       <td>2023-03-12 08:15:00</td>
-       <td>A vulnerability, which was classified as critical, was found in SourceCodester Gadget Works Online Ordering System 1.0. This affects an unknown part of the file /philosophy/admin/login.php of the component POST Parameter Handler. The manipulation of the argument user_email leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-222861 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1358">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8dbeeb9675f2d2478df2009d26071eb9</td>
-       <td>CVE-2023-1357</td>
-       <td>2023-03-12 08:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in SourceCodester Simple Bakery Shop Management System 1.0. Affected by this issue is some unknown functionality of the component Admin Login. The manipulation of the argument username/password with the input admin' or 1=1 -- leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-222860.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1357">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54b90615706f9a9dcc9fc7d2086c4644</td>
-       <td>CVE-2022-48367</td>
-       <td>2023-03-12 05:15:00</td>
-       <td>An issue was discovered in eZ Publish Ibexa Kernel before 7.5.28. Access control based on object state is mishandled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48367">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70190a04a4cc3b65f2cdabffda63ba52</td>
-       <td>CVE-2022-48366</td>
-       <td>2023-03-12 05:15:00</td>
-       <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.19. It allows determining account existence via a timing attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48366">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74910becbf6b6b7c3b4c65aad538223f</td>
-       <td>CVE-2022-48365</td>
-       <td>2023-03-12 05:15:00</td>
-       <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.26. The Company admin role gives excessive privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48365">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed8dccf2bf11853be748f46097adfdd7</td>
-       <td>CVE-2021-46876</td>
-       <td>2023-03-12 05:15:00</td>
-       <td>An issue was discovered in eZ Publish Ibexa Kernel before 7.5.15.1. The /user/sessions endpoint can be abused to determine account existence.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46876">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dba2cc3b2e083b9857aac4ebf9b45ba8</td>
-       <td>CVE-2021-46875</td>
-       <td>2023-03-12 05:15:00</td>
-       <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.1.1. An XSS attack can occur because JavaScript code can be uploaded in a .html or .js file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46875">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f78427a0d63073b8e7dd887d7f36d8f2</td>
+       <td>CVE-2023-22856</td>
+       <td>2023-03-14 20:28:14 <img src="imgs/new.gif" /></td>
+       <td>BLOGENGINE BLOGENGINE.NET Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ccc8d843f4bd49e2803ee1984d4ff6bf">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9fff8545afac2a64edefca5fb87e6740</td>
+       <td>CVE-2021-20251</td>
+       <td>2023-03-14 20:28:08 <img src="imgs/new.gif" /></td>
+       <td>Samba 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b296020e13304b8c89dc8dbb88750637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f3ba94bd339ea7a3d14e66f6e48cbd3</td>
+       <td>CVE-2023-1212</td>
+       <td>2023-03-14 20:27:55 <img src="imgs/new.gif" /></td>
+       <td>PHPIPAM PHPIPAM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e90feb0fcbad453bb97506a10d033dc6">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6206b3455a62920ea847dfca9b60fd43</td>
+       <td>CVE-2023-1211</td>
+       <td>2023-03-14 20:27:49 <img src="imgs/new.gif" /></td>
+       <td>PHPIPAM PHPIPAM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=231fda70763b47118c651bf8de1f8424">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06f61f8059be4c304830fa40c84cc3f3</td>
+       <td>CVE-2023-20078</td>
+       <td>2023-03-14 20:27:42 <img src="imgs/new.gif" /></td>
+       <td>CISCO Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f540143d7df4fb4a7603a638bf0994f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>003f03842188212b9fd5499134088802</td>
+       <td>CVE-2023-22857</td>
+       <td>2023-03-14 20:27:29 <img src="imgs/new.gif" /></td>
+       <td>BLOGENGINE BLOGENGINE.NET Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5a2aeb73ad894be8b42893c4d201b381">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c2c8842dc1abc673f1a4a69211abf3f</td>
+       <td>CVE-2023-23927</td>
+       <td>2023-03-14 20:27:23 <img src="imgs/new.gif" /></td>
+       <td>CRAFTCMS CRAFT_CMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bfa1bfc8ad614a2f872c34c9a0819ae2">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e97ae3cb7c069bef0f1d91c1d8f65e5b</td>
        <td>CVE-2023-1216</td>
        <td>2023-03-13 20:23:51 <img src="imgs/new.gif" /></td>
@@ -1865,62 +1921,6 @@
        <td>2023-03-11 20:19:37</td>
        <td>GRAFANA GRAFANA Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=07e67b531a25415eadda8beaa238e37e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a54375a818c12d02a2f5f8a741370e5a</td>
-       <td>CVE-2022-3294</td>
-       <td>2023-03-11 20:19:30</td>
-       <td>KUBERNETES KUBERNETES Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=474f07bc45234fbaafacf578ce74fdbf">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b23dccea936a93100cd29a839022712f</td>
-       <td>CVE-2023-20932</td>
-       <td>2023-03-11 20:19:23</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=502e40960d004489a10a57a792a483d6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b15a91fccf0bcc6cb89424311697bd97</td>
-       <td>CVE-2023-20943</td>
-       <td>2023-03-11 20:19:17</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=56efbfad58904ed7ac200db54a9941ce">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c49d1bbe2eeb556aae94c686b80d3fa</td>
-       <td>CVE-2023-22997</td>
-       <td>2023-03-11 20:19:10</td>
-       <td>LINUX LINUX_KERNEL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ce8b53c2e9b940e79da128bbd1611442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ffb9d14cd318c7940e2de9f6d7121d2</td>
-       <td>CVE-2023-0594</td>
-       <td>2023-03-11 20:19:04</td>
-       <td>GRAFANA GRAFANA Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55a241d5d1a14ed0a47911e8dd4e3b7d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f81a9273dda697a2791c904f96fccac3</td>
-       <td>CVE-2023-22762</td>
-       <td>2023-03-10 20:25:47</td>
-       <td>ARUBANETWORKS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e50d40b220224e71a707e0711a0c1be9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7092f8a7b3387f4cdb983cc185674a78</td>
-       <td>CVE-2023-20933</td>
-       <td>2023-03-09 20:28:45</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=24c1702ac84a482da7e023e543c705da">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8d117e99ca8a00bd5a823c62f7861777</td>
+       <td>CVE-2023-27485</td>
+       <td>2023-03-07 19:15:12 </td>
+       <td>thmmniii/fbs-core is an open source feedback system for students. In versions prior to 1.5.3 when querying `subresults`, it is possible to query `subresults` from other users due to insufficient authorisation. This is only possible for logged-in users and it is not possible to associate the subresults with a specific user. This bug was fixed in commit `f1ae67d8bb2`and released with version 1.5.3. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8a71c0cf0acfd1c3f358b512085e35a3</td>
+       <td>CVE-2023-27481</td>
+       <td>2023-03-07 19:15:12 </td>
+       <td>Directus is a real-time API and App dashboard for managing SQL database content. In versions prior to 9.16.0 users with read access to the `password` field in `directus_users` can extract the argon2 password hashes by brute forcing the export functionality combined with a `_starts_with` filter. This allows the user to enumerate the password hashes. Accounts cannot be taken over unless the hashes can be reversed which is unlikely with current hardware. This problem has been patched by preventing any hashed/concealed field to be filtered against with the `_starts_with` or other string operator in version 9.16.0. Users are advised to upgrade. Users unable to upgrade may mitigate this issue by ensuring that no user has `read` access to the `password` field in `directus_users`.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27481">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3bdf83d80271f60e21938b9e148395b2</td>
+       <td>CVE-2023-27480</td>
+       <td>2023-03-07 19:15:12 </td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In affected versions any user with edit rights on a document can trigger an XAR import on a forged XAR file, leading to the ability to display the content of any file on the XWiki server host. This vulnerability has been patched in XWiki 13.10.11, 14.4.7 and 14.10-rc-1. Users are advised to upgrade. Users unable to upgrade may apply the patch `e3527b98fd` manually.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27480">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c385512f2088c69386bc87394ebcbeb6</td>
+       <td>CVE-2023-27479</td>
+       <td>2023-03-07 19:15:12 </td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In affected versions any user with view rights can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation. The root cause is improper escaping of UIX parameters. A proof of concept exploit is to log in, add an `XWiki.UIExtensionClass` xobject to the user profile page, with an Extension Parameters content containing `label={{/html}} {{async async=&quot;true&quot; cached=&quot;false&quot; context=&quot;doc.reference&quot;}}{{groovy}}println(&quot;Hello &quot; + &quot;from groovy!&quot;){{/groovy}}{{/async}}`. Then, navigating to `PanelsCode.ApplicationsPanelConfigurationSheet` (i.e., `&lt;xwiki-host&gt;/xwiki/bin/view/PanelsCode/ApplicationsPanelConfigurationSheet` where `&lt;xwiki-host&gt;` is the URL of your XWiki installation) should not execute the Groovy script. If it does, you will see `Hello from groovy!` displayed on the screen. This vulnerability has been patched in XWiki 13.10.11, 14.4.7 and 14.10-rc-1. Users are advised to upgrade. For users unable to upgrade the issue can be fixed by editing the `PanelsCode.ApplicationsPanelConfigurationSheet` wiki page and making the same modifications as shown in commit `6de5442f3c`.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27479">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38636d84120c30c323ce05131aeaf4b8</td>
+       <td>CVE-2023-27478</td>
+       <td>2023-03-07 18:15:09 </td>
+       <td>libmemcached-awesome is an open source C/C++ client library and tools for the memcached server. `libmemcached` could return data for a previously requested key, if that previous request timed out due to a low `POLL_TIMEOUT`. This issue has been addressed in version 1.1.4. Users are advised to upgrade. There are several ways to workaround or lower the probability of this bug affecting a given deployment. 1: use a reasonably high `POLL_TIMEOUT` setting, like the default. 2: use separate libmemcached connections for unrelated data. 3: do not re-use libmemcached connections in an unknown state.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27478">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e34a34e0d5859545694b038df46cb03</td>
+       <td>CVE-2023-27475</td>
+       <td>2023-03-07 18:15:09 </td>
+       <td>Goutil is a collection of miscellaneous functionality for the go language. In versions prior to 0.6.0 when users use fsutil.Unzip to unzip zip files from a malicious attacker, they may be vulnerable to path traversal. This vulnerability is known as a ZipSlip. This issue has been fixed in version 0.6.0, users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27475">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>257983a0b1d22974d746cd30517a6a3e</td>
+       <td>CVE-2023-27522</td>
+       <td>2023-03-07 16:15:09 </td>
+       <td>HTTP Response Smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi. This issue affects Apache HTTP Server: from 2.4.30 through 2.4.55. Special characters in the origin response header can truncate/split the response forwarded to the client.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27522">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9c673cb6e41314136bb0d8f9ef2c597b</td>
        <td>CVE-2023-27472</td>
        <td>2023-03-06 19:15:10 </td>
@@ -2377,62 +2433,6 @@
        <td>2023-03-01 20:15:16 </td>
        <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepkey4 parameter at /goform/WifiBasicSet.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24129">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ef7a6722f1550a802bd2136dd927574</td>
-       <td>CVE-2023-24128</td>
-       <td>2023-03-01 20:15:15 </td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepkey2 parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-24128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1203b2768ed367dfb4d73a06590f43b6</td>
-       <td>CVE-2023-25931</td>
-       <td>2023-03-01 19:15:26 </td>
-       <td>Medtronic identified that the Pelvic Health clinician apps, which are installed on the Smart Programmer mobile device, have a password vulnerability that requires a security update to fix. Not updating could potentially result in unauthorized control of the clinician therapy application, which has greater control over therapy parameters than the patient app. Changes still cannot be made outside of the established therapy parameters of the programmer. For unauthorized access to occur, an individual would need physical access to the Smart Programmer.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fa572f43af13a0c9270474358910c5f</td>
-       <td>CVE-2023-26281</td>
-       <td>2023-03-01 08:15:14 </td>
-       <td>IBM HTTP Server 8.5 used by IBM WebSphere Application Server could allow a remote user to cause a denial of service using a specially crafted URL. IBM X-Force ID: 248296.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26281">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9e03bc7550ca148aa00c9b09ebec2c5</td>
-       <td>CVE-2023-26608</td>
-       <td>2023-03-01 01:15:10 </td>
-       <td>SOLDR (System of Orchestration, Lifecycle control, Detection and Response) 1.1.0 allows stored XSS via the module editor.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26608">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e27343836ca2366849404e786b6635d</td>
-       <td>CVE-2022-47076</td>
-       <td>2023-02-28 23:15:11 </td>
-       <td>An issue was discovered in Smart Office Web 20.28 and earlier allows attackers to view sensitive information via DisplayParallelLogData.aspx.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47076">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f425b4e62255ca11937b44b453d7a0ff</td>
-       <td>CVE-2022-47075</td>
-       <td>2023-02-28 23:15:11 </td>
-       <td>An issue was discovered in Smart Office Web 20.28 and earlier allows attackers to download sensitive information via the action name parameter to ExportEmployeeDetails.aspx, and to ExportReportingManager.aspx.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47075">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>598d24b45a2a6cdc97cd1b2b34add219</td>
-       <td>CVE-2023-27372</td>
-       <td>2023-02-28 20:15:10 </td>
-       <td>SPIP before 4.2.1 allows Remote Code Execution via form values in the public area because serialization is mishandled. The fixed versions are 3.2.18, 4.0.10, 4.1.8, and 4.2.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27372">详情</a></td>
       </tr>
 
      </tbody>
