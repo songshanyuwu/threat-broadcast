@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-13 23:35:42 -->
+<!-- RELEASE TIME : 2023-03-14 05:35:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>dc592b33278098fe4ffd698ec3ca7d70</td>
+       <td>CVE-2023-27587</td>
+       <td>2023-03-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>ReadtoMyShoe, a web app that lets users upload articles and listen to them later, generates an error message containing sensitive information prior to commit 8533b01. If an error occurs when adding an article, the website shows the user an error message. If the error originates from the Google Cloud TTS request, then it will include the full URL of the request. The request URL contains the Google Cloud API key. See below for what this error message looks like, with redaction. This has been patched in commit 8533b01. Upgrading should be accompanied by deleting the current GCP API key and issuing a new one. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27587">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11b7507541b4e8014fba655f10dc9224</td>
+       <td>CVE-2023-27582</td>
+       <td>2023-03-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>maddy is a composable, all-in-one mail server. Starting with version 0.2.0 and prior to version 0.6.3, maddy allows a full authentication bypass if SASL authorization username is specified when using the PLAIN authentication mechanisms. Instead of validating the specified username, it is accepted as is after checking the credentials for the authentication username. maddy 0.6.3 includes the fix for the bug. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da88d7024d46cb37656bbfdbe8d1ce9d</td>
+       <td>CVE-2023-27052</td>
+       <td>2023-03-13 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>E-Commerce System v1.0 ws discovered to contain a SQL injection vulnerability via the id parameter at /admin/delete_user.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27052">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7bb3e38bf41a7fd1f1a9975ed834714</td>
+       <td>CVE-2023-27583</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>PanIndex is a network disk directory index. In Panindex prior to version 3.1.3, a hard-coded JWT key `PanIndex` is used. An attacker can use the hard-coded JWT key to sign JWT token and perform any actions as a user with admin privileges. Version 3.1.3 has a patch for the issue. As a workaround, one may change the JWT key in the source code before compiling the project.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27583">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d4031d2c1e2966abcfc7f7706808061b</td>
+       <td>CVE-2023-27581</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>github-slug-action is a GitHub Action to expose slug value of GitHub environment variables inside of one's GitHub workflow. Starting in version 4.0.0` and prior to version 4.4.1, this action uses the `github.head_ref` parameter in an insecure way. This vulnerability can be triggered by any user on GitHub on any workflow using the action on pull requests. They just need to create a pull request with a branch name, which can contain the attack payload. This can be used to execute code on the GitHub runners and to exfiltrate any secrets one uses in the CI pipeline. A patched action is available in version 4.4.1. No workaround is available.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27581">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>328b6f8954f8da9c4be499c7b6baf91a</td>
+       <td>CVE-2023-24368</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Incorrect access control in Temenos T24 Release 20 allows attackers to gain unauthorized access to sensitive information via a crafted POST request to HELPTEXT.MAINMENU.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24368">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89aca3c4c5175e38c0e96a8d330dde00</td>
+       <td>CVE-2023-0354</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Akuvox E11 web server can be accessed without any user authentication, and this could allow an attacker to access sensitive information, as well as create and download packet captures with known default URLs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0354">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>646674cc9cdfb3901047326d77b93985</td>
+       <td>CVE-2023-0353</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Akuvox E11 uses a weak encryption algorithm for stored passwords and uses a hard-coded password for decryption which could allow the encrypted passwords to be decrypted from the configuration file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0353">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66de614933290eacd13b3cadc00684c5</td>
+       <td>CVE-2023-0352</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Akuvox E11 password recovery webpage can be accessed without authentication, and an attacker could download the device key file. An attacker could then use this page to reset the password back to the default.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0352">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c1e62f58da9c808eb28071810fa5736e</td>
+       <td>CVE-2023-0351</td>
+       <td>2023-03-13 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Akuvox E11 web server backend library allows command injection in the device phone-book contacts functionality. This could allow an attacker to upload files with executable command instructions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0351">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c0e2dfd126af04a98668a6005f19c118</td>
        <td>CVE-2023-27010</td>
        <td>2023-03-13 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>ee19bd10d9e9d76b483b39acde1dc0b8</td>
        <td>CVE-2016-15028</td>
-       <td>2023-03-12 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 15:15:00</td>
        <td>A vulnerability was found in ICEPAY REST-API-NET 0.9. It has been declared as problematic. Affected by this vulnerability is the function RestClient of the file Classes/RestClient.cs of the component Checksum Validation. The manipulation leads to improper validation of integrity check value. The attack can be launched remotely. Upgrading to version 1.0 is able to address this issue. The name of the patch is 61f6b8758e5c971abff5f901cfa9f231052b775f. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-222847.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15028">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>4c53fa93835118917d735afe763aae80</td>
        <td>CVE-2023-1360</td>
-       <td>2023-03-12 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 09:15:00</td>
        <td>A vulnerability was found in SourceCodester Employee Payslip Generator with Sending Mail 1.2.0 and classified as critical. This issue affects some unknown processing of the file classes/Users.php?f=save of the component New User Creation. The manipulation of the argument username leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-222863.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1360">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>437510a7f28389bbd89b9885f57cf7a8</td>
        <td>CVE-2023-1359</td>
-       <td>2023-03-12 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 08:15:00</td>
        <td>A vulnerability has been found in SourceCodester Gadget Works Online Ordering System 1.0 and classified as problematic. This vulnerability affects unknown code of the file /philosophy/admin/user/controller.php?action=add of the component Add New User. The manipulation of the argument U_NAME leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-222862 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1359">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>40e46a733b4a2a15b82122f5bd68b446</td>
        <td>CVE-2023-1358</td>
-       <td>2023-03-12 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 08:15:00</td>
        <td>A vulnerability, which was classified as critical, was found in SourceCodester Gadget Works Online Ordering System 1.0. This affects an unknown part of the file /philosophy/admin/login.php of the component POST Parameter Handler. The manipulation of the argument user_email leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-222861 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1358">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>8dbeeb9675f2d2478df2009d26071eb9</td>
        <td>CVE-2023-1357</td>
-       <td>2023-03-12 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 08:15:00</td>
        <td>A vulnerability, which was classified as critical, has been found in SourceCodester Simple Bakery Shop Management System 1.0. Affected by this issue is some unknown functionality of the component Admin Login. The manipulation of the argument username/password with the input admin' or 1=1 -- leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-222860.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1357">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>54b90615706f9a9dcc9fc7d2086c4644</td>
        <td>CVE-2022-48367</td>
-       <td>2023-03-12 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 05:15:00</td>
        <td>An issue was discovered in eZ Publish Ibexa Kernel before 7.5.28. Access control based on object state is mishandled.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48367">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>70190a04a4cc3b65f2cdabffda63ba52</td>
        <td>CVE-2022-48366</td>
-       <td>2023-03-12 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 05:15:00</td>
        <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.19. It allows determining account existence via a timing attack.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48366">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>74910becbf6b6b7c3b4c65aad538223f</td>
        <td>CVE-2022-48365</td>
-       <td>2023-03-12 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 05:15:00</td>
        <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.26. The Company admin role gives excessive privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48365">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>ed8dccf2bf11853be748f46097adfdd7</td>
        <td>CVE-2021-46876</td>
-       <td>2023-03-12 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 05:15:00</td>
        <td>An issue was discovered in eZ Publish Ibexa Kernel before 7.5.15.1. The /user/sessions endpoint can be abused to determine account existence.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46876">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>dba2cc3b2e083b9857aac4ebf9b45ba8</td>
        <td>CVE-2021-46875</td>
-       <td>2023-03-12 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 05:15:00</td>
        <td>An issue was discovered in eZ Platform Ibexa Kernel before 1.3.1.1. An XSS attack can occur because JavaScript code can be uploaded in a .html or .js file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46875">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4128222517f037e2948d37d7d929cbf3</td>
-       <td>CVE-2023-1355</td>
-       <td>2023-03-11 22:15:00</td>
-       <td>NULL Pointer Dereference in GitHub repository vim/vim prior to 9.0.1402.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1355">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75506e5832818ccf04659ff96f8f638d</td>
-       <td>CVE-2013-10021</td>
-       <td>2023-03-11 21:15:00</td>
-       <td>A vulnerability was found in dd32 Debug Bar Plugin up to 0.8. It has been declared as problematic. Affected by this vulnerability is the function render of the file panels/class-debug-bar-queries.php. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 0.8.1 is able to address this issue. The name of the patch is 0842af8f8a556bc3e39b9ef758173b0a8a9ccbfc. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-222739.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2013-10021">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4dd841feadf02a620be562493c948508</td>
-       <td>CVE-2023-1354</td>
-       <td>2023-03-11 18:15:00</td>
-       <td>A vulnerability has been found in SourceCodester Design and Implementation of Covid-19 Directory on Vaccination System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file register.php. The manipulation of the argument txtfullname/txtage/txtaddress/txtphone leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-222853 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5449b290bb7b51693cde6c548f834f4</td>
-       <td>CVE-2023-1353</td>
-       <td>2023-03-11 18:15:00</td>
-       <td>A vulnerability, which was classified as problematic, was found in SourceCodester Design and Implementation of Covid-19 Directory on Vaccination System 1.0. Affected is an unknown function of the file verification.php. The manipulation of the argument txtvaccinationID leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-222852.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1353">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d14e34d71476e8c8c4bd5d3d8c781a5</td>
-       <td>CVE-2023-1352</td>
-       <td>2023-03-11 18:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in SourceCodester Design and Implementation of Covid-19 Directory on Vaccination System 1.0. This issue affects some unknown processing of the file /admin/login.php. The manipulation of the argument txtusername/txtpassword leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-222851.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1352">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43c3c5efb5ab3bd8c6e0ad38c950446d</td>
-       <td>CVE-2023-1351</td>
-       <td>2023-03-11 12:15:00</td>
-       <td>A vulnerability classified as critical has been found in SourceCodester Computer Parts Sales and Inventory System 1.0. This affects an unknown part of the file cust_transac.php. The manipulation of the argument phonenumber leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-222849 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1351">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e44c7cacbada286e5ce07130aea19d4</td>
-       <td>CVE-2023-1350</td>
-       <td>2023-03-11 09:15:00</td>
-       <td>A vulnerability was found in liferea. It has been rated as critical. Affected by this issue is the function update_job_run of the file src/update.c of the component Feed Enrichment. The manipulation of the argument source with the input |date &gt;/tmp/bad-item-link.txt leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 8d8b5b963fa64c7a2122d1bbfbb0bed46e813e59. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-222848.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1350">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cbb866af814c101f6ad09b3a8235c5b6</td>
-       <td>CVE-2023-1349</td>
-       <td>2023-03-11 09:15:00</td>
-       <td>A vulnerability, which was classified as problematic, has been found in Hsycms 3.1. Affected by this issue is some unknown functionality of the file controller\cate.php of the component Add Category Module. The manipulation of the argument title leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-222842 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1349">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee20b35d667b04a98286feb2d79a5f27</td>
-       <td>CVE-2023-24999</td>
-       <td>2023-03-11 00:15:00</td>
-       <td>HashiCorp Vault and Vault Enterprise’s approle auth method allowed any authenticated user with access to an approle destroy endpoint to destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability is fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24999">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8999d66d4552a1988716303f39eee833</td>
-       <td>CVE-2023-27532</td>
-       <td>2023-03-10 22:15:00</td>
-       <td>Vulnerability in Veeam Backup & Replication component allows encrypted credentials stored in the configuration database to be obtained. This may lead to gaining access to the backup infrastructure hosts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27532">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>3c641b979cc922ebfb6a357d611ef9ea</td>
        <td>CVE-2023-0734</td>
-       <td>2023-03-12 20:31:31 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:31</td>
        <td>WALLABAG WALLABAG Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d958258af5024797ad816318d543e41b">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>bea9e9362c69428810e8c874f01f25f3</td>
        <td>CVE-2022-4645</td>
-       <td>2023-03-12 20:31:27 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:27</td>
        <td>LIBTIFF LIBTIFF Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=edb962157c6d467e820a95ec6ea4856f">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>3f7b36378fb40d7c001d000f9aaff6c0</td>
        <td>CVE-2023-1175</td>
-       <td>2023-03-12 20:31:23 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:23</td>
        <td>VIM VIM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=177c6bdfb19948c49d716376f66a38ef">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>ec1e0cb172e09054567d42cf8fb73f15</td>
        <td>CVE-2022-38734</td>
-       <td>2023-03-12 20:31:16 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:16</td>
        <td>NETAPP STORAGEGRID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5681c412296b4ccda217f7da888fe540">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>e036980c408f64218352aab1c4bf5bce</td>
        <td>CVE-2023-26477</td>
-       <td>2023-03-12 20:31:09 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:09</td>
        <td>XWIKI XWIKI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=64ec46b680894a748402df28032ce943">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>4dd548fe73a7bba57409beee6498fa32</td>
        <td>CVE-2023-1118</td>
-       <td>2023-03-12 20:31:01 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:31:01</td>
        <td>LINUX LINUX_KERNEL Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2cd9c87d06224810a3fa65122542aab0">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>94dacb38ad713aa3a008ed640d253615</td>
        <td>CVE-2023-26479</td>
-       <td>2023-03-12 20:30:54 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:30:54</td>
        <td>XWIKI XWIKI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fa5619bc2bc743cb89d11b8d0c59c0c8">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>4fef30e36426aba046b3d4cd1892dd93</td>
        <td>CVE-2023-26478</td>
-       <td>2023-03-12 20:30:47 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:30:47</td>
        <td>XWIKI XWIKI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7938dabca25d401fa5abf326c6fb4a69">详情</a></td>
       </tr>
@@ -1830,7 +1830,7 @@
       <tr>
        <td>52e55ce4bf331ed4b722755593c24c0e</td>
        <td>CVE-2023-26480</td>
-       <td>2023-03-12 20:30:39 <img src="imgs/new.gif" /></td>
+       <td>2023-03-12 20:30:39</td>
        <td>XWIKI XWIKI Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0d557c0eb4341ad9c2ce7534ae9656b">详情</a></td>
       </tr>
