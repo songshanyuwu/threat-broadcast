@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-15 23:34:53 -->
+<!-- RELEASE TIME : 2023-03-16 05:35:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>ae733c9e19d8a91d1e36ae4ef7dbcdde</td>
        <td>CVE-2023-23638</td>
-       <td>2023-03-14 07:05:15 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 07:05:15</td>
        <td>CVE-2023-23638：Apache Dubbo反序列化漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64101cab12d0ac6890a92c60">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>376a84747a7809389baea3dc5649ace8</td>
+       <td>CVE-2023-28461</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Array Networks Array AG Series and vxAG (9.4.0.481 and earlier) allow remote code execution. An attacker can browse the filesystem on the SSL VPN gateway using a flags attribute in an HTTP header without authentication. The product could then be exploited through a vulnerable URL. The 2023-03-09 vendor advisory stated "a new Array AG release with the fix will be available soon."</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28461">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44f52dadbcfd515d628c7f5168c718fc</td>
+       <td>CVE-2023-28460</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A command injection vulnerability was discovered in Array Networks APV products. A remote attacker can send a crafted packet after logging into the affected appliance as an administrator, resulting in arbitrary shell code execution. This is fixed in 8.6.1.262 or newer and 10.4.2.93 or newer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28460">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1aa98cd2581ed62aca8732aef6e5605e</td>
+       <td>CVE-2023-28338</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Any request send to a Netgear Nighthawk Wifi6 Router (RAX30)'s web service containing a “Content-Type” of “multipartboundary=” will result in the request body being written to “/tmp/mulipartFile” on the device itself. A sufficiently large file will cause device resources to be exhausted, resulting in the device becoming unusable until it is rebooted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c05f17b03476a767c63296ce3b3176a6</td>
+       <td>CVE-2023-28337</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>When uploading a firmware image to a Netgear Nighthawk Wifi6 Router (RAX30), a hidden “forceFWUpdate” parameter may be provided to force the upgrade to complete and bypass certain validation checks. End users can use this to upload modified, unofficial, and potentially malicious firmware to the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24f5a791c5ca4b751b0cd5c8bbb9c35b</td>
+       <td>CVE-2023-28099</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Prior to versions 3.1.9 and 3.2.6, if `ds_is_in_list()` is used with an invalid IP address string (`NULL` is illegal input), OpenSIPS will attempt to print a string from a random address (stack garbage), which could lead to a crash. All users of `ds_is_in_list()` without the `$si` variable as 1st parameter could be affected by this vulnerability to a larger, lesser or no extent at all, depending if the data passed to the function is a valid IPv4 or IPv6 address string or not. Fixes will are available starting with the 3.1.9 and 3.2.6 minor releases. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>479919b6f132feb76fbc15d9f69e9d62</td>
+       <td>CVE-2023-28098</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Prior to versions 3.1.7 and 3.2.4, a specially crafted Authorization header causes OpenSIPS to crash or behave in an unexpected way due to a bug in the function `parse_param_name()` . This issue was discovered while performing coverage guided fuzzing of the function parse_msg. The AddressSanitizer identified that the issue occurred in the function `q_memchr()` which is being called by the function `parse_param_name()`. This issue may cause erratic program behaviour or a server crash. It affects configurations containing functions that make use of the affected code, such as the function `www_authorize()` . Versions 3.1.7 and 3.2.4 contain a fix.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28098">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ac3f05cbce3e61ca874faa4ae7c3f15</td>
+       <td>CVE-2023-28097</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Prior to versions 3.1.9 and 3.2.6, a malformed SIP message containing a large _Content-Length_ value and a specially crafted Request-URI causes a segmentation fault in OpenSIPS. This issue occurs when a large amount of shared memory using the `-m` flag was allocated to OpenSIPS, such as 10 GB of RAM. On the test system, this issue occurred when shared memory was set to `2362` or higher. This issue is fixed in versions 3.1.9 and 3.2.6. The only workaround is to guarantee that the Content-Length value of input messages is never larger than `2147483647`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28097">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1ec926ee0272ca6dccfd6103db6273d</td>
+       <td>CVE-2023-24468</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Broken access control in Advanced Authentication versions prior to 6.4.1.1 and 6.3.7.2</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24468">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5746084420c8dbfee3f7a4dfb2b1e39a</td>
+       <td>CVE-2023-1421</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A reflected cross-site scripting vulnerability in the OAuth flow completion endpoints in Mattermost allows an attacker to send AJAX requests on behalf of the victim via sharing a crafted link with a malicious state parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1421">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>850c9959c7a0a93404703e40a2bb1859</td>
+       <td>CVE-2023-1389</td>
+       <td>2023-03-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>TP-Link Archer AX21 (AX1800) firmware versions before 1.1.4 Build 20230219 contained a command injection vulnerability in the country form of the /cgi-bin/luci;stok=/locale endpoint on the web management interface. Specifically, the country parameter of the write operation was not sanitized before being used in a call to popen(), allowing an unauthenticated attacker to inject commands, which would be run as root, with a simple POST request.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1389">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c1502ad7d68745199f7a00ab2031b03e</td>
        <td>CVE-2023-28450</td>
        <td>2023-03-15 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>34d00d4cc57e92752cf986d25fc8173f</td>
        <td>CVE-2023-1327</td>
-       <td>2023-03-14 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 22:15:00</td>
        <td>Netgear RAX30 (AX2400), prior to version 1.0.6.74, was affected by an authentication bypass vulnerability, allowing an unauthenticated attacker to gain administrative access to the device's web management interface by resetting the admin password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1327">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>231bfcde44f60183327ff9d8bc9180ff</td>
        <td>CVE-2023-27590</td>
-       <td>2023-03-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 21:15:00</td>
        <td>Rizin is a UNIX-like reverse engineering framework and command-line toolset. In version 0.5.1 and prior, converting a GDB registers profile file into a Rizin register profile can result in a stack-based buffer overflow when the `name`, `type`, or `groups` fields have longer values than expected. Users opening untrusted GDB registers files (e.g. with the `drpg` or `arpg` commands) are affected by this flaw. Commit d6196703d89c84467b600ba2692534579dc25ed4 contains a patch for this issue. As a workaround, review the GDB register profiles before loading them with `drpg`/`arpg` commands.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27590">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>1e2fe8e94bb16e83b3f7605f70cce3fa</td>
        <td>CVE-2023-26511</td>
-       <td>2023-03-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 21:15:00</td>
        <td>A Hard Coded Admin Credentials issue in the Web-UI Admin Panel in Propius MachineSelector 6.6.0 and 6.6.1 allows remote attackers to gain access to the admin panel Propiusadmin.php, which allows taking control of the affected system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26511">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>d18ec4afce2a2a05ee1303b40b5c38b4</td>
        <td>CVE-2023-26262</td>
-       <td>2023-03-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 21:15:00</td>
        <td>An issue was discovered in Sitecore XP/XM 10.3. As an authenticated Sitecore user, a unrestricted language file upload vulnerability exists the can lead to direct code execution on the content management (CM) server.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26262">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>b7c5ac32af9ecde14190c76561b4d292</td>
        <td>CVE-2023-28343</td>
-       <td>2023-03-14 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:15:00</td>
        <td>OS command injection affects Altenergy Power Control Software C1.2.5 via shell metacharacters in the index.php/management/set_timezone timezone parameter, because of set_timezone in models/management_model.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28343">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>76686e5d958f06f7736421280fa6ca2f</td>
        <td>CVE-2023-28339</td>
-       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 19:15:00</td>
        <td>OpenDoas through 6.8.2, when TIOCSTI is available, allows privilege escalation because of sharing a terminal with the original session. NOTE: TIOCSTI is unavailable in OpenBSD 6.0 and later, and can be made unavailable in the Linux kernel 6.2 and later.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28339">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>56163d23ea307a90233a22ef033a7bb9</td>
        <td>CVE-2023-28144</td>
-       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 19:15:00</td>
        <td>KDAB Hotspot 1.3.x and 1.4.x through 1.4.1, in a non-default configuration, allows privilege escalation because of race conditions involving symlinks and elevate_perf_privileges.sh chown calls.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28144">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>f91ea395eecce1f8a4bb8e71d90b8174</td>
        <td>CVE-2023-27589</td>
-       <td>2023-03-14 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 19:15:00</td>
        <td>Minio is a Multi-Cloud Object Storage framework. Starting with RELEASE.2020-12-23T02-24-12Z and prior to RELEASE.2023-03-13T19-46-17Z, a user with `consoleAdmin` permissions can potentially create a user that matches the root credential `accessKey`. Once this user is created successfully, the root credential ceases to work appropriately. The issue is patched in RELEASE.2023-03-13T19-46-17Z. There are ways to work around this via adding higher privileges to the disabled root user via `mc admin policy set`.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27589">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>2d622edc52342ae55699cc1398949b07</td>
        <td>CVE-2023-27588</td>
-       <td>2023-03-14 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 18:15:00</td>
        <td>Hasura is an open-source product that provides users GraphQL or REST APIs. A path traversal vulnerability has been discovered within Hasura GraphQL Engine prior to versions 1.3.4, 2.55.1, 2.20.1, and 2.21.0-beta1. Projects running on Hasura Cloud were not vulnerable. Self-hosted Hasura Projects with deployments that are publicly exposed and not protected by a WAF or other HTTP protection layer should be upgraded to version 1.3.4, 2.55.1, 2.20.1, or 2.21.0-beta1 to receive a patch.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27588">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>49ccbb4be1668767b5af2e4f5b825dd2</td>
        <td>CVE-2023-27585</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 17:15:00</td>
        <td>PJSIP is a free and open source multimedia communication library written in C. A buffer overflow vulnerability in versions 2.13 and prior affects applications that use PJSIP DNS resolver. It doesn't affect PJSIP users who do not utilise PJSIP DNS resolver. This vulnerability is related to CVE-2022-24793. A patch is available as commit `d1c5e4d` in the `master` branch. A workaround is to disable DNS resolution in PJSIP config (by setting `nameserver_count` to zero) or use an external resolver implementation instead.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27585">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ae688e6360a647f48036bfb01c601a1d</td>
-       <td>CVE-2023-25206</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>PrestaShop ws_productreviews < 3.6.2 is vulnerable to SQL Injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25206">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c3aa08ea9f441a07bba5e2fb61689b0e</td>
-       <td>CVE-2023-24930</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft OneDrive for MacOS Elevation of Privilege Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24930">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9b4a58743f48e45d99613eb22ea3c9b</td>
-       <td>CVE-2023-24923</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft OneDrive for Android Information Disclosure Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7bf746d370376628937e6b2c211e0687</td>
-       <td>CVE-2023-24922</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft Dynamics 365 Information Disclosure Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24922">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e43ffabb230276cdd3bb591e0449d098</td>
-       <td>CVE-2023-24921</td>
-       <td>2023-03-14 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24921">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc592b33278098fe4ffd698ec3ca7d70</td>
-       <td>CVE-2023-27587</td>
-       <td>2023-03-13 22:15:00</td>
-       <td>ReadtoMyShoe, a web app that lets users upload articles and listen to them later, generates an error message containing sensitive information prior to commit 8533b01. If an error occurs when adding an article, the website shows the user an error message. If the error originates from the Google Cloud TTS request, then it will include the full URL of the request. The request URL contains the Google Cloud API key. See below for what this error message looks like, with redaction. This has been patched in commit 8533b01. Upgrading should be accompanied by deleting the current GCP API key and issuing a new one. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27587">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>11b7507541b4e8014fba655f10dc9224</td>
-       <td>CVE-2023-27582</td>
-       <td>2023-03-13 22:15:00</td>
-       <td>maddy is a composable, all-in-one mail server. Starting with version 0.2.0 and prior to version 0.6.3, maddy allows a full authentication bypass if SASL authorization username is specified when using the PLAIN authentication mechanisms. Instead of validating the specified username, it is accepted as is after checking the credentials for the authentication username. maddy 0.6.3 includes the fix for the bug. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27582">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da88d7024d46cb37656bbfdbe8d1ce9d</td>
-       <td>CVE-2023-27052</td>
-       <td>2023-03-13 22:15:00</td>
-       <td>E-Commerce System v1.0 ws discovered to contain a SQL injection vulnerability via the id parameter at /admin/delete_user.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27052">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c7bb3e38bf41a7fd1f1a9975ed834714</td>
-       <td>CVE-2023-27583</td>
-       <td>2023-03-13 21:15:00</td>
-       <td>PanIndex is a network disk directory index. In Panindex prior to version 3.1.3, a hard-coded JWT key `PanIndex` is used. An attacker can use the hard-coded JWT key to sign JWT token and perform any actions as a user with admin privileges. Version 3.1.3 has a patch for the issue. As a workaround, one may change the JWT key in the source code before compiling the project.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27583">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4031d2c1e2966abcfc7f7706808061b</td>
-       <td>CVE-2023-27581</td>
-       <td>2023-03-13 21:15:00</td>
-       <td>github-slug-action is a GitHub Action to expose slug value of GitHub environment variables inside of one's GitHub workflow. Starting in version 4.0.0` and prior to version 4.4.1, this action uses the `github.head_ref` parameter in an insecure way. This vulnerability can be triggered by any user on GitHub on any workflow using the action on pull requests. They just need to create a pull request with a branch name, which can contain the attack payload. This can be used to execute code on the GitHub runners and to exfiltrate any secrets one uses in the CI pipeline. A patched action is available in version 4.4.1. No workaround is available.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27581">详情</a></td>
       </tr>
 
      </tbody>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>f78427a0d63073b8e7dd887d7f36d8f2</td>
        <td>CVE-2023-22856</td>
-       <td>2023-03-14 20:28:14 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:28:14</td>
        <td>BLOGENGINE BLOGENGINE.NET Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ccc8d843f4bd49e2803ee1984d4ff6bf">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>9fff8545afac2a64edefca5fb87e6740</td>
        <td>CVE-2021-20251</td>
-       <td>2023-03-14 20:28:08 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:28:08</td>
        <td>Samba 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b296020e13304b8c89dc8dbb88750637">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>4f3ba94bd339ea7a3d14e66f6e48cbd3</td>
        <td>CVE-2023-1212</td>
-       <td>2023-03-14 20:27:55 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:27:55</td>
        <td>PHPIPAM PHPIPAM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e90feb0fcbad453bb97506a10d033dc6">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>6206b3455a62920ea847dfca9b60fd43</td>
        <td>CVE-2023-1211</td>
-       <td>2023-03-14 20:27:49 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:27:49</td>
        <td>PHPIPAM PHPIPAM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=231fda70763b47118c651bf8de1f8424">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>06f61f8059be4c304830fa40c84cc3f3</td>
        <td>CVE-2023-20078</td>
-       <td>2023-03-14 20:27:42 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:27:42</td>
        <td>CISCO Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f540143d7df4fb4a7603a638bf0994f">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>003f03842188212b9fd5499134088802</td>
        <td>CVE-2023-22857</td>
-       <td>2023-03-14 20:27:29 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:27:29</td>
        <td>BLOGENGINE BLOGENGINE.NET Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5a2aeb73ad894be8b42893c4d201b381">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>7c2c8842dc1abc673f1a4a69211abf3f</td>
        <td>CVE-2023-23927</td>
-       <td>2023-03-14 20:27:23 <img src="imgs/new.gif" /></td>
+       <td>2023-03-14 20:27:23</td>
        <td>CRAFTCMS CRAFT_CMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bfa1bfc8ad614a2f872c34c9a0819ae2">详情</a></td>
       </tr>
@@ -2196,6 +2196,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5c1c07eb49f07d489469aa9732ca9727</td>
+       <td>CVE-2023-27905</td>
+       <td>2023-03-10 21:15:15 </td>
+       <td>Jenkins update-center2 3.13 and 3.14 renders the required Jenkins core version on plugin download index pages without sanitization, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to provide a plugin for hosting.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27905">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2368199971a03ca93a02f237fbfe7ab2</td>
+       <td>CVE-2023-27904</td>
+       <td>2023-03-10 21:15:15 </td>
+       <td>Jenkins 2.393 and earlier, LTS 2.375.3 and earlier prints an error stack trace on agent-related pages when agent connections are broken, potentially revealing information about Jenkins configuration that is otherwise inaccessible to attackers.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27904">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7313f586f4a65eda25c8574398eb5ec5</td>
+       <td>CVE-2023-27903</td>
+       <td>2023-03-10 21:15:15 </td>
+       <td>Jenkins 2.393 and earlier, LTS 2.375.3 and earlier creates a temporary file in the default temporary directory with the default permissions for newly created files when uploading a file parameter through the CLI, potentially allowing attackers with access to the Jenkins controller file system to read and write the file before it is used.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27903">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8132bbbda8412c481e7d9028d6563f2c</td>
+       <td>CVE-2023-27850</td>
+       <td>2023-03-10 18:15:16 </td>
+       <td>NETGEAR Nighthawk WiFi6 Router prior to V1.0.10.94 contains a file sharing mechanism that allows users with access to this feature to access arbitrary files on the device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27850">详情</a></td>
+      </tr>
+
+      <tr>
        <td>abdea30f5d65e4e44e47574bcbe47bd0</td>
        <td>CVE-2023-27164</td>
        <td>2023-03-10 16:15:11 </td>
@@ -2265,6 +2297,30 @@
        <td>2023-03-09 21:15:10 </td>
        <td>onekeyadmin v1.3.9 was discovered to contain an arbitrary file delete vulnerability via the component \admin\controller\plugins.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f50a78664be889354f5f9886ece765f7</td>
+       <td>CVE-2023-27986</td>
+       <td>2023-03-09 06:15:33 </td>
+       <td>emacsclient-mail.desktop in Emacs 28.1 through 28.2 is vulnerable to Emacs Lisp code injections through a crafted mailto: URI with unescaped double-quote characters.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27986">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fcf339d5cf80f13452fbfef8897280c0</td>
+       <td>CVE-2023-27985</td>
+       <td>2023-03-09 06:15:32 </td>
+       <td>emacsclient-mail.desktop in Emacs 28.1 through 28.2 is vulnerable to shell command injections through a crafted mailto: URI. This is related to lack of compliance with the Desktop Entry Specification.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27985">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0ee42d6d58a37f9ed5ace99362da1f3</td>
+       <td>CVE-2023-27974</td>
+       <td>2023-03-09 00:15:09 </td>
+       <td>** DISPUTED ** Bitwarden through 2023.2.1 offers password auto-fill when the second-level domain matches, e.g., a password stored for an example.com hosting provider when customer-website.example.com is visited. NOTE: the vendor's position is that &quot;Auto-fill on page load&quot; is not enabled by default.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27974">详情</a></td>
       </tr>
 
       <tr>
@@ -2377,62 +2433,6 @@
        <td>2023-03-06 05:15:12 </td>
        <td>All versions of the package sketchsvg are vulnerable to Arbitrary Code Injection when invoking shell.exec without sanitization nor parametrization while concatenating the current directory as part of the command string.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26107">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0780e61fc2491cb7f827550e682ba61b</td>
-       <td>CVE-2023-26106</td>
-       <td>2023-03-06 05:15:12 </td>
-       <td>All versions of the package dot-lens are vulnerable to Prototype Pollution via the set() function in index.js file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26106">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70f1164884ae2d492b81ff81dc42ab1c</td>
-       <td>CVE-2023-26510</td>
-       <td>2023-03-05 22:15:08 </td>
-       <td>Ghost 5.35.0 allows authorization bypass: contributors can view draft posts of other users, which is arguably inconsistent with a security policy in which a contributor's draft can only be read by editors until published by an editor. NOTE: the vendor's position is that this behavior has no security impact.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8c03167f66e10301334a412997b3da7</td>
-       <td>CVE-2023-27641</td>
-       <td>2023-03-05 22:15:08 </td>
-       <td>The REPORT (after z but before a) parameter in wa.exe in L-Soft LISTSERV 16.5 before 17 allows an attacker to conduct XSS attacks via a crafted URL.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27641">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>542419335bf30ccfc19e6c1fd14a44ad</td>
-       <td>CVE-2023-27635</td>
-       <td>2023-03-05 22:15:08 </td>
-       <td>debmany in debian-goodies 0.88.1 allows attackers to execute arbitrary shell commands (because of an eval call) via a crafted .deb file. (The path is shown to the user before execution.)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27635">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd7e965b802bb7ea8d003449625c0e8d</td>
-       <td>CVE-2023-27567</td>
-       <td>2023-03-03 22:15:10 </td>
-       <td>In OpenBSD 7.2, a TCP packet with destination port 0 that matches a pf divert-to rule can crash the kernel.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27567">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>137fd25cb61205bf14de900998ae8f30</td>
-       <td>CVE-2023-27574</td>
-       <td>2023-03-03 22:15:10 </td>
-       <td>ShadowsocksX-NG 1.10.0 signs with com.apple.security.get-task-allow entitlements because of CODE_SIGNING_INJECT_BASE_ENTITLEMENTS.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27574">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da81e25634cf3b442882aa0752d17bbc</td>
-       <td>CVE-2023-26213</td>
-       <td>2023-03-03 22:15:09 </td>
-       <td>On Barracuda CloudGen WAN Private Edge Gateway devices before 8 webui-sdwan-1089-8.3.1-174141891, an OS command injection vulnerability exists in /ajax/update_certificate - a crafted HTTP request allows an authenticated attacker to execute arbitrary commands. For example, a name field can contain :password and a password field can contain shell metacharacters.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-26213">详情</a></td>
       </tr>
 
      </tbody>
