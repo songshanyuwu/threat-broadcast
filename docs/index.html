@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-28 05:35:20 -->
+<!-- RELEASE TIME : 2023-03-28 23:35:33 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a2c7b1a6f39b12a4f1a234b4effd0c82</td>
+       <td>CVE-2023-28718</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Osprey Pump Controller version 1.01 allows users to perform certain actions via HTTP requests without performing any checks to verify the requests. This may allow an attacker to perform certain actions with administrative privileges if a logged-in user visits a malicious website.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28718">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>18f84eba779e742af9f31d1cae467236</td>
+       <td>CVE-2023-28712</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Osprey Pump Controller version 1.01 contains an unauthenticated command injection vulnerability that could allow system access with www-data permissions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28712">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28f2dab8b17fdedb5c6c1298527cfc41</td>
+       <td>CVE-2023-28654</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Osprey Pump Controller version 1.01 has a hidden administrative account that has the hardcoded password that allows full access to the web management interface configuration. The user is not visible in Usernames and Passwords menu list of the application and the password cannot be changed through any normal operation of the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28654">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07a771804f19f085fb69f184f916f55e</td>
+       <td>CVE-2023-28648</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Osprey Pump Controller version 1.01 inputs passed to a GET parameter are not properly sanitized before being returned to the user. This can be exploited to execute arbitrary HTML/JS code in a user's browser session in context of an affected site.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28648">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>54fc813c9b5462ebcd79cd505f98b92d</td>
+       <td>CVE-2023-28637</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>DataEase is an open source data visualization analysis tool. In Dataease users are normally allowed to modify data and the data sources are expected to properly sanitize data. The AWS redshift data source does not provide data sanitization which may lead to remote code execution. This vulnerability has been fixed in v1.18.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>caa06a38568dca37377e50da34a9b64e</td>
+       <td>CVE-2023-28631</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>comrak is a CommonMark + GFM compatible Markdown parser and renderer written in rust. A Comrak AST can be constructed manually by a program instead of parsing a Markdown document with `parse_document`. This AST can then be converted to HTML via `html::format_document_with_plugins`. However, the HTML formatting code assumes that the AST is well-formed. For example, many AST notes contain `[u8]` fields which the formatting code assumes is valid UTF-8 data. Several bugs can be triggered if this is not the case. Version 0.17.0 contains adjustments to the AST, storing strings instead of unvalidated byte arrays. Users are advised to upgrade. Users unable to upgrade may manually validate UTF-8 correctness of all data when assigning to `&[u8]` and `Vec<u8>` fields in the AST. This issue is also tracked as `GHSL-2023-049`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28631">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6bdba86bfb817034815532d872652202</td>
+       <td>CVE-2023-28626</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>comrak is a CommonMark + GFM compatible Markdown parser and renderer written in rust. A range of quadratic parsing issues are present in Comrak. These can be used to craft denial-of-service attacks on services that use Comrak to parse Markdown. This issue has been addressed in version 0.17.0. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue is also tracked as `GHSL-2023-047`</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28626">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebcf589325b5536781982b3b51e65b8d</td>
+       <td>CVE-2023-28447</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Smarty is a template engine for PHP. In affected versions smarty did not properly escape javascript code. An attacker could exploit this vulnerability to execute arbitrary JavaScript code in the context of the user's browser session. This may lead to unauthorized access to sensitive user data, manipulation of the web application's behavior, or unauthorized actions performed on behalf of the user. Users are advised to upgrade to either version 3.1.48 or to 4.3.1 to resolve this issue. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28447">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7bfc565f33ec9ebb21b01f331fb4ac3</td>
+       <td>CVE-2023-28427</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>matrix-js-sdk is a Matrix messaging protocol Client-Server SDK for JavaScript. In versions prior to 24.0.0 events sent with special strings in key places can temporarily disrupt or impede the matrix-js-sdk from functioning properly, potentially impacting the consumer's ability to process data safely. Note that the matrix-js-sdk can appear to be operating normally but be excluding or corrupting runtime data presented to the consumer. This vulnerability is distinct from GHSA-rfv9-x7hh-xc32 which covers a similar issue. The issue has been patched in matrix-js-sdk 24.0.0 and users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28427">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee871ab65ac7d5a3c13942231c2d3565</td>
+       <td>CVE-2023-28375</td>
+       <td>2023-03-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Osprey Pump Controller version 1.01 is vulnerable to an unauthenticated file disclosure. Using a GET parameter, attackers can disclose arbitrary files on the affected device and disclose sensitive and system information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28375">详情</a></td>
+      </tr>
+
+      <tr>
        <td>755762c0f93575cf36b4cdc97d1da24f</td>
        <td>CVE-2023-27245</td>
        <td>2023-03-27 17:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-03-26 21:15:00</td>
        <td>LB-LINK BL-AC1900_2.0 v1.0.1, LB-LINK BL-WR9000 v2.4.9, LB-LINK BL-X26 v1.2.5, and LB-LINK BL-LTE300 v1.0.8 were discovered to contain a command injection vulnerability via the mac, time1, and time2 parameters at /goform/set_LimitClient_cfg.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26801">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>802340c4b287171d9490b8ac77c1295a</td>
-       <td>CVE-2023-26800</td>
-       <td>2023-03-26 21:15:00</td>
-       <td>Ruijie Networks RG-EW1200 Wireless Routers EW_3.0(1)B11P204 was discovered to contain a command injetion vulnerability via the params.path parameter in the upgradeConfirm function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7db0e4fe57a6ec2aca405583d8fd68d1</td>
-       <td>CVE-2023-1639</td>
-       <td>2023-03-26 21:15:00</td>
-       <td>A vulnerability classified as problematic has been found in IObit Malware Fighter 9.4.0.776. This affects the function 0x8001E04C in the library ImfRegistryFilter.sys of the component IOCTL Handler. The manipulation leads to denial of service. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-224019.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1639">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f4054df39103997e59bc38a8b5b9ff5</td>
-       <td>CVE-2023-1638</td>
-       <td>2023-03-26 21:15:00</td>
-       <td>A vulnerability was found in IObit Malware Fighter 9.4.0.776. It has been rated as problematic. Affected by this issue is the function 0x8001E024/0x8001E040 in the library ImfRegistryFilter.sys of the component IOCTL Handler. The manipulation leads to denial of service. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. VDB-224018 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1638">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94008f0882151307080c9440f60d0657</td>
-       <td>CVE-2023-28859</td>
-       <td>2023-03-26 19:15:00</td>
-       <td>redis-py through 4.5.3 leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a non-pipeline operation), and can send response data to the client of an unrelated request. NOTE: this issue exists because of an incomplete fix for CVE-2023-28858.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28859">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0da023fbe6dcc39dccfe211f6558e012</td>
-       <td>CVE-2023-28858</td>
-       <td>2023-03-26 19:15:00</td>
-       <td>redis-py before 4.5.3, as used in ChatGPT and other products, leaves a connection open after canceling an async Redis command at an inopportune time (in the case of a pipeline operation), and can send response data to the client of an unrelated request in an off-by-one manner. The fixed versions for this CVE Record are 4.3.6, 4.4.3, and 4.5.3; however, CVE-2023-28859 is a separate vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28858">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f44e2e12d3c603a5e10ea29ae039ed6</td>
-       <td>CVE-2023-1458</td>
-       <td>2023-03-25 22:15:00</td>
-       <td>** DISPUTED ** A vulnerability has been found in Ubiquiti EdgeRouter X 2.0.9-hotfix.6 and classified as critical. Affected by this vulnerability is an unknown functionality of the component OSPF Handler. The manipulation of the argument area leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The associated identifier of this vulnerability is VDB-223303. NOTE: The vendor position is that post-authentication issues are not accepted as vulnerabilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1458">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f74ff303dfad262482e31cf85e0b6ea3</td>
-       <td>CVE-2023-1457</td>
-       <td>2023-03-25 21:15:00</td>
-       <td>** DISPUTED ** A vulnerability, which was classified as critical, was found in Ubiquiti EdgeRouter X 2.0.9-hotfix.6. Affected is an unknown function of the component Static Routing Configuration Handler. The manipulation of the argument next-hop-interface leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. VDB-223302 is the identifier assigned to this vulnerability. NOTE: The vendor position is that post-authentication issues are not accepted as vulnerabilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1457">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>100ed6a4525afdc272d8e6f095cec15a</td>
-       <td>CVE-2023-1456</td>
-       <td>2023-03-25 21:15:00</td>
-       <td>** DISPUTED ** A vulnerability, which was classified as critical, has been found in Ubiquiti EdgeRouter X 2.0.9-hotfix.6. This issue affects some unknown processing of the component NAT Configuration Handler. The manipulation leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier VDB-223301 was assigned to this vulnerability. NOTE: The vendor position is that post-authentication issues are not accepted as vulnerabilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1456">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ac0d93bc39cba7db6f406fcc9a9e890</td>
-       <td>CVE-2023-1635</td>
-       <td>2023-03-25 19:15:00</td>
-       <td>A vulnerability was found in OTCMS 6.72. It has been declared as problematic. Affected by this vulnerability is the function AutoRun of the file apiRun.php. The manipulation of the argument mode leads to cross site scripting. The attack can be launched remotely. The identifier VDB-224017 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1635">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a59842de2dc49c450e241b7a455e268</td>
-       <td>CVE-2023-1634</td>
-       <td>2023-03-25 19:15:00</td>
-       <td>A vulnerability was found in OTCMS 6.72. It has been classified as critical. Affected is the function UseCurl of the file /admin/info_deal.php of the component URL Parameter Handler. The manipulation leads to server-side request forgery. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-224016.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1634">详情</a></td>
       </tr>
 
      </tbody>
@@ -1940,6 +1940,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>65f1903e3861d521dbf734948dd34e58</td>
+       <td>CVE-2023-22551</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>FTP拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76551">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f90e3c102c4e15243d270ee05f12f7b2</td>
+       <td>CVE-2022-45095</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Dell PowerScale OneFS命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76550">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>acde0f6dcf085d21133500480fef7b59</td>
+       <td>CVE-2022-34459</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Dell Command | UpdateDell Update和Alienware Update加密签名验证不当漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76549">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7ead6c8210036bb49451ae0a09af7be</td>
+       <td>CVE-2022-34322</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Sage Enterprise Intelligence跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76548">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f28bfdb3c587adbcc50fcb99ea65bb7</td>
+       <td>CVE-2022-45061</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Python不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76547">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>64017759f4571fc05ff0d4f6e133a6b9</td>
+       <td>CVE-2022-48198</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>ntpd_driver代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76546">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cdfaf85279cbc8e04a8a633255ceaa67</td>
+       <td>CVE-2022-47629</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Libksba整数溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76545">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eb92ff1c3b8b3527e54d7ae6127019f9</td>
+       <td>CVE-2023-24424</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Jenkins OpenId Connect Authentication Plugin会话固定漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76544">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ccb0e5c6160dd1caabed636518e478c</td>
+       <td>CVE-2023-24423</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Jenkins Gerrit Trigger Plugin跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76543">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bbd8a2181d20313d675d670928af1c77</td>
+       <td>CVE-2022-34400</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Dell BIOS堆栈缓冲区溢出漏洞（ CVE-2022-34400）</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76542">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c40d9e5fd9f1389f7cf4d8d866394d16</td>
+       <td>CVE-2023-28671</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Jenkins OctoPerf Load Testing Plugin跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76541">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3eaae845e7019da2b9b9df72aeb0e68</td>
+       <td>CVE-2022-42475</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Fortinet FortiOS和FortiProxy堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76540">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5587a028be93237c30f5b63118fc3fd</td>
+       <td>CVE-2022-34323</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Sage XRT Business Exchange跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76539">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f477350aa43a59a134ced9f94a61397</td>
+       <td>CVE-2022-34324</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Sage XRT Business Exchange SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76538">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>959eff5fea30528a7054a3e210215e38</td>
+       <td>CVE-2022-34443</td>
+       <td>2023-03-28 23:35:13 <img src="imgs/new.gif" /></td>
+       <td>Dell Rugged Control Center输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76537">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fe74e24fd82855165a9902c05788df6d</td>
        <td>CVE-2023-22760</td>
        <td>2023-03-27 05:35:05 <img src="imgs/new.gif" /></td>
@@ -2057,126 +2177,6 @@
        <td>2023-03-27 05:35:05 <img src="imgs/new.gif" /></td>
        <td>Fortinet FortiSOAR路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76517">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>982746422b6e570551bcffeba338bc94</td>
-       <td>CVE-2023-20928</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Google Android Kernel内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60721dbd6638de7ab0e8b7377bc0b1a5</td>
-       <td>CVE-2023-20920</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Google Android内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a87b788ca3548a5104baa09a87805d61</td>
-       <td>CVE-2023-20908</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Google Android不受控制的资源消耗漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76489">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3fc4e1fd0aafd42544e39c8816ca344d</td>
-       <td>CVE-2022-48199</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>SoftPerfect NetWorx任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c182196a60622dc09fe891ac75d19c68</td>
-       <td>CVE-2022-44018</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Softing UaToolkit Embedded空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76487">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa90b09ba8224c6c5e85a7ba126bee84</td>
-       <td>CVE-2022-3482</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>GitLab CE/EE访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76486">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f01e986642119bf78ef18865d83e8db0</td>
-       <td>CVE-2022-38758</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>NetIQ iManager跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76485">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9cd0fc0f9ba9a4760f138deb929631a3</td>
-       <td>CVE-2022-29844</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Western Digital My Cloud OS路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76484">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5be807e7d41fbb7d8ef9528e12fd963c</td>
-       <td>CVE-2022-25927</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>ua-parser-js拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76483">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de4d2954c667b135401b20ec1afcecef</td>
-       <td>CVE-2022-20492</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Google Android权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76482">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>21fcb4e14cc1c4d8c825290adea97127</td>
-       <td>CVE-2022-1890</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Lenovo Notebook缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76481">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>954b895ac7691efb2cdaeef5a7b6dd6e</td>
-       <td>CVE-2020-36657</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>uptimed权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1edd6849c97e03114fd3855655e74293</td>
-       <td>CVE-2018-25078</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>man-db权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76479">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c32157e02a56d05389691e5779f7e503</td>
-       <td>CVE-2022-42399</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Tracker Software PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76478">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1752f4980b99dce93020bc8f82844e0</td>
-       <td>CVE-2022-42393</td>
-       <td>2023-03-23 23:34:58</td>
-       <td>Tracker Software PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76477">详情</a></td>
       </tr>
 
      </tbody>
@@ -2396,6 +2396,14 @@
       </tr>
 
       <tr>
+       <td>7a8f43c54951078b664a3e32460a62f9</td>
+       <td>CVE-2023-1462</td>
+       <td>2023-03-21 09:15:10 </td>
+       <td>Authorization Bypass Through User-Controlled Key vulnerability in Vadi Corporate Information Systems DigiKent allows Authentication Bypass, Authentication Abuse. This issue affects DigiKent: before 23.03.20.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1462">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f6fada63ec999dff1de0a9d1cadd2f32</td>
        <td>CVE-2023-1543</td>
        <td>2023-03-21 05:15:10 </td>
@@ -2425,14 +2433,6 @@
        <td>2023-03-21 05:15:09 </td>
        <td>Observable Response Discrepancy in GitHub repository answerdev/answer prior to 1.0.6.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1540">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e74ee8ef45f66ef00bbdb6ace8e911b6</td>
-       <td>CVE-2023-28425</td>
-       <td>2023-03-20 20:15:52 </td>
-       <td>Redis is an in-memory database that persists on disk. Starting in version 7.0.8 and prior to version 7.0.10, authenticated users can use the MSETNX command to trigger a runtime assertion and termination of the Redis server process. The problem is fixed in Redis version 7.0.10.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28425">详情</a></td>
       </tr>
 
      </tbody>
