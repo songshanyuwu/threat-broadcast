@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-30 05:34:55 -->
+<!-- RELEASE TIME : 2023-03-30 23:35:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>c8989d2e807ceb53d24ad02bd54fbe60</td>
+       <td>CVE-2023-22809</td>
+       <td>2023-03-30 08:49:36 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-22809：Sudo权限提升漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64254cdeb308eb75670ae6fc">详情</a></td>
+      </tr>
+
       <tr>
        <td>55fd37b2456c87556f03a593901b743a</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=c214a8b1304cadf5b0bc47f6a08e51c1">详情</a></td>
       </tr>
 
-      <tr>
-       <td>8b8cbc9f09180e14d9beaf40f8a19e6f</td>
-       <td>CVE-2023-22501</td>
-       <td>2023-02-06 08:39:15</td>
-       <td>CVE-2023-22501：Jira Service Management Server/Data Center 身份验证漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=c214a8b1304cadf5b0bc47f6a08e51c1">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>5d703372f996e22fe79281e7fd2967df</td>
+       <td>CVE-2023-28835</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In affected versions the generated fallback password when creating a share was using a weak complexity random number generator, so when the sharer did not change it the password could be guessable to an attacker willing to brute force it. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. This issue only affects users who do not have a password policy enabled, so enabling a password policy is an effective mitigation for users unable to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d6701e3208e93b3c9f4316c9b031f7d5</td>
+       <td>CVE-2023-28833</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In affected versions admins of a server were able to upload a logo or a favicon and to provided a file name which was not restricted and could overwrite files in the appdata directory. Administrators may have access to overwrite these files by other means but this method could be exploited by tricking an admin into uploading a maliciously named file. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should avoid ingesting logo files from untrusted sources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28833">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>655c0e5eec1cff12d251ed870e40346c</td>
+       <td>CVE-2023-28647</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud iOS is an ios application used to interface with the nextcloud home cloud ecosystem. In versions prior to 4.7.0 when an attacker has physical access to an unlocked device, they may enable the integration into the iOS Files app and bypass the Nextcloud pin/password protection and gain access to a users files. It is recommended that the Nextcloud iOS app is upgraded to 4.7.0. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28647">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2d99754b64c5878218c5f3a92970b0d</td>
+       <td>CVE-2023-28646</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud android is an android app for interfacing with the nextcloud home server ecosystem. In versions from 3.7.0 and before 3.24.1 an attacker that has access to the unlocked physical device can bypass the Nextcloud Android Pin/passcode protection via a thirdparty app. This allows to see meta information like sharer, sharees and activity of files. It is recommended that the Nextcloud Android app is upgraded to 3.24.1. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28646">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e572ab329a974a3fc4fda08b916634c</td>
+       <td>CVE-2023-28644</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In releases of the 25.0.x branch before 25.0.3 an inefficient fetch operation may impact server performances and/or can lead to a denial of service. This issue has been addressed and it is recommended that the Nextcloud Server is upgraded to 25.0.3. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28644">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d073ca859344ff0ad7f59e88f6ed48f7</td>
+       <td>CVE-2023-28643</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In affected versions when a recipient receives 2 shares with the same name, while a memory cache is configured, the second share will replace the first one instead of being renamed to `{name} (2)`. It is recommended that the Nextcloud Server is upgraded to 25.0.3 or 24.0.9. Users unable to upgrade should avoid sharing 2 folders with the same name to the same user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0760c94ec415d06353d35f5a7422f9b8</td>
+       <td>CVE-2023-26482</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26482">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d81f896d7816191ae0800362ba4e1e87</td>
+       <td>CVE-2023-1734</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in SourceCodester Young Entrepreneur E-Negosyo System 1.0. Affected is an unknown function of the file admin/products/controller.php?action=add. The manipulation of the argument image leads to unrestricted upload. It is possible to launch the attack remotely. VDB-224622 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8c6a25ba9041215e326666a6cfd13bb3</td>
+       <td>CVE-2022-23522</td>
+       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>MindsDB is an open source machine learning platform. An unsafe extraction is being performed using `shutil.unpack_archive()` from a remotely retrieved tarball. Which may lead to the writing of the extracted files to an unintended location. This vulnerability is sometimes called a **TarSlip** or a **ZipSlip variant**. Unpacking files using the high-level function `shutil.unpack_archive()` from a potentially malicious tarball without validating that the destination file path remained within the intended destination directory may cause files to be overwritten outside the destination directory. An attacker could craft a malicious tarball with a filename path, such as `../../../../../../../../etc/passwd`, and then serve the archive remotely using a personal bucket `s3`, thus, retrieve the tarball through **mindsdb** and overwrite the system files of the hosting server. This issue has been addressed in version 22.11.4.3. Users are advised to upgrade. Users unable to upgrade should avoid ingesting archives from untrusted sources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23522">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>36ec2ea13b8928d70a46b04445c1f9bd</td>
+       <td>CVE-2023-29059</td>
+       <td>2023-03-30 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>3CX DesktopApp through 18.12.416 has embedded malicious code, as exploited in the wild in March 2023. This affects versions 18.12.407 and 18.12.416 of the Electron Windows application shipped in Update 7, and versions 18.11.1213, 18.12.402, 18.12.407, and 18.12.416 of the Electron macOS application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29059">详情</a></td>
+      </tr>
+
       <tr>
        <td>8e9d0505a8402c9a735b3c9180c86472</td>
        <td>CVE-2023-28509</td>
@@ -441,86 +521,6 @@
        <td>2023-03-28 21:15:00</td>
        <td>Osprey Pump Controller version 1.01 allows users to perform certain actions via HTTP requests without performing any checks to verify the requests. This may allow an attacker to perform certain actions with administrative privileges if a logged-in user visits a malicious website.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28718">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18f84eba779e742af9f31d1cae467236</td>
-       <td>CVE-2023-28712</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>Osprey Pump Controller version 1.01 contains an unauthenticated command injection vulnerability that could allow system access with www-data permissions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28712">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28f2dab8b17fdedb5c6c1298527cfc41</td>
-       <td>CVE-2023-28654</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>Osprey Pump Controller version 1.01 has a hidden administrative account that has the hardcoded password that allows full access to the web management interface configuration. The user is not visible in Usernames and Passwords menu list of the application and the password cannot be changed through any normal operation of the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28654">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07a771804f19f085fb69f184f916f55e</td>
-       <td>CVE-2023-28648</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>Osprey Pump Controller version 1.01 inputs passed to a GET parameter are not properly sanitized before being returned to the user. This can be exploited to execute arbitrary HTML/JS code in a user's browser session in context of an affected site.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28648">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54fc813c9b5462ebcd79cd505f98b92d</td>
-       <td>CVE-2023-28637</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>DataEase is an open source data visualization analysis tool. In Dataease users are normally allowed to modify data and the data sources are expected to properly sanitize data. The AWS redshift data source does not provide data sanitization which may lead to remote code execution. This vulnerability has been fixed in v1.18.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28637">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>caa06a38568dca37377e50da34a9b64e</td>
-       <td>CVE-2023-28631</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>comrak is a CommonMark + GFM compatible Markdown parser and renderer written in rust. A Comrak AST can be constructed manually by a program instead of parsing a Markdown document with `parse_document`. This AST can then be converted to HTML via `html::format_document_with_plugins`. However, the HTML formatting code assumes that the AST is well-formed. For example, many AST notes contain `[u8]` fields which the formatting code assumes is valid UTF-8 data. Several bugs can be triggered if this is not the case. Version 0.17.0 contains adjustments to the AST, storing strings instead of unvalidated byte arrays. Users are advised to upgrade. Users unable to upgrade may manually validate UTF-8 correctness of all data when assigning to `&[u8]` and `Vec<u8>` fields in the AST. This issue is also tracked as `GHSL-2023-049`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28631">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6bdba86bfb817034815532d872652202</td>
-       <td>CVE-2023-28626</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>comrak is a CommonMark + GFM compatible Markdown parser and renderer written in rust. A range of quadratic parsing issues are present in Comrak. These can be used to craft denial-of-service attacks on services that use Comrak to parse Markdown. This issue has been addressed in version 0.17.0. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue is also tracked as `GHSL-2023-047`</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28626">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebcf589325b5536781982b3b51e65b8d</td>
-       <td>CVE-2023-28447</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>Smarty is a template engine for PHP. In affected versions smarty did not properly escape javascript code. An attacker could exploit this vulnerability to execute arbitrary JavaScript code in the context of the user's browser session. This may lead to unauthorized access to sensitive user data, manipulation of the web application's behavior, or unauthorized actions performed on behalf of the user. Users are advised to upgrade to either version 3.1.48 or to 4.3.1 to resolve this issue. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28447">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7bfc565f33ec9ebb21b01f331fb4ac3</td>
-       <td>CVE-2023-28427</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>matrix-js-sdk is a Matrix messaging protocol Client-Server SDK for JavaScript. In versions prior to 24.0.0 events sent with special strings in key places can temporarily disrupt or impede the matrix-js-sdk from functioning properly, potentially impacting the consumer's ability to process data safely. Note that the matrix-js-sdk can appear to be operating normally but be excluding or corrupting runtime data presented to the consumer. This vulnerability is distinct from GHSA-rfv9-x7hh-xc32 which covers a similar issue. The issue has been patched in matrix-js-sdk 24.0.0 and users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28427">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee871ab65ac7d5a3c13942231c2d3565</td>
-       <td>CVE-2023-28375</td>
-       <td>2023-03-28 21:15:00</td>
-       <td>Osprey Pump Controller version 1.01 is vulnerable to an unauthenticated file disclosure. Using a GET parameter, attackers can disclose arbitrary files on the affected device and disclose sensitive and system information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28375">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>755762c0f93575cf36b4cdc97d1da24f</td>
-       <td>CVE-2023-27245</td>
-       <td>2023-03-27 17:15:00</td>
-       <td>A cross-site scripting (XSS) vulnerability in File Management Project 1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field under the Edit User module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27245">详情</a></td>
       </tr>
 
      </tbody>
@@ -1684,6 +1684,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>53b690a28d2ea5e77b307af5c3938c95</td>
+       <td>CVE-2023-22257</td>
+       <td>2023-03-30 20:19:12 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2ce421aed1b41d48cc98c7f6c3ebc4a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b19d7328e6d72b567acb2e4e8fc05e7d</td>
+       <td>CVE-2023-22260</td>
+       <td>2023-03-30 20:18:59 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1766a129238747b6a5087b462fdf5803">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bbe4700a9d0a09788c3442e35fa28218</td>
+       <td>CVE-2023-22263</td>
+       <td>2023-03-30 20:18:39 <img src="imgs/new.gif" /></td>
+       <td>ADOBE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ddf32e0409b24af79ae60f34512d9173">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b750b6e45ac7eabaab8e6bf300e889c7</td>
        <td>CVE-2023-1578</td>
        <td>2023-03-27 20:15:48</td>
@@ -1897,30 +1921,6 @@
        <td>2023-03-24 20:16:41</td>
        <td>MICROSOFT Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f8dd55ab335b47ae983d31937d760e83">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c37b70caab97a881ee207b9c1557cf5</td>
-       <td>CVE-2023-23403</td>
-       <td>2023-03-24 20:16:34</td>
-       <td>MICROSOFT Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9d60b945e1b24f65b0f9a057bdabb84b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb19b347bb9ca65d79def8ab5c0279e7</td>
-       <td>CVE-2021-3293</td>
-       <td>2023-03-23 20:22:44</td>
-       <td>Emlog 路径遍历漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=757de66e9258481e99c2bb6abb24cfb5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>05e86e2d5bf6a4db534b0a430707ff7d</td>
-       <td>CVE-2022-39216</td>
-       <td>2023-03-23 20:21:55</td>
-       <td>COMBODO ITOP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=89db5ba11df64733a775b14381fa1d23">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2e319322dc32a5469ecf717080348625</td>
+       <td>CVE-2023-21042</td>
+       <td>2023-03-24 20:15:14 </td>
+       <td>In (TBD) of (TBD), there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-239873326References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21042">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>31757d2c27be219ea79c0e715a2c8917</td>
+       <td>CVE-2023-21041</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In append_to_params of param_util.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-250123688References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21041">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>395311989a04ac1019b193bed948ad7e</td>
+       <td>CVE-2023-21040</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In buildCommand of bluetooth_ccc.cc, there is a possible out of bounds write due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-238420277References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21040">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5574ca5a78a28970b3609b6235ced59</td>
+       <td>CVE-2023-21039</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In dumpstateBoard of Dumpstate.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-263783650References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21039">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b22c9b252e0fd34662448afaaa921aa</td>
+       <td>CVE-2023-21038</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In cs40l2x_cp_trigger_queue_show of cs40l2x.c, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-224000736References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a8234a2f123a571507be9362c5644497</td>
+       <td>CVE-2023-21036</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In BitmapExport.java, there is a possible failure to truncate images due to a logic error in the code.Product: AndroidVersions: Android kernelAndroid ID: A-264261868References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21036">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29c87076ac883ab255a13e86dabe82c1</td>
+       <td>CVE-2023-21035</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In multiple functions of BackupHelper.java, there is a possible way for an app to get permissions previously granted to another app with the same package name due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-184847040</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21035">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89e8c883af4433e19a5044333c9679f5</td>
+       <td>CVE-2023-21034</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In multiple functions of SensorService.cpp, there is a possible access of accurate sensor data due to a permissions bypass. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-230358834</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21034">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>30dff86cb590e2c00b4908ca7aa3aff8</td>
+       <td>CVE-2023-21033</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In addNetwork of WifiManager.java, there is a possible way to trigger a persistent DoS due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-244713323</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21033">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d80f068c26aa89ac56da7a4b5f50e0f5</td>
+       <td>CVE-2023-21032</td>
+       <td>2023-03-24 20:15:13 </td>
+       <td>In _ufdt_output_node_to_fdt of ufdt_convert.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-248085351</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21032">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9c367377ec53cbfbcbfa2c60c9e7bf1c</td>
        <td>CVE-2022-38745</td>
        <td>2023-03-24 16:15:08 </td>
@@ -2353,86 +2433,6 @@
        <td>2023-03-22 17:15:14 </td>
        <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22266">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9366d919643b787bafbe98d29426088d</td>
-       <td>CVE-2023-22265</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22265">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6fcd287f1d930a6205f7b0b0386c869a</td>
-       <td>CVE-2023-22264</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22264">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c95d026ba22560d20575e7f3f0cdb4b</td>
-       <td>CVE-2023-22263</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f3830ae6641ba828f955a6eccfe0ae5</td>
-       <td>CVE-2023-22262</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22262">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>86242e63c9b69cbc2e546bef2a94a38e</td>
-       <td>CVE-2023-22261</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22261">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89c1e188f7019cc85c2cc3d27c38a4ce</td>
-       <td>CVE-2023-22260</td>
-       <td>2023-03-22 17:15:14 </td>
-       <td>Experience Manager versions 6.5.15.0 (and earlier) are affected by a URL Redirection to Untrusted Site ('Open Redirect') vulnerability. A low-privilege authenticated attacker could leverage this vulnerability to redirect users to malicious websites. Exploitation of this issue requires user interaction.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7d7f71a8c2b13810055b7f1323c93b2</td>
-       <td>CVE-2023-1578</td>
-       <td>2023-03-22 16:15:13 </td>
-       <td>SQL Injection in GitHub repository pimcore/pimcore prior to 10.5.19.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1578">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c16fd9ffb6ef0d1403f3b890c9a8f4b</td>
-       <td>CVE-2022-4095</td>
-       <td>2023-03-22 15:15:10 </td>
-       <td>A use-after-free flaw was found in Linux kernel before 5.19.2. This issue occurs in cmd_hdl_filter in drivers/staging/rtl8712/rtl8712_cmd.c, allowing an attacker to launch a local denial of service attack and gain escalation of privileges.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4095">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e7076e16d183298bf22692f999c15138</td>
-       <td>CVE-2023-1569</td>
-       <td>2023-03-22 14:15:16 </td>
-       <td>A vulnerability classified as problematic was found in SourceCodester E-Commerce System 1.0. Affected by this vulnerability is an unknown functionality of the file admin/user/controller.php?action=edit. The manipulation of the argument U_NAME with the input &lt;script&gt;alert('1')&lt;/script&gt; leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-223561 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1569">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0639616f84d9e8ad0304ed43b57e3770</td>
-       <td>CVE-2023-1568</td>
-       <td>2023-03-22 14:15:16 </td>
-       <td>A vulnerability classified as problematic has been found in SourceCodester Student Study Center Desk Management System 1.0. Affected is an unknown function of the file /admin/reports/index.php of the component GET Parameter Handler. The manipulation of the argument date_to leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-223560.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1568">详情</a></td>
       </tr>
 
      </tbody>
