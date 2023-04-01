@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-31 23:34:42 -->
+<!-- RELEASE TIME : 2023-04-01 05:35:03 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>c8989d2e807ceb53d24ad02bd54fbe60</td>
        <td>CVE-2023-22809</td>
-       <td>2023-03-30 08:49:36 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 08:49:36</td>
        <td>CVE-2023-22809：Sudo权限提升漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64254cdeb308eb75670ae6fc">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f38d68c489ecff8e5584db7e6e332544</td>
+       <td>CVE-2023-28845</td>
+       <td>2023-03-31 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud talk is a video & audio conferencing app for Nextcloud. In affected versions the talk app does not properly filter access to a conversations member list. As a result an attacker could use this vulnerability to gain information about the members of a Talk conversation, even if they themselves are not members. It is recommended that the Nextcloud Talk is upgraded to 14.0.9 or 15.0.4. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95387da0e38ca45c05c337977fa45567</td>
+       <td>CVE-2023-28844</td>
+       <td>2023-03-31 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud implementation. In affected versions users that should not be able to download a file can still download an older version and use that for uncontrolled distribution. This issue has been addressed in versions 24.0.10 and 25.0.4. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28844">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c2763574908bd16447adc0faa0bd702b</td>
+       <td>CVE-2023-28645</td>
+       <td>2023-03-31 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud richdocuments is a Nextcloud app integrating the office suit Collabora Online. In affected versions the secure view feature of the rich documents app can be bypassed by using unprotected internal API endpoint of the rich documents app. It is recommended that the Nextcloud Office app (richdocuments) is upgraded to 8.0.0-beta.1, 7.0.2 or 6.3.2. Users unable to upgrade may mitigate the issue by taking steps to restrict the ability to download documents. This includes ensuring that the `WOPI configuration` is configured to only serve documents between Nextcloud and Collabora. It is highly recommended to define the list of Collabora server IPs as the allow list within the Office admin settings of Nextcloud.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28645">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fac9e169445903cb79c8559de10e3c4f</td>
+       <td>CVE-2023-26485</td>
+       <td>2023-03-31 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>cmark-gfm is GitHub's fork of cmark, a CommonMark parsing and rendering library and program in C. A polynomial time complexity issue in cmark-gfm may lead to unbounded resource exhaustion and subsequent denial of service. This CVE covers quadratic complexity issues when parsing text which leads with either large numbers of `_` characters. This issue has been addressed in version 0.29.0.gfm.10. Users are advised to upgrade. Users unable to upgrade should validate that their input comes from trusted sources. ### Impact A polynomial time complexity issue in cmark-gfm may lead to unbounded resource exhaustion and subsequent denial of service. ### Proof of concept ``` $ ~/cmark-gfm$ python3 -c 'pad = "_" * 100000; print(pad + "." + pad, end="")' | time ./build/src/cmark-gfm --to plaintext ``` Increasing the number 10000 in the above commands causes the running time to increase quadratically. ### Patches This vulnerability have been patched in 0.29.0.gfm.10. ### Note on cmark and cmark-gfm XXX: TBD [cmark-gfm](https://github.com/github/cmark-gfm) is a fork of [cmark](https://github.com/commonmark/cmark) that adds the GitHub Flavored Markdown extensions. The two codebases have diverged over time, but share a common core. These bugs affect both `cmark` and `cmark-gfm`. ### Credit We would like to thank @gravypod for reporting this vulnerability. ### References https://en.wikipedia.org/wiki/Time_complexity ### For more information If you have any questions or comments about this advisory: * Open an issue in [github/cmark-gfm](https://github.com/github/cmark-gfm)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9fb03b31e9366e64fbd4ce9a06365e10</td>
+       <td>CVE-2023-24824</td>
+       <td>2023-03-31 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>cmark-gfm is GitHub's fork of cmark, a CommonMark parsing and rendering library and program in C. A polynomial time complexity issue in cmark-gfm may lead to unbounded resource exhaustion and subsequent denial of service. This CVE covers quadratic complexity issues when parsing text which leads with either large numbers of `>` or `-` characters. This issue has been addressed in version 0.29.0.gfm.10. Users are advised to upgrade. Users unable to upgrade should validate that their input comes from trusted sources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24824">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0cda98f8f9df66f8b398780598224964</td>
+       <td>CVE-2022-47192</td>
+       <td>2023-03-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Generex UPS CS141 below 2.06 version, could allow a remote attacker to upload a backup file containing a modified "users.json" to the web server of the device, allowing him to replace the administrator password.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47192">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8532304c93e5dd8f407d403bee101c68</td>
+       <td>CVE-2022-47191</td>
+       <td>2023-03-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Generex UPS CS141 below 2.06 version, could allow a remote attacker to upload a firmware file containing a file with modified permissions, allowing him to escalate privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47191">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>78bceb72d5da92157d7995ea5d04431a</td>
+       <td>CVE-2022-47190</td>
+       <td>2023-03-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Generex UPS CS141 below 2.06 version, could allow a remote attacker to upload a firmware file containing a webshell that could allow him to execute arbitrary code as root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47190">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d5d4699821213cb62fd2e913847cc71</td>
+       <td>CVE-2022-47189</td>
+       <td>2023-03-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Generex UPS CS141 below 2.06 version, allows an attacker toupload a firmware file containing an incorrect configuration, in order to disrupt the normal functionality of the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47189">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06b6b684419003d7b5042ec6f4d6abd7</td>
+       <td>CVE-2022-47188</td>
+       <td>2023-03-31 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is an arbitrary file reading vulnerability in Generex UPS CS141 below 2.06 version. An attacker, making use of the default credentials, could upload a backup file containing a symlink to /etc/shadow, allowing him to obtain the content of this path.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47188">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e7ed87d114b5396b18720522254833d2</td>
        <td>CVE-2023-27163</td>
        <td>2023-03-31 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>9eee8e52eb0302ad2cfc103c6dda5cec</td>
        <td>CVE-2023-1746</td>
-       <td>2023-03-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 23:15:00</td>
        <td>A vulnerability, which was classified as problematic, was found in Dreamer CMS up to 3.5.0. Affected is an unknown function of the component File Upload Handler. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. VDB-224634 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1746">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>c0e9650e2971ff3accd165c46686bac5</td>
        <td>CVE-2023-1745</td>
-       <td>2023-03-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 23:15:00</td>
        <td>A vulnerability, which was classified as problematic, has been found in KMPlayer 4.2.2.73. This issue affects some unknown processing in the library SHFOLDER.dll. The manipulation leads to uncontrolled search path. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The identifier VDB-224633 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1745">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>db2c19b760927963c0bf1145eb0a39a8</td>
        <td>CVE-2023-1744</td>
-       <td>2023-03-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 23:15:00</td>
        <td>A vulnerability classified as critical was found in IBOS 4.5.5. This vulnerability affects unknown code of the component htaccess Handler. The manipulation leads to unrestricted upload. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-224632.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1744">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>a4b3c6217c1b2846557f272b9afc8b98</td>
        <td>CVE-2023-1670</td>
-       <td>2023-03-30 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 23:15:00</td>
        <td>A flaw use after free in the Linux kernel Xircom 16-bit PCMCIA (PC-card) Ethernet driver was found.A local user could use this flaw to crash the system or potentially escalate their privileges on the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1670">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>0f7279ceda1b7858f906e401d3bcc91f</td>
        <td>CVE-2023-25587</td>
-       <td>2023-03-30 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 22:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25587">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>047bc274f1a45c2f79d21d442cdc6ba1</td>
        <td>CVE-2023-1743</td>
-       <td>2023-03-30 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 22:15:00</td>
        <td>A vulnerability classified as problematic has been found in SourceCodester Grade Point Average GPA Calculator 1.0. This affects an unknown part of the file index.php. The manipulation of the argument page leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-224631.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1743">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>40952be27d05d5f30265fcd31a9fe40e</td>
        <td>CVE-2023-1742</td>
-       <td>2023-03-30 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 22:15:00</td>
        <td>A vulnerability was found in IBOS 4.5.5. It has been rated as critical. Affected by this issue is some unknown functionality of the file /?r=report/api/getlist of the component Report Search. The manipulation leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-224630 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1742">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>e82300703c67d6521b20b675ee04de03</td>
        <td>CVE-2023-1741</td>
-       <td>2023-03-30 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 22:15:00</td>
        <td>A vulnerability was found in jeecg-boot 3.5.0. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file SysDictMapper.java of the component Sleep Command Handler. The manipulation leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-224629 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1741">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>1b62565ee4e49cf363407a56daa78d7f</td>
        <td>CVE-2023-1740</td>
-       <td>2023-03-30 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 21:15:00</td>
        <td>A vulnerability was found in SourceCodester Air Cargo Management System 1.0. It has been classified as critical. Affected is an unknown function of the file admin/user/manage_user.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-224628.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1740">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>cbc2fa7d418226687cdd76f70d1481f8</td>
        <td>CVE-2023-1739</td>
-       <td>2023-03-30 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 21:15:00</td>
        <td>A vulnerability was found in SourceCodester Simple and Beautiful Shopping Cart System 1.0 and classified as critical. This issue affects some unknown processing of the file upload.php. The manipulation leads to unrestricted upload. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-224627.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d703372f996e22fe79281e7fd2967df</td>
-       <td>CVE-2023-28835</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud server is an open source home cloud implementation. In affected versions the generated fallback password when creating a share was using a weak complexity random number generator, so when the sharer did not change it the password could be guessable to an attacker willing to brute force it. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. This issue only affects users who do not have a password policy enabled, so enabling a password policy is an effective mitigation for users unable to upgrade.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28835">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d6701e3208e93b3c9f4316c9b031f7d5</td>
-       <td>CVE-2023-28833</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud server is an open source home cloud implementation. In affected versions admins of a server were able to upload a logo or a favicon and to provided a file name which was not restricted and could overwrite files in the appdata directory. Administrators may have access to overwrite these files by other means but this method could be exploited by tricking an admin into uploading a maliciously named file. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should avoid ingesting logo files from untrusted sources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28833">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>655c0e5eec1cff12d251ed870e40346c</td>
-       <td>CVE-2023-28647</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud iOS is an ios application used to interface with the nextcloud home cloud ecosystem. In versions prior to 4.7.0 when an attacker has physical access to an unlocked device, they may enable the integration into the iOS Files app and bypass the Nextcloud pin/password protection and gain access to a users files. It is recommended that the Nextcloud iOS app is upgraded to 4.7.0. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28647">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2d99754b64c5878218c5f3a92970b0d</td>
-       <td>CVE-2023-28646</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud android is an android app for interfacing with the nextcloud home server ecosystem. In versions from 3.7.0 and before 3.24.1 an attacker that has access to the unlocked physical device can bypass the Nextcloud Android Pin/passcode protection via a thirdparty app. This allows to see meta information like sharer, sharees and activity of files. It is recommended that the Nextcloud Android app is upgraded to 3.24.1. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28646">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e572ab329a974a3fc4fda08b916634c</td>
-       <td>CVE-2023-28644</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud server is an open source home cloud implementation. In releases of the 25.0.x branch before 25.0.3 an inefficient fetch operation may impact server performances and/or can lead to a denial of service. This issue has been addressed and it is recommended that the Nextcloud Server is upgraded to 25.0.3. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28644">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d073ca859344ff0ad7f59e88f6ed48f7</td>
-       <td>CVE-2023-28643</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud server is an open source home cloud implementation. In affected versions when a recipient receives 2 shares with the same name, while a memory cache is configured, the second share will replace the first one instead of being renamed to `{name} (2)`. It is recommended that the Nextcloud Server is upgraded to 25.0.3 or 24.0.9. Users unable to upgrade should avoid sharing 2 folders with the same name to the same user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28643">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0760c94ec415d06353d35f5a7422f9b8</td>
-       <td>CVE-2023-26482</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26482">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d81f896d7816191ae0800362ba4e1e87</td>
-       <td>CVE-2023-1734</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability classified as critical has been found in SourceCodester Young Entrepreneur E-Negosyo System 1.0. Affected is an unknown function of the file admin/products/controller.php?action=add. The manipulation of the argument image leads to unrestricted upload. It is possible to launch the attack remotely. VDB-224622 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1734">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c6a25ba9041215e326666a6cfd13bb3</td>
-       <td>CVE-2022-23522</td>
-       <td>2023-03-30 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>MindsDB is an open source machine learning platform. An unsafe extraction is being performed using `shutil.unpack_archive()` from a remotely retrieved tarball. Which may lead to the writing of the extracted files to an unintended location. This vulnerability is sometimes called a **TarSlip** or a **ZipSlip variant**. Unpacking files using the high-level function `shutil.unpack_archive()` from a potentially malicious tarball without validating that the destination file path remained within the intended destination directory may cause files to be overwritten outside the destination directory. An attacker could craft a malicious tarball with a filename path, such as `../../../../../../../../etc/passwd`, and then serve the archive remotely using a personal bucket `s3`, thus, retrieve the tarball through **mindsdb** and overwrite the system files of the hosting server. This issue has been addressed in version 22.11.4.3. Users are advised to upgrade. Users unable to upgrade should avoid ingesting archives from untrusted sources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23522">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36ec2ea13b8928d70a46b04445c1f9bd</td>
-       <td>CVE-2023-29059</td>
-       <td>2023-03-30 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>3CX DesktopApp through 18.12.416 has embedded malicious code, as exploited in the wild in March 2023. This affects versions 18.12.407 and 18.12.416 of the Electron Windows application shipped in Update 7, and versions 18.11.1213, 18.12.402, 18.12.407, and 18.12.416 of the Electron macOS application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29059">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>53b690a28d2ea5e77b307af5c3938c95</td>
        <td>CVE-2023-22257</td>
-       <td>2023-03-30 20:19:12 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 20:19:12</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2ce421aed1b41d48cc98c7f6c3ebc4a">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>b19d7328e6d72b567acb2e4e8fc05e7d</td>
        <td>CVE-2023-22260</td>
-       <td>2023-03-30 20:18:59 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 20:18:59</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1766a129238747b6a5087b462fdf5803">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>bbe4700a9d0a09788c3442e35fa28218</td>
        <td>CVE-2023-22263</td>
-       <td>2023-03-30 20:18:39 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 20:18:39</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ddf32e0409b24af79ae60f34512d9173">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>0873a0d3d793a8b429570b6b705b9854</td>
        <td>CVE-2022-4356</td>
-       <td>2023-03-30 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 05:34:40</td>
        <td>WordPress LetsRecover Plugin SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76578">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>70f2e87c7d5b96cc83c54667403f31bb</td>
        <td>CVE-2022-4352</td>
-       <td>2023-03-30 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 05:34:40</td>
        <td>WordPress Qe SEO Handyman Plugin SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76577">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>d9c157881f65cf11aa529cf3b8d77dd8</td>
        <td>CVE-2022-4119</td>
-       <td>2023-03-30 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 05:34:40</td>
        <td>WordPress Image Optimizer, Resizer and CDN Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76574">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>43b95b85d7b03ecf3d6763aafea0e863</td>
        <td>CVE-2022-4114</td>
-       <td>2023-03-30 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-03-30 05:34:40</td>
        <td>WordPress Superio Theme跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/76573">详情</a></td>
       </tr>
@@ -2195,6 +2195,22 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>a6602af107af95d4b796792b1eea4032</td>
+       <td>CVE-2023-1575</td>
+       <td>2023-03-29 15:15:07 </td>
+       <td>The Mega Main Menu plugin for WordPress is vulnerable to Stored Cross-Site Scripting via some of its settings parameters in versions up to, and including, 2.2.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1575">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89c344c7df24a2e7bfe1f5e368eab6b5</td>
+       <td>CVE-2023-1583</td>
+       <td>2023-03-24 22:15:07 </td>
+       <td>A NULL pointer dereference was found in io_file_bitmap_get in io_uring/filetable.c in the io_uring sub-component in the Linux Kernel. When fixed files are unregistered, some context information (file_alloc_{start,end} and alloc_hint) is not cleared. A subsequent request that has auto index selection enabled via IORING_FILE_INDEX_ALLOC can cause a NULL pointer dereference. An unprivileged user can use the flaw to cause a system crash.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1583">详情</a></td>
+      </tr>
+
       <tr>
        <td>2e319322dc32a5469ecf717080348625</td>
        <td>CVE-2023-21042</td>
@@ -2417,22 +2433,6 @@
        <td>2023-03-23 21:15:19 </td>
        <td>Insufficient sanitizing in backup resulted in an arbitrary file read risk. The capability to access this feature is only available to teachers, managers and admins by default.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28330">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c5c86d3e337d527c3b197affbfbc37d</td>
-       <td>CVE-2023-28329</td>
-       <td>2023-03-23 21:15:19 </td>
-       <td>Insufficient validation of profile field availability condition resulted in an SQL injection risk (by default only available to teachers and managers).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28329">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eab487433abba23822f695fd17a2f59e</td>
-       <td>CVE-2023-1612</td>
-       <td>2023-03-23 21:15:19 </td>
-       <td>A vulnerability, which was classified as critical, was found in Rebuild up to 3.2.3. This affects an unknown part of the file /files/list-file. The manipulation leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-223743.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-1612">详情</a></td>
       </tr>
 
      </tbody>
