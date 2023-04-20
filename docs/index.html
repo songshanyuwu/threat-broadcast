@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-04-19 23:35:24 -->
+<!-- RELEASE TIME : 2023-04-20 05:34:57 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8c709187964b86c35e385d6d762dad5f</td>
+       <td>CVE-2023-28328</td>
+       <td>2023-04-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A NULL pointer dereference flaw was found in the az6027 driver in drivers/media/usb/dev-usb/az6027.c in the Linux Kernel. The message from user space is not checked properly before transferring into the device. This flaw allows a local user to crash the system or potentially cause a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28328">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b2dd63b600f10087791b52479c46cacd</td>
+       <td>CVE-2023-28327</td>
+       <td>2023-04-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A NULL pointer dereference flaw was found in the UNIX protocol in net/unix/diag.c In unix_diag_get_exact in the Linux Kernel. The newly allocated skb does not have sk, leading to a NULL pointer. This flaw allows a local user to crash or potentially cause a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28327">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef15aa138867942004499daadadd3a1a</td>
+       <td>CVE-2023-23451</td>
+       <td>2023-04-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Flexi Classic and Flexi Soft Gateways SICK UE410-EN3 FLEXI ETHERNET GATEW., SICK UE410-EN1 FLEXI ETHERNET GATEW., SICK UE410-EN3S04 FLEXI ETHERNET GATEW., SICK UE410-EN4 FLEXI ETHERNET GATEW., SICK FX0-GENT00000 FLEXISOFT EIP GATEW., SICK FX0-GMOD00000 FLEXISOFT MOD GATEW., SICK FX0-GPNT00000 FLEXISOFT PNET GATEW., SICK FX0-GENT00030 FLEXISOFT EIP GATEW.V2, SICK FX0-GPNT00030 FLEXISOFT PNET GATEW.V2 and SICK FX0-GMOD00010 FLEXISOFT MOD GW. have Telnet enabled by factory default. No password is set in the default configuration. Gateways with a serial number >2311xxxx have the Telnet interface disabled by factory default.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23451">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d428339c9dc89d057742e411cda6e778</td>
+       <td>CVE-2023-2166</td>
+       <td>2023-04-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A null pointer dereference issue was found in can protocol in net/can/af_can.c in the Linux before Linux. ml_priv may not be initialized in the receive path of CAN frames. A local user could use this flaw to crash the system or potentially cause a denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5508846fe48559baff497f5475df57c8</td>
+       <td>CVE-2023-1382</td>
+       <td>2023-04-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A data race flaw was found in the Linux kernel, between where con is allocated and con->sock is set. This issue leads to a NULL pointer dereference when accessing con->sock->sk in net/tipc/topsrv.c in the tipc protocol in the Linux kernel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1382">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>997f13cf179b2073e89e4ebe761aafeb</td>
+       <td>CVE-2022-2084</td>
+       <td>2023-04-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Sensitive data could be exposed in world readable logs of cloud-init before version 22.3 when schema failures are reported. This leak could include hashed passwords.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>845a63c63fd499d0aad77dc562e52a72</td>
+       <td>CVE-2021-3429</td>
+       <td>2023-04-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>When instructing cloud-init to set a random password for a new user account, versions before 21.2 would write that password to the world-readable log file /var/log/cloud-init-output.log. This could allow a local user to log in as another user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-3429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>073677cf12bf7b6b1c467ecd1c11647f</td>
+       <td>CVE-2021-33971</td>
+       <td>2023-04-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Qihoo 360 (https://www.360.cn/) Qihoo 360 Safeguard (https://www.360.cn/) Qihoo 360 Total Security (http://www.360totalsecurity.com/) is affected by: Buffer Overflow. The impact is: execute arbitrary code (local). The component is: This is a set of vulnerabilities affecting popular software, "360 Safeguard(12.1.0.1004,12.1.0.1005,13.1.0.1001)" , "360 Total Security(10.8.0.1060,10.8.0.1213)", "360 Safe Browser & 360 Chrome(13.0.2170.0)". The attack vector is: On the browser vulnerability, just open a link to complete the vulnerability exploitation remotely; on the client software, you need to locally execute the vulnerability exploitation program, which of course can be achieved with the full chain of browser vulnerability. ¶¶ This is a set of the most serious vulnerabilities that exist on Qihoo 360's PC client a variety of popular software, remote vulnerabilities can be completed by opening a link to arbitrary code execution on both security browsers, with the use of local vulnerabilities, not only help the vulnerability code constitutes an escalation of privileges, er can make the spyware persistent without being scanned permanently resides on the target PC computer (because local vulnerability against Qihoo 360 company's antivirus kernel flaws); this group of remote and local vulnerability of the perfect match, to achieve an information security fallacy, in Qihoo 360's antivirus vulnerability, not only can not be scanned out of the virus, but will help the virus persistently control the target computer, while Qihoo 360 claims to be a safe browser, which exists in the kernel vulnerability but helped the composition of the remote vulnerability. (Security expert "Memory Corruptor" have reported this set of vulnerabilities to the corresponding vendor, all vulnerabilities have been fixed and the vendor rewarded thousands of dollars to the security experts)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33971">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecc891efdf4c712f60b8c3abddf2efc2</td>
+       <td>CVE-2021-33970</td>
+       <td>2023-04-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer Overflow vulnerability in Qihoo 360 Chrome v13.0.2170.0 allows attacker to escalate priveleges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33970">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae015b9db0b8b2f16b7b976a89120906</td>
+       <td>CVE-2021-33975</td>
+       <td>2023-04-19 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer Overflow vulnerability in Qihoo 360 Total Security v10.8.0.1060 and v10.8.0.1213 allows attacker to escalate privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33975">详情</a></td>
+      </tr>
+
+      <tr>
        <td>944a9d7d6b14a3f4d6c4274b2e9bd015</td>
        <td>CVE-2023-29922</td>
        <td>2023-04-19 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>c61463f42abe42d87e12839577fa29bc</td>
        <td>CVE-2023-30608</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>sqlparse is a non-validating SQL parser module for Python. In affected versions the SQL parser contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service). This issue was introduced by commit `e75e358`. The vulnerability may lead to Denial of Service (DoS). This issues has been fixed in sqlparse 0.4.4 by commit `c457abd5f`. Users are advised to upgrade. There are no known workarounds for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30608">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>d9fdd5fffc4e4628934f6633b4531959</td>
        <td>CVE-2023-30606</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>Discourse is an open source platform for community discussion. In affected versions a user logged as an administrator can call arbitrary methods on the `SiteSetting` class, notably `#clear_cache!` and `#notify_changed!`, which when done on a multisite instance, can affect the entire cluster resulting in a denial of service. Users not running in multisite environments are not affected. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30606">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>c4fca56ffeda50904f58f06fd9b8b1a0</td>
        <td>CVE-2023-30538</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>Discourse is an open source platform for community discussion. Due to the improper sanitization of SVG files, an attacker can execute arbitrary JavaScript on the users’ browsers by uploading a crafted SVG file. This issue is patched in the latest stable and tests-passed versions of Discourse. Users are advised to upgrade. For users unable to upgrade there are two possible workarounds: enable CDN handing of uploads (and ensure the CDN sanitizes SVG files) or disable SVG file uploads by ensuring that the `authorized extensions` site setting does not include `svg` (or reset that setting to the default, by default Discourse doesn't enable SVG uploads by users).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30538">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>972dbb9d2b4c41e282dd83ef131ad899</td>
        <td>CVE-2023-29410</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>A CWE-20: Improper Input Validation vulnerability exists that could allow an authenticatedattacker to gain the same privilege as the application on the server when a malicious payload isprovided over HTTP for the server to execute.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29410">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>e7032c0fb742a18049037f965483dae5</td>
        <td>CVE-2023-29196</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>Discourse is an open source platform for community discussion. This vulnerability is not exploitable on the default install of Discourse. A custom feature must be enabled for it to work at all, and the attacker’s payload must pass the CSP to be executed. However, if an attacker succeeds in embedding Javascript that does pass the CSP, it could result in session hijacking for any users that view the attacker’s post. The vulnerability is patched in the latest tests-passed, beta and stable branches. Users are advised to upgrade. Users unable to upgrade should enable and/or restore your site's CSP to the default one provided with Discourse. Remove any embed-able hosts configured.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29196">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>a2ce94ede986cd696a57ffcf48a59582</td>
        <td>CVE-2023-29002</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>Cilium is a networking, observability, and security solution with an eBPF-based dataplane. When run in debug mode, Cilium will log the contents of the `cilium-secrets` namespace. This could include data such as TLS private keys for Ingress and GatewayAPI resources. An attacker with access to debug output from the Cilium containers could use the resulting output to intercept and modify traffic to and from the affected cluster. Output of the sensitive information would occur at Cilium agent restart, when secrets in the namespace are modified, and on creation of Ingress or GatewayAPI resources. This vulnerability is fixed in Cilium releases 1.11.16, 1.12.9, and 1.13.2. Users unable to upgrade should disable debug mode.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29002">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>bfa258e87ec6f00097d8d7c0a8a80f27</td>
        <td>CVE-2023-28004</td>
-       <td>2023-04-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 22:15:00</td>
        <td>A CWE-129: Improper validation of an array index vulnerability exists where a specially craftedEthernet request could result in denial of service or remote code execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28004">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>64432d606749eaeb20e32b6089dc9e89</td>
        <td>CVE-2023-29413</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 21:15:00</td>
        <td>A CWE-306: Missing Authentication for Critical Function vulnerability exists that could causeDenial-of-Service when accessed by an unauthenticated user on the Schneider UPS Monitorservice.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29413">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>26d2ae0dd8732138ee58791e6928726f</td>
        <td>CVE-2023-29412</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 21:15:00</td>
        <td>A CWE-78: Improper Handling of Case Sensitivity vulnerability exists that could cause remotecode execution when manipulating internal methods through Java RMI interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29412">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>d477f419cd38d8115c99b00a949f8ee9</td>
        <td>CVE-2023-29411</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 21:15:00</td>
        <td>A CWE-306: Missing Authentication for Critical Function vulnerability exists that could allowchanges to administrative credentials, leading to potential remote code execution withoutrequiring prior authentication on the Java RMI interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29411">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d2ded95684549366492710196cb6ab5</td>
-       <td>CVE-2023-28856</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Redis is an open source, in-memory database that persists on disk. Authenticated users can use the `HINCRBYFLOAT` command to create an invalid hash field that will crash Redis on access in affected versions. This issue has been addressed in in versions 7.0.11, 6.2.12, and 6.0.19. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28856">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd6274ba8fab7f6d9919807573c34531</td>
-       <td>CVE-2023-28839</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Shoppingfeed PrestaShop is an add-on to the PrestaShop ecommerce platform to synchronize data. The module Shoppingfeed for PrestaShop is vulnerable to SQL injection between version 1.4.0 and 1.8.2 due to a lack of input sanitization. This issue has been addressed in version 1.8.3. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28839">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f6a598d517ea6b4060a292f104db383</td>
-       <td>CVE-2023-28440</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Discourse is an open source platform for community discussion. In affected versions a maliciously crafted request from a Discourse administrator can lead to a long-running request and eventual timeout. This has the greatest potential impact in shared hosting environments where admins are untrusted. This issue has been addressed in versions 3.0.3 and 3.1.0.beta4. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28440">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a5d9898d5b51a6eff48c6c1c3db309b</td>
-       <td>CVE-2023-28003</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>A CWE-613: Insufficient Session Expiration vulnerability exists that could allow an attacker tomaintain unauthorized access over a hijacked session in PME after the legitimate user hassigned out of their account.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28003">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33d2ad4aa5e33d730ea31c4865de9f3e</td>
-       <td>CVE-2023-26049</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jetty is a java based web server and servlet engine. Nonstandard cookie parsing in Jetty may allow an attacker to smuggle cookies within other cookies, or otherwise perform unintended behavior by tampering with the cookie parsing mechanism. If Jetty sees a cookie VALUE that starts with `"` (double quote), it will continue to read the cookie string until it sees a closing quote -- even if a semicolon is encountered. So, a cookie header such as: `DISPLAY_LANGUAGE="b; JSESSIONID=1337; c=d"` will be parsed as one cookie, with the name DISPLAY_LANGUAGE and a value of b; JSESSIONID=1337; c=d instead of 3 separate cookies. This has security implications because if, say, JSESSIONID is an HttpOnly cookie, and the DISPLAY_LANGUAGE cookie value is rendered on the page, an attacker can smuggle the JSESSIONID cookie into the DISPLAY_LANGUAGE cookie and thereby exfiltrate it. This is significant when an intermediary is enacting some policy based on cookies, so a smuggled cookie can bypass that policy yet still be seen by the Jetty server or its logging system. This issue has been addressed in versions 9.4.51, 10.0.14, 11.0.14, and 12.0.0.beta0 and users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8353d1cf39cd6329991b94f13a306292</td>
-       <td>CVE-2023-26048</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jetty is a java based web server and servlet engine. In affected versions servlets with multipart support (e.g. annotated with `@MultipartConfig`) that call `HttpServletRequest.getParameter()` or `HttpServletRequest.getParts()` may cause `OutOfMemoryError` when the client sends a multipart request with a part that has a name but no filename and very large content. This happens even with the default settings of `fileSizeThreshold=0` which should stream the whole part content to disk. An attacker client may send a large multipart request and cause the server to throw `OutOfMemoryError`. However, the server may be able to recover after the `OutOfMemoryError` and continue its service -- although it may take some time. This issue has been patched in versions 9.4.51, 10.0.14, and 11.0.14. Users are advised to upgrade. Users unable to upgrade may set the multipart parameter `maxRequestSize` which must be set to a non-negative value, so the whole multipart content is limited (although still read into memory).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4544c30fb7987bd4147e63805e11e51</td>
-       <td>CVE-2023-25555</td>
-       <td>2023-04-18 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>A CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OSCommand Injection') vulnerability exists that could allow a user that knows the credentials toexecute unprivileged shell commands on the appliance over SSH.      Affected products: StruxureWare Data Center Expert (V7.9.2 and prior)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25555">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6ede2f9798bbc20ff32cfcf3b55050c6</td>
-       <td>CVE-2023-30547</td>
-       <td>2023-04-17 22:15:00</td>
-       <td>vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. There exists a vulnerability in exception sanitization of vm2 for versions up to 3.9.16, allowing attackers to raise an unsanitized host exception inside `handleException()` which can be used to escape the sandbox and run arbitrary code in host context. This vulnerability was patched in the release of version `3.9.17` of `vm2`. There are no known workarounds for this vulnerability. Users are advised to upgrade.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>66ef5ae66d15c9a97b7e7696f127fa5f</td>
-       <td>CVE-2023-30543</td>
-       <td>2023-04-17 22:15:00</td>
-       <td>@web3-react is a framework for building Ethereum Apps . In affected versions the `chainId` may be outdated if the user changes chains as part of the connection flow. This means that the value of `chainId` returned by `useWeb3React()` may be incorrect. In an application, this means that any data derived from `chainId` could be incorrect. For example, if a swapping application derives a wrapped token contract address from the `chainId` *and* a user has changed chains as part of their connection flow the application could cause the user to send funds to the incorrect address when wrapping. This issue has been addressed in PR #749 and is available in updated npm artifacts. There are no known workarounds for this issue. Users are advised to upgrade.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30543">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd6181f0281a7d5287b27fac35ab2a50</td>
-       <td>CVE-2023-30541</td>
-       <td>2023-04-17 22:15:00</td>
-       <td>OpenZeppelin Contracts is a library for secure smart contract development. A function in the implementation contract may be inaccessible if its selector clashes with one of the proxy's own selectors. Specifically, if the clashing function has a different signature with incompatible ABI encoding, the proxy could revert while attempting to decode the arguments from calldata. The probability of an accidental clash is negligible, but one could be caused deliberately and could cause a reduction in availability. The issue has been fixed in version 4.8.3. As a workaround if a function appears to be inaccessible for this reason, it may be possible to craft the calldata such that ABI decoding does not fail at the proxy and the function is properly proxied through.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30541">详情</a></td>
       </tr>
 
      </tbody>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>e199a31628d998560b41c89344e47695</td>
        <td>CVE-2023-25046</td>
-       <td>2023-04-18 20:30:15 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 20:30:15</td>
        <td>PODLOVE PODLOVE_PODCAST_PUBLISHER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=22b153f318f64e5ba7010b36eb7efbb4">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>d86d6c0bcc957633d452e863a11f4644</td>
        <td>CVE-2023-25031</td>
-       <td>2023-04-18 20:30:01 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 20:30:01</td>
        <td>KIBOKOLABS ARIGATO_AUTORESPONDER_AND_NEWSLETTER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9c3ef7b47a9f43c8b73604db9e127f2b">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>a7105b7d0c410755a151b1f206c3c28b</td>
        <td>CVE-2023-25027</td>
-       <td>2023-04-18 20:29:54 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 20:29:54</td>
        <td>KIBOKOLABS CHAINED_QUIZ Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3f567d341d20477baf4e03e663408bc4">详情</a></td>
       </tr>
@@ -1948,6 +1948,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3fb86812f706a59a08853cae38c8ed9f</td>
+       <td>CVE-2022-41721</td>
+       <td>2023-04-20 05:34:46 <img src="imgs/new.gif" /></td>
+       <td>Google Golang HTTP请求走私漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77987">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7b81e72ae53675c36c58e911c7262851</td>
        <td>CVE-2022-48077</td>
        <td>2023-04-19 23:35:11 <img src="imgs/new.gif" /></td>
@@ -2070,7 +2078,7 @@
       <tr>
        <td>fd6b5a453141df9660c261cc23f49a6b</td>
        <td>CVE-2023-1869</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>WordPress YourChannel&nbsp;&nbsp;Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77917">详情</a></td>
       </tr>
@@ -2078,7 +2086,7 @@
       <tr>
        <td>3308c9ef871db073d17f8d5ee95f6f64</td>
        <td>CVE-2022-48256</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Technitium DNS Server无限循环漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77916">详情</a></td>
       </tr>
@@ -2086,7 +2094,7 @@
       <tr>
        <td>8101b943ba3bdb0ff17001121f07b3f4</td>
        <td>CVE-2023-22353</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>JTEKT ELECTRONICS Screen Creator Advance越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77915">详情</a></td>
       </tr>
@@ -2094,7 +2102,7 @@
       <tr>
        <td>acb90856fdacd0753a52896a9b585719</td>
        <td>CVE-2022-47339</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Qualcomm操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77914">详情</a></td>
       </tr>
@@ -2102,7 +2110,7 @@
       <tr>
        <td>c729f5ec8ba77fbc173e8d05e6d7e6dc</td>
        <td>CVE-2022-41731</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>IBM Watson Knowledge Catalog on Cloud Pak for Data SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77913">详情</a></td>
       </tr>
@@ -2110,7 +2118,7 @@
       <tr>
        <td>b1f8ad1b3dc60bbda9e941be1fa5e1bd</td>
        <td>CVE-2023-22360</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>JTEKT ELECTRONICS Screen Creator Advance内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77912">详情</a></td>
       </tr>
@@ -2118,7 +2126,7 @@
       <tr>
        <td>f17a0964b6bb5c35edc64b927656d88c</td>
        <td>CVE-2013-10022</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>BestWebSoft Contact Form Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77911">详情</a></td>
       </tr>
@@ -2126,7 +2134,7 @@
       <tr>
        <td>ba4ae4b7fda006b3cb8fa32e7c514bbe</td>
        <td>CVE-2022-38675</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Qualcomm越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77910">详情</a></td>
       </tr>
@@ -2134,7 +2142,7 @@
       <tr>
        <td>6fb8a06fa7eef7b948cc0545c0385faa</td>
        <td>CVE-2023-22412</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Juniper Networks Junos OS拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77909">详情</a></td>
       </tr>
@@ -2142,7 +2150,7 @@
       <tr>
        <td>e6f291313e22a2139246873a490f68fd</td>
        <td>CVE-2023-1870</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>WordPress YourChannel&nbsp;&nbsp;plugin跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77908">详情</a></td>
       </tr>
@@ -2150,7 +2158,7 @@
       <tr>
        <td>655d3a8728a73c2072f5cb0e9d9b6927</td>
        <td>CVE-2022-43869</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>IBM外部控制格式字符串漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77907">详情</a></td>
       </tr>
@@ -2158,7 +2166,7 @@
       <tr>
        <td>3eb37f7b273a56ad3c6c6050cb8776a5</td>
        <td>CVE-2022-4936</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>WordPress WCFM Marketplace Plugin跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77906">详情</a></td>
       </tr>
@@ -2166,7 +2174,7 @@
       <tr>
        <td>f70783a2d8b1890fbd8a5a53fe26b18c</td>
        <td>CVE-2023-22408</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Juniper Networks Junos OS数组索引验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77905">详情</a></td>
       </tr>
@@ -2174,17 +2182,9 @@
       <tr>
        <td>fc51f8687c1b69b078bc835fec91ff33</td>
        <td>CVE-2022-38681</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
+       <td>2023-04-18 23:35:03</td>
        <td>Qualcomm整数下溢漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6fc06eb45beb27dd1df9309337415cb</td>
-       <td>CVE-2023-22407</td>
-       <td>2023-04-18 23:35:03 <img src="imgs/new.gif" /></td>
-       <td>Juniper Networks Junos OS和Junos OS Evolved拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/77903">详情</a></td>
       </tr>
 
      </tbody>
@@ -2249,6 +2249,14 @@
        <td>2023-04-12 13:15:07 </td>
        <td>Bento4 v1.6.0-639 was discovered to contain an out-of-memory bug in the mp42avc component.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-29574">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ebcb27a4c86f0058ac129c7684bfdd9</td>
+       <td>CVE-2023-30512</td>
+       <td>2023-04-12 06:15:07 </td>
+       <td>CubeFS through 3.2.1 allows Kubernetes cluster-level privilege escalation. This occurs because DaemonSet has cfs-csi-cluster-role and can thus list all secrets, including the admin secret.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30512">详情</a></td>
       </tr>
 
       <tr>
@@ -2433,14 +2441,6 @@
        <td>2023-04-07 12:15:07 </td>
        <td>Unauth. Stored Cross-Site Scripting (XSS) vulnerability in Kiboko Labs Arigato Autoresponder and Newsletter plugin &lt;= 2.7.1.1 versions.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25020">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74ee7df494e9a45b1eef7e1b082f0e19</td>
-       <td>CVE-2023-25027</td>
-       <td>2023-04-07 11:15:07 </td>
-       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Kiboko Labs Chained Quiz plugin &lt;= 1.3.2.5 versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-25027">详情</a></td>
       </tr>
 
      </tbody>
