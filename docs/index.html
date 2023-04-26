@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-04-26 05:35:18 -->
+<!-- RELEASE TIME : 2023-04-26 23:35:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>c7d9bbfa38870b35908acfd1e3942570</td>
+       <td>CVE-2023-27524</td>
+       <td>2023-04-26 09:46:30 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-27524：Apache Superset身份认证绕过漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6448f2f622fb511ce8a14afe">详情</a></td>
+      </tr>
+
       <tr>
        <td>6ddbce6f8b25039edb7b13a95a2cb23e</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=cac2c0ab8515d9851b511e619dc674e0">详情</a></td>
       </tr>
 
-      <tr>
-       <td>24580b4fb69a1db8407211e2cb3464c9</td>
-       <td></td>
-       <td>2023-02-24 08:21:55</td>
-       <td>泛微e-cology9 SQL注入漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6500aceea512f98f4e6d424bcd27c8e6">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>651569f81935cd4accba57abc27fc37d</td>
+       <td>CVE-2023-30846</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>typed-rest-client is a library for Node Rest and Http Clients with typings for use with TypeScript. Users of the typed-rest-client library version 1.7.3 or lower are vulnerable to leak authentication data to 3rd parties. The flow of the vulnerability is as follows: First, send any request with `BasicCredentialHandler`, `BearerCredentialHandler` or `PersonalAccessTokenCredentialHandler`. Second, the target host may return a redirection (3xx), with a link to a second host. Third, the next request will use the credentials to authenticate with the second host, by setting the `Authorization` header. The expected behavior is that the next request will *NOT* set the `Authorization` header. The problem was fixed in version 1.8.0. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30846">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1d984dd91a0f79fa35701bac8a89a7a</td>
+       <td>CVE-2023-30845</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>ESPv2 is a service proxy that provides API management capabilities using Google Service Infrastructure. ESPv2 2.20.0 through 2.42.0 contains an authentication bypass vulnerability. API clients can craft a malicious `X-HTTP-Method-Override` header value to bypass JWT authentication in specific cases.ESPv2 allows malicious requests to bypass authentication if both the conditions are true: The requested HTTP method is **not** in the API service definition (OpenAPI spec or gRPC `google.api.http` proto annotations, and the specified `X-HTTP-Method-Override` is a valid HTTP method in the API service definition. ESPv2 will forward the request to your backend without checking the JWT. Attackers can craft requests with a malicious `X-HTTP-Method-Override` value that allows them to bypass specifying JWTs. Restricting API access with API keys works as intended and is not affected by this vulnerability.Upgrade deployments to release v2.43.0 or higher to receive a patch. This release ensures that JWT authentication occurs, even when the caller specifies `x-http-method-override`. `x-http-method-override` is still supported by v2.43.0+. API clients can continue sending this header to ESPv2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c1e9901cf9bb01963ed97351b8d11ce7</td>
+       <td>CVE-2023-30843</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Payload is a free and open source headless content management system. In versions prior to 1.7.0, if a user has access to documents that contain hidden fields or fields they do not have access to, the user could reverse-engineer those values via brute force. Version 1.7.0 contains a patch. As a workaround, write a `beforeOperation` hook to remove `where` queries that attempt to access hidden field data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9e252745bc2de03df867339fdbf54c7b</td>
+       <td>CVE-2023-30363</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>vConsole v3.15.0 was discovered to contain a prototype pollution due to incorrect key and value resolution in setOptions in core.ts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30363">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a93bdbf18478e8506f0444c440b3d9cf</td>
+       <td>CVE-2023-29443</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine ServiceDesk Plus through 14104 allows admin users to conduct an XXE attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29443">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28f458361896b490ca29f65db25ae408</td>
+       <td>CVE-2023-29442</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine Applications Manager through 16390 allows DOM XSS.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29442">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8082311b73bab951c1bac953b38bb047</td>
+       <td>CVE-2023-2291</td>
+       <td>2023-04-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Static credentials exist in the PostgreSQL data used in ManageEngine Access Manager Plus (AMP) build 4309, ManageEngine Password Manager Pro, and ManageEngine PAM360. These credentials could allow a malicious actor to modify configuration data that would escalate their permissions from that of a low-privileged user to an Administrative user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2291">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b5e7f00e8605e0a0a0884d9d67382a7</td>
+       <td>CVE-2023-30280</td>
+       <td>2023-04-26 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer Overflow vulnerability found in Netgear R6900 v.1.0.2.26, R6700v3 v.1.0.4.128, R6700 v.1.0.0.26 allows a remote attacker to execute arbitrary code and cause a denial ofservice via the getInputData parameter of the fwSchedule.cgi page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30280">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>322b0586c56351cf5647abe10e8e98be</td>
+       <td>CVE-2023-29836</td>
+       <td>2023-04-26 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting vulnerability found in Exelysis Unified Communication Solutions (EUCS) v.1.0 allows a remote attacker to execute arbitrary code via the Username parameter of the eucsAdmin login form.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29836">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebaa8746c6824b686226aec2787b1855</td>
+       <td>CVE-2023-29835</td>
+       <td>2023-04-26 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insecure Permission vulnerability found in Wondershare Dr.Fone v.12.9.6 allows a remote attacker to escalate privileges via the service permission function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29835">详情</a></td>
+      </tr>
+
       <tr>
        <td>2ea1520c7f0e63d05b65287aeae1c14c</td>
        <td>CVE-2023-31223</td>
@@ -441,86 +521,6 @@
        <td>2023-04-24 22:15:00</td>
        <td>Jerryscript commit 1a2c047 was discovered to contain a stack overflow via the component vm_loop at /jerry-core/vm/vm.c.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30414">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4bc32911193cc2fbe5a83ef581f982d8</td>
-       <td>CVE-2023-30410</td>
-       <td>2023-04-24 22:15:00</td>
-       <td>Jerryscript commit 1a2c047 was discovered to contain a stack overflow via the component ecma_op_function_construct at /operations/ecma-function-object.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30410">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ff78b8601edd8cf2bca954618dc499c</td>
-       <td>CVE-2023-30408</td>
-       <td>2023-04-24 22:15:00</td>
-       <td>Jerryscript commit 1a2c047 was discovered to contain a segmentation violation via the component build/bin/jerry.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30408">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d604a425002309aa105493cb2c0852f</td>
-       <td>CVE-2023-30406</td>
-       <td>2023-04-24 22:15:00</td>
-       <td>Jerryscript commit 1a2c047 was discovered to contain a segmentation violation via the component ecma_find_named_property at /base/ecma-helpers.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30406">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3180b29d3a5b3efa616d0535014f4a98</td>
-       <td>CVE-2023-30627</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>jellyfin-web is the web client for Jellyfin, a free-software media system. Starting in version 10.1.0 and prior to version 10.8.10, a stored cross-site scripting vulnerability in device.js can be used to make arbitrary calls to the `REST` endpoints with admin privileges. When combined with CVE-2023-30626, this results in remote code execution on the Jellyfin instance in the context of the user who's running it. This issue is patched in version 10.8.10. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30627">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b098eb0b145fc8986d50b594b20291ff</td>
-       <td>CVE-2023-30626</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>Jellyfin is a free-software media system. Versions starting with 10.8.0 and prior to 10.8.10 and prior have a directory traversal vulnerability inside the `ClientLogController`, specifically `/ClientLog/Document`. When combined with a cross-site scripting vulnerability (CVE-2023-30627), this can result in file write and arbitrary code execution. Version 10.8.10 has a patch for this issue. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30626">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>20fc991db898db1fff689ed0bbb6e15f</td>
-       <td>CVE-2023-29469</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>An issue was discovered in libxml2 before 2.10.4. When hashing empty dict strings in a crafted XML document, xmlDictComputeFastKey in dict.c can produce non-deterministic values, leading to various logic and memory errors, such as a double free. This behavior occurs because there is an attempt to use the first byte of an empty string, and any value is possible (not solely the '\0' value).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29469">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f0348208475ccccc72ba5a8f84db06e</td>
-       <td>CVE-2023-28484</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>In libxml2 before 2.10.4, parsing of certain invalid XSD schemas can lead to a NULL pointer dereference and subsequently a segfault. This occurs in xmlSchemaFixupComplexType in xmlschemas.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28484">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfe98cc165aa1e508984279fcccb8e57</td>
-       <td>CVE-2023-2260</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>Improper Authorization of Index Containing Sensitive Information in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa1cac3c861b0451728cfe3769a8d042</td>
-       <td>CVE-2023-2259</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>Improper Neutralization of Special Elements Used in a Template Engine in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2259">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a747f5899383f9fe88c53941b20b8ed7</td>
-       <td>CVE-2023-2258</td>
-       <td>2023-04-24 21:15:00</td>
-       <td>Improper Neutralization of Formula Elements in a CSV File in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2258">详情</a></td>
       </tr>
 
      </tbody>
@@ -1948,6 +1948,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>dabb7d6f0ec29475037e00548f9a8df0</td>
+       <td>CVE-2023-24762</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>D-Link DIR-867操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78499">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>08e46513cd073397d32aac8060f106c8</td>
+       <td>CVE-2023-24578</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>McAfee Total Protection不受控制的搜索路径元素漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78498">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c6ddf341b8e766d908e0e45d2788c53d</td>
+       <td>CVE-2023-0351</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Akuvox E11命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78497">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>941a76c4d1e6d264c6ce6f127aa15c31</td>
+       <td>CVE-2023-0345</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Akuvox E11硬编码凭据漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78496">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2bb673a41e29727bad0be25b64596947</td>
+       <td>CVE-2023-27580</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>CodeIgniter Shield信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78495">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e31dfe7bf6f1e318c750473ec5a63f94</td>
+       <td>CVE-2023-0772</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>WordPress Popup Builder by OptinMonster Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78494">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42e7b3665dcb4225ca13839888793991</td>
+       <td>CVE-2023-27130</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Typecho跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78493">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac2a2ee39ec2b7f0f7ef1cb66e88c667</td>
+       <td>CVE-2022-34422</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Dell PowerEdge Server BIOS和Dell Precision BIOS拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78492">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55337655699248610cd710882fa2d727</td>
+       <td>CVE-2022-34416</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Dell PowerEdge Server BIOS和Dell Precision BIOS拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78491">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd774058cb9db23cee1b12b7efd9918a</td>
+       <td>CVE-2022-34410</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Dell PowerEdge Server BIOS和Dell Precision BIOS拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78490">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ad4fd308b94710de769f57a6773fa44</td>
+       <td>CVE-2023-27084</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Dreamer CMS信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78489">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d79eac3ae208c6892f0222a27356c196</td>
+       <td>CVE-2023-28460</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Array Networks APV Products命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78488">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8b0d31f68405db9d088db773442a13d</td>
+       <td>CVE-2023-27601</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>OpenSIPS输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78487">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b1314891234e5b6e010097e5f11068a</td>
+       <td>CVE-2023-0073</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>WordPress Client Logo Carousel Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78486">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5eed6014f9e054c05056a8fdd232cb3d</td>
+       <td>CVE-2023-26511</td>
+       <td>2023-04-26 23:35:01 <img src="imgs/new.gif" /></td>
+       <td>Propius MachineSelector硬编码凭据漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78485">详情</a></td>
+      </tr>
+
+      <tr>
        <td>96913bfdb540d5b88eeca86461d79a17</td>
        <td>CVE-2023-25210</td>
        <td>2023-04-25 23:35:01 <img src="imgs/new.gif" /></td>
@@ -2067,126 +2187,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78379">详情</a></td>
       </tr>
 
-      <tr>
-       <td>182bbffcbbc6528d6c5931feabef9585</td>
-       <td>CVE-2023-24999</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>HashiCorp Vault授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78358">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb0d3a6a74a1728b3a3383592d7c9bd8</td>
-       <td>CVE-2023-23326</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>iFAX AvantFAX跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78357">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e2b0011dacd6337ee58e50d63147cbb</td>
-       <td>CVE-2022-47472</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>UNISOC Chipsets授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78356">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f29e852f1f4ba0144222f096fc6e03d</td>
-       <td>CVE-2023-24033</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>Samsung Exynos Modem拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78355">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d0509372b579213244ac1a82077eed4</td>
-       <td>CVE-2023-22436</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>OpenHarmony内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>134e7755fcc2d04327f40e7d45bedf73</td>
-       <td>CVE-2023-0845</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>HashiCorp Consul和Consul Enterprise空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78353">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f65e0e57b3630f18acc559b20d9bfc3f</td>
-       <td>CVE-2023-0621</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>Horner Automation Cscape Envision RV越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78352">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a8465193b00f908da8ce7947f1b4dc7</td>
-       <td>CVE-2022-4462</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>GitLab信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78351">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0285fdc5382862d2082c4672b7064ca1</td>
-       <td>CVE-2022-47478</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>UNISOC Chipsets授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78350">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f2d07cb035c0bc98d111ac456f319ec</td>
-       <td>CVE-2023-27901</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>Jenkins拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78349">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>880ff9fd6de09060f6850be241d70e0b</td>
-       <td>CVE-2022-47484</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>UNISOC Chipsets授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78348">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3b568fd05d39e33ab13d63bc079604d</td>
-       <td>CVE-2023-25147</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>Trend Micro Apex One不受控制的搜索路径元素漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78347">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef3b1f9ed897510711ebfc702004ba69</td>
-       <td>CVE-2022-47458</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>UNISOC Chipsets越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78346">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ccc21a58dd38e270bd15cf532774dc8</td>
-       <td>CVE-2022-43902</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>IBM MQ拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78345">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84e3da5a65974f2d0bfbc1ee25e7f3f1</td>
-       <td>CVE-2021-27788</td>
-       <td>2023-04-24 23:35:01</td>
-       <td>HCL Technologies HCL Verse跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/78344">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2203,6 +2203,22 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>995a4c53a5e481f6c85bf32ba040accc</td>
+       <td>CVE-2023-30537</td>
+       <td>2023-04-16 08:15:07 </td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with the right to add an object on a page can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation. The root cause is improper escaping of the styles properties `FlamingoThemesCode.WebHome`. This page is installed by default. The vulnerability has been patched in XWiki versions 13.10.11, 14.4.7 and 14.10.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30537">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aee407070f4c0d6434b16f3c6617002a</td>
+       <td>CVE-2023-30772</td>
+       <td>2023-04-16 04:15:08 </td>
+       <td>The Linux kernel before 6.2.9 has a race condition and resultant use-after-free in drivers/power/supply/da9150-charger.c if a physically proximate attacker unplugs a device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30772">详情</a></td>
+      </tr>
+
       <tr>
        <td>2819315607e7ca56c26181080be69253</td>
        <td>CVE-2023-30535</td>
@@ -2425,22 +2441,6 @@
        <td>2023-04-12 18:15:09 </td>
        <td>Jenkins Image Tag Parameter Plugin 2.0 improperly introduces an option to opt out of SSL/TLS certificate validation when connecting to Docker registries, resulting in job configurations using Image Tag Parameters that were created before 2.0 having SSL/TLS certificate validation disabled by default.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30516">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c7543d73cf62d116024467b6d451b34</td>
-       <td>CVE-2023-28488</td>
-       <td>2023-04-12 16:15:19 </td>
-       <td>client.c in gdhcp in ConnMan through 1.41 could be used by network-adjacent attackers (operating a crafted DHCP server) to cause a stack-based buffer overflow and denial of service, terminating the connman process.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0732c243434e6c54f69860b8862af5ab</td>
-       <td>CVE-2023-29571</td>
-       <td>2023-04-12 15:15:13 </td>
-       <td>Cesanta MJS v2.20.0 was discovered to contain a SEGV vulnerability via gc_sweep at src/mjs_gc.c. This vulnerability can lead to a Denial of Service (DoS).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-29571">详情</a></td>
       </tr>
 
      </tbody>
