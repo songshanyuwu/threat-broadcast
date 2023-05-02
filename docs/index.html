@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-02 05:35:25 -->
+<!-- RELEASE TIME : 2023-05-02 23:35:19 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc0661caf319ceb81f1007cdf3c3c187</td>
+       <td>CVE-2023-27892</td>
+       <td>2023-05-02 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient length checks in the ShapeShift KeepKey hardware wallet firmware before 7.7.0 allow a global buffer overflow via crafted messages. Flaws in cf_confirmExecTx() in ethereum_contracts.c can be used to reveal arbitrary microcontroller memory on the device screen or crash the device. With physical access to a PIN-unlocked device, attackers can extract the BIP39 mnemonic secret from the hardware wallet.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc092e8be9072eff83c495ecad880e60</td>
+       <td>CVE-2023-26268</td>
+       <td>2023-05-02 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Design documents with matching document IDs, from databases on the same cluster, may share a mutable Javascript environment when using these design document functions:  *  validate_doc_update  *  list  *  filter  *  filter views (using view functions as filters)  *  rewrite  *  updateThis doesn't affect map/reduce or search (Dreyfus) index functions.Users are recommended to upgrade to a version that is no longer affected by this issue (Apache CouchDB 3.3.2 or 3.2.3).Workaround: Avoid using design documents from untrusted sources which may attempt to cache or store data in the Javascript environment.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26268">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9fc5ee7f79612da88d4fb6a33664aeb6</td>
+       <td>CVE-2022-30759</td>
+       <td>2023-05-02 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Nokia One-NDS (aka Network Directory Server) through 20.9, some Sudo permissions can be exploited by some users to escalate to root privileges and execute arbitrary commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30759">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>872f3ea5a3b9e74c9ad1834bb275f446</td>
+       <td>CVE-2023-31435</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple components (such as Onlinetemplate-Verwaltung, Liste aller Teilbereiche, Umfragen anzeigen, and questionnaire previews) in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 allow authenticated attackers to read and write to unauthorized data by accessing functions directly.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31435">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab83dd127ce8275b8413e3d3be8e0e2b</td>
+       <td>CVE-2023-31434</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The parameters nutzer_titel, nutzer_vn, and nutzer_nn in the user profile, and langID and ONLINEID in direct links, in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 do not validate input, which allows authenticated attackers to inject HTML Code and XSS payloads in multiple locations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31434">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>646d0f95b58f52bc70a7f873d6507232</td>
+       <td>CVE-2023-31433</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue in Logbuch in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 allows authenticated attackers to execute SQL statements via the welche parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0d5e0b9813be5be847991068c4b31f0d</td>
+       <td>CVE-2023-30944</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The vulnerability was found Moodle which exists due to insufficient sanitization of user-supplied data in external Wiki method for listing pages. A remote attacker can send a specially crafted request to the affected application and execute limited SQL commands within the application database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30944">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52f9a8e7a1d5862667da59e1098e8ab5</td>
+       <td>CVE-2023-30943</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>The vulnerability was found Moodle which exists because the application allows a user to control path of the older to create in TinyMCE loaders. A remote user can send a specially crafted HTTP request and create arbitrary folders on the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30943">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a2f806012b75944518de45a17b7a905c</td>
+       <td>CVE-2023-30403</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue in the time-based authentication mechanism of Aigital Aigital Wireless-N Repeater Mini_Router v0.131229 allows attackers to bypass login by connecting to the web app after a successful attempt by a legitimate user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30403">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1455456470b6fad3a20ad4fa0813effc</td>
+       <td>CVE-2023-29778</td>
+       <td>2023-05-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>GL.iNET MT3000 4.1.0 Release 2 is vulnerable to OS Command Injection via /usr/lib/oui-httpd/rpc/logread.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29778">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fec4d50c5086ef598760a4652024bac8</td>
        <td>CVE-2023-30639</td>
        <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-04-30 01:15:00</td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.13.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2428">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95b76490f2e5d5e5c594056b2184ef55</td>
-       <td>CVE-2023-2426</td>
-       <td>2023-04-29 22:15:00</td>
-       <td>Use of Out-of-range Pointer Offset in GitHub repository vim/vim prior to 9.0.1499.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2426">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ffd69f29c4d720cd7669148b8b34e6c7</td>
-       <td>CVE-2023-30441</td>
-       <td>2023-04-29 15:15:00</td>
-       <td>IBM Runtime Environment, Java Technology Edition IBMJCEPlus and JSSE 8.0.7.0 through 8.0.7.11 components could expose sensitive information using a combination of flaws and configurations.  IBM X-Force ID:  253188.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30441">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0dc55b99d31386e05b29b1cd42c32ed4</td>
-       <td>CVE-2023-2425</td>
-       <td>2023-04-29 08:15:00</td>
-       <td>A vulnerability was found in SourceCodester Simple Student Information System 1.0. It has been classified as problematic. This affects an unknown part of the file /classes/Master.php?f=save_course of the component Add New Course. The manipulation of the argument name with the input <script>alert(document.cookie)</script> leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227751.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2425">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>686c7269471eea43c0d662f8b9969626</td>
-       <td>CVE-2023-2424</td>
-       <td>2023-04-29 08:15:00</td>
-       <td>A vulnerability was found in DedeCMS 5.7.106 and classified as critical. Affected by this issue is the function UpDateMemberModCache of the file uploads/dede/config.php. The manipulation leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227750 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2424">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75084693c1487efc4d7242973ab212d0</td>
-       <td>CVE-2023-30792</td>
-       <td>2023-04-29 03:15:00</td>
-       <td>Anchor tag hrefs in Lexical prior to v0.10.0 would render javascript: URLs, allowing for cross-site scripting on link clicks in cases where input was being parsed from untrusted sources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30792">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19942323dac44cb97696237d1bc32a76</td>
-       <td>CVE-2022-43871</td>
-       <td>2023-04-29 03:15:00</td>
-       <td>IBM Financial Transaction Manager for SWIFT Services 3.2.4 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  239707.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43871">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b44f8681eb41950cfb77e92e615c82e</td>
-       <td>CVE-2022-41736</td>
-       <td>2023-04-29 03:15:00</td>
-       <td>IBM Spectrum Scale Container Native Storage Access 5.1.2.1 through 5.1.6.0contains an unspecified vulnerability that could allow a local user to obtain root privileges.  IBM X-Force ID:  237810.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41736">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b23e4cf43d5a9dee4cf0204ebf9f859</td>
-       <td>CVE-2023-2421</td>
-       <td>2023-04-29 02:15:00</td>
-       <td>A vulnerability classified as problematic has been found in Control iD RHiD 23.3.19.0. Affected is an unknown function of the file /v2/#/add/department. The manipulation of the argument Name leads to cross site scripting. It is possible to launch the attack remotely. VDB-227718 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2421">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>297ca856b997538e40b5bfb99596a8dd</td>
-       <td>CVE-2023-2420</td>
-       <td>2023-04-29 02:15:00</td>
-       <td>A vulnerability was found in MLECMS 3.0. It has been rated as critical. This issue affects the function get_url in the library /upload/inc/lib/admin of the file upload\inc\include\common.func.php. The manipulation of the argument $_SERVER['REQUEST_URI'] leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227717 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2420">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5be6e488171db8a17ae872bb0d7a19b</td>
-       <td>CVE-2023-2419</td>
-       <td>2023-04-29 01:15:00</td>
-       <td>A vulnerability was found in Zhong Bang CRMEB 4.6.0. It has been declared as critical. This vulnerability affects the function videoUpload of the file \crmeb\app\services\system\attachment\SystemAttachmentServices.php. The manipulation of the argument filename leads to unrestricted upload. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227716.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2419">详情</a></td>
       </tr>
 
      </tbody>
@@ -1692,6 +1692,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fbdb5b7deb55d92f392f6ee9fa2ca90d</td>
+       <td>CVE-2021-0883</td>
+       <td>2023-05-02 20:30:27 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5e0c74f3878b4f8eae9d2394de14108a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc0efa0231bec68b82c4e79861a2ac1e</td>
+       <td>CVE-2023-1875</td>
+       <td>2023-05-02 20:30:20 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cb91e6a85f46420e98f620bf91558f81">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c36e36030c3605d2e8540506f056f037</td>
        <td>CVE-2023-25461</td>
        <td>2023-05-01 20:27:33 <img src="imgs/new.gif" /></td>
@@ -1913,22 +1929,6 @@
        <td>2023-04-27 20:36:57</td>
        <td>ORACLE VM_VIRTUALBOX Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d7986808b9241ee896eb78ad2d2027c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9c8d554c3ed4853dd3f14971e3acb3e</td>
-       <td>CVE-2023-29509</td>
-       <td>2023-04-27 20:36:36</td>
-       <td>XWIKI XWIKI Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a2d1bd2885824b2f8734c0300055e52c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49b9d862acde35206d61e204cf20a130</td>
-       <td>CVE-2023-21931</td>
-       <td>2023-04-25 20:36:14</td>
-       <td>ORACLE WEBLOGIC_SERVER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c0372506e1a44d638983895a286151d7">详情</a></td>
       </tr>
 
      </tbody>
@@ -2220,11 +2220,83 @@
       </tr>
 
       <tr>
+       <td>480e92e652c0530fac48e7b70a4aba4e</td>
+       <td>CVE-2023-31045</td>
+       <td>2023-04-24 08:15:07 </td>
+       <td>** DISPUTED ** A stored Cross-site scripting (XSS) issue in Text Editors and Formats in Backdrop CMS before 1.24.2 allows remote attackers to inject arbitrary web script or HTML via the name parameter. When a user is editing any content type (e.g., page, post, or card) as an admin, the stored XSS payload is executed upon selecting a malicious text formatting option. NOTE: the vendor disputes the security relevance of this finding because &quot;any administrator that can configure a text format could easily allow Full HTML anywhere.&quot;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31045">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1da5be5f8822e7efc2511b1b76056b6</td>
+       <td>CVE-2023-31085</td>
+       <td>2023-04-24 06:15:08 </td>
+       <td>An issue was discovered in drivers/mtd/ubi/cdev.c in the Linux kernel 6.2. There is a divide-by-zero error in do_div(sz,mtd-&gt;erasesize), used indirectly by ctrl_cdev_ioctl, when mtd-&gt;erasesize is 0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31085">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55067d5834c5eb00084858337df9586f</td>
+       <td>CVE-2023-31084</td>
+       <td>2023-04-24 06:15:07 </td>
+       <td>An issue was discovered in drivers/media/dvb-core/dvb_frontend.c in the Linux kernel 6.2. There is a blocking operation when a task is in !TASK_RUNNING. In dvb_frontend_get_event, wait_event_interruptible is called; the condition is dvb_frontend_test_event(fepriv,events). In dvb_frontend_test_event, down(&amp;fepriv-&gt;sem) is called. However, wait_event_interruptible would put the process to sleep, and down(&amp;fepriv-&gt;sem) may block the process.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56f74439b164b7fcc46b6aa67d497236</td>
+       <td>CVE-2023-31083</td>
+       <td>2023-04-24 06:15:07 </td>
+       <td>An issue was discovered in drivers/bluetooth/hci_ldisc.c in the Linux kernel 6.2. In hci_uart_tty_ioctl, there is a race condition between HCIUARTSETPROTO and HCIUARTGETPROTO. HCI_UART_PROTO_SET is set before hu-&gt;proto is set. A NULL pointer dereference may occur.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31083">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cf0b21f07433ff18d1ba527d9fc2f65</td>
+       <td>CVE-2023-31082</td>
+       <td>2023-04-24 06:15:07 </td>
+       <td>An issue was discovered in drivers/tty/n_gsm.c in the Linux kernel 6.2. There is a sleeping function called from an invalid context in gsmld_write, which will block the kernel.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8c15b09ca35fa10e12b79d3915437fb</td>
+       <td>CVE-2023-31081</td>
+       <td>2023-04-24 06:15:07 </td>
+       <td>An issue was discovered in drivers/media/test-drivers/vidtv/vidtv_bridge.c in the Linux kernel 6.2. There is a NULL pointer dereference in vidtv_mux_stop_thread. In vidtv_stop_streaming, after dvb-&gt;mux=NULL occurs, it executes vidtv_mux_stop_thread(dvb-&gt;mux).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31081">详情</a></td>
+      </tr>
+
+      <tr>
        <td>26544e2aa6633a7cec3c8563ad0de5fa</td>
        <td>CVE-2023-31056</td>
        <td>2023-04-24 03:15:07 </td>
        <td>CloverDX before 5.17.3 writes passwords to the audit log in certain situations, if the audit log is enabled and single sign-on is not employed. The fixed versions are 5.15.4, 5.16.2, 5.17.3, and 6.0.x.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31056">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>718f2a2b98d097483647f1dfef8ef92d</td>
+       <td>CVE-2023-31061</td>
+       <td>2023-04-24 03:15:07 </td>
+       <td>Repetier Server through 1.4.10 does not have CSRF protection.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31061">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be0ab2903d5dc0f7953fa99cbe2d4e60</td>
+       <td>CVE-2023-31060</td>
+       <td>2023-04-24 03:15:07 </td>
+       <td>Repetier Server through 1.4.10 executes as SYSTEM. This can be leveraged in conjunction with CVE-2023-31059 for full compromise.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31060">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38b8733ee35e2de5b6e82a13526b3029</td>
+       <td>CVE-2023-31059</td>
+       <td>2023-04-24 03:15:07 </td>
+       <td>Repetier Server through 1.4.10 allows ..%5c directory traversal for reading files that contain credentials, as demonstrated by connectionLost.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31059">详情</a></td>
       </tr>
 
       <tr>
@@ -2369,78 +2441,6 @@
        <td>2023-04-17 20:15:07 </td>
        <td>Vulnerability discovered is related to the peer-to-peer (p2p) communications, attackers can craft consensus messages, send it to individual nodes and take them offline. An attacker can crawl the network peers using getaddr message and attack the unpatched nodes.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>307637d973c288b28f48c6c20a9e1ece</td>
-       <td>CVE-2023-30771</td>
-       <td>2023-04-17 08:15:07 </td>
-       <td>Incorrect Authorization vulnerability in Apache Software Foundation Apache IoTDB.This issue affects the iotdb-web-workbench component on 0.13.3. iotdb-web-workbench is an optional component of IoTDB, providing a web console of the database.This problem is fixed from version 0.13.4 of iotdb-web-workbench onwards.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30771">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7d658ca167deef58d9356c994a7ebf1</td>
-       <td>CVE-2023-30770</td>
-       <td>2023-04-17 07:15:08 </td>
-       <td>A stack-based buffer overflow vulnerability was found in the ASUSTOR Data Master (ADM) due to the lack of data size validation. An attacker can exploit this vulnerability to execute arbitrary code. Affected ADM versions include: 4.0.6.REG2, 4.1.0 and below as well as 4.2.0.RE71 and below.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>995a4c53a5e481f6c85bf32ba040accc</td>
-       <td>CVE-2023-30537</td>
-       <td>2023-04-16 08:15:07 </td>
-       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with the right to add an object on a page can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation. The root cause is improper escaping of the styles properties `FlamingoThemesCode.WebHome`. This page is installed by default. The vulnerability has been patched in XWiki versions 13.10.11, 14.4.7 and 14.10.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30537">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cf8de9f099f914d4cc1de082fcaaaf23</td>
-       <td>CVE-2023-30474</td>
-       <td>2023-04-16 08:15:07 </td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Kilian Evang Ultimate Noindex Nofollow Tool II plugin &lt;=&Acirc;&nbsp;1.3 versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30474">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93c078a8be826de26ddd143609b7ccf4</td>
-       <td>CVE-2023-30542</td>
-       <td>2023-04-16 08:15:07 </td>
-       <td>OpenZeppelin Contracts is a library for secure smart contract development. The proposal creation entrypoint (`propose`) in `GovernorCompatibilityBravo` allows the creation of proposals with a `signatures` array shorter than the `calldatas` array. This causes the additional elements of the latter to be ignored, and if the proposal succeeds the corresponding actions would eventually execute without any calldata. The `ProposalCreated` event correctly represents what will eventually execute, but the proposal parameters as queried through `getActions` appear to respect the original intended calldata. This issue has been patched in 4.8.3. As a workaround, ensure that all proposals that pass through governance have equal length `signatures` and `calldatas` parameters.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30542">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aee407070f4c0d6434b16f3c6617002a</td>
-       <td>CVE-2023-30772</td>
-       <td>2023-04-16 04:15:08 </td>
-       <td>The Linux kernel before 6.2.9 has a race condition and resultant use-after-free in drivers/power/supply/da9150-charger.c if a physically proximate attacker unplugs a device.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30772">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2819315607e7ca56c26181080be69253</td>
-       <td>CVE-2023-30535</td>
-       <td>2023-04-14 20:15:09 </td>
-       <td>Snowflake JDBC provides a JDBC type 4 driver that supports core functionality, allowing Java program to connect to Snowflake. Users of the Snowflake JDBC driver were vulnerable to a command injection vulnerability. An attacker could set up a malicious, publicly accessible server which responds to the SSO URL with an attack payload. If the attacker then tricked a user into visiting the maliciously crafted connection URL, the user&acirc;&euro;&trade;s local machine would render the malicious payload, leading to a remote code execution. The vulnerability was patched on March 17, 2023 as part of Snowflake JDBC driver Version 3.13.29. All users should immediately upgrade the Snowflake JDBC driver to the latest version: 3.13.29.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30535">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f49ba50afcd116b9fe00d13de57f350</td>
-       <td>CVE-2023-29067</td>
-       <td>2023-04-14 19:15:09 </td>
-       <td>A maliciously crafted X_B file when parsed through Autodesk&Acirc;&reg; AutoCAD&Acirc;&reg; 2023 could lead to memory corruption vulnerability by write access violation. This vulnerability in conjunction with other vulnerabilities could lead to code execution in the context of the current process.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-29067">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>241172c4884eed696aac55c6499a0937</td>
-       <td>CVE-2023-30459</td>
-       <td>2023-04-14 15:15:07 </td>
-       <td>SmartPTT SCADA 1.1.0.0 allows remote code execution (when the attacker has administrator privileges) by writing a malicious C# script and executing it on the server (via server settings in the administrator control panel on port 8101, by default).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30459">详情</a></td>
       </tr>
 
      </tbody>
