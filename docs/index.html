@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-02 23:35:19 -->
+<!-- RELEASE TIME : 2023-05-03 23:35:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a936b6adf810d59f000f219605516949</td>
+       <td>CVE-2023-25827</td>
+       <td>2023-05-03 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Due to insufficient validation of parameters reflected in error messages by the legacy HTTP query API and the logging endpoint, it is possible to inject and execute malicious JavaScript within the browser of a targeted OpenTSDB user. This issue shares the same root cause as CVE-2018-13003, a reflected XSS vulnerability with the suggestion endpoint.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25827">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a615eda51e0aae6227dac940d9024586</td>
+       <td>CVE-2023-25826</td>
+       <td>2023-05-03 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Due to insufficient validation of parameters passed to the legacy HTTP query API, it is possible to inject crafted OS commands into multiple parameters and execute malicious code on the OpenTSDB host system. This exploit exists due to an incomplete fix that was made when this vulnerability was previously disclosed as CVE-2020-35476. Regex validation that was implemented to restrict allowed input to the query API does not work as intended, allowing crafted commands to bypass validation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25826">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0a88e278447d42afe5c14e2f0e8630d</td>
+       <td>CVE-2023-26017</td>
+       <td>2023-05-03 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in BlueGlass Jobs for WordPress plugin <= 2.5.10.2 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26017">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>63d0fdae67dd2ec5cb0de38671e8bdf8</td>
+       <td>CVE-2023-25967</td>
+       <td>2023-05-03 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in PeepSo Community by PeepSo plugin <= 6.0.2.0 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25967">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd4ad55bb958e1f97fa381e1aa6083c7</td>
+       <td>CVE-2023-23881</td>
+       <td>2023-05-03 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in GreenTreeLabs Circles Gallery plugin <= 1.0.10 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23881">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>959ded97e438232643a035803e80304d</td>
+       <td>CVE-2023-23875</td>
+       <td>2023-05-03 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Himanshu Bing Site Verification plugin using Meta Tag plugin <= 1.0 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23875">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>702cc344fa16c1c20ad65fda6b176096</td>
+       <td>CVE-2023-23830</td>
+       <td>2023-05-03 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in ProfilePress Membership Team ProfilePress plugin <= 4.5.4 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23830">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffffb87a30f9655e4b6c6949c60ce15b</td>
+       <td>CVE-2023-29240</td>
+       <td>2023-05-03 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>An authenticated attacker granted a Viewer or Auditor role on a BIG-IQ can upload arbitrary files using an undisclosed iControl REST endpoint.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2eb072ac36be10d15e43a3d9da92347c</td>
+       <td>CVE-2023-29163</td>
+       <td>2023-05-03 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>When UDP profile with idle timeout set to immediate or the value 0 is configured on a virtual server, undisclosed traffic can cause TMM to terminate.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29163">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf4889c23bb7affbff37c9ccad74aff0</td>
+       <td>CVE-2023-28742</td>
+       <td>2023-05-03 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>When DNS is provisioned, an authenticated remote command execution vulnerability exists in DNS iQuery mesh. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28742">详情</a></td>
+      </tr>
+
+      <tr>
        <td>bc0661caf319ceb81f1007cdf3c3c187</td>
        <td>CVE-2023-27892</td>
        <td>2023-05-02 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>fec4d50c5086ef598760a4652024bac8</td>
        <td>CVE-2023-30639</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>Archer Platform 6.8 before 6.12 P6 HF1 (6.12.0.6.1) contains a stored XSS vulnerability. A remote authenticated malicious Archer user could potentially exploit this vulnerability to store malicious HTML or JavaScript code in a trusted application data store. 6.11.P4 (6.11.0.4) is also a fixed release.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30639">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>e230b1280c69e4aa76d6437ac849cebd</td>
        <td>CVE-2023-29681</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>Cleartext Transmission in cookie:ecos_pw: in Tenda N301 v6.0, firmware v12.03.01.06_pt allows an authenticated attacker on the LAN or WLAN to intercept communications with the router and obtain the password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29681">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>431f772963477f2b48b35a9ffaced687</td>
        <td>CVE-2023-29680</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>Cleartext Transmission in set-cookie:ecos_pw: Tenda N301 v6.0, Firmware v12.02.01.61_multi allows an authenticated attacker on the LAN or WLAN to intercept communications with the router and obtain the password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29680">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>2216c5df5321369da83a2a394e97b17a</td>
        <td>CVE-2023-27108</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>An issue was discovered in KaiOS 3.0. The pre-installed Communications application exposes a Web Activity that returns the user's call log without origin or permission checks. An attacker can inject a JavaScript payload that runs in a browser or app without user interaction or consent. This allows an attacker to send the user's call logs to a remote server via XMLHttpRequest or Fetch.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27108">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>2e113696a4528fc41958fcc3fef9e935</td>
        <td>CVE-2023-27035</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>An issue discovered in Obsidian Canvas 1.1.9 allows remote attackers to send desktop notifications, record user audio and other unspecified impacts via embedded website on the canvas page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27035">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>8fad300b0e45a6efd20b350218fb4dd3</td>
        <td>CVE-2023-26987</td>
-       <td>2023-05-01 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 22:15:00</td>
        <td>An issue discovered in Konga 0.14.9 allows remote attackers to manipulate user accounts regardless of privilege via crafted POST request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26987">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>892580f3bb69ab0fab10e60e20266977</td>
        <td>CVE-2023-2197</td>
-       <td>2023-05-01 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:15:00</td>
        <td>HashiCorp Vault Enterprise 1.13.0 up to 1.13.1 is vulnerable to a padding oracle attack when using an HSM in conjunction with the CKM_AES_CBC_PAD or CKM_AES_CBC encryption mechanisms. An attacker with privileges to modify storage and restart Vault may be able to intercept or modify cipher text in order to derive Vault’s root key. Fixed in 1.13.2</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2197">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>c4c45255bf37ceead91da68c8654735a</td>
        <td>CVE-2022-35898</td>
-       <td>2023-05-01 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:15:00</td>
        <td>OpenText BizManager before 16.6.0.1 does not perform proper validation during the change-password operation. This allows any authenticated user to change the password of any other user, including the Administrator account.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35898">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>43b646c2ff7a0f28118ba11896ccb0c2</td>
        <td>CVE-2023-22924</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 17:15:00</td>
        <td>A buffer overflow vulnerability in the Zyxel NBG-418N v2 firmware versions prior to V1.00(AARP.14)C0 could allow a remote authenticated attacker with administrator privileges to cause denial-of-service (DoS) conditions by executing crafted CLI commands on a vulnerable device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22924">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>d8bec3568faa9e954adfedfd98e54c55</td>
        <td>CVE-2023-22923</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 17:15:00</td>
        <td>A format string vulnerability in a binary of the Zyxel NBG-418N v2 firmware versions prior to V1.00(AARP.14)C0 could allow a remote authenticated attacker to cause denial-of-service (DoS) conditions on an affected device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa56695709871d1d87dd8841f8121216</td>
-       <td>CVE-2023-22922</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A buffer overflow vulnerability in the Zyxel NBG-418N v2 firmware versions prior to V1.00(AARP.14)C0 could allow a remote unauthenticated attacker to cause DoS conditions by sending crafted packets if Telnet is enabled on a vulnerable device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22922">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>705d4395f2781e79c4a8527ae7dd3bd8</td>
-       <td>CVE-2023-22921</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site scripting (XSS) vulnerability in the Zyxel NBG-418N v2 firmware versions prior to V1.00(AARP.14)C0 could allow a remote authenticated attacker with administrator privileges to store malicious scripts using a web management interface parameter, resulting in denial-of-service (DoS) conditions on an affected device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22921">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a67d7f39c174b04af237c102cfdea971</td>
-       <td>CVE-2023-22919</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>The post-authentication command injection vulnerability in the Zyxel NBG6604 firmware version V1.01(ABIR.0)C0 could allow an authenticated attacker to execute some OS commands remotely by sending a crafted HTTP request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22919">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10539e24b9dfa52827be29109992e63a</td>
-       <td>CVE-2023-22503</td>
-       <td>2023-05-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Affected versions of Atlassian Confluence Server and Data Center allow anonymous remote attackers to view the names of attachments and labels in a private Confluence space. This occurs via an Information Disclosure vulnerability in the macro preview feature.This vulnerability was reported by Rojan Rijal of the Tinder Security Engineering team.The affected versions are before version 7.13.15, from version 7.14.0 before 7.19.7, and from version 7.20.0 before 8.2.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ee2551dd0ae6a87220e212bfa59965e</td>
-       <td>CVE-2023-29643</td>
-       <td>2023-05-01 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross Site Scripting (XSS) vulnerability in PerfreeBlog 3.1.2 allows attackers to execute arbitrary code via the Post function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29643">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>849fbe3ec7de60ea4c6ebcfded0137d4</td>
-       <td>CVE-2023-29641</td>
-       <td>2023-05-01 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross Site Scripting (XSS) vulnerability in pandao editor.md thru 1.5.0 allows attackers to inject arbitrary web script or HTML via crafted markdown text.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29641">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df41607d38cf33076308e8c7ae38129d</td>
-       <td>CVE-2015-10105</td>
-       <td>2023-05-01 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability, which was classified as critical, was found in IP Blacklist Cloud Plugin up to 3.42 on WordPress. This affects the function valid_js_identifier of the file ip_blacklist_cloud.php of the component CSV File Import. The manipulation of the argument filename leads to path traversal. It is possible to initiate the attack remotely. Upgrading to version 3.43 is able to address this issue. The name of the patch is 6e6fe8c6fda7cbc252eef083105e08d759c07312. It is recommended to upgrade the affected component. The identifier VDB-227757 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10105">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>787d68eaaa8370300eb9ae4939db6b56</td>
-       <td>CVE-2015-10104</td>
-       <td>2023-04-30 21:15:00</td>
-       <td>A vulnerability, which was classified as problematic, has been found in Icons for Features Plugin 1.0.0 on WordPress. Affected by this issue is some unknown functionality of the file classes/class-icons-for-features-admin.php. The manipulation of the argument redirect_url leads to open redirect. The attack may be launched remotely. Upgrading to version 1.0.1 is able to address this issue. The name of the patch is 63124c021ae24b68e56872530df26eb4268ad633. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-227756.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10104">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36233267f98b0f97766ba3907cb1feb2</td>
-       <td>CVE-2023-2429</td>
-       <td>2023-04-30 03:15:00</td>
-       <td>Improper Access Control in GitHub repository thorsten/phpmyfaq prior to 3.1.13.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2429">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>805e801e98bc8fae3c9c183404f150bb</td>
-       <td>CVE-2023-2428</td>
-       <td>2023-04-30 01:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.13.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2428">详情</a></td>
       </tr>
 
      </tbody>
@@ -1692,6 +1692,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>651ae361a0e3d3a1307524a490f07d26</td>
+       <td>CVE-2021-0885</td>
+       <td>2023-05-03 20:29:28 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7ea3687ffe30420bbdccc99c20d4829d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e942d91f6aa463793909ce7d20f59a26</td>
+       <td>CVE-2023-20941</td>
+       <td>2023-05-03 20:29:21 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0db42c32e335476780f376cd43ef4584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9149e7b6fb0f4771e4ac998f4801d53e</td>
+       <td>CVE-2023-21083</td>
+       <td>2023-05-03 20:29:14 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e486eea2e39040bdb2b7fc2f3bf96fe8">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fbdb5b7deb55d92f392f6ee9fa2ca90d</td>
        <td>CVE-2021-0883</td>
        <td>2023-05-02 20:30:27 <img src="imgs/new.gif" /></td>
@@ -1710,7 +1734,7 @@
       <tr>
        <td>c36e36030c3605d2e8540506f056f037</td>
        <td>CVE-2023-25461</td>
-       <td>2023-05-01 20:27:33 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:27:33</td>
        <td>SMARTLOGIX WP-INSERT Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5590098d966d4fc7bde7f4cc34effbd1">详情</a></td>
       </tr>
@@ -1718,7 +1742,7 @@
       <tr>
        <td>81656d9e6e138aad0d9bbb426e829424</td>
        <td>CVE-2021-0872</td>
-       <td>2023-05-01 20:27:26 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:27:26</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=74b56fbc8feb4c208a880e95b5cd62b4">详情</a></td>
       </tr>
@@ -1726,7 +1750,7 @@
       <tr>
        <td>9c657afb3efb95aba17abf9a2a1f5e7e</td>
        <td>CVE-2021-0875</td>
-       <td>2023-05-01 20:27:19 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:27:19</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e3c8722c43034d569ce6dd78de346016">详情</a></td>
       </tr>
@@ -1734,7 +1758,7 @@
       <tr>
        <td>6cc2df80dd980620c5a27441eb18f8ec</td>
        <td>CVE-2023-1900</td>
-       <td>2023-05-01 20:27:12 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:27:12</td>
        <td>AVIRA ANTIVIRUS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1ab7aaad65cd43f9ada4285b44bb8eca">详情</a></td>
       </tr>
@@ -1742,7 +1766,7 @@
       <tr>
        <td>5e955f0b45313cdccb15b4fbb7ff1d9f</td>
        <td>CVE-2021-0880</td>
-       <td>2023-05-01 20:27:06 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:27:06</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ed69b4691a1c4373ad9b1c74d82853e2">详情</a></td>
       </tr>
@@ -1750,7 +1774,7 @@
       <tr>
        <td>d55ebef87b1cf38e480aed8394d570a1</td>
        <td>CVE-2023-21082</td>
-       <td>2023-05-01 20:26:52 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:26:52</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6d9dc1c82171476c91ac206451f35211">详情</a></td>
       </tr>
@@ -1758,7 +1782,7 @@
       <tr>
        <td>5dd42d38becab034b2d9fa8d2e9be9e0</td>
        <td>CVE-2023-21093</td>
-       <td>2023-05-01 20:26:39 <img src="imgs/new.gif" /></td>
+       <td>2023-05-01 20:26:39</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1217112639d44a1380e4060c440d148c">详情</a></td>
       </tr>
@@ -1905,30 +1929,6 @@
        <td>2023-04-28 20:34:59</td>
        <td>GOOGLE ANDROID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=11a0df408bf94c6faf6b9eb063686316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25d3f8b29bc083ecaf7b43dfc8ace71f</td>
-       <td>CVE-2023-21086</td>
-       <td>2023-04-28 20:34:54</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a444d57f712f4da5a766648b3a5b74f9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19c3b5ad0da33c49d7d90151764b1358</td>
-       <td>CVE-2023-21098</td>
-       <td>2023-04-28 20:34:39</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=52d6010d4085462fa3ff4d7f20bf2609">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9718b6521db803e94bf9b9cfccab4e5b</td>
-       <td>CVE-2023-22002</td>
-       <td>2023-04-27 20:36:57</td>
-       <td>ORACLE VM_VIRTUALBOX Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d7986808b9241ee896eb78ad2d2027c">详情</a></td>
       </tr>
 
      </tbody>
