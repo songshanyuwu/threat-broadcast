@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-10 05:35:07 -->
+<!-- RELEASE TIME : 2023-05-10 23:35:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>0c30c8f97c81bc0c5862f2959e074cc9</td>
+       <td></td>
+       <td>2023-05-10 09:44:19 <img src="imgs/new.gif" /></td>
+       <td>2023-05 补丁日: 微软多个漏洞安全更新通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=645b669d01dc7167b394d329">详情</a></td>
+      </tr>
+
       <tr>
        <td>51077656fe9fc37d4140d4ce8100cf7c</td>
        <td>CVE-2023-2478</td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=640996d88bda0d54e3509064">详情</a></td>
       </tr>
 
-      <tr>
-       <td>e789b5055a4a30fd3f2f81447efc91c0</td>
-       <td>CVE-2023-21716</td>
-       <td>2023-03-07 09:38:55</td>
-       <td>Microsoft Word 远程代码执行漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=640705d24299b09abea6940b">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>144e3f4b34c77be1ec0a67b914f7b9b2</td>
+       <td>CVE-2023-32080</td>
+       <td>2023-05-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Wings is the server control plane for Pterodactyl Panel. A vulnerability affecting versions prior to 1.7.5 and versions 1.11.0 prior to 1.11.6 impacts anyone running the affected versions of Wings.  This vulnerability can be used to gain access to the host system running Wings if a user is able to modify an server's install script or the install script executes code supplied by the user (either through environment variables, or commands that execute commands based off of user data). This vulnerability has been resolved in version `v1.11.6` of Wings, and has been back-ported to the 1.7 release series in `v1.7.5`. Anyone running `v1.11.x` should upgrade to `v1.11.6` and anyone running `v1.7.x` should upgrade to `v1.7.5`.There are no workarounds aside from upgrading. Running Wings with a rootless container runtime may mitigate the severity of any attacks, however the majority of users are using container runtimes that run as root as per the Wings documentation. SELinux may prevent attackers from performing certain operations against the host system, however privileged containers have a lot of freedom even on systems with SELinux enabled.It should be noted that this was a known attack vector, for attackers to easily exploit this attack it would require compromising an administrator account on a Panel.  However, certain eggs (the data structure that holds the install scripts that get passed to Wings) have an issue where they are unknowingly executing shell commands with escalated privileges provided by untrusted user data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01930bb7364309a40893fcb325aa2189</td>
+       <td>CVE-2022-29842</td>
+       <td>2023-05-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability that could allow an attacker to execute code in the context of the root user on a vulnerable CGI file was discovered in Western Digital My Cloud OS 5 devicesThis issue affects My Cloud OS 5: through 5.26.119.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29842">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c1ed46e95c91a591cb46c208f322f593</td>
+       <td>CVE-2023-31166</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to create folders in arbitrary paths of the file system.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>83afd4b37883ba237e8d18e9aa941b89</td>
+       <td>CVE-2023-31165</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31165">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7aacdb3c03a7b54bd5936c7e2fad4ef1</td>
+       <td>CVE-2023-31164</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31164">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c387d8bee89150500e41e253ecb08317</td>
+       <td>CVE-2023-31163</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31163">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7725ad0439737d82e47b688e5c6fa4c</td>
+       <td>CVE-2023-31162</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Input Validation vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to arbitrarily alter the content of a configuration file.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31162">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2259b92aa87ccbabaee8898783ef8022</td>
+       <td>CVE-2023-31161</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Input Validation vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow an authenticated remote attacker to use internal resources, allowing a variety of potential effects.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31161">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d360ac377edf660161115076cd21fcfb</td>
+       <td>CVE-2023-31160</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31160">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50934fa931f8e39c528dea788b57f730</td>
+       <td>CVE-2023-31159</td>
+       <td>2023-05-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31159">详情</a></td>
+      </tr>
+
       <tr>
        <td>2155e8f07f95bd129d621af0b0fa1252</td>
        <td>CVE-2023-25833</td>
@@ -441,86 +521,6 @@
        <td>2023-05-09 20:15:00 <img src="imgs/new.gif" /></td>
        <td>Improper syscall input validation in AMD TEE(Trusted Execution Environment) may allow an attacker with physical access andcontrol of a Uapp that runs under the bootloader to reveal the contents of theASP (AMD Secure Processor) bootloader accessible memory to a serial port,resulting in a potential loss of integrity.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46759">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e902310ad883df423fd61ac1568732d5</td>
-       <td>CVE-2023-30237</td>
-       <td>2023-05-09 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>CyberGhostVPN Windows Client before v8.3.10.10015 was discovered to contain a DLL injection vulnerability via the component Dashboard.exe.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30237">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53652006cf681526b8cbe340028ec7ff</td>
-       <td>CVE-2022-4537</td>
-       <td>2023-05-09 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>The Hide My WP Ghost – Security Plugin plugin for WordPress is vulnerable to IP Address Spoofing in versions up to, and including, 5.0.18. This is due to insufficient restrictions on where the IP Address information is being retrieved for request logging and login restrictions. Attackers can supply the X-Forwarded-For header with with a different IP Address that will be logged and can be used to bypass settings that may have blocked out an IP address from logging in.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4537">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>410706967662a5b9396af5f37266c7bf</td>
-       <td>CVE-2021-44283</td>
-       <td>2023-05-09 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>A buffer overflow in the component /Enclave.cpp of Electronics and Telecommunications Research Institute ShieldStore commit 58d455617f99705f0ffd8a27616abdf77bdc1bdc allows attackers to cause an information leak via a crafted structure from an untrusted operating system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44283">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>496337943059ea5e2eedb3e7708219e9</td>
-       <td>CVE-2023-32113</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>SAP GUI for Windows - version 7.70, 8.0, allows an unauthorized attacker to gain NTLM authentication information of a victim by tricking it into clicking a prepared shortcut file. Depending on the authorizations of the victim, the attacker can read and modify potentially sensitive information after successful exploitation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32113">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8651640c4e223bb09b1fc7107896f789</td>
-       <td>CVE-2023-32112</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>Vendor Master Hierarchy - versions SAP_APPL 500, SAP_APPL 600, SAP_APPL 602, SAP_APPL 603, SAP_APPL 604, SAP_APPL 605, SAP_APPL 606, SAP_APPL 616, SAP_APPL 617, SAP_APPL 618, S4CORE 100, does not perform necessary authorization checks for an authenticated user to access some of its function. This could lead to modification of data impacting the integrity of the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32112">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a92da82ae29d1fb931333b0d95305a0c</td>
-       <td>CVE-2023-32111</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In SAP PowerDesigner (Proxy) - version 16.7, an attacker can send a crafted request from a remote host to the proxy machine and crash the proxy server, due to faulty implementation of memory management causing a memory corruption. This leads to a high impact on availability of the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32111">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c25d0478ffd0d41eded65447868b3117</td>
-       <td>CVE-2023-31407</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>SAP Business Planning and Consolidation - versions 740, 750, allows an authorized attacker to upload a malicious file, resulting in Cross-Site Scripting vulnerability. After successful exploitation, an attacker can cause limited impact on confidentiality and integrity of the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31407">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c98c386f8b4f10db4407d41fadffd4a</td>
-       <td>CVE-2023-31406</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>Due to insufficient input validation, SAP BusinessObjects Business Intelligence Platform - versions 420, 430, allows an unauthenticated attacker to redirect users to untrusted site using a malicious link. On successful exploitation, an attacker can view or modify information causing a limited impact on confidentiality and integrity of the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31406">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1de6d6de6b350a05dbd2f1edc96b7cfc</td>
-       <td>CVE-2023-31404</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>Under certain conditions, SAP BusinessObjects Business Intelligence Platform (Central Management Service) - versions 420, 430, allows an attacker to access information which would otherwise be restricted. Some users with specific privileges could have access to credentials of other users. It could let them access data sources which would otherwise be restricted.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31404">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e8c6b8e6804c401bd9b20f126d796af</td>
-       <td>CVE-2023-30744</td>
-       <td>2023-05-09 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>In SAP AS NetWeaver JAVA - versions SERVERCORE 7.50, J2EE-FRMW 7.50, CORE-TOOLS 7.50, an unauthenticated attacker can attach to an open interface and make use of an open naming and directory API to instantiate an object which has methods which can be called without further authorization and authentication.  A subsequent call to one of these methods can read or change the state of existing services without any effect on availability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30744">详情</a></td>
       </tr>
 
      </tbody>
@@ -1692,6 +1692,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0167f4cc495b9d464f8e83a23fc0a3d5</td>
+       <td>CVE-2023-22922</td>
+       <td>2023-05-10 20:33:51 <img src="imgs/new.gif" /></td>
+       <td>ZYXEL NBG-418N_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7bda0e72aed1495bbacc8bdce4403c5c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>276503dfb25fbc316254b7731d2ff3ea</td>
+       <td>CVE-2023-30848</td>
+       <td>2023-05-10 20:33:10 <img src="imgs/new.gif" /></td>
+       <td>PIMCORE PIMCORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=13008c2edb6e4588aeaa06f9e59446cf">详情</a></td>
+      </tr>
+
+      <tr>
        <td>731461b78d7c8331506ff83e2bad21e5</td>
        <td>CVE-2023-2339</td>
        <td>2023-05-09 20:37:02 <img src="imgs/new.gif" /></td>
@@ -1913,22 +1929,6 @@
        <td>2023-05-06 20:37:07</td>
        <td>ODOO ODOO Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f3e3582c2c64bd4a5a32649ed5107a8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2fd05c0690572c19f03921e2c1aa610</td>
-       <td>CVE-2021-44476</td>
-       <td>2023-05-06 20:36:54</td>
-       <td>ODOO ODOO Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a0a1a8ce4cd6469e87919dcb5490d663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d744be22523fc4b9f368846de1526dfa</td>
-       <td>CVE-2023-24820</td>
-       <td>2023-05-06 20:36:47</td>
-       <td>RIOT-OS RIOT Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=55b76792aa5d42c2b88b27cebbf30a32">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,38 @@
       </tr>
 
       <tr>
+       <td>40fb5dcbbc789523683d3f98e7c59901</td>
+       <td>CVE-2023-23881</td>
+       <td>2023-05-03 16:15:10 </td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in GreenTreeLabs Circles Gallery plugin &lt;=&Acirc;&nbsp;1.0.10 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23881">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01d22da44c6d7c7d2d01b5c8a518c1fe</td>
+       <td>CVE-2023-23875</td>
+       <td>2023-05-03 16:15:10 </td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Himanshu Bing Site Verification plugin using Meta Tag plugin &lt;=&Acirc;&nbsp;1.0 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23875">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddbe878943b6d5e5ae4fffa3bbe588ee</td>
+       <td>CVE-2023-23876</td>
+       <td>2023-05-03 14:15:32 </td>
+       <td>Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in TMS-Plugins wpDataTables plugin &lt;=&Acirc;&nbsp;2.1.49 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23876">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0aef2c95137b349a09b519a12324287a</td>
+       <td>CVE-2023-23874</td>
+       <td>2023-05-03 14:15:31 </td>
+       <td>Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Metaphor Creations Ditty plugin &lt;=&Acirc;&nbsp;3.0.32 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-23874">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0ad109de5ae97875716a82a0017a7573</td>
        <td>CVE-2023-31435</td>
        <td>2023-05-02 20:15:11 </td>
@@ -2284,6 +2316,46 @@
       </tr>
 
       <tr>
+       <td>ee1da0e640adf3caacbab491668560e3</td>
+       <td>CVE-2023-2390</td>
+       <td>2023-04-28 20:15:14 </td>
+       <td>A vulnerability has been found in Netgear SRX5308 up to 4.3.5-3 and classified as problematic. This vulnerability affects unknown code of the file scgi-bin/platform.cgi?page=time_zone.htm of the component Web Management Interface. The manipulation of the argument ntp.server1 leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227668. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2390">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d6000a689e98ef5e1f75a0ac71a2a40</td>
+       <td>CVE-2023-2389</td>
+       <td>2023-04-28 20:15:14 </td>
+       <td>A vulnerability, which was classified as problematic, was found in Netgear SRX5308 up to 4.3.5-3. This affects an unknown part of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.emailServer leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227667. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2389">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53dd13d353073f8632c26d0f395cb71f</td>
+       <td>CVE-2023-2388</td>
+       <td>2023-04-28 20:15:14 </td>
+       <td>A vulnerability, which was classified as problematic, has been found in Netgear SRX5308 up to 4.3.5-3. Affected by this issue is some unknown functionality of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.fromAddr leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227666 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2388">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8201451cb0043578cd268ff372020449</td>
+       <td>CVE-2023-2387</td>
+       <td>2023-04-28 19:15:16 </td>
+       <td>A vulnerability classified as problematic was found in Netgear SRX5308 up to 4.3.5-3. Affected by this vulnerability is an unknown functionality of the file scgi-bin/platform.cgi?page=dmz_setup.htm of the component Web Management Interface. The manipulation of the argument winsServer1 leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227665 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2387">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6b5eb93746e873ca3b218a4c41ae320</td>
+       <td>CVE-2023-2386</td>
+       <td>2023-04-28 19:15:16 </td>
+       <td>A vulnerability classified as problematic has been found in Netgear SRX5308 up to 4.3.5-3. Affected is an unknown function of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.toAddr leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227664. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2386">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fb607526befd34614c01bbf194d7f133</td>
        <td>CVE-2023-27864</td>
        <td>2023-04-28 18:15:26 </td>
@@ -2297,6 +2369,14 @@
        <td>2023-04-28 18:15:26 </td>
        <td>IBM Db2 for Linux, UNIX and Windows (includes DB2 Connect Server) 11.5 is vulnerable to a denial of service when attempting to use ACR client affinity for unfenced DRDA federation wrappers.  IBM X-Force ID:  249187.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27555">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b77ee00b04eaf5ec38c117a8c7d2b797</td>
+       <td>CVE-2023-2385</td>
+       <td>2023-04-28 18:15:26 </td>
+       <td>A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been rated as problematic. This issue affects some unknown processing of the file scgi-bin/platform.cgi?page=ike_policies.htm of the component Web Management Interface. The manipulation of the argument IpsecIKEPolicy.IKEPolicyName leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227663. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2385">详情</a></td>
       </tr>
 
       <tr>
@@ -2361,86 +2441,6 @@
        <td>2023-04-27 03:15:10 </td>
        <td>An issue was discovered in Serenity Serene (and StartSharp) before 6.7.0. When a password reset request occurs, the server response leaks the existence of users. If one tries to reset a password of a non-existent user, an error message indicates that this user does not exist.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31286">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>489cd47a3f04e633a78ae2b91bb2b72b</td>
-       <td>CVE-2023-31285</td>
-       <td>2023-04-27 03:15:10 </td>
-       <td>An XSS issue was discovered in Serenity Serene (and StartSharp) before 6.7.0. When users upload temporary files, some specific file endings are not allowed, but it is possible to upload .html or .htm files containing an XSS payload. The resulting link can be sent to an administrator user.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c953334af202b60a0582f566e92862e</td>
-       <td>CVE-2023-30846</td>
-       <td>2023-04-26 21:15:09 </td>
-       <td>typed-rest-client is a library for Node Rest and Http Clients with typings for use with TypeScript. Users of the typed-rest-client library version 1.7.3 or lower are vulnerable to leak authentication data to 3rd parties. The flow of the vulnerability is as follows: First, send any request with `BasicCredentialHandler`, `BearerCredentialHandler` or `PersonalAccessTokenCredentialHandler`. Second, the target host may return a redirection (3xx), with a link to a second host. Third, the next request will use the credentials to authenticate with the second host, by setting the `Authorization` header. The expected behavior is that the next request will *NOT* set the `Authorization` header. The problem was fixed in version 1.8.0. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b0e1faec4b75317bfbb9e7a9ee07681</td>
-       <td>CVE-2023-30843</td>
-       <td>2023-04-26 21:15:09 </td>
-       <td>Payload is a free and open source headless content management system. In versions prior to 1.7.0, if a user has access to documents that contain hidden fields or fields they do not have access to, the user could reverse-engineer those values via brute force. Version 1.7.0 contains a patch. As a workaround, write a `beforeOperation` hook to remove `where` queries that attempt to access hidden field data.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b07d3c7ee8f77c36dcfcf5f1e12744ca</td>
-       <td>CVE-2023-28008</td>
-       <td>2023-04-26 20:15:10 </td>
-       <td>HCL Workload Automation 9.4, 9.5, and 10.1 are vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28008">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9f9c658d740428edd4441553b9d702d</td>
-       <td>CVE-2023-27559</td>
-       <td>2023-04-26 20:15:09 </td>
-       <td>IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, and 11.5 is vulnerable to a denial of service as the server may crash when using a specially crafted subquery.  IBM X-Force ID:  249196.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16fc215803043a129af34f50f59fffd3</td>
-       <td>CVE-2023-31250</td>
-       <td>2023-04-26 19:15:09 </td>
-       <td>The file download facility doesn't sufficiently sanitize file paths in certain situations. This may result in users gaining access to private files that they should not have access to. Some sites may require configuration changes following this security release. Review the release notes for your Drupal version if you have issues accessing private files after updating.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2caac044272e2e0230e6f3217b43a35</td>
-       <td>CVE-2023-27843</td>
-       <td>2023-04-26 00:15:09 </td>
-       <td>SQL injection vulnerability found in PrestaShop askforaquote v.5.4.2 and before allow a remote attacker to gain privileges via the QuotesProduct::deleteProduct component.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c372724ec5adea57cb3fd6463a094604</td>
-       <td>CVE-2023-31223</td>
-       <td>2023-04-25 23:15:09 </td>
-       <td>Dradis before 4.8.0 allows persistent XSS by authenticated author users, related to avatars.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31223">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53c1fd84db2d8e52dfe2f12ea59983e9</td>
-       <td>CVE-2023-30378</td>
-       <td>2023-04-24 15:15:09 </td>
-       <td>In Tenda AC15 V15.03.05.19, the function &quot;sub_8EE8&quot; contains a stack-based buffer overflow vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bcde192120f8722c677385f60fabf5c0</td>
-       <td>CVE-2023-30376</td>
-       <td>2023-04-24 15:15:09 </td>
-       <td>In Tenda AC15 V15.03.05.19, the function &quot;henan_pppoe_user&quot; contains a stack-based buffer overflow vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-30376">详情</a></td>
       </tr>
 
      </tbody>
