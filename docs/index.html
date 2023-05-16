@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-15 23:35:18 -->
+<!-- RELEASE TIME : 2023-05-16 05:35:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7c55bcc466ebf0197e0a42c318a8f0d8</td>
+       <td>CVE-2023-2710</td>
+       <td>2023-05-16 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>The video carousel slider with lightbox plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the search_term parameter in versions up to, and including, 1.0.22  due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17d9d7f2212830a23e2f2107e05cf57a</td>
+       <td>CVE-2023-2708</td>
+       <td>2023-05-16 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Video Gallery plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the ‘search_term’ parameter in versions up to, and including, 1.0.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>82ebb67e05c8cf5da6e116be75e56ed1</td>
+       <td>CVE-2023-29961</td>
+       <td>2023-05-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>D-Link DIR-605L firmware version 1.17B01 BETA is vulnerable to stack overflow via /goform/formTcpipSetup,</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29961">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a73c738ae31e403e914cd781ef2100a</td>
+       <td>CVE-2023-31131</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Greenplum Database (GPDB) is an open source data warehouse based on PostgreSQL. In versions prior to 6.22.3 Greenplum Database used an unsafe methods to extract tar files within GPPKGs. greenplum-db is vulnerable to path traversal leading to arbitrary file writes. An attacker can use this vulnerability to overwrite data or system files potentially leading to crash or malfunction of the system. Any files which are accessible to the running process are at risk. All users are requested to upgrade to Greenplum Database version 6.23.2 or higher. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31131">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09574e66f33e0a61a288c6c84789ef84</td>
+       <td>CVE-2023-2700</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in libvirt. This security flaw ouccers due to repeatedly querying an SR-IOV PCI device's capabilities that exposes a memory leak caused by a failure to free the virPCIVirtualFunction array within the parent struct's g_autoptr cleanup.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>82ec6a9ec3c5a804d5e713cb957143a9</td>
+       <td>CVE-2023-2124</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>An out-of-bounds memory access flaw was found in the Linux kernel’s XFS file system in how a user restores an XFS image after failure (with a dirty log journal). This flaw allows a local user to crash or potentially escalate their privileges on the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2124">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7f6f6e2fbd1a4b3fdeeca7a1ee2afbd</td>
+       <td>CVE-2023-21118</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In unflattenString8 of Sensor.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-269014004</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50e4239f5b1ea3340f9928f916d17f76</td>
+       <td>CVE-2023-21117</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In registerReceiverWithFeature of ActivityManagerService.java, there is a possible way for isolated processes to register a broadcast receiver due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-263358101</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21117">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>159d4d91d9f473d5321feae240fce511</td>
+       <td>CVE-2023-21116</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In verifyReplacingVersionCode of InstallPackageHelper.java, there is a possible way to downgrade system apps below system image version due to a logic error in the code. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-256202273</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21116">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4b942873751d4ff77874712fe062b37c</td>
+       <td>CVE-2023-21112</td>
+       <td>2023-05-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>In AnalyzeMfcResp of NxpMfcReader.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-252763983</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21112">详情</a></td>
+      </tr>
+
+      <tr>
        <td>64aea261da80bcfc199e680e16d31893</td>
        <td>CVE-2023-32309</td>
        <td>2023-05-15 21:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>76f702b97c5c32f750eea8954eeaf7fb</td>
        <td>CVE-2023-2699</td>
-       <td>2023-05-14 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 12:15:00</td>
        <td>A vulnerability, which was classified as critical, has been found in SourceCodester Lost and Found Information System 1.0. Affected by this issue is some unknown functionality of the file admin/?page=items/view_item of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228980.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2699">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>dfe41dfcb7dfa8a6faa406aea8da637a</td>
        <td>CVE-2023-2698</td>
-       <td>2023-05-14 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 12:15:00</td>
        <td>A vulnerability classified as critical was found in SourceCodester Lost and Found Information System 1.0. Affected by this vulnerability is an unknown functionality of the file admin/?page=items/manage_item of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228979.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2698">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>4734b762d548c7e0c49d19a8ab9fb300</td>
        <td>CVE-2023-2697</td>
-       <td>2023-05-14 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 12:15:00</td>
        <td>A vulnerability classified as critical has been found in SourceCodester Online Exam System 1.0. Affected is an unknown function of the file /jurusan/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-228978 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2697">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>36e2aca59d5d91e7b89a67f412faa52c</td>
        <td>CVE-2023-2696</td>
-       <td>2023-05-14 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 11:15:00</td>
        <td>A vulnerability was found in SourceCodester Online Exam System 1.0. It has been rated as critical. This issue affects some unknown processing of the file /matkul/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228977 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2696">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>3acb348eb3f6f7f1adb3ffd2375285c5</td>
        <td>CVE-2023-2695</td>
-       <td>2023-05-14 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 11:15:00</td>
        <td>A vulnerability was found in SourceCodester Online Exam System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /kelas/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228976.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2695">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>28fa2fe841e58b445e300b92d389896f</td>
        <td>CVE-2023-2694</td>
-       <td>2023-05-14 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 10:15:00</td>
        <td>A vulnerability was found in SourceCodester Online Exam System 1.0. It has been classified as critical. This affects an unknown part of the file /dosen/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228975.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2694">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>36602c8d309f02e5d17fb2932cc23f1b</td>
        <td>CVE-2023-2693</td>
-       <td>2023-05-14 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 09:15:00</td>
        <td>A vulnerability was found in SourceCodester Online Exam System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /mahasiswa/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-228974 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2693">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>2fc9e83dbfc9c7e7a8266ef0db32173d</td>
        <td>CVE-2023-2692</td>
-       <td>2023-05-14 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 09:15:00</td>
        <td>A vulnerability has been found in SourceCodester ICT Laboratory Management System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file views/room_info.php of the component GET Parameter Handler. The manipulation of the argument name leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228973 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2692">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>c95989d1dec3bef9dd9aed0d47e8f72b</td>
        <td>CVE-2023-2691</td>
-       <td>2023-05-14 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 09:15:00</td>
        <td>A vulnerability, which was classified as problematic, was found in SourceCodester Personnel Property Equipment System 1.0. Affected is an unknown function of the file admin/add_item.php of the component POST Parameter Handler. The manipulation of the argument item_name leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228972.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2691">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>a4a6b07d83dee564639f4ac2954fcf58</td>
        <td>CVE-2023-2690</td>
-       <td>2023-05-14 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 08:15:00</td>
        <td>A vulnerability, which was classified as critical, has been found in SourceCodester Personnel Property Equipment System 1.0. This issue affects some unknown processing of the file admin/returned_reuse_form.php of the component GET Parameter Handler. The manipulation of the argument client_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228971.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2690">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73187193027a3ce13a5c4b4927616adf</td>
-       <td>CVE-2023-32303</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>Planet is software that provides satellite data. The secret file stores the user's Planet API authentication information. It should only be accessible by the user, but before version 2.0.1, its permissions allowed the user's group and non-group to read the file as well. This issue was patched in version 2.0.1. As a workaround, set the secret file permissions to only user read/write by hand.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32303">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af542087820790c0891c30c7765bbe75</td>
-       <td>CVE-2023-25009</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A malicious actor may convince a user to open a malicious USD file that may trigger an out-of-bounds write vulnerability which could result in code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25009">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>944d1e8f72b9c2c92e2a8677d716a014</td>
-       <td>CVE-2023-25008</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A malicious actor may convince a user to open a malicious USD file that may trigger an out-of-bounds read vulnerability which could result in code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25008">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13fe8d7cf983daa4f9dbf58a8be98033</td>
-       <td>CVE-2023-25007</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A malicious actor may convince a user to open a malicious USD file that may trigger an uninitialized pointer which could result in code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25007">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac52faec5fe1c1a33ab800a199d2841c</td>
-       <td>CVE-2023-25006</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A malicious actor may convince a user to open a malicious USD file that may trigger a use-after-free vulnerability which could result in code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25006">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1aab517708ab1b04349fe53d1c7a9d70</td>
-       <td>CVE-2023-25005</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A maliciously crafted DLL file can be forced to read beyond allocated boundaries in Autodesk InfraWorks 2023, and 2021 when parsing the DLL files could lead to a resource injection vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a0a123f9c03538b18469f5c216707f71</td>
-       <td>CVE-2023-2181</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>An issue has been discovered in GitLab affecting all versions before 15.9.8, 15.10.0 before 15.10.7, and 15.11.0 before 15.11.3. A malicious developer could use a git feature called refs/replace to smuggle content into a merge request which would not be visible during review in the UI.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1dfa76fc850da08b98f1a75db6abbb99</td>
-       <td>CVE-2023-20880</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>VMware Aria Operations contains a privilege escalation vulnerability. A malicious actor with administrative access to the local system can escalate privileges to 'root'.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20880">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f43605af614f70801df70a96d79e556</td>
-       <td>CVE-2023-2088</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>A flaw was found in OpenStack due to an inconsistency between Cinder and Nova. This issue can be triggered intentionally or by accident. A remote, authenticated attacker could exploit this vulnerability by detaching one of their volumes from Cinder. The highest impact is to confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2088">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>558b3463300358e330b0493cbf5a74f3</td>
-       <td>CVE-2023-20879</td>
-       <td>2023-05-12 21:15:00</td>
-       <td>VMware Aria Operations contains a Local privilege escalation vulnerability. A malicious actor with administrative privileges in the Aria Operations application can gain root access to the underlying operating system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20879">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>25017052032fe66af34def20155c890e</td>
        <td>CVE-2023-2591</td>
-       <td>2023-05-14 20:32:49 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:49</td>
        <td>TEAMPASS TEAMPASS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fe2e11d124e747dc9471ce0e8b99557d">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>636cf81cf37c1e0004128d7d51718236</td>
        <td>CVE-2021-20406</td>
-       <td>2023-05-14 20:32:42 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:42</td>
        <td>IBM Security Verify Information Queue 加密问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4f6facea715b43fa93bc9e79e2aa9073">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>673825876611fdb116ef3c8789331c2e</td>
        <td>CVE-2023-2616</td>
-       <td>2023-05-14 20:32:28 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:28</td>
        <td>PIMCORE PIMCORE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=99c488938db84f58a1bb2217ba344944">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>71ae77b67471eeda5d11dfc78e4b6863</td>
        <td>CVE-2020-18282</td>
-       <td>2023-05-14 20:32:21 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:21</td>
        <td>5NONE NONECMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b7b9440f4fd247d99561c91eafa98944">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>feba4dbc695cf89f9d4c483ea844ee48</td>
        <td>CVE-2021-20407</td>
-       <td>2023-05-14 20:32:15 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:15</td>
        <td>IBM Security Verify Information Queue 信息泄露漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=44eccf78d0874677a0c9632826ab4e3d">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>564700e2850cca8c9ecaf559e3267e9d</td>
        <td>CVE-2023-25754</td>
-       <td>2023-05-14 20:32:08 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:08</td>
        <td>APACHE AIRFLOW Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9b2c122d943f4c428b5ca49b99b3930d">详情</a></td>
       </tr>
@@ -1806,7 +1806,7 @@
       <tr>
        <td>b3bb9a77cea67d47e0327191cc365f47</td>
        <td>CVE-2023-23494</td>
-       <td>2023-05-14 20:32:01 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:32:01</td>
        <td>APPLE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8aea43723a634e54920d77b2ac8b9882">详情</a></td>
       </tr>
@@ -1814,7 +1814,7 @@
       <tr>
        <td>f0af5a958bf93e0ae0db5a25adf39ad0</td>
        <td>CVE-2023-2610</td>
-       <td>2023-05-14 20:31:54 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:31:54</td>
        <td>VIM VIM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1560b4b5d6814756838e8a21e620dfe8">详情</a></td>
       </tr>
@@ -1822,7 +1822,7 @@
       <tr>
        <td>7c40acf8926d452c967900d5023ac48c</td>
        <td>CVE-2020-19660</td>
-       <td>2023-05-14 20:31:47 <img src="imgs/new.gif" /></td>
+       <td>2023-05-14 20:31:47</td>
        <td>IPANDAO EDITOR.MD Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ad289d3c329347b08ac50ad405e1b701">详情</a></td>
       </tr>
@@ -2300,6 +2300,38 @@
       </tr>
 
       <tr>
+       <td>0ead3d5f6ff6398019fb666e834383f0</td>
+       <td>CVE-2023-32113</td>
+       <td>2023-05-09 02:15:12 </td>
+       <td>SAP GUI for Windows - version 7.70, 8.0, allows an unauthorized attacker to gain NTLM authentication information of a victim by tricking it into clicking a prepared shortcut file. Depending on the authorizations of the victim, the attacker can read and modify potentially sensitive information after successful exploitation.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32113">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4228ee0ce52dae33b8489d60a06a53cd</td>
+       <td>CVE-2023-32112</td>
+       <td>2023-05-09 02:15:12 </td>
+       <td>Vendor Master Hierarchy - versions SAP_APPL 500, SAP_APPL 600, SAP_APPL 602, SAP_APPL 603, SAP_APPL 604, SAP_APPL 605, SAP_APPL 606, SAP_APPL 616, SAP_APPL 617, SAP_APPL 618, S4CORE 100, does not perform necessary authorization checks for an authenticated user to&Acirc;&nbsp;access some of its function. This could lead to modification of data impacting the integrity of the system.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32112">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e3170328796e9d2ae32a44a3ba79dfc</td>
+       <td>CVE-2023-32111</td>
+       <td>2023-05-09 02:15:12 </td>
+       <td>In SAP PowerDesigner (Proxy) - version 16.7, an attacker can send a crafted request from a remote host to the proxy machine and crash the proxy server, due to faulty implementation of memory management causing a memory corruption. This leads to a high impact on availability of the application.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32111">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>788992d566bea30c6148698e8cb5809b</td>
+       <td>CVE-2023-32233</td>
+       <td>2023-05-08 20:15:20 </td>
+       <td>In the Linux kernel through 6.3.1, a use-after-free in Netfilter nf_tables when processing batch requests can be abused to perform arbitrary read and write operations on kernel memory. Unprivileged local users can obtain root privileges. This occurs because anonymous sets are mishandled.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32233">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2e97c35855601270e424f0b4ca9b7555</td>
        <td>CVE-2023-23538</td>
        <td>2023-05-08 20:15:16 </td>
@@ -2409,38 +2441,6 @@
        <td>2023-05-05 01:15:08 </td>
        <td>Improper Restriction of Excessive Authentication Attempts in GitHub repository azuracast/azuracast prior to 0.18.3.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2531">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3009975f5b6e89571c0035fd46139d76</td>
-       <td>CVE-2023-21511</td>
-       <td>2023-05-04 21:15:11 </td>
-       <td>Out-of-bounds Read vulnerability while processing CMD_COLDWALLET_BTC_SET_PRV_UTXO in bc_core trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to read arbitrary memory.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>239cb7db4ed7f0681329cc12cb5303ab</td>
-       <td>CVE-2023-21510</td>
-       <td>2023-05-04 21:15:11 </td>
-       <td>Out-of-bounds Read vulnerability while processing BC_TUI_CMD_UPDATE_SCREEN in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to read arbitrary memory.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>abc9ef48e96ec95d7c2a833d82008803</td>
-       <td>CVE-2023-21509</td>
-       <td>2023-05-04 21:15:11 </td>
-       <td>Out-of-bounds Write vulnerability while processing BC_TUI_CMD_UPDATE_SCREEN in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to execute arbitrary code.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>045c7919f2f47515c486fe6add9c97a9</td>
-       <td>CVE-2023-21508</td>
-       <td>2023-05-04 21:15:11 </td>
-       <td>Out-of-bounds Write vulnerability while processing BC_TUI_CMD_SEND_RESOURCE_DATA command in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to execute arbitrary code.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21508">详情</a></td>
       </tr>
 
      </tbody>
