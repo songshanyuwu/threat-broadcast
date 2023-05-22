@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-21 23:34:44 -->
+<!-- RELEASE TIME : 2023-05-22 05:34:44 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4903ac7843da52152af9a50e632f6c8f</td>
+       <td>CVE-2020-36694</td>
+       <td>2023-05-21 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in netfilter in the Linux kernel before 5.10. There can be a use-after-free in the packet processing context, because the per-CPU sequence count is mishandled during concurrent iptables rules replacement. This could be exploited with the CAP_NET_ADMIN capability in an unprivileged namespace. NOTE: cc00bca was reverted in 5.12.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36694">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3119d59dad07a9f57b628be02601bdc</td>
+       <td>CVE-2023-33254</td>
+       <td>2023-05-21 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is an LDAP bind credentials exposure on KACE Systems Deployment and Remote Site appliances 9.0.146. The captured credentials may provide a higher privilege level on the Active Directory domain. To exploit this, an authenticated attacker edits the user-authentication settings to specify an attacker-controlled LDAP server, clicks the Test Settings button, and captures the cleartext credentials.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33254">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6f00594481d67551f42ba084e85efae</td>
+       <td>CVE-2023-33252</td>
+       <td>2023-05-21 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>iden3 snarkjs through 0.6.11 allows double spending because there is no validation that the publicSignals length is less than the field modulus.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33252">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dd06bb5d33522cf3cad8309f6e592c74</td>
        <td>CVE-2023-33251</td>
        <td>2023-05-21 21:15:00 <img src="imgs/new.gif" /></td>
@@ -318,7 +342,7 @@
       <tr>
        <td>7fb8dab5676b99bfcc4095b2ec4916cd</td>
        <td>CVE-2023-32589</td>
-       <td>2023-05-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in PingOnline Dyslexiefont Free plugin <= 1.0.0 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32589">详情</a></td>
       </tr>
@@ -326,7 +350,7 @@
       <tr>
        <td>44ff089772fd707424477bf8f8bdd0fc</td>
        <td>CVE-2023-24414</td>
-       <td>2023-05-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in RoboSoft Photo Gallery, Images, Slider in Rbs Image Gallery plugin <= 3.2.11 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24414">详情</a></td>
       </tr>
@@ -334,7 +358,7 @@
       <tr>
        <td>b4b7245b7a6c07c07fa00e963c1d15d2</td>
        <td>CVE-2023-23890</td>
-       <td>2023-05-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in LJ Apps WP Airbnb Review Slider plugin <= 3.2 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23890">详情</a></td>
       </tr>
@@ -342,7 +366,7 @@
       <tr>
        <td>68153cad76941b44472515e3bacaa6ee</td>
        <td>CVE-2023-22689</td>
-       <td>2023-05-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in Lucian Apostol Auto Affiliate Links plugin <= 6.3 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22689">详情</a></td>
       </tr>
@@ -350,7 +374,7 @@
       <tr>
        <td>a281473b2bbfc1b924b797857f51785a</td>
        <td>CVE-2022-47134</td>
-       <td>2023-05-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in Bill Erickson Gallery Metabox plugin <= 1.5 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47134">详情</a></td>
       </tr>
@@ -358,7 +382,7 @@
       <tr>
        <td>1bc1b554e62bec3b52ca64ab33ef0a42</td>
        <td>CVE-2023-33244</td>
-       <td>2023-05-20 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 19:15:00</td>
        <td>Obsidian before 1.2.2 allows calls to unintended APIs (for microphone access, camera access, and desktop notification) via an embedded web page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33244">详情</a></td>
       </tr>
@@ -366,7 +390,7 @@
       <tr>
        <td>b2e0239e7e0158bf428d43d592a48177</td>
        <td>CVE-2023-32700</td>
-       <td>2023-05-20 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 18:15:00</td>
        <td>LuaTeX before 1.17.0 allows execution of arbitrary shell commands when compiling a TeX file obtained from an untrusted source. This occurs because luatex-core.lua lets the original io.popen be accessed. This also affects TeX Live before 2023 r66984 and MiKTeX before 23.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32700">详情</a></td>
       </tr>
@@ -374,7 +398,7 @@
       <tr>
        <td>40f1e6b93c6223ca274636c81ba2f7fc</td>
        <td>CVE-2023-1696</td>
-       <td>2023-05-20 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 15:15:00</td>
        <td>The multimedia video module has a vulnerability in data processing.Successful exploitation of this vulnerability may affect availability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1696">详情</a></td>
       </tr>
@@ -382,7 +406,7 @@
       <tr>
        <td>9daa9fef6c2214dd1217c8384557f851</td>
        <td>CVE-2023-1694</td>
-       <td>2023-05-20 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 15:15:00</td>
        <td>The Settings module has the file privilege escalation vulnerability.Successful exploitation of this vulnerability may affect confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1694">详情</a></td>
       </tr>
@@ -390,7 +414,7 @@
       <tr>
        <td>463cb67a1d4b2f50d773351812211740</td>
        <td>CVE-2023-1693</td>
-       <td>2023-05-20 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 15:15:00</td>
        <td>The Settings module has the file privilege escalation vulnerability.Successful exploitation of this vulnerability may affect confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1693">详情</a></td>
       </tr>
@@ -398,7 +422,7 @@
       <tr>
        <td>8989a513e46d51648946cd7813e6cfd2</td>
        <td>CVE-2023-1692</td>
-       <td>2023-05-20 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 15:15:00</td>
        <td>The window management module lacks permission verification.Successful exploitation of this vulnerability may affect confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1692">详情</a></td>
       </tr>
@@ -406,7 +430,7 @@
       <tr>
        <td>894b4895e103c691549ac894b796626d</td>
        <td>CVE-2023-2713</td>
-       <td>2023-05-20 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 10:15:00</td>
        <td>Authorization Bypass Through User-Controlled Key vulnerability  in "Rental Module" developed by third-party for Ideasoft's E-commerce Platform allows Authentication Abuse, Authentication Bypass.This issue affects Rental Module: before 23.05.15.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2713">详情</a></td>
       </tr>
@@ -414,7 +438,7 @@
       <tr>
        <td>79323db74af81bc05a426b1040f193d1</td>
        <td>CVE-2023-2712</td>
-       <td>2023-05-20 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 10:15:00</td>
        <td>Unrestricted Upload of File with Dangerous Type vulnerability  in "Rental Module" developed by third-party for Ideasoft's E-commerce Platform allows Command Injection, Using Malicious Files, Upload a Web Shell to a Web Server.This issue affects Rental Module: before 23.05.15.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2712">详情</a></td>
       </tr>
@@ -422,7 +446,7 @@
       <tr>
        <td>85abbca21eff3ff1220692be369d6d62</td>
        <td>CVE-2023-2824</td>
-       <td>2023-05-20 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 08:15:00</td>
        <td>A vulnerability was found in SourceCodester Dental Clinic Appointment Reservation System 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /admin/service.php of the component POST Parameter Handler. The manipulation of the argument service leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-229598 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2824">详情</a></td>
       </tr>
@@ -430,7 +454,7 @@
       <tr>
        <td>542c9bb9d7625bcc37bc4c286cb302cc</td>
        <td>CVE-2023-2823</td>
-       <td>2023-05-20 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 08:15:00</td>
        <td>A vulnerability was found in SourceCodester Class Scheduling System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /admin/edit_subject.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229597 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2823">详情</a></td>
       </tr>
@@ -497,30 +521,6 @@
        <td>2023-05-19 16:15:00</td>
        <td>IBM MQ 8.0, 9.0, 9.1, 9.2, and 9.3 could disclose sensitive user information from a trace file if that functionality has been enabled.  IBM X-Force ID:  251358.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28950">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>abd88f139b40fb80581c9602d7246e9b</td>
-       <td>CVE-2023-28529</td>
-       <td>2023-05-19 16:15:00</td>
-       <td>IBM InfoSphere Information Server 11.7 is vulnerable to stored cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  251213.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28529">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fe6271ac9b325d9208592f5e45dc178</td>
-       <td>CVE-2023-22878</td>
-       <td>2023-05-19 16:15:00</td>
-       <td>IBM InfoSphere Information Server 11.7 stores user credentials in plain clear text which can be read by a local user.  IBM X-Force ID:  244373.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22878">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1507ac77dca1000b33827369317ce7ff</td>
-       <td>CVE-2022-47984</td>
-       <td>2023-05-19 16:15:00</td>
-       <td>IBM InfoSphere Information Server 11.7 is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database.  IBM X-Force ID:  243163.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47984">详情</a></td>
       </tr>
 
      </tbody>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>31970a7ddbc4591a5d9360f45c39fb43</td>
        <td>CVE-2023-2662</td>
-       <td>2023-05-20 20:40:33 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 20:40:33</td>
        <td>XPDFREADER XPDF Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2533f5dbd244aad83e1bba3fdc64903">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>85829c89e2497d11a0cbc16add1100ab</td>
        <td>CVE-2023-0007</td>
-       <td>2023-05-20 20:40:26 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 20:40:26</td>
        <td>PALOALTONETWORKS PAN-OS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f2e2034e39994757a92a3ca31738e9ff">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>f8fd575594b675c14e0f816f857c5ecb</td>
        <td>CVE-2023-0008</td>
-       <td>2023-05-20 20:40:19 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 20:40:19</td>
        <td>PALOALTONETWORKS PAN-OS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1547285335024f678b6e1db9730cf535">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>0f10f925ac5c0b2de672d058a81cbb76</td>
        <td>CVE-2023-25830</td>
-       <td>2023-05-20 20:39:37 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 20:39:37</td>
        <td>ESRI PORTAL_FOR_ARCGIS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7d6f2085af2748f1a1b4f9c6e576903a">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>35075637509cccc7c2c3a56d2b93695e</td>
        <td>CVE-2023-20098</td>
-       <td>2023-05-20 20:39:30 <img src="imgs/new.gif" /></td>
+       <td>2023-05-20 20:39:30</td>
        <td>CISCO SD-WAN_VMANAGE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b3e50ab2587641d4a94da99bcae3878b">详情</a></td>
       </tr>
@@ -2204,6 +2204,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0445f83dba9ca1999748a6347b64e19d</td>
+       <td>CVE-2023-31921</td>
+       <td>2023-05-12 14:15:10 </td>
+       <td>Jerryscript 3.0 (commit 05dbbd1) was discovered to contain an Assertion Failure via the ecma_big_uint_div_mod at jerry-core/ecma/operations/ecma-big-uint.c.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31921">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fdb9ba087af53cd985a737e7abc37f7a</td>
        <td>CVE-2023-31920</td>
        <td>2023-05-12 14:15:09 </td>
@@ -2433,14 +2441,6 @@
        <td>2023-05-10 20:15:10 </td>
        <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31158">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de4379cabf0e56cca5d75ca395b71c8f</td>
-       <td>CVE-2023-31157</td>
-       <td>2023-05-10 20:15:10 </td>
-       <td>An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31157">详情</a></td>
       </tr>
 
      </tbody>
