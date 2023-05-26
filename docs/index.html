@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-05-26 05:34:58 -->
+<!-- RELEASE TIME : 2023-05-26 23:34:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a7bb5a84d6ca3dc4e67cb7de2df14155</td>
+       <td>CVE-2023-33196</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Craft is a CMS for creating custom digital experiences. Cross site scripting (XSS) can be triggered by review volumes. This issue has been fixed in version 4.4.7.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33196">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9422c02493d1b83502373a93f805d4ee</td>
+       <td>CVE-2023-33194</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Craft is a CMS for creating custom digital experiences on the web.The platform does not filter input and encode output in Quick Post validation error message, which can deliver an XSS payload. Old CVE fixed the XSS in label HTML but didn’t fix it when clicking save. This issue was patched in version 4.4.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33194">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>73f81e0278adbedefcea37ee8ea0ca19</td>
+       <td>CVE-2023-33187</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Highlight is an open source, full-stack monitoring platform. Highlight may record passwords on customer deployments when a password html input is switched to `type="text"` via a javascript "Show Password" button. This differs from the expected behavior which always obfuscates `type="password"` inputs. A customer may assume that switching to `type="text"` would also not record this input; hence, they would not add additional `highlight-mask` css-class obfuscation to this part of the DOM, resulting in unintentional recording of a password value when a `Show Password` button is used. This issue was patched in version 6.0.0.This patch tracks changes to the `type` attribute of an input to ensure an input that used to be a `type="password"` continues to be obfuscated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33187">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>224574d0288d701a691d5f3823fde411</td>
+       <td>CVE-2023-33185</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Django-SES is a drop-in mail backend for Django. The django_ses library implements a mail backend for Django using AWS Simple Email Service. The library exports the `SESEventWebhookView class` intended to receive signed requests from AWS to handle email bounces, subscriptions, etc. These requests are signed by AWS and are verified by django_ses, however the verification of this signature was found to be flawed as it allowed users to specify arbitrary public certificates. This issue was patched in version 3.5.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33185">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>324e7fd277995d458d88a682ae972e44</td>
+       <td>CVE-2023-2879</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>GDSDB infinite loop in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via packet injection or crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2879">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c74bed8ab7f5c7068910506caa87de23</td>
+       <td>CVE-2023-2858</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>NetScaler file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2858">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f371095cd00f355b64d68dc37da463f4</td>
+       <td>CVE-2023-2857</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>BLF file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2857">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>112dd0bf393b4dd0e5fbc22fa4f9376a</td>
+       <td>CVE-2023-2856</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>VMS TCPIPtrace file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2856">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>230d35f0a88a8738f20ef00881ae3ccd</td>
+       <td>CVE-2023-2855</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Candump log parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2855">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8577346587476d972901b550643609d9</td>
+       <td>CVE-2023-2854</td>
+       <td>2023-05-26 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>BLF file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2854">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dd7f6dab4d4b8ffcacb496ca3652974a</td>
        <td>CVE-2023-32074</td>
        <td>2023-05-25 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-05-24 23:15:00</td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1601">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9396d74b2ebfafceca3a57934f4fa0a7</td>
-       <td>CVE-2023-33248</td>
-       <td>2023-05-24 22:15:00</td>
-       <td>Amazon Alexa software version 8960323972 on Echo Dot 2nd generation and 3rd generation devices potentially allows attackers to deliver security-relevant commands via an audio signal between 16 and 22 kHz (often outside the range of human adult hearing). Commands at these frequencies are essentially never spoken by authorized actors, but a substantial fraction of the commands are successful.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33248">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>52db4145d080928a7f18de87b0f0b594</td>
-       <td>CVE-2023-1158</td>
-       <td>2023-05-24 22:15:00</td>
-       <td>Hitachi Vantara Pentaho Business Analytics Server versions before 9.4.0.1 and 9.3.0.3, including 8.3.x expose dashboard prompts to users who are not part of the authorization list.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1158">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>52d59a1d77fe0009e6ba6711560438ed</td>
-       <td>CVE-2022-4815</td>
-       <td>2023-05-24 22:15:00</td>
-       <td>Hitachi Vantara Pentaho Business Analytics Server versions before 9.4.0.1 and 9.3.0.3, including 8.3.x deserialize untrusted JSON data without constraining the parser to approved classes and methods.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d4e11b774e5b25a83bd599768d18d55</td>
-       <td>CVE-2023-33829</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>A stored cross-site scripting (XSS) vulnerability in Cloudogu GmbH SCM Manager v1.2 to v1.60 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Description text field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33829">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17aed76053fb637d7cfcf0d7e82b71f1</td>
-       <td>CVE-2023-31458</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>A vulnerability in the Edge Gateway component of Mitel MiVoice Connect versions 19.3 SP2 (22.24.1500.0) and earlier could allow an unauthenticated attacker with internal network access to authenticate with administrative privileges, because initial installation does not enforce a password change. A successful exploit could allow an attacker to make arbitrary configuration changes and execute arbitrary commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31458">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4f68bf6b31c8f6a3be5154523a24aab</td>
-       <td>CVE-2023-29721</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>SofaWiki <= 3.8.9 has a file upload vulnerability that leads to command execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29721">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e0e1aad9909dabca88e18473c531c76e</td>
-       <td>CVE-2023-25599</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>A vulnerability in the conferencing component of Mitel MiVoice Connect through 19.3 SP2 and 20.x, 21.x, and 22.x through 22.24.1500.0 could allow an unauthenticated attacker to conduct a reflected cross-site scripting (XSS) attack due to insufficient validation for the test_presenter.php page. A successful exploit could allow an attacker to execute arbitrary scripts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5868761d63a37d27da57d4e5696a857e</td>
-       <td>CVE-2022-41221</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>The client in OpenText Archive Center Administration through 21.2 allows XXE attacks. Authenticated users of the OpenText Archive Center Administration client (Versions 16.2.3, 21.2, and older versions) could upload XML files to the application that it did not sufficiently validate. As a result, attackers could craft XML files that, when processed by the application, would cause a negative security impact such as data exfiltration or localized denial of service against the application instance and system of the user running it.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41221">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9db87d8474dc738c5932e63e3250a66</td>
-       <td>CVE-2022-30025</td>
-       <td>2023-05-24 21:15:00</td>
-       <td>SQL injection in "/Framewrk/Home.jsp" file (POST method) in tCredence Analytics iDEAL Wealth and Funds - 1.0 iallows authenticated remote attackers to inject payload via "v" parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a4717227648241049f409400da50a5a</td>
-       <td>CVE-2023-33800</td>
-       <td>2023-05-24 20:15:00</td>
-       <td>A stored cross-site scripting (XSS) vulnerability in the Create Regions (/dcim/regions/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33800">详情</a></td>
       </tr>
 
      </tbody>
@@ -1692,6 +1692,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ebc7af9a3537dc4d00c123f515300bab</td>
+       <td>CVE-2023-1835</td>
+       <td>2023-05-26 20:31:12 <img src="imgs/new.gif" /></td>
+       <td>NINJAFORMS NINJA_FORMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dcd32b6ce4f64de19f382a6f9da1b485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a9c54b31cd27526a4bc0734c327ded13</td>
+       <td>CVE-2023-20930</td>
+       <td>2023-05-26 20:31:05 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4273d2c9a22c4cf0a655cc9b2a31b252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5c95ae783a7462d585c1fbb3011dc2eb</td>
+       <td>CVE-2023-21103</td>
+       <td>2023-05-26 20:30:58 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c27b46071d29469bb98274421d8d26c1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>508230a6db645e1ad3c89bb7731b8beb</td>
+       <td>CVE-2023-0233</td>
+       <td>2023-05-26 20:30:51 <img src="imgs/new.gif" /></td>
+       <td>ACTIVECAMPAIGN ACTIVECAMPAIGN Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=41474e08c3984df9a9b2d54d385a6010">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b825d469b39ff5ae81a8245046568d4</td>
+       <td>CVE-2023-21106</td>
+       <td>2023-05-26 20:30:44 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d467f00281514e8f977dc82ac6a6b9b6">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>70583eba42d95a239cae597c5c1dfd96</td>
+       <td>CVE-2023-21102</td>
+       <td>2023-05-26 20:30:37 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6b72327f9bfd4905abef930d90d5372a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a93aa2d12404fc75238df38f7f9823d</td>
+       <td>CVE-2023-21110</td>
+       <td>2023-05-26 20:30:30 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c6dbe3817d3f4384b7222f561edfaef5">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a45797fb3bfd4a17ef9f9827d55f57c7</td>
+       <td>CVE-2023-21109</td>
+       <td>2023-05-26 20:30:23 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=febc5ea0765c475282261c512f927224">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44919add89c9558b16d6602d623c8c3f</td>
+       <td>CVE-2020-13377</td>
+       <td>2023-05-26 20:30:16 <img src="imgs/new.gif" /></td>
+       <td>LOADBALANCER ENTERPRISE_VA_MAX Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=62e7efe95a7e4f2aa5431fbb3c042d6a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>15ded630a765b78ef4bc9b2ea4d6ca01</td>
+       <td>CVE-2023-21112</td>
+       <td>2023-05-26 20:30:09 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=02b0f46153174b7f9fcb4793e3baa318">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a437b270afb8b93fabded92fc77639a1</td>
        <td>CVE-2023-2730</td>
        <td>2023-05-25 20:35:30 <img src="imgs/new.gif" /></td>
@@ -1851,86 +1931,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=31e8db97426c468f82dc14f22382095f">详情</a></td>
       </tr>
 
-      <tr>
-       <td>b369e896b5d39db45c6607d350bb1f03</td>
-       <td>CVE-2023-23573</td>
-       <td>2023-05-22 20:31:13</td>
-       <td>INTEL UNITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c331a576fc974f00bee8f19865386991">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>108d1d15aea3dde21930b96fb3234112</td>
-       <td>CVE-2023-25179</td>
-       <td>2023-05-22 20:31:06</td>
-       <td>INTEL UNITE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=911c3cddf5ec425da22dbc0ce30cf52b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8bbb57c2139e222b12a60d777597eb2c</td>
-       <td>CVE-2023-2457</td>
-       <td>2023-05-22 20:31:02</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0336db7895dc40d2b145f0ee45143248">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2beaa85d78ca5eb96e63e7e604266231</td>
-       <td>CVE-2023-2630</td>
-       <td>2023-05-22 20:30:47</td>
-       <td>PIMCORE PIMCORE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=40a4cf1fd45a453eaf3423e2530ff75e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afb99407e8812ecf8b8b8b016190db52</td>
-       <td>CVE-2022-21239</td>
-       <td>2023-05-21 20:24:39</td>
-       <td>INTEL QUICKASSIST_TECHNOLOGY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c3199979b9e147529877b62440370e7b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0efa2428f044a317e28d4d87d9a8e697</td>
-       <td>CVE-2022-33894</td>
-       <td>2023-05-21 20:24:31</td>
-       <td>INTEL Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=025cd1b0599940628b3c62cc9b04fe4c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e1cf7dbd24cdc37151c8f100b49029e</td>
-       <td>CVE-2022-38087</td>
-       <td>2023-05-21 20:24:24</td>
-       <td>INTEL Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=68b7f60fb8754a45b474cdf3c8636ca9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>efc0d4b41f237316602f4293ba60b794</td>
-       <td>CVE-2022-21162</td>
-       <td>2023-05-21 20:24:18</td>
-       <td>INTEL NUC_HDMI_FIRMWARE_UPDATE_TOOL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f05eec88ce634a14817c997535de0159">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e58fb64acd6b207816a58f0f808c0ee5</td>
-       <td>CVE-2022-40972</td>
-       <td>2023-05-21 20:24:11</td>
-       <td>INTEL QUICKASSIST_TECHNOLOGY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4174e3881cd141adb04c654a372a122e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eeb95a332d9f134471445da7fe9d2f38</td>
-       <td>CVE-2022-32582</td>
-       <td>2023-05-21 20:24:04</td>
-       <td>INTEL Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=692068f29b5646068baac261e4b855c5">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1947,6 +1947,126 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>4e50d1494609101179d5f120edcb5a99</td>
+       <td>CVE-2023-21040</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca21e1b99a8b010a8dc9f428cf5b7353</td>
+       <td>CVE-2023-21033</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d72244c24448f8d25540406c0b8da027</td>
+       <td>CVE-2023-21027</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa1071658c2085f7493297779a51da9a</td>
+       <td>CVE-2023-21020</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>601ab48376dd0cdc01ff7606331a69d0</td>
+       <td>CVE-2023-21014</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4a74fff17b8147e9de117a912a6daca</td>
+       <td>CVE-2023-21008</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79696">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>099826cd5f4d86b20800eac0b668c56a</td>
+       <td>CVE-2023-21002</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79695">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>887a345818762f946ddf9393c05eccf6</td>
+       <td>CVE-2023-21046</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79694">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>115f9f0081d43abbe2a93ed68d458ec5</td>
+       <td>CVE-2023-21052</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79693">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>64a8e220916e6e385d33a2716b39dece</td>
+       <td>CVE-2023-21058</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79692">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6cda564c57ed2d50163c33bc3744d019</td>
+       <td>CVE-2023-1631</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>IObit Malware Fighter拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79691">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bf5cbefe08b908e6d515c8afc542cbb</td>
+       <td>CVE-2023-21078</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79690">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a0a21f8100a8ef35ea837f84c12eca12</td>
+       <td>CVE-2023-21071</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79689">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d039c29ed1c4458c9243aa3c6178cc2</td>
+       <td>CVE-2023-21064</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Google Android Kernel越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79688">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>514f4d41b8f606815e4921184086537d</td>
+       <td>CVE-2022-39043</td>
+       <td>2023-05-26 23:34:37 <img src="imgs/new.gif" /></td>
+       <td>Juiker信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79687">详情</a></td>
+      </tr>
+
       <tr>
        <td>400cdd2ae0745ca845bb340a658603ec</td>
        <td>CVE-2023-1451</td>
@@ -2067,126 +2187,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79652">详情</a></td>
       </tr>
 
-      <tr>
-       <td>74790e9fd8ba10e266da761208b71260</td>
-       <td>CVE-2023-1288</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Dassault Systèmes ENOVIA Live Collaboration V6R2013xE XML外部实体注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85fd323b54a7085a68c55e013b0c5d40</td>
-       <td>CVE-2023-1344</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>WordPress RapidLoad Power-Up for Autoptimize Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79620">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bef05034c7868bf71a0a74c1a12c8cee</td>
-       <td>CVE-2022-37939</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Hewlett Packard Enterprise Superdome Flex Server信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79619">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>068da297e358396c503d8249ec670773</td>
-       <td>CVE-2022-47460</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>UNISOC Chipsets内存破坏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79618">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2dbe459791df268e7aa8ef78560de6cc</td>
-       <td>CVE-2022-47454</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>UNISOC Chipsets整数溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79617">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be612047befe5aa2ed97605de0e91cfc</td>
-       <td>CVE-2022-47480</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>UNISOC Chipsets授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79616">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3089cba425c9c74eb35bdc558c4f1a86</td>
-       <td>CVE-2022-47474</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>UNISOC Chipsets授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79615">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad1630fed054a6c466402130e65be3bd</td>
-       <td>CVE-2023-27577</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Flarum路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79614">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5f44559f1b133115b033856990dd0ba</td>
-       <td>CVE-2023-25143</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Trend Micro Apex One不受控制的搜索路径元素漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79613">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c41fde9c3f1fe9295dd654daab6bf764</td>
-       <td>CVE-2023-27903</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Jenkins和LTS授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79612">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e710fa7ae20eb7bdc037dd99e63c0b19</td>
-       <td>CVE-2023-23328</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>iFAX AvantFAX任意文件上传漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f3ba3e8e3e13fd429f0c8aa0137532e</td>
-       <td>CVE-2022-2258</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Octopus Deploy授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79610">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8bd2dcba2890da0b5b41b22fa15c878c</td>
-       <td>CVE-2022-4652</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>WordPress Video Background Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79609">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>704e806083df76ea90094e80d1f12c49</td>
-       <td>CVE-2023-0219</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>WordPress FluentSMTP Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79608">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f42408e962b4aa265b2e5b803633cee</td>
-       <td>CVE-2023-27010</td>
-       <td>2023-05-24 23:34:49</td>
-       <td>Wondershare Dr.Fone权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79607">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2203,6 +2203,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>71e74c3d75be97395afcf291bb63825a</td>
+       <td>CVE-2023-31584</td>
+       <td>2023-05-22 19:15:10 </td>
+       <td>GitHub repository cu/silicon commit a9ef36 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the User Input field.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31584">详情</a></td>
+      </tr>
+
       <tr>
        <td>2e5f495e11384dfb591e7f337109561f</td>
        <td>CVE-2023-33288</td>
@@ -2260,11 +2268,27 @@
       </tr>
 
       <tr>
+       <td>94d465c7c578c38eb191e7d8dab1bc04</td>
+       <td>CVE-2023-31597</td>
+       <td>2023-05-18 18:15:10 </td>
+       <td>An issue in Zammad v5.4.0 allows attackers to bypass e-mail verification using an arbitrary address and manipulate the data of the generated user. Attackers are also able to gain unauthorized access to existing tickets.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31597">详情</a></td>
+      </tr>
+
+      <tr>
        <td>81f602809d2c81804bb5ca1a8e30bad6</td>
        <td>CVE-2023-33204</td>
        <td>2023-05-18 08:15:08 </td>
        <td>sysstat through 12.7.2 allows a multiplication integer overflow in check_overflow in common.c. NOTE: this issue exists because of an incomplete fix for CVE-2022-39377.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33204">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5abd1d58d25ae704660f1b8ab4062768</td>
+       <td>CVE-2023-31544</td>
+       <td>2023-05-16 21:15:09 </td>
+       <td>A stored cross-site scripting (XSS) vulnerability in alkacon-OpenCMS v11.0.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Title field under the Upload Image module.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31544">详情</a></td>
       </tr>
 
       <tr>
@@ -2396,51 +2420,27 @@
       </tr>
 
       <tr>
-       <td>57291922d8357fe81e6a90c163b05565</td>
-       <td>CVE-2023-32314</td>
-       <td>2023-05-15 20:15:09 </td>
-       <td>vm2 is a sandbox that can run untrusted code with Node's built-in modules. A sandbox escape vulnerability exists in vm2 for versions up to and including 3.9.17. It abuses an unexpected creation of a host object based on the specification of `Proxy`. As a result a threat actor can bypass the sandbox protections to gain remote code execution rights on the host running the sandbox. This vulnerability was patched in the release of version `3.9.18` of `vm2`. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32314">详情</a></td>
+       <td>a0d49b79cda2ea2aabae5aaf67888926</td>
+       <td>CVE-2023-31587</td>
+       <td>2023-05-16 15:15:09 </td>
+       <td>Tenda AC5 router V15.03.06.28 was discovered to contain a remote code execution (RCE) vulnerability via the Mac parameter at ip/goform/WriteFacMac.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31587">详情</a></td>
       </tr>
 
       <tr>
-       <td>66bf06d989e3382c08618585d9b671cc</td>
-       <td>CVE-2023-32313</td>
-       <td>2023-05-15 20:15:09 </td>
-       <td>vm2 is a sandbox that can run untrusted code with Node's built-in modules. In versions 3.9.17 and lower of vm2 it was possible to get a read-write reference to the node `inspect` method and edit options for `console.log`. As a result a threat actor can edit options for the `console.log` command. This vulnerability was patched in the release of version `3.9.18` of `vm2`. Users are advised to upgrade. Users unable to upgrade may make the `inspect` method readonly with `vm.readonly(inspect)` after creating a vm.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32313">详情</a></td>
+       <td>8a9c76779bfd0b8f7ad8ee2fe0b0eb52</td>
+       <td>CVE-2023-31576</td>
+       <td>2023-05-16 14:15:09 </td>
+       <td>An arbitrary file upload vulnerability in Serendipity 2.4-beta1 allows attackers to execute arbitrary code via a crafted HTML or Javascript file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31576">详情</a></td>
       </tr>
 
       <tr>
-       <td>869fff0842bb53754117e0db01926c88</td>
-       <td>CVE-2023-32787</td>
-       <td>2023-05-15 15:15:12 </td>
-       <td>The OPC UA Legacy Java Stack before 6f176f2 enables an attacker to block OPC UA server applications via uncontrolled resource consumption so that they can no longer serve client applications.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32787">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0df1e7bcd84df1333f5e259ae3c76b27</td>
-       <td>CVE-2023-31986</td>
-       <td>2023-05-15 12:15:09 </td>
-       <td>A Command Injection vulnerability in Edimax Wireless Router N300 Firmware BR-6428NS_v4 allows attacker to execute arbitrary code via the setWAN function in /bin/webs without any limitations.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31986">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>82bc8d28d933d5e934dd5e2e3352abbd</td>
-       <td>CVE-2023-32306</td>
-       <td>2023-05-12 19:15:09 </td>
-       <td>Time Tracker is an open source time tracking system. A time-based blind injection vulnerability existed in Time Tracker reports in versions prior to 1.22.13.5792. This was happening because the `reports.php` page was not validating all parameters in POST requests. Because some parameters were not checked, it was possible to craft POST requests with malicious SQL for Time Tracker database. This issue is fixed in version 1.22.13.5792. As a workaround, use the fixed code in `ttReportHelper.class.php` from version 1.22.13.5792.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32306">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b935939254d36a51e8d8f90d09b9702</td>
-       <td>CVE-2023-32305</td>
-       <td>2023-05-12 19:15:08 </td>
-       <td>aiven-extras is a PostgreSQL extension. Versions prior to 1.1.9 contain a privilege escalation vulnerability, allowing elevation to superuser inside PostgreSQL databases that use the aiven-extras package. The vulnerability leverages missing schema qualifiers on privileged functions called by the aiven-extras extension. A low privileged user can create objects that collide with existing function names, which will then be executed instead. Exploiting this vulnerability could allow a low privileged user to acquire `superuser` privileges, which would allow full, unrestricted access to all data and database functions. And could lead to arbitrary code execution or data access on the underlying host as the `postgres` user. The issue has been patched as of version 1.1.9.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32305">详情</a></td>
+       <td>a18883366462731a09392c3e3d0597e5</td>
+       <td>CVE-2023-31572</td>
+       <td>2023-05-16 14:15:09 </td>
+       <td>An issue in Bludit 4.0.0-rc-2 allows authenticated attackers to change the Administrator password and escalate privileges via a crafted request.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31572">详情</a></td>
       </tr>
 
      </tbody>
