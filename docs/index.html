@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-06-11 05:35:09 -->
+<!-- RELEASE TIME : 2023-06-11 23:35:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fad055334e8a653870215a0b9d996752</td>
+       <td>CVE-2023-25912</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The webreport generation feature in the Danfoss AK-EM100 allows an unauthorized actor to generate a web report that discloses sensitive information such as the internal IP address, usernames and internal device values.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25912">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cc4ae2d155bc389929b83f32faf024cb</td>
+       <td>CVE-2023-25911</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 web applications allow for OS command injection through the web application parameters.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3985d933c483d086dafe8eb74f5f8a47</td>
+       <td>CVE-2023-22586</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 web applications allow for Local File Inclusion in the file parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22586">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a36fa0a20eb42d37cd86af63e4f793b7</td>
+       <td>CVE-2023-22585</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 web applications allow for Reflected Cross-Site Scripting in the title parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f56f8d12f9b7034da7a8d01f1b929f5</td>
+       <td>CVE-2023-22584</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 stores login credentials in cleartext.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ee8472bca889340aa99fb1ce845f752</td>
+       <td>CVE-2023-22583</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 web forms allow for SQL injection in the login forms.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22583">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>741b9ebb3912184e6bb0defce0307ca7</td>
+       <td>CVE-2023-22582</td>
+       <td>2023-06-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Danfoss AK-EM100 web applications allow for Reflected Cross-Site Scripting.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5605c4e25d74446624995db01f42b40c</td>
+       <td>CVE-2023-3192</td>
+       <td>2023-06-11 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>Session Fixation in GitHub repository froxlor/froxlor prior to 2.1.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3192">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ae25d78f1c1141b075c7a0556193e360</td>
        <td>CVE-2023-3191</td>
        <td>2023-06-10 09:15:00 <img src="imgs/new.gif" /></td>
@@ -457,70 +521,6 @@
        <td>2023-06-08 21:15:00</td>
        <td>The go command may execute arbitrary code at build time when using cgo. This may occur when running "go get" on a malicious module, or when running any other command which builds untrusted code. This is can by triggered by linker flags, specified via a "#cgo LDFLAGS" directive. The arguments for a number of flags which are non-optional are incorrectly considered optional, allowing disallowed flags to be smuggled through the LDFLAGS sanitization. This affects usage of both the gc and gccgo compilers.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29404">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99b9ca69e499a7a13685904c9d8e25fb</td>
-       <td>CVE-2023-29403</td>
-       <td>2023-06-08 21:15:00</td>
-       <td>On Unix platforms, the Go runtime does not behave differently when a binary is run with the setuid/setgid bits. This can be dangerous in certain cases, such as when dumping memory state, or assuming the status of standard i/o file descriptors. If a setuid/setgid binary is executed with standard I/O file descriptors closed, opening any files can result in unexpected content being read or written with elevated privileges. Similarly, if a setuid/setgid program is terminated, either via panic or signal, it may leak the contents of its registers.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29403">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3c54f1e6f4752770c2dbe52f6899bf6</td>
-       <td>CVE-2023-29402</td>
-       <td>2023-06-08 21:15:00</td>
-       <td>The go command may generate unexpected code at build time when using cgo. This may result in unexpected behavior when running a go program which uses cgo. This may occur when running an untrusted module which contains directories with newline characters in their names. Modules which are retrieved using the go command, i.e. via "go get", are not affected (modules retrieved using GOPATH-mode, i.e. GO111MODULE=off, may be affected).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29402">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>66d4d34d1dd85c873b2fa08e33b04dee</td>
-       <td>CVE-2023-29401</td>
-       <td>2023-06-08 21:15:00</td>
-       <td>The filename parameter of the Context.FileAttachment function is not properly sanitized. A maliciously crafted filename can cause the Content-Disposition header to be sent with an unexpected filename value or otherwise modify the Content-Disposition header. For example, a filename of "setup.bat&quot;;x=.txt" will be sent as a file named "setup.bat". If the FileAttachment function is called with names provided by an untrusted source, this may permit an attacker to cause a file to be served with a name different than provided. Maliciously crafted attachment file name can modify the Content-Disposition header.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29401">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>78afabc17534d895204acbdecf1ff28f</td>
-       <td>CVE-2023-33849</td>
-       <td>2023-06-07 22:15:00</td>
-       <td>IBM TXSeries for Multiplatforms 8.1, 8.2, 9.1, CICS TX Standard, 11.1, CICS TX Advanced 10.1, and 11.1 could transmit sensitive information in query parameters that could be intercepted using man in the middle techniques.  IBM X-Force ID:  257105.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33849">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>936f691a2366ea5432a3d24c8c496703</td>
-       <td>CVE-2023-31200</td>
-       <td>2023-06-07 22:15:00</td>
-       <td>PTC Vuforia Studio does not require a token; this could allow an attacker with local access to perform a cross-site request forgery attack or a replay attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31200">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4367bc6419569bb2f930ee4749f2f822</td>
-       <td>CVE-2023-29502</td>
-       <td>2023-06-07 22:15:00</td>
-       <td>Before importing a project into Vuforia, a user could modify the “resourceDirectory” attribute in the appConfig.json file to be a different path.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6e34315f7b5c4e393838db1dcda2845f</td>
-       <td>CVE-2023-29168</td>
-       <td>2023-06-07 22:15:00</td>
-       <td>The local Vuforia web application does not support HTTPS, and federated credentials are passed via basic authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f46a6aa3ae66d76dca8cd5ec27d73cd1</td>
-       <td>CVE-2023-29152</td>
-       <td>2023-06-07 22:15:00</td>
-       <td>By changing the filename parameter in the request, an attacker could delete any file with the permissions of the Vuforia server account.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29152">详情</a></td>
       </tr>
 
      </tbody>
@@ -1692,6 +1692,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7aacea03d78c7032f577c49fe907741a</td>
+       <td>CVE-2023-20723</td>
+       <td>2023-06-11 20:29:44 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=956749804fc44276a3f1f55d9769f75e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2f4f877f9ff0e5cc6af555978d00f9f</td>
+       <td>CVE-2023-0616</td>
+       <td>2023-06-11 20:28:37 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA THUNDERBIRD Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=222b7b700e934d7887bb922b41ce4009">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7b39eecfbb12c438d15bd5fd4c7268d</td>
+       <td>CVE-2023-1945</td>
+       <td>2023-06-11 20:28:30 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c3df5b943db74d7b88f933e4531f25ea">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e2e24a330c272086f8142772db6f705</td>
+       <td>CVE-2023-23597</td>
+       <td>2023-06-11 20:28:23 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA FIREFOX Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1e41449f12bd4f5b81951ba100431a05">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9b6733dc647d8a77f5981113af168f2</td>
+       <td>CVE-2023-20724</td>
+       <td>2023-06-11 20:28:17 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c611bfe365dd42b2ab325c016459cf4c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38646a44197cc65c653e55686d1f559f</td>
+       <td>CVE-2023-23600</td>
+       <td>2023-06-11 20:28:10 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA FIREFOX Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=14e5fbde25bd4fdba8308d82bfc92475">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ca7e0e1e32f290bdc362ebe5d086e23</td>
+       <td>CVE-2023-23601</td>
+       <td>2023-06-11 20:28:02 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d1e4ef8540494ce4bbeb9df8fbadd260">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1b2ff2c65414c6449ab301e28bbdfb2c</td>
+       <td>CVE-2023-23598</td>
+       <td>2023-06-11 20:27:55 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c8011b6bdda944a1b69d9b291a01be66">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2fdf3e9570e23d9a094b3f072fb063a</td>
+       <td>CVE-2023-23603</td>
+       <td>2023-06-11 20:27:48 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6369ab36e74f41d8af5019f84f884470">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8130a422168635fa481414f2b8ccee7</td>
+       <td>CVE-2023-23604</td>
+       <td>2023-06-11 20:27:41 <img src="imgs/new.gif" /></td>
+       <td>MOZILLA FIREFOX Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d4d04b0eb65549bfb9ea0669b574fa47">详情</a></td>
+      </tr>
+
+      <tr>
        <td>319d0928651b037074cc176f76ed5312</td>
        <td>CVE-2023-32708</td>
        <td>2023-06-10 20:22:52 <img src="imgs/new.gif" /></td>
@@ -1849,86 +1929,6 @@
        <td>2023-06-06 20:26:18</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5c3e1b1fab544859a137d2aeb6d6ea5d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ada53e451090a77edb890d7e46142ae5</td>
-       <td>CVE-2023-2935</td>
-       <td>2023-06-06 20:26:05</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f6c7676aaac40fda19b0e84a85f1fb1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d54bb51c8b3472e49675f602a9496770</td>
-       <td>CVE-2023-2938</td>
-       <td>2023-06-06 20:25:44</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8c80bff9de2f4010af9c22d48cbcae94">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>64dffc63871e586a2211988ba4121f94</td>
-       <td>CVE-2023-34221</td>
-       <td>2023-06-05 20:30:46</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6a86f395640843308b704cb0a748afb8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>970cb4435be89470923828c0614ee0cf</td>
-       <td>CVE-2023-34222</td>
-       <td>2023-06-05 20:30:38</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7f635b6d3b534e709f861b0978d53f8b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2b052ad3f33d913c375d090e8b34d79</td>
-       <td>CVE-2023-34219</td>
-       <td>2023-06-05 20:30:32</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ed51f07e1645428897064859f0813edd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74e8ddea6e9f06174a9d2acbe14a41fb</td>
-       <td>CVE-2023-34220</td>
-       <td>2023-06-05 20:30:27</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=80eecf834e7a4fe3848b6eb345f8a9f3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72a1ef616e4167f365c3c5d6f741f435</td>
-       <td>CVE-2023-34225</td>
-       <td>2023-06-05 20:30:19</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f3fa1317734f42c990be4bfdc5e1d0d2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af56c78ab768097a3e90745b32c65ed0</td>
-       <td>CVE-2023-34223</td>
-       <td>2023-06-05 20:30:11</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bfbc080197224c878eef97d47e585e8b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ccba10ab0902ee1d53007b3027fbfa1</td>
-       <td>CVE-2023-34224</td>
-       <td>2023-06-05 20:30:04</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0686806f38f14749aa9ac365d609aa72">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73aa24f2e18c0e5157a1fbbbae5fedc1</td>
-       <td>CVE-2023-2939</td>
-       <td>2023-06-05 20:29:56</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1217d86e4c7f42179777cd529cbb92cc">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,38 @@
       </tr>
 
       <tr>
+       <td>5c9c3365023f60e9b208bd96d84226b6</td>
+       <td>CVE-2023-33675</td>
+       <td>2023-06-02 20:15:09 </td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the time parameter in the get_parentControl_list_Info function.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33675">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab694708a475a008b663645cb348c104</td>
+       <td>CVE-2023-33673</td>
+       <td>2023-06-02 20:15:09 </td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the firewallEn parameter in the formSetFirewallCfg function.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33673">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>736a9f8558ff484946eef701a2b4df48</td>
+       <td>CVE-2023-33672</td>
+       <td>2023-06-02 20:15:09 </td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the shareSpeed parameter in the fromSetWifiGusetBasic function.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f24d2fb3d25438061b494842b3f8bcc</td>
+       <td>CVE-2023-33671</td>
+       <td>2023-06-02 20:15:09 </td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the deviceId parameter in the saveParentControlInfo function.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33671">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fe2af667575adc87edd8ef1095c7e2c0</td>
        <td>CVE-2023-32215</td>
        <td>2023-06-02 17:15:13 </td>
@@ -2324,6 +2356,14 @@
       </tr>
 
       <tr>
+       <td>7a84e3febc4674edbc4d4b91f15dbb94</td>
+       <td>CVE-2023-33717</td>
+       <td>2023-06-02 12:15:09 </td>
+       <td>mp4v2 v2.1.3 was discovered to contain a memory leak when a method calling MP4File::ReadBytes() had allocated memory but did not catch exceptions thrown by ReadBytes()</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33717">详情</a></td>
+      </tr>
+
+      <tr>
        <td>feee157c06312df13df1f98725df66ba</td>
        <td>CVE-2023-30604</td>
        <td>2023-06-02 11:15:10 </td>
@@ -2380,67 +2420,27 @@
       </tr>
 
       <tr>
+       <td>c9c271e73e09bd0d63a8a23340c53fc6</td>
+       <td>CVE-2023-33719</td>
+       <td>2023-06-01 03:15:20 </td>
+       <td>mp4v2 v2.1.3 was discovered to contain a memory leak via MP4SdpAtom::Read() at atom_sdp.cpp</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33719">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>353d6f120ad1d9010fd3d46a03f7a8d7</td>
+       <td>CVE-2023-33716</td>
+       <td>2023-06-01 03:15:20 </td>
+       <td>mp4v2 v2.1.3 was discovered to contain a memory leak via the class MP4StringProperty at mp4property.cpp.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33716">详情</a></td>
+      </tr>
+
+      <tr>
        <td>80719f19a44d076fa10eb4beb1c32295</td>
        <td>CVE-2023-33643</td>
        <td>2023-05-31 21:15:10 </td>
        <td>H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the AddWlanMacList interface at /goform/aspForm.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33643">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93ad5534aabed146d96536d63e8f2372</td>
-       <td>CVE-2023-33642</td>
-       <td>2023-05-31 21:15:10 </td>
-       <td>H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the Edit_BasicSSID interface at /goform/aspForm.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33642">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1c6fc14bbbe8ebd114070bcd7b69a25</td>
-       <td>CVE-2023-33641</td>
-       <td>2023-05-31 21:15:10 </td>
-       <td>H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the AddMacList interface at /goform/aspForm.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33641">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0efe14be3c489bc32cbd96d763592a7</td>
-       <td>CVE-2023-34256</td>
-       <td>2023-05-31 20:15:10 </td>
-       <td>** DISPUTED ** An issue was discovered in the Linux kernel before 6.3.3. There is an out-of-bounds read in crc16 in lib/crc16.c when called from fs/ext4/super.c because ext4_group_desc_csum does not properly check an offset. NOTE: this is disputed by third parties because the kernel is not intended to defend against attackers with the stated &quot;When modifying the block device while it is mounted by the filesystem&quot; access.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-34256">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6cfd5c82ec19733f9ad8eb9f267779dd</td>
-       <td>CVE-2023-34258</td>
-       <td>2023-05-31 20:15:10 </td>
-       <td>An issue was discovered in BMC Patrol before 22.1.00. The agent's configuration can be remotely queried. This configuration contains the Patrol account password, encrypted with a default AES key. This account can then be used to achieve remote code execution.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-34258">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee216222e232edc981e5fadd2c89f77d</td>
-       <td>CVE-2023-34257</td>
-       <td>2023-05-31 20:15:10 </td>
-       <td>** DISPUTED ** An issue was discovered in BMC Patrol through 23.1.00. The agent's configuration can be remotely modified (and, by default, authentication is not required). Some configuration fields related to SNMP (e.g., masterAgentName or masterAgentStartLine) result in code execution when the agent is restarted. NOTE: the vendor's perspective is &quot;These are not vulnerabilities for us as we have provided the option to implement the authentication.&quot;</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-34257">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b320e53a99d3d99437a47b2706edc5c3</td>
-       <td>CVE-2023-33735</td>
-       <td>2023-05-31 20:15:10 </td>
-       <td>D-Link DIR-846 v1.00A52 was discovered to contain a remote command execution (RCE) vulnerability via the tomography_ping_address parameter in the /HNAP1 interface.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>970383caec1241681ce79c1bf6fcd70c</td>
-       <td>CVE-2023-33732</td>
-       <td>2023-05-31 20:15:10 </td>
-       <td>Cross Site Scripting (XSS) in the New Policy form in Microworld Technologies eScan management console 14.0.1400.2281 allows a remote attacker to inject arbitrary code via the vulnerable parameters type, txtPolicyType, and Deletefileval.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33732">详情</a></td>
       </tr>
 
      </tbody>
