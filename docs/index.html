@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-07-29 05:37:23 -->
+<!-- RELEASE TIME : 2023-07-29 23:38:21 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>65b36d47b5c2ecd362c84c3b901143d2</td>
+       <td>CVE-2023-36542</td>
+       <td>2023-07-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Apache NiFi 0.0.2 through 1.22.0 include Processors and Controller Services that support HTTP URL references for retrieving drivers, which allows an authenticated and authorized user to configure a location that enables custom code execution. The resolution introduces a new Required Permission for referencing remote resources, restricting configuration of these components to privileged users. The permission prevents unprivileged users from configuring Processors and Controller Services annotated with the new Reference Remote Resources restriction. Upgrading to Apache NiFi 1.23.0 is the recommended mitigation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36542">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fbb119210a496e431299c322273a9136</td>
+       <td>CVE-2023-2314</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient data validation in DevTools in Google Chrome prior to 111.0.5563.64 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2314">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c0f27ade28f53c72a3fc7e334803985</td>
+       <td>CVE-2023-2313</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in Sandbox in Google Chrome on Windows prior to 112.0.5615.49 allowed a remote attacker who had compromised the renderer process to perform arbitrary read/write via a malicious file. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2313">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5a0211aff6fa9e98efb470befd9df01</td>
+       <td>CVE-2023-2311</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient policy enforcement in File System API in Google Chrome prior to 112.0.5615.49 allowed a remote attacker to bypass filesystem restrictions via a crafted HTML page. (Chromium security severity: Medium)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2311">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed4d3a05ecbb0f3671335b822ffe7258</td>
+       <td>CVE-2022-4926</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient policy enforcement in Intents in Google Chrome on Android prior to 109.0.5414.119 allowed a remote attacker to bypass same origin policy via a crafted HTML page. (Chromium security severity: Medium)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4926">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae0b44482809c0099a168041e0196582</td>
+       <td>CVE-2022-4925</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient validation of untrusted input in QUIC in Google Chrome prior to 97.0.4692.71 allowed a remote attacker to perform header splitting via malicious network traffic. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4925">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2afa02ad4396f8e9e1097390be7ee30</td>
+       <td>CVE-2022-4924</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in WebRTC in Google Chrome prior to 97.0.4692.71 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4924">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0ba7fe028a09b7ae53524b656477779</td>
+       <td>CVE-2022-4923</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in Omnibox in Google Chrome prior to 99.0.4844.51 allowed an attacker in a privileged network position to perform a man-in-the-middle attack via malicious network traffic. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a383b2db5433ab09235d0fcfeb64d0e</td>
+       <td>CVE-2022-4922</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in Blink in Google Chrome prior to 99.0.4844.51 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4922">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd191456ea79aef6d90562df3cbcb03f</td>
+       <td>CVE-2022-4921</td>
+       <td>2023-07-29 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in Accessibility in Google Chrome prior to 99.0.4844.51 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4921">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c88c4dff504065aa991a028de1d4b0de</td>
        <td>CVE-2023-38988</td>
        <td>2023-07-28 21:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-07-27 20:15:00</td>
        <td>Directory traversal vulnerability in Jinfornet Jreport 15.6 allows unauthenticated attackers to gain sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-22623">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e99771d1c268292aab55598be0a5977</td>
-       <td>CVE-2023-3982</td>
-       <td>2023-07-27 19:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository omeka/omeka-s prior to 4.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3982">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f11c05cf21d55aac84ad8f221b3ba23a</td>
-       <td>CVE-2023-3981</td>
-       <td>2023-07-27 19:15:00</td>
-       <td>Server-Side Request Forgery (SSRF) in GitHub repository omeka/omeka-s prior to 4.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3981">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>446279eeb702070ad730f989381b6261</td>
-       <td>CVE-2023-3980</td>
-       <td>2023-07-27 19:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository omeka/omeka-s prior to 4.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3980">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dbda3b167811acf4c8b27c5458509eb9</td>
-       <td>CVE-2023-3451</td>
-       <td>2023-07-26 23:15:00</td>
-       <td>** REJECT ** Duplicate CVE. Please use CVE-2023-32297.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3451">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1917b7966b2cf695e99c442e342851b</td>
-       <td>CVE-2023-28013</td>
-       <td>2023-07-26 23:15:00</td>
-       <td>HCL BigFix Mobile is vulnerable to a cross-site scripting attack. An authenticated attacker could inject malicious scripts into the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28013">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c35c4edfe80974a768f445dce9ee8168</td>
-       <td>CVE-2023-38285</td>
-       <td>2023-07-26 21:15:00</td>
-       <td>Trustwave ModSecurity 3.x before 3.0.10 has Inefficient Algorithmic Complexity.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f3789884cd2b63c502bc65e663884883</td>
-       <td>CVE-2023-37732</td>
-       <td>2023-07-26 21:15:00</td>
-       <td>Yasm v1.3.0.78 was found prone to NULL Pointer Dereference in /libyasm/intnum.c and /elf/elf.c, which allows the attacker to cause a denial of service via a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5f7e57783dbac2d46c836ebe6e55312</td>
-       <td>CVE-2023-37692</td>
-       <td>2023-07-26 21:15:00</td>
-       <td>An arbitrary file upload vulnerability in October CMS v3.4.4 allows attackers to execute arbitrary code via a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37692">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98d94d4aff478adb328e3b402e167354</td>
-       <td>CVE-2023-32001</td>
-       <td>2023-07-26 21:15:00</td>
-       <td>libcurl can be told to save cookie, HSTS and/or alt-svc data to files. Whendoing this, it called `stat()` followed by `fopen()` in a way that made itvulnerable to a TOCTOU race condition problem.By exploiting this flaw, an attacker could trick the victim to create oroverwrite protected files holding this data in ways it was not intended to.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32001">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1b85b7924fbaa4f5de8dd97b4e797bf</td>
-       <td>CVE-2023-30367</td>
-       <td>2023-07-26 21:15:00</td>
-       <td>mRemoteNG configuration files can be stored in an encrypted state on disk. mRemoteNG version <= v1.76.20 and <= 1.77.3-dev loads configuration files in plain text into memory at application start-up, even if no connection has been established yet. This allows attackers to access contents of configuration files in plain text through a memory dump and thus compromise user credentials when no custom password encryption key has been set. This also bypasses the connection configuration file encryption setting by dumping already decrypted configurations from memory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30367">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4724b1e3be34aca22a9d40182a5d2368</td>
+       <td>CNNVD-202307-2168 (CVE-2023-33745)</td>
+       <td>2023-07-27 23:38:19</td>
+       <td>TeleAdapt RoomCast TA-2400 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>60a1a7c7e393604e79a6368c49a563ae</td>
+       <td>CNNVD-202307-2170 (CVE-2023-33744)</td>
+       <td>2023-07-27 23:38:17</td>
+       <td>TeleAdapt RoomCast TA-2400 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2170">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7329f8607d0e4e4a876f47c02b042617</td>
+       <td>CNNVD-202307-2171 (CVE-2023-33743)</td>
+       <td>2023-07-27 23:37:16</td>
+       <td>TeleAdapt RoomCast TA-2400 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5095924c7b8574a6d1f1994583a2a060</td>
+       <td>CNNVD-202307-2172 (CVE-2020-22623)</td>
+       <td>2023-07-27 23:37:14</td>
+       <td>Jinfornet Jreport 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2e0f62918e232c26b18ab18e801d9928</td>
+       <td>CNNVD-202307-2173 (CVE-2023-33742)</td>
+       <td>2023-07-27 23:37:12</td>
+       <td>TeleAdapt RoomCast TA-2400 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44a08506e1e39ed7a866b68f9aec8b98</td>
+       <td>CNNVD-202307-2178 (CVE-2022-43703)</td>
+       <td>2023-07-27 23:35:05</td>
+       <td>ARM Compiler 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-2178">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2f88052104db9049548c10e5cae2fa52</td>
        <td>CNNVD-202307-2174 (CVE-2023-23764)</td>
        <td>2023-07-27 05:37:14</td>
@@ -985,54 +1033,6 @@
        <td>2023-07-18 23:35:00</td>
        <td>Google Chrome 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1647">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43a2fb4730078099d030bd0f82e1e7e7</td>
-       <td>CNNVD-202307-1474 (CVE-2023-38430)</td>
-       <td>2023-07-17 23:38:19</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1474">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e5ca1645f918d40b34feb1a9f4e861a</td>
-       <td>CNNVD-202307-1476 (CVE-2023-37770)</td>
-       <td>2023-07-17 23:38:14</td>
-       <td>Faust 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1476">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1bb46e8be3f4408b3a8a7c8308cf31ed</td>
-       <td>CNNVD-202307-1477 (CVE-2023-38409)</td>
-       <td>2023-07-17 23:38:11</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1477">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87c51afaaf13d9f684f3daf9e475408a</td>
-       <td>CNNVD-202307-1478 (CVE-2023-38428)</td>
-       <td>2023-07-17 23:38:09</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1478">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f3efb859833ad8f3e243fd68836ba02f</td>
-       <td>CNNVD-202307-1484 (CVE-2023-38432)</td>
-       <td>2023-07-17 23:34:55</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1484">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ad64f58a9ea88093813b0a2a4a58c58</td>
-       <td>CNNVD-202307-1479 (CVE-2023-37476)</td>
-       <td>2023-07-17 05:36:05</td>
-       <td>OpenRefine 路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1479">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4d993fc67a01cc8cc57f059f77f4a11b</td>
+       <td>CVE-2023-3821</td>
+       <td>2023-07-29 20:38:16 <img src="imgs/new.gif" /></td>
+       <td>PIMCORE PIMCORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bee2c1fe39f24e20a311140ac4f32a22">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c6f63a10882109469523bf733ecf097c</td>
+       <td>CVE-2023-32482</td>
+       <td>2023-07-29 20:38:08 <img src="imgs/new.gif" /></td>
+       <td>DELL WYSE_MANAGEMENT_SUITE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=86dc071722ea4465be3632fef2b27773">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89c2e278b6b9a0cc16c32184621ada97</td>
+       <td>CVE-2023-37650</td>
+       <td>2023-07-29 20:38:01 <img src="imgs/new.gif" /></td>
+       <td>AGENTEJO COCKPIT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=57c84e0e3ef3423998a18608c4893341">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1e65a7345aa1ddc697302ea56172e61</td>
+       <td>CVE-2023-3820</td>
+       <td>2023-07-29 20:37:53 <img src="imgs/new.gif" /></td>
+       <td>PIMCORE PIMCORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4f00e9591da547ccb67f61f489c22f67">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96f13086c60826603348c0c3870d21db</td>
+       <td>CVE-2023-3819</td>
+       <td>2023-07-29 20:37:46 <img src="imgs/new.gif" /></td>
+       <td>PIMCORE PIMCORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=882c7409528e43cf8feca2c613da5efc">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8cee3630758386ef80df170feaa00c6d</td>
+       <td>CVE-2023-30906</td>
+       <td>2023-07-29 20:37:39 <img src="imgs/new.gif" /></td>
+       <td>HPE INTELLIGENT_PROVISIONING Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1e57d1b1e3044582b38e1409a8231e44">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c4b940a1dbb5d8602a002bd66a11b32</td>
+       <td>CVE-2023-32481</td>
+       <td>2023-07-29 20:37:31 <img src="imgs/new.gif" /></td>
+       <td>DELL WYSE_MANAGEMENT_SUITE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4339e890b0f64402942f3523165612db">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f21e470eaa0950d4e11983a61880123b</td>
+       <td>CVE-2023-3822</td>
+       <td>2023-07-29 20:37:24 <img src="imgs/new.gif" /></td>
+       <td>PIMCORE PIMCORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bee49a7861154bc39ac0732e9a83e73a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b64caf9a8e56f4d3eb5ce2e5b8f7b75</td>
+       <td>CVE-2023-37140</td>
+       <td>2023-07-29 20:37:16 <img src="imgs/new.gif" /></td>
+       <td>MICROSOFT CHAKRACORE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cf7fd04ae436475f8ac22c0dd68dc328">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11c3652962d274155d4933ec55fdf806</td>
+       <td>CVE-2023-37649</td>
+       <td>2023-07-29 20:37:09 <img src="imgs/new.gif" /></td>
+       <td>AGENTEJO COCKPIT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ec24eee94f5c49e087da103409e7e56d">详情</a></td>
+      </tr>
+
+      <tr>
        <td>49b3621bb476e9875374cc2132d16ad5</td>
        <td>CVE-2020-23911</td>
        <td>2023-07-28 20:54:57 <img src="imgs/new.gif" /></td>
@@ -1857,86 +1937,6 @@
        <td>2023-07-23 20:44:39</td>
        <td>APACHE AIRFLOW Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=282145f56e33480cbbf310f55c44e737">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d54832865b490034ce05483950ffcba1</td>
-       <td>CVE-2023-30428</td>
-       <td>2023-07-23 20:44:32</td>
-       <td>APACHE PULSAR Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=72b8575796224d6fb238f6b222d8a243">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8446eafbea191c2ceef27497f69ab302</td>
-       <td>CVE-2023-30429</td>
-       <td>2023-07-23 20:44:24</td>
-       <td>APACHE PULSAR Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ce6ae7f9eea45a8a21228eeaedee4ff">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d55eb85c3bcd2eb92ccbc0fbab2c651</td>
-       <td>CVE-2023-35908</td>
-       <td>2023-07-23 20:44:17</td>
-       <td>APACHE AIRFLOW Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=73ec8468201c4f1696d3bc1c2228909b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd4dd08d6bf7b88001e36953ac7e62cc</td>
-       <td>CVE-2023-38203</td>
-       <td>2023-07-23 20:44:10</td>
-       <td>ADOBE COLDFUSION Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d5598bcc37f14f1a9ad4f3af4285e67a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d68e8caea66bf752ed0eeabfa8b5034e</td>
-       <td>CVE-2023-36543</td>
-       <td>2023-07-23 20:44:02</td>
-       <td>APACHE AIRFLOW Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=837996020a024d549b7bb4afbb8aa4cc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d04a3c9bc7d40f7f24764ba676c979c</td>
-       <td>CVE-2023-38063</td>
-       <td>2023-07-23 20:43:54</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5b54e8dbfc0a43e4822cde97b5c760d2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59f604d329f955a2ed9df5e59c9fd55d</td>
-       <td>CVE-2023-22888</td>
-       <td>2023-07-23 20:43:47</td>
-       <td>APACHE AIRFLOW Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=745dea9da0314790af1f1681d1687049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2021a046da8cde0608cf7455cf89a849</td>
-       <td>CVE-2023-38064</td>
-       <td>2023-07-23 20:43:39</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e1a8a7f5c5c347a7b68bd30958f38a09">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36ce53b28772812996207e13d8d9e24e</td>
-       <td>CVE-2022-42009</td>
-       <td>2023-07-22 20:35:26</td>
-       <td>APACHE AMBARI Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=31e68c68eec749fb99500854c89f1f05">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>599cce187e8d6cf8e8d0a358f8894245</td>
-       <td>CVE-2021-43757</td>
-       <td>2023-07-22 20:35:18</td>
-       <td>Adobe Media Encoder 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f32ba579698a43e0a4e1d9f0d6f88610">详情</a></td>
       </tr>
 
      </tbody>
@@ -2340,6 +2340,14 @@
       </tr>
 
       <tr>
+       <td>0f87dbaa4a096953f6d52cec8c2e9d3c</td>
+       <td>CVE-2023-3753</td>
+       <td>2023-07-19 02:15:09 </td>
+       <td>A vulnerability classified as problematic has been found in Creativeitem Mastery LMS 1.2. This affects an unknown part of the file /browse. The manipulation of the argument search/featured/recommended/skill leads to cross site scripting. It is possible to initiate the attack remotely. The associated identifier of this vulnerability is VDB-234423. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-3753">详情</a></td>
+      </tr>
+
+      <tr>
        <td>26766bc2b69a81bfea97f00b7c3c31aa</td>
        <td>CVE-2023-3765</td>
        <td>2023-07-19 01:15:10 </td>
@@ -2441,14 +2449,6 @@
        <td>2023-07-17 22:15:09 </td>
        <td>An issue was discovered in set_con2fb_map in drivers/video/fbdev/core/fbcon.c in the Linux kernel before 6.2.12. Because an assignment occurs only for the first vc, the fbcon_registered_fb and fbcon_display arrays can be desynchronized in fbcon_mode_deleted (the con2fb_map points at the old fb_info).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-38409">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dbae0044604dded2f743acfb9fda4ec5</td>
-       <td>CVE-2023-38405</td>
-       <td>2023-07-17 21:15:09 </td>
-       <td>On Crestron 3-Series Control Systems before 1.8001.0187, crafting and sending a specific BACnet packet can cause a crash.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-38405">详情</a></td>
       </tr>
 
      </tbody>
