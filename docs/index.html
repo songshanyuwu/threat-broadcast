@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-11 05:37:51 -->
+<!-- RELEASE TIME : 2023-08-11 23:37:51 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f5b7bee5edec6f7ed1a34357afb9aaee</td>
+       <td>CVE-2023-22957</td>
+       <td>2023-08-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in libac_des3.so on AudioCodes VoIP desk phones through 3.4.4.1000. Due to the use of hard-coded cryptographic key, an attacker with access to backup or configuration files is able to decrypt encrypted values and retrieve sensitive information, e.g., the device root password.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>934de92fea36a3e0a39be3f9fd9412e3</td>
+       <td>CVE-2023-22956</td>
+       <td>2023-08-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered on AudioCodes VoIP desk phones through 3.4.4.1000. Due to the use of a hard-coded cryptographic key, an attacker is able to decrypt encrypted configuration files and retrieve sensitive information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22956">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9764cfc47af6e7571947c6637441112e</td>
+       <td>CVE-2023-22955</td>
+       <td>2023-08-11 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered on AudioCodes VoIP desk phones through 3.4.4.1000. The validation of firmware images only consists of simple checksum checks for different firmware components. Thus, by knowing how to calculate and where to store the required checksums for the flasher tool, an attacker is able to store malicious firmware.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22955">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb68c3193bc664638913f45b0e9b8d50</td>
+       <td>CVE-2023-0871</td>
+       <td>2023-08-11 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>XXE injection in /rtc/post/ endpoint in OpenMNS Horizon 31.0.8 and versions earlier than 32.0.2 on multiple platforms is vulnerable to XML external entity (XXE) injection, which can be used for instance to force Horizon to make arbitrary HTTP requests to internal and external services. The solution is to upgrade to Meridian 2023.1.6, 2022.1.19, 2021.1.30, 2020.1.38 or Horizon 32.0.2 or newer. Meridian and Horizon installation instructions state that they are intended for installation within an organization's private networks and should not be directly accessible from the Internet.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0871">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a6af44d626dd1741ab288c46c05ff1a</td>
+       <td>CVE-2023-39949</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.9.1 and 2.6.5, improper validation of sequence numbers may lead to remotely reachable assertion failure. This can remotely crash any Fast-DDS process. Versions 2.9.1 and 2.6.5 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39949">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f72438d051e209cd52d81b4862d009e</td>
+       <td>CVE-2023-39948</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.10.0 and 2.6.5, the `BadParamException` thrown by Fast CDR is not caught in Fast DDS. This can remotely crash any Fast DDS process. Versions 2.10.0 and 2.6.5 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39948">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a35e92726b8cb718cce4049d0176ea6c</td>
+       <td>CVE-2023-39947</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6, even after the fix at commit 3492270, malformed `PID_PROPERTY_LIST` parameters cause heap overflow at a different program counter. This can remotely crash any Fast-DDS process. Versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39947">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3d9a70c9bb3a6432b44838a0e09c2db</td>
+       <td>CVE-2023-39946</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6, heap can be overflowed by providing a PID_PROPERTY_LIST parameter that contains a CDR string with length larger than the size of actual content. In `eprosima::fastdds::dds::ParameterPropertyList_t::push_back_helper`, `memcpy` is called to first copy the octet'ized length and then to copy the data into `properties_.data`. At the second memcpy, both `data` and `size` can be controlled by anyone that sends the CDR string to the discovery multicast port. This can remotely crash any Fast-DDS process. Versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39946">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>02596345ccf91244a6d048ec8e79dcd2</td>
+       <td>CVE-2023-39945</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.0, 2.10.2, 2.9.2, and 2.6.5, a data submessage sent to PDP port raises unhandled `BadParamException` in fastcdr, which in turn crashes fastdds. Versions 2.11.0, 2.10.2, 2.9.2, and 2.6.5 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39945">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebf950b0568eb270a03bbca10091fe31</td>
+       <td>CVE-2023-39534</td>
+       <td>2023-08-11 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.10.0, 2.9.2, and 2.6.5, a malformed GAP submessage can trigger assertion failure, crashing FastDDS. Version 2.10.0, 2.9.2, and 2.6.5 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39534">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c7fe359eff0be5b47880d383a481e4d0</td>
        <td>CVE-2023-40235</td>
        <td>2023-08-10 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-08-09 20:15:00</td>
        <td>An issue was discovered in LWsystems Benno MailArchiv 2.10.1. Attackers can cause XSS via JavaScript content to a mailbox.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38347">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c414b92706d18f97ea1c468d9b66439</td>
-       <td>CVE-2023-37068</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>Code-Projects Gym Management System V1.0 allows remote attackers to execute arbitrary SQL commands via the login form, leading to unauthorized access and potential data manipulation. This vulnerability arises due to insufficient validation of user-supplied input in the username and password fields, enabling SQL Injection attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8eee57d3442afb6acc1e3142b1ee4110</td>
-       <td>CVE-2023-33469</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>In instances where the screen is visible and remote mouse connection is enabled, KramerAV VIA Connect (2) and VIA Go (2) devices with a version prior to 4.0.1.1326 can be exploited to achieve local code execution at the root level.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33469">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9765166852744972691e848706e77096</td>
-       <td>CVE-2023-33468</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>KramerAV VIA Connect (2) and VIA Go (2) devices with a version prior to 4.0.1.1326 exhibit a vulnerability that enables remote manipulation of the device. This vulnerability involves extracting the connection confirmation code remotely, bypassing the need to obtain it directly from the physical screen.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33468">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>799c650dedb919246ecfeba29922251e</td>
-       <td>CVE-2023-23347</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>HCL DRYiCE iAutomate is affected by the use of a broken cryptographic algorithm.  An attacker can potentially compromise the confidentiality and integrity of sensitive information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23347">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6881c2a6c796b8468b0988c6cdf226b9</td>
-       <td>CVE-2023-39008</td>
-       <td>2023-08-09 19:15:00</td>
-       <td>A command injection vulnerability in the component /api/cron/settings/setJob/ of OPNsense before 23.7 allows attackers to execute arbitrary system commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39008">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea38bb269e9f79f088efaf05b7d805e1</td>
-       <td>CVE-2023-39007</td>
-       <td>2023-08-09 19:15:00</td>
-       <td>/ui/cron/item/open in the Cron component of OPNsense before 23.7 allows XSS.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39007">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1ff2fa957de55ad3448c1ba196a03e4</td>
-       <td>CVE-2023-39006</td>
-       <td>2023-08-09 19:15:00</td>
-       <td>The Crash Reporter (crash_reporter.php) component of OPNsense before 23.7 mishandles input sanitization.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39006">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>169df47ac9ac24d43e2079a5385296f3</td>
-       <td>CVE-2023-39005</td>
-       <td>2023-08-09 19:15:00</td>
-       <td>Insecure permissions exist for configd.socket in OPNsense before 23.7.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41a82e86f559233dc366df4e1eef329d</td>
-       <td>CVE-2023-39951</td>
-       <td>2023-08-08 22:15:00</td>
-       <td>OpenTelemetry Java Instrumentation provides OpenTelemetry auto-instrumentation and instrumentation libraries for Java. OpenTelemetry Java Instrumentation prior to version 1.28.0 contains an issue related to the instrumentation of Java applications using the AWS SDK v2 with Amazon Simple Email Service (SES) v1 API. When SES POST requests are instrumented, the query parameters of the request are inserted into the trace `url.path` field. This behavior leads to the http body, containing the email subject and message, to be present in the trace request url metadata. Any user using a version before 1.28.0 of OpenTelemetry Java Instrumentation to instrument AWS SDK v2 call to SES’s v1 SendEmail API is affected. The e-mail content sent to SES may end up in telemetry backend. This exposes the e-mail content to unintended audiences. The issue can be mitigated by updating OpenTelemetry Java Instrumentation to version 1.28.0 or later.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39951">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba2ad3537ba8110f5f2d1de8800f0ad7</td>
-       <td>CVE-2023-39214</td>
-       <td>2023-08-08 22:15:00</td>
-       <td>Exposure of sensitive information in Zoom Client SDK's before 5.15.5 may allow an authenticated user to enable a denial of service via network access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39214">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d5dc7ae7556010e4240b93bc62da5088</td>
+       <td>CVE-2021-21472</td>
+       <td>2023-08-11 20:53:40 <img src="imgs/new.gif" /></td>
+       <td>SAP NetWeaver Master Data Management 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7c2e8d69cc384ba8bdbab59289a23b51">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a01c9cc908b53230d6866aad02d0449b</td>
+       <td>CVE-2023-39143</td>
+       <td>2023-08-11 20:53:33 <img src="imgs/new.gif" /></td>
+       <td>PAPERCUT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ea9d2eb429f43c4b4f8473a131f5664">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e1e76b80ff294d011112dbbc91ab57e1</td>
+       <td>CVE-2023-37551</td>
+       <td>2023-08-11 20:53:25 <img src="imgs/new.gif" /></td>
+       <td>CODESYS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ea9d82b4d9944d58f207ce1f8a6a9e1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9599f0374968fc8b449e94aa8636a264</td>
+       <td>CVE-2022-41401</td>
+       <td>2023-08-11 20:53:17 <img src="imgs/new.gif" /></td>
+       <td>OPENREFINE OPENREFINE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc0e26374ec147ecba530f8a81f4aa11">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e1d73c30e5cb7d2bf01e22b4c0ed3c83</td>
+       <td>CVE-2021-27101</td>
+       <td>2023-08-11 20:53:10 <img src="imgs/new.gif" /></td>
+       <td>Accellion FTA SQL注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1079c2f3f73f44dbbf97c0c77f8782d4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01b0e765adaaa15bffd0424b3438c00f</td>
+       <td>CVE-2023-37554</td>
+       <td>2023-08-11 20:53:02 <img src="imgs/new.gif" /></td>
+       <td>CODESYS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a47f248af7e4017826c1d48a27ed656">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec21502a3433792eb6808f9095d96e5a</td>
+       <td>CVE-2023-3663</td>
+       <td>2023-08-11 20:52:54 <img src="imgs/new.gif" /></td>
+       <td>CODESYS DEVELOPMENT_SYSTEM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8cfb9a69b4d4197a9c68ea6cbca1fde">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eea58b8094c5bdf149dfe75823ad2f9f</td>
+       <td>CVE-2023-3662</td>
+       <td>2023-08-11 20:52:47 <img src="imgs/new.gif" /></td>
+       <td>CODESYS DEVELOPMENT_SYSTEM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fac4139641254a53b36f94b0e0e28ec4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b8c4b47352260c304cdbcea97013297</td>
+       <td>CVE-2023-37557</td>
+       <td>2023-08-11 20:52:39 <img src="imgs/new.gif" /></td>
+       <td>CODESYS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c06f68d1d0fb4530bde2b69a0a7f23f8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ea663060bf573f6ff105ae9e52b4fc4</td>
+       <td>CVE-2023-37553</td>
+       <td>2023-08-11 20:52:31 <img src="imgs/new.gif" /></td>
+       <td>CODESYS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2dec69b150204672b0709a61fa78580c">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b51dda5670a0fbb99389bd74d60743f7</td>
        <td>CVE-2023-37546</td>
        <td>2023-08-11 00:22:48 <img src="imgs/new.gif" /></td>
@@ -1857,86 +1937,6 @@
        <td>2023-08-07 20:34:48</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef7cfcf55f8040c5b25a4bc8cadcba76">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1100a6f9d89d4b3c40b1fcd23038a96b</td>
-       <td>CVE-2023-4077</td>
-       <td>2023-08-07 20:34:33</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=68c30d4feaf94f51878f80eaadee9607">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08875688c24d6f661c8b22b38eaea8e8</td>
-       <td>CVE-2023-4072</td>
-       <td>2023-08-07 20:34:25</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=32699e74068d4c589d072a7c345a3b1c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>926b5796db6ed6f5322548f57760f527</td>
-       <td>CVE-2023-3727</td>
-       <td>2023-08-06 20:40:56</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c285a9b105dc41419b2f9bbe8a8b065e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7410eab9b8b163f88f7b12ef54ebded5</td>
-       <td>CVE-2023-3730</td>
-       <td>2023-08-06 20:40:48</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6b944d6f125d4275ab986547631455ee">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfb60aab330acf915a64f023aa8bd0b2</td>
-       <td>CVE-2023-3728</td>
-       <td>2023-08-06 20:40:40</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=07afcf94327942b980230c947385cfcd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ac0540f6417e37a2af079d9e4b89abf</td>
-       <td>CVE-2023-3733</td>
-       <td>2023-08-06 20:40:32</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f15e6d530e004eeb88819c1a742c1b8e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9cfcf60fa4e0ecc0b517002e59d6ed5a</td>
-       <td>CVE-2023-3731</td>
-       <td>2023-08-06 20:40:24</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=514acd7d42c246bc877b7732524ae514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6be7436cdff519de66927fc4fcfb012c</td>
-       <td>CVE-2023-3729</td>
-       <td>2023-08-06 20:40:17</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bf4a321b529a4e1ba9990631d8c47968">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>265e2bcbfcb82c4600984613abaa699e</td>
-       <td>CVE-2023-3736</td>
-       <td>2023-08-06 20:40:09</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0e71817830764eb1b62706a5875163da">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74cf534143e7f72aa9eb9bc395ac85f8</td>
-       <td>CVE-2023-3734</td>
-       <td>2023-08-06 20:40:01</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3703596553bc4052a758e5165c1364b1">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3f4de35512c13eba8714159823ba66f1</td>
+       <td>CVE-2023-31450</td>
+       <td>2023-08-09 12:15:09 </td>
+       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760 x64. To exploit the vulnerability, a authenticated user can create a SQL Sensor. When creating this sensor, the user can set the SQL message that should be sent from the PRTG device. This input parameter contains a path traversal vulnerability that allows an attacker to choose arbitrary files from the system. They will be transmitted over the internet to the attacker's machine.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31450">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce5cf13e9f8326d3cf71186b491009ef</td>
+       <td>CVE-2023-31449</td>
+       <td>2023-08-09 12:15:09 </td>
+       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760 x64. To exploit the vulnerability, a authenticated user can create a WMI Custom Sensor. When creating this sensor, the user can set the WQL message that should be sent from the PRTG device. This input parameter contains a path traversal vulnerability that allows an attacker to choose arbitrary files from the system.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31449">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f524bba4c80d011a6fbfaf2b9ca84d1</td>
+       <td>CVE-2023-31448</td>
+       <td>2023-08-09 12:15:09 </td>
+       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760 x64. To exploit the vulnerability, a authenticated user can create a HL7 Sensor. When creating this sensor, the user can set the HL7 message that should be sent from the PRTG device. This input parameter contains a path traversal vulnerability that allows an attacker to choose arbitrary files from the system.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31448">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ab04629fafa5086ab12d5633a741b060</td>
        <td>CVE-2023-38180</td>
        <td>2023-08-08 19:15:10 </td>
@@ -2273,6 +2297,14 @@
        <td>2023-08-08 13:15:10 </td>
        <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Syntactics, Inc. EaSYNC plugin &lt;=&Acirc;&nbsp;1.3.7 versions.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-38384">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e1beeac117cd7c92921104dda0cad892</td>
+       <td>CVE-2023-31221</td>
+       <td>2023-08-08 13:15:10 </td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Ransom Christofferson PDQ CSV plugin &lt;=&Acirc;&nbsp;1.0.0 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31221">详情</a></td>
       </tr>
 
       <tr>
@@ -2417,38 +2449,6 @@
        <td>2023-08-06 10:15:09 </td>
        <td>A vulnerability, which was classified as critical, was found in SourceCodester Inventory Management System 1.0. This affects an unknown part of the file edit_sell.php. The manipulation of the argument up_pid leads to sql injection. It is possible to initiate the attack remotely. The identifier VDB-236217 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4182">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f46e3149a11d15336f3537e21bf4a19</td>
-       <td>CVE-2023-4190</td>
-       <td>2023-08-06 01:15:10 </td>
-       <td>Insufficient Session Expiration in GitHub repository admidio/admidio prior to 4.2.11.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4190">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29ea560bc5db68704eeb10866b22b35d</td>
-       <td>CVE-2023-4189</td>
-       <td>2023-08-05 20:15:17 </td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4189">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b41b3c02bbe4ed1d4050e9f2b78a2a58</td>
-       <td>CVE-2023-4188</td>
-       <td>2023-08-05 20:15:09 </td>
-       <td>SQL Injection in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4188">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>084eee0eef57918eb806e584f3c795ea</td>
-       <td>CVE-2023-4187</td>
-       <td>2023-08-05 18:15:18 </td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4187">详情</a></td>
       </tr>
 
      </tbody>
