@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-11 23:37:51 -->
+<!-- RELEASE TIME : 2023-08-12 23:37:53 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ce81252769ec389319554299a73e5a7a</td>
+       <td>CVE-2023-4293</td>
+       <td>2023-08-12 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Premium Packages - Sell Digital Products Securely plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.7.4 due to insufficient restriction on the 'wpdmpp_update_profile' function. This makes it possible for authenticated attackers, with minimal permissions such as a subscriber, to modify their user role by supplying the 'profile[role]' parameter during a profile update.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4293">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8e8fba58682073f2e49f9fedb673c97</td>
+       <td>CVE-2023-3452</td>
+       <td>2023-08-12 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Canto plugin for WordPress is vulnerable to Remote File Inclusion in versions up to, and including, 3.0.4 via the 'wp_abspath' parameter. This allows unauthenticated attackers to include and execute arbitrary remote code on the server, provided that allow_url_include is enabled. Local File Inclusion is also possible, albeit less useful because it requires that the attacker be able to upload a malicious php file via FTP or some other means into a directory readable by the web server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3452">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f5b7bee5edec6f7ed1a34357afb9aaee</td>
        <td>CVE-2023-22957</td>
        <td>2023-08-11 20:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +382,7 @@
       <tr>
        <td>c7fe359eff0be5b47880d383a481e4d0</td>
        <td>CVE-2023-40235</td>
-       <td>2023-08-10 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 23:15:00</td>
        <td>An NTLM Hash Disclosure was discovered in ArchiMate Archi before 5.1.0. When parsing the XMLNS value of an ArchiMate project file, if the namespace does not match the expected ArchiMate URL, the parser will access the provided resource. If the provided resource is a UNC path pointing to a share server that does not accept a guest account, the host will try to authenticate on the share by using the current user's session. NOTE: this issue occurs because Archi uses an unsafe configuration of the Eclipse Modeling Framework.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40235">详情</a></td>
       </tr>
@@ -374,7 +390,7 @@
       <tr>
        <td>877584e3b2422a2560c5c0bcaad2621c</td>
        <td>CVE-2023-4275</td>
-       <td>2023-08-10 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 22:15:00</td>
        <td>** REJECT ** It is invalid.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4275">详情</a></td>
       </tr>
@@ -382,7 +398,7 @@
       <tr>
        <td>c10f8863f6f10da08ad0ee65b5abb87d</td>
        <td>CVE-2023-40225</td>
-       <td>2023-08-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 21:15:00</td>
        <td>HAProxy through 2.0.32, 2.1.x and 2.2.x through 2.2.30, 2.3.x and 2.4.x through 2.4.23, 2.5.x and 2.6.x before 2.6.15, 2.7.x before 2.7.10, and 2.8.x before 2.8.2 forwards empty Content-Length headers, violating RFC 9110 section 8.6. In uncommon cases, an HTTP/1 server behind HAProxy may interpret the payload as an extra request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40225">详情</a></td>
       </tr>
@@ -390,7 +406,7 @@
       <tr>
        <td>718bd7057d057ebe96da473f913e04f1</td>
        <td>CVE-2023-38333</td>
-       <td>2023-08-10 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 21:15:00</td>
        <td>Zoho ManageEngine Applications Manager through 16530 allows reflected XSS while logged in.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38333">详情</a></td>
       </tr>
@@ -398,7 +414,7 @@
       <tr>
        <td>e127e4773c8ca8eaa8707f1a1f1f544d</td>
        <td>CVE-2023-40224</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>MISP 2.4174 allows XSS in app/View/Events/index.ctp.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40224">详情</a></td>
       </tr>
@@ -406,7 +422,7 @@
       <tr>
        <td>74ffdfcce8cbe604af49eb86d136116b</td>
        <td>CVE-2023-40014</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>OpenZeppelin Contracts is a library for secure smart contract development. Starting in version 4.0.0 and prior to version 4.9.3, contracts using `ERC2771Context` along with a custom trusted forwarder may see `_msgSender` return `address(0)` in calls that originate from the forwarder with calldata shorter than 20 bytes. This combination of circumstances does not appear to be common, in particular it is not the case for `MinimalForwarder` from OpenZeppelin Contracts, or any deployed forwarder the team is aware of, given that the signer address is appended to all calls that originate from these forwarders. The problem has been patched in v4.9.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40014">详情</a></td>
       </tr>
@@ -414,7 +430,7 @@
       <tr>
        <td>05aaaedef3e0b09e7b9bc05d28624bcd</td>
        <td>CVE-2023-39806</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>iCMS v7.0.16 was discovered to contain a SQL injection vulnerability via the bakupdata function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39806">详情</a></td>
       </tr>
@@ -422,7 +438,7 @@
       <tr>
        <td>daccd790a53b723afada5c460fd2dfc2</td>
        <td>CVE-2023-39805</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>iCMS v7.0.16 was discovered to contain a SQL injection vulnerability via the where parameter at admincp.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39805">详情</a></td>
       </tr>
@@ -430,7 +446,7 @@
       <tr>
        <td>961d40392dc9b2e8575b564defbfe454</td>
        <td>CVE-2023-37625</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>A stored cross-site scripting (XSS) vulnerability in Netbox v3.4.7 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Custom Link templates.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37625">详情</a></td>
       </tr>
@@ -438,7 +454,7 @@
       <tr>
        <td>87867dc8319bb903ed995fe34849bdbf</td>
        <td>CVE-2023-32565</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>An attacker can send a specially crafted request which could lead to leakage of sensitive data or potentially a resource-based DoS attack. Fixed in version 6.4.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32565">详情</a></td>
       </tr>
@@ -446,7 +462,7 @@
       <tr>
        <td>d215f4af11e32cff129f3118583b00c8</td>
        <td>CVE-2023-32564</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>An unrestricted upload of file with dangerous type vulnerability exists in Avalanche versions 6.4.1 and below that could allow an attacker to achieve a remove code execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32564">详情</a></td>
       </tr>
@@ -454,7 +470,7 @@
       <tr>
        <td>ead52cbeaa2f45e30ae0e35c5d2f5f4f</td>
        <td>CVE-2023-32563</td>
-       <td>2023-08-10 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-10 20:15:00</td>
        <td>An unauthenticated attacker could achieve the code execution through a RemoteControl server.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32563">详情</a></td>
       </tr>
@@ -505,22 +521,6 @@
        <td>2023-08-09 22:15:00</td>
        <td>Crypto wallets implementing the GG18 or GG20 TSS protocol might allow an attacker to extract a full ECDSA private key by injecting a malicious pallier key and cheating in the range proof. Depending on the Beta parameters chosen in the protocol implementation, the attack might require 16 signatures or more fully exfiltrate the other parties' private key shares.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a51065e4fac077b6e855d58f2b2ca49b</td>
-       <td>CVE-2023-38348</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>A CSRF issue was discovered in LWsystems Benno MailArchiv 2.10.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38348">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>818d9355a93578ee3862e2cf3c428f11</td>
-       <td>CVE-2023-38347</td>
-       <td>2023-08-09 20:15:00</td>
-       <td>An issue was discovered in LWsystems Benno MailArchiv 2.10.1. Attackers can cause XSS via JavaScript content to a mailbox.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38347">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>95181b4796c18e8e4ea4a0daaf74892e</td>
+       <td>CVE-2023-29099</td>
+       <td>2023-08-12 23:54:09 <img src="imgs/new.gif" /></td>
+       <td>ELEGANT_THEMES DIVI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8189213d8a0c41578f54662efd85fa78">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8de123ad918982664e65303e2713f8f5</td>
+       <td>CVE-2023-38926</td>
+       <td>2023-08-12 23:54:01 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR EX6200_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bbfa704641fd49c69b4a230cc139abf8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>beb8983ef8e3d29614c0848c1c419281</td>
+       <td>CVE-2023-39528</td>
+       <td>2023-08-12 23:53:53 <img src="imgs/new.gif" /></td>
+       <td>PRESTASHOP PRESTASHOP Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f99c9d4bd120433b90fb60becc0ee55e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17a092117229683fa4fa22d1688a3f94</td>
+       <td>CVE-2023-37487</td>
+       <td>2023-08-12 23:53:46 <img src="imgs/new.gif" /></td>
+       <td>SAP BUSINESS_ONE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ee29b55948c41a8a0bb41953a4bba9a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>949485f2d9d6ce46b5ac0fd2a5d9be2f</td>
+       <td>CVE-2023-39440</td>
+       <td>2023-08-12 23:53:38 <img src="imgs/new.gif" /></td>
+       <td>SAP BUSINESSOBJECTS_BUSINESS_INTELLIGENCE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cbde649a33304be78558c17316d4b9e3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28c72a139acf9b1b18ca3fa2f5d25974</td>
+       <td>CVE-2023-20783</td>
+       <td>2023-08-12 23:53:30 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=583c52e961a44f2bb9f3d1c71bfb78d4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22c50fb161daa9ea9376bbff520e49b0</td>
+       <td>CVE-2023-20809</td>
+       <td>2023-08-12 23:53:22 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e5d4b63da5fb40f7abb3bf3b746e2890">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e48aa15b06e66b43af7141bd2f2227cf</td>
+       <td>CVE-2023-4189</td>
+       <td>2023-08-12 23:53:15 <img src="imgs/new.gif" /></td>
+       <td>INSTANTCMS INSTANTCMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8ab9559a23714dfcafaeaac90df9192d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5230cd4d6ae981d06efc95bb3aab733d</td>
+       <td>CVE-2023-38332</td>
+       <td>2023-08-12 23:53:07 <img src="imgs/new.gif" /></td>
+       <td>ZOHOCORP MANAGEENGINE_ADMANAGER_PLUS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d84eec1664dc4c45a5ba8c1085fb26e8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd25408a723027cc35cdb346b308bc36</td>
+       <td>CVE-2020-26064</td>
+       <td>2023-08-12 23:52:59 <img src="imgs/new.gif" /></td>
+       <td>Cisco SD-WAN vManage web UI 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a00a75fa11944a77918f74b20ddf8b1c">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d5dc7ae7556010e4240b93bc62da5088</td>
        <td>CVE-2021-21472</td>
        <td>2023-08-11 20:53:40 <img src="imgs/new.gif" /></td>
@@ -1857,86 +1937,6 @@
        <td>2023-08-09 20:37:20</td>
        <td>MOZILLA Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d72345943ed0462494167bfb6c4d6323">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8b1e20d8e16d68cbc6ee46473964bd7</td>
-       <td>CVE-2023-39109</td>
-       <td>2023-08-09 20:37:13</td>
-       <td>RCONFIG RCONFIG Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0473a9f2256f4cf888f19d758761e6a9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4ce347e4f7c549698a9eefdf4a46dab</td>
-       <td>CVE-2023-3737</td>
-       <td>2023-08-08 20:40:56</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9de3a65045254925b6ab5add0817cc6b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ca6b5ba2d977d7582de8648dd549356</td>
-       <td>CVE-2023-3426</td>
-       <td>2023-08-07 20:35:48</td>
-       <td>LIFERAY Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bbefe10e9c094b20ac1b4de1cb30d4b3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03e6198624c87406a05f9441e07dddc4</td>
-       <td>CVE-2023-4070</td>
-       <td>2023-08-07 20:35:33</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1cd591a05c7b4812af9e54fa18717f91">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>069a392837f3bd44bd9e2e4c2c1bb58c</td>
-       <td>CVE-2023-4074</td>
-       <td>2023-08-07 20:35:25</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=84be0303ae8a48beac53365f60b2dc5f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c3c1110e186ae71e71958b3e2e86783</td>
-       <td>CVE-2023-4073</td>
-       <td>2023-08-07 20:35:18</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d51281fb83184dc7a6f0e2493ed0c176">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2879b24d5f3287bc479dbd753727e5ba</td>
-       <td>CVE-2023-4068</td>
-       <td>2023-08-07 20:35:11</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=54dd2f98d80143398aa05650c373fe5f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c70377a12ef06e1ed5658da84337d2b3</td>
-       <td>CVE-2023-4078</td>
-       <td>2023-08-07 20:35:03</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea37ad103f76441b92b5d1ff8561d11a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb5dd4829d6bbfded687d289bd3e8df6</td>
-       <td>CVE-2023-4076</td>
-       <td>2023-08-07 20:34:56</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8a063e2210b24166babb8170548772de">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b56ae4da923a4965958ef0ae47a4445</td>
-       <td>CVE-2023-4069</td>
-       <td>2023-08-07 20:34:48</td>
-       <td>GOOGLE CHROME Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef7cfcf55f8040c5b25a4bc8cadcba76">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3eddcf90de647efc075ac0020c0b272c</td>
+       <td>CVE-2023-32782</td>
+       <td>2023-08-09 12:15:10 </td>
+       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760. Due to command-line parameter injection and an undocumented debug feature flag, an attacker can utilize the DICOM sensor to write arbitrary data to the disk. This can be utilized to write a custom EXE(.bat) sensor, that will then run. This primitive gives remote code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32782">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>47b025f2b545e785422ad6b7d7609cf0</td>
+       <td>CVE-2023-32781</td>
+       <td>2023-08-09 12:15:10 </td>
+       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760. Due to command-line parameter injection and an undocumented debug feature flag, an attacker can utilize the HL7 sensor to write arbitrary data to the disk. This can be utilized to write a custom EXE(.bat) sensor, that will then run. This primitive gives remote code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32781">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3f4de35512c13eba8714159823ba66f1</td>
        <td>CVE-2023-31450</td>
        <td>2023-08-09 12:15:09 </td>
@@ -2433,22 +2449,6 @@
        <td>2023-08-06 12:15:09 </td>
        <td>A vulnerability was found in SourceCodester Inventory Management System 1.0 and classified as critical. This issue affects some unknown processing of the file sell_return.php. The manipulation of the argument pid leads to sql injection. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-236219.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4184">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6aabcf59d665a57ef7cabba8a172adc9</td>
-       <td>CVE-2023-4183</td>
-       <td>2023-08-06 11:15:09 </td>
-       <td>A vulnerability has been found in SourceCodester Inventory Management System 1.0 and classified as problematic. This vulnerability affects unknown code of the file edit_update.php of the component Password Handler. The manipulation of the argument user_id leads to improper access controls. The attack can be initiated remotely. VDB-236218 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4183">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6ff8e0b2f09514a5335e3d295a4f9dfe</td>
-       <td>CVE-2023-4182</td>
-       <td>2023-08-06 10:15:09 </td>
-       <td>A vulnerability, which was classified as critical, was found in SourceCodester Inventory Management System 1.0. This affects an unknown part of the file edit_sell.php. The manipulation of the argument up_pid leads to sql injection. It is possible to initiate the attack remotely. The identifier VDB-236217 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4182">详情</a></td>
       </tr>
 
      </tbody>
