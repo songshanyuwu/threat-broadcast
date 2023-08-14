@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-14 05:37:55 -->
+<!-- RELEASE TIME : 2023-08-14 23:37:43 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>9177b0fc2a902ee3f3e3ed6adebe502c</td>
+       <td></td>
+       <td>2023-08-14 07:07:24 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 2023-08-07 第32周</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64d9cff522adc884abcd7df4">详情</a></td>
+      </tr>
+
       <tr>
        <td>19351d1481d82d75e3c0a04283a2b7c4</td>
        <td></td>
@@ -259,14 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=648037e9d5b5ed368982cdc7">详情</a></td>
       </tr>
 
-      <tr>
-       <td>bb1461870abbec4870cb53fd7ca9001b</td>
-       <td>CVE-2023-3079</td>
-       <td>2023-06-06 07:24:31</td>
-       <td>CVE-2023-3079：Google V8类型混淆漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=647edf2dd5b5ed368982cdae">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>ebacea67889627f8ccbf69456a741196</td>
+       <td>CVE-2023-40020</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>PrivateUploader is an open source image hosting server written in Vue and TypeScript. In affected versions `app/routes/v3/admin.controller.ts` did not correctly verify whether the user was an administrator (High Level) or moderator (Low Level) causing the request to continue processing. The response would be a 403 with ADMIN_ONLY, however, next() would call leading to any updates/changes in the route to process. This issue has been addressed in version 3.2.49. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40020">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e881dbbdee98f1658af2ffb88f2a3147</td>
+       <td>CVE-2023-40013</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>SVG Loader is a javascript library that fetches SVGs using XMLHttpRequests and injects the SVG code in the tag's place. According to the docs, svg-loader will strip all JS code before injecting the SVG file for security reasons but the input sanitization logic is not sufficient and can be trivially bypassed. This allows an attacker to craft a malicious SVG which can result in Cross-site Scripting (XSS). When trying to sanitize the svg the lib removes event attributes such as `onmouseover`, `onclick` but the list of events is not exhaustive.  Any website which uses external-svg-loader and allows its users to provide svg src, upload svg files would be susceptible to stored XSS attack. This issue has been addressed in commit `d3562fc08` which is included in releases from 1.6.9. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40013">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ae06c99e58d4548834f04b6f2047c31</td>
+       <td>CVE-2023-39950</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>efibootguard is a simple UEFI boot loader with support for safely switching between current and updated partition sets. Insufficient or missing validation and sanitization of input from untrustworthy bootloader environment files can cause crashes and probably also code injections into `bg_setenv`) or programs using `libebgenv`. This is triggered when the affected components try to modify a manipulated environment, in particular its user variables. Furthermore, `bg_printenv` may crash over invalid read accesses or report invalid results. Not affected by this issue is EFI Boot Guard's bootloader EFI binary. EFI Boot Guard release v0.15 contains required patches to sanitize and validate the bootloader environment prior to processing it in userspace. Its library and tools should be updated, so should programs statically linked against it. An update of the bootloader EFI executable is not required. The only way to prevent the issue with an unpatched EFI Boot Guard version is to avoid accesses to user variables, specifically modifications to them.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39950">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4114c4e949d50a728fa64c9f3c94bff</td>
+       <td>CVE-2023-39829</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda A18 V15.13.07.09 was discovered to contain a stack overflow via the wpapsk_crypto2_4g parameter in the fromSetWirelessRepeat function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39829">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>58f9695560e4b42593198543ce8577ed</td>
+       <td>CVE-2023-39828</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda A18 V15.13.07.09 was discovered to contain a stack overflow via the security parameter in the formWifiBasicSet function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39828">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>788940d5d17e8c9f0f4e2214353ffd6c</td>
+       <td>CVE-2023-39827</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda A18 V15.13.07.09 was discovered to contain a stack overflow via the rule_info parameter in the formAddMacfilterRule function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39827">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>634b63dd3c6ec0c7699091517e46d885</td>
+       <td>CVE-2023-38687</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Svelecte is a flexible autocomplete/select component written in Svelte. Svelecte item names are rendered as raw HTML with no escaping. This allows the injection of arbitrary HTML into the Svelecte dropdown. This can be exploited to execute arbitrary JavaScript whenever a Svelecte dropdown is opened. Item names given to Svelecte appear to be directly rendered as HTML by the default item renderer. This means that any HTML tags in the name are rendered as HTML elements not as text. Note that the custom item renderer shown in https://mskocik.github.io/svelecte/#item-rendering is also vulnerable to the same exploit. Any site that uses Svelecte with dynamically created items either from an external source or from user-created content could be vulnerable to an XSS attack (execution of untrusted JavaScript), clickjacking or any other attack that can be performed with arbitrary HTML injection. The actual impact of this vulnerability for a specific application depends on how trustworthy the sources that provide Svelecte items are and the steps that the application has taken to mitigate XSS attacks. XSS attacks using this vulnerability are mostly mitigated by a Content Security Policy that blocks inline JavaScript. This issue has been addressed in version 3.16.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38687">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f5d231be8584b9aaa2b95d236f03c0b</td>
+       <td>CVE-2023-21269</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In startActivityInner of ActivityStarter.java, there is a possible way to launch an activity into PiP mode from the background due to BAL bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21269">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>025432d415dc93b710562d40aa542549</td>
+       <td>CVE-2023-21268</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In update of MmsProvider.java, there is a possible way to change directory permissions due to a path traversal error. This could lead to local denial of service of SIM recognition with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21268">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52fd300a9e9165235f7792de46056995</td>
+       <td>CVE-2023-21267</td>
+       <td>2023-08-14 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>In doKeyguardLocked of KeyguardViewMediator.java, there is a possible way to bypass lockdown mode with screen pinning due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-21267">详情</a></td>
+      </tr>
+
       <tr>
        <td>c87a27fe039d30c5975dc26971ec40fe</td>
        <td>CVE-2023-23208</td>
@@ -441,86 +521,6 @@
        <td>2023-08-11 14:15:00</td>
        <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6, even after the fix at commit 3492270, malformed `PID_PROPERTY_LIST` parameters cause heap overflow at a different program counter. This can remotely crash any Fast-DDS process. Versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6 contain a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39947">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3d9a70c9bb3a6432b44838a0e09c2db</td>
-       <td>CVE-2023-39946</td>
-       <td>2023-08-11 14:15:00</td>
-       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6, heap can be overflowed by providing a PID_PROPERTY_LIST parameter that contains a CDR string with length larger than the size of actual content. In `eprosima::fastdds::dds::ParameterPropertyList_t::push_back_helper`, `memcpy` is called to first copy the octet'ized length and then to copy the data into `properties_.data`. At the second memcpy, both `data` and `size` can be controlled by anyone that sends the CDR string to the discovery multicast port. This can remotely crash any Fast-DDS process. Versions 2.11.1, 2.10.2, 2.9.2, and 2.6.6 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39946">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02596345ccf91244a6d048ec8e79dcd2</td>
-       <td>CVE-2023-39945</td>
-       <td>2023-08-11 14:15:00</td>
-       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.11.0, 2.10.2, 2.9.2, and 2.6.5, a data submessage sent to PDP port raises unhandled `BadParamException` in fastcdr, which in turn crashes fastdds. Versions 2.11.0, 2.10.2, 2.9.2, and 2.6.5 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebf950b0568eb270a03bbca10091fe31</td>
-       <td>CVE-2023-39534</td>
-       <td>2023-08-11 14:15:00</td>
-       <td>eprosima Fast DDS is a C++ implementation of the Data Distribution Service standard of the Object Management Group. Prior to versions 2.10.0, 2.9.2, and 2.6.5, a malformed GAP submessage can trigger assertion failure, crashing FastDDS. Version 2.10.0, 2.9.2, and 2.6.5 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39534">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c7fe359eff0be5b47880d383a481e4d0</td>
-       <td>CVE-2023-40235</td>
-       <td>2023-08-10 23:15:00</td>
-       <td>An NTLM Hash Disclosure was discovered in ArchiMate Archi before 5.1.0. When parsing the XMLNS value of an ArchiMate project file, if the namespace does not match the expected ArchiMate URL, the parser will access the provided resource. If the provided resource is a UNC path pointing to a share server that does not accept a guest account, the host will try to authenticate on the share by using the current user's session. NOTE: this issue occurs because Archi uses an unsafe configuration of the Eclipse Modeling Framework.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40235">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>877584e3b2422a2560c5c0bcaad2621c</td>
-       <td>CVE-2023-4275</td>
-       <td>2023-08-10 22:15:00</td>
-       <td>** REJECT ** It is invalid.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4275">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c10f8863f6f10da08ad0ee65b5abb87d</td>
-       <td>CVE-2023-40225</td>
-       <td>2023-08-10 21:15:00</td>
-       <td>HAProxy through 2.0.32, 2.1.x and 2.2.x through 2.2.30, 2.3.x and 2.4.x through 2.4.23, 2.5.x and 2.6.x before 2.6.15, 2.7.x before 2.7.10, and 2.8.x before 2.8.2 forwards empty Content-Length headers, violating RFC 9110 section 8.6. In uncommon cases, an HTTP/1 server behind HAProxy may interpret the payload as an extra request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40225">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>718bd7057d057ebe96da473f913e04f1</td>
-       <td>CVE-2023-38333</td>
-       <td>2023-08-10 21:15:00</td>
-       <td>Zoho ManageEngine Applications Manager through 16530 allows reflected XSS while logged in.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38333">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e127e4773c8ca8eaa8707f1a1f1f544d</td>
-       <td>CVE-2023-40224</td>
-       <td>2023-08-10 20:15:00</td>
-       <td>MISP 2.4174 allows XSS in app/View/Events/index.ctp.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40224">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74ffdfcce8cbe604af49eb86d136116b</td>
-       <td>CVE-2023-40014</td>
-       <td>2023-08-10 20:15:00</td>
-       <td>OpenZeppelin Contracts is a library for secure smart contract development. Starting in version 4.0.0 and prior to version 4.9.3, contracts using `ERC2771Context` along with a custom trusted forwarder may see `_msgSender` return `address(0)` in calls that originate from the forwarder with calldata shorter than 20 bytes. This combination of circumstances does not appear to be common, in particular it is not the case for `MinimalForwarder` from OpenZeppelin Contracts, or any deployed forwarder the team is aware of, given that the signer address is appended to all calls that originate from these forwarders. The problem has been patched in v4.9.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40014">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>05aaaedef3e0b09e7b9bc05d28624bcd</td>
-       <td>CVE-2023-39806</td>
-       <td>2023-08-10 20:15:00</td>
-       <td>iCMS v7.0.16 was discovered to contain a SQL injection vulnerability via the bakupdata function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39806">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7023059231ec323e8072ba61373c31c1</td>
+       <td>CVE-2023-31448</td>
+       <td>2023-08-14 20:43:06 <img src="imgs/new.gif" /></td>
+       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=da1ef87698374564a4d234ebe0b64427">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0e28a1ca33c2f4ec0e625683c3607c5</td>
+       <td>CVE-2023-38527</td>
+       <td>2023-08-14 20:43:06 <img src="imgs/new.gif" /></td>
+       <td>SIEMENS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9258cc334ceb4830a4d89e6a8f9a7bf4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d379c2c15a09683f480b4b0f49204b8</td>
+       <td>CVE-2023-38530</td>
+       <td>2023-08-14 20:43:06 <img src="imgs/new.gif" /></td>
+       <td>SIEMENS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7c47ef55cc17459e95cdbc20611d8b3f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>80e601dcd89872260cf724136ca8eda1</td>
+       <td>CVE-2023-38524</td>
+       <td>2023-08-14 20:43:06 <img src="imgs/new.gif" /></td>
+       <td>SIEMENS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=696421fb2632467587d0f4d5d559215b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bfcf867c0fba0db51c0956b70b9ebb38</td>
+       <td>CVE-2023-31452</td>
+       <td>2023-08-14 20:43:06 <img src="imgs/new.gif" /></td>
+       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0d226ea6e947438e988281f0d726a7c3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c52dfdc8f631705b9973b9f4eb4c3839</td>
+       <td>CVE-2023-32782</td>
+       <td>2023-08-14 20:42:54 <img src="imgs/new.gif" /></td>
+       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc936e04ea6948e586ede24ca7acc701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cebcb061f2c95958438e18f72cb9a7d1</td>
+       <td>CVE-2023-31450</td>
+       <td>2023-08-14 20:42:54 <img src="imgs/new.gif" /></td>
+       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f1e19707dc944cd3a7368472fd1415fd">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3721fc35eb86321b78dd568d2263df8a</td>
+       <td>CVE-2023-38529</td>
+       <td>2023-08-14 20:42:53 <img src="imgs/new.gif" /></td>
+       <td>SIEMENS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f51f26e45cf04d0ba6dee384a010c6ad">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84c34aede4de2fdd4658fb8f0c47ef22</td>
+       <td>CVE-2023-36532</td>
+       <td>2023-08-14 20:42:53 <img src="imgs/new.gif" /></td>
+       <td>ZOOM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9be6b6815e0e4644875b9d5b616f6624">详情</a></td>
+      </tr>
+
+      <tr>
        <td>35243930c180d080f8cb2de2c5e24a6f</td>
        <td>CVE-2023-21626</td>
        <td>2023-08-13 21:13:52 <img src="imgs/new.gif" /></td>
@@ -1865,78 +1937,6 @@
        <td>2023-08-11 20:53:33</td>
        <td>PAPERCUT Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2ea9d2eb429f43c4b4f8473a131f5664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1e76b80ff294d011112dbbc91ab57e1</td>
-       <td>CVE-2023-37551</td>
-       <td>2023-08-11 20:53:25</td>
-       <td>CODESYS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ea9d82b4d9944d58f207ce1f8a6a9e1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9599f0374968fc8b449e94aa8636a264</td>
-       <td>CVE-2022-41401</td>
-       <td>2023-08-11 20:53:17</td>
-       <td>OPENREFINE OPENREFINE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc0e26374ec147ecba530f8a81f4aa11">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1d73c30e5cb7d2bf01e22b4c0ed3c83</td>
-       <td>CVE-2021-27101</td>
-       <td>2023-08-11 20:53:10</td>
-       <td>Accellion FTA SQL注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1079c2f3f73f44dbbf97c0c77f8782d4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01b0e765adaaa15bffd0424b3438c00f</td>
-       <td>CVE-2023-37554</td>
-       <td>2023-08-11 20:53:02</td>
-       <td>CODESYS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a47f248af7e4017826c1d48a27ed656">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec21502a3433792eb6808f9095d96e5a</td>
-       <td>CVE-2023-3663</td>
-       <td>2023-08-11 20:52:54</td>
-       <td>CODESYS DEVELOPMENT_SYSTEM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8cfb9a69b4d4197a9c68ea6cbca1fde">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eea58b8094c5bdf149dfe75823ad2f9f</td>
-       <td>CVE-2023-3662</td>
-       <td>2023-08-11 20:52:47</td>
-       <td>CODESYS DEVELOPMENT_SYSTEM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fac4139641254a53b36f94b0e0e28ec4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b8c4b47352260c304cdbcea97013297</td>
-       <td>CVE-2023-37557</td>
-       <td>2023-08-11 20:52:39</td>
-       <td>CODESYS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c06f68d1d0fb4530bde2b69a0a7f23f8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ea663060bf573f6ff105ae9e52b4fc4</td>
-       <td>CVE-2023-37553</td>
-       <td>2023-08-11 20:52:31</td>
-       <td>CODESYS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2dec69b150204672b0709a61fa78580c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b51dda5670a0fbb99389bd74d60743f7</td>
-       <td>CVE-2023-37546</td>
-       <td>2023-08-11 00:22:48</td>
-       <td>CODESYS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0c517179db547d3824ea43dc4e119b8">详情</a></td>
       </tr>
 
      </tbody>
