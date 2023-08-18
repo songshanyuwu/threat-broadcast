@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-17 23:37:53 -->
+<!-- RELEASE TIME : 2023-08-18 05:37:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>3688d7ea80028dd62ac68e5ca79a2bf8</td>
        <td></td>
-       <td>2023-08-16 10:11:51 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 10:11:51</td>
        <td>银狐木马技术分析</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64dca0de22adc884abcd7e0d">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ea6ea6537731c1383db72bc2dcb275ff</td>
+       <td>CVE-2023-31492</td>
+       <td>2023-08-17 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Incorrect access control in Zoho ManageEngine ADManager Plus Build 7180 allows unauthenticated attackers to view user passwords after executing backup or recovery operations on user accounts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31492">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f2eb1bcb139e5b0690b26115dbf1de0</td>
+       <td>CVE-2023-40171</td>
+       <td>2023-08-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Dispatch is an open source security incident management tool. The server response includes the JWT Secret Key used for signing JWT tokens in error message when the `Dispatch Plugin - Basic Authentication Provider` plugin encounters an error when attempting to decode a JWT token. Any Dispatch users who own their instance and rely on the `Dispatch Plugin - Basic Authentication Provider` plugin for authentication may be impacted, allowing for any account to be taken over within their own instance. This could be done by using the secret to sign attacker crafted JWTs. If you think that you may be impacted, we strongly suggest you to rotate the secret stored in the `DISPATCH_JWT_SECRET` envvar in the `.env` file. This issue has been addressed in commit `b1942a4319` which has been included in the `20230817` release. users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b34d827723dac636d1ffb98fbbe6140</td>
+       <td>CVE-2023-28690</td>
+       <td>2023-08-17 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Marco Steinbrecher WP BrowserUpdate plugin <= 4.5 versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28690">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3533b80c4683e17db62ad6243072e89e</td>
+       <td>CVE-2023-39974</td>
+       <td>2023-08-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information vulnerability in AcyMailing Enterprise component for Joomla. It allows unauthorized actors to get the number of subscribers in a specific list.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39974">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>65a79394511362257d752f8bab5bf4ac</td>
+       <td>CVE-2023-39973</td>
+       <td>2023-08-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Access Control vulnerability in AcyMailing Enterprise component for Joomla. It allows the unauthorized removal of attachments from campaigns.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39973">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8b3d3c0306c8e1d9dc7b477ab9a4529</td>
+       <td>CVE-2023-39972</td>
+       <td>2023-08-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Access Control vulnerability in AcyMailing Enterprise component for Joomla. It allows unauthorized users to create new mailing lists.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39972">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3d6f70a0645e23aeb9274f4f17d23e6</td>
+       <td>CVE-2023-39971</td>
+       <td>2023-08-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Input During Web Page Generation vulnerability in AcyMailing Enterprise component for Joomla allows XSS. This issue affects AcyMailing Enterprise component for Joomla: 6.7.0-8.6.3.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39971">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b490945e883a31322271eb80cbe60317</td>
+       <td>CVE-2023-39970</td>
+       <td>2023-08-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unrestricted Upload of File with Dangerous Type vulnerability in AcyMailing component for Joomla. It allows remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39970">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1e85cc8e87bcf32447a3dc7518d862a</td>
+       <td>CVE-2023-40315</td>
+       <td>2023-08-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>In OpenMNS Horizon 31.0.8 and versions earlier than 32.0.2 and related Meridian versions, any user that has the ROLE_FILESYSTEM_EDITOR can easily escalate their privileges to ROLE_ADMIN or any other role. The solution is to upgrade to Meridian 2023.1.5 or Horizon 32.0.2 or newer. Meridian and Horizon installation instructions state that they are intended for installation within an organization's private networks and should not be directly accessible from the Internet. OpenNMS thanks Erik Wynter for reporting this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40315">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7c56ed8adcaa32ceb5cd8c7d4ebc8bca</td>
+       <td>CVE-2023-40168</td>
+       <td>2023-08-17 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>TurboWarp is a desktop application that compiles scratch projects to JavaScript. TurboWarp Desktop versions prior to version 1.8.0 allowed a malicious project or custom extension to read arbitrary files from disk and upload them to a remote server. The only required user interaction is opening the sb3 file or loading the extension. The web version of TurboWarp is not affected. This bug has been addressed in commit `55e07e99b59` after an initial fix which was reverted. Users are advised to upgrade to version 1.8.0 or later. Users unable to upgrade should avoid opening sb3 files or loading extensions from untrusted sources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40168">详情</a></td>
+      </tr>
+
+      <tr>
        <td>875920aef4804485b770855b1ab935de</td>
        <td>CVE-2023-40313</td>
        <td>2023-08-17 19:15:00 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>61c653372556ec06eba136928d7131cb</td>
        <td>CVE-2023-35011</td>
-       <td>2023-08-16 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 23:15:00</td>
        <td>IBM Cognos Analytics 11.1.7, 11.2.0, and 11.2.1 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.  IBM X-Force ID:  257705.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35011">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>ed1e7f2b1155304e29f5c8c4937e1445</td>
        <td>CVE-2023-35009</td>
-       <td>2023-08-16 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 23:15:00</td>
        <td>IBM Cognos Analytics 11.1.7, 11.2.0, and 11.2.1 could allow a remote attacker to obtain system information without authentication which could be used in reconnaissance to gather information that could be used for future attacks.  IBM X-Force ID:  257703.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35009">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>2ce19de27d10f89ba386011092f5cc51</td>
        <td>CVE-2023-39846</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>An issue in Konga v0.14.9 allows attackers to bypass authentication via a crafted JWT token.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39846">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>d4839e6de1d52589c07f2eff4f4bf0d1</td>
        <td>CVE-2023-38894</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A Prototype Pollution issue in Cronvel Tree-kit v.0.7.4 and before allows a remote attacker to execute arbitrary code via the extend function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38894">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>df2780cc5529b8b17081ed69bf56285f</td>
        <td>CVE-2023-35893</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>IBM Security Guardium 10.6, 11.3, 11.4, and 11.5 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.  IBM X-Force ID:  258824.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35893">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>f5361c64e7e5a6ee56735bfa9b5770f4</td>
        <td>CVE-2023-20237</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A vulnerability in Cisco Intersight Virtual Appliance could allow an unauthenticated, adjacent attacker to access internal HTTP services that are otherwise inaccessible. This vulnerability is due to insufficient restrictions on internally accessible http proxies. An attacker could exploit this vulnerability by submitting a crafted CLI command. A successful exploit could allow the attacker access to internal subnets beyond the sphere of their intended access level.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20237">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>976015091e872380de6542b0b1222117</td>
        <td>CVE-2023-20232</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A vulnerability in the Tomcat implementation for Cisco Unified Contact Center Express (Unified CCX) could allow an unauthenticated, remote attacker to cause a web cache poisoning attack on an affected device.  This vulnerability is due to improper input validation of HTTP requests. An attacker could exploit this vulnerability by sending crafted HTTP requests to a specific API endpoint on the Unified CCX Finesse Portal. A successful exploit could allow the attacker to cause the internal WebProxy to redirect users to an attacker-controlled host.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20232">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>d8b14b5048be2664b7375eab56075ec9</td>
        <td>CVE-2023-20229</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A vulnerability in the CryptoService function of Cisco Duo Device Health Application for Windows could allow an authenticated, local attacker with low privileges to conduct directory traversal attacks and overwrite arbitrary files on an affected system. This vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by executing a directory traversal attack on an affected host. A successful exploit could allow an attacker to use a cryptographic key to overwrite arbitrary files with SYSTEM-level privileges, resulting in a denial of service (DoS) condition or data loss on the affected system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20229">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>5ca63b7d0086358e4920871618ce7737</td>
        <td>CVE-2023-20224</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A vulnerability in the CLI of Cisco ThousandEyes Enterprise Agent, Virtual Appliance installation type, could allow an authenticated, local attacker to elevate privileges to root on an affected device. This vulnerability is due to insufficient input validation of user-supplied CLI arguments. An attacker could exploit this vulnerability by authenticating to an affected device and using crafted commands at the prompt. A successful exploit could allow the attacker to execute arbitrary commands as root. The attacker must have valid credentials on the affected device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20224">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>d9f774c01f700fea328888dad54964ca</td>
        <td>CVE-2023-20222</td>
-       <td>2023-08-16 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 22:15:00</td>
        <td>A vulnerability in the web-based management interface of Cisco Prime Infrastructure and Cisco Evolved Programmable Network Manager (EPNM) could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface on an affected device. The vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20222">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35086d84a2b482557320b2732ae54883</td>
-       <td>CVE-2023-4389</td>
-       <td>2023-08-16 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A flaw was found in btrfs_get_root_ref in fs/btrfs/disk-io.c in the btrfs filesystem in the Linux Kernel due to a double decrement of the reference count. This issue may allow a local attacker with user privilege to crash the system or may lead to leaked internal kernel information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac8b9f95f4af4e669a1a2b7ab361d7b3</td>
-       <td>CVE-2023-4387</td>
-       <td>2023-08-16 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A use-after-free flaw was found in vmxnet3_rq_alloc_rx_buf in drivers/net/vmxnet3/vmxnet3_drv.c in VMware's vmxnet3 ethernet NIC driver in the Linux Kernel. This issue could allow a local attacker to crash the system due to a double-free while cleaning up vmxnet3_rq_cleanup_all, which could also lead to a kernel information leak problem.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>873193cea7f06f116afcd6013485d62a</td>
-       <td>CVE-2023-38737</td>
-       <td>2023-08-16 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM WebSphere Application Server Liberty 22.0.0.13 through 23.0.0.7 is vulnerable to a denial of service, caused by sending a specially-crafted request. A remote attacker could exploit this vulnerability to cause the server to consume memory resources.  IBM X-Force ID:  262567.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38737">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cabe1e5119dcaa1fc28ded84048d867a</td>
-       <td>CVE-2023-4385</td>
-       <td>2023-08-16 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A NULL pointer dereference flaw was found in dbFree in fs/jfs/jfs_dmap.c in the journaling file system (JFS) in the Linux Kernel. This issue may allow a local attacker to crash the system due to a missing sanity check.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4385">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a889fe32857c3cc21b7ad03f786404f4</td>
-       <td>CVE-2023-4204</td>
-       <td>2023-08-16 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>NPort IAW5000A-I/O Series firmware version v2.2 and prior is affected by a hardcoded credential vulnerabilitywhich poses a potential risk to the security and integrity of the affected device. This vulnerability is attributed to the presence of a hardcoded key, which could potentially facilitate firmware manipulation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4204">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4c5b3884e7609fd2599a2029345da7b</td>
-       <td>CVE-2023-39250</td>
-       <td>2023-08-16 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Dell Storage Integration Tools for VMware (DSITV) 06.01.00.016 contain an information disclosure vulnerability. A local low-privileged malicious user could potentially exploit this vulnerability to retrieve an encryption key that could aid in further attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3818dcf14d9fd023a62afc31da2b62bf</td>
-       <td>CVE-2023-2737</td>
-       <td>2023-08-16 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper log permissions in SafeNet Authentication Service Version 3.4.0 on Windows allows an authenticated attacker to cause a denial of service via local privilege escalation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2737">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a7c97e1e25597c2b1fc1c3f4a5ee9b24</td>
-       <td>CVE-2023-40351</td>
-       <td>2023-08-16 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site request forgery (CSRF) vulnerability in Jenkins Favorite View Plugin 5.v77a_37f62782d and earlier allows attackers to add or remove views from another user's favorite views tab bar.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40351">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7708e72ae224ddc1c049d73681e0cb92</td>
-       <td>CVE-2023-40350</td>
-       <td>2023-08-16 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jenkins Docker Swarm Plugin 1.11 and earlier does not escape values returned from Docker before inserting them into the Docker Swarm Dashboard view, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to control responses from Docker.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40350">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b670c205d31d3da11c44dd06cd0776d</td>
-       <td>CVE-2023-40349</td>
-       <td>2023-08-16 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jenkins Gogs Plugin 1.0.15 and earlier improperly initializes an option to secure its webhook endpoint, allowing unauthenticated attackers to trigger builds of jobs.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40349">详情</a></td>
       </tr>
 
      </tbody>
@@ -1710,7 +1710,7 @@
       <tr>
        <td>3986b0edeed1c1429ac0c5bda9361921</td>
        <td>CVE-2023-31449</td>
-       <td>2023-08-16 20:43:37 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 20:43:37</td>
        <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8e0439faa43413d9d3c02a5c0a42a95">详情</a></td>
       </tr>
@@ -1718,7 +1718,7 @@
       <tr>
        <td>f789ab11bdc9857a66163108f8cd8729</td>
        <td>CVE-2023-38525</td>
-       <td>2023-08-16 20:43:18 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 20:43:18</td>
        <td>SIEMENS Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc4c7808aa094810a5c43c1dd8f26f34">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>e6ae82b2ff9ab01f40d3b834169d95a5</td>
        <td>CVE-2023-32781</td>
-       <td>2023-08-16 20:43:18 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 20:43:18</td>
        <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=29c98e4f2f0f4d8db4520cd229f23c43">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>01f3e6211f70aa277a6069d9b7cd9c77</td>
        <td>CVE-2023-38528</td>
-       <td>2023-08-16 20:43:18 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 20:43:18</td>
        <td>SIEMENS Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0d26f00c7baa423cac61b1832b8a1ba7">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>15a891e0989a62db8bc874958c1c42cd</td>
        <td>CVE-2023-38526</td>
-       <td>2023-08-16 20:43:07 <img src="imgs/new.gif" /></td>
+       <td>2023-08-16 20:43:07</td>
        <td>SIEMENS Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1e2c8765e3de49838cd6b5d28cb1660b">详情</a></td>
       </tr>
