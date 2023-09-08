@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-08 05:37:15 -->
+<!-- RELEASE TIME : 2023-09-08 23:37:00 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5142d126983a795bf9db99a9d1b54043</td>
+       <td>CVE-2023-41316</td>
+       <td>2023-09-07 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tolgee is an open-source localization platform. Due to lack of validation field - Org Name, bad actor can send emails with HTML injected code to the victims. Registered users can inject HTML into unsanitized emails from the Tolgee instance to other users. This unsanitized HTML ends up in invitation emails which appear as legitimate org invitations. Bad actors may direct users to malicious website or execute javascript in the context of the users browser. This vulnerability has been addressed in version 3.29.2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41316">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>db38d96136ec0b54243b3ed3b5ffe33e</td>
+       <td>CVE-2023-20194</td>
+       <td>2023-09-07 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability in the ERS API of Cisco ISE could allow an authenticated, remote attacker to read arbitrary files on the underlying operating system of an affected device. To exploit this vulnerability, an attacker must have valid Administrator-level privileges on the affected device. This vulnerability is due to improper privilege management in the ERS API. An attacker could exploit this vulnerability by sending a crafted request to an affected device. A successful exploit could allow the attacker to elevate their privileges beyond the sphere of their intended access level, which would allow them to obtain sensitive information from the underlying operating system. Note: The ERS is not enabled by default. To verify the status of the ERS API in the Admin GUI, choose Administration > Settings > API Settings > API Service Settings.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20194">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e12677cad70efef8db68c3ada181fe9</td>
+       <td>CVE-2023-20193</td>
+       <td>2023-09-07 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability in the Embedded Service Router (ESR) of Cisco ISE could allow an authenticated, local attacker to read, write, or delete arbitrary files on the underlying operating system and escalate their privileges to root. To exploit this vulnerability, an attacker must have valid Administrator-level privileges on the affected device. This vulnerability is due to improper privilege management in the ESR console. An attacker could exploit this vulnerability by sending a crafted request to an affected device. A successful exploit could allow the attacker to elevate their privileges to root and read, write, or delete arbitrary files from the underlying operating system of the affected device. Note: The ESR is not enabled by default and must be licensed. To verify the status of the ESR in the Admin GUI, choose Administration > Settings > Protocols > IPSec.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20193">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bdb754fb0e3b5ee5c1f5a9e3b110692</td>
+       <td>CVE-2023-37798</td>
+       <td>2023-09-07 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stored cross-site scripting (XSS) vulnerability in the new REDCap project creation function of Vanderbilt REDCap 13.1.35 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the project title parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a9169ea55600380f72f5fd680c30dcb</td>
+       <td>CVE-2023-4685</td>
+       <td>2023-09-07 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Delta Electronics' CNCSoft-B version 1.0.0.4 and DOPSoft versions 4.0.0.82 and prior are vulnerable to stack-based buffer overflow, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4685">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c872dee7716db6b6dc359e30c9157f8</td>
+       <td>CVE-2023-4528</td>
+       <td>2023-09-07 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unsafe deserialization in JSCAPE MFT Server versions prior to 2023.1.9 (Windows, Linux, and MacOS) permits an attacker to run arbitrary Java code (including OS commands) via its management interface</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4528">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1433146ef4661c0d5a236d6fc8a6b575</td>
+       <td>CVE-2023-41064</td>
+       <td>2023-09-07 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.5.2, iOS 16.6.1 and iPadOS 16.6.1. Processing a maliciously crafted image may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41064">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a205609777db385a4daf2fcd8610d7d</td>
+       <td>CVE-2023-41061</td>
+       <td>2023-09-07 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>A validation issue was addressed with improved logic. This issue is fixed in watchOS 9.6.2, iOS 16.6.1 and iPadOS 16.6.1. A maliciously crafted attachment may result in arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41061">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c660853d9eb766c70261b98d7b8b23f</td>
+       <td>CVE-2023-40060</td>
+       <td>2023-09-07 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been identified within Serv-U 15.4 and 15.4 Hotfix 1 that, if exploited, allows an actor to bypass multi-factor/two-factor authentication. The actor must have administrator-level access to Serv-U to perform this action. 15.4. SolarWinds found that the issue was not completely fixed in 15.4 Hotfix 1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40060">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97582f290eca3972d47d951b25f83403</td>
+       <td>CVE-2023-30800</td>
+       <td>2023-09-07 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>The web server used by MikroTik RouterOS version 6 is affected by a heap memory corruption issue. A remote and unauthenticated attacker can corrupt the server's heap memory by sending a crafted HTTP request. As a result, the web interface crashes and is immediately restarted. The issue was fixed in RouterOS 6.49.10 stable. RouterOS version 7 is not affected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30800">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e6145f7dd3fa9151340c8f8c79d73f30</td>
        <td>CVE-2023-41329</td>
        <td>2023-09-06 21:15:00</td>
@@ -441,86 +521,6 @@
        <td>2023-09-05 18:15:00</td>
        <td>Cross Site Scripting vulnerability in IceWarp Corporation WebClient v.10.2.1 allows a remote attacker to execute arbitrary code via a crafted payload to the mid parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39598">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>436a1d1146419571afb63b60079672a4</td>
-       <td>CVE-2023-3995</td>
-       <td>2023-09-04 20:15:00</td>
-       <td>** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is a duplicate of CVE-2023-4147.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3995">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0686da1ed4133ca2261ca71dc5c24031</td>
-       <td>CVE-2023-41057</td>
-       <td>2023-09-04 18:15:00</td>
-       <td>hyper-bump-it is a command line tool for updating the version in project files.`hyper-bump-it` reads a file glob pattern from the configuration file. That is combined with the project root directory to construct a full glob pattern that is used to find files that should be edited. These matched files should be contained within the project root directory, but that is not checked. This could result in changes being written to files outside of the project. The default behaviour of `hyper-bump-it` is to display the planned changes and prompt the user for confirmation before editing any files. However, the configuration file provides a field that can be used cause files to be edited without displaying the prompt. This issue has been fixed in release version 0.5.1. Users are advised to upgrade. Users that are unable to update from vulnerable versions, executing `hyper-bump-it` with the `--interactive` command line argument will ensure that all planned changes are displayed and prompt the user for confirmation before editing any files, even if the configuration file contains `show_confirm_prompt=true`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41057">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cd6b936570afb701b9ebde68a9b66a9d</td>
-       <td>CVE-2023-41055</td>
-       <td>2023-09-04 18:15:00</td>
-       <td>LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine. LibreY is subject to a Server-Side Request Forgery (SSRF) vulnerability in the `engines/google/text.php` and `engines/duckduckgo/text.php` files in versions before commit be59098abd119cda70b15bf3faac596dfd39a744. This vulnerability allows remote attackers to request the server to send HTTP GET requests to arbitrary targets and conduct Denial-of-Service (DoS) attacks via the `wikipedia_language` cookie. Remote attackers can request the server to download large files to reduce the performance of the server or even deny access from legitimate users. This issue has been patched in https://github.com/Ahwxorg/LibreY/pull/9. LibreY hosters are advised to use the latest commit. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41055">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e23577e20247d8fbca501336aefba0e9</td>
-       <td>CVE-2023-41054</td>
-       <td>2023-09-04 18:15:00</td>
-       <td>LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine. LibreY is subject to a Server-Side Request Forgery (SSRF) vulnerability in the `image_proxy.php` file of LibreY before commit 8f9b9803f231e2954e5b49987a532d28fe50a627. This vulnerability allows remote attackers to use the server as a proxy to send HTTP GET requests to arbitrary targets and retrieve information in the internal network or conduct Denial-of-Service (DoS) attacks via the `url` parameter. Remote attackers can use the server as a proxy to send HTTP GET requests and retrieve information in the internal network. Remote attackers can also request the server to download large files or chain requests among multiple instances to reduce the performance of the server or even deny access from legitimate users. This issue has been addressed in https://github.com/Ahwxorg/LibreY/pull/31. LibreY hosters are advised to use the latest commit. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41054">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0d28b3033b340a334854054259889dc</td>
-       <td>CVE-2023-41052</td>
-       <td>2023-09-04 18:15:00</td>
-       <td>Vyper is a Pythonic Smart Contract Language. In affected versions the order of evaluation of the arguments of the builtin functions `uint256_addmod`, `uint256_mulmod`, `ecadd` and `ecmul` does not follow source order. This behaviour is problematic when the evaluation of one of the arguments produces side effects that other arguments depend on. A patch is currently being developed on pull request #3583. When using builtins from the list above, users should make sure that the arguments of the expression do not produce side effects or, if one does, that no other argument is dependent on those side effects.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41052">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>295ba82d300748b80acdb6109806335a</td>
-       <td>CVE-2023-40015</td>
-       <td>2023-09-04 18:15:00</td>
-       <td>Vyper is a Pythonic Smart Contract Language. For the following (probably non-exhaustive) list of expressions, the compiler evaluates the arguments from right to left instead of left to right. `unsafe_add, unsafe_sub, unsafe_mul, unsafe_div, pow_mod256, |, &, ^ (bitwise operators), bitwise_or (deprecated), bitwise_and (deprecated), bitwise_xor (deprecated), raw_call, <, >, <=, >=, ==, !=, in, not in (when lhs and rhs are enums)`. This behaviour becomes a problem when the evaluation of one of the arguments produces side effects that other arguments depend on. The following expressions can produce side-effect: state modifying external call , state modifying internal call, `raw_call`, `pop()` when used on a Dynamic Array stored in the storage, `create_minimal_proxy_to`, `create_copy_of`, `create_from_blueprint`. This issue has not yet been patched. Users are advised to make sure that the arguments of the expression do not produce side effects or, if one does, that no other argument is dependent on those side effects.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40015">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f6e766191ad638044399ec062a3fbb0b</td>
-       <td>CVE-2023-4758</td>
-       <td>2023-09-04 16:15:00</td>
-       <td>Buffer Over-read in GitHub repository gpac/gpac prior to 2.3-DEV.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4758">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a12b1b1c951d58aa541742292394cdb</td>
-       <td>CVE-2023-28072</td>
-       <td>2023-09-04 16:15:00</td>
-       <td>Dell Alienware Command Center, versions prior to 5.5.51.0, contain a deserialization of untrusted data vulnerability. A local malicious user could potentially send specially crafted requests to the .NET Remoting server to run arbitrary code on the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28072">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2de48806e5929142a12d3514683b921</td>
-       <td>CVE-2023-4755</td>
-       <td>2023-09-04 14:15:00</td>
-       <td>Use After Free in GitHub repository gpac/gpac prior to 2.3-DEV.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4755">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e74ad6fe9367bf669d04f4b3a4f0d4b</td>
-       <td>CVE-2023-4752</td>
-       <td>2023-09-04 14:15:00</td>
-       <td>Use After Free in GitHub repository vim/vim prior to 9.0.1858.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4752">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d58094c1826ce48ab0ca196746790ea4</td>
+       <td>CVE-2023-4722</td>
+       <td>2023-09-08 20:04:06 <img src="imgs/new.gif" /></td>
+       <td>GPAC GPAC Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cb84c56bedc640d5a421ac4d61bb4382">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13b1811ef00e25e1e1ff3a631ba9bffe</td>
+       <td>CVE-2023-39582</td>
+       <td>2023-09-08 20:04:06 <img src="imgs/new.gif" /></td>
+       <td>CHAMILO CHAMILO_LMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=513b3bea1ce941b886cfcc90a258b1de">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f92215206c9b8fdccfb9a1c06f7d4c5</td>
+       <td>CVE-2023-4682</td>
+       <td>2023-09-08 20:03:54 <img src="imgs/new.gif" /></td>
+       <td>GPAC GPAC Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e5cea4d0a28d4e218254b43fcb055825">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>548af9d226f1d0a3219e594265b36068</td>
+       <td>CVE-2023-41744</td>
+       <td>2023-09-08 20:03:54 <img src="imgs/new.gif" /></td>
+       <td>ACRONIS Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b9cf3a1c7c0546f88dc9ac29a1646929">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ffbc0ae5e23bbe01d995352afa53987</td>
+       <td>CVE-2023-4721</td>
+       <td>2023-09-08 20:03:54 <img src="imgs/new.gif" /></td>
+       <td>GPAC GPAC Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0eb4b76af98f4e2e8d014af0b1549429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2af3aff7b780a3660279c30484f2b812</td>
+       <td>CVE-2023-4720</td>
+       <td>2023-09-08 20:03:52 <img src="imgs/new.gif" /></td>
+       <td>GPAC GPAC Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d1d654cbd9554aa3b6452f0a966f7b81">详情</a></td>
+      </tr>
+
+      <tr>
        <td>059d161614846838fdcec33c72eec46a</td>
        <td>CVE-2023-40762</td>
        <td>2023-09-07 20:04:39 <img src="imgs/new.gif" /></td>
@@ -1891,54 +1939,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=30c0f5b6f562435b802ec3b1f4704f4d">详情</a></td>
       </tr>
 
-      <tr>
-       <td>d74ea8f6181ba8b89ec7ad8dfbd37709</td>
-       <td>CVE-2023-41362</td>
-       <td>2023-09-03 20:05:32</td>
-       <td>MYBB MYBB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7cdd190446534136bc0c8978739424dd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c56d656fe4f979e092de019d609f41f</td>
-       <td>CVE-2022-43904</td>
-       <td>2023-09-02 20:05:41</td>
-       <td>IBM SECURITY_GUARDIUM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c4c03bc01d2348ab95396962c417cb34">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bb118d649219a534e578af48f4e1b91</td>
-       <td>CVE-2023-30436</td>
-       <td>2023-09-02 20:05:41</td>
-       <td>IBM SECURITY_GUARDIUM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=39a9b023354b47c4b0e549fb62ab6260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d07070d85840950312e3fc63cee4ce94</td>
-       <td>CVE-2023-41248</td>
-       <td>2023-09-02 20:05:40</td>
-       <td>JETBRAINS TEAMCITY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=84c8dedb3b01418c9af461e3e936f4b2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c603fc5d2008fa40f93ce02c47473e8e</td>
-       <td>CVE-2023-40751</td>
-       <td>2023-09-01 20:05:37</td>
-       <td>PHPJABBERS FUNDRAISING_SCRIPT Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eb633fc4c6814def929f123cb2d98fb1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c0d5e26dc01e7eb945c55ab81508bf60</td>
-       <td>CVE-2023-41360</td>
-       <td>2023-09-01 20:05:36</td>
-       <td>FRROUTING FRROUTING Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ba3983a4290b4fe38977b481158b9350">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1955,6 +1955,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>f1c6547fb637917f26eef8ee3e83368a</td>
+       <td>CVE-2023-0525</td>
+       <td>2023-09-11 23:34:44</td>
+       <td>Mitsubishi Electric GOT2000 Series弱编码密码漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/84419">详情</a></td>
+      </tr>
+
       <tr>
        <td>c96111b57e688bd6209743537f013a87</td>
        <td>CVE-2023-1935</td>
@@ -2187,14 +2195,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/84349">详情</a></td>
       </tr>
 
-      <tr>
-       <td>f9f8b1d00ee67983112a33110a4cbb39</td>
-       <td>CVE-2023-34329</td>
-       <td>2023-09-07 05:34:56 <img src="imgs/new.gif" /></td>
-       <td>AMI MegaRAC SPX身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/84348">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2284,6 +2284,14 @@
       </tr>
 
       <tr>
+       <td>31172f60fe3bae25b0223cd3b34095e4</td>
+       <td>CVE-2023-41633</td>
+       <td>2023-09-01 19:15:43 </td>
+       <td>Catdoc v0.95 was discovered to contain a NULL pointer dereference via the component xls2csv at src/fileutil.c.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41633">详情</a></td>
+      </tr>
+
+      <tr>
        <td>57fb3729a86388c4e747657a5354e7e9</td>
        <td>CVE-2023-4708</td>
        <td>2023-09-01 18:15:07 </td>
@@ -2297,6 +2305,22 @@
        <td>2023-09-01 18:15:07 </td>
        <td>A vulnerability was found in Infosoftbd Clcknshop 1.0.0. It has been declared as problematic. This vulnerability affects unknown code of the file /collection/all. The manipulation of the argument q leads to cross site scripting. The attack can be initiated remotely. VDB-238570 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4707">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>384be4afd9e91244d81b142d857ff4d9</td>
+       <td>CVE-2023-41628</td>
+       <td>2023-09-01 17:15:07 </td>
+       <td>An issue in O-RAN Software Community E2 G-Release allows attackers to cause a Denial of Service (DoS) by incorrectly initiating the messaging procedure between the E2Node and E2Term components.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41628">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35fd0df191695fedda59a709088e2450</td>
+       <td>CVE-2023-41627</td>
+       <td>2023-09-01 17:15:07 </td>
+       <td>O-RAN Software Community ric-plt-lib-rmr v4.9.0 does not validate the source of the routing tables it receives, potentially allowing attackers to send forged routing tables to the device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41627">详情</a></td>
       </tr>
 
       <tr>
@@ -2380,6 +2404,38 @@
       </tr>
 
       <tr>
+       <td>55cb2525df766997185f3dcb200c0416</td>
+       <td>CVE-2023-41638</td>
+       <td>2023-08-31 14:15:08 </td>
+       <td>An arbitrary file upload vulnerability in the Gestione Documentale module of GruppoSCAI RealGimm 1.1.37p38 allows attackers to execute arbitrary code via uploading a crafted file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41638">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04622f66ef4b74fec56434446183833c</td>
+       <td>CVE-2023-41637</td>
+       <td>2023-08-31 14:15:08 </td>
+       <td>An arbitrary file upload vulnerability in the Carica immagine function of GruppoSCAI RealGimm 1.1.37p38 allows attackers to execute arbitrary code via uploading a crafted HTML file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a56cd1d76060718d879ff30b73d8dfc</td>
+       <td>CVE-2023-41636</td>
+       <td>2023-08-31 14:15:08 </td>
+       <td>A SQL injection vulnerability in the Data Richiesta dal parameter of GruppoSCAI RealGimm v1.1.37p38 allows attackers to access the database and execute arbitrary commands via a crafted SQL query.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41636">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d8c506f56665e08a25b2ed41ad26067</td>
+       <td>CVE-2023-41635</td>
+       <td>2023-08-31 14:15:08 </td>
+       <td>A XML External Entity (XXE) vulnerability in the VerifichePeriodiche.aspx component of GruppoSCAI RealGimm v1.1.37p38 allows attackers to read any file in the filesystem via supplying a crafted XML file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41635">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e659fe4b7ee5d49dde398950adf97b0d</td>
        <td>CVE-2023-4655</td>
        <td>2023-08-31 01:15:10 </td>
@@ -2393,62 +2449,6 @@
        <td>2023-08-31 01:15:10 </td>
        <td>Sensitive Cookie in HTTPS Session Without 'Secure' Attribute in GitHub repository instantsoft/icms2 prior to 2.16.1.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4654">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb1a59ce998e190139e1567077f11132</td>
-       <td>CVE-2023-4653</td>
-       <td>2023-08-31 01:15:10 </td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4653">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>238e05aec4dcb72777d8e7001f6ba2ab</td>
-       <td>CVE-2023-4652</td>
-       <td>2023-08-31 01:15:10 </td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4652">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80e1069c538d73b945bed50ccfc9fa17</td>
-       <td>CVE-2023-4651</td>
-       <td>2023-08-31 01:15:09 </td>
-       <td>Server-Side Request Forgery (SSRF) in GitHub repository instantsoft/icms2 prior to 2.16.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4651">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08b38d9ff68644dbe662aa5d3ca700eb</td>
-       <td>CVE-2023-4649</td>
-       <td>2023-08-31 01:15:09 </td>
-       <td>Session Fixation in GitHub repository instantsoft/icms2 prior to 2.16.1.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4649">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49eaacb8462c2c10b94c87ac17c5c2a8</td>
-       <td>CVE-2023-4624</td>
-       <td>2023-08-30 13:15:15 </td>
-       <td>Server-Side Request Forgery (SSRF) in GitHub repository bookstackapp/bookstack prior to v23.08.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4624">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1b65f4c1b71d6302ec00f07c68fb15bc</td>
-       <td>CVE-2023-4600</td>
-       <td>2023-08-30 12:15:09 </td>
-       <td>The AffiliateWP for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'affwp_activate_addons_page_plugin' function called via an AJAX action in versions up to, and including, 2.14.0. This makes it possible for authenticated attackers, with subscriber-level access and above, to activate arbitrary plugins.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4600">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31628d44613636c578a21e7281fdb036</td>
-       <td>CVE-2023-4572</td>
-       <td>2023-08-29 20:15:10 </td>
-       <td>Use after free in MediaStream in Google Chrome prior to 116.0.5845.140 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4572">详情</a></td>
       </tr>
 
      </tbody>
