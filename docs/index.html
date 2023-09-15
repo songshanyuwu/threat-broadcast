@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-15 05:37:11 -->
+<!-- RELEASE TIME : 2023-09-15 23:37:01 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,22 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>b01c750520c239718c36520a80069835</td>
+       <td>CVE-2023-38146</td>
+       <td>2023-09-15 09:17:55 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-38146：Windows Themes远程代码执行漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65041faf22adc884abcd7f4d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>94ff42c9ba5ec0e98e01522ef3b80c5e</td>
+       <td>CVE-2023-26369</td>
+       <td>2023-09-15 09:17:06 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-26369：Adobe Acrobat Reader 代码执行漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65041d8d22adc884abcd7f4a">详情</a></td>
+      </tr>
+
       <tr>
        <td>f59b37492089e7dabfefe20fdf76ba30</td>
        <td></td>
@@ -251,22 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64b4f65041dbcfd3932b4769">详情</a></td>
       </tr>
 
-      <tr>
-       <td>fb6140d679aeaf4cc7a9c0db715568a5</td>
-       <td></td>
-       <td>2023-07-12 09:12:13</td>
-       <td>2023-07 补丁日: 微软多个漏洞安全更新通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64ae6e6dd5b5ed368982cf8c">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4835542a408a1bf2d21120a9d53dde91</td>
-       <td></td>
-       <td>2023-07-11 09:46:46</td>
-       <td>泛微E-Cology SQL注入漏洞安全通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64ad2506d5b5ed368982cf75">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>693a75ad7e0937b6fd3316ca7a2f0837</td>
+       <td>CVE-2023-42442</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>JumpServer is an open source bastion host and a professional operation and maintenance security audit system. Starting in version 3.0.0 and prior to versions 3.5.5 and 3.6.4, session replays can download without authentication. Session replays stored in S3, OSS, or other cloud storage are not affected. The api `/api/v1/terminal/sessions/` permission control is broken and can be accessed anonymously. SessionViewSet permission classes set to `[RBACPermission | IsSessionAssignee]`, relation is or, so any permission matched will be allowed. Versions 3.5.5 and 3.6.4 have a fix. After upgrading, visit the api `$HOST/api/v1/terminal/sessions/?limit=1`. The expected http response code is 401 (`not_authenticated`).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42442">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>033efa9540755044f84643692a8de9d2</td>
+       <td>CVE-2023-42439</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data. A SSRF vulnerability exists starting in version 3.2.0, bypassing existing controls on the software. This can allow a user to request internal services for a full read SSRF, returning any data from the internal network. The application is using a whitelist, but the whitelist can be bypassed. The bypass will trick the application that the first host is a whitelisted address, but the browser will use `@` or `%40` as a credential to the host geoserver on port 8080, this will return the data to that host on the response. As of time of publication, no patched version is available.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42439">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffd9276ac3e7a431711d6c07c61e558a</td>
+       <td>CVE-2023-41901</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>** REJECT ** Further research determined the issue is not a vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41901">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>db8d815b5dd3856e74cd13026bfb73a2</td>
+       <td>CVE-2023-41900</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>Jetty is a Java based web server and servlet engine. Versions 9.4.21 through 9.4.51, 10.0.15, and 11.0.15 are vulnerable to weak authentication. If a Jetty `OpenIdAuthenticator` uses the optional nested `LoginService`, and that `LoginService` decides to revoke an already authenticated user, then the current request will still treat the user as authenticated. The authentication is then cleared from the session and subsequent requests will not be treated as authenticated. So a request on a previously authenticated session could be allowed to bypass authentication after it had been rejected by the `LoginService`. This impacts usages of the jetty-openid which have configured a nested `LoginService` and where that `LoginService` will is capable of rejecting previously authenticated users. Versions 9.4.52, 10.0.16, and 11.0.16 have a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41900">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>47d6911da8558be7e725a45d9656ba2f</td>
+       <td>CVE-2023-41889</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>SHIRASAGI is a Content Management System. Prior to version 1.18.0, SHIRASAGI is vulnerable to a Post-Unicode normalization issue. This happens when a logical validation or a security check is performed before a Unicode normalization. The Unicode character equivalent of a character would resurface after the normalization. The fix is initially performing the Unicode normalization and then strip for all whitespaces and then checking for a blank string. This issue has been fixed in version 1.18.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41889">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bac32f4ac6bac57b54ec3d83bca33455</td>
+       <td>CVE-2023-41887</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>OpenRefine is a powerful free, open source tool for working with messy data. Prior to version 3.7.5, a remote code execution vulnerability allows any unauthenticated user to execute code on the server. Version 3.7.5 has a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41887">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a3511b2973fb1ff1c854ad331332f22</td>
+       <td>CVE-2023-41886</td>
+       <td>2023-09-15 21:15:11 <img src="imgs/new.gif" /></td>
+       <td>OpenRefine is a powerful free, open source tool for working with messy data. Prior to version 3.7.5, an arbitrary file read vulnerability allows any unauthenticated user to read a file on a server. Version 3.7.5 fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41886">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72874a4880a81f91caa47a6895dd84fc</td>
+       <td>CVE-2023-0923</td>
+       <td>2023-09-15 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in the Kubernetes service for notebooks in RHODS, where it does not prevent pods from other namespaces and applications from making requests to the Jupyter API. This flaw can lead to file content exposure and other issues.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>289ac4c577149654907e7c1d72e2aed9</td>
+       <td>CVE-2023-0813</td>
+       <td>2023-09-15 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in the Network Observability plugin for OpenShift console. Unless the Loki authToken configuration is set to FORWARD mode, authentication is no longer enforced, allowing any user who can connect to the OpenShift Console in an OpenShift cluster to retrieve flows without authentication.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0813">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af709ad1efe7bf77a47af53292a7e030</td>
+       <td>CVE-2022-3261</td>
+       <td>2023-09-15 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in OpenStack. Multiple components show plain-text passwords in /var/log/messages during the OpenStack overcloud update run, leading to a disclosure of sensitive information problem.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3261">详情</a></td>
+      </tr>
+
       <tr>
        <td>461e49f95d6b6c09c79b5224f5de618c</td>
        <td>CVE-2023-4951</td>
@@ -441,86 +521,6 @@
        <td>2023-09-11 23:15:00</td>
        <td>An issue in StrangeBee TheHive v.5.0.8, v.4.1.21 and Cortex v.3.1.6 allows a remote attacker to gain privileges via Active Directory authentication mechanism.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39069">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56d2a9b86de0fdf1c9f42a50f2d7f3dc</td>
-       <td>CVE-2023-41879</td>
-       <td>2023-09-11 22:15:00</td>
-       <td>Magento LTS is the official OpenMage LTS codebase. Guest orders may be viewed without authentication using a "guest-view" cookie which contains the order's "protect_code". This code is 6 hexadecimal characters which is arguably not enough to prevent a brute-force attack. Exposing each order would require a separate brute force attack. This issue has been patched in versions 19.5.1 and 20.1.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41879">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84bef31a330ac0a504bce8c4425e4b71</td>
-       <td>CVE-2023-38878</td>
-       <td>2023-09-11 22:15:00</td>
-       <td>A reflected cross-site scripting (XSS) vulnerability in DevCode OpenSTAManager versions 2.4.24 to 2.4.47 may allow a remote attacker to execute arbitrary JavaScript in the web browser of a victim by injecting a malicious payload into the 'error' and 'error_description' parameters of 'oauth2.php'.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38878">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c90fe8a365ac60a46b0f4021e251bc89</td>
-       <td>CVE-2023-4897</td>
-       <td>2023-09-11 21:15:00</td>
-       <td>Relative Path Traversal in GitHub repository mintplex-labs/anything-llm prior to 0.0.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4897">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7641218df173837e3b093c589708f823</td>
-       <td>CVE-2023-35687</td>
-       <td>2023-09-11 21:15:00</td>
-       <td>In MtpPropertyValue of MtpProperty.h, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35687">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b0475a0e90d6ce6ca96886fa8293b90</td>
-       <td>CVE-2023-41000</td>
-       <td>2023-09-11 15:16:00</td>
-       <td>GPAC through 2.2.1 has a use-after-free vulnerability in the function gf_bifs_flush_command_list in bifs/memory_decoder.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41000">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9307bc52f0508103772ab396c3f0d038</td>
-       <td>CVE-2023-36140</td>
-       <td>2023-09-11 15:16:00</td>
-       <td>In PHPJabbers Cleaning Business Software 1.0, there is no encryption on user passwords allowing an attacker to gain access to all user accounts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36140">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>808387b972dfe6f65eb704d981f6f234</td>
-       <td>CVE-2023-27470</td>
-       <td>2023-09-11 15:15:00</td>
-       <td>BASupSrvcUpdater.exe in N-able Take Control Agent through 7.0.41.1141 before 7.0.43 has a TOCTOU Race Condition via a pseudo-symlink at %PROGRAMDATA%\GetSupportService_N-Central\PushUpdates, leading to arbitrary file deletion.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27470">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6ce781f43cc84414dc9dda897b1760c</td>
-       <td>CVE-2022-23382</td>
-       <td>2023-09-11 15:15:00</td>
-       <td>Shenzhen Hichip Vision Technology IP Camera Firmware V11.4.8.1.1-20170926 has a denial of service vulnerability through sending a crafted multicast message in a local network.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23382">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e0e71c7bbb1177d9c2efe26d48dc4581</td>
-       <td>CVE-2020-24088</td>
-       <td>2023-09-11 15:15:00</td>
-       <td>An issue was discovered in MmMapIoSpace routine in Foxconn Live Update Utility 2.1.6.26, allows local attackers to escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-24088">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e11037b1fd3b51f04f69fa4c4ea059b</td>
-       <td>CVE-2023-4630</td>
-       <td>2023-09-11 14:15:00</td>
-       <td>An issue has been discovered in GitLab affecting all versions starting from 10.6 before 16.1.5, all versions starting from 16.2 before 16.2.5, all versions starting from 16.3 before 16.3.1 in which any user can read limited information about any project's imports.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4630">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6393b690e42f857b47798cd2ed86c702</td>
+       <td>CVE-2023-20898</td>
+       <td>2023-09-15 20:09:45 <img src="imgs/new.gif" /></td>
+       <td>SALTSTACK SALT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fec6a7f1f25d4ee8ab85540c6e47b1b7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a861701a170b9b42b28e0af7f88747a</td>
+       <td>CVE-2020-35593</td>
+       <td>2023-09-15 20:09:45 <img src="imgs/new.gif" /></td>
+       <td>BMC PATROL_AGENT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=75a3c70edcb443a58d4da8d1c906afa9">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e29dabeb857022830e699bcb36ee5cc6</td>
        <td>CVE-2021-40790</td>
        <td>2023-09-14 20:08:29 <img src="imgs/new.gif" /></td>
@@ -1921,22 +1937,6 @@
        <td>2023-09-11 20:04:49</td>
        <td>PHP-FUSION PHPFUSION Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e8244909daf3459ba0419ef6766ddcf1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13271601e0110e020c9d40e66cc692af</td>
-       <td>CVE-2022-30638</td>
-       <td>2023-09-11 20:04:49</td>
-       <td>Adobe Illustrator 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=defd2262d90045bcb0414f234525fb66">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9892238855035291df6b41b857dd054b</td>
-       <td>CVE-2023-4781</td>
-       <td>2023-09-11 20:04:49</td>
-       <td>VIM VIM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9100679bb79f4d7f8eaebb44a7f782f5">详情</a></td>
       </tr>
 
      </tbody>
