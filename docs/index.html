@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-26 05:37:06 -->
+<!-- RELEASE TIME : 2023-09-26 23:37:21 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6ca126e0c0ef5582d3c8dc25fe70dfbf</td>
+       <td>CVE-2023-43325</td>
+       <td>2023-09-26 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A reflected cross-site scripting (XSS) vulnerability in the data[redirect_url] parameter of mooSocial v3.1.8 allows attackers to steal user's session cookies and impersonate their account via a crafted URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43325">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>94a00061fadcef694b3fe144ea514352</td>
+       <td>CVE-2023-4259</td>
+       <td>2023-09-26 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Two potential buffer overflow vulnerabilities at the following locations in the Zephyr eS-WiFi driver source code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4259">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4dae046425a7f9c881eb0e2c575fd42</td>
+       <td>CVE-2023-5176</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Memory safety bugs present in Firefox 117, Firefox ESR 115.2, and Thunderbird 115.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2334088ddbe12fe26fbf0c143970af98</td>
+       <td>CVE-2023-5175</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>During process shutdown, it was possible that an <code>ImageBitmap</code> was created that would later be used after being freed from a different codepath, leading to a potentially exploitable crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af0a8b9ddc2ec226d9c40e6b963d3123</td>
+       <td>CVE-2023-5174</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>If Windows failed to duplicate a handle during process creation, the sandbox code may have inadvertently freed a pointer twice, resulting in a use-after-free and a potentially exploitable crash. This bug only affects Firefox on Windows when run in non-standard configurations (such as using <code>runas</code>). Other operating systems are unaffected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>901b7e64b55ddf18c3eb4701da5cbfec</td>
+       <td>CVE-2023-5173</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>In a non-standard configuration of Firefox, an integer overflow could have occurred based on network traffic (possibly under influence of a local unprivileged webpage), leading to an out-of-bounds write to privileged process memory.  This bug only affects Firefox if a non-standard preference allowing non-HTTPS Alternate Services (<code>network.http.altsvc.oe</code>) is enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>832295f942ce284eb9c18c62572c92a8</td>
+       <td>CVE-2023-5172</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>A hashtable  in the Ion Engine could have been mutated while there was a live interior reference, leading to a potential use-after-free and exploitable crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fb752e8abf33c31bd2b0595be0341a3</td>
+       <td>CVE-2023-5171</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>During Ion compilation, a Garbage Collection could have resulted in a use-after-free condition, allowing an attacker to write two NUL bytes, and cause a potentially exploitable crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49ae44d682e1640ec6faa637950432db</td>
+       <td>CVE-2023-5170</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>In canvas rendering, a compromised content process could have caused a surface to change unexpectedly, leading to a memory leak of a privileged process. This memory leak could be used to effect a sandbox escape if the correct data was leaked.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5170">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1276656175991a04dc30804d7d5d3d67</td>
+       <td>CVE-2023-5169</td>
+       <td>2023-09-26 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>A compromised content process could have provided malicious data in a <code>PathRecording</code> resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5169">详情</a></td>
+      </tr>
+
+      <tr>
        <td>044fab7c833f1af6ac82268c278d7418</td>
        <td>CVE-2023-43278</td>
        <td>2023-09-25 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-09-23 00:15:00</td>
        <td>SQL injection vulnerability in janobe Online Job Portal v.2020 allows a remote attacker to execute arbitrary code via the login.php component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43468">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4be0e0b7dcbfa7985ab1e337bfafa4a2</td>
-       <td>CVE-2023-23364</td>
-       <td>2023-09-22 04:15:00</td>
-       <td>A buffer copy without checking size of input vulnerability has been reported to affect QNAP operating systems. If exploited, the vulnerability possibly allows remote users to execute code via unspecified vectors. We have already fixed the vulnerability in the following versions: Multimedia Console 2.1.1 ( 2023/03/29 ) and later Multimedia Console 1.4.7 ( 2023/03/20 ) and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23364">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85e83fef12d37bec604f1f22ae863236</td>
-       <td>CVE-2023-23363</td>
-       <td>2023-09-22 04:15:00</td>
-       <td>A buffer copy without checking size of input vulnerability has been reported to affect QNAP operating system. If exploited, the vulnerability possibly allows remote users to execute code via unspecified vectors. We have already fixed the vulnerability in the following versions: QTS 4.3.6.2441 build 20230621 and later QTS 4.3.3.2420 build 20230621 and later QTS 4.2.6 build 20230621 and later QTS 4.3.4.2451 build 20230621 and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23363">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02bd6c0b4a2f4cab127191f125adc7ea</td>
-       <td>CVE-2023-23362</td>
-       <td>2023-09-22 04:15:00</td>
-       <td>An OS command injection vulnerability has been reported to affect QNAP operating systems. If exploited, the vulnerability allows remote authenticated users to execute commands via susceptible QNAP devices. We have already fixed the vulnerability in the following versions: QTS 5.0.1.2376 build 20230421 and later QTS 4.5.4.2374 build 20230416 and later QuTS hero h5.0.1.2376 build 20230421 and later QuTS hero h4.5.4.2374 build 20230417 and later QuTScloud c5.0.1.2374 and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23362">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b094359a59d899b3026cedd328a6b4fb</td>
-       <td>CVE-2023-31719</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>FUXA <= 1.1.12 is vulnerable to SQL Injection via /api/signin.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31719">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d61674902f7df9f3dcab43faf5c7e158</td>
-       <td>CVE-2023-31718</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>FUXA <= 1.1.12 is vulnerable to Local via Inclusion via /api/download.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31718">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b04cdb0f097c48d1eac2cbd53fe0d572</td>
-       <td>CVE-2023-31717</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>A SQL Injection attack in FUXA <= 1.1.12 allows exfiltration of confidential information from the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31717">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f1f92b6da330becdfc35a3f40969131</td>
-       <td>CVE-2023-31716</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>FUXA <= 1.1.12 has a Local File Inclusion vulnerability via file=fuxa.log</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31716">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7638136db8294d06fabb612b6f7e5ef5</td>
-       <td>CVE-2023-5068</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>Delta Electronics DIAScreen may write past the end of an allocated buffer while parsing a specially crafted input file. This could allow an attacker to execute code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38d91b20db9454630cde5e699f0f1e1d</td>
-       <td>CVE-2023-4504</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>Due to failure in validating the length provided by an attacker-crafted PostScript document, CUPS and libppd are susceptible to a heap-based buffer overflow and possibly code execution. This issue has been fixed in CUPS version 2.4.7, released in September of 2023.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2a5785871a2aa0d27582585e383c5db</td>
-       <td>CVE-2023-43128</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>D-LINK DIR-806 1200M11AC wireless router DIR806A1_FW100CNb11 is vulnerable to command injection due to lax filtering of HTTP_ST parameters.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43128">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>89c9b945a6ea6935f21c8a637c7e9076</td>
+       <td>CVE-2023-39575</td>
+       <td>2023-09-26 20:04:17 <img src="imgs/new.gif" /></td>
+       <td>ISL ARP-GUARD Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2a7d0a7daf44e76babf6a4d09914d81">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4a472deba9a40702a93aea8a5cd2567</td>
+       <td>CVE-2023-2163</td>
+       <td>2023-09-26 20:04:17 <img src="imgs/new.gif" /></td>
+       <td>LINUX LINUX_KERNEL Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a2c5d0c2ad764fc5be8a51904b17a8a2">详情</a></td>
+      </tr>
+
+      <tr>
        <td>75eb96c0ec06395dde8d1e76454d686d</td>
        <td>CVE-2023-4236</td>
        <td>2023-09-25 20:05:07 <img src="imgs/new.gif" /></td>
@@ -1921,22 +1937,6 @@
        <td>2023-09-23 20:09:36</td>
        <td>LIBRENMS LIBRENMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=057c207b2771469fb769c3e908270a93">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0d6caadd0a98f2a165487fd3119eec3</td>
-       <td>CVE-2023-41900</td>
-       <td>2023-09-23 20:08:36</td>
-       <td>ECLIPSE JETTY Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc3368163a3844cba7a89205d19b47da">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>90132ecdb973c272bf9719f1b042dd10</td>
-       <td>CVE-2023-32636</td>
-       <td>2023-09-22 20:09:16</td>
-       <td>GNOME GLIB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b05d1cdca3b944439b37ee7bbfda5805">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b6280c6240f209cade713c64e689eb5e</td>
+       <td>CVE-2023-5166</td>
+       <td>2023-09-25 16:15:15  <img src="imgs/new.gif" /></td>
+       <td>Docker Desktop before 4.23.0 allows Access Token theft via a crafted extension icon URL.This issue affects Docker Desktop: before 4.23.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f0b45a1ef11217324d3cbdddf3edbf9</td>
+       <td>CVE-2023-5165</td>
+       <td>2023-09-25 16:15:15  <img src="imgs/new.gif" /></td>
+       <td>Docker Desktop before 4.23.0 allows an unprivileged user to bypass Enhanced Container Isolation (ECI) restrictions via the debug shell which remains accessible for a short time window after launching Docker Desktop. The affected functionality is available for Docker Business customers only and assumes an environment where users are not granted local root or Administrator privileges. This issue has been fixed in Docker Desktop 4.23.0. Affected Docker Desktop versions: from 4.13.0 before 4.23.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5165">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>34f858e3399302236005062c64823558</td>
+       <td>CVE-2023-5158</td>
+       <td>2023-09-25 16:15:15  <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in vringh_kiov_advance in drivers/vhost/vringh.c in the host side of a virtio ring in the Linux Kernel. This issue may result in a denial of service from guest to host via zero length descriptor.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5158">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e3c753959bc61c11c56a1bb9d563743</td>
+       <td>CVE-2023-5156</td>
+       <td>2023-09-25 16:15:15  <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in the GNU C Library. A recent fix for CVE-2023-4806 introduced the potential for a memory leak, which may result in an application crash.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5156">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b8ca929b4f748ada648de22becc72696</td>
        <td>CVE-2023-5154</td>
        <td>2023-09-25 03:15:09  <img src="imgs/new.gif" /></td>
@@ -2417,38 +2449,6 @@
        <td>2023-09-17 11:15:07 </td>
        <td>A vulnerability, which was classified as problematic, has been found in China Unicom TEWA-800G 4.16L.04_CT2015_Yueme. Affected by this issue is some unknown functionality. The manipulation leads to information exposure through debug log file. It is possible to launch the attack on the physical device. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. VDB-239870 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6079088aebad7baf77d212f549949938</td>
-       <td>CVE-2023-4987</td>
-       <td>2023-09-15 15:15:08 </td>
-       <td>A vulnerability, which was classified as critical, has been found in infinitietech taskhub 2.8.7. Affected by this issue is some unknown functionality of the file /home/get_tasks_list of the component GET Parameter Handler. The manipulation of the argument project/status/user_id/sort/search leads to sql injection. VDB-239798 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4987">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5bc3f76c3be7820b58d67e17df9a76f6</td>
-       <td>CVE-2023-4984</td>
-       <td>2023-09-15 14:15:11 </td>
-       <td>A vulnerability was found in didi KnowSearch 0.3.2/0.3.1.2. It has been rated as problematic. This issue affects some unknown processing of the file /api/es/admin/v3/security/user/1. The manipulation leads to unprotected storage of credentials. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-239795.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4984">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f652dd4503ad84b795dc771cfc59d11d</td>
-       <td>CVE-2023-4983</td>
-       <td>2023-09-15 14:15:11 </td>
-       <td>A vulnerability was found in app1pro Shopicial up to 20230830. It has been declared as problematic. This vulnerability affects unknown code of the file search. The manipulation of the argument from with the input comments&lt;/script&gt;'&quot;&gt;&lt;img src=x onerror=alert(document.cookie)&gt; leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-239794 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4983">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72574b41528b607045249ac1a5af10a1</td>
-       <td>CVE-2023-4972</td>
-       <td>2023-09-14 20:15:13 </td>
-       <td>Improper Privilege Management vulnerability in Yepas Digital Yepas allows Collect Data as Provided by Users.This issue affects .</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4972">详情</a></td>
       </tr>
 
      </tbody>
