@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-05 05:37:08 -->
+<!-- RELEASE TIME : 2023-10-05 23:37:17 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9ca9792c98ad62b48e370e1aa295fd84</td>
+       <td>CVE-2023-44390</td>
+       <td>2023-10-05 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>HtmlSanitizer is a .NET library for cleaning HTML fragments and documents from constructs that can lead to XSS attacks. The vulnerability occurs in configurations where foreign content is allowed, i.e. either `svg` or `math` are in the list of allowed elements. In the case an application sanitizes user input with a vulnerable configuration, an attacker could bypass the sanitization and inject arbitrary HTML, including JavaScript code. Note that in the default configuration the vulnerability is not present. The vulnerability has been fixed in versions 8.0.723 and 8.1.722-beta (preview version).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44390">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>056c7939087fa0e798c751f815aaebf3</td>
+       <td>CVE-2022-3248</td>
+       <td>2023-10-05 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in OpenShift API, as admission checks do not enforce "custom-host" permissions. This issue could allow an attacker to violate the boundaries, as permissions will not be applied.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3248">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>091d6c9c5355d16a872090e66b6b97b7</td>
+       <td>CVE-2022-4145</td>
+       <td>2023-10-05 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>A content spoofing flaw was found in OpenShift's OAuth endpoint. This flaw allows a remote, unauthenticated attacker to inject text into a webpage, enabling the obfuscation of a phishing operation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>374675ce8158bc5ada9237aec0349eda</td>
+       <td>CVE-2023-45159</td>
+       <td>2023-10-05 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>1E Client installer can perform arbitrary file deletion on protected files. A non-privileged user could provide a symbolic link or Windows junction to point to a protected directory in the installer that the 1E Client would then clear on service startup. A hotfix is available Q23092 that forces the 1E Client to check for a symbolic link or junction and if it finds one refuses to use that path and instead creates a path involving a random GUID.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45159">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7cb0bbcdd298dc22c46f1286fc7c0be0</td>
+       <td>CVE-2023-45198</td>
+       <td>2023-10-05 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>ftpd before "NetBSD-ftpd 20230930" can leak information about the host filesystem before authentication via an MLSD or MLST command. tnftpd (the portable version of NetBSD ftpd) before 20231001 is also vulnerable.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45198">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>82660d0802d08a35a43d7dabcc2cc71d</td>
+       <td>CVE-2023-26239</td>
+       <td>2023-10-05 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in WatchGuard EPDR 8.0.21.0002. Due to a weak implementation of a password check, it is possible to obtain credentials to access the management console as a non-privileged user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26239">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f24724b4245f3d104822ccfa2b90371a</td>
+       <td>CVE-2023-26238</td>
+       <td>2023-10-05 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in WatchGuard EPDR 8.0.21.0002. It is possible to enable or disable defensive capabilities by sending a crafted message to a named pipe.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26238">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>509b57e46b7c62e43ad7ee227d766a3b</td>
+       <td>CVE-2023-26237</td>
+       <td>2023-10-05 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in WatchGuard EPDR 8.0.21.0002. It is possible to bypass the defensive capabilities by adding a registry key as SYSTEM.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26237">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed2f1a8dc05feefc501efd1efda89a0f</td>
+       <td>CVE-2023-26236</td>
+       <td>2023-10-05 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in WatchGuard EPDR 8.0.21.0002. Due to a weak implementation of message handling between WatchGuard EPDR processes, it is possible to perform a Local Privilege Escalation on Windows by sending a crafted message to a named pipe.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26236">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce7d6fda602857944038dd36ecb93ff4</td>
+       <td>CVE-2023-43877</td>
+       <td>2023-10-04 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Rite CMS 3.0 has Multiple Cross-Site scripting (XSS) vulnerabilities that allow attackers to execute arbitrary code via a payload crafted in the Home Page fields in the Administration menu.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43877">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b7fd6fc4c3e8c4948273869e8c66879a</td>
        <td>CVE-2023-5113</td>
        <td>2023-10-04 15:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-10-04 11:15:00 <img src="imgs/new.gif" /></td>
        <td>A flaw was found in Keycloak. A Keycloak server configured to support mTLS authentication for OAuth/OpenID clients does not properly verify the client certificate chain. A client that possesses a proper certificate can authorize itself as any other client, therefore, access data that belongs to other clients.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2422">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18512eaabc63ba1a9e940a28594973d2</td>
-       <td>CVE-2023-5290</td>
-       <td>2023-10-02 15:15:00</td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5290">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd90d703e3968a9241ba6855c0b35e2c</td>
-       <td>CVE-2023-4659</td>
-       <td>2023-10-02 15:15:00</td>
-       <td>Cross-Site Request Forgery vulnerability, whose exploitation could allow an attacker to perform different actions on the platform as an administrator, simply by changing the token value to "admin". It is also possible to perform POST, GET and DELETE requests without any token value. Therefore, an unprivileged remote user is able to create, delete and modify users within theapplication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4659">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd8bcea75c3f54bac3635cb05475d339</td>
-       <td>CVE-2023-3770</td>
-       <td>2023-10-02 14:15:00</td>
-       <td>Incorrect validation vulnerability of the data entered, allowing an attacker with access to the network on which the affected device is located to use the discovery port protocol (1925/UDP) to obtain device-specific information without the need for authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a4b0911e143d4a180983f14ad2e82f6</td>
-       <td>CVE-2023-3769</td>
-       <td>2023-10-02 14:15:00</td>
-       <td>Incorrect data input validation vulnerability, which could allow an attacker with access to the network to implement fuzzing techniques that would allow him to gain knowledge about specially crafted packets that would create a DoS condition through the MMS protocol when initiating communication, achieving a complete system reboot of the device and its services.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f66c54e93c471698349c6df468d44dd</td>
-       <td>CVE-2023-3744</td>
-       <td>2023-10-02 14:15:00</td>
-       <td>Server-Side Request Forgery vulnerability in SLims version 9.6.0. This vulnerability could allow an authenticated attacker to send requests to internal services or upload the contents of relevant files via the "scrape_image.php" file in the imageURL parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3744">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e329d86318552302a67785cc8361ea0a</td>
-       <td>CVE-2015-10124</td>
-       <td>2023-10-02 14:15:00</td>
-       <td>A vulnerability was found in Most Popular Posts Widget Plugin up to 0.8 on WordPress. It has been classified as critical. Affected is the function add_views/show_views of the file functions.php. The manipulation leads to sql injection. It is possible to launch the attack remotely. Upgrading to version 0.9 is able to address this issue. The patch is identified as a99667d11ac8d320006909387b100e9a8b5c12e1. It is recommended to upgrade the affected component. VDB-241026 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10124">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08443521de2c7d8dcd202059239d4d0b</td>
-       <td>CVE-2023-41580</td>
-       <td>2023-10-02 13:15:00</td>
-       <td>Phpipam before v1.5.2 was discovered to contain a LDAP injection vulnerability via the dname parameter at /users/ad-search-result.php. This vulnerability allows attackers to enumerate arbitrary fields in the LDAP server and access sensitive data via a crafted POST request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41580">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8d8567653c7eda054223b5dd54dfed6</td>
-       <td>CVE-2023-5106</td>
-       <td>2023-10-02 12:15:00</td>
-       <td>An issue has been discovered in Ultimate-licensed GitLab EE affecting all versions starting 13.12 prior to 16.2.8, 16.3.0 prior to 16.3.5, and 16.4.0 prior to 16.4.1 that could allow an attacker to impersonate users in CI pipelines through direct transfer group imports.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5106">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61c2451db0d26ded817bea1c7db2d031</td>
-       <td>CVE-2023-5160</td>
-       <td>2023-10-02 11:15:00</td>
-       <td>Mattermost fails to check the Show Full Name option at the /api/v4/teams/TEAM_ID/top/team_members endpoint allowing a member to get the full name of another user even if the Show Full Name option was disabled</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5160">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d732f009770e938d3ecb8778b57cfdb</td>
-       <td>CVE-2023-44266</td>
-       <td>2023-10-02 11:15:00</td>
-       <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Jewel Theme WP Adminify plugin <= 3.1.6 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44266">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>20abeaeb4a10b49fc183a3e16e195a32</td>
+       <td>CVE-2023-41661</td>
+       <td>2023-10-05 20:09:02 <img src="imgs/new.gif" /></td>
+       <td>SMARTY SMARTY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b5ee8d5fc20142e0b012d03cee83fab7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57ac16b89ea9f128546780b4019dd60f</td>
+       <td>CVE-2023-5317</td>
+       <td>2023-10-05 20:09:02 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=44f5862f9bab4f0e919c89e334ff3625">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fcccfab31a1010a33c82ae917d9bb8c8</td>
+       <td>CVE-2023-5320</td>
+       <td>2023-10-05 20:09:02 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=28bf3a7a7a6844c1a514185250cefb7d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a41a6041891b7587abc1421dc96195d9</td>
+       <td>CVE-2023-5323</td>
+       <td>2023-10-05 20:08:50 <img src="imgs/new.gif" /></td>
+       <td>DOLIBARR DOLIBARR_ERP\/CRM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d426f11174cd4369b42272ea89654565">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>727f06b70a53cfca6f98c66f2abedb0b</td>
+       <td>CVE-2023-5227</td>
+       <td>2023-10-05 20:08:50 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bb5f0715576d43f390e5ef43226c241e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a556178c994e68426b9520eab6b89f34</td>
+       <td>CVE-2023-32830</td>
+       <td>2023-10-05 20:08:50 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a692c2c0a8474c5d8fccee35ef6a1298">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>284fcb3c0455a35eb4fc522c987044ea</td>
+       <td>CVE-2023-5316</td>
+       <td>2023-10-05 20:08:50 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=652843ca695d42a5b483d3f7d82be85f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>067282f743ab24fb8e55061626c763cf</td>
+       <td>CVE-2023-5318</td>
+       <td>2023-10-05 20:08:49 <img src="imgs/new.gif" /></td>
+       <td>MICROWEBER MICROWEBER Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ecaa32a3d6c84555a72026258bb50953">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>875256b8afa9a9e90e6f904bb0a1710b</td>
+       <td>CVE-2023-5319</td>
+       <td>2023-10-05 20:08:49 <img src="imgs/new.gif" /></td>
+       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e68f5725237840dab8bca46f0d80aba9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04e7a97c4f7881df6ec6eb438eec012c</td>
+       <td>CVE-2023-3775</td>
+       <td>2023-10-05 20:08:49 <img src="imgs/new.gif" /></td>
+       <td>HASHICORP VAULT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d47b1ed3a4a64067bb45dba7104948f1">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2c45a9997bd1515cadd9a3b971015375</td>
        <td>CVE-2023-2358</td>
        <td>2023-10-04 20:09:28 <img src="imgs/new.gif" /></td>
@@ -1857,86 +1937,6 @@
        <td>2023-10-01 20:07:20</td>
        <td>APPLE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0ed8414a1fc846f093d20e182a763904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>716990e09519d0ac1e04125b43458455</td>
-       <td>CVE-2023-40400</td>
-       <td>2023-10-01 20:07:19</td>
-       <td>APPLE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d6564ec6ccc54ad99475a2554b5701ed">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9d19049ad5101c372c3f5fb074917770</td>
-       <td>CVE-2023-40406</td>
-       <td>2023-10-01 20:07:19</td>
-       <td>APPLE MACOS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d28f795c9c946dda51d18efbb30323d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>adf418164e8bb426302cedef733ae0fe</td>
-       <td>CVE-2023-40402</td>
-       <td>2023-10-01 20:06:33</td>
-       <td>APPLE MACOS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e72f35c1e07c4ca5956cf8a1c6316d7d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>664e59e2b98e2defb4aab3257715dd03</td>
-       <td>CVE-2023-23958</td>
-       <td>2023-09-30 20:08:20</td>
-       <td>SYMANTEC PROTECTION_ENGINE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c387b8cc4b684ac8955bcb3717d6dbb0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19f621b7db8606c0047135b1012c161d</td>
-       <td>CVE-2023-29497</td>
-       <td>2023-09-30 20:08:19</td>
-       <td>APPLE MACOS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=314ca118e0ea4fe7b5a8edcfc93cb0c1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b15bd91e2191fc66104604f97b160826</td>
-       <td>CVE-2023-2315</td>
-       <td>2023-09-30 20:07:41</td>
-       <td>OPENCART OPENCART Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c50a9c343c9b4e09b5781e60e5ba6859">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72c2c908d630aaaef770b2013b3ef39b</td>
-       <td>CVE-2023-35990</td>
-       <td>2023-09-30 20:07:41</td>
-       <td>APPLE Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b500e70cc982445384be900770b9c29f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>693676e25943e7142549727992be6aba</td>
-       <td>CVE-2023-32421</td>
-       <td>2023-09-30 20:07:41</td>
-       <td>APPLE MACOS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7b0386c5730e42c3a9388770742387c7">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8bcc7ad265a2aab9b5c3b8645229ed1f</td>
-       <td>CVE-2023-23495</td>
-       <td>2023-09-30 20:07:41</td>
-       <td>APPLE MACOS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=47a52765cc034ce0b0b686b7d44491e6">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4234e4688e12948d7f2ea0b26495235</td>
-       <td>CVE-2023-39375</td>
-       <td>2023-09-30 20:07:40</td>
-       <td>SIBERIANCMS SIBERIANCMS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=93cac92538ed4f7994bfe1d45f393a92">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4cf5001e80b7ec5cbf1ab6b91e423be6</td>
+       <td>CVE-2023-5374</td>
+       <td>2023-10-04 14:15:11  <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in SourceCodester Online Computer and Laptop Store 1.0. Affected by this vulnerability is an unknown functionality of the file products.php. The manipulation of the argument c leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-241255.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5374">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7620fc7ca31658501b556f50df4747b0</td>
+       <td>CVE-2023-5373</td>
+       <td>2023-10-04 13:15:26  <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in SourceCodester Online Computer and Laptop Store 1.0. Affected is the function register of the file Master.php. The manipulation of the argument email leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-241254 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5373">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53f160cb0867728576db6e41fb4eff9b</td>
+       <td>CVE-2023-5377</td>
+       <td>2023-10-04 10:15:10  <img src="imgs/new.gif" /></td>
+       <td>Out-of-bounds Read in GitHub repository gpac/gpac prior to v2.2.2-DEV.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5377">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be5a67e06191918ce842bbc1c3b0352c</td>
+       <td>CVE-2023-5375</td>
+       <td>2023-10-04 09:15:31  <img src="imgs/new.gif" /></td>
+       <td>Open Redirect in GitHub repository mosparo/mosparo prior to 1.0.2.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5375">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27159ca605e3e3f935734c27e48fd812</td>
+       <td>CVE-2023-5368</td>
+       <td>2023-10-04 04:15:14  <img src="imgs/new.gif" /></td>
+       <td>On an msdosfs filesystem, the 'truncate' or 'ftruncate' system calls under certain circumstances populate the additional space in the file with unallocated data from the underlying disk device, rather than zero bytes.This may permit a user with write access to files on a msdosfs filesystem to read unintended data (e.g. from a previously deleted file).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5368">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d33e40c4c4f0eb7241bb47b604fa5ae</td>
+       <td>CVE-2023-5357</td>
+       <td>2023-10-04 02:15:10  <img src="imgs/new.gif" /></td>
+       <td>The Instagram for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcodes in versions up to, and including, 2.1.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5357">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ffadf3069807c0fb38ab55c67da03ce5</td>
        <td>CVE-2023-5353</td>
        <td>2023-10-03 13:15:11 </td>
@@ -2401,54 +2449,6 @@
        <td>2023-09-30 01:15:39 </td>
        <td>Cross-site Scripting (XSS) - DOM in GitHub repository thorsten/phpmyfaq prior to 3.1.18.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>760558651272080f926727d753a5dfad</td>
-       <td>CVE-2023-44168</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'phone' parameter of the process_registration.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1afe408e4157d0c00c7293cbf0daaf7d</td>
-       <td>CVE-2023-44167</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'name' parameter of the process_registration.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44167">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c757c7241ffce942243d5423b2f1de28</td>
-       <td>CVE-2023-44166</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'age' parameter of the process_registration.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44166">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>050acf69e53e2b7b6e2bf8ec2f51ec68</td>
-       <td>CVE-2023-44165</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'Password' parameter of the process_login.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44165">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6d1f115b4dee408efb9fc9deef361d5</td>
-       <td>CVE-2023-44164</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'Email' parameter of the process_login.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44164">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9a000511f2e2031392d2fe9d0851d71</td>
-       <td>CVE-2023-44163</td>
-       <td>2023-09-28 22:15:10 </td>
-       <td>The 'search' parameter of the process_search.php resourcedoes not validate the characters received and theyare sent unfiltered to the database.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-44163">详情</a></td>
       </tr>
 
      </tbody>
