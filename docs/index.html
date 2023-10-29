@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-29 05:36:57 -->
+<!-- RELEASE TIME : 2023-10-29 23:36:49 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1e3320b80c3b3b8bd6fd48be719ce7e1</td>
+       <td>CVE-2021-33638</td>
+       <td>2023-10-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>When the isula cp command is used to copy files from a container to a host machine and the container is controlled by an attacker, the attacker can escape the container.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33638">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a8e3d2adbec83d128f37f272aa8a331</td>
+       <td>CVE-2021-33637</td>
+       <td>2023-10-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>When the isula export command is used to export a container to an image and the container is controlled by an attacker, the attacker can escape the container.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98d6bad56dde9f96d336c51d088ba7c2</td>
+       <td>CVE-2021-33636</td>
+       <td>2023-10-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>When the isula load command is used to load malicious images, attackers can execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33636">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd4700a74a154da4eda8a622774e1fbf</td>
+       <td>CVE-2021-33635</td>
+       <td>2023-10-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>When malicious images are pulled by isula pull, attackers can execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33635">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84b08925aabd20c60982ff9e49f0116e</td>
+       <td>CVE-2021-33634</td>
+       <td>2023-10-29 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>iSulad uses the lcr+lxc runtime (default) to run malicious images, which can cause DOS.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33634">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>716e23e4593459cafdcb37827496d67c</td>
+       <td>CVE-2023-46862</td>
+       <td>2023-10-29 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 6.5.9. During a race with SQ thread exit, an io_uring/fdinfo.c io_uring_show_fdinfo NULL pointer dereference can occur.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46862">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3d7ba89dc162a7d280993cf89d6c329</td>
+       <td>CVE-2023-40685</td>
+       <td>2023-10-29 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Management Central as part of IBM i 7.2, 7.3, 7.4, and 7.5 Navigator contains a local privilege escalation vulnerability. A malicious actor with command line access to the operating system can exploit this vulnerability to elevate privileges to gain root access to the operating system. IBM X-Force ID: 264116.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40685">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1315313906b5857bc8a366e11aef1867</td>
+       <td>CVE-2023-5840</td>
+       <td>2023-10-29 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Weak Password Recovery Mechanism for Forgotten Password in GitHub repository linkstackorg/linkstack prior to v4.2.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5840">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23551246eb49debac86656eb03bfd207</td>
+       <td>CVE-2023-5839</td>
+       <td>2023-10-29 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Privilege Chaining in GitHub repository hestiacp/hestiacp prior to 1.8.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3fd8dcce46dcc48dd0ce8066f7a5794</td>
+       <td>CVE-2023-5838</td>
+       <td>2023-10-29 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient Session Expiration in GitHub repository linkstackorg/linkstack prior to v4.2.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5838">详情</a></td>
+      </tr>
+
+      <tr>
        <td>816dc4cad0144805ddfa71ed5c6dfe41</td>
        <td>CVE-2023-5426</td>
        <td>2023-10-28 12:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-10-26 14:15:00</td>
        <td>A vulnerability has been found in Tongda OA 2017 up to 11.9 and classified as critical. Affected by this vulnerability is an unknown functionality of the file general/system/approve_center/flow_sort/flow/delete.php. The manipulation of the argument id/sort_parent leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 11.10 is able to address this issue. It is recommended to upgrade the affected component. The identifier VDB-243589 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5783">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9ca5f6fb3c1f096936485da34e3f1f7</td>
-       <td>CVE-2023-46584</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>SQL Injection vulnerability in PHPGurukul Nipah virus (NiV) " Testing Management System v.1.0 allows a remote attacker to escalate privileges via a crafted request to the new-user-testing.php endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46584">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>700ba582118273bb871376c79bd46f7a</td>
-       <td>CVE-2023-46583</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>Cross-Site Scripting (XSS) vulnerability in PHPGurukul Nipah virus (NiV) " Testing Management System v.1.0 allows attackers to execute arbitrary code via a crafted payload injected into the State field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46583">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54c992384472c438e1693882a8beb79d</td>
-       <td>CVE-2023-46232</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>era-compiler-vyper is the EraVM Vyper compiler for zkSync Era, a layer 2 rollup that uses zero-knowledge proofs to scale Ethereum. Prior to era-compiler-vype version 1.3.10, a bug prevented the initialization of the first immutable variable for Vyper contracts meeting certain criteria. The problem arises when there is a String or Array with more 256-bit words allocated than initialized. It results in the second word’s index unset, that is effectively set to 0, so the first immutable value with the actual 0 index is overwritten in the ImmutableSimulator. Version 1.3.10 fixes this issue by setting all indexes in advance. The problem will go away, but it will get more expensive if the user allocates a lot of uninitialized space, e.g. `String[4096]`. Upgrading and redeploying affected contracts is the only way of working around the issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9bf8be84c9a46ccfde7225a18f514519</td>
-       <td>CVE-2023-38849</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>An issue in tire-sales Line v.13.6.1 allows a remote attacker to obtain sensitive information via crafted GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38849">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f76bb349a39c215029136532a960d968</td>
-       <td>CVE-2023-38848</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>An issue in rmc R Beauty CLINIC Line v.13.6.1 allows a remote attacker to obtain sensitive information via crafted GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38848">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c4f4eb458b4c9a9c62d4f9ee20bb475</td>
-       <td>CVE-2023-38847</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>An issue in CHRISTINA JAPAN Line v.13.6.1 allows a remote attacker to obtain sensitive information via crafted GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38847">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d41f56893fbdd734e3f59c1b97b7d11</td>
-       <td>CVE-2023-38846</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>An issue in Marbre Lapin Line v.13.6.1 allows a remote attacker to obtain sensitive information via crafted GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6466d42781a5b44119f158e37730cb6e</td>
-       <td>CVE-2023-38845</td>
-       <td>2023-10-25 22:15:00</td>
-       <td>An issue in Anglaise Company Anglaise.Company v.13.6.1 allows a remote attacker to obtain sensitive information via crafted GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38845">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>225248201b9d9f30d25420b6bf0682dd</td>
-       <td>CVE-2023-46233</td>
-       <td>2023-10-25 21:15:00</td>
-       <td>crypto-js is a JavaScript library of crypto standards. Prior to version 4.2.0, crypto-js PBKDF2 is 1,000 times weaker than originally specified in 1993, and at least 1,300,000 times weaker than current industry standard. This is because it both defaults to SHA1, a cryptographic hash algorithm considered insecure since at least 2005, and defaults to one single iteration, a 'strength' or 'difficulty' value specified at 1,000 when specified in 1993. PBKDF2 relies on iteration count as a countermeasure to preimage and collision attacks. If used to protect passwords, the impact is high. If used to generate signatures, the impact is high. Version 4.2.0 contains a patch for this issue. As a workaround, configure crypto-js to use SHA256 with at least 250,000 iterations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46233">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>65be023916966835305b48a90f2bd078</td>
-       <td>CVE-2023-46137</td>
-       <td>2023-10-25 21:15:00</td>
-       <td>Twisted is an event-based framework for internet applications. Prior to version 23.10.0rc1, when sending multiple HTTP requests in one TCP packet, twisted.web will process the requests asynchronously without guaranteeing the response order. If one of the endpoints is controlled by an attacker, the attacker can delay the response on purpose to manipulate the response of the second request when a victim launched two requests using HTTP pipeline. Version 23.10.0rc1 contains a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46137">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9c342cecc396e7cd07266eca2cef0394</td>
+       <td>CVE-2023-23373</td>
+       <td>2023-10-29 20:29:15 <img src="imgs/new.gif" /></td>
+       <td>QNAP QUSBCAM2 Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5bfd599a0c1042ee866683c534d00674">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>073d49430aa73d13a139480ee072adcd</td>
+       <td>CVE-2023-31046</td>
+       <td>2023-10-29 20:29:13 <img src="imgs/new.gif" /></td>
+       <td>PAPERCUT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6168ce7e81f44d8fa85d9bc0ad9b6c1f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>955ea024735a24852642eddc2bb72ee6</td>
+       <td>CVE-2023-46287</td>
+       <td>2023-10-29 20:29:07 <img src="imgs/new.gif" /></td>
+       <td>NAGVIS NAGVIS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=494cabc547e84e86ab27983ae16b2b64">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d040b58ccdba405c06dabd0204504edd</td>
+       <td>CVE-2023-41896</td>
+       <td>2023-10-29 20:28:15 <img src="imgs/new.gif" /></td>
+       <td>HOME-ASSISTANT Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=150da728033f4ce0b338d59ca2ce4acf">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4d226f16bb82a5f2e7f6eaffa045e85</td>
+       <td>CVE-2023-41893</td>
+       <td>2023-10-29 20:28:14 <img src="imgs/new.gif" /></td>
+       <td>HOME-ASSISTANT HOME-ASSISTANT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9802588326b745adaaa8c8a921c6b6f4">详情</a></td>
+      </tr>
+
+      <tr>
        <td>868ccccd69e427e395d8649fe4750da4</td>
        <td>CVE-2023-32089</td>
        <td>2023-10-28 20:20:37 <img src="imgs/new.gif" /></td>
@@ -1897,46 +1937,6 @@
        <td>2023-10-22 20:18:28</td>
        <td>ORACLE MYSQL Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=41990cb6697a4e939aedefb8dfcbcf3d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cf2720e0f2abca881adeebf94e1e7e7c</td>
-       <td>CVE-2023-22110</td>
-       <td>2023-10-22 20:18:27</td>
-       <td>ORACLE MYSQL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=36298e39b37d4f83920964dd6771bb35">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f6392ff639640e38b85b9f43c811932b</td>
-       <td>CVE-2023-22103</td>
-       <td>2023-10-22 20:18:27</td>
-       <td>ORACLE MYSQL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=21b71a02edca4b68a89521379cbceb6e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3dc36a77539bf456981bb5b7a46b9463</td>
-       <td>CVE-2023-22112</td>
-       <td>2023-10-22 20:18:27</td>
-       <td>ORACLE MYSQL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=19a4bfb86cc442b9beab62d36663e984">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4218e1b8b594dfbee7d2cf7bd5e88e97</td>
-       <td>CVE-2023-22066</td>
-       <td>2023-10-21 20:19:54</td>
-       <td>ORACLE MYSQL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f9c96b6c66ab4db39c787bedd3542520">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53cfe7012174e779f3d9d41c45b6f681</td>
-       <td>CVE-2023-22026</td>
-       <td>2023-10-21 20:19:54</td>
-       <td>ORACLE MYSQL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e6280660ccee46caa97d21801f0c42a1">详情</a></td>
       </tr>
 
      </tbody>
@@ -2260,6 +2260,30 @@
       </tr>
 
       <tr>
+       <td>5ae9db73f0d741fdb189e4dfc2283bd1</td>
+       <td>CVE-2023-43067</td>
+       <td>2023-10-23 16:15:09 </td>
+       <td>Dell Unity prior to 5.3 contains an XML External Entity injection vulnerability. An XXE attack could potentially exploit this vulnerability disclosing local files in the file system.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43067">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf1a29044bfd2318be82a34b7a7b26bd</td>
+       <td>CVE-2023-43066</td>
+       <td>2023-10-23 16:15:09 </td>
+       <td>Dell Unity prior to 5.3 contains a Restricted Shell Bypass vulnerability. This could allow an authenticated, local attacker to exploit this vulnerability by authenticating to the device CLI and issuing certain commands.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43066">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dc5c7f8dc4beb7a521e10465d8faa49b</td>
+       <td>CVE-2023-43074</td>
+       <td>2023-10-23 15:15:09 </td>
+       <td>Dell Unity 5.3 contain(s) an Arbitrary File Creation vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability by crafting arbitrary files through a request to the server.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43074">详情</a></td>
+      </tr>
+
+      <tr>
        <td>67d124e80a102be25cecfa057a6cb823</td>
        <td>CVE-2023-43346</td>
        <td>2023-10-20 23:15:08 </td>
@@ -2425,30 +2449,6 @@
        <td>2023-10-19 15:15:09 </td>
        <td>XNSoft Nconvert 7.136 has an Exception Handler Chain Corrupted via a crafted image file. Attackers could exploit this issue for a Denial of Service (DoS) or possibly to achieve code execution.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7d41b7890d23a7f73f40381c53850be</td>
-       <td>CVE-2023-43252</td>
-       <td>2023-10-19 13:15:10 </td>
-       <td>XNSoft Nconvert 7.136 is vulnerable to Buffer Overflow via a crafted image file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43252">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af48ccc8e54c55981ddb6cd761a2aa57</td>
-       <td>CVE-2023-46229</td>
-       <td>2023-10-19 05:15:58 </td>
-       <td>LangChain before 0.0.317 allows SSRF via document_loaders/recursive_url_loader.py because crawling can proceed from an external server to an internal server.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-46229">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>128b17765083a4832013f2039b8b0be9</td>
-       <td>CVE-2023-5639</td>
-       <td>2023-10-19 02:15:08 </td>
-       <td>The Team Showcase plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'tmfshortcode' shortcode in all versions up to, and including, 2.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5639">详情</a></td>
       </tr>
 
      </tbody>
