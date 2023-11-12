@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-11-12 05:37:12 -->
+<!-- RELEASE TIME : 2023-11-12 23:36:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>708e7bb02839f4693fda9f78cfd82a6b</td>
+       <td>CVE-2023-47037</td>
+       <td>2023-11-12 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>We failed to apply CVE-2023-40611 in 2.7.1 and this vulnerability was marked as fixed then. Apache Airflow, versions before 2.7.3, is affected by a vulnerability that allows authenticated and DAG-view authorized Users to modify some DAG run detail values when submitting notes. This could have them alter details such as configuration parameters, start date, etc. Users should upgrade to version 2.7.3 or later which has removed the vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d630820d2e93170e1be7683a5c53ecd5</td>
+       <td>CVE-2023-42781</td>
+       <td>2023-11-12 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Apache Airflow, versions before 2.7.3, has a vulnerability that allows an authorized user who has access to read specific DAGs only, to read information about task instances in other DAGs. This is a different issue than CVE-2023-42663 but leading to similar outcome. Users of Apache Airflow are advised to upgrade to version 2.7.3 or newer to mitigate the risk associated with this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42781">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8519f20792177aeea2bf068ebf4e2014</td>
+       <td>CVE-2023-6084</td>
+       <td>2023-11-12 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Tongda OA 2017 up to 11.9 and classified as critical. Affected by this issue is some unknown functionality of the file general/vehicle/checkup/delete.php. The manipulation of the argument VU_ID leads to sql injection. The exploit has been disclosed to the public and may be used. Upgrading to version 11.10 is able to address this issue. It is recommended to upgrade the affected component. VDB-244994 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b47aa023a827d297f4d42eedbc32b9f</td>
+       <td>CVE-2023-47390</td>
+       <td>2023-11-11 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Headscale through 0.22.3 writes bearer tokens to info-level logs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47390">详情</a></td>
+      </tr>
+
+      <tr>
        <td>76f620633b2145ebfdec75c56cb1c440</td>
        <td>CVE-2023-43057</td>
        <td>2023-11-11 16:15:00 <img src="imgs/new.gif" /></td>
@@ -489,38 +521,6 @@
        <td>2023-11-09 05:15:00</td>
        <td>Cross Site Scripting vulnerability in MLDB.ai v.2017.04.17.0 allows a remote attacker to execute arbitrary code via a crafted payload to the public_html/doc/index.html.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>914e9afa1fa700e181dcc899c7761bcf</td>
-       <td>CVE-2023-26156</td>
-       <td>2023-11-09 05:15:00</td>
-       <td>Versions of the package chromedriver before 119.0.1 are vulnerable to Command Injection when setting the chromedriver.path to an arbitrary system binary. This could lead to unauthorized access and potentially malicious actions on the host system. **Note:** An attacker must have access to the system running the vulnerable chromedriver library to exploit it. The success of exploitation also depends on the permissions and privileges of the process running chromedriver.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26156">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43721fd23e054874a4afec9cde65f8cf</td>
-       <td>CVE-2023-47008</td>
-       <td>2023-11-09 01:15:00</td>
-       <td>An issue in ASUS RT-AX57 v.3.0.0.4_386_52041 allows a remote attacker to execute arbitrary code via a crafted request to the ifname field in the sub_4CCE4 function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47008">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2b7068f5deb6155b6eb73e62f724763</td>
-       <td>CVE-2023-47007</td>
-       <td>2023-11-09 01:15:00</td>
-       <td>An issue in ASUS RT-AX57 v.3.0.0.4_386_52041 allows a remote attacker to execute arbitrary code via a crafted request to the lan_ifname field in the sub_391B8 function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47007">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c01d2f7f171a74bbff42a8c65637b953</td>
-       <td>CVE-2023-47006</td>
-       <td>2023-11-09 01:15:00</td>
-       <td>An issue in ASUS RT-AX57 v.3.0.0.4_386_52041 allows a remote attacker to execute arbitrary code via a crafted request to the lan_ipaddr field in the sub_6FC74 function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47006">详情</a></td>
       </tr>
 
      </tbody>
@@ -1700,6 +1700,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>009e45c89935b89febc91d2af1d85c3d</td>
+       <td>CVE-2022-1622</td>
+       <td>2023-11-12 23:18:36 <img src="imgs/new.gif" /></td>
+       <td>Silicon Graphics LibTIFF 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6af23f3e91e94a5e9e88460dbd5e62c9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72f4fcc35c47cfaf5b93d9b6dc21dd1f</td>
+       <td>CVE-2022-27794</td>
+       <td>2023-11-12 23:18:34 <img src="imgs/new.gif" /></td>
+       <td>多款Adobe产品缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=02649bc5e4eb4a698793e699967487c2">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1b3127b95797b0b18f95403c1a2b430</td>
+       <td>CVE-2022-1629</td>
+       <td>2023-11-12 23:18:32 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1826e7062689454eb844c741ef8f6327">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfc089c368f202a76250a9edb98dcd26</td>
+       <td>CVE-2022-1619</td>
+       <td>2023-11-12 23:18:29 <img src="imgs/new.gif" /></td>
+       <td>Vim 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=930d969dcec64022847d745236a5abf3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ccb7a83dc7736785fa48a991f3fdf4ca</td>
+       <td>CVE-2022-28278</td>
+       <td>2023-11-12 23:18:15 <img src="imgs/new.gif" /></td>
+       <td>Adobe Photoshop 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f138e26814964d99accb2d8db025178d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>74ced7b46f7abd6f768ff15679931da1</td>
+       <td>CVE-2022-29502</td>
+       <td>2023-11-12 23:16:29 <img src="imgs/new.gif" /></td>
+       <td>SchedMD Slurm 访问控制错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f533a954f2544b34ac8008b7d73a6c56">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c06538054e63e0bc1280b3969aed1bc</td>
+       <td>CVE-2022-24884</td>
+       <td>2023-11-12 23:15:55 <img src="imgs/new.gif" /></td>
+       <td>ECDSA Util 数据伪造问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=52448a6633644fbcaae30ff550c7e191">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d92ea5702a154ce7345fe21fb5cf9af</td>
+       <td>CVE-2022-20764</td>
+       <td>2023-11-12 23:15:47 <img src="imgs/new.gif" /></td>
+       <td>多款Cisco产品安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e2eb1f6eb6674939bedb231b8430882b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11531f19ffa6d912e8aca1cb448955ce</td>
+       <td>CVE-2022-20777</td>
+       <td>2023-11-12 23:15:40 <img src="imgs/new.gif" /></td>
+       <td>Cisco Enterprise NFV Infrastructure Software 权限许可和访问控制问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=57008007c9f44b169d7dcaa0ac78db81">详情</a></td>
+      </tr>
+
+      <tr>
        <td>78ad97ba2084642956dee1bed099e9c5</td>
        <td>CVE-2023-45336</td>
        <td>2023-11-11 20:04:42 <img src="imgs/new.gif" /></td>
@@ -1865,78 +1937,6 @@
        <td>2023-11-09 23:19:37</td>
        <td>DokuWiki 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=52d24a6156d142e2bedb706ad9ab8b61">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2c32b71c0c003765d3d3e1dac1e53ad</td>
-       <td>CVE-2021-22531</td>
-       <td>2023-11-09 23:19:35</td>
-       <td>Micro Focus NetIQ Access Manager 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=be3d27e639804160a086f2b4457fd6ed">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8014b211461d77ae8a61eadd3365df9e</td>
-       <td>CVE-2022-24102</td>
-       <td>2023-11-09 23:19:28</td>
-       <td>多款Adobe产品资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b965eb206aa042e2b1d0199ef3e4f657">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4582f91615974c284a11fde50d3300f</td>
-       <td>CVE-2022-1621</td>
-       <td>2023-11-09 23:19:25</td>
-       <td>Vim 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7536d6dc586643e2b618b24001bdaacc">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6687b7cf4034d89a63c654950e55b8cf</td>
-       <td>CVE-2022-29117</td>
-       <td>2023-11-09 23:19:06</td>
-       <td>Microsoft .NET和Microsoft Visual Studio 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8adff04f5dc4215b99b3f2b9b99a455">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b51782847fbc476b993cfa8fb8354da7</td>
-       <td>CVE-2022-1053</td>
-       <td>2023-11-09 23:19:04</td>
-       <td>Keylime 输入验证错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8bb8da7fd5684e51b54f9f20e0ed3f1b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f7a9da252cb063aadc5d2990c6ae069</td>
-       <td>CVE-2022-1388</td>
-       <td>2023-11-09 23:19:02</td>
-       <td>F5 BIG-IP 访问控制错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=276d5e205e6c4d1ba346acfa2a95a027">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f8a29eafae09a78469faa5c66f17bdb</td>
-       <td>CVE-2023-21381</td>
-       <td>2023-11-08 20:17:00</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c755f93eb15748aba14735ed2484da87">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c82ad7578b4c5ae7cae38be8999c879c</td>
-       <td>CVE-2023-21378</td>
-       <td>2023-11-08 20:17:00</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=82f3ad7bf73b4a01ac6e7089e9e04c0a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8ed5540b3bcfb85a476f0136896146f</td>
-       <td>CVE-2023-21375</td>
-       <td>2023-11-08 20:17:00</td>
-       <td>GOOGLE ANDROID Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=11c372ae2f574683b76e0e09215daf0b">详情</a></td>
       </tr>
 
      </tbody>
