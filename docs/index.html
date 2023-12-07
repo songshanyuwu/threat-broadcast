@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-07 05:36:51 -->
+<!-- RELEASE TIME : 2023-12-07 23:37:33 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e44632fbdceb84715c3c8695e30bf6f9</td>
+       <td>CVE-2023-46218</td>
+       <td>2023-12-07 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>This flaw allows a malicious HTTP server to set "super cookies" in curl that are then passed back to more origins than what is otherwise allowed or possible. This allows a site to set cookies that then would get sent to different and unrelated sites and domains. It could do this by exploiting a mixed case flaw in curl's function that verifies a given cookie domain against the Public Suffix List (PSL). For example a cookie could be set with `domain=co.UK` when the URL used a lower case hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46218">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9645c5496a03242b6a0f84fc66aa639a</td>
+       <td>CVE-2023-6566</td>
+       <td>2023-12-07 00:15:07 <img src="imgs/new.gif" /></td>
+       <td>Business Logic Errors in GitHub repository microweber/microweber prior to 2.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6566">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e3587c664786f23f74c0bc01f29e5e5</td>
+       <td>CVE-2023-46354</td>
+       <td>2023-12-06 23:15:07 <img src="imgs/new.gif" /></td>
+       <td>In the module "Orders (CSV, Excel) Export PRO" (ordersexport) < 5.2.0 from MyPrestaModules for PrestaShop, a guest can download personal information without restriction. Due to a lack of permissions control, a guest can access exports from the module which can lead to a leak of personal information from ps_customer/ps_address tables such as name / surname / email / phone number / full postal address.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46354">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a194437889e5aa16ca96512a44fcebc</td>
+       <td>CVE-2023-46353</td>
+       <td>2023-12-06 23:15:07 <img src="imgs/new.gif" /></td>
+       <td>In the module "Product Tag Icons Pro" (ticons) before 1.8.4 from MyPresta.eu for PrestaShop, a guest can perform SQL injection. The method TiconProduct::getTiconByProductAndTicon() has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46353">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d61176ed6019d7dda694e2fe94757b09</td>
+       <td>CVE-2023-49096</td>
+       <td>2023-12-06 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>Jellyfin is a Free Software Media System for managing and streaming media. In affected versions there is an argument injection in the VideosController, specifically the `/Videos/<itemId>/stream` and `/Videos/<itemId>/stream.<container>` endpoints which are present in the current Jellyfin version. Additional endpoints in the AudioController might also be vulnerable, as they differ only slightly in execution. Those endpoints are reachable by an unauthenticated user. In order to exploit this vulnerability an unauthenticated attacker has to guess an itemId, which is a completely random GUID. It’s a very unlikely case even for a large media database with lots of items. Without an additional information leak, this vulnerability shouldn’t be directly exploitable, even if the instance is reachable from the Internet. There are a lot of query parameters that get accepted by the method. At least two of those, videoCodec and audioCodec are vulnerable to the argument injection. The values can be traced through a lot of code and might be changed in the process. However, the fallback is to always use them as-is, which means we can inject our own arguments. Those arguments land in the command line of FFmpeg. Because UseShellExecute is always set to false, we can’t simply terminate the FFmpeg command and execute our own. It should only be possible to add additional arguments to FFmpeg, which is powerful enough as it stands. There is probably a way of overwriting an arbitrary file with malicious content. This vulnerability has been addressed in version 10.8.13. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49096">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>02439a4cad92443bd05ced17c1393013</td>
+       <td>CVE-2023-48123</td>
+       <td>2023-12-06 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue in Netgate pfSense Plus v.23.05.1 and before and pfSense CE v.2.7.0 allows a remote attacker to execute arbitrary code via a crafted request to the packet_capture.php file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48123">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95124316056b645bfdd5e15450ac28ae</td>
+       <td>CVE-2023-46751</td>
+       <td>2023-12-06 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the function gdev_prn_open_printer_seekable() in Artifex Ghostscript through 10.02.0 allows remote attackers to crash the application via a dangling pointer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46751">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a2ee44d842d8064bafaf5619a32969bc</td>
+       <td>CVE-2023-6393</td>
+       <td>2023-12-06 17:15:07 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in the Quarkus Cache Runtime. When request processing utilizes a Uni cached using @CacheResult and the cached Uni reuses the initial "completion" context, the processing switches to the cached Uni instead of the request context. This is a problem if the cached Uni context contains sensitive information, and could allow a malicious user to benefit from a POST request returning the response that is meant for another user, gaining access to sensitive data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6393">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>585864085369f34932b2caacf0737e51</td>
+       <td>CVE-2023-45285</td>
+       <td>2023-12-06 17:15:07 <img src="imgs/new.gif" /></td>
+       <td>Using go get to fetch a module with the ".git" suffix may unexpectedly fallback to the insecure "git://" protocol if the module is unavailable via the secure "https://" and "git+ssh://" protocols, even if GOINSECURE is not set for said module. This only affects users who are not using the module proxy and are fetching modules directly (i.e. GOPROXY=off).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45285">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fae130155f87a468c794ae4c3e0da7dc</td>
+       <td>CVE-2023-39326</td>
+       <td>2023-12-06 17:15:07 <img src="imgs/new.gif" /></td>
+       <td>A malicious HTTP sender can use chunk extensions to cause a receiver reading from a request or response body to read many more bytes from the network than are in the body. A malicious HTTP client can further exploit this to cause a server to automatically read a large amount of data (up to about 1GiB) when a handler fails to read the entire body of a request. Chunk extensions are a little-used HTTP feature which permit including additional metadata in a request or response body sent using the chunked encoding. The net/http chunked encoding reader discards this metadata. A sender can exploit this by inserting a large metadata segment with each byte transferred. The chunk reader now produces an error if the ratio of real body to encoded bytes grows too small.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39326">详情</a></td>
+      </tr>
+
+      <tr>
        <td>159254516de3c122789a69cc4a8a3406</td>
        <td>CVE-2023-6448</td>
        <td>2023-12-05 18:15:12</td>
@@ -441,86 +521,6 @@
        <td>2023-12-04 09:15:00</td>
        <td>Dell DM5500 contains a privilege escalation vulnerability in PPOE Component. A remote attacker with low privileges could potentially exploit this vulnerability to escape the restricted shell and gain root access to the appliance.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44304">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa0ef9d316403890fcdf0540b2f28457</td>
-       <td>CVE-2023-40692</td>
-       <td>2023-12-04 00:15:00</td>
-       <td>IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, 11.5 is vulnerable to denial of service under extreme stress conditions. IBM X-Force ID: 264807.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40692">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c67ee90a06d62891a9eee17ff9b128c4</td>
-       <td>CVE-2023-49948</td>
-       <td>2023-12-03 19:15:00</td>
-       <td>Forgejo before 1.20.5-1 allows remote attackers to test for the existence of private user accounts by appending .rss (or another extension) to a URL.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49948">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>61f01c0d05f011597556cc40a5477e45</td>
-       <td>CVE-2023-49947</td>
-       <td>2023-12-03 19:15:00</td>
-       <td>Forgejo before 1.20.5-1 allows 2FA bypass when docker login uses Basic Authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49947">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>632b2a642ac190d42cc1a94c26b08bdc</td>
-       <td>CVE-2023-49946</td>
-       <td>2023-12-03 19:15:00</td>
-       <td>In Forgejo before 1.20.5-1, certain endpoints do not check whether an object belongs to a repository for which permissions are being checked. This allows remote attackers to read private issues, read private pull requests, delete issues, and perform other unauthorized actions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49946">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33d2e7da3726fea60e6e7f75fe8f9906</td>
-       <td>CVE-2022-4957</td>
-       <td>2023-12-03 19:15:00</td>
-       <td>A vulnerability was found in librespeed speedtest up to 5.2.4. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file results/stats.php. The manipulation of the argument id leads to cross site scripting. The attack can be launched remotely. Upgrading to version 5.2.5 is able to address this issue. The patch is named a85f2c086f3449dffa8fe2edb5e2ef3ee72dc0e9. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-246643.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4957">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c20aa77b7464a23f0c01be747e2547f</td>
-       <td>CVE-2023-45178</td>
-       <td>2023-12-03 18:15:00</td>
-       <td>IBM Db2 for Linux, UNIX and Windows (includes DB2 Connect Server) 11.5 CLI is vulnerable to a denial of service when a specially crafted request is used. IBM X-Force ID: 268073.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45178">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c79262aebaa861147df3ab373b4cb89</td>
-       <td>CVE-2020-36768</td>
-       <td>2023-12-03 11:15:00</td>
-       <td>A vulnerability was found in rl-institut NESP2 Initial Release/1.0. It has been classified as critical. Affected is an unknown function of the file app/database.py. The manipulation leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 07c0cdf36cf6a4345086d07b54423723a496af5e. It is recommended to apply a patch to fix this issue. VDB-246642 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36768">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f02622b50168dcccd3e937e632385efb</td>
-       <td>CVE-2018-25094</td>
-       <td>2023-12-03 11:15:00</td>
-       <td>A vulnerability was found in ???????????????? Online Accounting System up to 1.4.0 and classified as problematic. This issue affects some unknown processing of the file ckeditor/filemanager/browser/default/image.php. The manipulation of the argument fid with the input ../../../etc/passwd leads to path traversal: '../filedir'. The exploit has been disclosed to the public and may be used. Upgrading to version 2.0.0 is able to address this issue. The identifier of the patch is 9d9618422b980335bb30be612ea90f4f56cb992c. It is recommended to upgrade the affected component. The identifier VDB-246641 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-25094">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bae268fb04b84144ad2a869cc8b6c0f0</td>
-       <td>CVE-2023-49926</td>
-       <td>2023-12-03 03:15:00</td>
-       <td>app/Lib/Tools/EventTimelineTool.php in MISP before 2.4.179 allows XSS in the event timeline widget.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49926">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>40f67cb067922bbfdfff4d0f6b773f53</td>
-       <td>CVE-2023-6474</td>
-       <td>2023-12-03 00:15:00</td>
-       <td>A vulnerability has been found in PHPGurukul Nipah Virus Testing Management System 1.0 and classified as problematic. This vulnerability affects unknown code of the file manage-phlebotomist.php. The manipulation of the argument pid leads to cross-site request forgery. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-246640.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6474">详情</a></td>
       </tr>
 
      </tbody>
@@ -1956,6 +1956,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>86e4c1fcd91edcbde441b4c7ad81581b</td>
+       <td>CVE-2023-39059</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Red Hat ansible semaphore任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87627">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e92664179f7e9640bef060c806f0687d</td>
+       <td>CVE-2023-40857</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>VirusTotal yara缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87626">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f06d0caa932d5b46c81a726c5180535</td>
+       <td>CVE-2023-38969</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Badaso跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87625">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91b2bf7a8c7954a8da372d2f9e0e92da</td>
+       <td>CVE-2023-40590</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>GitPython不受信搜索路径漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87624">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d7b956edb633689019710385cd0f8ac5</td>
+       <td>CVE-2023-40766</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Ticket Support Script信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87623">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e7a91561c6a59c94af761f60d621eab9</td>
+       <td>CVE-2023-40765</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Event Booking Calendar信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87622">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89bd842244935d890cef2b4bbaaee9aa</td>
+       <td>CVE-2023-40760</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Hotel Booking System信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87621">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8955ac6ce81a908132ac5235c46153e</td>
+       <td>CVE-2023-40759</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Restaurant Booking Script信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87620">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03ccd32640d399a5d2a70ac998dde286</td>
+       <td>CVE-2023-32457</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Dell PowerScale OneFS权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87619">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dfd14058bedaba05af50d3c71553d201</td>
+       <td>CVE-2023-32202</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Walchem Intuition身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87618">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c2396af59255d3a6af5daeb7a76283de</td>
+       <td>CVE-2023-40572</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87617">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6295f7d0d23bc05f1a478093a2c55029</td>
+       <td>CVE-2023-2906</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Wireshark除零漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87616">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72e6a9517d808f6584d6cbea36c27226</td>
+       <td>CVE-2023-40580</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Freighter信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87615">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d9cf3307d5c26c5c5e314a8579e9126</td>
+       <td>CVE-2023-24620</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>YamlBeans XML外部实体引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87614">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bdec05d83ab752f212c1a38d25dc695d</td>
+       <td>CVE-2023-38201</td>
+       <td>2023-12-07 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Keylime授权绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87613">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5514192adac3759ec994b112c878329f</td>
        <td>CVE-2023-42746</td>
        <td>2023-12-07 05:34:33 <img src="imgs/new.gif" /></td>
@@ -2073,126 +2193,6 @@
        <td>2023-12-06 23:35:21 <img src="imgs/new.gif" /></td>
        <td>GNU Binutils初始化错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87565">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e7c380eed886a62ef77ea17e2f32239</td>
-       <td>CVE-2021-43171</td>
-       <td>2023-12-06 23:35:21 <img src="imgs/new.gif" /></td>
-       <td>App Lounge加密签名验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87564">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3387f9171e753042781c68b9844f17c1</td>
-       <td>CVE-2023-42019</td>
-       <td>2023-12-06 05:34:33 <img src="imgs/new.gif" /></td>
-       <td>IBM InfoSphere Information Server拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4abf1798f6efb7c40223e8e29be9a03</td>
-       <td>CVE-2023-5637</td>
-       <td>2023-12-06 05:34:33 <img src="imgs/new.gif" /></td>
-       <td>ArslanSoft Education Portal文件上传漏洞 </td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87580">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea1febdaf01096075899e8306901c70b</td>
-       <td>CVE-2023-39416</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Proself操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87528">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0153038bd7e2d3d92372dd06d2e19007</td>
-       <td>CVE-2023-40735</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Butterfly Button信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87527">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02082d95089787d8af2a3ce3cf0a73b8</td>
-       <td>CVE-2023-39745</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>TP-LINK TL-WR941ND、TL-WR940N和TL-WR841N缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87526">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f53756256fd32944bf8b0dcc985f9899</td>
-       <td>CVE-2022-24989</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>TerraMaster NAS注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87525">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b82f565eb2822a4ef748a60b42811a1</td>
-       <td>CVE-2023-40711</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Veilid越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87524">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b1a5bb6ac62b283b21f2e349a78de6b</td>
-       <td>CVE-2023-2971</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Typora路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87523">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9217d0729a70ba362e4dff481f0de689</td>
-       <td>CVE-2023-38839</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Minimati SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87522">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a53551ea17a264681cee92b3b08d559</td>
-       <td>CVE-2023-27471</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Insyde InsydeH2O with Kernel拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87521">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed37b711ef39b64785499bac11045f99</td>
-       <td>CVE-2023-40072</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>ELECOM WAB-S600-PS和WAB-S300操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87520">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26e461d4fc6d0c4bbf797d4339a1f32c</td>
-       <td>CVE-2023-39445</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>ELECOM LAN-WH300N/RE隐藏功能漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87519">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4500feaf42db51c27482ca9ee5626b60</td>
-       <td>CVE-2023-4394</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Linux Kernel内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87518">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c4e6591a71870d1246afd3fc5546b3e</td>
-       <td>CVE-2023-38902</td>
-       <td>2023-12-05 23:35:28</td>
-       <td>Ruijie RG-EW Series Routers命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87517">详情</a></td>
       </tr>
 
      </tbody>
