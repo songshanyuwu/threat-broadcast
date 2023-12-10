@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-09 23:37:26 -->
+<!-- RELEASE TIME : 2023-12-10 05:36:52 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>abc127605577b3b45890d472aacf86dd</td>
        <td>CVE-2023-50164</td>
-       <td>2023-12-08 09:12:10 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 09:12:10</td>
        <td>CVE-2023-50164：Apache Struts 代码执行漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6572dde4ea0822e915606082">详情</a></td>
       </tr>
@@ -364,9 +364,89 @@
       </tr>
 
       <tr>
+       <td>830e25ee8c0831aa43dc03d5a6c74d0e</td>
+       <td>CVE-2023-49788</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Collabora Online is a collaborative online office suite based on LibreOffice technology. Unlike a standalone dedicated Collabora Online server, the Built-in CODE Server (richdocumentscode) is run without chroot sandboxing. Vulnerable versions of the richdocumentscode app can be susceptible to attack via modified client->server commands to overwrite files outside the sub directory the server has provided for the transient session. Files which can be accessed are limited to those that the server process has access to. The bug was fixed in Collabora Online - Built-in CODE Server (richdocumentscode) release 23.5.602. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49788">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b396191fd1b0bb37d1d80af229740e7b</td>
+       <td>CVE-2023-49782</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Collabora Online is a collaborative online office suite based on LibreOffice technology. Users of Nextcloud with `Collabora Online - Built-in CODE Server` app can be vulnerable to attack via proxy.php. The bug was fixed in Collabora Online - Built-in CODE Server (richdocumentscode) release 23.5.601. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49782">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bac6a836cf0f8d788ea11f86584d4e2a</td>
+       <td>CVE-2023-48311</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>dockerspawner is a tool to spawn JupyterHub single user servers in Docker containers. Users of JupyterHub deployments running DockerSpawner starting with 0.11.0 without specifying `DockerSpawner.allowed_images` configuration allow users to launch _any_ pullable docker image, instead of restricting to only the single configured image, as intended. This issue has been addressed in commit `3ba4b665b` which has been included in dockerspawner release version 13. Users are advised to upgrade. Users unable to upgrade should explicitly set `DockerSpawner.allowed_images` to a non-empty list containing only the default image will result in the intended default behavior.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48311">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d24a618ab35d06280c8f8db49ebdc147</td>
+       <td>CVE-2023-46499</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.5 allows a remote attacker to obtain sensitive information via a crafted scripts to the Admin Panel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46499">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89a6c33138e46811687b3b14e3b4b618</td>
+       <td>CVE-2023-46498</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>An issue in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information and execute arbitrary code via the /deleteCustomer/route.json file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46498">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3564eac4b8859f01e7f7823b43fab2d4</td>
+       <td>CVE-2023-46497</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the mkdirSync function in the folderCreate/createFolder.js endpoint.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46497">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c69c0d5387a6a5e86ed265eac6b5fefe</td>
+       <td>CVE-2023-46496</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the DELETE function in api/files endpoint.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46496">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f0ea83df7853cdbee08b64161856c952</td>
+       <td>CVE-2023-46495</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the sortBy parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46495">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e01173d5b596ddf7ef09fd65acd5445</td>
+       <td>CVE-2023-46494</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.5 allows a remote attacker to obtain sensitive information via a crafted request to the ProductGrid function in admin/productGrid/Grid.jsx.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46494">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a968ce247ed3423b25d1ebb31faff41a</td>
+       <td>CVE-2023-46493</td>
+       <td>2023-12-08 20:15:07</td>
+       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the readDirSync function in fileBrowser/browser.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46493">详情</a></td>
+      </tr>
+
+      <tr>
        <td>456a1aba1dd1120102e5a8a306afdd36</td>
        <td>CVE-2023-43305</td>
-       <td>2023-12-08 02:15:06 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 02:15:06</td>
        <td>An issue in studio kent mini-app on Line v13.6.1 allows attackers to send crafted malicious notifications via leakage of the channel access token.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43305">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>b9c988c961b0657044c6b0c182927c57</td>
        <td>CVE-2023-43744</td>
-       <td>2023-12-08 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 01:15:07</td>
        <td>An OS command injection vulnerability in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an administrator to execute arbitrary OS commands via a file name parameter in a patch application function. The Zultys MX Administrator client has a "Patch Manager" section that allows administrators to apply patches to the device. The user supplied filename for the patch file is passed to a shell script without validation. Including bash command substitution characters in a patch file name results in execution of the provided command.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43744">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>98f68502ce57687cc4f241f7ad77ae8d</td>
        <td>CVE-2023-43743</td>
-       <td>2023-12-08 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 01:15:07</td>
        <td>A SQL injection vulnerability in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an authenticated attacker to execute arbitrary SQL queries on the backend database via the filter parameter in requests to the /newapi/ endpoint in the Zultys MX web interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43743">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>b6ae804cc344bdddae872eb7854f9a1a</td>
        <td>CVE-2023-43742</td>
-       <td>2023-12-08 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 01:15:07</td>
        <td>An authentication bypass in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an unauthenticated attacker to obtain an administrative session via a protection mechanism failure in the authentication function. In normal operation, the Zultys MX Administrator Windows client connects to port 7505 and attempts authentication, submitting the administrator username and password to the server. Upon authentication failure, the server sends a login failure message prompting the client to disconnect. However, if the client ignores the failure message instead and attempts to continue, the server does not forcibly close the connection and processes all subsequent requests from the client as if authentication had been successful.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43742">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>b54aa4a49d3110e8ceb9ff556e305c93</td>
        <td>CVE-2023-6599</td>
-       <td>2023-12-08 00:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 00:15:08</td>
        <td>Missing Standardized Error Handling Mechanism in GitHub repository microweber/microweber prior to 2.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6599">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>10da1d192e93ec698f81e7e8ab4fc99e</td>
        <td>CVE-2023-6061</td>
-       <td>2023-12-08 00:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 00:15:07</td>
        <td>Multiple components of Iconics SCADA Suite are prone to a Phantom DLL loading vulnerability. This issue arises from the applications improperly searching for and loading dynamic link libraries, potentially allowing an attacker to execute malicious code via a DLL with a matching name in an accessible search path. The affected components are: * MMXFax.exe * winfax.dll * MelSim2ComProc.exe * Sim2ComProc.dll * MMXCall_in.exe * libdxxmt.dll * libsrlmt.dll</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6061">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>8005e506ebdf82b08184240523f22d26</td>
        <td>CVE-2023-5008</td>
-       <td>2023-12-08 00:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 00:15:07</td>
        <td>Student Information System v1.0 is vulnerable to an unauthenticated SQL Injection vulnerability on the 'regno' parameter of index.php page, allowing an external attacker to dump all the contents of the database contents and bypass the login control.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5008">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2023-12-07 22:15:08</td>
        <td>A vulnerability has been found in D-Link DAR-7000 up to 20231126 and classified as critical. This vulnerability affects unknown code of the file /user/inc/workidajax.php. The manipulation of the argument id leads to sql injection. The exploit has been disclosed to the public and may be used. VDB-247162 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e44632fbdceb84715c3c8695e30bf6f9</td>
-       <td>CVE-2023-46218</td>
-       <td>2023-12-07 01:15:07</td>
-       <td>This flaw allows a malicious HTTP server to set "super cookies" in curl that are then passed back to more origins than what is otherwise allowed or possible. This allows a site to set cookies that then would get sent to different and unrelated sites and domains. It could do this by exploiting a mixed case flaw in curl's function that verifies a given cookie domain against the Public Suffix List (PSL). For example a cookie could be set with `domain=co.UK` when the URL used a lower case hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46218">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9645c5496a03242b6a0f84fc66aa639a</td>
-       <td>CVE-2023-6566</td>
-       <td>2023-12-07 00:15:07</td>
-       <td>Business Logic Errors in GitHub repository microweber/microweber prior to 2.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6566">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e3587c664786f23f74c0bc01f29e5e5</td>
-       <td>CVE-2023-46354</td>
-       <td>2023-12-06 23:15:07</td>
-       <td>In the module "Orders (CSV, Excel) Export PRO" (ordersexport) < 5.2.0 from MyPrestaModules for PrestaShop, a guest can download personal information without restriction. Due to a lack of permissions control, a guest can access exports from the module which can lead to a leak of personal information from ps_customer/ps_address tables such as name / surname / email / phone number / full postal address.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3a194437889e5aa16ca96512a44fcebc</td>
-       <td>CVE-2023-46353</td>
-       <td>2023-12-06 23:15:07</td>
-       <td>In the module "Product Tag Icons Pro" (ticons) before 1.8.4 from MyPresta.eu for PrestaShop, a guest can perform SQL injection. The method TiconProduct::getTiconByProductAndTicon() has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46353">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d61176ed6019d7dda694e2fe94757b09</td>
-       <td>CVE-2023-49096</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>Jellyfin is a Free Software Media System for managing and streaming media. In affected versions there is an argument injection in the VideosController, specifically the `/Videos/<itemId>/stream` and `/Videos/<itemId>/stream.<container>` endpoints which are present in the current Jellyfin version. Additional endpoints in the AudioController might also be vulnerable, as they differ only slightly in execution. Those endpoints are reachable by an unauthenticated user. In order to exploit this vulnerability an unauthenticated attacker has to guess an itemId, which is a completely random GUID. It’s a very unlikely case even for a large media database with lots of items. Without an additional information leak, this vulnerability shouldn’t be directly exploitable, even if the instance is reachable from the Internet. There are a lot of query parameters that get accepted by the method. At least two of those, videoCodec and audioCodec are vulnerable to the argument injection. The values can be traced through a lot of code and might be changed in the process. However, the fallback is to always use them as-is, which means we can inject our own arguments. Those arguments land in the command line of FFmpeg. Because UseShellExecute is always set to false, we can’t simply terminate the FFmpeg command and execute our own. It should only be possible to add additional arguments to FFmpeg, which is powerful enough as it stands. There is probably a way of overwriting an arbitrary file with malicious content. This vulnerability has been addressed in version 10.8.13. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49096">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02439a4cad92443bd05ced17c1393013</td>
-       <td>CVE-2023-48123</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>An issue in Netgate pfSense Plus v.23.05.1 and before and pfSense CE v.2.7.0 allows a remote attacker to execute arbitrary code via a crafted request to the packet_capture.php file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95124316056b645bfdd5e15450ac28ae</td>
-       <td>CVE-2023-46751</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>An issue was discovered in the function gdev_prn_open_printer_seekable() in Artifex Ghostscript through 10.02.0 allows remote attackers to crash the application via a dangling pointer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2ee44d842d8064bafaf5619a32969bc</td>
-       <td>CVE-2023-6393</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>A flaw was found in the Quarkus Cache Runtime. When request processing utilizes a Uni cached using @CacheResult and the cached Uni reuses the initial "completion" context, the processing switches to the cached Uni instead of the request context. This is a problem if the cached Uni context contains sensitive information, and could allow a malicious user to benefit from a POST request returning the response that is meant for another user, gaining access to sensitive data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6393">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>585864085369f34932b2caacf0737e51</td>
-       <td>CVE-2023-45285</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>Using go get to fetch a module with the ".git" suffix may unexpectedly fallback to the insecure "git://" protocol if the module is unavailable via the secure "https://" and "git+ssh://" protocols, even if GOINSECURE is not set for said module. This only affects users who are not using the module proxy and are fetching modules directly (i.e. GOPROXY=off).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fae130155f87a468c794ae4c3e0da7dc</td>
-       <td>CVE-2023-39326</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>A malicious HTTP sender can use chunk extensions to cause a receiver reading from a request or response body to read many more bytes from the network than are in the body. A malicious HTTP client can further exploit this to cause a server to automatically read a large amount of data (up to about 1GiB) when a handler fails to read the entire body of a request. Chunk extensions are a little-used HTTP feature which permit including additional metadata in a request or response body sent using the chunked encoding. The net/http chunked encoding reader discards this metadata. A sender can exploit this by inserting a large metadata segment with each byte transferred. The chunk reader now produces an error if the ratio of real body to encoded bytes grows too small.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39326">详情</a></td>
       </tr>
 
      </tbody>
@@ -1958,7 +1958,7 @@
       <tr>
        <td>0edcb6b3c4f76abd41b7ed9c066d0bea</td>
        <td>CVE-2023-3251</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>Tenable Nessus凭据保护不足漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87672">详情</a></td>
       </tr>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>d47778d2fc594f1b5ee0926d1d321eab</td>
        <td>CVE-2023-41037</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>Openpgp.js加密签名验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87671">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>50cf726b7be546d2cfc6456b9416e401</td>
        <td>CVE-2023-40889</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>ZBar堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87670">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>be0ee0402aa28ec19b7d66178944196b</td>
        <td>CVE-2023-40787</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>SpringBlade SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87669">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>4d4c9ad1e08522267578de5bda2a4e58</td>
        <td>CVE-2023-4163</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>Brocade Fabric OS缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87668">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>a2cf3b396c04c4e718dcd4fe37ada879</td>
        <td>CVE-2023-2173</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress BadgeOS Plugin授权错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87667">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>27a95523a04650edb1c0602a1a6f8a35</td>
        <td>CVE-2023-2353</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress CHP Ads Block Detector Plugin授权错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87666">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>f492824ccd05de0a07a34f68cba628f0</td>
        <td>CVE-2023-3764</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress WooCommerce PDF Invoice Builder Plugin跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87665">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>c470fd857186a85f439f9d7b6edd126f</td>
        <td>CVE-2023-39663</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>MathJax拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87664">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>f028fb5c05534976e77725ab30af9b48</td>
        <td>CVE-2023-39678</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>BDCOM OLT P3310D-2AC跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87663">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>0a149be5d75e94a9290f1aaa7891e532</td>
        <td>CVE-2023-38971</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>Badaso跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87662">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>b4392b91d07cce96dfb8a897cc6b67df</td>
        <td>CVE-2023-3136</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress MailArchiver Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87661">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>3bdabbada5d70d9ae16d67ed0c604865</td>
        <td>CVE-2023-4600</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress AffiliateWP Plugin授权错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87660">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>7bd19ffd90147de3d2017ead83e07abf</td>
        <td>CVE-2022-1601</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress AffiliateWP Plugin信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87659">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>46617068e4be5fbbe679e5c6e3430cc1</td>
        <td>CVE-2023-3992</td>
-       <td>2023-12-08 05:34:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-08 05:34:40</td>
        <td>WordPress PostX Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87658">详情</a></td>
       </tr>
