@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-12 05:36:54 -->
+<!-- RELEASE TIME : 2023-12-12 23:37:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>db38d7451df73a33f135cbf54f350859</td>
+       <td>CVE-2023-50252</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when handling `<use>` tag that references an `<image>` tag, it merges the attributes from the `<use>` tag to the `<image>` tag. The problem pops up especially when the `href` attribute from the `<use>` tag has not been sanitized. This can lead to an unsafe file read that can cause PHAR Deserialization vulnerability in PHP prior to version 8. Version 0.5.1 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4f9e9ef4069a2846055aca5765843e5</td>
+       <td>CVE-2023-50251</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when parsing the attributes passed to a `use` tag inside an svg document, an attacker can cause the system to go to an infinite recursion. Depending on the system configuration and attack pattern this could exhaust the memory available to the executing process and/or to the server itself. An attacker sending multiple request to a system to render the above payload can potentially cause resource exhaustion to the point that the system is unable to handle incoming request. Version 0.5.1 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c05bf0f44b67478d89fa195d1f4472e2</td>
+       <td>CVE-2023-48225</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Laf is a cloud development platform. Prior to version 1.0.0-beta.13, the control of LAF app enV is not strict enough, and in certain scenarios of privatization environment, it may lead to sensitive information leakage in secret and configmap. In ES6 syntax, if an obj directly references another obj, the name of the obj itself will be used as the key, and the entire object structure will be integrated intact. When constructing the deployment instance of the app, env was found from the database and directly inserted into the template, resulting in controllability here. Sensitive information in the secret and configmap can be read through the k8s envFrom field. In a privatization environment, when `namespaceConf. fixed` is marked, it may lead to the leakage of sensitive information in the system. As of time of publication, it is unclear whether any patches or workarounds exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48225">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5cf6fbfe5a9a9d2c7f94c88f189cd16</td>
+       <td>CVE-2023-50247</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. The QUIC stack (quicly), as used by H2O up to commit 43f86e5 (in version 2.3.0-beta and prior), is susceptible to a state exhaustion attack. When H2O is serving HTTP/3, a remote attacker can exploit this vulnerability to progressively increase the memory retained by the QUIC stack. This can eventually cause H2O to abort due to memory exhaustion. The vulnerability has been resolved in commit d67e81d03be12a9d53dc8271af6530f40164cd35. HTTP/1 and HTTP/2 are not affected by this vulnerability as they do not use QUIC. Administrators looking to mitigate this issue without upgrading can disable HTTP/3 support.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ede9ab149a23045d6184e6bf166a583</td>
+       <td>CVE-2023-49279</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 7.0.0 and prior to versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0, a user with access to the backoffice can upload SVG files that include scripts. If the user can trick another user to load the media directly in a browser, the scripts can be executed. Versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0 contain a patch for this issue. Some workarounds are available. Implement the server side file validation or serve all media from an different host (e.g cdn) than where Umbraco is hosted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f78baafed8fd7cf1170087a0140886e6</td>
+       <td>CVE-2023-49278</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a brute force exploit can be used to collect valid usernames. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49278">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04fd93c7dd7e97b9c19ea430760b0e77</td>
+       <td>CVE-2023-49274</td>
+       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a user enumeration attack is possible when SMTP is not set up correctly, but reset password is enabled. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49274">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00622df8840e4f23ed1b5bca232c687d</td>
+       <td>CVE-2023-41337</td>
+       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. In version 2.3.0-beta2 and prior, when h2o is configured to listen to multiple addresses or ports with each of them using different backend servers managed by multiple entities, a malicious backend entity that also has the opportunity to observe or inject packets exchanged between the client and h2o may misdirect HTTPS requests going to other backends and observe the contents of that HTTPS request being sent. The attack involves a victim client trying to resume a TLS connection and an attacker redirecting the packets to a different address or port than that intended by the client. The attacker must already have been configured by the administrator of h2o to act as a backend to one of the addresses or ports that the h2o instance listens to. Session IDs and tickets generated by h2o are not bound to information specific to the server address, port, or the X.509 certificate, and therefore it is possible for an attacker to force the victim connection to wrongfully resume against a different server address or port on which the same h2o instance is listening. Once a TLS session is misdirected to resume to a server address / port that is configured to use an attacker-controlled server as the backend, depending on the configuration, HTTPS requests from the victim client may be forwarded to the attacker's server. An H2O instance is vulnerable to this attack only if the instance is configured to listen to different addresses or ports using the listen directive at the host level and the instance is configured to connect to backend servers managed by multiple entities. A patch is available at commit 35760540337a47e5150da0f4a66a609fad2ef0ab. As a workaround, one may stop using using host-level listen directives in favor of global-level ones.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef4926bb55a263b32fff12e7c6859a36</td>
+       <td>CVE-2023-34064</td>
+       <td>2023-12-12 20:15:06 <img src="imgs/new.gif" /></td>
+       <td>Workspace ONE Launcher contains a Privilege Escalation Vulnerability. A malicious actor with physical access to Workspace ONE Launcher could utilize the Edge Panel feature to bypass setup to gain access to sensitive information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34064">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07c6c829cc890247f5d4c316f6ae2f07</td>
+       <td>CVE-2023-6687</td>
+       <td>2023-12-12 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered by Elastic whereby Elastic Agent would log a raw event in its own logs at the WARN or ERROR level if ingesting that event to Elasticsearch failed with any 4xx HTTP status code except 409 or 429. Depending on the nature of the event that Elastic Agent attempted to ingest, this could lead to the insertion of sensitive or private information in the Elastic Agent logs. Elastic has released 8.11.3 and 7.17.16 that prevents this issue by limiting these types of logs to DEBUG level logging, which is disabled by default.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6687">详情</a></td>
+      </tr>
+
+      <tr>
        <td>26d3a89b1f4cdc20dbbee789e9b3f8f4</td>
        <td>CVE-2023-6659</td>
        <td>2023-12-11 01:15:07 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2023-12-09 07:15:07</td>
        <td>Heap Buffer Overflow vulnerability in GPAC version 2.3-DEV-rev617-g671976fcc-master, allows attackers to execute arbitrary code and cause a denial of service (DoS) via str2ulong class in src/media_tools/avilib.c in gpac/MP4Box.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46932">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71dbe29e97303bfea7ff42744a8f07a3</td>
-       <td>CVE-2023-28874</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>The next parameter in the /accounts/login endpoint of Seafile 9.0.6 allows attackers to redirect users to arbitrary sites.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28874">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>754a697538cf856241f51b4bf4919bf5</td>
-       <td>CVE-2023-28873</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>An XSS issue in wiki and discussion pages in Seafile 9.0.6 allows attackers to inject JavaScript into the Markdown editor.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28873">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7602e9bcafac133b492f4d64954fe226</td>
-       <td>CVE-2023-28871</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>Support Assistant in NCP Secure Enterprise Client before 12.22 allows attackers to read registry information of the operating system by creating a symbolic link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28871">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f31f686aa5f51d3cbdfd160c06e9121c</td>
-       <td>CVE-2023-28870</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>Insecure File Permissions in Support Assistant in NCP Secure Enterprise Client before 12.22 allow attackers to write to configuration files from low-privileged user accounts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28870">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f9413ca04e872b4135a5b2734a88944</td>
-       <td>CVE-2023-28869</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>Support Assistant in NCP Secure Enterprise Client before 12.22 allows attackers read the contents of arbitrary files on the operating system by creating a symbolic link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28869">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e01666faa41e0dff217c8a737bf57a8</td>
-       <td>CVE-2023-28868</td>
-       <td>2023-12-09 07:15:07</td>
-       <td>Support Assistant in NCP Secure Enterprise Client before 12.22 allows attackers to delete arbitrary files on the operating system by creating a symbolic link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-28868">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>830e25ee8c0831aa43dc03d5a6c74d0e</td>
-       <td>CVE-2023-49788</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Collabora Online is a collaborative online office suite based on LibreOffice technology. Unlike a standalone dedicated Collabora Online server, the Built-in CODE Server (richdocumentscode) is run without chroot sandboxing. Vulnerable versions of the richdocumentscode app can be susceptible to attack via modified client->server commands to overwrite files outside the sub directory the server has provided for the transient session. Files which can be accessed are limited to those that the server process has access to. The bug was fixed in Collabora Online - Built-in CODE Server (richdocumentscode) release 23.5.602. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49788">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b396191fd1b0bb37d1d80af229740e7b</td>
-       <td>CVE-2023-49782</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Collabora Online is a collaborative online office suite based on LibreOffice technology. Users of Nextcloud with `Collabora Online - Built-in CODE Server` app can be vulnerable to attack via proxy.php. The bug was fixed in Collabora Online - Built-in CODE Server (richdocumentscode) release 23.5.601. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49782">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bac6a836cf0f8d788ea11f86584d4e2a</td>
-       <td>CVE-2023-48311</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>dockerspawner is a tool to spawn JupyterHub single user servers in Docker containers. Users of JupyterHub deployments running DockerSpawner starting with 0.11.0 without specifying `DockerSpawner.allowed_images` configuration allow users to launch _any_ pullable docker image, instead of restricting to only the single configured image, as intended. This issue has been addressed in commit `3ba4b665b` which has been included in dockerspawner release version 13. Users are advised to upgrade. Users unable to upgrade should explicitly set `DockerSpawner.allowed_images` to a non-empty list containing only the default image will result in the intended default behavior.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48311">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d24a618ab35d06280c8f8db49ebdc147</td>
-       <td>CVE-2023-46499</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.5 allows a remote attacker to obtain sensitive information via a crafted scripts to the Admin Panel.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46499">详情</a></td>
       </tr>
 
      </tbody>
@@ -1956,6 +1956,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>78af3070223f0cc4fe66d1c1f85e2e05</td>
+       <td>CVE-2023-5552</td>
+       <td>2023-12-12 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>Sophos Firewall信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2827b03d27c0f59afc89441540523c2</td>
+       <td>CVE-2023-42507</td>
+       <td>2023-12-12 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>JTEKT ELECTRONICS OnSinView2堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87744">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0e2e0899d864a1ecb63ec32e646de86</td>
+       <td>CVE-2023-45810</td>
+       <td>2023-12-12 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>OpenFGA不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87743">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0db46004326c55c905a1690513235235</td>
+       <td>CVE-2023-45811</td>
+       <td>2023-12-12 23:35:20 <img src="imgs/new.gif" /></td>
+       <td>synchrony原型污染漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87742">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6a86429feda4983146e4dd49dd846e56</td>
        <td>CVE-2023-47307</td>
        <td>2023-12-12 05:34:38 <img src="imgs/new.gif" /></td>
@@ -2161,38 +2193,6 @@
        <td>2023-12-11 05:34:38 <img src="imgs/new.gif" /></td>
        <td>GitLab EE访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75c7417d05cf2f9c3360f068a1f515f3</td>
-       <td>CVE-2023-44381</td>
-       <td>2023-12-11 05:34:38 <img src="imgs/new.gif" /></td>
-       <td>October代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87731">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>79077c3a311233c83c988c2d8e81d1e4</td>
-       <td>CVE-2023-42006</td>
-       <td>2023-12-11 05:34:38 <img src="imgs/new.gif" /></td>
-       <td>IBM Administration Runtime Expert for i授权不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87730">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dbb2319aa0d28fefb7bcf1c0cb8ec856</td>
-       <td>CVE-2023-26024</td>
-       <td>2023-12-11 05:34:38 <img src="imgs/new.gif" /></td>
-       <td>IBM Planning Analytics加密算法漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87729">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b6a3ca4ec1b02495461515bddb51cc5</td>
-       <td>CVE-2023-46998</td>
-       <td>2023-12-11 05:34:38 <img src="imgs/new.gif" /></td>
-       <td>BootBox Bootbox.js跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87728">详情</a></td>
       </tr>
 
      </tbody>
