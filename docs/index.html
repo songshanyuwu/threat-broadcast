@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-18 23:37:30 -->
+<!-- RELEASE TIME : 2023-12-19 05:36:49 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,9 +284,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fd287dcbc89bd232ebdc74047845049a</td>
+       <td>CVE-2023-6817</td>
+       <td>2023-12-18 15:15:10 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation. The function nft_pipapo_walk did not skip inactive elements during set walk which could lead double deactivations of PIPAPO (Pile Packet Policies) elements, leading to use-after-free. We recommend upgrading past commit 317eb9685095678f2c9f5a8189de698c5354316a.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6817">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9605b067db8d02986349161e86b8183f</td>
+       <td>CVE-2023-6778</td>
+       <td>2023-12-18 15:15:10 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository allegroai/clearml-server prior to 1.13.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6778">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ae3be0f5fd201a55bddd90ec965e7d45</td>
+       <td>CVE-2023-49853</td>
+       <td>2023-12-18 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in PayTR Ödeme ve Elektronik Para Kuruluşu A.Ş. PayTR Taksit Tablosu – WooCommerce.This issue affects PayTR Taksit Tablosu – WooCommerce: from n/a through 1.3.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49853">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd7ed096cf2159879d4267a9bdf532c2</td>
+       <td>CVE-2023-49844</td>
+       <td>2023-12-18 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in Kevin Ohashi WPPerformanceTester.This issue affects WPPerformanceTester: from n/a through 2.0.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49844">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a66962a94d54f89722767a98799d837</td>
+       <td>CVE-2023-49843</td>
+       <td>2023-12-18 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in QuanticEdge First Order Discount Woocommerce.This issue affects First Order Discount Woocommerce: from n/a through 1.21.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>575873b0f3db9889cc29a66499582be1</td>
+       <td>CVE-2023-49840</td>
+       <td>2023-12-18 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in Palscode Multi Currency For WooCommerce.This issue affects Multi Currency For WooCommerce: from n/a through 1.5.5.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49840">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b579b7500f479044407bc807b428860</td>
+       <td>CVE-2023-46177</td>
+       <td>2023-12-18 15:15:08 <img src="imgs/new.gif" /></td>
+       <td>IBM MQ Appliance 9.3 LTS and 9.3 CD could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request to view arbitrary files on the system. IBM X-Force ID: 269536.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19395ee3e4b99f18f90d4645c590cecd</td>
+       <td>CVE-2022-40312</td>
+       <td>2023-12-18 15:15:08 <img src="imgs/new.gif" /></td>
+       <td>Server-Side Request Forgery (SSRF) vulnerability in GiveWP GiveWP – Donation Plugin and Fundraising Platform.This issue affects GiveWP – Donation Plugin and Fundraising Platform: from n/a through 2.25.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40312">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8319e2ae96475a90599af0c98fc238cd</td>
+       <td>CVE-2023-6228</td>
+       <td>2023-12-18 14:15:11 <img src="imgs/new.gif" /></td>
+       <td>An issue was found in the tiffcp utility distributed by the libtiff package where a crafted TIFF file on processing may cause a heap-based buffer overflow leads to an application crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6228">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f5e6fcbecd216a0bd90d9f269f4def8</td>
+       <td>CVE-2023-5384</td>
+       <td>2023-12-18 14:15:11 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in Infinispan. When serializing the configuration for a cache to XML/JSON/YAML, which contains credentials (JDBC store with connection pooling, remote store), the credentials are returned in clear text as part of the configuration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5384">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f2534c8516d839ef69a0ea2847be0bec</td>
        <td>CVE-2023-6901</td>
-       <td>2023-12-17 14:15:37 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 14:15:37</td>
        <td>A vulnerability, which was classified as critical, was found in codelyfe Stupid Simple CMS up to 1.2.3. This affects an unknown part of the file /terminal/handle-command.php of the component HTTP POST Request Handler. The manipulation of the argument command with the input whoami leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-248259.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6901">详情</a></td>
       </tr>
@@ -294,7 +374,7 @@
       <tr>
        <td>c23030832b625857390465da26b87ec4</td>
        <td>CVE-2023-6900</td>
-       <td>2023-12-17 14:15:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 14:15:36</td>
        <td>A vulnerability, which was classified as critical, has been found in rmountjoy92 DashMachine 0.5-4. Affected by this issue is some unknown functionality of the file /settings/delete_file. The manipulation of the argument file leads to path traversal: '../filedir'. The exploit has been disclosed to the public and may be used. VDB-248258 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6900">详情</a></td>
       </tr>
@@ -302,7 +382,7 @@
       <tr>
        <td>f8be324cacbd0e1bc24d1b8b67c50b70</td>
        <td>CVE-2023-6899</td>
-       <td>2023-12-17 13:15:42 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 13:15:42</td>
        <td>A vulnerability classified as problematic was found in rmountjoy92 DashMachine 0.5-4. Affected by this vulnerability is an unknown functionality of the file /settings/save_config of the component Config Handler. The manipulation of the argument value_template leads to code injection. The exploit has been disclosed to the public and may be used. The identifier VDB-248257 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6899">详情</a></td>
       </tr>
@@ -310,7 +390,7 @@
       <tr>
        <td>24d290b895032993427bfd85c1693deb</td>
        <td>CVE-2023-6898</td>
-       <td>2023-12-17 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 11:15:08</td>
        <td>A vulnerability classified as critical has been found in SourceCodester Best Courier Management System 1.0. Affected is an unknown function of the file manage_user.php. The manipulation of the argument id leads to sql injection. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-248256.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6898">详情</a></td>
       </tr>
@@ -318,7 +398,7 @@
       <tr>
        <td>621db1433372cf83031a93d0c8b9dd33</td>
        <td>CVE-2023-49834</td>
-       <td>2023-12-17 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 11:15:08</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in realmag777 FOX – Currency Switcher Professional for WooCommerce.This issue affects FOX – Currency Switcher Professional for WooCommerce: from n/a through 1.4.1.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49834">详情</a></td>
       </tr>
@@ -326,7 +406,7 @@
       <tr>
        <td>ffc0d082cdd68b246853d0fd5e9eeca4</td>
        <td>CVE-2023-49824</td>
-       <td>2023-12-17 11:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 11:15:07</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in PixelYourSite Product Catalog Feed by PixelYourSite.This issue affects Product Catalog Feed by PixelYourSite: from n/a through 2.1.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49824">详情</a></td>
       </tr>
@@ -334,7 +414,7 @@
       <tr>
        <td>24393b681a84b13896be81dc8cbea735</td>
        <td>CVE-2023-49816</td>
-       <td>2023-12-17 11:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 11:15:07</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in Innovative Solutions Fix My Feed RSS Repair.This issue affects Fix My Feed RSS Repair: from n/a through 1.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49816">详情</a></td>
       </tr>
@@ -342,7 +422,7 @@
       <tr>
        <td>642fa7796294a077a4e7a7333a2c3139</td>
        <td>CVE-2023-6896</td>
-       <td>2023-12-17 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 10:15:08</td>
        <td>A vulnerability was found in SourceCodester Simple Image Stack Website 1.0. It has been rated as problematic. This issue affects some unknown processing. The manipulation of the argument search with the input sy2ap%22%3e%3cscript%3ealert(1)%3c%2fscript%3etkxh1 leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-248255.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6896">详情</a></td>
       </tr>
@@ -350,7 +430,7 @@
       <tr>
        <td>c8855906e31f33bb4c2af114a1fdeb97</td>
        <td>CVE-2023-49775</td>
-       <td>2023-12-17 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 10:15:08</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in Denis Kobozev CSV Importer.This issue affects CSV Importer: from n/a through 0.3.8.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49775">详情</a></td>
       </tr>
@@ -358,7 +438,7 @@
       <tr>
        <td>7762232e503611035c1de279965c980e</td>
        <td>CVE-2023-49769</td>
-       <td>2023-12-17 10:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-17 10:15:07</td>
        <td>Cross-Site Request Forgery (CSRF) vulnerability in SoftLab Integrate Google Drive.This issue affects Integrate Google Drive: from n/a through 1.3.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49769">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2023-12-13 14:15:44</td>
        <td>The "Create a Space" feature in Silverpeas Core 6.3.1 is reserved for use by administrators. This function suffers from broken access control, allowing any authenticated user to create a space by navigating to the correct URL.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47327">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db38d7451df73a33f135cbf54f350859</td>
-       <td>CVE-2023-50252</td>
-       <td>2023-12-12 21:15:08</td>
-       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when handling `<use>` tag that references an `<image>` tag, it merges the attributes from the `<use>` tag to the `<image>` tag. The problem pops up especially when the `href` attribute from the `<use>` tag has not been sanitized. This can lead to an unsafe file read that can cause PHAR Deserialization vulnerability in PHP prior to version 8. Version 0.5.1 contains a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50252">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4f9e9ef4069a2846055aca5765843e5</td>
-       <td>CVE-2023-50251</td>
-       <td>2023-12-12 21:15:08</td>
-       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when parsing the attributes passed to a `use` tag inside an svg document, an attacker can cause the system to go to an infinite recursion. Depending on the system configuration and attack pattern this could exhaust the memory available to the executing process and/or to the server itself. An attacker sending multiple request to a system to render the above payload can potentially cause resource exhaustion to the point that the system is unable to handle incoming request. Version 0.5.1 contains a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c05bf0f44b67478d89fa195d1f4472e2</td>
-       <td>CVE-2023-48225</td>
-       <td>2023-12-12 21:15:08</td>
-       <td>Laf is a cloud development platform. Prior to version 1.0.0-beta.13, the control of LAF app enV is not strict enough, and in certain scenarios of privatization environment, it may lead to sensitive information leakage in secret and configmap. In ES6 syntax, if an obj directly references another obj, the name of the obj itself will be used as the key, and the entire object structure will be integrated intact. When constructing the deployment instance of the app, env was found from the database and directly inserted into the template, resulting in controllability here. Sensitive information in the secret and configmap can be read through the k8s envFrom field. In a privatization environment, when `namespaceConf. fixed` is marked, it may lead to the leakage of sensitive information in the system. As of time of publication, it is unclear whether any patches or workarounds exist.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48225">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a5cf6fbfe5a9a9d2c7f94c88f189cd16</td>
-       <td>CVE-2023-50247</td>
-       <td>2023-12-12 20:15:08</td>
-       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. The QUIC stack (quicly), as used by H2O up to commit 43f86e5 (in version 2.3.0-beta and prior), is susceptible to a state exhaustion attack. When H2O is serving HTTP/3, a remote attacker can exploit this vulnerability to progressively increase the memory retained by the QUIC stack. This can eventually cause H2O to abort due to memory exhaustion. The vulnerability has been resolved in commit d67e81d03be12a9d53dc8271af6530f40164cd35. HTTP/1 and HTTP/2 are not affected by this vulnerability as they do not use QUIC. Administrators looking to mitigate this issue without upgrading can disable HTTP/3 support.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50247">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ede9ab149a23045d6184e6bf166a583</td>
-       <td>CVE-2023-49279</td>
-       <td>2023-12-12 20:15:08</td>
-       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 7.0.0 and prior to versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0, a user with access to the backoffice can upload SVG files that include scripts. If the user can trick another user to load the media directly in a browser, the scripts can be executed. Versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0 contain a patch for this issue. Some workarounds are available. Implement the server side file validation or serve all media from an different host (e.g cdn) than where Umbraco is hosted.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49279">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f78baafed8fd7cf1170087a0140886e6</td>
-       <td>CVE-2023-49278</td>
-       <td>2023-12-12 20:15:08</td>
-       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a brute force exploit can be used to collect valid usernames. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49278">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>04fd93c7dd7e97b9c19ea430760b0e77</td>
-       <td>CVE-2023-49274</td>
-       <td>2023-12-12 20:15:07</td>
-       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a user enumeration attack is possible when SMTP is not set up correctly, but reset password is enabled. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49274">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>00622df8840e4f23ed1b5bca232c687d</td>
-       <td>CVE-2023-41337</td>
-       <td>2023-12-12 20:15:07</td>
-       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. In version 2.3.0-beta2 and prior, when h2o is configured to listen to multiple addresses or ports with each of them using different backend servers managed by multiple entities, a malicious backend entity that also has the opportunity to observe or inject packets exchanged between the client and h2o may misdirect HTTPS requests going to other backends and observe the contents of that HTTPS request being sent. The attack involves a victim client trying to resume a TLS connection and an attacker redirecting the packets to a different address or port than that intended by the client. The attacker must already have been configured by the administrator of h2o to act as a backend to one of the addresses or ports that the h2o instance listens to. Session IDs and tickets generated by h2o are not bound to information specific to the server address, port, or the X.509 certificate, and therefore it is possible for an attacker to force the victim connection to wrongfully resume against a different server address or port on which the same h2o instance is listening. Once a TLS session is misdirected to resume to a server address / port that is configured to use an attacker-controlled server as the backend, depending on the configuration, HTTPS requests from the victim client may be forwarded to the attacker's server. An H2O instance is vulnerable to this attack only if the instance is configured to listen to different addresses or ports using the listen directive at the host level and the instance is configured to connect to backend servers managed by multiple entities. A patch is available at commit 35760540337a47e5150da0f4a66a609fad2ef0ab. As a workaround, one may stop using using host-level listen directives in favor of global-level ones.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41337">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef4926bb55a263b32fff12e7c6859a36</td>
-       <td>CVE-2023-34064</td>
-       <td>2023-12-12 20:15:06</td>
-       <td>Workspace ONE Launcher contains a Privilege Escalation Vulnerability. A malicious actor with physical access to Workspace ONE Launcher could utilize the Edge Panel feature to bypass setup to gain access to sensitive information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34064">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07c6c829cc890247f5d4c316f6ae2f07</td>
-       <td>CVE-2023-6687</td>
-       <td>2023-12-12 19:15:08</td>
-       <td>An issue was discovered by Elastic whereby Elastic Agent would log a raw event in its own logs at the WARN or ERROR level if ingesting that event to Elasticsearch failed with any 4xx HTTP status code except 409 or 429. Depending on the nature of the event that Elastic Agent attempted to ingest, this could lead to the insertion of sensitive or private information in the Elastic Agent logs. Elastic has released 8.11.3 and 7.17.16 that prevents this issue by limiting these types of logs to DEBUG level logging, which is disabled by default.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6687">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>17fd9e12d7b1ece079c840d89c450c7b</td>
+       <td>CVE-2023-5615</td>
+       <td>2023-12-19 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Skype Legacy Buttons Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87996">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>846fb807076dfa7d77d235c17c7552cb</td>
+       <td>CVE-2023-6288</td>
+       <td>2023-12-19 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>Devolutions Remote Desktop Manager代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87991">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42f192a17fefaec5df1f10420e6d3fc9</td>
+       <td>CVE-2023-5337</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPressContact Form For All Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff74f7a7489d5c9f85effe419a2f626c</td>
+       <td>CVE-2023-5121</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Migration, Backup, Staging–WPvivid Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88083">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5fa38659e2755705367275e26cfe97e0</td>
+       <td>CVE-2023-5231</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Migration, Backup, Staging–WPvivid Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d1283cd238c63cdccb33e9a9dfa03f1</td>
+       <td>CVE-2023-5109</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress WP Mailto Links – Protect Email Addresses Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88081">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e42d422820e98ea1f7d64bc21851b563</td>
+       <td>CVE-2022-4999</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Horizontal Scrolling Announcement Plugin SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44659e7b867e2d2329358078c7c3ddec</td>
+       <td>CVE-2023-5086</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Copy Anything to Clipboard Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eac3746d5dcd17c9db6eaab68b160ff3</td>
+       <td>CVE-2023-44150</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress ProfilePress Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88078">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5ee1c3074a70e3253c3c67ca49efdf2</td>
+       <td>CVE-2023-40600</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress EWWW Image Optimizer Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88077">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c56a92134b6321dc904b2948b99aa879</td>
+       <td>CVE-2023-5120</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Migration, Backup, Staging–WPvivid Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88076">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af2899095482f8984feb5dd6c142a20b</td>
+       <td>CVE-2023-5533</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress AI ChatBot Plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88075">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>474dae73db49640d5044227af03b4aa4</td>
+       <td>CVE-2023-5292</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Advanced Custom Fields: Extended Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88074">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>74f48e3beb6f10d171dfae61ad093051</td>
+       <td>CVE-2023-41735</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Email posts to subscribers Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88073">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>073071516ace18ba24c4f29e1122011b</td>
+       <td>CVE-2023-4648</td>
+       <td>2023-12-18 05:34:37 <img src="imgs/new.gif" /></td>
+       <td>WordPress Sitekit Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88072">详情</a></td>
+      </tr>
+
+      <tr>
        <td>329a60613f7d9f8516b592ea4e7bd044</td>
        <td>CVE-2023-39731</td>
        <td>2023-12-15 23:35:05</td>
@@ -2081,126 +2201,6 @@
        <td>2023-12-15 23:35:05</td>
        <td>SECUDOS Qiata权限分配错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87975">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bef2a9ccb55165a48c6f4c28c9354fc2</td>
-       <td>CVE-2023-45809</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Torchbox Wagtail信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87911">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>108da8d03b824b46849e635fa1566592</td>
-       <td>CVE-2023-35187</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>SolarWinds Access Rights Manager远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87910">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0468acc1a70da8b15d1cd32cf5e15116</td>
-       <td>CVE-2023-46042</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>GetSimpleCMS任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87909">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6fca6d7672fb8d1243e3a55f482672eb</td>
-       <td>CVE-2022-47583</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Mintty注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87908">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>14eb0a5d546b2eeebf9ccdc58284c410</td>
-       <td>CVE-2023-46033</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>D-Link DSL-2730U和DSL-2750U访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87907">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>251b46e9bc7f4c42765017cc0fae172e</td>
-       <td>CVE-2022-27813</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Motorola MTM5000任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87906">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>11c899462cfc4177b6e77e4e4c294df3</td>
-       <td>CVE-2023-35126</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>JustSystems Ichitaro越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87905">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>97d57faea0ae42ef70d4063daf313fbd</td>
-       <td>CVE-2022-26942</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Motorola MTM5000不受信指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e052a63df07f4f179c59ecb00e80dae0</td>
-       <td>CVE-2023-42666</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>DEXMA DexGate信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3af4da0218180397c2ac4b9bbf2434b5</td>
-       <td>CVE-2023-45277</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Yamcs路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87902">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb39fb3e9e9f821e924a7b7e663b511a</td>
-       <td>CVE-2023-41089</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>DEXMA DexGate身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87901">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd1ec922dd526ba31a91b6a425ec2547</td>
-       <td>CVE-2023-45825</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>ydb-go-sdk信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87900">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25463bdec245165c3bc77dbbebccecfb</td>
-       <td>CVE-2023-45820</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Directus异常情况处理错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87899">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1797c73ab8a4eca1b7e21f292692cb33</td>
-       <td>CVE-2023-43342</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>OpenSolution Quick CMS跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87898">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07f324f1f52cd8993b3a85cf15c695c9</td>
-       <td>CVE-2023-43341</td>
-       <td>2023-12-14 23:35:08</td>
-       <td>Evolution CMS跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87897">详情</a></td>
       </tr>
 
      </tbody>
