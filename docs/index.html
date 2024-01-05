@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-05 05:38:09 -->
+<!-- RELEASE TIME : 2024-01-05 23:37:21 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d34dc08f9354801ab047cbc6cdd5f707</td>
+       <td>CVE-2024-0247</td>
+       <td>2024-01-05 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in CodeAstro Online Food Ordering System 1.0. This vulnerability affects unknown code of the file /admin/ of the component Admin Panel. The manipulation of the argument Username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-249778 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5abb66e3974495dc7cb0193d1d7e662</td>
+       <td>CVE-2023-47560</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>An OS command injection vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to execute commands via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47560">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d7221fcd7518c82efd6818f15e19450</td>
+       <td>CVE-2023-47559</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting (XSS) vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47559">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a53532b07e523d8ae1289750297ed92</td>
+       <td>CVE-2023-47219</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47219">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddd68565aed7654e0f21b83ffa4e3abb</td>
+       <td>CVE-2023-46837</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>Arm provides multiple helpers to clean & invalidate the cache for a given region. This is, for instance, used when allocating guest memory to ensure any writes (such as the ones during scrubbing) have reached memory before handing over the page to a guest. Unfortunately, the arithmetics in the helpers can overflow and would then result to skip the cache cleaning/invalidation. Therefore there is no guarantee when all the writes will reach the memory. This undefined behavior was meant to be addressed by XSA-437, but the approach was not sufficient.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89ecce1dfc22fadd21be1f601a811204</td>
+       <td>CVE-2023-46836</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>The fixes for XSA-422 (Branch Type Confusion) and XSA-434 (Speculative Return Stack Overflow) are not IRQ-safe. It was believed that the mitigations always operated in contexts with IRQs disabled. However, the original XSA-254 fix for Meltdown (XPTI) deliberately left interrupts enabled on two entry paths; one unconditionally, and one conditionally on whether XPTI was active. As BTC/SRSO and Meltdown affect different CPU vendors, the mitigations are not active together by default. Therefore, there is a race condition whereby a malicious PV guest can bypass BTC/SRSO protections and launch a BTC/SRSO attack against Xen.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46836">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d8ff2da94ef61308d9518bac07906ab2</td>
+       <td>CVE-2023-46835</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>The current setup of the quarantine page tables assumes that the quarantine domain (dom_io) has been initialized with an address width of DEFAULT_DOMAIN_ADDRESS_WIDTH (48) and hence 4 page table levels. However dom_io being a PV domain gets the AMD-Vi IOMMU page tables levels based on the maximum (hot pluggable) RAM address, and hence on systems with no RAM above the 512GB mark only 3 page-table levels are configured in the IOMMU. On systems without RAM above the 512GB boundary amd_iommu_quarantine_init() will setup page tables for the scratch page with 4 levels, while the IOMMU will be configured to use 3 levels only, resulting in the last page table directory (PDE) effectively becoming a page table entry (PTE), and hence a device in quarantine mode gaining write access to the page destined to be a PDE. Due to this page table level mismatch, the sink page the device gets read/write access to is no longer cleared between device assignment, possibly leading to data leaks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2537a1585b3eb169bc16341762e0f53c</td>
+       <td>CVE-2023-45044</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45044">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0711661a0e20f5643307125e035d360d</td>
+       <td>CVE-2023-45043</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45043">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28404046648f8c3187b7e7565091bd1c</td>
+       <td>CVE-2023-45042</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45042">详情</a></td>
+      </tr>
+
+      <tr>
        <td>05fdfca069662eb38c6d79235c81ccf0</td>
        <td>CVE-2024-22051</td>
        <td>2024-01-04 21:15:10 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-01-03 17:15:10</td>
        <td>CubeFS is an open-source cloud-native file storage system. Prior to version 3.3.1, CubeFS used an insecure random string generator to generate user-specific, sensitive keys used to authenticate users in a CubeFS deployment. This could allow an attacker to predict and/or guess the generated string and impersonate a user thereby obtaining higher privileges. When CubeFS creates new users, it creates a piece of sensitive information for the user called the “accessKey”. To create the "accesKey", CubeFS uses an insecure string generator which makes it easy to guess and thereby impersonate the created user. An attacker could leverage the predictable random string generator and guess a users access key and impersonate the user to obtain higher privileges. The issue has been fixed in v3.3.1. There is no other mitigation than to upgrade.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff70fc8bbe26f6c2a49b8d4c5777b7bd</td>
-       <td>CVE-2023-32891</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In bluetooth service, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07933038; Issue ID: MSV-559.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32891">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfc7136575fad38431bd3d5630ccc276</td>
-       <td>CVE-2023-32890</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In modem EMM, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01183647; Issue ID: MOLY01183647 (MSV-963).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32890">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25922b9016562cf30256efbb2aa49607</td>
-       <td>CVE-2023-32889</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In Modem IMS Call UA, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01161825; Issue ID: MOLY01161825 (MSV-895).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32889">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d542b62e5a41e0f2aedb5bc4222522d6</td>
-       <td>CVE-2023-32888</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In Modem IMS Call UA, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01161830; Issue ID: MOLY01161830 (MSV-894).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32888">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42742ba7b0610e43b3c7e88b0e9a2a6c</td>
-       <td>CVE-2023-32887</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In Modem IMS Stack, there is a possible system crash due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01161837; Issue ID: MOLY01161837 (MSV-892).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32887">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1f277aa151d7cba6fbaf395280d9f12</td>
-       <td>CVE-2023-32886</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In Modem IMS SMS UA, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00730807; Issue ID: MOLY00730807.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31e930d5e63fe78b5e5901e8267c3378</td>
-       <td>CVE-2023-32885</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In display drm, there is a possible memory corruption due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07780685; Issue ID: ALPS07780685.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32885">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e578fe6c60f37bc374a7193780a0248d</td>
-       <td>CVE-2023-32884</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In netdagent, there is a possible information disclosure due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07944011; Issue ID: ALPS07944011.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32884">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebe54d9f934a05a3d1a23d0838c3f402</td>
-       <td>CVE-2023-32883</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In Engineer Mode, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08282249; Issue ID: ALPS08282249.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18fd3a6f0632d8aa836ba61959add212</td>
-       <td>CVE-2023-32882</td>
-       <td>2024-01-02 03:15:08</td>
-       <td>In battery, there is a possible memory corruption due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08308070; Issue ID: ALPS08308616.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32882">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc9e75107f39b09b4631dbae6043ed88</td>
+       <td>CVE-2023-21330</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89089">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d005230d527f3f7fb3eb51a23a5a5b39</td>
+       <td>CVE-2023-21329</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89088">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e7303618abe6d3b65c542dcd2dbfd59</td>
+       <td>CVE-2023-21328</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89087">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f055da06bb1f4d79672db17b2c865c9</td>
+       <td>CVE-2023-21327</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89086">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0521b0a9f22a62bf312ea9e807a46adb</td>
+       <td>CVE-2023-21326</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89085">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59fe95f12ae63120333cfa5c7574758d</td>
+       <td>CVE-2023-21325</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9a576a574a9269882fcb1758b1db15f9</td>
+       <td>CVE-2023-21324</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89083">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>152a37185b83cb954fd65c2aca71c828</td>
+       <td>CVE-2023-21323</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b0c39c007fb96b1511fd15e42e24302</td>
+       <td>CVE-2023-21321</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89081">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e0f570a5e578e37b37667a28fca26872</td>
+       <td>CVE-2023-21320</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca59482c349a5aa41893624fa2670822</td>
+       <td>CVE-2023-51467</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Apache OFBiz服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eb5d6d82c43516d8957fa6bd61a2758f</td>
+       <td>CVE-2023-50968</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Apache OFBiz任意文件读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89078">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>354130d8570c74021550379e6960af0a</td>
+       <td>CVE-2023-51385</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>OpenSSH命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89077">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac25e7369a5a8c4d7db7d35f5205fa36</td>
+       <td>CVE-2023-50164</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Apache Struts路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89076">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>70f386299be0ac07de48aa95969e1179</td>
+       <td>CVE-2023-21319</td>
+       <td>2024-01-05 23:35:10 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89075">详情</a></td>
+      </tr>
+
+      <tr>
        <td>561e13442e690b34c5261ff3bd5ad041</td>
        <td>CVE-2023-5164</td>
        <td>2024-01-04 23:35:18 <img src="imgs/new.gif" /></td>
@@ -2081,126 +2201,6 @@
        <td>2024-01-04 23:35:18 <img src="imgs/new.gif" /></td>
        <td>Google Android信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88949">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca03917d330e5de1f6f9ea9f807665b6</td>
-       <td>CVE-2023-30496</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress WpBusTicketly Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89037">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4bac8947144b767c00424269ba437d6e</td>
-       <td>CVE-2023-47759</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Chaty Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89036">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f295d99abcd513031da65bcd18461817</td>
-       <td></td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress WP EXtra Plugin跨站请求伪造漏洞（SVE-2023-47825）</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89035">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>529d2c4b06fdb9457ee19003a8a7a358</td>
-       <td>CVE-2023-25987</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress My YouTube Channel Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89034">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b36f93e260b2e0b297461fecc8be9868</td>
-       <td>CVE-2023-47766</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Post Status Notifier Lite Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89033">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73ca9f73e52449a9f505a37226ad6b10</td>
-       <td>CVE-2023-46857</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>squidex跨站脚本执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89032">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>edba27ca49dce45f944953840e82a6c9</td>
-       <td>CVE-2023-48824</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>BoidCMS跨站脚本执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89031">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0876ce885fd9f1178d4ff4ee5319d06f</td>
-       <td>CVE-2023-49746</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress SpeedyCache Plugin服务器请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89030">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fbc64d4283acb8d3ac94e47f44e3943</td>
-       <td>CVE-2023-47792</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Big File Uploads Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89029">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de8cdfb31507c6d7ae02187e2347617f</td>
-       <td>CVE-2023-41804</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Starter Templates Plugin服务器请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e35a7823d466e7a07a5183da743681b</td>
-       <td>CVE-2023-46641</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress 12 Step Meeting List Plugin服务器请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89027">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2373657078a4063e44e7173a2c0553b</td>
-       <td>CVE-2022-45362</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Paytm Payment Gateway Plugin服务器请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89026">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd6818dea160952a2167b244a42acf56</td>
-       <td>CVE-2023-47819</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Easy Call Now by ThikShare Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8686e9832e1d66d371abc38e68104f3e</td>
-       <td>CVE-2023-49958</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>Dalmann OCPP.Core输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7754f7ab3faa64a54a767b31b32d7169</td>
-       <td>CVE-2023-43304</td>
-       <td>2024-01-04 05:35:28 <img src="imgs/new.gif" /></td>
-       <td>Line PARK DANDAN mini-app信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89023">详情</a></td>
       </tr>
 
      </tbody>
