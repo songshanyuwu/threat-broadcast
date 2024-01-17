@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-16 23:37:40 -->
+<!-- RELEASE TIME : 2024-01-17 05:37:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -38,7 +38,7 @@
       <tr>
        <td>ec39eae21390157f92422897b04aad66</td>
        <td></td>
-       <td>2024-01-15 08:28:24 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 08:28:24</td>
        <td>安全事件周报 2024-01-08 第2周</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65a4eca8c09f255b91b17c6f">详情</a></td>
       </tr>
@@ -284,9 +284,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>70cebd009ce5fa97b7078e732b4618ad</td>
+       <td>CVE-2023-49515</td>
+       <td>2024-01-17 02:15:06 <img src="imgs/new.gif" /></td>
+       <td>Insecure Permissiosn vulnerability in TP Link TC70 and C200 WIFI Camera v.3 firmware v.1.3.4 and fixed in v.1.3.11 allows a physically proximate attacker to obtain sensitive information via a connection to the UART pin components.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49515">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fbb2099f86fa613f12316621ddb7ba6</td>
+       <td>CVE-2024-22409</td>
+       <td>2024-01-16 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>DataHub is an open-source metadata platform. In affected versions a low privileged user could remove a user, edit group members, or edit another user's profile information. The default privileges gave too many broad permissions to low privileged users. These have been constrained in PR #9067 to prevent abuse. This issue can result in privilege escalation for lower privileged users up to admin privileges, potentially, if a group with admin privileges exists. May not impact instances that have modified default privileges. This issue has been addressed in datahub version 0.12.1. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22409">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d5bb3838fa69576835a63317dceb9c0</td>
+       <td>CVE-2024-22408</td>
+       <td>2024-01-16 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>Shopware is an open headless commerce platform. The implemented Flow Builder functionality in the Shopware application does not adequately validate the URL used when creating the “call webhook” action. This enables malicious users to perform web requests to internal hosts. This issue has been fixed in the Commercial Plugin release 6.5.7.4 or with the Security Plugin. For installations with Shopware 6.4 the Security plugin is recommended to be installed and up to date. For older versions of 6.4 and 6.5 corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22408">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f3ca9450965fd9924029cd2e8a524c92</td>
+       <td>CVE-2024-22407</td>
+       <td>2024-01-16 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>Shopware is an open headless commerce platform. In the Shopware CMS, the state handler for orders fails to sufficiently verify user authorizations for actions that modify the payment, delivery, and/or order status. Due to this inadequate implementation, users lacking 'write' permissions for orders are still able to change the order state. This issue has been addressed and users are advised to update to Shopware 6.5.7.4. For older versions of 6.1, 6.2, 6.3 and 6.4 corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22407">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>65ca7f6485927f52dc6e1d495bb3e894</td>
+       <td>CVE-2024-22406</td>
+       <td>2024-01-16 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>Shopware is an open headless commerce platform. The Shopware application API contains a search functionality which enables users to search through information stored within their Shopware instance. The searches performed by this function can be aggregated using the parameters in the “aggregations” object. The ‘name’ field in this “aggregations” object is vulnerable SQL-injection and can be exploited using time-based SQL-queries. This issue has been addressed and users are advised to update to Shopware 6.5.7.4. For older versions of 6.1, 6.2, 6.3 and 6.4 corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22406">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad426bf71d950bd9a71120794c2abf73</td>
+       <td>CVE-2023-51807</td>
+       <td>2024-01-16 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting vulnerability in OFCMS v.1.14 allows a remote attacker to obtain sensitive information via a crafted payload to the title addition component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51807">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aab391ec7aa76df99e863ebc93de7aee</td>
+       <td>CVE-2024-22916</td>
+       <td>2024-01-16 22:15:46 <img src="imgs/new.gif" /></td>
+       <td>In D-LINK Go-RT-AC750 v101b03, the sprintf function in the sub_40E700 function within the cgibin is susceptible to stack overflow.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c6efadfe944a353ce0f8b0767cc95557</td>
+       <td>CVE-2024-22411</td>
+       <td>2024-01-16 22:15:46 <img src="imgs/new.gif" /></td>
+       <td>Avo is a framework to create admin panels for Ruby on Rails apps. In Avo 3 pre12 any HTML inside text that is passed to `error` or `succeed` in an `Avo::BaseAction` subclass will be rendered directly without sanitization in the toast/notification that appears in the UI on Action completion. A malicious user could exploit this vulnerability to trigger a cross site scripting attack on an unsuspecting user. This issue has been addressed in the 3.0.0 release of Avo. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22411">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8443f98bb20887add56ffd33383e6521</td>
+       <td>CVE-2024-22192</td>
+       <td>2024-01-16 22:15:46 <img src="imgs/new.gif" /></td>
+       <td>Ursa is a cryptographic library for use with blockchains. The revocation scheme that is part of the Ursa CL-Signatures implementations has a flaw that could impact the privacy guarantees defined by the AnonCreds verifiable credential model. Notably, a malicious verifier may be able to generate a unique identifier for a holder providing a verifiable presentation that includes a Non-Revocation proof. The impact of the flaw is that a malicious verifier may be able to determine a unique identifier for a holder presenting a Non-Revocation proof. Ursa has moved to end-of-life status and no fix is expected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22192">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a81fd62bd91152e49c70748e4303937</td>
+       <td>CVE-2024-22191</td>
+       <td>2024-01-16 22:15:46 <img src="imgs/new.gif" /></td>
+       <td>Avo is a framework to create admin panels for Ruby on Rails apps. A stored cross-site scripting (XSS) vulnerability was found in the key_value field of Avo v3.2.3. This vulnerability could allow an attacker to execute arbitrary JavaScript code in the victim's browser. The value of the key_value is inserted directly into the HTML code. In the current version of Avo (possibly also older versions), the value is not properly sanitized before it is inserted into the HTML code. This vulnerability could be used to steal sensitive information from victims that could be used to hijack victims' accounts or redirect them to malicious websites. Avo 3.2.4 includes a fix for this issue. Users are advised to upgrade.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22191">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3838ba411bbc159cdd4b9a5c39542c13</td>
        <td>CVE-2024-0558</td>
-       <td>2024-01-15 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:10</td>
        <td>A vulnerability has been found in DedeBIZ 6.3.0 and classified as critical. This vulnerability affects unknown code of the file /admin/makehtml_freelist_action.php. The manipulation of the argument startid leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-250726 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0558">详情</a></td>
       </tr>
@@ -294,7 +374,7 @@
       <tr>
        <td>c40647e8567374bd3d946905d625efe4</td>
        <td>CVE-2024-0557</td>
-       <td>2024-01-15 17:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:09</td>
        <td>A vulnerability, which was classified as problematic, was found in DedeBIZ 6.3.0. This affects an unknown part of the component Website Copyright Setting. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-250725 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0557">详情</a></td>
       </tr>
@@ -302,7 +382,7 @@
       <tr>
        <td>d9b55b32aa4536a29fc6f4e95cd1f7c9</td>
        <td>CVE-2024-0320</td>
-       <td>2024-01-15 17:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:09</td>
        <td>Cross-Site Scripting in FireEye Malware Analysis (AX) affecting version 9.0.3.936530. This vulnerability allows an attacker to send a specially crafted JavaScript payload in the application URL to retrieve the session details of a legitimate user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0320">详情</a></td>
       </tr>
@@ -310,7 +390,7 @@
       <tr>
        <td>feddbd1a69cd203fbf293864f96d8ce5</td>
        <td>CVE-2024-0319</td>
-       <td>2024-01-15 17:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:09</td>
        <td>Open Redirect vulnerability in FireEye HXTool affecting version 4.6, the exploitation of which could allow an attacker to redirect a legitimate user to a malicious page by changing the 'redirect_uri' parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0319">详情</a></td>
       </tr>
@@ -318,7 +398,7 @@
       <tr>
        <td>f204e45072b06a4da7c268ac5f66aac0</td>
        <td>CVE-2024-0318</td>
-       <td>2024-01-15 17:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:09</td>
        <td>Cross-Site Scripting in FireEye HXTool affecting version 4.6. This vulnerability allows an attacker to store a specially crafted JavaScript payload in the 'Profile Name' and 'Hostname/IP' parameters that will be triggered when items are loaded.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0318">详情</a></td>
       </tr>
@@ -326,7 +406,7 @@
       <tr>
        <td>07584b731fe54a9fdfa395215fea84c2</td>
        <td>CVE-2024-0317</td>
-       <td>2024-01-15 17:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 17:15:08</td>
        <td>Cross-Site Scripting in FireEye EX, affecting version 9.0.3.936727. Exploitation of this vulnerability allows an attacker to send a specially crafted JavaScript payload via the 'type' and 's_f_name' parameters to an authenticated user to retrieve their session details.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0317">详情</a></td>
       </tr>
@@ -334,7 +414,7 @@
       <tr>
        <td>81f7586dcdd0d7587358ade10193e1fe</td>
        <td>CVE-2024-22207</td>
-       <td>2024-01-15 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 16:15:13</td>
        <td>fastify-swagger-ui is a Fastify plugin for serving Swagger UI. Prior to 2.1.0, the default configuration of `@fastify/swagger-ui` without `baseDir` set will lead to all files in the module's directory being exposed via http routes served by the module. The vulnerability is fixed in v2.1.0. Setting the `baseDir` option can also work around this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22207">详情</a></td>
       </tr>
@@ -342,7 +422,7 @@
       <tr>
        <td>3cc6bc67375ced706a5e49ad9216a872</td>
        <td>CVE-2024-0316</td>
-       <td>2024-01-15 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 16:15:13</td>
        <td>Improper cleanup vulnerability in exceptions thrown in FireEye Endpoint Security, affecting version 5.2.0.958244. This vulnerability could allow an attacker to send multiple request packets to the containment_notify/preview parameter, which could lead to a service outage.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0316">详情</a></td>
       </tr>
@@ -350,7 +430,7 @@
       <tr>
        <td>084805c699459e1a3d0be0e3be5af53e</td>
        <td>CVE-2024-0315</td>
-       <td>2024-01-15 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 16:15:13</td>
        <td>Remote file inclusion vulnerability in FireEye Central Management affecting version 9.1.1.956704. This vulnerability allows an attacker to upload a malicious PDF file to the system during the report creation process.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0315">详情</a></td>
       </tr>
@@ -358,7 +438,7 @@
       <tr>
        <td>e3b5877b50fc33e5ae0babc0fc1f4fb4</td>
        <td>CVE-2024-0314</td>
-       <td>2024-01-15 16:15:12 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 16:15:12</td>
        <td>XSS vulnerability in FireEye Central Management affecting version 9.1.1.956704, which could allow an attacker to modify special HTML elements in the application and cause a reflected XSS, leading to a session hijacking.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0314">详情</a></td>
       </tr>
@@ -366,7 +446,7 @@
       <tr>
        <td>bdcb289fb0a18083d622a2d726c0df58</td>
        <td>CVE-2024-22028</td>
-       <td>2024-01-15 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 07:15:09</td>
        <td>Insufficient technical documentation issue exists in thermal camera TMC series all firmware versions. The user of the affected product is not aware of the internally saved data. By accessing the affected product physically, an attacker may retrieve the internal data.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22028">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>2f626f0b0160d02f21de8d34b720c7c8</td>
        <td>CVE-2024-0548</td>
-       <td>2024-01-15 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 07:15:09</td>
        <td>A vulnerability was found in FreeFloat FTP Server 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the component SIZE Command Handler. The manipulation leads to denial of service. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-250718 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0548">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>edf65cedd9c2e057e0cf05a29332bdbf</td>
        <td>CVE-2024-0547</td>
-       <td>2024-01-15 07:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 07:15:08</td>
        <td>A vulnerability has been found in Ability FTP Server 2.34 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component APPE Command Handler. The manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-250717 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0547">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>39ba8e23f83b3b7da533ba56c6d15ae0</td>
        <td>CVE-2020-36770</td>
-       <td>2024-01-15 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 07:15:07</td>
        <td>pkg_postinst in the Gentoo ebuild for Slurm through 22.05.3 unnecessarily calls chown to assign root's ownership on files in the live root filesystem. This could be exploited by the slurm user to become the owner of root-owned files.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36770">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>fce5f2da311777fbfe6df687f9bc1eb9</td>
        <td>CVE-2024-0546</td>
-       <td>2024-01-15 06:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 06:15:08</td>
        <td>A vulnerability, which was classified as problematic, has been found in EasyFTP 1.7.0. This issue affects some unknown processing of the component LIST Command Handler. The manipulation leads to denial of service. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250715.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0546">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>1eb942144f8b9f7d9fc0affead9c14c2</td>
        <td>CVE-2024-0545</td>
-       <td>2024-01-15 06:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 06:15:08</td>
        <td>A vulnerability classified as problematic was found in CodeCanyon RISE Rise Ultimate Project Manager 3.5.3. This vulnerability affects unknown code of the file /index.php/signin. The manipulation of the argument redirect with the input http://evil.com leads to open redirect. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-250714 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0545">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>0c62122d48ce99e60a65149351a210b8</td>
        <td>CVE-2024-0543</td>
-       <td>2024-01-15 06:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 06:15:07</td>
        <td>A vulnerability classified as critical has been found in CodeAstro Real Estate Management System up to 1.0. This affects an unknown part of the file propertydetail.php. The manipulation of the argument pid leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-250713 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0543">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>ee86c10fa6db4aed81e69ee540c4d672</td>
        <td>CVE-2024-0542</td>
-       <td>2024-01-15 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 05:15:09</td>
        <td>A vulnerability was found in Tenda W9 1.0.0.7(4456). It has been rated as critical. Affected by this issue is the function formWifiMacFilterGet of the component httpd. The manipulation of the argument index leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-250712. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0542">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>d6b76884af7be255f83a016ff7268c1c</td>
        <td>CVE-2024-0541</td>
-       <td>2024-01-15 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 05:15:08</td>
        <td>A vulnerability was found in Tenda W9 1.0.0.7(4456). It has been declared as critical. Affected by this vulnerability is the function formAddSysLogRule of the component httpd. The manipulation of the argument sysRulenEn leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250711. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0541">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>9f85636e91b458847800280e45f3605a</td>
        <td>CVE-2024-0540</td>
-       <td>2024-01-15 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-15 05:15:08</td>
        <td>A vulnerability was found in Tenda W9 1.0.0.7(4456). It has been classified as critical. Affected is the function formOfflineSet of the component httpd. The manipulation of the argument ssidIndex leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-250710 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0540">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c4ff7bcfa4de42ac3f490d7c5c3415f</td>
-       <td>CVE-2024-0510</td>
-       <td>2024-01-13 22:15:45</td>
-       <td>A vulnerability, which was classified as critical, has been found in HaoKeKeJi YiQiNiu up to 3.1. Affected by this issue is the function http_post of the file /application/pay/controller/Api.php. The manipulation of the argument url leads to server-side request forgery. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-250652.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f6e874a0e540066d2e3383c35ae00c4</td>
-       <td>CVE-2024-0505</td>
-       <td>2024-01-13 22:15:44</td>
-       <td>A vulnerability was found in ZhongFuCheng3y Austin 1.0 and classified as critical. This issue affects the function getFile of the file com/java3y/austin/web/controller/MaterialController.java of the component Upload Material Menu. The manipulation leads to unrestricted upload. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250619.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0505">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>722ab9e56897fe8ca3d8db6eadbd8830</td>
-       <td>CVE-2024-0504</td>
-       <td>2024-01-13 21:15:08</td>
-       <td>A vulnerability has been found in code-projects Simple Online Hotel Reservation System 1.0 and classified as problematic. This vulnerability affects unknown code of the file add_reserve.php of the component Make a Reservation Page. The manipulation of the argument Firstname/Lastname with the input <script>alert(1)</script> leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-250618 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fccc2054a065542deba56e134b27c385</td>
-       <td>CVE-2024-0503</td>
-       <td>2024-01-13 21:15:07</td>
-       <td>A vulnerability was found in code-projects Online FIR System 1.0. It has been classified as problematic. This affects an unknown part of the file registercomplaint.php. The manipulation of the argument Name/Address leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250611.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7350ecff860d5c7d7e1d87cc6bb76b5</td>
-       <td>CVE-2024-0502</td>
-       <td>2024-01-13 20:15:45</td>
-       <td>A vulnerability was found in SourceCodester House Rental Management System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file manage_user.php of the component Edit User. The manipulation of the argument id/name/username leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-250610 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>174008dc476d3e430ccd74235d1ddac8</td>
-       <td>CVE-2024-0501</td>
-       <td>2024-01-13 20:15:45</td>
-       <td>A vulnerability has been found in SourceCodester House Rental Management System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component Manage Invoice Details. The manipulation of the argument Invoice leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-250609 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0501">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ac7d96f3647ea5451c963eab68a4374</td>
-       <td>CVE-2024-0500</td>
-       <td>2024-01-13 19:15:08</td>
-       <td>A vulnerability, which was classified as problematic, was found in SourceCodester House Rental Management System 1.0. Affected is an unknown function of the component Manage Tenant Details. The manipulation of the argument Name leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-250608.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0500">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b93d4019ef64efaf6e90f7b1b25b7e5a</td>
-       <td>CVE-2024-0499</td>
-       <td>2024-01-13 19:15:08</td>
-       <td>A vulnerability, which was classified as problematic, has been found in SourceCodester House Rental Management System 1.0. This issue affects some unknown processing of the file index.php. The manipulation of the argument page leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250607.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dad1504e54e3d1604fa225d70d001318</td>
-       <td>CVE-2024-0498</td>
-       <td>2024-01-13 18:15:44</td>
-       <td>A vulnerability was found in Project Worlds Lawyer Management System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file searchLawyer.php. The manipulation of the argument experience leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250603.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>315ddfa6008d50657c1b1dbfca9271fc</td>
-       <td>CVE-2024-0497</td>
-       <td>2024-01-13 18:15:43</td>
-       <td>A vulnerability was found in Campcodes Student Information System 1.0. It has been classified as critical. Affected is an unknown function of the file /classes/Users.php?f=save. The manipulation of the argument username leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-250602 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0497">详情</a></td>
       </tr>
 
      </tbody>
@@ -2100,107 +2100,107 @@
       </tr>
 
       <tr>
-       <td>3e86503b04afea448cb6e47be6413b51</td>
-       <td>CVE-2023-6615</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Typecho信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89372">详情</a></td>
+       <td>86e9f672da0aa8e2c1b0ef76bc69b569</td>
+       <td>CVE-2023-50453</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Zammad信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89539">详情</a></td>
       </tr>
 
       <tr>
-       <td>12f1ed57fac4b749e17d37eb5b92bf42</td>
-       <td>CVE-2023-6616</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>SourceCodester Simple Student Attendance System跨站脚本执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89371">详情</a></td>
+       <td>16c6c07a12d58a8d7010e2c5559aa82a</td>
+       <td>CVE-2023-48417</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Google Chromecast授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89538">详情</a></td>
       </tr>
 
       <tr>
-       <td>1769646639f7204f857e6de93875f8c3</td>
-       <td>CVE-2023-6617</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>SourceCodester Simple Student Attendance System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89370">详情</a></td>
+       <td>1cf41b5eea0af60197c78ed656953e08</td>
+       <td>CVE-2023-48424</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Google Chromecast权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89537">详情</a></td>
       </tr>
 
       <tr>
-       <td>6c41ce701d1517fb2f0744862bf33be2</td>
-       <td>CVE-2023-6619</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>SourceCodester Simple Student Attendance System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89369">详情</a></td>
+       <td>878276bac7d9b28599bedb84389433a2</td>
+       <td>CVE-2023-6659</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Web-Based Student Clearance System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89536">详情</a></td>
       </tr>
 
       <tr>
-       <td>7df20aeba87074ce3fb940ba7ba20857</td>
-       <td>CVE-2023-6622</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Linux kernel空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89368">详情</a></td>
+       <td>0aa595b8a516ab114a512967fa0003f5</td>
+       <td>CVE-2023-50465</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>MonicaHQ跨站脚本执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89535">详情</a></td>
       </tr>
 
       <tr>
-       <td>e9cd1db75d75709620dd5bae51265643</td>
-       <td>CVE-2023-47565</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>QNAP Systems QVR操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89367">详情</a></td>
+       <td>ca181c1a5fe3bb23404e3a1abecb924a</td>
+       <td>CVE-2023-49804</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Uptime Kuma会话固定攻击漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89534">详情</a></td>
       </tr>
 
       <tr>
-       <td>fbf2a5eb87570f6e4289f620b855e45c</td>
-       <td>CVE-2023-48397</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Google Pixel越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89366">详情</a></td>
+       <td>e74f25a0ed2153201cfddf69486cbb00</td>
+       <td>CVE-2023-49803</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>koajs cors来源验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89533">详情</a></td>
       </tr>
 
       <tr>
-       <td>affb95ce6b0c302ecf8c39ba4777cba3</td>
-       <td>CVE-2023-48398</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Google Pixel越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89365">详情</a></td>
+       <td>da66153c3bf6f1c4c868143747f9128b</td>
+       <td>CVE-2023-48425</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Google Chromecast代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89532">详情</a></td>
       </tr>
 
       <tr>
-       <td>98adcd8a49bdf4efe91d474263b335f1</td>
-       <td>CVE-2023-6610</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Linux kernel越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89364">详情</a></td>
+       <td>ca3edb71613058eea19af0a6147fca7b</td>
+       <td>CVE-2023-49417</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK A7000R堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89531">详情</a></td>
       </tr>
 
       <tr>
-       <td>efe2b2702e76c972a7cd4aa1b76e6325</td>
-       <td>CVE-2023-6606</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Linux kernel越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89363">详情</a></td>
+       <td>30097a05c307545ffcf8ecf7353d1567</td>
+       <td>CVE-2023-49418</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK A7000R堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89530">详情</a></td>
       </tr>
 
       <tr>
-       <td>fd654e52de51ac063339a63f0aaa96eb</td>
-       <td>CVE-2023-6613</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Typecho跨站脚本执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89362">详情</a></td>
+       <td>8a9bb38c979f09976986ce7fb4403d3e</td>
+       <td>CVE-2023-50446</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>Mulvad VPN权限错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89529">详情</a></td>
       </tr>
 
       <tr>
-       <td>afdbd10e1a3d265b59b59ba8e031ee7b</td>
-       <td>CVE-2023-6612</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>TOTOLINK X5000R操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89361">详情</a></td>
+       <td>1795956b2824b87f6d570af544e859e9</td>
+       <td>CVE-2023-50449</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>JFinalCMS目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89528">详情</a></td>
       </tr>
 
       <tr>
-       <td>0b8a70e933b030cd5dde9ab50de88617</td>
-       <td>CVE-2023-48422</td>
-       <td>2024-01-15 05:35:38 <img src="imgs/new.gif" /></td>
-       <td>Google Pixel越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89360">详情</a></td>
+       <td>ee05da82960bb2cf9b3807b4d336d400</td>
+       <td>CVE-2023-5868</td>
+       <td>2024-01-16 05:34:55 <img src="imgs/new.gif" /></td>
+       <td>PostgreSQL内存泄漏漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89527">详情</a></td>
       </tr>
 
      </tbody>
