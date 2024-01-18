@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-18 05:36:56 -->
+<!-- RELEASE TIME : 2024-01-18 23:37:18 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f787c9e73b6bbcadd206e858ca3c4cbd</td>
+       <td>CVE-2024-22418</td>
+       <td>2024-01-18 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>Group-Office is an enterprise CRM and groupware tool. Affected versions are subject to a vulnerability which is present in the file upload mechanism of Group Office. It allows an attacker to execute arbitrary JavaScript code by embedding it within a file's name. For instance, using a filename such as “><img src=x onerror=prompt('XSS')>.jpg” triggers the vulnerability. When this file is uploaded, the JavaScript code within the filename is executed. This issue has been addressed in version 6.8.29. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22418">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f2d1a37ec35dbc79fe3deb2808a97f83</td>
+       <td>CVE-2024-22415</td>
+       <td>2024-01-18 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>jupyter-lsp is a coding assistance tool for JupyterLab (code navigation + hover suggestions + linters + autocompletion + rename) using Language Server Protocol. Installations of jupyter-lsp running in environments without configured file system access control (on the operating system level), and with jupyter-server instances exposed to non-trusted network are vulnerable to unauthorised access and modification of file system beyond the jupyter root directory. This issue has been patched in version 2.2.2 and all users are advised to upgrade. Users unable to upgrade should uninstall jupyter-lsp.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22415">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d463552c2c43c51a22d4c96aba46868</td>
+       <td>CVE-2024-22404</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud files Zip app is a tool to create zip archives from one or multiple files from within Nextcloud. In affected versions users can download "view-only" files by zipping the complete folder. It is recommended that the Files ZIP app is upgraded to 1.2.1, 1.4.1, or 1.5.0. Users unable to upgrade should disable the file zip app.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22404">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f499a64f38346d20773a9a79a57f91ef</td>
+       <td>CVE-2024-22402</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud guests app is a utility to create guest users which can only see files shared with them. In affected versions users were able to load the first page of apps they were actually not allowed to access. However subsequent API calls all failed correctly, so in most apps no additional information was leaked. Depending on the selection of apps installed this may present a permissions bypass. It is recommended that the Guests app is upgraded to 2.4.1, 2.5.1 or 3.0.1. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22402">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a558a74db1859305cf8ab6643215469</td>
+       <td>CVE-2024-22401</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud guests app is a utility to create guest users which can only see files shared with them. In affected versions users could change the allowed list of apps, allowing them to use apps that were not intended to be used. It is recommended that the Guests app is upgraded to 2.4.1, 2.5.1 or 3.0.1. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22401">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4d07f0575833fbb8fb561c5d5ff2c8ef</td>
+       <td>CVE-2023-51258</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>A memory leak issue discovered in YASM v.1.3.0 allows a local attacker to cause a denial of service via the new_Token function in the modules/preprocs/nasm/nasm-pp:1512.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51258">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53ee7b12c34ecb5fee04caaab6563f31</td>
+       <td>CVE-2023-51217</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>An issue discovered in TenghuTOS TWS-200 firmware version:V4.0-201809201424 allows a remote attacker to execute arbitrary code via crafted command on the ping page component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51217">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c13710bf621b010fd803fcd13691e658</td>
+       <td>CVE-2023-47092</td>
+       <td>2024-01-18 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Rejected reason: DO NOT USE THIS CVE RECORD. ConsultIDs: none. Reason: This record was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47092">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09660366d488e98fad4ddfb79ab06ac4</td>
+       <td>CVE-2024-22403</td>
+       <td>2024-01-18 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is a self hosted personal cloud system. In affected versions OAuth codes did not expire. When an attacker would get access to an authorization code they could authenticate at any time using the code. As of version 28.0.0 OAuth codes are invalidated after 10 minutes and will no longer be authenticated. To exploit this vulnerability an attacker would need to intercept an OAuth code from a user session. It is recommended that the Nextcloud Server is upgraded to 28.0.0. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22403">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e712ccd2adaf7a18b9870d1e3ef55c58</td>
+       <td>CVE-2024-22400</td>
+       <td>2024-01-18 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud User Saml is an app for authenticating Nextcloud users using SAML. In affected versions users can be given a link to the Nextcloud server and end up on a uncontrolled thirdparty server. It is recommended that the User Saml app is upgraded to version 5.1.5, 5.2.5, or 6.0.1. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22400">详情</a></td>
+      </tr>
+
+      <tr>
        <td>48327a18843ebc2b65fe9a4ec99c846b</td>
        <td>CVE-2024-0647</td>
        <td>2024-01-17 19:15:08 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-01-16 22:15:46</td>
        <td>Avo is a framework to create admin panels for Ruby on Rails apps. A stored cross-site scripting (XSS) vulnerability was found in the key_value field of Avo v3.2.3. This vulnerability could allow an attacker to execute arbitrary JavaScript code in the victim's browser. The value of the key_value is inserted directly into the HTML code. In the current version of Avo (possibly also older versions), the value is not properly sanitized before it is inserted into the HTML code. This vulnerability could be used to steal sensitive information from victims that could be used to hijack victims' accounts or redirect them to malicious websites. Avo 3.2.4 includes a fix for this issue. Users are advised to upgrade.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22191">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3838ba411bbc159cdd4b9a5c39542c13</td>
-       <td>CVE-2024-0558</td>
-       <td>2024-01-15 17:15:10</td>
-       <td>A vulnerability has been found in DedeBIZ 6.3.0 and classified as critical. This vulnerability affects unknown code of the file /admin/makehtml_freelist_action.php. The manipulation of the argument startid leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-250726 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c40647e8567374bd3d946905d625efe4</td>
-       <td>CVE-2024-0557</td>
-       <td>2024-01-15 17:15:09</td>
-       <td>A vulnerability, which was classified as problematic, was found in DedeBIZ 6.3.0. This affects an unknown part of the component Website Copyright Setting. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-250725 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9b55b32aa4536a29fc6f4e95cd1f7c9</td>
-       <td>CVE-2024-0320</td>
-       <td>2024-01-15 17:15:09</td>
-       <td>Cross-Site Scripting in FireEye Malware Analysis (AX) affecting version 9.0.3.936530. This vulnerability allows an attacker to send a specially crafted JavaScript payload in the application URL to retrieve the session details of a legitimate user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0320">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>feddbd1a69cd203fbf293864f96d8ce5</td>
-       <td>CVE-2024-0319</td>
-       <td>2024-01-15 17:15:09</td>
-       <td>Open Redirect vulnerability in FireEye HXTool affecting version 4.6, the exploitation of which could allow an attacker to redirect a legitimate user to a malicious page by changing the 'redirect_uri' parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0319">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f204e45072b06a4da7c268ac5f66aac0</td>
-       <td>CVE-2024-0318</td>
-       <td>2024-01-15 17:15:09</td>
-       <td>Cross-Site Scripting in FireEye HXTool affecting version 4.6. This vulnerability allows an attacker to store a specially crafted JavaScript payload in the 'Profile Name' and 'Hostname/IP' parameters that will be triggered when items are loaded.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0318">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07584b731fe54a9fdfa395215fea84c2</td>
-       <td>CVE-2024-0317</td>
-       <td>2024-01-15 17:15:08</td>
-       <td>Cross-Site Scripting in FireEye EX, affecting version 9.0.3.936727. Exploitation of this vulnerability allows an attacker to send a specially crafted JavaScript payload via the 'type' and 's_f_name' parameters to an authenticated user to retrieve their session details.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0317">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81f7586dcdd0d7587358ade10193e1fe</td>
-       <td>CVE-2024-22207</td>
-       <td>2024-01-15 16:15:13</td>
-       <td>fastify-swagger-ui is a Fastify plugin for serving Swagger UI. Prior to 2.1.0, the default configuration of `@fastify/swagger-ui` without `baseDir` set will lead to all files in the module's directory being exposed via http routes served by the module. The vulnerability is fixed in v2.1.0. Setting the `baseDir` option can also work around this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22207">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3cc6bc67375ced706a5e49ad9216a872</td>
-       <td>CVE-2024-0316</td>
-       <td>2024-01-15 16:15:13</td>
-       <td>Improper cleanup vulnerability in exceptions thrown in FireEye Endpoint Security, affecting version 5.2.0.958244. This vulnerability could allow an attacker to send multiple request packets to the containment_notify/preview parameter, which could lead to a service outage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>084805c699459e1a3d0be0e3be5af53e</td>
-       <td>CVE-2024-0315</td>
-       <td>2024-01-15 16:15:13</td>
-       <td>Remote file inclusion vulnerability in FireEye Central Management affecting version 9.1.1.956704. This vulnerability allows an attacker to upload a malicious PDF file to the system during the report creation process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0315">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3b5877b50fc33e5ae0babc0fc1f4fb4</td>
-       <td>CVE-2024-0314</td>
-       <td>2024-01-15 16:15:12</td>
-       <td>XSS vulnerability in FireEye Central Management affecting version 9.1.1.956704, which could allow an attacker to modify special HTML elements in the application and cause a reflected XSS, leading to a session hijacking.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0314">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7044e145ede1f58fa1dcf26c6b898eb7</td>
+       <td>CVE-2023-52185</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>WordPress Everestthemes Everest Backup Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89680">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51fe76739453507a9f13e53ef80a80d3</td>
+       <td>CVE-2023-38021</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Fortanix EnclaveOS Confidential Computing Manager Platform信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89679">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>313b4495c3954485bfdc52f07453eed8</td>
+       <td>CVE-2023-46378</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>MiniCMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89678">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5a451074cb6f059d846c2fc3ebc7f7e</td>
+       <td>CVE-2023-52277</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Royal RoyalTSX拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89677">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1a624d47e3dd91105780eefc5f60575</td>
+       <td>CVE-2023-47098</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Virtualmin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89676">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c5b04cc7b780a05aefd7056339a2cdb0</td>
+       <td>CVE-2023-47097</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Virtualmin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89675">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>213d603e318858c19e0464e470badf3a</td>
+       <td>CVE-2023-47096</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Virtualmin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89674">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2fd4d104fca4f0085125111e6fc44274</td>
+       <td>CVE-2023-2621</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Hitachi Energy MACH System Software任意文件写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89673">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77d4d22821ed0259b3e8f76dc5f01e81</td>
+       <td>CVE-2023-50559</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>XiangShan信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>94bfa6fa869b3f0fe260b3231dff322e</td>
+       <td>CVE-2023-52252</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Unified Remote XML外部实体引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89671">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d19011dd873dbe151e38aba5642822ea</td>
+       <td>CVE-2023-2622</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Hitachi Energy MACH System Software信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89670">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd6e9dbcf6bbbf42e4e15c6b3434d860</td>
+       <td>CVE-2023-49299</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Apache DolphinScheduler输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89669">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29df6c46c2a818f7905820d17c0a4861</td>
+       <td>CVE-2022-46486</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>SCONE Confidential Computing Platform信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89668">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d95442ec8daaa02f3c89abbd343a5dea</td>
+       <td>CVE-2023-52275</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>Tecno Camon X CA7授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89667">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0e2ed972d25fdadbdf17977645781df</td>
+       <td>CVE-2022-46487</td>
+       <td>2024-01-18 23:35:06 <img src="imgs/new.gif" /></td>
+       <td>SCONE Confidential Computing Platform初始化错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89666">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e576b509c3e66fe0d96af508a6d177db</td>
        <td>CVE-2023-49563</td>
        <td>2024-01-18 05:34:44 <img src="imgs/new.gif" /></td>
@@ -2081,126 +2201,6 @@
        <td>2024-01-18 05:34:44 <img src="imgs/new.gif" /></td>
        <td>Apple macOS Sonoma越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70519fe5e1963b0310da447a1c59c7ba</td>
-       <td>CVE-2023-46245</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Kimai服务器端模板注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89584">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb000483a0ee6d6135d1b353aa37eef9</td>
-       <td>CVE-2023-46249</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>authentik身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89583">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1cc0a0708a67f43cbfd75d248111024f</td>
-       <td>CVE-2023-46240</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>CodeIgniter信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89582">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c3e22dc16f2a467975dcc03a081236e</td>
-       <td>CVE-2023-37832</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Elenos ETG150身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3319edeb053dfc50531c740a096049c0</td>
-       <td>CVE-2023-20886</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>VMware Workspace ONE UEM开放重定向漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89580">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>66e4eb997c16e6c4d86d429e4dce1322</td>
-       <td>CVE-2023-45955</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Nanoleaf Light strip拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89579">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2eb1086a6acc45b12e1aa35e28a049f7</td>
-       <td>CVE-2023-46239</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>quic-go空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89578">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>630b03b5441b60623b77f028fb22d3bc</td>
-       <td>CVE-2023-46248</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Cody远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89577">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>029d8fe154a27b46a27eed8e7674cc4e</td>
-       <td>CVE-2023-43796</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Matrix Synapse信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89576">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>074b267f53cec4ac67c8250d1bb19072</td>
-       <td>CVE-2023-46722</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Pimcore Admin Classic Bundle跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89575">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d5eea287287d7174ce08036c72d2f70</td>
-       <td>CVE-2023-5739</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>HP PC Hardware Diagnostics Windows权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89574">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>291cdbc95e48f672ce791ba92872188e</td>
-       <td>CVE-2023-37243</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Atera Agent Package Availability for Windows权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89573">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87683c0225325022296b1c19abbac0b1</td>
-       <td>CVE-2023-42425</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Turing Video Turing Edge+ EVC5FD证书验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28f135d14cc211f777a17183390594b8</td>
-       <td>CVE-2023-42658</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Chef Software Chef InSpec代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89571">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6e0682c575058f56efc1cc838c16e04c</td>
-       <td>CVE-2023-3676</td>
-       <td>2024-01-17 23:35:15 <img src="imgs/new.gif" /></td>
-       <td>Kubernetes输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89570">详情</a></td>
       </tr>
 
      </tbody>
