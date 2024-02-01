@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-31 23:37:07 -->
+<!-- RELEASE TIME : 2024-02-01 05:38:57 -->
 <html lang="zh-cn">
 
  <head>
@@ -364,9 +364,89 @@
       </tr>
 
       <tr>
+       <td>12eb6a740c2600c2bc8e18d05075f7b9</td>
+       <td>CVE-2024-22236</td>
+       <td>2024-01-31 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>In Spring Cloud Contract, versions 4.1.x prior to 4.1.1, versions 4.0.x prior to 4.0.5, and versions 3.1.x prior to 3.1.10, test execution is vulnerable to local information disclosure via temporary directory created with unsafe permissions through the shaded com.google.guava:guava dependency in the org.springframework.cloud:spring-cloud-contract-shade dependency.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22236">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>490783c56d358d587d8fb5c54bf885c3</td>
+       <td>CVE-2023-3934</td>
+       <td>2024-01-31 06:15:45 <img src="imgs/new.gif" /></td>
+       <td>Rejected reason: Please discard this CVE, we are not using this anymore. The vulnerability turned out to be a non-security issue</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00582fe99a29bb73b013f12fe676249e</td>
+       <td>CVE-2024-0914</td>
+       <td>2024-01-31 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>A timing side-channel vulnerability has been discovered in the opencryptoki package while processing RSA PKCS#1 v1.5 padded ciphertexts. This flaw could potentially enable unauthorized RSA ciphertext decryption or signing, even without access to the corresponding private key.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0914">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ce42f2177c88d28261110921a12e179</td>
+       <td>CVE-2024-1069</td>
+       <td>2024-01-31 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Contact Form Entries plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file validation on the 'view_page' function in versions up to, and including, 1.3.2. This makes it possible for authenticated attackers with administrator-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1069">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7561f09fe3d88d8cba9b84bec49c7e6</td>
+       <td>CVE-2023-31505</td>
+       <td>2024-01-31 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary file upload vulnerability in Schlix CMS v2.2.8-1, allows remote authenticated attackers to execute arbitrary code and obtain sensitive information via a crafted .phtml file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31505">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55d4873ddbaa2b9f48a75e802668b088</td>
+       <td>CVE-2023-2439</td>
+       <td>2024-01-31 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>The UserPro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'userpro' shortcode in versions up to, and including, 5.1.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2439">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb9100e147b46e93166e5d434e87b5d4</td>
+       <td>CVE-2024-23745</td>
+       <td>2024-01-31 02:15:54 <img src="imgs/new.gif" /></td>
+       <td>In Notion Web Clipper 1.0.3(7), a .nib file is susceptible to the Dirty NIB attack. NIB files can be manipulated to execute arbitrary commands. Additionally, even if a NIB file is modified within an application, Gatekeeper may still permit the execution of the application, enabling the execution of arbitrary commands within the application's context.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2576d8a827e10fc2ecd04110e387fb53</td>
+       <td>CVE-2024-22569</td>
+       <td>2024-01-31 02:15:54 <img src="imgs/new.gif" /></td>
+       <td>Stored Cross-Site Scripting (XSS) vulnerability in POSCMS v4.6.2, allows attackers to execute arbitrary code via a crafted payload to /index.php?c=install&m=index&step=2&is_install_db=0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22569">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>99b1e9663802c75cdfe5bbaf5b05781c</td>
+       <td>CVE-2024-23834</td>
+       <td>2024-01-30 22:15:53</td>
+       <td>Discourse is an open-source discussion platform. Improperly sanitized user input could lead to an XSS vulnerability in some situations. This vulnerability only affects Discourse instances which have disabled the default Content Security Policy. The vulnerability is patched in 3.1.5 and 3.2.0.beta5. As a workaround, ensure Content Security Policy is enabled and does not include `unsafe-inline`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23834">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5dcb11d92ca762a8517d724cf976b880</td>
+       <td>CVE-2024-1077</td>
+       <td>2024-01-30 22:15:53</td>
+       <td>Use after free in Network in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a malicious file. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1077">详情</a></td>
+      </tr>
+
+      <tr>
        <td>eec3cffd7df2db9920b6c717a508b43e</td>
        <td>CVE-2024-21488</td>
-       <td>2024-01-30 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 05:15:09</td>
        <td>Versions of the package network before 0.7.0 are vulnerable to Arbitrary Command Injection due to use of the child_process exec function without input sanitization. If (attacker-controlled) user input is given to the mac_address_for function of the package, it is possible for an attacker to execute arbitrary commands on the operating system that this package is being run on.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21488">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>c4f8eaa1779d1cc33d398ba92d643581</td>
        <td>CVE-2024-1028</td>
-       <td>2024-01-30 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 05:15:08</td>
        <td>A vulnerability has been found in SourceCodester Facebook News Feed Like 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component Post Handler. The manipulation of the argument Description with the input <marquee>HACKED</marquee> leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-252301 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1028">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>56530e769f66e7f492043016f4249606</td>
        <td>CVE-2024-21840</td>
-       <td>2024-01-30 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 03:15:07</td>
        <td>Incorrect Default Permissions vulnerability in Hitachi Storage Plug-in for VMware vCenter allows local users to read and write specific files. This issue affects Hitachi Storage Plug-in for VMware vCenter: from 04.0.0 through 04.9.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21840">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>f58c02b13c34b5a4df3142a7ee45497f</td>
        <td>CVE-2024-1027</td>
-       <td>2024-01-30 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 03:15:07</td>
        <td>A vulnerability, which was classified as critical, was found in SourceCodester Facebook News Feed Like 1.0. Affected is an unknown function of the component Post Handler. The manipulation leads to unrestricted upload. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-252300.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1027">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>106f0b0926c1a06cd839396a62125a5b</td>
        <td>CVE-2024-22938</td>
-       <td>2024-01-30 01:16:00 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:16:00</td>
        <td>Insecure Permissions vulnerability in BossCMS v.1.3.0 allows a local attacker to execute arbitrary code and escalate privileges via the init function in admin.class.php component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22938">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>0289ce779cb11ebe6bde03ee01149749</td>
        <td>CVE-2024-22682</td>
-       <td>2024-01-30 01:16:00 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:16:00</td>
        <td>DuckDB <=0.9.2 and DuckDB extension-template <=0.9.2 are vulnerable to malicious extension injection via the custom extension feature.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22682">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>7521aa8b22b36acfe5d85b421dc64b8c</td>
        <td>CVE-2024-1026</td>
-       <td>2024-01-30 01:15:59 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:15:59</td>
        <td>A vulnerability was found in Cogites eReserv 7.7.58 and classified as problematic. This issue affects some unknown processing of the file front/admin/config.php. The manipulation of the argument id with the input %22%3E%3Cscript%3Ealert(%27XSS%27)%3C/script%3E leads to cross site scripting. The attack may be initiated remotely. The identifier VDB-252293 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1026">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>21b968a9c22a92e5fcb6d980d1dd1d29</td>
        <td>CVE-2024-1024</td>
-       <td>2024-01-30 01:15:59 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:15:59</td>
        <td>A vulnerability has been found in SourceCodester Facebook News Feed Like 1.0 and classified as problematic. This vulnerability affects unknown code of the component New Account Handler. The manipulation of the argument First Name/Last Name with the input <script>alert(1)</script> leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252292.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1024">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>9f9122f41ae88a44d5d6f7de68ca99f0</td>
        <td>CVE-2023-5372</td>
-       <td>2024-01-30 01:15:59 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:15:59</td>
        <td>The post-authentication command injection vulnerability in Zyxel NAS326 firmware versions through V5.21(AAZF.15)C0 and NAS542 firmware versions through V5.21(ABAG.12)C0 could allow an authenticated attacker with administrator privileges to execute some operating system (OS) commands by sending a crafted query parameter attached to the URL of an affected device’s web management interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5372">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>ac94ffebee580f0d00981969e5847203</td>
        <td>CVE-2023-51982</td>
-       <td>2024-01-30 01:15:59 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 01:15:59</td>
        <td>CrateDB 5.5.1 is contains an authentication bypass vulnerability in the Admin UI component. After configuring password authentication and_ Local_ In the case of an address, identity authentication can be bypassed by setting the X-Real IP request header to a specific value and accessing the Admin UI directly using the default user identity.(https://github.com/crate/crate/issues/15231)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51982">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>473a1433857f362acf47dd779c9eea40</td>
-       <td>CVE-2024-23828</td>
-       <td>2024-01-29 17:15:10</td>
-       <td>Nginx-UI is a web interface to manage Nginx configurations. It is vulnerable to an authenticated arbitrary command execution via CRLF attack when changing the value of test_config_cmd or start_cmd. This vulnerability exists due to an incomplete fix for CVE-2024-22197 and CVE-2024-22198. This vulnerability has been patched in version 2.0.0.beta.12.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23828">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8dc731d746b0a5c9f8a6f265cef31abf</td>
-       <td>CVE-2024-1011</td>
-       <td>2024-01-29 17:15:10</td>
-       <td>A vulnerability classified as problematic was found in SourceCodester Employee Management System 1.0. This vulnerability affects unknown code of the file delete-leave.php of the component Leave Handler. The manipulation of the argument id leads to improper access controls. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252280.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1011">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f031ddb163829ab6182756b9ef11e114</td>
-       <td>CVE-2024-1010</td>
-       <td>2024-01-29 17:15:09</td>
-       <td>A vulnerability classified as problematic has been found in SourceCodester Employee Management System 1.0. This affects an unknown part of the file edit-profile.php. The manipulation of the argument fullname/phone/date of birth/address/date of appointment leads to cross site scripting. It is possible to initiate the attack remotely. The associated identifier of this vulnerability is VDB-252279.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1010">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d04e550809d196640d93dfc3c62c969e</td>
-       <td>CVE-2024-1009</td>
-       <td>2024-01-29 17:15:09</td>
-       <td>A vulnerability was found in SourceCodester Employee Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /Admin/login.php. The manipulation of the argument txtusername leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-252278 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1009">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6078898299e83d53addbfd8900192204</td>
-       <td>CVE-2024-0788</td>
-       <td>2024-01-29 17:15:09</td>
-       <td>SUPERAntiSpyware Pro X v10.0.1260 is vulnerable to kernel-level API parameters manipulation and Denial of Service vulnerabilities by triggering the 0x9C402140 IOCTL code of the saskutil64.sys driver.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0788">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>472c47915972b39591a8f931fa09fae1</td>
-       <td>CVE-2023-40551</td>
-       <td>2024-01-29 17:15:08</td>
-       <td>A flaw was found in the MZ binary format in Shim. An out-of-bounds read may occur, leading to a crash or possible exposure of sensitive data during the system's boot phase.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f71fe2dbe5298650f81774d0edf835b</td>
-       <td>CVE-2023-40550</td>
-       <td>2024-01-29 17:15:08</td>
-       <td>An out-of-bounds read flaw was found in Shim when it tried to validate the SBAT information. This issue may expose sensitive data during the system's boot phase.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40550">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c1917799c3c0a8ab58846b1fdede1aa8</td>
-       <td>CVE-2023-40549</td>
-       <td>2024-01-29 17:15:08</td>
-       <td>An out-of-bounds read flaw was found in Shim due to the lack of proper boundary verification during the load of a PE binary. This flaw allows an attacker to load a crafted PE binary, triggering the issue and crashing Shim, resulting in a denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40549">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca3c24e063902fc549f20c2788ab76a1</td>
-       <td>CVE-2023-40546</td>
-       <td>2024-01-29 17:15:08</td>
-       <td>A flaw was found in Shim when an error happened while creating a new ESL variable. If Shim fails to create the new variable, it tries to print an error message to the user; however, the number of parameters used by the logging function doesn't match the format string used by it, leading to a crash under certain circumstances.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40546">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e6db803faa5b3ba5945979f199a482f</td>
-       <td>CVE-2023-1705</td>
-       <td>2024-01-29 17:15:08</td>
-       <td>Missing Authorization vulnerability in Forcepoint F|One SmartEdge Agent on Windows (bgAutoinstaller service modules) allows Privilege Escalation, Functionality Bypass.This issue affects F|One SmartEdge Agent: before 1.7.0.230330-554.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1705">详情</a></td>
       </tr>
 
      </tbody>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>257b020bf3927301ce8e4eb7cadec223</td>
        <td>CVE-2021-37937</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Elastic Elasticsearch权限管理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90212">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>d943bb6d40b5357825580015263eb46c</td>
        <td>CVE-2021-37942</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Elastic APM Java agent权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90211">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>20b7ce5191ab1dd867e8e9b05195b757</td>
        <td>CVE-2023-46814</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>VideoLAN VLC media player二进制劫持漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90210">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>c6e6ac4e283819545812107fff89391e</td>
        <td>CVE-2023-48161</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>GIFLIB缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90209">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>33b71b4ddf50f025b66dc66648b4e359</td>
        <td>CVE-2023-29069</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Autodesk Desktop Connector不受控制的搜索路径元素漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90208">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>65adf6b4971e56e2100357fc4168f986</td>
        <td>CVE-2023-41146</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Autodesk Customer Support Portal信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90207">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>42fd3217219dbcb88eba7e5ee9920971</td>
        <td>CVE-2023-47016</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>radare2越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90206">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>f3dedee5dc7b5ffd519987f05bb90bcd</td>
        <td>CVE-2023-47392</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Mercedes-Benz Mercedes me IOS APP访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90205">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>5ad3ebe7f438b311240ac31e6a2c7c87</td>
        <td>CVE-2023-47393</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Mercedes-Benz Mercedes me IOS APP访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90204">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>e353aac0c271f41e72a230ab4ae586a6</td>
        <td>CVE-2023-2446</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>WordPress UserPro Plugin信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90203">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>e3b430b739f61729952169c5169c3557</td>
        <td>CVE-2023-46673</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Elastic Elasticsearch异常情况处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90202">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>d02b260dfcffe59cc69064512638e090</td>
        <td>CVE-2023-6117</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>M-Files Server不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90201">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>837b760f7dcb36629730ed741cfec7b5</td>
        <td>CVE-2023-6189</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>M-Files Server权限处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90200">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>48f0a5473919701ec69a8254403a20a9</td>
        <td>CVE-2023-3103</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Unitree Robotics A1身份认证绕过漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90199">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>e348442cdfc614baffc65caeaf88cb72</td>
        <td>CVE-2023-3104</td>
-       <td>2024-01-30 23:35:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 23:35:45</td>
        <td>Unitree Robotics A1身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90198">详情</a></td>
       </tr>
