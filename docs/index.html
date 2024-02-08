@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-08 05:36:58 -->
+<!-- RELEASE TIME : 2024-02-08 23:36:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>479116192245ec9ff6a728dc9d09567e</td>
+       <td>CVE-2024-24350</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>File Upload vulnerability in Software Publico e-Sic Livre v.2.0 and before allows a remote attacker to execute arbitrary code via the extension filtering component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24350">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77c21347e652d860e89e006d0de6afb2</td>
+       <td>CVE-2024-24026</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions at com.java2nb.system.controller.SysUserController: uploadImg(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24026">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>333849acd4a5c1a2af3f3b7d161d2252</td>
+       <td>CVE-2024-24025</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: upload(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24025">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4291a34c7d76bd9ad26182719fe6a8f1</td>
+       <td>CVE-2024-24024</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File download vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: fileDownload(). An attacker can pass in specially crafted filePath and fieName parameters to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24024">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>25c7166099e951170ba8abfb2e515c5d</td>
+       <td>CVE-2024-24023</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior. An attacker can pass specially crafted offset, limit, and sort parameters to perform SQL injection via /novel/bookContent/list.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24023">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95ba57c5db4c1e3295d2538b15d2d63b</td>
+       <td>CVE-2024-24018</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions. An attacker can pass in crafted offset, limit, and sort parameters to perform SQL injection via /system/dataPerm/list</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24018">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96e1de53cecadc04d3dea58ed660b48f</td>
+       <td>CVE-2023-48974</td>
+       <td>2024-02-08 01:15:26 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting vulnerability in Axigen WebMail v.10.5.7 and before allows a remote attacker to escalate privileges via a crafted script to the serverName_input parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48974">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e17b051a9f235afaa8fb218b16197a7</td>
+       <td>CVE-2024-24806</td>
+       <td>2024-02-07 22:15:10 <img src="imgs/new.gif" /></td>
+       <td>libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24806">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c00a2531e0b8c99f91b3a8f4cb5aff41</td>
+       <td>CVE-2024-23448</td>
+       <td>2024-02-07 22:15:09 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered whereby APM Server could log at ERROR level, a response from Elasticsearch indicating that indexing the document failed and that response would contain parts of the original document. Depending on the nature of the document that the APM Server attempted to ingest, this could lead to the insertion of sensitive or private information in the APM Server logs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23448">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>130dc4379d0320843f5025e232b3bb0f</td>
+       <td>CVE-2024-1066</td>
+       <td>2024-02-07 22:15:09 <img src="imgs/new.gif" /></td>
+       <td>An issue has been discovered in GitLab EE affecting all versions from 13.3.0 prior to 16.6.7, 16.7 prior to 16.7.5, and 16.8 prior to 16.8.2 which allows an attacker to do a resource exhaustion using GraphQL `vulnerabilitiesCountByDay`</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1066">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8b6827f90073579427f6e9fb3fbe09ab</td>
        <td>CVE-2024-1079</td>
        <td>2024-02-07 08:15:43 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-02-06 22:16:14</td>
        <td>An attacker with access to the web application with vulnerable software could introduce arbitrary JavaScript by injecting a cross-site scripting payload into the "dns.0.server" parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45227">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1cfa5bb9577a960efad0195808d9dad</td>
-       <td>CVE-2024-0690</td>
-       <td>2024-02-06 12:15:55</td>
-       <td>An information disclosure flaw was found in ansible-core due to a failure to respect the ANSIBLE_NO_LOG configuration in some scenarios. It was discovered that information is still included in the output in certain tasks, such as loop items. Depending on the task, this issue may include sensitive information, such as decrypted secret values.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0690">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>82ede1104c025317ff3134d1116b5314</td>
-       <td>CVE-2024-24943</td>
-       <td>2024-02-06 10:15:11</td>
-       <td>In JetBrains Toolbox App before 2.2 a DoS attack was possible via a malicious SVG image</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d42ea0f0cb13502f479b6cc5ba8328e2</td>
-       <td>CVE-2024-24942</td>
-       <td>2024-02-06 10:15:11</td>
-       <td>In JetBrains TeamCity before 2023.11.3 path traversal allowed reading data within JAR archives</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24942">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f96ce1432c00e096ec102477bcac718b</td>
-       <td>CVE-2024-24941</td>
-       <td>2024-02-06 10:15:11</td>
-       <td>In JetBrains IntelliJ IDEA before 2023.3.3 a plugin for JetBrains Space was able to send an authentication token to an inappropriate URL</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24941">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a720fa44cfeca548680b2b76734e16e</td>
-       <td>CVE-2024-24940</td>
-       <td>2024-02-06 10:15:10</td>
-       <td>In JetBrains IntelliJ IDEA before 2023.3.3 path traversal was possible when unpacking archives</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24940">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>deb3ccc871011efc519257b9f3c3046c</td>
-       <td>CVE-2024-24939</td>
-       <td>2024-02-06 10:15:10</td>
-       <td>In JetBrains Rider before 2023.3.3 logging of environment variables containing secret values was possible</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24939">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5fcbf87c76370a192d7e75131bac2a2a</td>
-       <td>CVE-2024-24938</td>
-       <td>2024-02-06 10:15:10</td>
-       <td>In JetBrains TeamCity before 2023.11.2 limited directory traversal was possible in the Kotlin DSL documentation</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24938">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c8050c19c43da85d6d1a98b3a70c77b</td>
-       <td>CVE-2024-24937</td>
-       <td>2024-02-06 10:15:09</td>
-       <td>In JetBrains TeamCity before 2023.11.2 stored XSS via agent distribution was possible</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24937">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e726efe7713ce5c9a4ca45da548ce89</td>
-       <td>CVE-2024-24936</td>
-       <td>2024-02-06 10:15:09</td>
-       <td>In JetBrains TeamCity before 2023.11.2 access control at the S3 Artifact Storage plugin endpoint was missed</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24936">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26dc694c02817ac370729c1b2e6ce7f6</td>
-       <td>CVE-2024-23917</td>
-       <td>2024-02-06 10:15:09</td>
-       <td>In JetBrains TeamCity before 2023.11.3 authentication bypass leading to RCE was possible</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23917">详情</a></td>
       </tr>
 
      </tbody>
