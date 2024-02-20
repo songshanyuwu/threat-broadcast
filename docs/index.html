@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-19 23:37:30 -->
+<!-- RELEASE TIME : 2024-02-20 23:37:03 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,9 +284,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0d66ae7ccc8dd80ebc22f0c3f6957e32</td>
+       <td>CVE-2022-45320</td>
+       <td>2024-02-20 05:15:07 <img src="imgs/new.gif" /></td>
+       <td>Liferay Portal before 7.4.3.16 and Liferay DXP before 7.2 fix pack 19, 7.3 before update 6, and 7.4 before update 16 allow remote authenticated users to become the owner of a wiki page by editing the wiki page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45320">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4646471a0c45b25814600a90f8600c30</td>
+       <td>CVE-2024-1559</td>
+       <td>2024-02-20 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>The Link Library plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'll_reciprocal' parameter in all versions up to, and including, 7.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1559">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a2f89850112a94f2a032c89752137e3a</td>
+       <td>CVE-2024-1510</td>
+       <td>2024-02-20 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>The WP Shortcodes Plugin — Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's su_tooltip shortcode in all versions up to, and including, 7.0.2 due to insufficient input sanitization and output escaping on user supplied attributes and user supplied tags. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1510">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e059e0cf26bb3ee1855885f1da552a78</td>
+       <td>CVE-2023-6764</td>
+       <td>2024-02-20 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>A format string vulnerability in a function of the IPSec VPN feature in Zyxel ATP series firmware versions from 4.32 through 5.37 Patch 1, USG FLEX series firmware versions from 4.50 through 5.37 Patch 1, USG FLEX 50(W) series firmware versions from 4.16 through 5.37 Patch 1, and USG20(W)-VPN series firmware versions from 4.16 through 5.37 Patch 1 could allow an attacker to achieve unauthorized remote code execution by sending a sequence of specially crafted payloads containing an invalid pointer; however, such an attack would require detailed knowledge of an affected device’s memory layout and configuration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6764">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>410a4cdf2a2b270fda48938122ec5f2a</td>
+       <td>CVE-2024-22019</td>
+       <td>2024-02-20 02:15:50 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with chunked encoding, leading to resource exhaustion and denial of service (DoS). The server reads an unbounded number of bytes from a single connection, exploiting the lack of limitations on chunk extension bytes. The issue can cause CPU and network bandwidth exhaustion, bypassing standard safeguards like timeouts and body size limits.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22019">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17905e065803d0bd1a441091a1ff6226</td>
+       <td>CVE-2024-21896</td>
+       <td>2024-02-20 02:15:50 <img src="imgs/new.gif" /></td>
+       <td>The permission model protects itself against path traversal attacks by calling path.resolve() on any paths given by the user. If the path is to be treated as a Buffer, the implementation uses Buffer.from() to obtain a Buffer from the result of path.resolve(). By monkey-patching Buffer internals, namely, Buffer.prototype.utf8Write, the application can modify the result of path.resolve(), which leads to a path traversal vulnerability. This vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21896">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26cf2b8d93f0d2e231b88096da61bb07</td>
+       <td>CVE-2024-21892</td>
+       <td>2024-02-20 02:15:50 <img src="imgs/new.gif" /></td>
+       <td>On Linux, Node.js ignores certain environment variables if those may have been set by an unprivileged user while the process is running with elevated privileges with the only exception of CAP_NET_BIND_SERVICE. Due to a bug in the implementation of this exception, Node.js incorrectly applies this exception even when certain other capabilities have been set. This allows unprivileged users to inject code that inherits the process's elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49117bdf3e9e64afb34825bb65e341a2</td>
+       <td>CVE-2024-21891</td>
+       <td>2024-02-20 02:15:50 <img src="imgs/new.gif" /></td>
+       <td>Node.js depends on multiple built-in utility functions to normalize paths provided to node:fs functions, which can be overwitten with user-defined implementations leading to filesystem permission model bypass through path traversal attack. This vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21891">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dc6862fc5bc61e848b6fe4fe1f708ad8</td>
+       <td>CVE-2024-21890</td>
+       <td>2024-02-20 02:15:50 <img src="imgs/new.gif" /></td>
+       <td>The Node.js Permission Model does not clarify in the documentation that wildcards should be only used as the last character of a file path. For example: ``` --allow-fs-read=/home/node/.ssh/*.pub ``` will ignore `pub` and give access to everything after `.ssh/`. This misleading documentation affects all users using the experimental permission model in Node.js 20 and Node.js 21. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21890">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>309008d8575ca9f2384d90f932d57f5b</td>
+       <td>CVE-2024-0715</td>
+       <td>2024-02-20 02:15:49 <img src="imgs/new.gif" /></td>
+       <td>Expression Language Injection vulnerability in Hitachi Global Link Manager on Windows allows Code Injection.This issue affects Hitachi Global Link Manager: before 8.8.7-03.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0715">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6aa334efde52ba1564057fd534fbc0f0</td>
        <td>CVE-2023-6249</td>
-       <td>2024-02-18 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 08:15:07</td>
        <td>Signed to unsigned conversion esp32_ipm_send</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6249">详情</a></td>
       </tr>
@@ -294,7 +374,7 @@
       <tr>
        <td>f1ef85c0727110356751c1b5b41b1437</td>
        <td>CVE-2023-5779</td>
-       <td>2024-02-18 08:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 08:15:06</td>
        <td>can: out of bounds in remove_rx_filter function</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5779">详情</a></td>
       </tr>
@@ -302,7 +382,7 @@
       <tr>
        <td>a97e731ef00c99a94abe23dbc80de2e4</td>
        <td>CVE-2023-6749</td>
-       <td>2024-02-18 07:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:10</td>
        <td>Unchecked length coming from user input in settings shell</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6749">详情</a></td>
       </tr>
@@ -310,7 +390,7 @@
       <tr>
        <td>ddb460ac5c8ba98e7f779b427f391446</td>
        <td>CVE-2023-52381</td>
-       <td>2024-02-18 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:09</td>
        <td>Script injection vulnerability in the email module.Successful exploitation of this vulnerability may affect service confidentiality, integrity, and availability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52381">详情</a></td>
       </tr>
@@ -318,7 +398,7 @@
       <tr>
        <td>81c8708c5f6916d7e5bc225500d0391f</td>
        <td>CVE-2023-52380</td>
-       <td>2024-02-18 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:09</td>
        <td>Vulnerability of improper access control in the email module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52380">详情</a></td>
       </tr>
@@ -326,7 +406,7 @@
       <tr>
        <td>d5614f866e8067ec9308d9ea256019a7</td>
        <td>CVE-2023-52379</td>
-       <td>2024-02-18 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:09</td>
        <td>Permission control vulnerability in the calendarProvider module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52379">详情</a></td>
       </tr>
@@ -334,7 +414,7 @@
       <tr>
        <td>26fa7882883672fe4327e452286823e4</td>
        <td>CVE-2023-52378</td>
-       <td>2024-02-18 07:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:08</td>
        <td>Vulnerability of incorrect service logic in the WindowManagerServices module.Successful exploitation of this vulnerability may cause features to perform abnormally.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52378">详情</a></td>
       </tr>
@@ -342,7 +422,7 @@
       <tr>
        <td>d984c43eb67ac9e78f4412dc0a6bf393</td>
        <td>CVE-2022-48621</td>
-       <td>2024-02-18 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 07:15:07</td>
        <td>Vulnerability of missing authentication for critical functions in the Wi-Fi module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48621">详情</a></td>
       </tr>
@@ -350,7 +430,7 @@
       <tr>
        <td>2c5740c783e56d949d078f331921c13b</td>
        <td>CVE-2023-52377</td>
-       <td>2024-02-18 06:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 06:15:08</td>
        <td>Vulnerability of input data not being verified in the cellular data module.Successful exploitation of this vulnerability may cause out-of-bounds access.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52377">详情</a></td>
       </tr>
@@ -358,7 +438,7 @@
       <tr>
        <td>d10075fe712ef3b4bb32e008116712ae</td>
        <td>CVE-2023-52376</td>
-       <td>2024-02-18 06:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-18 06:15:08</td>
        <td>Information management vulnerability in the Gallery module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52376">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2024-02-16 15:15:08</td>
        <td>Tongda OA v2017 and up to v11.9 was discovered to contain a SQL injection vulnerability via the $AFF_ID parameter at /affair/delete.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25320">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09ca8eade47c4e19ce5994cb68293cc9</td>
-       <td>CVE-2024-22426</td>
-       <td>2024-02-16 12:15:08</td>
-       <td>Dell RecoverPoint for Virtual Machines 5.3.x contains an OS Command injection vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to execute arbitrary operating system commands, which will get executed in the context of the root user, resulting in a complete system compromise.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22426">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5e092470d91476d1c667e2616a3ee4ce</td>
-       <td>CVE-2024-22425</td>
-       <td>2024-02-16 12:15:07</td>
-       <td>Dell RecoverPoint for Virtual Machines 5.3.x contains a brute force/dictionary attack vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to launch a brute force attack or a dictionary attack against the RecoverPoint login form. This allows attackers to brute-force the password of valid users in an automated manner.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22425">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1e49f17867951bb1cb00f017dddff7e</td>
-       <td>CVE-2023-45860</td>
-       <td>2024-02-16 10:15:08</td>
-       <td>In Hazelcast Platform through 5.3.4, a security issue exists within the SQL mapping for the CSV File Source connector. This issue arises from inadequate permission checking, which could enable unauthorized clients to access data from files stored on a member's filesystem.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45860">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5e0ecea1fc8c55d101eb1ab772e825f3</td>
-       <td>CVE-2024-25466</td>
-       <td>2024-02-16 09:15:08</td>
-       <td>Directory Traversal vulnerability in React Native Document Picker before v.9.1.1 and fixed in v.9.1.1 allows a local attacker to execute arbitrary code via a crafted script to the Android library component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25466">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>275ce562ec386f129bec821dfe6102ac</td>
-       <td>CVE-2024-24377</td>
-       <td>2024-02-16 09:15:08</td>
-       <td>An issue in idocv v.14.1.3_20231228 allows a remote attacker to execute arbitrary code and obtain sensitive information via a crafted script.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>002c531670d545c0b3dfc59a58882af7</td>
-       <td>CVE-2024-22854</td>
-       <td>2024-02-16 09:15:08</td>
-       <td>DOM-based HTML injection vulnerability in the main page of Darktrace Threat Visualizer version 6.1.27 (bundle version 61050) and before has been identified. A URL, crafted by a remote attacker and visited by an authenticated user, allows open redirect and potential credential stealing using an injected HTML form.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22854">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b8700549de218ee23e3b63b052f42a0</td>
-       <td>CVE-2023-51931</td>
-       <td>2024-02-16 09:15:08</td>
-       <td>An issue in alanclarke URLite v.3.1.0 allows an attacker to cause a denial of service (DoS) via a crafted payload to the parsing function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b51cef4b6153b4165ff8742272eb902</td>
-       <td>CVE-2023-49508</td>
-       <td>2024-02-16 08:15:39</td>
-       <td>Directory Traversal vulnerability in YetiForceCompany YetiForceCRM versions 6.4.0 and before allows a remote authenticated attacker to obtain sensitive information via the license parameter in the LibraryLicense.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49508">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d55c97a364e59bd41e8fc711dfde5d5</td>
-       <td>CVE-2023-6451</td>
-       <td>2024-02-16 04:15:08</td>
-       <td>Publicly known cryptographic machine key in AlayaCare's Procura Portal before 9.0.1.2 allows attackers to forge their own authentication cookies and bypass the application's authentication mechanisms.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6451">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67f58b2e636db49d7ef8686f7a709a34</td>
-       <td>CVE-2024-25415</td>
-       <td>2024-02-16 02:15:51</td>
-       <td>A remote code execution (RCE) vulnerability in /admin/define_language.php of CE Phoenix v1.0.8.20 allows attackers to execute arbitrary PHP code via injecting a crafted payload into the file english.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25415">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bd549d021ead1b9084f64e5d4cc08e2a</td>
+       <td>CVE-2023-47126</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>TYPO3信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90612">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f574b5d2ff22dee5ebbb5685e90153e8</td>
+       <td>CVE-2023-47127</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>TYPO3身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90611">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2d4430c1880c00e1c59f24c14e67c87</td>
+       <td>CVE-2023-47384</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>GPAC内存泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90610">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d9609415f24811936d438d419a6733e2</td>
+       <td>CVE-2023-47130</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Yii远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90609">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06a8a8f13ba989e5763f6a7502a412b8</td>
+       <td>CVE-2023-47630</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Kyverno数据真实性验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90608">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f8e60192fbcfd41b4fa9af7b390fdac</td>
+       <td>CVE-2023-47640</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>DataHub加密算法使用错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90607">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00d7e8c0843cc21375b8981e62edbdf8</td>
+       <td>CVE-2023-47641</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>aiohttp HTTP请求走私漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90606">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4db3b5b9a61c0185aa6d4e31e4f2c9a</td>
+       <td>CVE-2023-5528</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Kubernetes输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90605">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>215cf843535b7378797de1016b553bc9</td>
+       <td>CVE-2022-45781</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Tenda AX1803缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90604">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4d779ae9882a0ed118f5db28fff9b6f</td>
+       <td>CVE-2023-39535</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90603">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5d1f0ef1eb4d45433ee1e4f4d2b4213</td>
+       <td>CVE-2023-39536</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90602">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9a32f50d79da0f254f6d65bdf96dbf9</td>
+       <td>CVE-2023-39537</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90601">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f77828807f921b7d36f19740be935fca</td>
+       <td>CVE-2023-46022</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Blood Bank SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90600">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29bb5b6ba3ed4b7afee13d5c7a37267a</td>
+       <td>CVE-2023-46023</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Simple Task List SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da4b415c06d0d6f96bed59bc092e1788</td>
+       <td>CVE-2023-46024</td>
+       <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
+       <td>Simple Task List SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90598">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dc2a7ba4673c561c437cedf1370f69d9</td>
        <td>CVE-2024-1284</td>
        <td>2024-02-14 05:36:01</td>
@@ -2081,126 +2201,6 @@
        <td>2024-02-14 05:36:01</td>
        <td>Microsoft Azure DevOps Server远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96bca9f07db8203fc7e5899bb145a60d</td>
-       <td>CVE-2023-43590</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Zoom Rooms for macOS后置链接漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90481">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a99051f47697fce211a46e24c4e7bd5</td>
-       <td>CVE-2023-43591</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Zoom Rooms for macOS权限管理错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67fc87d6fcd21513db514172d7cee528</td>
-       <td>CVE-2023-46121</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>yt-dlp HTTP请求走私漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90479">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a74d94af2b1502bf13e12fcda264064</td>
-       <td>CVE-2023-47308</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>PrestaShop Newsletter Popup PRO SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90478">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36d0885daf8cc31ffcf3caeeaf83a5b4</td>
-       <td>CVE-2023-47678</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>ASUS RT-AC87U访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90477">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1393f5fd56dc6976abc94209e49b1189</td>
-       <td>CVE-2023-5984</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Schneider Electric ION8650和ION8800缺少完整性检查漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90476">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a500759f7c8c762590b01e1eb0af7a24</td>
-       <td>CVE-2023-5985</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Schneider Electric ION8650和ION8800跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90475">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9db7a87f4299b766cab0b9f2424436f1</td>
-       <td>CVE-2023-5986</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Schneider Electric EcoStruxure Power Monitoring Expert开放重定向漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90474">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1665f73375090d9002c432bb8e21de0c</td>
-       <td>CVE-2023-6032</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Schneider Electric Galaxy VS和Galaxy VL路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90473">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3decbbb54848daf2caef8eac2d9e10f0</td>
-       <td>CVE-2023-47580</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68764caa5ca92a05b9e79439be68ae6e</td>
-       <td>CVE-2023-47581</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0685a244af021bc838b2443083bdf404</td>
-       <td>CVE-2023-47582</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90470">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fae6849614c7e8ff05b45c63a0ee87ab</td>
-       <td>CVE-2023-47583</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric TELLUS Simulator越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90469">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fd3d79b592e001f9e697012d4a09ca2</td>
-       <td>CVE-2023-47584</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric V-Server和V-Server Lite越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90468">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df90490412a7584eaaa8d538422db2f6</td>
-       <td>CVE-2023-47585</td>
-       <td>2024-02-06 05:34:45</td>
-       <td>Fuji Electric V-Server和V-Server Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90467">详情</a></td>
       </tr>
 
      </tbody>
