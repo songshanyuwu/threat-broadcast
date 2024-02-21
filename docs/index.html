@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-21 05:36:57 -->
+<!-- RELEASE TIME : 2024-02-21 23:37:55 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f24d0b1e73b3b0edb14e596a1fd65c0a</td>
+       <td>CVE-2024-27215</td>
+       <td>2024-02-21 16:15:50 <img src="imgs/new.gif" /></td>
+       <td>ConnectWise ScreenConnnect before 23.9.8 allows authentication bypass via an alternate path or channel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27215">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35ca16e1d732d84f01bc48aa8110a894</td>
+       <td>CVE-2024-22220</td>
+       <td>2024-02-21 16:15:50 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Terminalfour 7.4 through 7.4.0004 QP3 and 8 through 8.3.19, and Formbank through 2.1.10-FINAL. Unauthenticated Stored Cross-Site Scripting can occur, with resultant Admin Session Hijacking. The attack vectors are Form Builder and Form Preview.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22220">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89729faa0d4baa960a6a749eb919d388</td>
+       <td>CVE-2024-1709</td>
+       <td>2024-02-21 16:15:50 <img src="imgs/new.gif" /></td>
+       <td>ConnectWise ScreenConnect 23.9.7 and prior are affected by an Authentication Bypass Using an Alternate Path or Channel vulnerability, which may allow an attacker direct access to confidential information or critical systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0d30a4d6bf68b79f467e9045b1aedf8f</td>
+       <td>CVE-2024-1708</td>
+       <td>2024-02-21 16:15:50 <img src="imgs/new.gif" /></td>
+       <td>ConnectWise ScreenConnect 23.9.7 and prior are affected by path-traversal vulnerability, which may allow an attacker the ability to execute remote code or directly impact confidential data or critical systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3ef2900ad6ce169e4a65eeba4ca4fde7</td>
+       <td>CVE-2024-1701</td>
+       <td>2024-02-21 16:15:50 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in keerti1924 PHP-MYSQL-User-Login-System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /edit.php. The manipulation leads to improper access controls. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-254389 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5c01cd56cfe0c032e4f528a7e036fae</td>
+       <td>CVE-2024-1700</td>
+       <td>2024-02-21 16:15:49 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, was found in keerti1924 PHP-MYSQL-User-Login-System 1.0. Affected is an unknown function of the file /signup.php. The manipulation of the argument username with the input <script>alert("xss")</script> leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-254388. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac2f59e493dd2c3c572347e1563d9416</td>
+       <td>CVE-2024-1474</td>
+       <td>2024-02-21 16:15:49 <img src="imgs/new.gif" /></td>
+       <td>In WS_FTP Server versions before 8.8.5, reflected cross-site scripting issues have been identified on various user supplied inputs on the WS_FTP Server administrative interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1474">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd5ba4a51cc0533c96a153673eb7c6ac</td>
+       <td>CVE-2023-49100</td>
+       <td>2024-02-21 16:15:49 <img src="imgs/new.gif" /></td>
+       <td>Trusted Firmware-A (TF-A) before 2.10 has a potential read out-of-bounds in the SDEI service. The input parameter passed in register x1 is not validated well enough in the function sdei_interrupt_bind. The parameter is passed to a call to plat_ic_get_interrupt_type. It can be any arbitrary value passing checks in the function plat_ic_is_sgi. A compromised Normal World (Linux kernel) can enable a root-privileged attacker to issue arbitrary SMC calls. Using this primitive, he can control the content of registers x0 through x6, which are used to send parameters to TF-A. Out-of-bounds addresses can be read in the context of TF-A (EL3). Because the read value is never returned to non-secure memory or in registers, no leak is possible. An attacker can still crash TF-A, however.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49100">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a806761b3f4a2552b469b14e2cb11c6</td>
+       <td>CVE-2023-46241</td>
+       <td>2024-02-21 16:15:49 <img src="imgs/new.gif" /></td>
+       <td>`discourse-microsoft-auth` is a plugin that enables authentication via Microsoft. On sites with the `discourse-microsoft-auth` plugin enabled, an attack can potentially take control of a victim's Discourse account. Sites that have configured their application's account type to any options other than `Accounts in this organizational directory only (O365 only - Single tenant)` are vulnerable. This vulnerability has been patched in commit c40665f44509724b64938c85def9fb2e79f62ec8 of `discourse-microsoft-auth`. A `microsoft_auth:revoke` rake task has also been added which will deactivate and log out all users that have connected their accounts to Microsoft. User API keys as well as API keys created by those users will also be revoked. The rake task will also remove the connection records to Microsoft for those users. This will allow affected users to re-verify their account emails as well as reconnect their Discourse account to Microsoft for authentication. As a workaround, disable the `discourse-microsoft-auth` plugin by setting the `microsoft_auth_enabled` site setting to `false`. Run the `microsoft_auth:log_out_users` rake task to log out all users with associated Microsoft accounts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46241">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>69ec16805f2b4a76d9edfb73a16f42b4</td>
+       <td>CVE-2022-45179</td>
+       <td>2024-02-21 16:15:49 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in LIVEBOX Collaboration vDesk through v031. A basic XSS vulnerability exists under the /api/v1/vdeskintegration/todo/createorupdate endpoint via the title parameter and /dashboard/reminders. A remote user (authenticated to the product) can store arbitrary HTML code in the reminder section title in order to corrupt the web page (for example, by creating phishing sections to exfiltrate victims' credentials).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45179">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5406867c009510f8d60ac78516fb9366</td>
        <td>CVE-2024-25366</td>
        <td>2024-02-20 16:15:10 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-02-20 02:15:49 <img src="imgs/new.gif" /></td>
        <td>Expression Language Injection vulnerability in Hitachi Global Link Manager on Windows allows Code Injection.This issue affects Hitachi Global Link Manager: before 8.8.7-03.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0715">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6aa334efde52ba1564057fd534fbc0f0</td>
-       <td>CVE-2023-6249</td>
-       <td>2024-02-18 08:15:07</td>
-       <td>Signed to unsigned conversion esp32_ipm_send</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6249">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1ef85c0727110356751c1b5b41b1437</td>
-       <td>CVE-2023-5779</td>
-       <td>2024-02-18 08:15:06</td>
-       <td>can: out of bounds in remove_rx_filter function</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5779">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a97e731ef00c99a94abe23dbc80de2e4</td>
-       <td>CVE-2023-6749</td>
-       <td>2024-02-18 07:15:10</td>
-       <td>Unchecked length coming from user input in settings shell</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ddb460ac5c8ba98e7f779b427f391446</td>
-       <td>CVE-2023-52381</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Script injection vulnerability in the email module.Successful exploitation of this vulnerability may affect service confidentiality, integrity, and availability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52381">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81c8708c5f6916d7e5bc225500d0391f</td>
-       <td>CVE-2023-52380</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Vulnerability of improper access control in the email module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52380">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5614f866e8067ec9308d9ea256019a7</td>
-       <td>CVE-2023-52379</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Permission control vulnerability in the calendarProvider module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52379">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26fa7882883672fe4327e452286823e4</td>
-       <td>CVE-2023-52378</td>
-       <td>2024-02-18 07:15:08</td>
-       <td>Vulnerability of incorrect service logic in the WindowManagerServices module.Successful exploitation of this vulnerability may cause features to perform abnormally.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d984c43eb67ac9e78f4412dc0a6bf393</td>
-       <td>CVE-2022-48621</td>
-       <td>2024-02-18 07:15:07</td>
-       <td>Vulnerability of missing authentication for critical functions in the Wi-Fi module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2c5740c783e56d949d078f331921c13b</td>
-       <td>CVE-2023-52377</td>
-       <td>2024-02-18 06:15:08</td>
-       <td>Vulnerability of input data not being verified in the cellular data module.Successful exploitation of this vulnerability may cause out-of-bounds access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d10075fe712ef3b4bb32e008116712ae</td>
-       <td>CVE-2023-52376</td>
-       <td>2024-02-18 06:15:08</td>
-       <td>Information management vulnerability in the Gallery module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52376">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f4fafc06411bd9ee36844b8f5060ab67</td>
+       <td>CVE-2023-32660</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel NUC不受控制的搜索路径漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90662">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b847c203363e73e01c3a176ec1bb793d</td>
+       <td>CVE-2023-32661</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel NUC身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90661">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01e8ecbc28775660a0d44283f7859372</td>
+       <td>CVE-2023-32662</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Battery Life Diagnostic Tool授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90660">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>993ed3f6e7aa9679a4de69902b5752d1</td>
+       <td>CVE-2023-32701</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Blackberry QNX SDP输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90659">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7e60da24d9a67668dda29954114e426</td>
+       <td>CVE-2023-33872</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Support访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90658">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>952a9461d21b8aac18b18a1d670550b1</td>
+       <td>CVE-2023-33874</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel NUC不受控制的搜索路径漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90657">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f649555330f4302f724e32a6c97debc7</td>
+       <td>CVE-2023-33878</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel NUC Software路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90656">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>015f4918b1214d113eea9ff972935a4a</td>
+       <td>CVE-2023-34314</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Simics Simulator权限分配错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf65a0f5edab03a508d14ec104392a79</td>
+       <td>CVE-2023-34350</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel XTU Software不受控制的搜索路径元素漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90654">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>45c94f76df3189b4dca2cc0db32b2efe</td>
+       <td>CVE-2023-34430</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Battery Life Diagnostic Tool不受控制的搜索路径漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90653">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2d748abab98231c5e315432ed52b81a</td>
+       <td>CVE-2023-34431</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Server Board输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90652">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>12908fc9ea074ff2a8da552d4c0f8a5b</td>
+       <td>CVE-2023-34997</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Server Configuration Utility Software权限分配错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90651">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8973bad5c459e9f44d10277d6c689dfb</td>
+       <td>CVE-2023-36860</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Unison输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90650">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f12a9f117ccf3553015990a1a02066a</td>
+       <td>CVE-2023-38131</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Unison输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90649">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>211b77da24e96cacb81e05ad2129a6b6</td>
+       <td>CVE-2023-38411</td>
+       <td>2024-02-21 23:35:38 <img src="imgs/new.gif" /></td>
+       <td>Intel Smart Campus Android Application访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90648">详情</a></td>
+      </tr>
+
+      <tr>
        <td>bd549d021ead1b9084f64e5d4cc08e2a</td>
        <td>CVE-2023-47126</td>
        <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
@@ -2081,126 +2201,6 @@
        <td>2024-02-20 23:34:47 <img src="imgs/new.gif" /></td>
        <td>Simple Task List SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90598">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc2a7ba4673c561c437cedf1370f69d9</td>
-       <td>CVE-2024-1284</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Google Chromium堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90561">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aed34ed84e9689594530e1ba95c7f7a0</td>
-       <td>CVE-2024-21358</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC OLE DB provider for SQL Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90560">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67cc6d69de8dfd8cb23ee5f0497e9781</td>
-       <td>CVE-2024-21356</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows Lightweight Directory Access Protocol拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6ab64cf92b588817dae14488ff3fdf4</td>
-       <td>CVE-2024-21355</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows Message Queuing (MSMQ)权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>309e423b19f949e78cb92b17a40545fd</td>
-       <td>CVE-2024-21354</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows Message Queuing (MSMQ)权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e71d52d31e5cce9c2bc1dfa2bc23e4fa</td>
-       <td>CVE-2024-21353</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC ODBC Driver远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90556">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a19bf240d70d6d340d80a9588071291c</td>
-       <td>CVE-2024-21360</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC OLE DB provider for SQL Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90555">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0131434d65045fc8aa66929ae5359b09</td>
-       <td>CVE-2024-21361</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC OLE DB provider for SQL Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90554">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>931b5c633543d599912f00559d246ccb</td>
-       <td>CVE-2024-21362</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows Kernel安全功能绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90553">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c17dd078889a4e60f30e38496eca735e</td>
-       <td>CVE-2024-21363</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows Message Queuing (MSMQ)远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90552">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b250bda539d5e13b778552c1e04877f0</td>
-       <td>CVE-2024-21364</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Azure Site Recovery权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>00af3e3b4a05c6ccd5d4f1ffc43f4b03</td>
-       <td>CVE-2024-21365</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC OLE DB provider for SQL Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90550">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>056f0d20f071968db9c829e47ffdbce7</td>
-       <td>CVE-2024-21366</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Windows WDAC OLE DB provider for SQL Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90549">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd7376cde66e722990e75e8144321522</td>
-       <td>CVE-2024-20673</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Office远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90548">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>139b8df1c5583280bb82f6b2f1b9599f</td>
-       <td>CVE-2024-20667</td>
-       <td>2024-02-14 05:36:01</td>
-       <td>Microsoft Azure DevOps Server远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90547">详情</a></td>
       </tr>
 
      </tbody>
