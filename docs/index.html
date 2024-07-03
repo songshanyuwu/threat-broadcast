@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-03 05:37:48 -->
+<!-- RELEASE TIME : 2024-07-03 23:36:59 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5ab87198afdda372a76a80a58f7a4a68</td>
+       <td>CVE-2024-6469</td>
+       <td>2024-07-03 11:15:04 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in playSMS 1.4.3. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /index.php?app=main&inc=feature_firewall&op=firewall_list of the component Template Handler. The manipulation of the argument IP address with the input {{`id`} leads to injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-270277 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6469">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea7df40427a717ea3f86cd3a43dd805c</td>
+       <td>CVE-2024-6428</td>
+       <td>2024-07-03 09:15:08 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.8.0, 9.7.x <= 9.7.4, 9.6.x <= 9.6.2, 9.5.x <= 9.5.5 fail to prevent specifying a RemoteId when creating a new user which allows an attacker to specify both a remoteId and the user ID, resulting in creating a user with a user-defined user ID. This can cause some broken functionality in User Management such administrative actions against the user not working.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6428">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f7f2cded2e8740df20b7096fb6e30a8</td>
+       <td>CVE-2024-39830</td>
+       <td>2024-07-03 09:15:07 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.8.x <= 9.8.0, 9.7.x <= 9.7.4, 9.6.x <= 9.6.2 and 9.5.x <= 9.5.5, when shared channels are enabled, fail to use constant time comparison for remote cluster tokens which allows an attacker to retrieve the remote cluster token via a timing attack during remote cluster token comparison.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39830">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0aa39f8e1bdb48fafbd03295a54c6b1c</td>
+       <td>CVE-2024-39807</td>
+       <td>2024-07-03 09:15:07 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.5.x <= 9.5.5 and 9.8.0 fail to properly sanitize the recipients of a webhook event which allows an attacker monitoring webhook events to retrieve the channel IDs of archived or restored channels.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39807">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe0bfd4cec099045c032ec190adc7565</td>
+       <td>CVE-2024-39361</td>
+       <td>2024-07-03 09:15:06 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.8.0, 9.7.x <= 9.7.4, 9.6.x <= 9.6.2 and 9.5.x <= 9.5.5 fail to prevent users from specifying a RemoteId for their posts which allows an attacker to specify both a remoteId and the post ID, resulting in creating a post with a user-defined post ID. This can cause some broken functionality in the channel or thread with user-defined posts</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39361">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bc345fa030f2e43eaa3ece6bfa1212f7</td>
+       <td>CVE-2024-39353</td>
+       <td>2024-07-03 09:15:06 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.5.x <= 9.5.5 and 9.8.0 fail to sanitize the RemoteClusterFrame payloads before audit logging them which allows a high privileged attacker with access to the audit logs to read message contents.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39353">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d66a9a9ca3eab0ad140e08df1b7316b</td>
+       <td>CVE-2024-36257</td>
+       <td>2024-07-03 09:15:06 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 9.5.x <= 9.5.5 and 9.8.0, when using shared channels with multiple remote servers connected, fail to check that the remote server A requesting the server B to update the profile picture of a user is the remote that actually has the user as a local one . This allows a malicious remote A to change the profile images of users that belong to another remote server C that is connected to the server A.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36257">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe57b1f41b6be71c4793bc162b74593a</td>
+       <td>CVE-2024-6340</td>
+       <td>2024-07-03 08:15:10 <img src="imgs/new.gif" /></td>
+       <td>The Premium Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Countdown widget in all versions up to, and including, 4.10.35 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6340">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9bfaffacf475506020465479c7ccbf36</td>
+       <td>CVE-2024-6263</td>
+       <td>2024-07-03 08:15:10 <img src="imgs/new.gif" /></td>
+       <td>The WP Lightbox 2 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘title’ parameter in all versions up to, and including, 3.0.6.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6263">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a04e45b662fd7612a1f0aa283f37f6fe</td>
+       <td>CVE-2024-4482</td>
+       <td>2024-07-03 08:15:09 <img src="imgs/new.gif" /></td>
+       <td>The The Plus Addons for Elementor – Elementor Addons, Page Templates, Widgets, Mega Menu, WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Countdown' widget in all versions up to, and including, 5.6.1 due to insufficient input sanitization and output escaping on user supplied 'text_days' attribute. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4482">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9b70227dbf1642174570fced1dda7334</td>
        <td>CVE-2024-6440</td>
        <td>2024-07-02 11:15:11 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-07-01 05:15:04</td>
        <td>In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297807; Issue ID: MSV-1482.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-20077">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>04948b47c2c5cf6ca5b263a13d52b8fb</td>
-       <td>CVE-2024-6415</td>
-       <td>2024-06-30 04:15:02</td>
-       <td>A vulnerability classified as problematic was found in Ingenico Estate Manager 2023. Affected by this vulnerability is an unknown functionality of the file /emgui/rest/preferences/PREF_HOME_PAGE/sponsor/3/ of the component New Widget Handler. The manipulation of the argument URL leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-270001 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6415">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e58b2192572fe324d1e65ccec8b8b18</td>
-       <td>CVE-2024-6414</td>
-       <td>2024-06-30 03:15:02</td>
-       <td>A vulnerability classified as problematic has been found in Parsec Automation TrakSYS 11.x.x. Affected is an unknown function of the file TS/export/contentpage of the component Export Page. The manipulation of the argument ID leads to direct request. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-270000. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6414">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b10a66072ccf63d5e2b7b6cf97db3bf</td>
-       <td>CVE-2024-5926</td>
-       <td>2024-06-30 01:15:09</td>
-       <td>Path Traversal: '\..\filename' in GitHub repository stitionai/devika prior to -.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5926">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fda643624d3c091d8d867024ced12aa</td>
-       <td>CVE-2024-39848</td>
-       <td>2024-06-29 22:15:02</td>
-       <td>Internet2 Grouper before 5.6 allows authentication bypass when LDAP authentication is used in certain ways. This is related to internet2.middleware.grouper.ws.security.WsGrouperLdapAuthentication and the use of the UyY29r password for the M3vwHr account. This also affects "Grouper for Web Services" before 4.13.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39848">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>803351db6e5b5e13559c67afdc334331</td>
-       <td>CVE-2024-39846</td>
-       <td>2024-06-29 21:15:09</td>
-       <td>NewPass before 1.2.0 stores passwords (rather than password hashes) directly, which makes it easier to obtain unauthorized access to sensitive information. NOTE: in each case, data at rest is encrypted, but is decrypted within process memory during use.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e228ab0cad3d8607093fa072e3a61ff0</td>
-       <td>CVE-2024-39840</td>
-       <td>2024-06-29 17:15:09</td>
-       <td>Factorio before 1.1.101 allows a crafted server to execute arbitrary code on clients via a custom map that leverages the ability of certain Lua base module functions to execute bytecode and generate fake objects.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39840">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44b6cfec136896f12e266aedcc840ab3</td>
-       <td>CVE-2024-25943</td>
-       <td>2024-06-29 13:15:10</td>
-       <td>iDRAC9, versions prior to 7.00.00.172 for 14th Generation and 7.10.50.00 for 15th and 16th Generations, contains a session hijacking vulnerability in IPMI. A remote attacker could potentially exploit this vulnerability, leading to arbitrary code execution on the vulnerable application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>acd0c183c1edfee44a8abe6d716440bf</td>
-       <td>CVE-2024-2386</td>
-       <td>2024-06-29 13:15:10</td>
-       <td>The WordPress Plugin for Google Maps – WP MAPS plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter of the 'put_wpgm' shortcode in all versions up to, and including, 4.6.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with contributor-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2386">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1871bfebdafb159384d8a8610263f188</td>
-       <td>CVE-2023-4017</td>
-       <td>2024-06-29 12:15:09</td>
-       <td>The Goya theme for WordPress is vulnerable to Reflected Cross-Site Scripting via the ‘attra-color’, 'attra-size', and 'product-cata' parameters in versions up to, and including, 1.0.8.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4017">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9103412ed2c29ac048e8232078817768</td>
-       <td>CVE-2024-5819</td>
-       <td>2024-06-29 10:15:02</td>
-       <td>The Gutenberg Blocks with AI by Kadence WP – Page Builder Features plugin for WordPress is vulnerable to DOM-based Stored Cross-Site Scripting via HTML data attributes in all versions up to, and including, 3.2.45 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5819">详情</a></td>
       </tr>
 
      </tbody>
@@ -1972,6 +1972,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3ced4153951f925dafd2583e1f7c58ee</td>
+       <td>CVE-2024-4086</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin CM Tooltip Glossary跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>074a5d57ddee2beeaf86057db7117c70</td>
+       <td>CVE-2024-4092</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress Plugin Slider Revolution存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5a3d638f67dc5e027cca1e4c1da56b8</td>
+       <td>CVE-2024-3681</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress Plugin Interactive World Maps反射型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97915">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7abe1ca47198fb3ef7d16ac5c95d30b</td>
+       <td></td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Database for Contact Form 7, WPforms, Elementor forms存储型跨站脚本漏洞（</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97914">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4ebba5260aff0c6d9f3da4eff7bc4f72</td>
+       <td>CVE-2024-3677</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Ultimate 410 Gone Status Code存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97913">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d88dec04ffb516bd2752985d98cbe8c</td>
+       <td>CVE-2024-3675</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Royal Elementor Addons and Templates存储型跨站脚本</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97912">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1bb6f91fe982032614d7b20706997c0</td>
+       <td>CVE-2024-3991</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress WordPress plugin ShopLentor存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8a1fbe361c13df12b1585d5886cb2af3</td>
+       <td>CVE-2024-4003</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Essential Addons for Elementor存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97910">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>174877ba829177f9b00bb9e11dfe3ff6</td>
+       <td>CVE-2024-4097</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress Plugin Cost Calculator Builder Pro存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97909">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>222c8f0196b2a3de8e41659e546c3307</td>
+       <td>CVE-2024-4133</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin ARMember开放重定向漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97908">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9dcc79f36c8ddd26ddc4f03bc2833e84</td>
+       <td>CVE-2024-4156</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Essential Addons for Elementor存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97907">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2cb0a1c0652682b225b15267ca6ae736</td>
+       <td>CVE-2024-4203</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Premium Addons Pro for Elementor存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97906">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c3a844b1306ebe28aa2b7bbeec40838f</td>
+       <td>CVE-2024-4265</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Master Addons存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97905">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a72be3522d0fef307c7080ea431c833b</td>
+       <td>CVE-2024-4324</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin WP Video Lightbox存储型跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97904">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>375dd2a503b238e3dfb3fd9caedda6f8</td>
+       <td>CVE-2024-4334</td>
+       <td>2024-07-03 23:34:50 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Supreme Modules Lite跨站脚本编写漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97903">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8a73b8ddadbac06959f18b78b1b92a27</td>
        <td></td>
        <td>2024-07-02 23:35:46 <img src="imgs/new.gif" /></td>
@@ -2089,126 +2209,6 @@
        <td>2024-07-02 23:35:46 <img src="imgs/new.gif" /></td>
        <td>WordPress plugin Elementor ImageBox存储型跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97802">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8517fbea938b3aad3dfeba349da91b5a</td>
-       <td>CVE-2024-3585</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Send PDF for Contact Form 7未授权访问漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97842">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>608d9506243dded335b47ffd3ac9e8c2</td>
-       <td>CVE-2024-0376</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress Premium Addons for Elementor Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97841">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b269587ea174f3f39e22a58f1cfa771</td>
-       <td>CVE-2024-0588</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress Paid Memberships Pro Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97840">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f70fcff93539e441f570949396711faa</td>
-       <td>CVE-2024-0598</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress Gutenberg Blocks by Kadence Blocks Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97839">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb5b6d173d73b197122c946735283251</td>
-       <td>CVE-2024-0626</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress WooCommerce Clover Payment Gateway Plugin未授权数据修改漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97838">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b878820cc4ee2071248ec7b4a9a12d5e</td>
-       <td>CVE-2023-7046</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress WP Encryption Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97837">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ece68f60a9a2be629076ffa9a5264a70</td>
-       <td></td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Shortcodes and extra features for Phlox theme存储型跨站脚本漏洞（CVE-2024</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97836">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e47d59177eed8e6ea862cabc6a0227bf</td>
-       <td>CVE-2024-3500</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress Plugin ElementsKit Pro本地文件包含漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97835">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afaed02f3852925822af36a62c159b6a</td>
-       <td>CVE-2024-3647</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Premium Addons for Elementor存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97834">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c682334d0820e63fd193061f7285c02</td>
-       <td>CVE-2024-3607</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin PropertyHive未授权数据修改漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97833">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f17b583240a9faa2d424c0c65a067357</td>
-       <td>CVE-2024-3606</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin ProfileGrid未授权数据删除漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97832">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ed2477b359055d204feb65b1e8a3843</td>
-       <td>CVE-2024-3601</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Poll Maker未授权数据访问漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97831">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cde45aa121eb42765c703ad126572d6e</td>
-       <td>CVE-2024-3599</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin WP Cookie Consent未授权数据丢失漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97830">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>08d29eca50f37d0898eab5d741d22e1a</td>
-       <td>CVE-2024-3588</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress Plugin Getwid跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97829">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f64bb1e6a27b5636265d41efaab6681</td>
-       <td>CVE-2024-3499</td>
-       <td>2024-07-02 05:35:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin ElementsKit Elementor addons本地文件包含漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/97828">详情</a></td>
       </tr>
 
      </tbody>
