@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-09-12 05:39:52 -->
+<!-- RELEASE TIME : 2024-09-12 23:38:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>70f6882e66ebca48ba7e3338bb2ee7ae</td>
+       <td>CVE-2024-8622</td>
+       <td>2024-09-12 09:15:06 <img src="imgs/new.gif" /></td>
+       <td>The amCharts: Charts and Maps plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'amcharts_javascript' parameter in all versions up to, and including, 1.4.4 due to the ability to supply arbitrary JavaScript a lack of nonce validation on the preview functionality. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8622">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5308c9024550314697cf50b6f150e2b5</td>
+       <td>CVE-2024-8529</td>
+       <td>2024-09-12 09:15:05 <img src="imgs/new.gif" /></td>
+       <td>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_fields' parameter of the /wp-json/lp/v1/courses/archive-course REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8529">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1252b6b9b113afceec7abc81c0d1b038</td>
+       <td>CVE-2024-8522</td>
+       <td>2024-09-12 09:15:05 <img src="imgs/new.gif" /></td>
+       <td>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_only_fields' parameter of the /wp-json/learnpress/v1/courses REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8522">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01995dafa0c39e6a3a0f9ddfb38779fd</td>
+       <td>CVE-2024-2010</td>
+       <td>2024-09-12 09:15:05 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in TE Informatics V5 allows Reflected XSS.This issue affects V5: before 6.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2010">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>396b2e1ac4fea1322322adb0f8d82f34</td>
+       <td>CVE-2024-8056</td>
+       <td>2024-09-12 06:15:25 <img src="imgs/new.gif" /></td>
+       <td>The MM-Breaking News WordPress plugin through 0.7.9 does not escape the $_SERVER['REQUEST_URI'] parameter before outputting it back in an attribute, which could lead to Reflected Cross-Site Scripting in old web browsers</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8056">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3e6dc2ff881ff0bd4f22827a0dd991f0</td>
+       <td>CVE-2024-8054</td>
+       <td>2024-09-12 06:15:25 <img src="imgs/new.gif" /></td>
+       <td>The MM-Breaking News WordPress plugin through 0.7.9 does not have CSRF check in some places, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8054">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f936dfe33080c56dcd26e2a15c7ca0e</td>
+       <td>CVE-2024-7862</td>
+       <td>2024-09-12 06:15:25 <img src="imgs/new.gif" /></td>
+       <td>The blogintroduction-wordpress-plugin WordPress plugin through 0.3.0 does not have CSRF check in place when updating its settings, which could allow attackers to make a logged in admin change them via a CSRF attack</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7862">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>60010d801a902f1b4e39bb434d917d66</td>
+       <td>CVE-2024-7861</td>
+       <td>2024-09-12 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Misiek Paypal WordPress plugin through 1.1.20090324 does not have CSRF check in some places, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7861">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98f1604dbcc0ba117d1748f169351bd7</td>
+       <td>CVE-2024-7860</td>
+       <td>2024-09-12 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Simple Headline Rotator WordPress plugin through 1.0 does not have CSRF check in some places, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7860">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14864dad1607337629108b21e9456ca2</td>
+       <td>CVE-2024-7859</td>
+       <td>2024-09-12 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Visual Sound WordPress plugin through 1.03 does not have CSRF check in place when updating its settings, which could allow attackers to make a logged in admin change them via a CSRF attack</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7859">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f8b165bdafb5d2bc8b619df32c02533d</td>
        <td>CVE-2024-8096</td>
        <td>2024-09-11 10:15:02 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-09-10 10:15:12</td>
        <td>A vulnerability has been identified in SINUMERIK 828D V4 (All versions), SINUMERIK 828D V5 (All versions < V5.24), SINUMERIK 840D sl V4 (All versions), SINUMERIK ONE (All versions < V6.24). Affected devices do not properly enforce access restrictions to scripts that are regularly executed by the system with elevated privileges. This could allow an authenticated local attacker to escalate their privileges in the underlying system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41171">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6e257b0dede84b0b04f4a7e5a7e89dda</td>
-       <td>CVE-2024-8601</td>
-       <td>2024-09-09 10:15:03</td>
-       <td>This vulnerability exists in TechExcel Back Office Software versions prior to 1.0.0 due to improper access controls on certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL which could lead to unauthorized access to sensitive information belonging to other users.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8601">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ab17cc8b5a82b34ef6e5c7ec447a4567</td>
-       <td>CVE-2024-6572</td>
-       <td>2024-09-09 10:15:01</td>
-       <td>Improper host key checking in active check 'Check SFTP Service' and special agent 'VNX quotas and filesystem' in Checkmk before Checkmk 2.3.0p15, 2.2.0p33, 2.1.0p48 and 2.0.0 (EOL) allows man-in-the-middle attackers to intercept traffic</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1e1362ee36df99e062a00401d134b4a</td>
-       <td>CVE-2024-37288</td>
-       <td>2024-09-09 09:15:02</td>
-       <td>A deserialization issue in Kibana can lead to arbitrary code execution when Kibana attempts to parse a YAML document containing a crafted payload. This issue only affects users that use Elastic Security’s built-in AI tools https://www.elastic.co/guide/en/security/current/ai-for-security.html and have configured an Amazon Bedrock connector https://www.elastic.co/guide/en/security/current/assistant-connect-to-bedrock.html .</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37288">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47a1847947a100b539e1b1c3713565b7</td>
-       <td>CVE-2024-45203</td>
-       <td>2024-09-09 07:15:17</td>
-       <td>Improper authorization in handler for custom URL scheme issue in "@cosme" App for Android versions prior 5.69.0 and "@cosme" App for iOS versions prior to 6.74.0 allows an attacker to lead a user to access an arbitrary website via the vulnerable App. As a result, the user may become a victim of a phishing attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45203">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef6e8abc8ddbe05eef0a4f448d68f338</td>
-       <td>CVE-2024-7918</td>
-       <td>2024-09-09 06:15:02</td>
-       <td>The Pocket Widget WordPress plugin through 0.1.3 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7918">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2c063cb37cd2051e918a12d6b5832807</td>
-       <td>CVE-2024-7689</td>
-       <td>2024-09-09 06:15:02</td>
-       <td>The Snapshot Backup WordPress plugin through 2.1.1 does not have CSRF check in some places, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7689">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2587b29b5605df5c3cc197ff291bc9b1</td>
-       <td>CVE-2024-7688</td>
-       <td>2024-09-09 06:15:02</td>
-       <td>The AZIndex WordPress plugin through 0.8.1 does not have CSRF checks in some places, which could allow attackers to make logged in admin delete arbitrary indexes via a CSRF attack</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96d46b8ea63ac27df343a67ffa68a33b</td>
-       <td>CVE-2024-7687</td>
-       <td>2024-09-09 06:15:02</td>
-       <td>The AZIndex WordPress plugin through 0.8.1 does not have CSRF check in some places, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7687">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cbac6be0f9bcbcad43f14d2e064cd875</td>
-       <td>CVE-2024-6910</td>
-       <td>2024-09-09 06:15:02</td>
-       <td>The EventON WordPress plugin before 2.2.17 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Cross-Site Scripting attacks even when unfiltered_html is disallowed.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6910">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e60e4a7370020db16e294298b3dd1b2</td>
-       <td>CVE-2024-5561</td>
-       <td>2024-09-09 06:15:01</td>
-       <td>The Popup Maker WordPress plugin before 1.19.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5561">详情</a></td>
       </tr>
 
      </tbody>
@@ -1972,6 +1972,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>32b7083b53cf9d14c685e8d5e7ab8a7c</td>
+       <td>CVE-2024-31322</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101489">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>759401cfdee4f971d0926b2aa96a0168</td>
+       <td>CVE-2024-31318</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101488">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e247983e7eea259eb687b2b1b69f5d4e</td>
+       <td>CVE-2024-6550</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>WordPress Gravity Forms: Multiple Form Instances Plugin完整路径泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101487">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1f0f580dac1c59e02cc641492dcb366</td>
+       <td>CVE-2023-32467</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Dell Edge Gateway BIOS越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101486">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4686f1b162d315665e83036324b6d74d</td>
+       <td>CVE-2023-32472</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Dell Edge Gateway BIOS越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14ba410412b26da7eef4344649372926</td>
+       <td>CVE-2024-38301</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Dell Alienware Command Center访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101484">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b71988933e0e4877b0c23d483921430</td>
+       <td>CVE-2024-31319</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android跨用户数据泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101483">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b1eab7cf84e5e464211f3cb989bd1a6</td>
+       <td>CVE-2024-31317</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android不受信数据反序列化漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101482">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe83c02c3aa156597a4c828fc89cc391</td>
+       <td>CVE-2024-4866</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>WordPress UltraAddons Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101481">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>31b86c2af59bdeaab928cd0fc0a03c50</td>
+       <td>CVE-2024-39901</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>OpenSearch Dashboards Reports授权绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101480">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d3327375daffb295ef616f98573eb5a</td>
+       <td>CVE-2024-5677</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>WordPress Featured Image Generator Plugin未经授权图片上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101479">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aaaf6f7217ebba3279943b9815fbe8da</td>
+       <td>CVE-2024-31324</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101478">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3439005d819338e185de1cd852b7d704</td>
+       <td>CVE-2024-31323</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101477">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb653268cbf57784cadbe8a5e3f94279</td>
+       <td>CVE-2024-31320</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101476">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d411686b9e3d71ad932e0d03ae9b4a5c</td>
+       <td>CVE-2024-31325</td>
+       <td>2024-09-12 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>Google Android权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101475">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8ffabe36146774823298a9a9e29166e4</td>
        <td>CVE-2023-52710</td>
        <td>2024-09-12 05:37:37 <img src="imgs/new.gif" /></td>
@@ -2089,126 +2209,6 @@
        <td>2024-09-12 05:37:37 <img src="imgs/new.gif" /></td>
        <td>Chris Younger PhpMyBackupPro跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101425">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67b55d30235c9d009ac82a68929b4a22</td>
-       <td>CVE-2024-29415</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>indutny node-ip请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101405">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>391862219cc6148a9057470b9e4adbce</td>
-       <td>CVE-2024-35400</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>TOTOLINK CP900L堆栈溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101404">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4157d4eab9845ef764b1cf1bef6e9c1b</td>
-       <td>CVE-2024-23951</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>libigl数组索引验证漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101403">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d4869ee46bae0c7204375571d98d1f3</td>
-       <td>CVE-2024-35397</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>TOTOLINK CP900L命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101394">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e0e30497ee932a3f4c8499988d9586a</td>
-       <td>CVE-2024-24584</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>libigl越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101392">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>266e599b95ad1a9ce1ad775b2ce0937c</td>
-       <td>CVE-2024-5428</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>oretnom23 Simple Online Bidding System请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac950b6aa0b907c048fff907eb95e383</td>
-       <td>CVE-2024-29072</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>Foxit Reader权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101388">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16d02988a6c48af43d5e14b2e7dc22cb</td>
-       <td>CVE-2024-28793</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>IBM Engineering Workflow Management存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5d00e43d64f7d942c46067f4770571a</td>
-       <td>CVE-2024-36428</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>OrangeHRM SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101386">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71b5acf1333c7cdbb72b59e4bcd569a4</td>
-       <td>CVE-2024-24686</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>libigl堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101385">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>847a17b48f2a88fd8e1d60576bc97169</td>
-       <td>CVE-2023-52548</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>Huawei Matebook D16内存损坏漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101384">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b44044e20115af50b4c9c119318973d1</td>
-       <td>CVE-2024-34123</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>Adobe Premiere Pro不受信搜索路径漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101373">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d2bfd9971b3c0b9c77a05431ceebe29</td>
-       <td>CVE-2024-37870</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>Learning Management System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101372">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10afb08812b035f2cf68e8df319151ee</td>
-       <td>CVE-2024-6698</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>WordPress undEngine Plugin权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101371">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69d583e79124ae9b7931c72855af1f7b</td>
-       <td>CVE-2024-20781</td>
-       <td>2024-09-11 23:35:36 <img src="imgs/new.gif" /></td>
-       <td>Adobe InDesign Desktop堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/101370">详情</a></td>
       </tr>
 
      </tbody>
