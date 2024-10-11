@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-10-11 05:40:37 -->
+<!-- RELEASE TIME : 2024-10-11 23:37:35 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9f4c5e4f9bdeaeb76801955a8f2387a3</td>
+       <td>CVE-2024-6985</td>
+       <td>2024-10-11 15:38:08 <img src="imgs/new.gif" /></td>
+       <td>A path traversal vulnerability exists in the api open_personality_folder endpoint of parisneo/lollms-webui. This vulnerability allows an attacker to read any folder in the personality_folder on the victim's computer, even though sanitize_path is set. The issue arises due to improper sanitization of the personality_folder parameter, which can be exploited to traverse directories and access arbitrary files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6985">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>39c3c2adc11ba651f3f5935815f16b78</td>
+       <td>CVE-2024-47509</td>
+       <td>2024-10-11 15:36:33 <img src="imgs/new.gif" /></td>
+       <td>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover. GUID exhaustion will trigger a syslog message like one of the following: evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ... evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ... The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids: user@host> show platform application-info allocations app evo-pfemand/evo-pfemand In case one or more of these values are constantly increasing the leak is happening. This issue affects Junos OS Evolved: * All versions before 21.4R2-EVO, * 22.1 versions before 22.1R2-EVO. Please note that this issue is similar to, but different from CVE-2024-47505 and CVE-2024-47508.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47509">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d8e4b44074fb25820426746456c522f</td>
+       <td>CVE-2024-47508</td>
+       <td>2024-10-11 15:35:58 <img src="imgs/new.gif" /></td>
+       <td>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover. GUID exhaustion will trigger a syslog message like one of the following: evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ... evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ... The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids: user@host> show platform application-info allocations app evo-pfemand/evo-pfemand In case one or more of these values are constantly increasing the leak is happening. This issue affects Junos OS Evolved: * All versions before 21.2R3-S8-EVO, * 21.3 versions before 21.3R3-EVO; * 21.4 versions before 22.1R2-EVO, * 22.1 versions before 22.1R1-S1-EVO, 22.1R2-EVO. Please note that this issue is similar to, but different from CVE-2024-47505 and CVE-2024-47509.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47508">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>724644b00bc790b0c906c574f0c371e3</td>
+       <td>CVE-2024-47505</td>
+       <td>2024-10-11 15:35:24 <img src="imgs/new.gif" /></td>
+       <td>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover. GUID exhaustion will trigger a syslog message like one of the following: evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ... evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ... The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids: user@host> show platform application-info allocations app evo-pfemand/evo-pfemand In case one or more of these values are constantly increasing the leak is happening. This issue affects Junos OS Evolved: * All versions before 21.4R3-S7-EVO, * 22.1 versions before 22.1R3-S6-EVO, * 22.2 versions before 22.2R3-EVO, * 22.3 versions before 22.3R3-EVO, * 22.4 versions before 22.4R2-EVO. Please note that this issue is similar to, but different from CVE-2024-47508 and CVE-2024-47509.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47505">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e175e177706c32f5ac10d87fb66c079</td>
+       <td>CVE-2024-8376</td>
+       <td>2024-10-11 15:18:54 <img src="imgs/new.gif" /></td>
+       <td>In Eclipse Mosquitto up to version 2.0.18a, an attacker can achieve memory leaking, segmentation fault or heap-use-after-free by sending specific sequences of "CONNECT", "DISCONNECT", "SUBSCRIBE", "UNSUBSCRIBE" and "PUBLISH" packets.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8376">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8f3b722eba6a37d211de4fb6f3460fd</td>
+       <td>CVE-2024-33582</td>
+       <td>2024-10-11 15:17:45 <img src="imgs/new.gif" /></td>
+       <td>A DLL hijack vulnerability was reported in Lenovo Service Framework that could allow a local attacker to execute code with elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bee45b386c594c24dba45dee5300c086</td>
+       <td>CVE-2024-33581</td>
+       <td>2024-10-11 15:17:35 <img src="imgs/new.gif" /></td>
+       <td>A DLL hijack vulnerability was reported in Lenovo PC Manager AI intelligent scenario that could allow a local attacker to execute code with elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33581">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7a6a3f3c452b7fcec243f360b4410f3</td>
+       <td>CVE-2024-33580</td>
+       <td>2024-10-11 15:17:03 <img src="imgs/new.gif" /></td>
+       <td>A DLL hijack vulnerability was reported in Lenovo Personal Cloud that could allow a local attacker to execute code with elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33580">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ce945cb9073650bae227404afc1ac0c</td>
+       <td>CVE-2024-33579</td>
+       <td>2024-10-11 15:16:54 <img src="imgs/new.gif" /></td>
+       <td>A DLL hijack vulnerability was reported in Lenovo Baiying that could allow a local attacker to execute code with elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33579">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb18a1a829b5e896d059f89ed0ea6506</td>
+       <td>CVE-2024-33578</td>
+       <td>2024-10-11 15:16:44 <img src="imgs/new.gif" /></td>
+       <td>A DLL hijack vulnerability was reported in Lenovo Leyun that could allow a local attacker to execute code with elevated privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33578">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dfa4a6190fd7db71398cbe165104799f</td>
        <td>CVE-2024-9792</td>
        <td>2024-10-10 15:15:15 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-10-09 15:15:15</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: wifi: iwlwifi: mvm: pause TCM when the firmware is stopped Not doing so will make us send a host command to the transport while the firmware is not alive, which will trigger a WARNING. bad state = 0 WARNING: CPU: 2 PID: 17434 at drivers/net/wireless/intel/iwlwifi/iwl-trans.c:115 iwl_trans_send_cmd+0x1cb/0x1e0 [iwlwifi] RIP: 0010:iwl_trans_send_cmd+0x1cb/0x1e0 [iwlwifi] Call Trace: <TASK> iwl_mvm_send_cmd+0x40/0xc0 [iwlmvm] iwl_mvm_config_scan+0x198/0x260 [iwlmvm] iwl_mvm_recalc_tcm+0x730/0x11d0 [iwlmvm] iwl_mvm_tcm_work+0x1d/0x30 [iwlmvm] process_one_work+0x29e/0x640 worker_thread+0x2df/0x690 ? rescuer_thread+0x540/0x540 kthread+0x192/0x1e0 ? set_kthread_struct+0x90/0x90 ret_from_fork+0x22/0x30</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47673">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>334b667b7f88ce6feb4321216cb40c5f</td>
-       <td>CVE-2024-45880</td>
-       <td>2024-10-08 15:15:15</td>
-       <td>A command injection vulnerability exists in Motorola CX2L router v1.0.2 and below. The vulnerability is present in the SetStationSettings function. The system directly invokes the system function to execute commands for setting parameters such as MAC address without proper input filtering. This allows malicious users to inject and execute arbitrary commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45880">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d76f2eeae9f21eb1fbe71e157bab26a6</td>
-       <td>CVE-2024-45330</td>
-       <td>2024-10-08 15:15:15</td>
-       <td>A use of externally-controlled format string in Fortinet FortiAnalyzer versions 7.4.0 through 7.4.3, 7.2.2 through 7.2.5 allows attacker to escalate its privileges via specially crafted requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45330">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>14cd1cf55f6241df7575bed5f01a487a</td>
-       <td>CVE-2024-33506</td>
-       <td>2024-10-08 15:15:14</td>
-       <td>An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiManager 7.4.2 and below, 7.2.5 and below, 7.0.12 and below allows a remote authenticated attacker assigned to an Administrative Domain (ADOM) to access device summary of unauthorized ADOMs via crafted HTTP requests.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-33506">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a313d968d38dc8d3123a8dd8d4cb9cf6</td>
-       <td>CVE-2024-8482</td>
-       <td>2024-10-08 12:15:03</td>
-       <td>The Royal Elementor Addons and Templates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘url’ parameter in all versions up to, and including, 1.3.982 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8482">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01fb92c9f55766e4073529a9a41deaae</td>
-       <td>CVE-2024-8431</td>
-       <td>2024-10-08 12:15:02</td>
-       <td>The Photo Gallery, Images, Slider in Rbs Image Gallery plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the ajaxGetGalleryJson() function in all versions up to, and including, 3.2.21. This makes it possible for authenticated attackers, with subscriber-level access and above, to retrieve private post titles.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8431">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e5e9a98bf709c397983024c8c5c5300</td>
-       <td>CVE-2024-9207</td>
-       <td>2024-10-08 11:15:13</td>
-       <td>The BuddyPress Docs plugin for WordPress is vulnerable to Reflected Cross-Site Scripting due to the use of remove_query_arg without appropriate escaping on the URL in all versions up to, and including, 2.2.3. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9207">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3275366f3f35644495e7ba699e0a5d1</td>
-       <td>CVE-2024-9005</td>
-       <td>2024-10-08 11:15:13</td>
-       <td>CWE-502: Deserialization of Untrusted Data vulnerability exists that could allow code to be remotely executed on the server when unsafely deserialized data is posted to the web server.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d51d65652855e96deb68fe2df0ffc5b6</td>
-       <td>CVE-2024-8884</td>
-       <td>2024-10-08 11:15:13</td>
-       <td>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists that could cause exposure of credentials when attacker has access to application on network over http</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8884">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57af9e12164af0b0f259681d4ca0ae46</td>
-       <td>CVE-2024-8488</td>
-       <td>2024-10-08 11:15:13</td>
-       <td>The Survey Maker plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Survey fields in all versions up to, and including, 4.9.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d86485db1126f8b6a9da171925e377ec</td>
-       <td>CVE-2024-8629</td>
-       <td>2024-10-08 10:15:05</td>
-       <td>The WooCommerce Multilingual & Multicurrency with WPML plugin for WordPress is vulnerable to Reflected Cross-Site Scripting due to the use of add_query_arg without appropriate escaping on the URL in all versions up to, and including, 5.3.7. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8629">详情</a></td>
       </tr>
 
      </tbody>
@@ -1972,6 +1972,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9b3fd595c47d5eebb5ac1315d496bbd6</td>
+       <td>CVE-2024-40689</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>IBM InfoSphere Information Server SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102811">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3cef48e308ad3924e10f13a598ae621a</td>
+       <td>CVE-2024-7062</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Softvelum Nimble Commander权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbedf5869e5578c21720335bed4ae1da</td>
+       <td>CVE-2024-2</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Xiongwei Restaurant Digital Comprehensive Management platform身份认证绕过漏洞（CVE-2024-2</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102809">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d24d7cc2f616b0ae6387a387cc182486</td>
+       <td>CVE-2024-24621</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Softaculous Webuzo身份认证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102808">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>343d8cc876050328ee895cbdd8162ce8</td>
+       <td>CVE-2024-24622</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Softaculous Webuzo命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102807">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17ccae7ebf79615eeb14f905145118ba</td>
+       <td>CVE-2024-6922</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Automation Anywhere Automation 360服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102806">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38201a902f509a51b9ec4d3f1a8c3dac</td>
+       <td>CVE-2024-39304</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>ChurchCRM SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102805">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee5fd4f6d0304ab955a741503ceff1b3</td>
+       <td>CVE-2024-38512</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Lenovo XCC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102804">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c6422d4b4536d3f6a8c33e1907d13a99</td>
+       <td>CVE-2024-41812</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>TxtDot服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102803">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19e101d23eee3654b8533825646a3ec3</td>
+       <td>CVE-2024-41813</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>TxtDot服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102802">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eed7068e0443f7be79c1700f21937afa</td>
+       <td>CVE-2024-38508</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Lenovo XCC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102801">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>12a8474709efc96cf99a5ac514983264</td>
+       <td>CVE-2024-38510</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Lenovo XCC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102800">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>317fdd63a2e2678fe420cb0142a9a4da</td>
+       <td>CVE-2024-38509</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Lenovo XCC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102799">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>250e47cf0b1e4a6a499f79e09ace7dcb</td>
+       <td>CVE-2024-38511</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>Lenovo XCC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e5f28ba928f75cc38ff2d90b5b10a9ed</td>
+       <td>CVE-2024-41112</td>
+       <td>2024-10-11 23:35:26 <img src="imgs/new.gif" /></td>
+       <td>streamlit-geospatial输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102797">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5d6c0f1ef6972e6adfff388ef1263a9c</td>
        <td>CVE-2023-47683</td>
        <td>2024-10-10 23:35:31 <img src="imgs/new.gif" /></td>
@@ -2089,126 +2209,6 @@
        <td>2024-10-10 23:35:31 <img src="imgs/new.gif" /></td>
        <td>WordPress plugin JetFormBuilder权限管理不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102710">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57c0e324be6515c652b3fd120fd90374</td>
-       <td>CVE-2023-26526</td>
-       <td>2024-10-10 05:38:57 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Bookly路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f3111cdcba8e8e13ec89fee4993ef553</td>
-       <td>CVE-2023-26540</td>
-       <td>2024-10-10 05:38:57 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Houzez权限管理不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102687">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0757c89700c2f6928d351eb83b36f6c3</td>
-       <td>CVE-2023-32110</td>
-       <td>2024-10-10 05:38:57 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin JupiterX路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102686">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d90b53f0e9d69f3f11de9120e8d8797</td>
-       <td>CVE-2023-50890</td>
-       <td>2024-10-10 05:38:57 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Ultimate Addons for Elementor权限管理不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102685">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7aeafc0758c3593ec6f58e8fc4887499</td>
-       <td>CVE-2024-34757</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Borderless跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>97298db86b6af216d7a237f675d7abec</td>
-       <td>CVE-2022-44581</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Defender Security敏感信息存储漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102768">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c16a68ecae6acc5cfecb56244c15f36d</td>
-       <td>CVE-2024-3551</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress Plugin Penci Soledad Data Migrator本地文件包含漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102767">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59127b44eba6578f6ab7660f95e3b5b9</td>
-       <td>CVE-2024-3134</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Master Addons存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102766">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9edb908be454e918dec8659faddb8dc1</td>
-       <td>CVE-2024-4204</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Bulk Posts Editing For WordPress存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102765">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc3b8f30b5bc64fee45b47a4ed0156f6</td>
-       <td>CVE-2024-3609</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin ReviewX未经授权的数据删除漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102764">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5ae774397caa2ea5dd49faed44dfe12</td>
-       <td>CVE-2023-23700</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin OceanWP路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102763">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5cdbc6c7e389a754471c4177de7250fa</td>
-       <td>CVE-2023-23645</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin MainWP Code Snippets Extension代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102762">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3177adc027853fda4d87379416217047</td>
-       <td>CVE-2022-45374</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin YARPP路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102761">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6e401fc8041ebbcb508e66f561426d4f</td>
-       <td>CVE-2023-48727</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>Intel oneVPL software空指针取消引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c41e75b363a0d63008aa1111a275463f</td>
-       <td>CVE-2022-45368</td>
-       <td>2024-10-10 05:38:28 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin 1003 Mortgage Application路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/102759">详情</a></td>
       </tr>
 
      </tbody>
