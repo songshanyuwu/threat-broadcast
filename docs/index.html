@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-12-12 05:42:46 -->
+<!-- RELEASE TIME : 2024-12-12 23:40:01 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a391db25adf8c2cd2cc34bb4ea442274</td>
+       <td>CVE-2024-50584</td>
+       <td>2024-12-12 14:15:22 <img src="imgs/new.gif" /></td>
+       <td>An authenticated attacker with the user/role "Poweruser" can perform an SQL injection by accessing the /class/template_io.php file and supplying malicious GET parameters. The "templates" parameter is vulnerable against blind boolean-based SQL injection attacks. SQL syntax must be injected into the JSON syntax of the templates parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1539d0272e54965789a7f9ab1c27f401</td>
+       <td>CVE-2024-28146</td>
+       <td>2024-12-12 14:15:22 <img src="imgs/new.gif" /></td>
+       <td>The application uses several hard-coded credentials to encrypt config files during backup, to decrypt the new firmware during an update and some passwords allow a direct connection to the database server of the affected device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28146">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9eec9b49bcdcc9ac24a0a8c9a5d5f95b</td>
+       <td>CVE-2024-28145</td>
+       <td>2024-12-12 14:15:22 <img src="imgs/new.gif" /></td>
+       <td>An unauthenticated attacker can perform an SQL injection by accessing the /class/dbconnect.php file and supplying malicious GET parameters. The HTTP GET parameters search, table, field, and value are vulnerable. For example, one SQL injection can be performed on the parameter "field" with the UNION keyword.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28145">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4fdbf33748ea75d38f8ac045aa306ab1</td>
+       <td>CVE-2024-28144</td>
+       <td>2024-12-12 14:15:22 <img src="imgs/new.gif" /></td>
+       <td>An attacker who can spoof the IP address and the User-Agent of a logged-in user can takeover the session because of flaws in the self-developed session management. If two users access the web interface from the same IP they are logged in as the other user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28144">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>86635ea38a607f675e45bb2bf0366706</td>
+       <td>CVE-2024-28143</td>
+       <td>2024-12-12 14:15:22 <img src="imgs/new.gif" /></td>
+       <td>The password change function at /cgi/admin.cgi does not require the current/old password, which makes the application vulnerable to account takeover. An attacker can use this to forcefully set a new password within the -rsetpass+-aaction+- parameter for a user without knowing the old password, e.g. by exploiting a CSRF issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28143">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e9561c1fb555057a93fac88536ab6e5</td>
+       <td>CVE-2024-54122</td>
+       <td>2024-12-12 13:15:11 <img src="imgs/new.gif" /></td>
+       <td>Concurrent variable access vulnerability in the ability module Impact: Successful exploitation of this vulnerability may affect availability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54122">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9dbaef59d3a24333acacb4140a88c412</td>
+       <td>CVE-2024-54119</td>
+       <td>2024-12-12 13:15:11 <img src="imgs/new.gif" /></td>
+       <td>Cross-process screen stack vulnerability in the UIExtension module Impact: Successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54119">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>244f204acbee1ff428f99af6afe94fe3</td>
+       <td>CVE-2024-54118</td>
+       <td>2024-12-12 13:15:11 <img src="imgs/new.gif" /></td>
+       <td>Cross-process screen stack vulnerability in the UIExtension module Impact: Successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57dcc095861454525aa6f1b55d69d1e3</td>
+       <td>CVE-2024-47947</td>
+       <td>2024-12-12 13:15:10 <img src="imgs/new.gif" /></td>
+       <td>Due to missing input sanitization, an attacker can perform cross-site-scripting attacks and run arbitrary Javascript in the browser of other users. The "Edit Disclaimer Text" function of the configuration menu is vulnerable to stored XSS. Only the users Poweruser and Admin can use this function which is available at the URL https://$SCANNER/cgi/admin.cgi?-rdisclaimer+-apre The stored Javascript payload will be executed every time the ScanWizard is loaded, even in the Kiosk-mode browser.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47947">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ffff2d21aa74e70384e62daeca48dd1</td>
+       <td>CVE-2024-36498</td>
+       <td>2024-12-12 13:15:10 <img src="imgs/new.gif" /></td>
+       <td>Due to missing input sanitization, an attacker can perform cross-site-scripting attacks and run arbitrary Javascript in the browser of other users. The "Edit Disclaimer Text" function of the configuration menu is vulnerable to stored XSS. Only the users Poweruser and Admin can use this function which is available at the URL https://$SCANNER/cgi/admin.cgi?-rdisclaimer+-apre The stored Javascript payload will be executed every time the ScanWizard is loaded, even in the Kiosk-mode browser. Version 7.40 implemented a fix, but it could be bypassed via URL-encoding the Javascript payload again.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36498">详情</a></td>
+      </tr>
+
+      <tr>
        <td>db248c0aad583cee4771e463a3dbd3a1</td>
        <td>CVE-2024-12325</td>
        <td>2024-12-11 12:15:19 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-12-10 09:15:06</td>
        <td>SolarWinds Web Help Desk was susceptible to a local file read vulnerability. This vulnerability requires the software be installed on Linux and configured to use non-default development/test mode making exposure to the vulnerability very limited.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45709">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5900fb8f4b4e64597d05d10d9a72a9ec</td>
-       <td>CVE-2023-48277</td>
-       <td>2024-12-09 11:39:26</td>
-       <td>Missing Authorization vulnerability in SuperPWA Super Progressive Web Apps allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Super Progressive Web Apps: from n/a through 2.2.21.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48277">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5da1046edb0b166a7fbf96bb10d413ae</td>
-       <td>CVE-2024-54227</td>
-       <td>2024-12-09 11:32:29</td>
-       <td>Missing Authorization vulnerability in theDotstore Minimum and Maximum Quantity for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Minimum and Maximum Quantity for WooCommerce: from n/a through 2.0.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54227">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b43a5c02440ae82e08383fb5ffd1bd22</td>
-       <td>CVE-2024-54251</td>
-       <td>2024-12-09 11:32:28</td>
-       <td>Missing Authorization vulnerability in Prodigy Commerce Prodigy Commerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Prodigy Commerce: from n/a through 3.0.9.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>319bee83b9dfd18ddcfc441ebaf5c51d</td>
-       <td>CVE-2024-54224</td>
-       <td>2024-12-09 11:32:15</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in QuomodoSoft ElementsReady Addons for Elementor allows DOM-Based XSS.This issue affects ElementsReady Addons for Elementor: from n/a through 6.4.7.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54224">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e76fbdd1be06e0c8dc5835932b2d88a2</td>
-       <td>CVE-2024-54228</td>
-       <td>2024-12-09 11:32:14</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WebOccult Technologies Pvt Ltd Wot Elementor Widgets allows DOM-Based XSS.This issue affects Wot Elementor Widgets: from n/a through 1.0.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54228">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1030cbc424aed75b916d97c39f308ca</td>
-       <td>CVE-2024-54230</td>
-       <td>2024-12-09 11:32:13</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPRealizer Unlock Addons for Elementor allows DOM-Based XSS.This issue affects Unlock Addons for Elementor: from n/a through 1.0.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54230">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b93f7b6d9803cc219ae147c3a74a68a7</td>
-       <td>CVE-2024-54232</td>
-       <td>2024-12-09 11:32:12</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in rrdevs RRAddons for Elementor allows Stored XSS.This issue affects RRAddons for Elementor: from n/a through 1.1.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc39563782d7fd868726cc1c16b6052d</td>
-       <td>CVE-2024-54260</td>
-       <td>2024-12-09 11:32:11</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in BlazeThemes News Kit Elementor Addons allows Stored XSS.This issue affects News Kit Elementor Addons: from n/a through 1.2.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4ede3ecb17bbf09d397002365a6bbb4</td>
-       <td>CVE-2024-54226</td>
-       <td>2024-12-09 11:32:08</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Karl Kiesinger Country Blocker allows Stored XSS.This issue affects Country Blocker: from n/a through 3.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54226">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec7c9173dc2c4fc7fdb029f521dc93ec</td>
-       <td>CVE-2024-54255</td>
-       <td>2024-12-09 11:32:02</td>
-       <td>URL Redirection to Untrusted Site ('Open Redirect') vulnerability in aviplugins.com Login Widget With Shortcode allows Phishing.This issue affects Login Widget With Shortcode: from n/a through 6.1.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54255">详情</a></td>
       </tr>
 
      </tbody>
@@ -1980,6 +1980,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e7f7c7337ca864d75eb10a734e74b9ed</td>
+       <td>CVE-2024-50989</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Online Marriage Registration System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107993">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea8a19af507112e643980f4a220fce83</td>
+       <td>CVE-2024-50990</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Online Marriage Registration System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107992">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d2cd2c9b5fa49e94d7eb47a55822204</td>
+       <td>CVE-2024-50991</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Online Marriage Registration System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107991">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2aa7a3e241601492a48e431ed9e95b93</td>
+       <td>CVE-2024-10958</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress WP Photo Album Plus Plugin任意短代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107990">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4437c206c4d747b31b6541ffa2034aff</td>
+       <td>CVE-2024-10801</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress User Extra Fields Plugin任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107989">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3181f0258e24f01f5ded9e53352a4aac</td>
+       <td>CVE-2024-10871</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress Category Ajax Filter Plugin本地文件包含漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107988">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71faafe0f459ffd8d8194db447389482</td>
+       <td>CVE-2024-10589</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress Leopard - WordPress Offload Media Plugin未授权数据修改漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107987">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1b6446829e138e6988db4abca82f052f</td>
+       <td>CVE-2024-10352</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress Magical Addons For Elementor Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107986">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55f4abed38ec64a831bd2d9c2d841100</td>
+       <td>CVE-2024-10837</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress SysBasics Customize My Account for WooCommerce跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107985">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3bb323b1a13074aaa420049717564036</td>
+       <td>CVE-2024-10265</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress Form Maker by 10Web Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107984">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ea3c2359c1197f379098ea9c320ce5b</td>
+       <td>CVE-2024-10640</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress FOX – Currency Switcher Professional Plugin任意短代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107983">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17091c610702df355f6e9461b23558ca</td>
+       <td>CVE-2024-10261</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>WordPress Paid Membership Subscriptions Plugin任意短代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107982">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a337f2354a3503d59786acc94840435c</td>
+       <td>CVE-2024-50237</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Linux Kernel未初始化资源使用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107981">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e092777c3c1f415f0b64d4452f54762</td>
+       <td>CVE-2024-46951</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Artifex Ghostscript未检查实施指针漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107980">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ce02d37c5fe2187ec5d7d081c1971ae</td>
+       <td>CVE-2024-46956</td>
+       <td>2024-12-12 23:37:44 <img src="imgs/new.gif" /></td>
+       <td>Artifex Ghostscript越界数据访问漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107979">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7f9e70819f86ac78be0671213cfd07bd</td>
        <td>CVE-2024-9270</td>
        <td>2024-12-11 23:37:12 <img src="imgs/new.gif" /></td>
@@ -2097,126 +2217,6 @@
        <td>2024-12-11 23:37:12 <img src="imgs/new.gif" /></td>
        <td>WordPress CE21 Suite Plugin未授权数据修改漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d4ade526c576460b3b8e9b3c3081c25</td>
-       <td>CVE-2024-9956</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>Google Chrome权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107948">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99fca2fb798f1dec33e36b789d00f45a</td>
-       <td>CVE-2024-48783</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>Ruijie Networks NBR3000D-E信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107947">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c02af3276ee522c6c50e62a833442ba</td>
-       <td>CVE-2024-48782</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>clark DYCMS文件上传漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107946">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ba9c4794493f8e66e63889101836f20</td>
-       <td>CVE-2024-48781</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WonderShare WonderShare Yitu任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>214ee266ec82a91d7ea5c2895f0fc172</td>
-       <td>CVE-2016-15041</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin MainWP Dashboard跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107944">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96704092af18f55242e4b8fe90f9de63</td>
-       <td>CVE-2024-31955</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>SAMSUNG代码绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f3a18770b88049f642e7dbad2bca9fca</td>
-       <td>CVE-2024-21286</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>Oracle PeopleSoft命令执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107942">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d5a435a5645bd93e32090dc710e6c75</td>
-       <td></td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin GiveWP – Donation Plugin and Fundraising Platform PHP对象注入漏洞（CVE</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107941">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9a8de504c56c5190f996364b71ae407</td>
-       <td>CVE-2024-48714</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>TP-LINK TL-WDR7660堆栈溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107940">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>58792cb52cbef47c71cf885a93acfcb9</td>
-       <td>CVE-2024-9647</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Kama SpamBlock跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107939">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7318842761dce59ea9d2b3a12e23c26</td>
-       <td>CVE-2024-48411</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>itsourcecode Online Tours and Travels Management System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107938">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa4ca8977b7be6676251cfbace5ed686</td>
-       <td>CVE-2024-9652</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Locatoraid Store Locator跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107937">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dad092fe218e1c3d6fefc1b1ff714818</td>
-       <td>CVE-2024-41311</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>struktur libheif越界读写漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107936">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e545a4bd7d99efb7179fde7d0d771c1</td>
-       <td>CVE-2017-20192</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin Formidable Form Builder存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107935">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e3d3413548e26a324dff12e563740f0</td>
-       <td>CVE-2024-9888</td>
-       <td>2024-12-11 05:40:37 <img src="imgs/new.gif" /></td>
-       <td>WordPress plugin ElementInvader Addons for Elementor跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107934">详情</a></td>
       </tr>
 
      </tbody>
