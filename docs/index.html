@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-12-19 23:37:42 -->
+<!-- RELEASE TIME : 2024-12-20 23:38:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bdfbd17f2382028f4e33b61a86766504</td>
+       <td>CVE-2024-12677</td>
+       <td>2024-12-20 17:15:07 <img src="imgs/new.gif" /></td>
+       <td>Delta Electronics DTM Soft deserializes objects, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12677">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbb4b3eca5b2e6dfd87baafe5169ef53</td>
+       <td>CVE-2024-56337</td>
+       <td>2024-12-20 16:15:24 <img src="imgs/new.gif" /></td>
+       <td>Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in Apache Tomcat. This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.1, from 10.1.0-M1 through 10.1.33, from 9.0.0.M1 through 9.0.97. The mitigation for CVE-2024-50379 was incomplete. Users running Tomcat on a case insensitive file system with the default servlet write enabled (readonly initialisation parameter set to the non-default value of false) may need additional configuration to fully mitigate CVE-2024-50379 depending on which version of Java they are using with Tomcat: - running on Java 8 or Java 11: the system property sun.io.useCanonCaches must be explicitly set to false (it defaults to true) - running on Java 17: the system property sun.io.useCanonCaches, if set, must be set to false (it defaults to false) - running on Java 21 onwards: no further configuration is required (the system property and the problematic cache have been removed) Tomcat 11.0.3, 10.1.35 and 9.0.99 onwards will include checks that sun.io.useCanonCaches is set appropriately before allowing the default servlet to be write enabled on a case insensitive file system. Tomcat will also set sun.io.useCanonCaches to false by default where it can.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>203c7ea78f5b448dabd95feb3f218ab6</td>
+       <td>CVE-2024-55471</td>
+       <td>2024-12-20 16:15:24 <img src="imgs/new.gif" /></td>
+       <td>Oqtane Framework is vulnerable to Insecure Direct Object Reference (IDOR) in Oqtane.Controllers.UserController. This allows unauthorized users to access sensitive information of other users by manipulating the id parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55471">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>39fb852f2a13d05cdd353a2c2df826d4</td>
+       <td>CVE-2024-55470</td>
+       <td>2024-12-20 16:15:23 <img src="imgs/new.gif" /></td>
+       <td>Oqtane Framework 6.0.0 is vulnerable to Incorrect Access Control. By manipulating the entityid parameter, attackers can bypass passcode validation and successfully log into the application or access restricted data without proper authorization. The lack of server-side validation exacerbates the issue, as the application relies on client-side information for authentication.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55470">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d4fcd342a3c4221b15af4063cbe735b3</td>
+       <td>CVE-2024-55186</td>
+       <td>2024-12-20 16:15:23 <img src="imgs/new.gif" /></td>
+       <td>An IDOR (Insecure Direct Object Reference) vulnerability exists in oqtane Framework 6.0.0, allowing a logged-in user to access inbox messages of other users by manipulating the notification ID in the request URL. By changing the notification ID, an attacker can view sensitive mail details belonging to other users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55186">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8e90f619a017b9c36ee9f7b7500acd2</td>
+       <td>CVE-2024-12840</td>
+       <td>2024-12-20 16:15:23 <img src="imgs/new.gif" /></td>
+       <td>A server-side request forgery exists in Satellite. When a PUT HTTP request is made to /http_proxies/test_connection, when supplied with the http_proxies variable set to localhost, the attacker can fetch the localhost banner.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12840">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ff4aef0b81de6a002b2b8c4bf689608</td>
+       <td>CVE-2024-10385</td>
+       <td>2024-12-20 16:15:21 <img src="imgs/new.gif" /></td>
+       <td>Ticket management system in DirectAdmin Evolution Skin is vulnerable to XSS (Cross-site Scripting), which allows a low-privileged user to inject and store malicious JavaScript code. If an admin views the ticket, the script might perform actions with their privileges, including command execution. This issue has been fixed in version 1.668 of DirectAdmin Evolution Skin.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10385">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da91c00f5d2a99f894f6bf3d0dab8df1</td>
+       <td>CVE-2024-56356</td>
+       <td>2024-12-20 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>In JetBrains TeamCity before 2024.12 insecure XMLParser configuration could lead to potential XXE attack</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56356">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03f6f28e0195eb4df4cdb5c8f257c2c4</td>
+       <td>CVE-2024-56355</td>
+       <td>2024-12-20 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>In JetBrains TeamCity before 2024.12 missing Content-Type header in RemoteBuildLogController response could lead to XSS</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56355">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a219fd745f871769350db0d47bc4fbe</td>
+       <td>CVE-2024-56354</td>
+       <td>2024-12-20 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>In JetBrains TeamCity before 2024.12 password field value were accessible to users with view settings permission</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56354">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1fc440261e27306b1a7f59bcbc5673a3</td>
        <td>CVE-2024-52897</td>
        <td>2024-12-19 18:15:23 <img src="imgs/new.gif" /></td>
@@ -366,7 +446,7 @@
       <tr>
        <td>d6bec2c8f376f6c87daf6932b21290b5</td>
        <td>CVE-2024-52361</td>
-       <td>2024-12-18 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:13</td>
        <td>IBM Storage Defender - Resiliency Service 2.0.0 through 2.0.9 stores user credentials in plain text which can be read by an authenticated user with access to the pod.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52361">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>db4c95eadf5850e7da82538ac4873bd3</td>
        <td>CVE-2024-49576</td>
-       <td>2024-12-18 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:13</td>
        <td>A use-after-free vulnerability exists in the way Foxit Reader 2024.3.0.26795 handles a checkbox CBF_Widget object. A specially crafted Javascript code inside a malicious PDF document can trigger this vulnerability, which can lead to memory corruption and result in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. Exploitation is also possible if a user visits a specially crafted, malicious site if the browser plugin extension is enabled.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-49576">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>231966a763d8743c1b553dc693b9c680</td>
        <td>CVE-2024-47810</td>
-       <td>2024-12-18 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:13</td>
        <td>A use-after-free vulnerability exists in the way Foxit Reader 2024.3.0.26795 handles a 3D page object. A specially crafted Javascript code inside a malicious PDF document can trigger this vulnerability, which can lead to memory corruption and result in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. Exploitation is also possible if a user visits a specially crafted, malicious site if the browser plugin extension is enabled.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47810">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>442c78dbae2e17b33efc8ae0f190d1fb</td>
        <td>CVE-2024-47119</td>
-       <td>2024-12-18 16:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:13</td>
        <td>IBM Storage Defender - Resiliency Service 2.0.0 through 2.0.9 does not properly validate a certificate which could allow an attacker to spoof a trusted entity by interfering in the communication path between the host and client.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47119">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>d91bf25d8aa1aeb592c2ed00faebc671</td>
        <td>CVE-2024-12373</td>
-       <td>2024-12-18 16:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:11</td>
        <td>A denial-of-service vulnerability exists in the Rockwell Automation Power Monitor 1000. The vulnerability results in a buffer-overflow, potentially causing denial-of-service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12373">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>ace411da8b78d339d569661977f6a6fc</td>
        <td>CVE-2024-12372</td>
-       <td>2024-12-18 16:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:11</td>
        <td>A denial-of-service and possible remote code execution vulnerability exists in the Rockwell Automation Power Monitor 1000. The vulnerability results in corruption of the heap memory which may compromise the integrity of the system, potentially allowing for remote code execution or a denial-of-service attack.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12372">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>2ddf2eaf5b776f35c0aa1a3b62bfd3d1</td>
        <td>CVE-2024-12371</td>
-       <td>2024-12-18 16:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:10</td>
        <td>A device takeover vulnerability exists in the Rockwell Automation Power Monitor 1000. This vulnerability allows configuration of a new Policyholder user without any authentication via API. Policyholder user is the most privileged user that can perform edit operations, creating admin users and performing factory reset.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12371">详情</a></td>
       </tr>
@@ -422,7 +502,7 @@
       <tr>
        <td>308e38b0751c3e75dbcdbd2516ec94c8</td>
        <td>CVE-2023-50956</td>
-       <td>2024-12-18 16:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 16:15:10</td>
        <td>IBM Storage Defender - Resiliency Service 2.0.0 through 2.0.9 could allow a privileged user to obtain highly sensitive user credentials from secret keys that are stored in clear text.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50956">详情</a></td>
       </tr>
@@ -430,7 +510,7 @@
       <tr>
        <td>2242e50e24aa165b638b671c4752b4c8</td>
        <td>CVE-2024-56128</td>
-       <td>2024-12-18 14:15:23 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 14:15:23</td>
        <td>Incorrect Implementation of Authentication Algorithm in Apache Kafka's SCRAM implementation. Issue Summary: Apache Kafka's implementation of the Salted Challenge Response Authentication Mechanism (SCRAM) did not fully adhere to the requirements of RFC 5802 [1]. Specifically, as per RFC 5802, the server must verify that the nonce sent by the client in the second message matches the nonce sent by the server in its first message. However, Kafka's SCRAM implementation did not perform this validation. Impact: This vulnerability is exploitable only when an attacker has plaintext access to the SCRAM authentication exchange. However, the usage of SCRAM over plaintext is strongly discouraged as it is considered an insecure practice [2]. Apache Kafka recommends deploying SCRAM exclusively with TLS encryption to protect SCRAM exchanges from interception [3]. Deployments using SCRAM with TLS are not affected by this issue. How to Detect If You Are Impacted: If your deployment uses SCRAM authentication over plaintext communication channels (without TLS encryption), you are likely impacted. To check if TLS is enabled, review your server.properties configuration file for listeners property. If you have SASL_PLAINTEXT in the listeners, then you are likely impacted. Fix Details: The issue has been addressed by introducing nonce verification in the final message of the SCRAM authentication exchange to ensure compliance with RFC 5802. Affected Versions: Apache Kafka versions 0.10.2.0 through 3.9.0, excluding the fixed versions below. Fixed Versions: 3.9.0 3.8.1 3.7.2 Users are advised to upgrade to 3.7.2 or later to mitigate this issue. Recommendations for Mitigation: Users unable to upgrade to the fixed versions can mitigate the issue by: - Using TLS with SCRAM Authentication: Always deploy SCRAM over TLS to encrypt authentication exchanges and protect against interception. - Considering Alternative Authentication Mechanisms: Evaluate alternative authentication mechanisms, such as PLAIN, Kerberos or OAuth with TLS, which provide additional layers of security.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56128">详情</a></td>
       </tr>
@@ -438,89 +518,9 @@
       <tr>
        <td>e4e3723d7028270b0f69be2c73afded9</td>
        <td>CVE-2024-50570</td>
-       <td>2024-12-18 13:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 13:15:06</td>
        <td>A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiClientWindows 7.4.0 through 7.4.1, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13 and FortiClientLinux 7.4.0 through 7.4.2, 7.2.0 through 7.2.7, 7.0.0 through 7.0.13 may permit a local authenticated user to retrieve VPN password via memory dump, due to JavaScript's garbage collector</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50570">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3246b89d17ebce389ad043c2a5c46a02</td>
-       <td>CVE-2024-53144</td>
-       <td>2024-12-17 16:15:25</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: Bluetooth: hci_event: Align BR/EDR JUST_WORKS paring with LE This aligned BR/EDR JUST_WORKS method with LE which since 92516cd97fd4 ("Bluetooth: Always request for user confirmation for Just Works") always request user confirmation with confirm_hint set since the likes of bluetoothd have dedicated policy around JUST_WORKS method (e.g. main.conf:JustWorksRepairing). CVE: CVE-2024-8805</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53144">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0110a638f9542db0151b15913612ab7b</td>
-       <td>CVE-2024-12671</td>
-       <td>2024-12-17 16:15:25</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12671">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ab2d39bdfff0e23d4d8d88f0f6277fe</td>
-       <td>CVE-2024-12670</td>
-       <td>2024-12-17 16:15:25</td>
-       <td>A maliciously crafted DWF file, when parsed through Autodesk Navisworks, can be used to cause a Heap-based Overflow vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12670">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>145033e556d1e530ea6a0b253f2d5076</td>
-       <td>CVE-2024-12669</td>
-       <td>2024-12-17 16:15:25</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can be used to cause a Heap-based Overflow vulnerability. A malicious actor can leverage this vulnerability to cause a crash, read sensitive data, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12669">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cde8f0f4cc3ce2107f1b9d29acc3798</td>
-       <td>CVE-2024-12200</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12200">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a5aca1b061dafb45b2596285c7b52b6</td>
-       <td>CVE-2024-12199</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12199">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b6e859f26639254ed32fb8e64162bbe</td>
-       <td>CVE-2024-12198</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12198">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76de3ac3512dd89b9892cb5fbd135978</td>
-       <td>CVE-2024-12197</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12197">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b6d1b5a24856c4e6171b742be38c0516</td>
-       <td>CVE-2024-12194</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force a Memory Corruption vulnerability. A malicious actor can leverage this vulnerability to execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12194">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7621d7f4b2ce07c211af869a2a8dc89</td>
-       <td>CVE-2024-12193</td>
-       <td>2024-12-17 16:15:24</td>
-       <td>A maliciously crafted DWFX file, when parsed through Autodesk Navisworks, can force an Out-of-Bounds Write vulnerability. A malicious actor can leverage this vulnerability to cause a crash, cause data corruption, or execute arbitrary code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12193">详情</a></td>
       </tr>
 
      </tbody>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>10f515684e689350774b3821a07710ca</td>
        <td>CVE-2024-47877</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>codeclysm Extract命令执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108389">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>ca1bc1dd1a6c49935452f5dc18f0ba7c</td>
        <td>CVE-2024-44415</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>D-Link DI_8200缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108388">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>d47874e7c1513ebe49c7949549ebef74</td>
        <td>CVE-2024-44414</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>WayOS FBM_292W命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108387">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>6bb5cd0c5c5f113c21800091ac61229e</td>
        <td>CVE-2024-33579</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo Baiying DLL劫持漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108386">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>c9d621c12de97a061edaaf073ad1f092</td>
        <td>CVE-2024-47830</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Plane权限错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108385">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>38bded66b3e5b4d19e6fe34fcf22ead4</td>
        <td>CVE-2024-47074</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>DataEase代码问题漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108384">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>3966fe51df0358fbc0c8eee4a9cd2e36</td>
        <td>CVE-2024-8376</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Eclipse Mosquitto释放后重用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108381">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>dd5e8957aca724dba08798f4ade2f0c4</td>
        <td>CVE-2024-4089</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo Super File权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108380">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>81d4d8902c3b33df18f6c49e352f33fb</td>
        <td>CVE-2024-47875</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Cure53 DOMPurify跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108379">详情</a></td>
       </tr>
@@ -2174,7 +2174,7 @@
       <tr>
        <td>93210ae12e1a7d9f6db333e4f67037f5</td>
        <td>CVE-2024-8755</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Progress多个产品输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108378">详情</a></td>
       </tr>
@@ -2182,7 +2182,7 @@
       <tr>
        <td>511c48ad2e6b53d85cc0b411a49a2c85</td>
        <td>CVE-2024-33581</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo PC Manager DLL劫持漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108377">详情</a></td>
       </tr>
@@ -2190,7 +2190,7 @@
       <tr>
        <td>4fee4f28171eb8d45bcb7e6042f1722d</td>
        <td>CVE-2024-4132</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo Lock Screen权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108376">详情</a></td>
       </tr>
@@ -2198,7 +2198,7 @@
       <tr>
        <td>b8f38e44ab356dd48f0309545a8ddeba</td>
        <td>CVE-2024-4131</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo Emulator权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108375">详情</a></td>
       </tr>
@@ -2206,7 +2206,7 @@
       <tr>
        <td>144e283743321111c11b228551f0f348</td>
        <td>CVE-2024-4130</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>Lenovo App Store权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108374">详情</a></td>
       </tr>
@@ -2214,7 +2214,7 @@
       <tr>
        <td>fd41ed18a67548fb1b9c7b902781fca2</td>
        <td>CVE-2024-45396</td>
-       <td>2024-12-18 23:35:58 <img src="imgs/new.gif" /></td>
+       <td>2024-12-18 23:35:58</td>
        <td>H2O quicly拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108373">详情</a></td>
       </tr>
