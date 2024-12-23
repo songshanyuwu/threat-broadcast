@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-12-22 23:37:24 -->
+<!-- RELEASE TIME : 2024-12-23 23:37:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>916044873b020917249ba77a70db906d</td>
+       <td>CVE-2024-53961</td>
+       <td>2024-12-23 21:15:05 <img src="imgs/new.gif" /></td>
+       <td>ColdFusion versions 2023.11, 2021.17 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access files or directories that are outside of the restricted directory set by the application. This could lead to the disclosure of sensitive information or the manipulation of system data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53961">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bdfdc0a3a264020a14a8ced51c0f40e</td>
+       <td>CVE-2024-56363</td>
+       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>APTRS (Automated Penetration Testing Reporting System) is a Python and Django-based automated reporting tool designed for penetration testers and security organizations. In 1.0, there is a vulnerability in the web application's handling of user-supplied input that is incorporated into a Jinja2 template. Specifically, when user input is improperly sanitized or validated, an attacker can inject Jinja2 syntax into the template, causing the server to execute arbitrary code. For example, an attacker might be able to inject expressions like {{ config }}, {{ self.class.mro[1].subclasses() }}, or more dangerous payloads that trigger execution of arbitrary Python code. The vulnerability can be reproduced by submitting crafted input to all the template fields handled by ckeditor, that are passed directly to a Jinja2 template. If the input is rendered without sufficient sanitization, it results in the execution of malicious Jinja2 code on the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56363">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c02a5c039512e91b1fa263da3030bdd</td>
+       <td>CVE-2024-56362</td>
+       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>Navidrome is an open source web-based music collection server and streamer. Navidrome stores the JWT secret in plaintext in the navidrome.db database file under the property table. This practice introduces a security risk because anyone with access to the database file can retrieve the secret. This vulnerability is fixed in 0.54.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56362">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c5d82dec1886b1554f25b191e29880be</td>
+       <td>CVE-2024-53276</td>
+       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>Home-Gallery.org is a self-hosted open-source web gallery to browse personal photos and videos. In 1.15.0 and earlier, an open CORS policy in app.js may allow an attacker to view the images of home-gallery when it is using the default settings. The following express middleware allows any website to make a cross site request to home-gallery, thus allowing them to read any endpoint on home-gallery. Home-gallery is mostly safe from cross-site requests due to most of its pages requiring JavaScript, and cross-site requests such as fetch() do not render javascript. If an attacker is able to get the path of the preview images which are randomized, an attacker will be able to view such a photo. If any static files or endpoints are introduced in the future that contain sensitive information, they will be accessible to an attacker website.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53276">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>574caa9c7c9c3d90bc6dd7d924c8d89e</td>
+       <td>CVE-2024-53275</td>
+       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>Home-Gallery.org is a self-hosted open-source web gallery to browse personal photos and videos. In 1.15.0 and earlier, the default setup of home-gallery is vulnerable to DNS rebinding. Home-gallery is set up without TLS and user authentication by default, leaving it vulnerable to DNS rebinding. In this attack, an attacker will ask a user to visit their website. The attacker website will then change the DNS records of their domain from their IP address to the internal IP address of the home-gallery instance. To tell which IP addresses are valid, we can rebind a subdomain to each IP address we want to check, and see if there is a response. Once potential candidates have been found, the attacker can launch the attack by reading the response of the web server after the IP address has changed. When the attacker domain is fetched, the response will be from the home-gallery instance, not the attacker website, because the IP address has been changed. Due to a lack of authentication, home-gallery photos can then be extracted by the attacker website.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53275">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4f4c0f6dd2e0c26511b977c4aa2ef6f</td>
+       <td>CVE-2024-40896</td>
+       <td>2024-12-23 17:15:08 <img src="imgs/new.gif" /></td>
+       <td>In libxml2 2.11 before 2.11.9, 2.12 before 2.12.9, and 2.13 before 2.13.3, the SAX parser can produce events for external entities even if custom SAX handlers try to override entity content (by setting "checked"). This makes classic XXE attacks possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40896">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1403001f963d453afaed49b4a7f87a82</td>
+       <td>CVE-2024-56364</td>
+       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>SimpleXLSX is software for parsing and retrieving data from Excel XLSx files. Starting in 1.0.12 and ending in 1.1.13, when calling the extended toHTMLEx method, it is possible to execute arbitrary JavaScript code. This vulnerability is fixed in 1.1.13.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56364">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c0b6e3d8b9ae26107c0295f04a56493</td>
+       <td>CVE-2024-56326</td>
+       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>Jinja is an extensible templating engine. Prior to 3.1.5, An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to store a reference to a malicious string's format method, then pass that to a filter that calls it. No such filters are built-in to Jinja, but could be present through custom filters in an application. After the fix, such indirect calls are also handled by the sandbox. This vulnerability is fixed in 3.1.5.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56326">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d43f508a82f7fa455feaf8b23dd7e104</td>
+       <td>CVE-2024-56201</td>
+       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>Jinja is an extensible templating engine. Prior to 3.1.5, a bug in the Jinja compiler allows an attacker that controls both the content and filename of a template to execute arbitrary Python code, regardless of if Jinja's sandbox is used. To exploit the vulnerability, an attacker needs to control both the filename and the contents of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates where the template author can also choose the template filename. This vulnerability is fixed in 3.1.5.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56201">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>417bcaa3adf26488a4db413aec1775a8</td>
+       <td>CVE-2024-55947</td>
+       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>Gogs is an open source self-hosted Git service. A malicious user is able to write a file to an arbitrary path on the server to gain SSH access to the server. The vulnerability is fixed in 0.13.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55947">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a8856752e80eaffe72aa25cb1ae78af3</td>
        <td>CVE-2024-12895</td>
        <td>2024-12-22 14:15:04 <img src="imgs/new.gif" /></td>
@@ -342,7 +422,7 @@
       <tr>
        <td>8d759e21a4d9967ec8236a8bcf7daa36</td>
        <td>CVE-2024-51464</td>
-       <td>2024-12-21 14:15:21 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 14:15:21</td>
        <td>IBM i 7.3, 7.4, and 7.5 is vulnerable to bypassing Navigator for i interface restrictions. By sending a specially crafted request, an authenticated attacker could exploit this vulnerability to remotely perform operations that the user is not allowed to perform when using Navigator for i.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51464">详情</a></td>
       </tr>
@@ -350,7 +430,7 @@
       <tr>
        <td>0aacfea9ff82d24cf4706018a8bad859</td>
        <td>CVE-2024-51463</td>
-       <td>2024-12-21 14:15:21 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 14:15:21</td>
        <td>IBM i 7.3, 7.4, and 7.5 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51463">详情</a></td>
       </tr>
@@ -358,7 +438,7 @@
       <tr>
        <td>c315a89a05529558fb3a8b52f6c303c5</td>
        <td>CVE-2024-12884</td>
-       <td>2024-12-21 14:15:21 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 14:15:21</td>
        <td>A vulnerability was found in Codezips E-Commerce Website 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /login.php. The manipulation of the argument email leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12884">详情</a></td>
       </tr>
@@ -366,7 +446,7 @@
       <tr>
        <td>0047f12ac315237493b5e2701f79255b</td>
        <td>CVE-2024-12883</td>
-       <td>2024-12-21 13:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 13:15:05</td>
        <td>A vulnerability was found in code-projects Job Recruitment 1.0. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /_email.php. The manipulation of the argument email leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12883">详情</a></td>
       </tr>
@@ -374,7 +454,7 @@
       <tr>
        <td>00e8bb914b442cdf366b10cba459f842</td>
        <td>CVE-2024-12875</td>
-       <td>2024-12-21 12:15:20 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 12:15:20</td>
        <td>The Easy Digital Downloads – eCommerce Payments and Subscriptions made easy plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 3.3.2 via the file download functionality. This makes it possible for authenticated attackers, with Administrator-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12875">详情</a></td>
       </tr>
@@ -382,7 +462,7 @@
       <tr>
        <td>a754faeca9cc51d8713162ec3e839b72</td>
        <td>CVE-2024-12591</td>
-       <td>2024-12-21 10:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 10:15:09</td>
        <td>The MagicPost plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's wb_share_social shortcode in all versions up to, and including, 1.2.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12591">详情</a></td>
       </tr>
@@ -390,7 +470,7 @@
       <tr>
        <td>d31713c5bba2cca9565efd3b10277563</td>
        <td>CVE-2024-12558</td>
-       <td>2024-12-21 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 10:15:08</td>
        <td>The WP BASE Booking of Appointments, Services and Events plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the export_db function in all versions up to, and including, 4.9.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to expose sensitive information from the database, such as the hashed administrator password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12558">详情</a></td>
       </tr>
@@ -398,7 +478,7 @@
       <tr>
        <td>ae8198a51369df4539f0f0171a3565a6</td>
        <td>CVE-2024-12408</td>
-       <td>2024-12-21 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 10:15:08</td>
        <td>The WP on AWS plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via $_POST data in all versions up to, and including, 5.2.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12408">详情</a></td>
       </tr>
@@ -406,7 +486,7 @@
       <tr>
        <td>28a9251c50bb1d8159648db887674c67</td>
        <td>CVE-2024-11722</td>
-       <td>2024-12-21 10:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 10:15:07</td>
        <td>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.25.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This requires an unauthenticated user to have been given permission to view form submissions, and the form submission shortcode be added to a page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11722">详情</a></td>
       </tr>
@@ -414,7 +494,7 @@
       <tr>
        <td>24ee646e8a12601b9a98fcea3757b681</td>
        <td>CVE-2024-11688</td>
-       <td>2024-12-21 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-12-21 10:15:06</td>
        <td>The LaTeX2HTML plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'ver' or 'date' parameter in all versions up to, and including, 2.5.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11688">详情</a></td>
       </tr>
@@ -441,86 +521,6 @@
        <td>2024-12-20 16:15:24</td>
        <td>Oqtane Framework is vulnerable to Insecure Direct Object Reference (IDOR) in Oqtane.Controllers.UserController. This allows unauthorized users to access sensitive information of other users by manipulating the id parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39fb852f2a13d05cdd353a2c2df826d4</td>
-       <td>CVE-2024-55470</td>
-       <td>2024-12-20 16:15:23</td>
-       <td>Oqtane Framework 6.0.0 is vulnerable to Incorrect Access Control. By manipulating the entityid parameter, attackers can bypass passcode validation and successfully log into the application or access restricted data without proper authorization. The lack of server-side validation exacerbates the issue, as the application relies on client-side information for authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55470">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4fcd342a3c4221b15af4063cbe735b3</td>
-       <td>CVE-2024-55186</td>
-       <td>2024-12-20 16:15:23</td>
-       <td>An IDOR (Insecure Direct Object Reference) vulnerability exists in oqtane Framework 6.0.0, allowing a logged-in user to access inbox messages of other users by manipulating the notification ID in the request URL. By changing the notification ID, an attacker can view sensitive mail details belonging to other users.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55186">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8e90f619a017b9c36ee9f7b7500acd2</td>
-       <td>CVE-2024-12840</td>
-       <td>2024-12-20 16:15:23</td>
-       <td>A server-side request forgery exists in Satellite. When a PUT HTTP request is made to /http_proxies/test_connection, when supplied with the http_proxies variable set to localhost, the attacker can fetch the localhost banner.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12840">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ff4aef0b81de6a002b2b8c4bf689608</td>
-       <td>CVE-2024-10385</td>
-       <td>2024-12-20 16:15:21</td>
-       <td>Ticket management system in DirectAdmin Evolution Skin is vulnerable to XSS (Cross-site Scripting), which allows a low-privileged user to inject and store malicious JavaScript code. If an admin views the ticket, the script might perform actions with their privileges, including command execution. This issue has been fixed in version 1.668 of DirectAdmin Evolution Skin.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10385">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da91c00f5d2a99f894f6bf3d0dab8df1</td>
-       <td>CVE-2024-56356</td>
-       <td>2024-12-20 15:15:09</td>
-       <td>In JetBrains TeamCity before 2024.12 insecure XMLParser configuration could lead to potential XXE attack</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56356">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03f6f28e0195eb4df4cdb5c8f257c2c4</td>
-       <td>CVE-2024-56355</td>
-       <td>2024-12-20 15:15:09</td>
-       <td>In JetBrains TeamCity before 2024.12 missing Content-Type header in RemoteBuildLogController response could lead to XSS</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56355">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2a219fd745f871769350db0d47bc4fbe</td>
-       <td>CVE-2024-56354</td>
-       <td>2024-12-20 15:15:09</td>
-       <td>In JetBrains TeamCity before 2024.12 password field value were accessible to users with view settings permission</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fc440261e27306b1a7f59bcbc5673a3</td>
-       <td>CVE-2024-52897</td>
-       <td>2024-12-19 18:15:23</td>
-       <td>IBM MQ Appliance 9.3 LTS, 9.3 CD, and 9.4 LTS web console could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52897">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fcdf4e6773e0bdcf7b7c50842c8bc42</td>
-       <td>CVE-2024-51471</td>
-       <td>2024-12-19 18:15:23</td>
-       <td>IBM MQ Appliance 9.3 LTS, 9.3 CD, and 9.4 LTS web console could allow an authenticated user to cause a denial-of-service when trace is enabled due to information being written into memory outside of the intended buffer size.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85d85b72a2d63adf4734c15706e70c2c</td>
-       <td>CVE-2024-49336</td>
-       <td>2024-12-19 18:15:22</td>
-       <td>IBM Security Guardium 11.5 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-49336">详情</a></td>
       </tr>
 
      </tbody>
@@ -1980,6 +1980,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>29a3df780bfdbf90601bb5bea8abf143</td>
+       <td>CVE-2024-25647</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel Binary Configuration Tool默认权限错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108634">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e2cf76ec7aa5a5db2596d63a52628a2</td>
+       <td>CVE-2024-28049</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel PROSet/Wireless Software和Intel Killer Wi-Fi输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108633">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf58db5ff8d8748b287ccfb580a0c524</td>
+       <td>CVE-2024-49379</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>umbrelOS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108632">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e0b60405b7f62aca6ade27753902132</td>
+       <td>CVE-2024-7570</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Ivanti Neurons for ITSM证书验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108631">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a06086b6f98eef65783dc42131271d8</td>
+       <td>CVE-2024-28051</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel VPL越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108630">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95890111712df5a1776a7e579752e823</td>
+       <td>CVE-2024-27200</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel Granulate访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108629">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>03e52022a14d4ea9eabcd8b1179f3033</td>
+       <td>CVE-2024-25565</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel Xeon Processors控制流管理不足漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108628">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c481d0058a1d84baa406bb4832b18ca</td>
+       <td>CVE-2024-42834</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Incognito Service Activation Center (SAC) UI跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108627">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98a22bc683eef7216f274903906981c9</td>
+       <td>CVE-2024-21783</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel VPL整数溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108626">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81e8311b0be2691e70df22dc525bcf50</td>
+       <td>CVE-2023-38920</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Cyber Cafe Management System跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108625">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2543457033f28d035e07ddade9721776</td>
+       <td>CVE-2024-40443</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Simple Laboratory Management System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108624">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>983ed8db6ef823d29d8685d1dcb01a9a</td>
+       <td>CVE-2024-11193</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>YugabyteDB信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108623">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe698fb141e24fd2a2052b2c11655f44</td>
+       <td>CVE-2024-25563</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel PROSet/Wireless Software和Intel Killer Wi-Fi初始化错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108622">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06aafae83109020bfbf76c2e1df42949</td>
+       <td>CVE-2024-43093</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Google Android访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108621">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8629b929c38c6cdb429fabd64502ceb1</td>
+       <td>CVE-2024-21820</td>
+       <td>2024-12-23 23:35:28 <img src="imgs/new.gif" /></td>
+       <td>Intel SGX SDK默认权限错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108620">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ef3cf622fad7f26c1725bf23d5266ff4</td>
        <td>CVE-2024-4741</td>
        <td>2024-12-20 05:36:52</td>
@@ -2097,126 +2217,6 @@
        <td>2024-12-20 05:36:52</td>
        <td>MirrorCache跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108580">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed9709003f2850f368b87e359a4b7e22</td>
-       <td>CVE-2024-28731</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>D-Link DWR-2000M跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>23eb8eb01674b4913bec5d4dfd506126</td>
-       <td>CVE-2024-10038</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>WordPress WP-Strava Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ded10f622530592b77e73cab73fd712</td>
-       <td>CVE-2024-9816</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>Codezips Tourist Management System代码问题漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b876a5b2f02222ec10b122ad1e00d8fb</td>
-       <td>CVE-2024-9487</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>GitHub Enterprise Server身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108489">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc576147fecfd45eb31b4d0242e2ffab</td>
-       <td>CVE-2024-45317</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>SonicWALL SMA1000代码问题漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108488">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5c22eeb910f94d4b2cfccc53fe024b4</td>
-       <td>CVE-2023-42133</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>PAX Android based POS权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108487">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2c195fa345f7fea241d2c243163d6a67</td>
-       <td>CVE-2024-9814</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>Codezips Pharmacy Management System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108486">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b8d39aabf8eb60a83e9ce9c2c8e7915</td>
-       <td>CVE-2024-10629</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>WordPress GPX Viewer Plugin任意文件创建漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108485">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0212844f2b27e659025f4a9b56ea81fd</td>
-       <td>CVE-2024-9817</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>code-projects Blood Bank System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108484">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bfcff1a2234e150346754079d41d228</td>
-       <td>CVE-2024-21534</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>JSONPath Plus远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108483">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>580cede073aab0290525e8476a495523</td>
-       <td>CVE-2024-5005</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>GitLab信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108482">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1015f0b192d4d94710d969a1c7413e49</td>
-       <td>CVE-2024-47648</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>WordPress plugin EventPrime输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108481">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c89873a677eeba2554c51232bcfdb869</td>
-       <td>CVE-2024-21541</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>npm dom-iterator任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>407587df3afafbf556ca40d7d64f0792</td>
-       <td>CVE-2024-48987</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>snipe Snipe-IT远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108479">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a62b2872bc504fa8b99f8c4402c928c</td>
-       <td>CVE-2024-6971</td>
-       <td>2024-12-19 23:35:32</td>
-       <td>Saifeddine ALOUI LoLLMs路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108478">详情</a></td>
       </tr>
 
      </tbody>
